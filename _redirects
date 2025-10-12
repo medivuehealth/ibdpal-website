@@ -1,0 +1,8 @@
+# Netlify redirects for clean URLs
+/support    /support.html    200
+/privacy    /privacy.html    200
+/terms      /terms.html      200
+/about      /executive-summary.html    200
+
+# Fallback for SPA routing
+/*    /index.html    200
