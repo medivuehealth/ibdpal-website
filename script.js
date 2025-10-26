@@ -1,7 +1,11 @@
 // IBDPal Website JavaScript
 
-// Email form handling
+// Tab Navigation System
 document.addEventListener('DOMContentLoaded', function() {
+    // Initialize tab navigation
+    initializeTabNavigation();
+    
+    // Email form handling
     const emailForm = document.getElementById('emailForm');
     
     if (emailForm) {
@@ -20,6 +24,31 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+// Tab Navigation Functions
+function initializeTabNavigation() {
+    const tabButtons = document.querySelectorAll('.tab-button');
+    const tabContents = document.querySelectorAll('.tab-content');
+    
+    tabButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const targetTab = this.getAttribute('data-tab');
+            
+            // Remove active class from all buttons and contents
+            tabButtons.forEach(btn => btn.classList.remove('active'));
+            tabContents.forEach(content => content.classList.remove('active'));
+            
+            // Add active class to clicked button
+            this.classList.add('active');
+            
+            // Show target tab content
+            const targetContent = document.getElementById(targetTab);
+            if (targetContent) {
+                targetContent.classList.add('active');
+            }
+        });
+    });
+}
 
 // Notification system
 function showNotification(message, type = 'info') {
