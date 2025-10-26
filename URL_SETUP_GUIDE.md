@@ -95,3 +95,4 @@ Your website will now have clean, professional URLs:
 - ✅ `ibdpal.org/about` (instead of `executive-summary.html`)
 
 All navigation and links have been updated to use these clean URLs!
+
