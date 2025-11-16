@@ -125,21 +125,23 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Add loading states to buttons
+// Add loading states to submit buttons only
 document.addEventListener('DOMContentLoaded', function() {
-    const buttons = document.querySelectorAll('button');
+    // Only target submit buttons, not tab navigation buttons
+    const submitButtons = document.querySelectorAll('button[type="submit"]');
     
-    buttons.forEach(button => {
-        button.addEventListener('click', function() {
-            if (this.type === 'submit') {
-                this.style.opacity = '0.7';
-                this.textContent = 'Sending...';
-                
-                setTimeout(() => {
-                    this.style.opacity = '1';
-                    this.textContent = 'Notify Me';
-                }, 2000);
-            }
+    submitButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            // Store original text
+            const originalText = this.textContent;
+            
+            this.style.opacity = '0.7';
+            this.textContent = 'Sending...';
+            
+            setTimeout(() => {
+                this.style.opacity = '1';
+                this.textContent = originalText; // Restore original text
+            }, 2000);
         });
     });
 });
