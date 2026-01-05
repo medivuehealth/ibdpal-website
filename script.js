@@ -198,14 +198,14 @@ function shareOnFacebook(event) {
 function shareOnTwitter(event) {
     event.preventDefault();
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent('Check out this blog post about IBDPal - A Simple Tool for Teens Living with IBD');
+    const text = encodeURIComponent('Check out this blog post about IBDPal - A Simple Tool for Living with IBD');
     window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank', 'width=600,height=400');
 }
 
 function shareViaEmail(event) {
     event.preventDefault();
     const url = window.location.href;
-    const subject = encodeURIComponent('IBDPal Blog: A Simple Tool for Teens Living with IBD');
+    const subject = encodeURIComponent('IBDPal Blog: A Simple Tool for Living with IBD');
     const body = encodeURIComponent(`Check out this blog post: ${url}`);
     window.location.href = `mailto:?subject=${subject}&body=${body}`;
 }
