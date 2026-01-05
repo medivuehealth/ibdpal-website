@@ -30,24 +30,65 @@ function initializeTabNavigation() {
     const tabButtons = document.querySelectorAll('.tab-button');
     const tabContents = document.querySelectorAll('.tab-content');
     
+    // Function to switch tabs
+    function switchTab(targetTab, updateURL = true) {
+        // Remove active class from all buttons and contents
+        tabButtons.forEach(btn => btn.classList.remove('active'));
+        tabContents.forEach(content => content.classList.remove('active'));
+        
+        // Add active class to target button
+        const targetButton = document.querySelector(`[data-tab="${targetTab}"]`);
+        if (targetButton) {
+            targetButton.classList.add('active');
+        }
+        
+        // Show target tab content
+        const targetContent = document.getElementById(targetTab);
+        if (targetContent) {
+            targetContent.classList.add('active');
+        }
+        
+        // Update URL without page reload
+        if (updateURL) {
+            const newURL = targetTab === 'overview' 
+                ? window.location.pathname 
+                : `${window.location.pathname}#${targetTab}`;
+            window.history.pushState({ tab: targetTab }, '', newURL);
+        }
+    }
+    
+    // Handle tab button clicks
     tabButtons.forEach(button => {
         button.addEventListener('click', function() {
             const targetTab = this.getAttribute('data-tab');
-            
-            // Remove active class from all buttons and contents
-            tabButtons.forEach(btn => btn.classList.remove('active'));
-            tabContents.forEach(content => content.classList.remove('active'));
-            
-            // Add active class to clicked button
-            this.classList.add('active');
-            
-            // Show target tab content
-            const targetContent = document.getElementById(targetTab);
-            if (targetContent) {
-                targetContent.classList.add('active');
-            }
+            switchTab(targetTab, true);
         });
     });
+    
+    // Handle browser back/forward buttons
+    window.addEventListener('popstate', function(event) {
+        const hash = window.location.hash.substring(1); // Remove #
+        const targetTab = hash || 'overview';
+        switchTab(targetTab, false);
+    });
+    
+    // Check URL on page load
+    function checkInitialTab() {
+        const hash = window.location.hash.substring(1);
+        if (hash) {
+            const targetTab = hash;
+            // Check if tab exists
+            if (document.getElementById(targetTab)) {
+                switchTab(targetTab, false);
+                return;
+            }
+        }
+        // Default to overview
+        switchTab('overview', false);
+    }
+    
+    // Initialize on page load
+    checkInitialTab();
 }
 
 // Notification system
