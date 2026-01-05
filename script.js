@@ -146,3 +146,26 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// Blog Share Functions
+function shareOnFacebook(event) {
+    event.preventDefault();
+    const url = encodeURIComponent(window.location.href);
+    const title = encodeURIComponent(document.querySelector('.blog-title')?.textContent || 'IBDPal Blog');
+    window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank', 'width=600,height=400');
+}
+
+function shareOnTwitter(event) {
+    event.preventDefault();
+    const url = encodeURIComponent(window.location.href);
+    const text = encodeURIComponent('Check out this blog post about IBDPal - A Simple Tool for Teens Living with IBD');
+    window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank', 'width=600,height=400');
+}
+
+function shareViaEmail(event) {
+    event.preventDefault();
+    const url = window.location.href;
+    const subject = encodeURIComponent('IBDPal Blog: A Simple Tool for Teens Living with IBD');
+    const body = encodeURIComponent(`Check out this blog post: ${url}`);
+    window.location.href = `mailto:?subject=${subject}&body=${body}`;
+}
+
