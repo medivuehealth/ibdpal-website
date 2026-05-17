@@ -188,25 +188,35 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Blog Share Functions
+function getBlogShareSummary() {
+    const fromBody = document.body?.dataset?.blogShareText;
+    if (fromBody && fromBody.trim()) {
+        return fromBody.trim();
+    }
+    const titleEl = document.querySelector('.blog-title');
+    if (titleEl && titleEl.textContent.trim()) {
+        return titleEl.textContent.trim();
+    }
+    return 'Check out this post on IBDPal';
+}
+
 function shareOnFacebook(event) {
     event.preventDefault();
     const url = encodeURIComponent(window.location.href);
-    const title = encodeURIComponent(document.querySelector('.blog-title')?.textContent || 'IBDPal Blog');
     window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank', 'width=600,height=400');
 }
 
 function shareOnTwitter(event) {
     event.preventDefault();
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent('Check out this blog post about IBDPal - A Simple Tool for Living with IBD');
+    const text = encodeURIComponent(getBlogShareSummary());
     window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank', 'width=600,height=400');
 }
 
 function shareViaEmail(event) {
     event.preventDefault();
     const url = window.location.href;
-    const subject = encodeURIComponent('IBDPal Blog: A Simple Tool for Living with IBD');
-    const body = encodeURIComponent(`Check out this blog post: ${url}`);
+    const subject = encodeURIComponent(document.querySelector('.blog-title')?.textContent?.trim() || 'IBDPal Blog');
+    const body = encodeURIComponent(`${getBlogShareSummary()}\n\n${url}`);
     window.location.href = `mailto:?subject=${subject}&body=${body}`;
 }
-
