@@ -31,6 +31,10 @@
     {
       "source": "/blog/hydration-tips-ibd",
       "destination": "/blogs/hydration-tips-ibd.html"
+    },
+    {
+      "source": "/blog/tracking-food-symptoms-ibdpal",
+      "destination": "/blogs/tracking-food-symptoms-ibdpal.html"
     }
   ],
   "headers": [
