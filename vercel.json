@@ -23,6 +23,10 @@
     {
       "source": "/blog/foods-that-may-trigger-uc-symptoms",
       "destination": "/blogs/foods-that-may-trigger-uc-symptoms.html"
+    },
+    {
+      "source": "/blog/how-nutrition-impacts-gut-health-ibd",
+      "destination": "/blogs/how-nutrition-impacts-gut-health-ibd.html"
     }
   ],
   "headers": [
