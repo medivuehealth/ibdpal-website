@@ -27,6 +27,10 @@
     {
       "source": "/blog/how-nutrition-impacts-gut-health-ibd",
       "destination": "/blogs/how-nutrition-impacts-gut-health-ibd.html"
+    },
+    {
+      "source": "/blog/hydration-tips-ibd",
+      "destination": "/blogs/hydration-tips-ibd.html"
     }
   ],
   "headers": [
