@@ -1,0 +1,25 @@
+# IBDPal (ibdpal.org)
+
+> IBDPal is an iOS health app and educational website for people with inflammatory bowel disease (IBD), including Crohn’s disease and ulcerative colitis. Content is for education only and does not replace care from a clinician.
+
+## Site
+- Homepage: https://ibdpal.org/
+- Privacy: https://ibdpal.org/privacy
+- Support: https://ibdpal.org/support
+- Terms: https://ibdpal.org/terms
+- About / executive summary: https://ibdpal.org/about
+
+## Blog (IBD education — not medical advice)
+- https://ibdpal.org/blog/best-foods-crohns-flare
+- https://ibdpal.org/blog/foods-that-may-trigger-uc-symptoms
+- https://ibdpal.org/blog/how-nutrition-impacts-gut-health-ibd
+- https://ibdpal.org/blog/hydration-tips-ibd
+- https://ibdpal.org/blog/tracking-food-symptoms-ibdpal
+
+## Organization
+- MediVue (501(c)(3) nonprofit, North Carolina) develops IBDPal.
+- General inquiries: info@ibdpal.org
+- Support: support@ibdpal.org
+
+## Machine-readable index
+- Sitemap: https://ibdpal.org/sitemap.xml
