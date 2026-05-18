@@ -19,6 +19,10 @@
     {
       "source": "/blog/best-foods-crohns-flare",
       "destination": "/blogs/best-foods-crohns-flare.html"
+    },
+    {
+      "source": "/blog/foods-that-may-trigger-uc-symptoms",
+      "destination": "/blogs/foods-that-may-trigger-uc-symptoms.html"
     }
   ],
   "headers": [
