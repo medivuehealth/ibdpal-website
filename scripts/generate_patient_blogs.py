@@ -132,19 +132,39 @@ def render_with_review(p):
     return render_post(p)
 
 
-def main():
+# Pexels CDN URLs (verified JPEGs — not unsplash.com/photos/.../download)
+POST_IMAGE_URLS = {
+    "workplace-school": "https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "insurance-basics": "https://images.pexels.com/photos/4386464/pexels-photo-4386464.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "ostomy-basics": "https://images.pexels.com/photos/7176026/pexels-photo-7176026.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "flare-48h": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&w=1200&q=80",
+    "caregiver-partner": "https://images.pexels.com/photos/7176036/pexels-photo-7176036.jpeg?auto=compress&cs=tinysrgb&w=1200",
+}
+
+
+def download_image(url: str, dest: Path) -> bool:
     import urllib.request
+
+    try:
+        urllib.request.urlretrieve(url, dest)
+        data = dest.read_bytes()
+        if len(data) > 5000 and data[:2] == b"\xff\xd8":
+            return True
+    except OSError:
+        pass
+    return False
+
+
+def main():
     for p in POSTS:
         asset = BLOGS / "assets" / p["asset_dir"]
         asset.mkdir(parents=True, exist_ok=True)
+        url = POST_IMAGE_URLS.get(p["asset_dir"])
         for img in p["images"]:
             dest = asset / img
-            if not dest.exists():
-                url = "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&w=1200"
-                try:
-                    urllib.request.urlretrieve(url, dest)
-                except Exception:
-                    dest.write_bytes(b"\xff\xd8\xff")
+            if url and (not dest.exists() or dest.stat().st_size < 5000):
+                if not download_image(url, dest):
+                    print("WARN: download failed for", dest)
         out = BLOGS / f"{p['slug']}.html"
         out.write_text(render_with_review(p), encoding="utf-8")
         print("wrote", out.name)
