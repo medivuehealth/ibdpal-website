@@ -41,7 +41,7 @@ If neither variable exists, repeat Step A.
 
 ### Step D — Test
 
-1. API health: https://ibdpal.org/api/blog-vote?check=1 (should show `"ok":true`)
+1. API health: https://ibdpal.org/api/blog-vote?check=1 — must show `"ok":true` and `"apiBuild":"rest-v3"` (if missing, Production has not picked up the latest deploy).
 2. Full path: https://ibdpal.org/api/blog-vote?check=1&deep=1 (read/write like voting)
 3. Open https://ibdpal.org/blog/hydration-tips-ibd  
 2. Click 👍  

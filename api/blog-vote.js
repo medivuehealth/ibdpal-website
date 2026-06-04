@@ -1,4 +1,10 @@
-import { del, list, put } from '@vercel/blob';
+/**
+ * Blog vote API — uses Vercel Blob REST API directly (no @vercel/blob SDK)
+ * so access: public is always sent on writes (required for public stores).
+ */
+const BLOB_API = 'https://vercel.com/api/blob';
+const BLOB_API_VERSION = '12';
+const API_BUILD = 'rest-v3';
 
 const LOG_PATH = 'blog-votes/votes.log';
 const COUNTS_PATH = 'blog-votes/counts.json';
@@ -16,13 +22,18 @@ function hasBlobCredentials() {
   return Boolean(getBlobToken());
 }
 
-function putOptions(token) {
-  return {
-    access: 'public',
-    addRandomSuffix: false,
-    allowOverwrite: true,
-    token
-  };
+function getStoreId(token) {
+  const fromEnv = process.env.BLOB_STORE_ID;
+  if (fromEnv && String(fromEnv).trim()) {
+    const id = String(fromEnv).trim();
+    return id.startsWith('store_') ? id.slice('store_'.length) : id;
+  }
+  const parts = token.split('_');
+  if (parts.length >= 4) {
+    const id = parts[3];
+    return id.startsWith('store_') ? id.slice('store_'.length) : id;
+  }
+  return '';
 }
 
 function setupMessage() {
@@ -44,13 +55,80 @@ function formatError(err) {
   return 'Blob request failed: ' + msg + '. Confirm env vars are on Production and Redeploy.';
 }
 
+async function blobApi(path, { method, token, headers = {}, body }) {
+  const storeId = getStoreId(token);
+  if (!storeId) {
+    throw new Error('Could not resolve Blob store id from token or BLOB_STORE_ID');
+  }
+
+  const res = await fetch(`${BLOB_API}${path}`, {
+    method,
+    headers: {
+      authorization: `Bearer ${token}`,
+      'x-api-version': BLOB_API_VERSION,
+      'x-vercel-blob-store-id': storeId,
+      ...headers
+    },
+    body
+  });
+
+  if (!res.ok) {
+    let detail = `${res.status} ${res.statusText}`;
+    try {
+      const data = await res.json();
+      if (data?.error?.message) {
+        detail = data.error.message;
+      }
+    } catch {
+      /* ignore */
+    }
+    throw new Error(detail);
+  }
+
+  if (res.status === 204) {
+    return null;
+  }
+  const text = await res.text();
+  return text ? JSON.parse(text) : null;
+}
+
+async function listBlobs(prefix, token) {
+  const params = new URLSearchParams({ prefix });
+  const data = await blobApi(`?${params.toString()}`, { method: 'GET', token });
+  return data?.blobs || [];
+}
+
+async function putBlob(pathname, content, token) {
+  const params = new URLSearchParams({ pathname });
+  await blobApi(`/?${params.toString()}`, {
+    method: 'PUT',
+    token,
+    headers: {
+      'content-type': 'text/plain; charset=utf-8',
+      'x-vercel-blob-access': 'public',
+      'x-add-random-suffix': '0',
+      'x-allow-overwrite': '1'
+    },
+    body: content
+  });
+}
+
+async function delBlob(url, token) {
+  await blobApi('/delete', {
+    method: 'POST',
+    token,
+    headers: { 'content-type': 'application/json' },
+    body: JSON.stringify({ urls: [url] })
+  });
+}
+
 async function readBlobText(pathname) {
   const token = getBlobToken();
   if (!token) {
     return '';
   }
 
-  const { blobs } = await list({ prefix: 'blog-votes/', token });
+  const blobs = await listBlobs('blog-votes/', token);
   const blob = blobs.find((b) => b.pathname === pathname);
   if (!blob) {
     return '';
@@ -71,18 +149,18 @@ async function writeBlobText(pathname, content) {
   }
 
   try {
-    await put(pathname, content, putOptions(token));
+    await putBlob(pathname, content, token);
   } catch (err) {
     const msg = err?.message || '';
     if (!msg.includes('already exists') && !msg.includes('conflict')) {
       throw err;
     }
-    const { blobs } = await list({ prefix: 'blog-votes/', token });
+    const blobs = await listBlobs('blog-votes/', token);
     const existing = blobs.find((b) => b.pathname === pathname);
     if (existing?.url) {
-      await del(existing.url, { token });
+      await delBlob(existing.url, token);
     }
-    await put(pathname, content, putOptions(token));
+    await putBlob(pathname, content, token);
   }
 }
 
@@ -106,6 +184,7 @@ async function runDiagnostic(deep) {
   const token = getBlobToken();
   const out = {
     ok: false,
+    apiBuild: API_BUILD,
     hasBlobReadWriteToken: Boolean(token),
     hasBlobStoreId: Boolean(process.env.BLOB_STORE_ID),
     vercelEnv: process.env.VERCEL_ENV || null,
@@ -117,11 +196,16 @@ async function runDiagnostic(deep) {
   }
 
   try {
-    await put('blog-votes/.health-check', 'ok', putOptions(token));
+    await putBlob('blog-votes/.health-check', 'ok', token);
     if (deep) {
       await readBlobText(LOG_PATH);
       await readBlobText(COUNTS_PATH);
-      await writeBlobText('blog-votes/.health-check-rw', 'ok', putOptions(token));
+      const testPath = 'blog-votes/.health-check-rw';
+      await putBlob(testPath, 'ok', token);
+      const testBlob = (await listBlobs('blog-votes/', token)).find((b) => b.pathname === testPath);
+      if (testBlob?.url) {
+        await delBlob(testBlob.url, token);
+      }
     }
     out.ok = true;
     out.hint = 'Blob is configured. Voting should work.';
