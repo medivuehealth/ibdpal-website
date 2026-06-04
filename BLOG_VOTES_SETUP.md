@@ -7,7 +7,7 @@ Votes are stored in your **private** Blob store **`ibdpal-blob`** as:
 | `blog-votes/votes.log` | Text log: `time`, `slug`, `up` or `down` |
 | `blog-votes/counts.json` | Totals per blog post |
 
-**Private** is correct — visitors never get a public URL to the log; only the API and your Vercel dashboard can read it.
+**ibdpal-blob** is a **public** Blob store (Vercel requires `access: "public"` on uploads). Vote files are not linked from the website; only the API writes them. For stricter privacy later, create a new **private** store and reconnect the project.
 
 ---
 

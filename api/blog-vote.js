@@ -2,6 +2,8 @@ import { get, list, put } from '@vercel/blob';
 
 const LOG_PATH = 'blog-votes/votes.log';
 const COUNTS_PATH = 'blog-votes/counts.json';
+/** ibdpal-blob is a public store — must use access: "public" (not private). */
+const BLOB_ACCESS = 'public';
 
 function json(res, status, body) {
   res.status(status).setHeader('Content-Type', 'application/json');
@@ -50,7 +52,7 @@ async function readBlobText(pathname) {
   if (!blob) {
     return '';
   }
-  const result = await get(blob.url, { access: 'private', token });
+  const result = await get(blob.url, { access: BLOB_ACCESS, token });
   return result.text();
 }
 
@@ -60,7 +62,7 @@ async function writeBlobText(pathname, content) {
     throw new Error('MISSING_BLOB_TOKEN');
   }
   await put(pathname, content, {
-    access: 'private',
+    access: BLOB_ACCESS,
     addRandomSuffix: false,
     allowOverwrite: true,
     token
@@ -98,7 +100,12 @@ async function runDiagnostic() {
   }
 
   try {
-    await list({ prefix: 'blog-votes/', limit: 1, token });
+    await put('blog-votes/.health-check', 'ok', {
+      access: BLOB_ACCESS,
+      addRandomSuffix: false,
+      allowOverwrite: true,
+      token
+    });
     out.ok = true;
     out.hint = 'Blob is configured. Voting should work.';
   } catch (err) {
