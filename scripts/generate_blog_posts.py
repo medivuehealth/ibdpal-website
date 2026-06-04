@@ -13,7 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 BLOGS = ROOT / "blogs"
 sys.path.insert(0, str(ROOT / "scripts"))
-from site_nav import PAGE_SCRIPTS, TAB_NAV_HTML  # noqa: E402
+from site_nav import PAGE_SCRIPTS, SITE_HEADER_HTML, TAB_NAV_HTML  # noqa: E402
 
 POSTS = [
     {
@@ -401,8 +401,11 @@ def render_post(p: dict) -> str:
     <title>{html.escape(p["title"])} | IBDPal Blog</title>
     <meta name="description" content="{html.escape(p["description"])}">
     <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/site-layout-icn.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" href="/IBDPal_Logo.png">
+    <link rel="apple-touch-icon" href="/IBDPal_Logo.png">
 
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <link rel="canonical" href="{canonical}">
@@ -421,16 +424,7 @@ def render_post(p: dict) -> str:
 </head>
 <body data-blog-share-text="{html.escape(p["share"])}">
     <div class="app-container">
-        <header class="header">
-            <div class="logo">
-                <p class="logo-title"><a href="/" style="color: white; text-decoration: none;">IBDPal</a></p>
-                <span class="tagline">Empowering IBD Patients</span>
-            </div>
-            <nav class="header-nav">
-                <a href="/privacy" class="nav-link">Privacy</a>
-                <a href="/support" class="nav-link">Support</a>
-            </nav>
-        </header>
+{SITE_HEADER_HTML}
 
 {TAB_NAV_HTML.replace('class="tab-button" data-tab="blogs"', 'class="tab-button active" data-tab="blogs"', 1)}
 

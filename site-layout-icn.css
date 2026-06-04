@@ -1,0 +1,473 @@
+/**
+ * ImproveCareNow-inspired layout (https://www.improvecarenow.org/)
+ * Keeps IBDPal palette: primary #9933cc, secondary #cc6600, text #1a1a1a
+ */
+
+/* Top social bar (ImproveCareNow-style) */
+.site-social-bar {
+    background: #2a2a2a;
+    color: #fff;
+    font-size: 0.82rem;
+}
+
+.site-social-bar__inner {
+    max-width: var(--ibd-max, 1140px);
+    margin: 0 auto;
+    padding: 0.4rem clamp(1rem, 3vw, 1.75rem);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.75rem 1rem;
+    flex-wrap: wrap;
+}
+
+.site-social-bar__label {
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.85);
+    margin-right: auto;
+}
+
+.site-social__list {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-social__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.site-social__link:hover {
+    background: var(--ibd-primary, #9933cc);
+    color: #fff;
+}
+
+.site-social__link--pending {
+    opacity: 0.45;
+    cursor: default;
+}
+
+.site-social__link--pending:hover {
+    background: transparent;
+    opacity: 0.55;
+}
+
+.site-social__svg {
+    width: 18px;
+    height: 18px;
+    display: block;
+}
+
+:root {
+    --ibd-primary: #9933cc;
+    --ibd-secondary: #cc6600;
+    --ibd-primary-dark: #7a2a9f;
+    --ibd-text: #1a1a1a;
+    --ibd-muted: #666666;
+    --ibd-bg: #f4f4f4;
+    --ibd-surface: #ffffff;
+    --ibd-border: #e0e0e0;
+    --ibd-max: 1140px;
+    --ibd-article: 760px;
+}
+
+/* Site shell — white content on light gray (ICN-style, not full-page gradient) */
+body {
+    background: var(--ibd-bg);
+    color: var(--ibd-text);
+}
+
+.app-container,
+.container {
+    max-width: 100%;
+    padding: 0;
+    min-height: auto;
+}
+
+/* Top brand bar */
+.header {
+    background: var(--ibd-primary);
+    margin: 0;
+    padding: 0.7rem clamp(1rem, 4vw, 2rem);
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    border-bottom: 3px solid var(--ibd-secondary);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+}
+
+.logo-brand {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    line-height: 0;
+}
+
+.logo-img {
+    height: 44px;
+    width: auto;
+    max-width: min(220px, 55vw);
+    object-fit: contain;
+    display: block;
+}
+
+.logo .logo-title,
+.logo h1 {
+    font-size: 1.65rem;
+    text-shadow: none;
+    margin-bottom: 0;
+}
+
+.tagline {
+    font-size: 0.82rem;
+    opacity: 0.92;
+}
+
+.header-nav {
+    gap: 0.5rem 1rem;
+}
+
+.nav-link {
+    border: none;
+    background: rgba(255, 255, 255, 0.12);
+    color: #fff;
+    font-size: 0.88rem;
+    padding: 0.45rem 0.9rem;
+    border-radius: 4px;
+}
+
+.nav-link:hover {
+    background: rgba(255, 255, 255, 0.22);
+    color: #fff;
+}
+
+/* Primary horizontal nav (ICN main menu) */
+.tab-navigation {
+    background: var(--ibd-surface);
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    border-bottom: 1px solid var(--ibd-border);
+    position: sticky;
+    top: 0;
+    z-index: 90;
+}
+
+.tab-container {
+    max-width: var(--ibd-max);
+    margin: 0 auto;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 0;
+    background: transparent;
+    border-radius: 0;
+    padding: 0 clamp(0.5rem, 2vw, 1rem);
+}
+
+.tab-button {
+    padding: 0.95rem 1.1rem;
+    font-size: 0.92rem;
+    min-width: auto;
+    border-bottom: 4px solid transparent;
+    border-radius: 0;
+}
+
+.tab-button:hover {
+    background: rgba(153, 51, 204, 0.06);
+    color: var(--ibd-primary);
+}
+
+.tab-button.active {
+    background: transparent;
+    color: var(--ibd-primary);
+    border-bottom-color: var(--ibd-primary);
+    font-weight: 600;
+}
+
+.tab-button.active::after {
+    display: none;
+}
+
+/* Main content column */
+.main-content {
+    background: var(--ibd-surface);
+    max-width: var(--ibd-max);
+    margin: 0 auto;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.tab-content {
+    background: var(--ibd-surface);
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 0;
+    padding: clamp(1.25rem, 3vw, 2rem) clamp(1rem, 3vw, 1.75rem) clamp(2rem, 4vw, 3rem);
+    min-height: 50vh;
+}
+
+/* Hero band (homepage) */
+.hero-section {
+    background: linear-gradient(180deg, rgba(153, 51, 204, 0.07) 0%, var(--ibd-surface) 85%);
+    border-bottom: 1px solid var(--ibd-border);
+    padding: clamp(1.5rem, 4vw, 2.5rem) clamp(1rem, 3vw, 2rem);
+}
+
+.hero-tagline {
+    border-left: 4px solid var(--ibd-primary);
+    border-right: none;
+    border-radius: 0;
+    box-shadow: none;
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: none;
+}
+
+/* Article / news post layout (ICN LOOP-style) */
+.blogs-section {
+    max-width: var(--ibd-max);
+    padding-left: clamp(1rem, 3vw, 1.75rem);
+    padding-right: clamp(1rem, 3vw, 1.75rem);
+}
+
+.blog-post {
+    max-width: var(--ibd-article);
+    margin: 0 auto 2rem;
+    padding: clamp(1rem, 3vw, 2rem) 0 clamp(2rem, 4vw, 3rem);
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.blog-header {
+    border-bottom: none;
+    padding-bottom: 0.35rem;
+    margin-bottom: 1.25rem;
+}
+
+.blog-header--with-thumb .blog-header-thumb {
+    border-radius: 4px;
+}
+
+.blog-title {
+    font-size: clamp(1.65rem, 4vw, 2.15rem);
+    color: var(--ibd-text);
+    line-height: 1.25;
+}
+
+.blog-date {
+    font-style: normal;
+    font-size: 0.95rem;
+    color: var(--ibd-muted);
+    font-weight: 500;
+}
+
+.blog-date::before {
+    content: none;
+}
+
+.blog-content {
+    font-size: 1.05rem;
+}
+
+.blog-content h2 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--ibd-text);
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.35rem;
+    border-bottom: 2px solid rgba(153, 51, 204, 0.2);
+}
+
+.blog-content blockquote,
+.icn-pullquote {
+    margin: 1.75rem 0;
+    padding: 1.15rem 1.25rem 1.15rem 1.5rem;
+    border-left: 5px solid var(--ibd-primary);
+    background: rgba(153, 51, 204, 0.06);
+    font-size: 1.08rem;
+    line-height: 1.65;
+    color: var(--ibd-text);
+    border-radius: 0;
+}
+
+.blog-punchline {
+    border-radius: 0;
+    text-align: left;
+    border-left: 5px solid var(--ibd-primary);
+}
+
+.icn-related-links {
+    margin-top: 2.5rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--ibd-border);
+}
+
+.icn-related-links h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--ibd-muted);
+    margin-bottom: 0.75rem;
+}
+
+.icn-share-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.25rem;
+    align-items: center;
+    margin-top: 2rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--ibd-border);
+    font-size: 0.9rem;
+    color: var(--ibd-muted);
+}
+
+.icn-share-bar strong {
+    color: var(--ibd-text);
+}
+
+/* Static / landing pages */
+.support-section,
+.seo-landing {
+    max-width: var(--ibd-article);
+    margin: 0 auto;
+    padding: clamp(1.5rem, 3vw, 2rem) clamp(1rem, 3vw, 1.5rem) clamp(2.5rem, 5vw, 3.5rem);
+}
+
+.support-section h1,
+.seo-landing h1 {
+    font-size: clamp(1.65rem, 4vw, 2.15rem);
+    color: var(--ibd-text);
+    text-align: left;
+    margin-bottom: 0.75rem;
+}
+
+.support-intro {
+    font-size: 1.05rem;
+    color: var(--ibd-muted);
+    line-height: 1.65;
+}
+
+.seo-landing__block {
+    margin-top: 2rem;
+    padding-top: 0;
+}
+
+.seo-landing__block h2 {
+    font-size: 1.25rem;
+    color: var(--ibd-primary);
+    border-bottom: 2px solid rgba(153, 51, 204, 0.2);
+    padding-bottom: 0.35rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Blog index cards — ICN “Stay in the LOOP” feed feel */
+.blog-index-grid {
+    gap: 1rem;
+}
+
+.blog-card {
+    background: var(--ibd-surface);
+    border-radius: 4px;
+    border: 1px solid var(--ibd-border);
+    border-left: 4px solid var(--ibd-primary);
+}
+
+.blog-card:hover {
+    border-left-color: var(--ibd-secondary);
+}
+
+/* Discovery / feature panels */
+.discovery-dashboard__panel {
+    border: 1px solid var(--ibd-border);
+    border-radius: 4px;
+    box-shadow: none;
+}
+
+/* Footer — ICN link column style */
+.footer {
+    background: #2a2a2a;
+    padding: 0;
+    text-align: left;
+    margin-top: 0;
+}
+
+.footer-content {
+    max-width: var(--ibd-max);
+    margin: 0 auto;
+    padding: clamp(2rem, 4vw, 2.75rem) clamp(1rem, 3vw, 1.75rem);
+}
+
+.footer-links {
+    justify-content: flex-start;
+    gap: 0.5rem 1.5rem;
+    margin-bottom: 1.75rem;
+}
+
+.footer-link {
+    border: none;
+    padding: 0;
+    border-radius: 0;
+    color: #d4b8eb;
+    font-size: 0.92rem;
+    font-weight: 500;
+}
+
+.footer-link:hover {
+    background: transparent;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-content strong {
+    color: #e8d4f5;
+}
+
+.footer-content p {
+    font-size: 0.88rem;
+    color: #b8b8b8;
+}
+
+/* App sub-tabs stay readable under ICN nav */
+.app-subtab-navigation {
+    margin-left: calc(-1 * clamp(1rem, 3vw, 1.75rem));
+    margin-right: calc(-1 * clamp(1rem, 3vw, 1.75rem));
+    padding-left: clamp(1rem, 3vw, 1.75rem);
+    padding-right: clamp(1rem, 3vw, 1.75rem);
+}
+
+@media (max-width: 768px) {
+    .tab-container {
+        justify-content: center;
+    }
+
+    .tab-button {
+        padding: 0.75rem 0.85rem;
+        font-size: 0.85rem;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

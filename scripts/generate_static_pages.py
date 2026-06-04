@@ -7,7 +7,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 from seo_head import breadcrumb_json, render_seo_head, web_page_json  # noqa: E402
-from site_nav import PAGE_SCRIPTS, TAB_NAV_HTML  # noqa: E402
+from site_nav import PAGE_SCRIPTS, SITE_HEADER_STATIC_HTML, TAB_NAV_HTML  # noqa: E402
 
 NAV = TAB_NAV_HTML
 
@@ -34,8 +34,11 @@ SCRIPTS = PAGE_SCRIPTS
 HEAD_ASSETS = """    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/site-layout-icn.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" href="/IBDPal_Logo.png">
+    <link rel="apple-touch-icon" href="/IBDPal_Logo.png">
 """
 
 
@@ -69,17 +72,7 @@ def shell(title: str, description: str, path: str, body: str, active_nav: str = 
 {seo}{HEAD_ASSETS}</head>
 <body>
     <div class="container">
-        <header class="header">
-            <div class="logo">
-                <p class="logo-title"><a href="/" style="color: white; text-decoration: none;">IBDPal</a></p>
-                <span class="tagline">Empowering IBD Patients</span>
-            </div>
-            <nav class="header-nav">
-                <a href="/" class="nav-link">Home</a>
-                <a href="/privacy" class="nav-link">Privacy</a>
-                <a href="/support" class="nav-link">Support</a>
-            </nav>
-        </header>
+{SITE_HEADER_STATIC_HTML}
 {nav}
         <main class="main-content" id="main-content">
 {body}
@@ -284,8 +277,12 @@ def es_page() -> str:
 <body>
     <div class="container">
         <header class="header">
-            <div class="logo"><p class="logo-title"><a href="/" style="color:white;text-decoration:none">IBDPal</a></p>
-            <span class="tagline">Apoyo a pacientes con EII</span></div>
+            <div class="logo">
+                <a href="/" class="logo-brand" aria-label="IBDPal home">
+                    <img src="/IBDPal_Logo.png" alt="IBDPal" class="logo-img" width="180" height="52" decoding="async">
+                </a>
+                <span class="tagline">Apoyo a pacientes con EII</span>
+            </div>
             <nav class="header-nav"><a href="/" class="nav-link">English</a></nav>
         </header>
 {TAB_NAV_HTML}
