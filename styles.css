@@ -1817,6 +1817,93 @@ a.tab-button {
     text-align: center;
 }
 
+/* Blog article feedback (thumbs up / down) */
+.blog-vote {
+    margin-top: 2rem;
+    padding: 1.25rem 1.5rem;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(153, 51, 204, 0.06) 0%, rgba(255, 255, 255, 0.9) 100%);
+    border: 1px solid rgba(153, 51, 204, 0.2);
+    text-align: center;
+}
+
+.blog-vote-prompt {
+    font-weight: 600;
+    color: #9933cc;
+    margin-bottom: 0.85rem;
+    font-size: 1rem;
+}
+
+.blog-vote-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.blog-vote-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.65rem 1.25rem;
+    border-radius: 999px;
+    border: 2px solid #9933cc;
+    background: white;
+    color: #9933cc;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.blog-vote-btn:hover:not(:disabled) {
+    background: #9933cc;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.blog-vote-btn:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.blog-vote-btn--down {
+    border-color: #666;
+    color: #555;
+}
+
+.blog-vote-btn--down:hover:not(:disabled) {
+    background: #555;
+    border-color: #555;
+    color: white;
+}
+
+.blog-vote-icon {
+    font-size: 1.15rem;
+    line-height: 1;
+}
+
+.blog-vote-count {
+    min-width: 1.25rem;
+    font-variant-numeric: tabular-nums;
+}
+
+.blog-vote-status {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.blog-vote-status--error {
+    color: #b3261e;
+}
+
+.blog-vote--voted .blog-vote-btn--up:not(:disabled),
+.blog-vote--voted .blog-vote-btn--down:not(:disabled) {
+    opacity: 1;
+}
+
 .blog-footer {
     border-top: 2px solid #e0e0e0;
     padding-top: 1.5rem;

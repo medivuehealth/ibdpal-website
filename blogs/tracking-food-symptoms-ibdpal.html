@@ -171,6 +171,21 @@
                         <p>This article is for educational purposes only and should not replace professional medical advice, diagnosis, or treatment. Always consult your healthcare provider regarding dietary or medical decisions.</p>
                     </div>
 
+
+                    <div class="blog-vote" data-blog-slug="tracking-food-symptoms-ibdpal">
+                        <p class="blog-vote-prompt">Was this article helpful?</p>
+                        <div class="blog-vote-actions">
+                            <button type="button" class="blog-vote-btn blog-vote-btn--up" data-vote="up" aria-label="Thumbs up, helpful">
+                                <span class="blog-vote-icon" aria-hidden="true">👍</span>
+                                <span class="blog-vote-count" data-vote-count="up">0</span>
+                            </button>
+                            <button type="button" class="blog-vote-btn blog-vote-btn--down" data-vote="down" aria-label="Thumbs down, not helpful">
+                                <span class="blog-vote-icon" aria-hidden="true">👎</span>
+                                <span class="blog-vote-count" data-vote-count="down">0</span>
+                            </button>
+                        </div>
+                        <p class="blog-vote-status" hidden></p>
+                    </div>
                     <div class="blog-footer">
                         <div class="blog-share">
                             <span class="share-label">Share this post:</span>
@@ -202,7 +217,8 @@
         </footer>
     </div>
 
-        <script src="/analytics-config.js"></script>
+        <script src="/blog-votes.js" defer></script>
+    <script src="/analytics-config.js"></script>
     <script src="/analytics.js" defer></script>
     <script src="/script.js"></script>
 </body>
