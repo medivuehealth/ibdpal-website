@@ -35,6 +35,10 @@
     {
       "source": "/blog/tracking-food-symptoms-ibdpal",
       "destination": "/blogs/tracking-food-symptoms-ibdpal.html"
+    },
+    {
+      "source": "/blog/introducing-ibdpal",
+      "destination": "/blogs/introducing-ibdpal.html"
     }
   ],
   "headers": [
