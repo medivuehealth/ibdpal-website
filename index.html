@@ -55,7 +55,7 @@
         <main class="main-content">
             <!-- Overview Tab -->
             <div class="tab-content active" id="overview">
-                <div class="hero-section">
+                <div class="hero-section" data-track-impression="hero" data-track-label="Homepage hero">
                     <h1 class="hero-catchphrase">Complete nutritional intelligence<br>for your IBD journey</h1>
                     <h2 class="hero-tagline">Track <span class="highlight-text">nutrients and micronutrients</span> from daily foods</h2>
                     <h2 class="hero-title">Available at App Store</h2>
@@ -86,7 +86,7 @@
                 </div>
 
 
-                <section class="discovery-dashboard" aria-labelledby="discovery-dashboard-heading">
+                <section class="discovery-dashboard" aria-labelledby="discovery-dashboard-heading" data-track-impression="discovery_dashboard" data-track-label="Organic Discovery Metrics">
                     <div class="discovery-dashboard__panel">
                         <header class="discovery-dashboard__head">
                             <p class="discovery-dashboard__eyebrow">App Store performance</p>
@@ -139,7 +139,7 @@
                 </div>
 
                 <!-- Email Signup -->
-                <div class="signup-section">
+                <div class="signup-section" data-track-impression="email_signup_section" data-track-label="Stay Updated signup">
                     <h3>Stay Updated</h3>
                     <p>Get the latest updates and features for IBDPal</p>
                     <form class="email-form" id="emailForm">
@@ -315,7 +315,7 @@
 
             <!-- Blogs Tab -->
             <div class="tab-content" id="blogs">
-                <div class="blogs-section">
+                <div class="blogs-section" data-track-impression="blogs_index" data-track-label="Blog index cards">
                     <div class="blogs-section-title-row">
                         <img src="/blogs/assets/ibdpal-tracking/ibdpal_app_tracker_1.png" alt="" class="blogs-section-icon" width="64" height="64" decoding="async">
                         <h3>IBDPal Blog</h3>
@@ -474,6 +474,8 @@
         </footer>
     </div>
 
+    <script src="/analytics-config.js"></script>
+    <script src="/analytics.js" defer></script>
     <script src="script.js"></script>
 </body>
 </html>

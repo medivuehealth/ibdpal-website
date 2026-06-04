@@ -17,7 +17,8 @@ document.addEventListener('DOMContentLoaded', function() {
             if (email) {
                 // Show success message
                 showNotification('Thank you! We\'ll notify you when IBDPal launches.', 'success');
-                
+                document.dispatchEvent(new CustomEvent('ibdpal:email_signup'));
+
                 // Clear form
                 document.getElementById('email').value = '';
             }
@@ -55,6 +56,8 @@ function initializeTabNavigation() {
                 : `${window.location.pathname}#${targetTab}`;
             window.history.pushState({ tab: targetTab }, '', newURL);
         }
+
+        document.dispatchEvent(new CustomEvent('ibdpal:tab', { detail: { tab: targetTab } }));
     }
     
     // Handle tab button clicks
