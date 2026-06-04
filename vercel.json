@@ -22,6 +22,58 @@
       "destination": "/ibd-crohns-support.html"
     },
     {
+      "source": "/newly-diagnosed",
+      "destination": "/newly-diagnosed.html"
+    },
+    {
+      "source": "/visit-prep",
+      "destination": "/visit-prep.html"
+    },
+    {
+      "source": "/resources",
+      "destination": "/resources.html"
+    },
+    {
+      "source": "/patient-stories",
+      "destination": "/patient-stories.html"
+    },
+    {
+      "source": "/clinical-partnerships",
+      "destination": "/clinical-partnerships.html"
+    },
+    {
+      "source": "/pediatric-caregivers",
+      "destination": "/pediatric-caregivers.html"
+    },
+    {
+      "source": "/for-clinicians",
+      "destination": "/for-clinicians.html"
+    },
+    {
+      "source": "/es/recursos",
+      "destination": "/es/recursos.html"
+    },
+    {
+      "source": "/blog/workplace-school-ibd-rights",
+      "destination": "/blogs/workplace-school-ibd-rights.html"
+    },
+    {
+      "source": "/blog/insurance-biologics-ibd",
+      "destination": "/blogs/insurance-biologics-ibd.html"
+    },
+    {
+      "source": "/blog/ostomy-basics-ibd",
+      "destination": "/blogs/ostomy-basics-ibd.html"
+    },
+    {
+      "source": "/blog/flare-first-48-hours",
+      "destination": "/blogs/flare-first-48-hours.html"
+    },
+    {
+      "source": "/blog/partner-caregiver-ibd",
+      "destination": "/blogs/partner-caregiver-ibd.html"
+    },
+    {
       "source": "/blog/best-foods-crohns-flare",
       "destination": "/blogs/best-foods-crohns-flare.html"
     },

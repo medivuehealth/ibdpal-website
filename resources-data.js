@@ -1,0 +1,35 @@
+/**
+ * Filterable patient resource library (education links + site content).
+ */
+window.IBDPAL_RESOURCES = [
+  { title: 'IBD Crohn\'s Support Guide', category: 'community', type: 'site', url: '/ibd-crohns-support', tags: ['support', 'national'] },
+  { title: 'Newly Diagnosed with IBD', category: 'getting-started', type: 'site', url: '/newly-diagnosed', tags: ['crohn', 'colitis', 'beginner'] },
+  { title: 'Doctor Visit Prep Checklist', category: 'getting-started', type: 'site', url: '/visit-prep', tags: ['clinic', 'printable'] },
+  { title: 'Community Map by State', category: 'community', type: 'site', url: '/#community', tags: ['local', 'map'] },
+  { title: 'Pediatric & Caregiver Hub', category: 'family', type: 'site', url: '/pediatric-caregivers', tags: ['kids', 'parents'] },
+  { title: 'Patient Stories', category: 'community', type: 'site', url: '/patient-stories', tags: ['peer'] },
+  { title: 'For Clinicians — Visit Summaries', category: 'clinical', type: 'site', url: '/for-clinicians', tags: ['export', 'doctor'] },
+  { title: 'Clinical Partnerships', category: 'clinical', type: 'site', url: '/clinical-partnerships', tags: ['hospital'] },
+  { title: 'CCF IBD Help Center', category: 'community', type: 'external', url: 'https://www.crohnscolitisfoundation.org/live-full/live-full-ibd-help-center', tags: ['helpline', 'national'] },
+  { title: 'CCF Find a Support Group', category: 'community', type: 'external', url: 'https://www.crohnscolitisfoundation.org/find-a-support-group', tags: ['peer'] },
+  { title: 'ImproveCareNow Families', category: 'family', type: 'external', url: 'https://www.improvecarenow.org/patients-parents', tags: ['pediatric'] },
+  { title: 'GIKids', category: 'family', type: 'external', url: 'https://gikids.org/', tags: ['pediatric'] },
+  { title: 'UOAA Ostomy Support', category: 'community', type: 'external', url: 'https://ostomy.org/', tags: ['ostomy'] },
+  { title: 'Best Foods During a Crohn\'s Flare', category: 'nutrition', type: 'blog', url: '/blog/best-foods-crohns-flare', tags: ['food', 'flare'] },
+  { title: 'Low-Residue Diet During a Flare', category: 'nutrition', type: 'blog', url: '/blog/low-residue-diet-flare', tags: ['food', 'flare'] },
+  { title: 'Foods That May Trigger UC Symptoms', category: 'nutrition', type: 'blog', url: '/blog/foods-that-may-trigger-uc-symptoms', tags: ['food'] },
+  { title: 'Hydration Tips for IBD', category: 'nutrition', type: 'blog', url: '/blog/hydration-tips-ibd', tags: ['hydration'] },
+  { title: 'How Nutrition Impacts Gut Health', category: 'nutrition', type: 'blog', url: '/blog/how-nutrition-impacts-gut-health-ibd', tags: ['food'] },
+  { title: 'Flare First 48 Hours', category: 'wellness', type: 'blog', url: '/blog/flare-first-48-hours', tags: ['flare', 'urgent'] },
+  { title: 'Workplace & School Rights with IBD', category: 'wellness', type: 'blog', url: '/blog/workplace-school-ibd-rights', tags: ['ada', '504'] },
+  { title: 'Insurance & Biologics (Overview)', category: 'treatment', type: 'blog', url: '/blog/insurance-biologics-ibd', tags: ['insurance'] },
+  { title: 'Living With an Ostomy', category: 'wellness', type: 'blog', url: '/blog/ostomy-basics-ibd', tags: ['ostomy'] },
+  { title: 'Partner & Caregiver Guide', category: 'family', type: 'blog', url: '/blog/partner-caregiver-ibd', tags: ['caregiver'] },
+  { title: 'Understanding Biologics', category: 'treatment', type: 'blog', url: '/blog/understanding-biologics-ibd', tags: ['medication'] },
+  { title: 'Travel With IBD', category: 'wellness', type: 'blog', url: '/blog/travel-with-ibd', tags: ['travel'] },
+  { title: 'Stress, Mood, and IBD', category: 'wellness', type: 'blog', url: '/blog/stress-emotional-wellness-ibd', tags: ['mental health'] },
+  { title: 'Sleep and Rest During Flares', category: 'wellness', type: 'blog', url: '/blog/sleep-rest-ibd-flares', tags: ['sleep'] },
+  { title: 'Living With IBD as a Family', category: 'family', type: 'blog', url: '/blog/living-with-ibd-kids', tags: ['kids'] },
+  { title: 'Introducing IBDPal', category: 'getting-started', type: 'blog', url: '/blog/introducing-ibdpal', tags: ['app'] },
+  { title: 'Recursos en español', category: 'community', type: 'site', url: '/es/recursos', tags: ['spanish'] }
+];

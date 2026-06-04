@@ -10,6 +10,7 @@
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <link rel="canonical" href="https://ibdpal.org/">
     <link rel="alternate" type="text/plain" title="LLM summary (llms.txt)" href="https://ibdpal.org/llms.txt">
+    <link rel="alternate" hreflang="es" href="https://ibdpal.org/es/recursos">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ibdpal.org/">
     <meta property="og:title" content="IBDPal — IBD &amp; Crohn's Support, Nutrition App">
@@ -44,6 +45,7 @@
             <div class="tab-container">
                 <button class="tab-button active" data-tab="overview">Overview</button>
                 <button class="tab-button" data-tab="app">IBDPal App</button>
+                <button class="tab-button" data-tab="resources">Resources</button>
                 <button class="tab-button" data-tab="blogs">Blogs</button>
                 <button class="tab-button" data-tab="community">Community</button>
                 <button class="tab-button" data-tab="contact">Contact</button>
@@ -137,6 +139,13 @@
                     </div>
                 </div>
 
+                <div class="overview-quick-links" aria-label="Patient tools">
+                    <a href="/newly-diagnosed" class="overview-quick-links__card">Newly diagnosed</a>
+                    <a href="/visit-prep" class="overview-quick-links__card">Visit prep</a>
+                    <a href="/#resources" class="overview-quick-links__card">Resource library</a>
+                    <a href="/#community" class="overview-quick-links__card">Community map</a>
+                </div>
+
                 <!-- Email Signup -->
                 <div class="signup-section" data-track-impression="email_signup_section" data-track-label="Stay Updated signup">
                     <h3>Stay Updated</h3>
@@ -161,6 +170,14 @@
                         <button type="button" class="app-subtab-button" data-app-subtab="research">Research</button>
                     </div>
                 </nav>
+                <p class="app-deep-links app-deep-links--bar" aria-label="App sections">
+                    <span>In the iOS app:</span>
+                    <a href="/#app">Home</a> ·
+                    <a href="/#app" data-app-subtab-link="features">Daily Log</a> ·
+                    <a href="/#app" data-app-subtab-link="screenshots">Trends</a> ·
+                    <a href="/#app" data-app-subtab-link="research">Insights</a> ·
+                    <a href="/for-clinicians">Export for visits</a>
+                </p>
 
                 <div class="app-subcontent active" id="features">
                 <div class="features-section">
@@ -195,6 +212,16 @@
                             <div class="feature-icon">🤝</div>
                             <h4>Community Support</h4>
                             <p>Connect with fellow IBD patients, share success stories, and access peer support through our integrated community platform for encouragement and shared experiences</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">⏰</div>
+                            <h4>Medication &amp; Appointment Reminders</h4>
+                            <p>Set notifications for biologics, infusions, oral medications, and follow-up visits so doses and clinic days are less likely to slip during busy weeks</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">📄</div>
+                            <h4>Clinic Visit Summaries</h4>
+                            <p>Export PDF or CSV summaries of nutrition, symptoms, and trends to share with your gastroenterologist—patient-entered data for shared decision-making</p>
                         </div>
                     </div>
                 </div>
@@ -320,6 +347,33 @@
                 </div>
             </div>
 
+            <!-- Resources Tab -->
+            <div class="tab-content" id="resources">
+                <div class="resources-hub" data-resource-library>
+                    <h2 class="resources-hub__title">Patient Resource Library</h2>
+                    <p class="community-section__lead">Tools, articles, and trusted links for Crohn's disease and ulcerative colitis. <a href="/newly-diagnosed">Newly diagnosed?</a> Start here.</p>
+                    <div class="resource-library__toolbar">
+                        <label>Category
+                            <select class="resource-library__filter" aria-label="Filter by category">
+                                <option value="">All</option>
+                                <option value="getting-started">Getting started</option>
+                                <option value="community">Community</option>
+                                <option value="nutrition">Nutrition</option>
+                                <option value="wellness">Wellness</option>
+                                <option value="treatment">Treatment</option>
+                                <option value="family">Family</option>
+                                <option value="clinical">Clinical</option>
+                            </select>
+                        </label>
+                        <label>Search
+                            <input type="search" class="resource-library__search" placeholder="flare, school, ostomy…" aria-label="Search resources">
+                        </label>
+                    </div>
+                    <div class="resource-library__grid"></div>
+                    <p class="resources-hub__more"><a href="/resources">Open full resource library page →</a> · <a href="/visit-prep">Visit prep checklist</a> · <a href="/es/recursos">Recursos en español</a></p>
+                </div>
+            </div>
+
             <!-- Blogs Tab -->
             <div class="tab-content" id="blogs">
                 <div class="blogs-section" data-track-impression="blogs_index" data-track-label="Blog index cards">
@@ -328,6 +382,36 @@
                         <h3>IBDPal Blog</h3>
                     </div>
                     <div class="blog-index-grid">
+                        <a href="/blog/flare-first-48-hours" class="blog-card">
+                            <img src="/blogs/assets/flare-48h/flare_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-meta">Wellness · June 2026</span>
+                            <h4>First 48 Hours of an IBD Flare</h4>
+                            <p>A calm checklist for hydration, rest, and when to call your team.</p>
+                        </a>
+                        <a href="/blog/workplace-school-ibd-rights" class="blog-card">
+                            <img src="/blogs/assets/workplace-school/workplace_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-meta">Wellness · June 2026</span>
+                            <h4>Workplace &amp; School Rights with IBD</h4>
+                            <p>ADA accommodations and 504 plans—education only.</p>
+                        </a>
+                        <a href="/blog/insurance-biologics-ibd" class="blog-card">
+                            <img src="/blogs/assets/insurance-basics/insurance_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-meta">Treatment · June 2026</span>
+                            <h4>Insurance &amp; Biologics Overview</h4>
+                            <p>Prior auth, appeals, and questions for your clinic.</p>
+                        </a>
+                        <a href="/blog/ostomy-basics-ibd" class="blog-card">
+                            <img src="/blogs/assets/ostomy-basics/ostomy_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-meta">Wellness · June 2026</span>
+                            <h4>Living With an Ostomy</h4>
+                            <p>Gentle basics and peer support links.</p>
+                        </a>
+                        <a href="/blog/partner-caregiver-ibd" class="blog-card">
+                            <img src="/blogs/assets/caregiver-partner/caregiver_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-meta">Family · June 2026</span>
+                            <h4>Partner &amp; Caregiver Guide</h4>
+                            <p>Supporting someone with IBD without taking over care.</p>
+                        </a>
                         <a href="/blog/sleep-rest-ibd-flares" class="blog-card">
                             <img src="/blogs/assets/sleep-rest/sleep_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
                             <span class="blog-card-meta">Wellness · June 2026</span>
@@ -418,6 +502,13 @@
                         <p class="community-edu-disclaimer"><strong>Directory only.</strong> IBDPal does not provide medical advice. Contact information may change; confirm details on each organization’s website.</p>
                     </div>
 
+                    <div class="community-zip-row">
+                        <label class="community-select-label" for="community-zip-input">Find help near you (U.S. ZIP)</label>
+                        <div class="community-zip-controls">
+                            <input type="text" id="community-zip-input" class="community-zip-input" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" placeholder="e.g. 27514" aria-label="5-digit ZIP code">
+                            <button type="button" id="community-zip-btn" class="community-zip-btn">Find state</button>
+                        </div>
+                    </div>
                     <div class="community-layout">
                         <div class="community-map-panel">
                             <label class="community-select-label" for="community-state-select">Jump to a state</label>
@@ -448,7 +539,11 @@
             <div class="footer-content">
                 <!-- Legal Links -->
                 <div class="footer-links">
+                    <a href="/newly-diagnosed" class="footer-link">Newly Diagnosed</a>
                     <a href="/ibd-crohns-support" class="footer-link">IBD Crohn's Support</a>
+                    <a href="/resources" class="footer-link">Resources</a>
+                    <a href="/patient-stories" class="footer-link">Stories</a>
+                    <a href="/for-clinicians" class="footer-link">For Clinicians</a>
                     <a href="/privacy" class="footer-link">Privacy Policy</a>
                     <a href="/support" class="footer-link">App Support</a>
                     <a href="/terms" class="footer-link">Terms of Service</a>
@@ -468,7 +563,12 @@
     <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js" defer></script>
     <script src="/community-data.js" defer></script>
+    <script src="/community-states-extra.js" defer></script>
+    <script src="/community-zip-loader.js" defer></script>
     <script src="/community-map.js" defer></script>
+    <script src="/resources-data.js" defer></script>
+    <script src="/resource-library.js" defer></script>
+    <script src="/site-global.js" defer></script>
     <script src="/analytics-config.js"></script>
     <script src="/analytics.js" defer></script>
     <script src="script.js"></script>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBD Resource Library | IBDPal</title>
+    <meta name="description" content="Search and filter IBD education: nutrition, support, treatment basics, family resources, and IBDPal tools.">
+    <link rel="canonical" href="https://ibdpal.org/resources">
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="alternate" hreflang="es" href="https://ibdpal.org/es/recursos">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <h1><a href="/" style="color: white; text-decoration: none;">IBDPal</a></h1>
+                <span class="tagline">Empowering IBD Patients</span>
+            </div>
+            <nav class="header-nav">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/privacy" class="nav-link">Privacy</a>
+                <a href="/support" class="nav-link">Support</a>
+            </nav>
+        </header>
+
+        <nav class="tab-navigation">
+            <div class="tab-container">
+                <a href="/#overview" class="tab-button">Overview</a>
+                <a href="/#app" class="tab-button">IBDPal App</a>
+                <a href="/#resources" class="tab-button active">Resources</a>
+                <a href="/#blogs" class="tab-button">Blogs</a>
+                <a href="/#community" class="tab-button">Community</a>
+                <a href="/#contact" class="tab-button">Contact</a>
+            </div>
+        </nav>
+
+        <main class="main-content" id="main-content">
+
+            <div class="resources-page" data-resource-library>
+                <h1>IBD Resource Library</h1>
+                <p class="support-intro">Filter trusted articles and tools. External links open in a new tab.</p>
+                <div class="resource-library__toolbar">
+                    <label>Category <select class="resource-library__filter" aria-label="Filter by category">
+                        <option value="">All</option>
+                        <option value="getting-started">Getting started</option>
+                        <option value="community">Community</option>
+                        <option value="nutrition">Nutrition</option>
+                        <option value="wellness">Wellness</option>
+                        <option value="treatment">Treatment</option>
+                        <option value="family">Family</option>
+                        <option value="clinical">Clinical</option>
+                    </select></label>
+                    <label>Search <input type="search" class="resource-library__search" placeholder="e.g. flare, school, ostomy" aria-label="Search resources"></label>
+                </div>
+                <div class="resource-library__grid"></div>
+            </div>
+            <script src="/resources-data.js"></script>
+            <script src="/resource-library.js" defer></script>
+        
+        </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="/ibd-crohns-support" class="footer-link">IBD Crohn's Support</a>
+                    <a href="/resources" class="footer-link">Resource Library</a>
+                    <a href="/newly-diagnosed" class="footer-link">Newly Diagnosed</a>
+                    <a href="/privacy" class="footer-link">Privacy Policy</a>
+                    <a href="/support" class="footer-link">App Support</a>
+                    <a href="/es/recursos" class="footer-link">Español</a>
+                </div>
+                <p><strong>IBDPal</strong> — MediVue nonprofit · Education only, not medical advice.</p>
+                <p>&copy; 2025 MediVue. All rights reserved.</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="/site-global.js" defer></script>
+    <script src="/analytics-config.js"></script>
+    <script src="/analytics.js" defer></script>
+
+</body>
+</html>

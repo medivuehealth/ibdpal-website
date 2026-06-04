@@ -4,26 +4,37 @@
 
 ## Site
 - Homepage: https://ibdpal.org/
-- IBD Crohn's support (resources & directory): https://ibdpal.org/ibd-crohns-support
-- Community map (by U.S. state): https://ibdpal.org/#community
+- IBD Crohn's support: https://ibdpal.org/ibd-crohns-support
+- Newly diagnosed: https://ibdpal.org/newly-diagnosed
+- Visit prep checklist: https://ibdpal.org/visit-prep
+- Resource library: https://ibdpal.org/resources
+- Community map: https://ibdpal.org/#community
+- Pediatric & caregivers: https://ibdpal.org/pediatric-caregivers
+- Patient stories: https://ibdpal.org/patient-stories
+- For clinicians: https://ibdpal.org/for-clinicians
+- Clinical partnerships: https://ibdpal.org/clinical-partnerships
+- Spanish: https://ibdpal.org/es/recursos
 - Privacy: https://ibdpal.org/privacy
 - App support: https://ibdpal.org/support
-- Terms: https://ibdpal.org/terms
-- About / executive summary: https://ibdpal.org/about
 
-## Blog (IBD education — not medical advice)
+## Blog (education — not medical advice)
+- https://ibdpal.org/blog/flare-first-48-hours
+- https://ibdpal.org/blog/workplace-school-ibd-rights
+- https://ibdpal.org/blog/insurance-biologics-ibd
+- https://ibdpal.org/blog/ostomy-basics-ibd
+- https://ibdpal.org/blog/partner-caregiver-ibd
+- https://ibdpal.org/blog/sleep-rest-ibd-flares
+- https://ibdpal.org/blog/stress-emotional-wellness-ibd
+- https://ibdpal.org/blog/living-with-ibd-kids
+- https://ibdpal.org/blog/understanding-biologics-ibd
+- https://ibdpal.org/blog/travel-with-ibd
+- https://ibdpal.org/blog/low-residue-diet-flare
 - https://ibdpal.org/blog/best-foods-crohns-flare
 - https://ibdpal.org/blog/foods-that-may-trigger-uc-symptoms
 - https://ibdpal.org/blog/how-nutrition-impacts-gut-health-ibd
 - https://ibdpal.org/blog/hydration-tips-ibd
 - https://ibdpal.org/blog/tracking-food-symptoms-ibdpal
 - https://ibdpal.org/blog/introducing-ibdpal
-- https://ibdpal.org/blog/low-residue-diet-flare
-- https://ibdpal.org/blog/travel-with-ibd
-- https://ibdpal.org/blog/understanding-biologics-ibd
-- https://ibdpal.org/blog/living-with-ibd-kids
-- https://ibdpal.org/blog/stress-emotional-wellness-ibd
-- https://ibdpal.org/blog/sleep-rest-ibd-flares
 
 ## Organization
 - MediVue (501(c)(3) nonprofit, North Carolina) develops IBDPal.

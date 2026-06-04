@@ -1,6 +1,6 @@
 // IBDPal Website JavaScript
 
-var IBDPAL_MAIN_TABS = ['overview', 'app', 'blogs', 'community', 'contact'];
+var IBDPAL_MAIN_TABS = ['overview', 'app', 'resources', 'blogs', 'community', 'contact'];
 var IBDPAL_APP_SUBTABS = ['features', 'how-it-works', 'screenshots', 'research'];
 var IBDPAL_DEFAULT_APP_SUBTAB = 'features';
 
@@ -117,6 +117,15 @@ function initializeTabNavigation() {
     var hash = window.location.hash.substring(1);
     var initial = resolveTabFromHash(hash);
     switchMainTab(initial.main, initial.sub, false);
+
+    document.querySelectorAll('[data-app-subtab-link]').forEach(function (link) {
+        link.addEventListener('click', function (e) {
+            var sub = link.getAttribute('data-app-subtab-link');
+            if (!sub) return;
+            e.preventDefault();
+            switchMainTab('app', sub, true);
+        });
+    });
 }
 
 function showNotification(message, type) {

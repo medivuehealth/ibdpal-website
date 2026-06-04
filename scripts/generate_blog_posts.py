@@ -365,6 +365,9 @@ def render_post(p: dict) -> str:
     }
     ld_json = json.dumps(ld, separators=(",", ":"))
     disclaimer = (
+        '                        <p class="blog-medical-review"><strong>Content note:</strong> '
+        "Based on publicly available guidance from the Crohn's &amp; Colitis Foundation and "
+        "general IBD patient-education sources. Last reviewed June 2026. Not individual medical advice.</p>\n"
         '                        <p class="blog-edu-disclaimer"><strong>Educational use only.</strong> '
         "This article is general information and not medical advice. Always work with your healthcare team "
         "for diagnosis, treatment, and personal decisions.</p>\n"
@@ -418,6 +421,7 @@ def render_post(p: dict) -> str:
             <div class="tab-container">
                 <a href="/#overview" class="tab-button">Overview</a>
                 <a href="/#app" class="tab-button">IBDPal App</a>
+                <a href="/#resources" class="tab-button">Resources</a>
                 <a href="/#blogs" class="tab-button active">Blogs</a>
                 <a href="/#community" class="tab-button">Community</a>
                 <a href="/#contact" class="tab-button">Contact</a>

@@ -131,6 +131,38 @@
     }
   }
 
+  function lookupZip(zip) {
+    var prefix = String(zip).replace(/\D/g, '').slice(0, 3);
+    if (prefix.length < 3) return null;
+    return window.IBDPAL_ZIP_PREFIX && window.IBDPAL_ZIP_PREFIX[prefix];
+  }
+
+  function buildZipSearch() {
+    var input = document.getElementById('community-zip-input');
+    var btn = document.getElementById('community-zip-btn');
+    if (!input || !btn) return;
+    function go() {
+      var abbr = lookupZip(input.value);
+      if (abbr) {
+        renderPanel(abbr);
+        input.setAttribute('aria-invalid', 'false');
+      } else {
+        input.setAttribute('aria-invalid', 'true');
+        var panel = document.getElementById('community-detail');
+        if (panel) {
+          panel.innerHTML = '<p class="community-detail__intro">Enter a valid 5-digit U.S. ZIP code to jump to your state.</p>';
+        }
+      }
+    }
+    btn.addEventListener('click', go);
+    input.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        go();
+      }
+    });
+  }
+
   function buildStateSelect() {
     var select = document.getElementById('community-state-select');
     if (!select) return;
@@ -218,6 +250,7 @@
 
   function init() {
     buildStateSelect();
+    buildZipSearch();
     whenLibsReady(buildMap);
   }
 
