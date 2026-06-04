@@ -496,6 +496,15 @@ body {
     padding-right: var(--ibd-content-pad);
 }
 
+#app .app-subtab-button {
+    font-size: 1.1rem;
+}
+
+#app .app-deep-links--bar,
+#app .app-deep-links--bar a {
+    font-size: 1.05rem;
+}
+
 /* Homepage sections — use horizontal space */
 .discovery-dashboard,
 .community-section,

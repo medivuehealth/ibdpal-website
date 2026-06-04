@@ -162,8 +162,8 @@ a.tab-button {
     background: #ffffff;
     border: none;
     border-bottom: 3px solid transparent;
-    padding: 0.65rem 1.1rem;
-    font-size: 0.88rem;
+    padding: 0.8rem 1.35rem;
+    font-size: 1.1rem;
     font-weight: 600;
     color: #333;
     cursor: pointer;
@@ -2478,15 +2478,22 @@ input:focus-visible {
 .app-deep-links--bar {
     background: #fafafa;
     border-bottom: 1px solid #eee;
-    padding: 0.5rem 1rem;
-    font-size: 0.85rem;
+    padding: 0.65rem 1rem;
+    font-size: 1.05rem;
     margin: 0;
     text-align: center;
+    line-height: 1.5;
+}
+
+.app-deep-links--bar > span {
+    font-weight: 600;
+    color: #333;
 }
 
 .app-deep-links a {
     color: #9933cc;
     font-weight: 600;
+    font-size: 1.05rem;
 }
 
 .blog-medical-review {
