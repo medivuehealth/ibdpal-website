@@ -89,6 +89,39 @@
         document.head.appendChild(script);
     }
 
+    var HOME_MAIN_TABS = ['overview', 'app', 'resources', 'blogs', 'community', 'contact'];
+    var APP_SUBTABS = ['features', 'how-it-works', 'screenshots', 'research'];
+
+    function tabIdFromNavTarget(anchor) {
+        if (!anchor) return null;
+        var dataTab = anchor.getAttribute('data-tab');
+        if (dataTab) return dataTab;
+        var href = anchor.getAttribute('href') || '';
+        var hashIndex = href.indexOf('#');
+        if (hashIndex === -1) return null;
+        var hash = href.substring(hashIndex + 1).split('?')[0];
+        if (!hash) return null;
+        var beforeHash = href.substring(0, hashIndex);
+        if (beforeHash && beforeHash !== '/' && beforeHash.indexOf('ibdpal.org') === -1) {
+            return null;
+        }
+        return hash;
+    }
+
+    function trackTabViewFromNav(tabId, source, anchor) {
+        if (!tabId) return;
+        var mainTab = HOME_MAIN_TABS.indexOf(tabId) !== -1 ? tabId
+            : (APP_SUBTABS.indexOf(tabId) !== -1 ? 'app' : null);
+        if (!mainTab && APP_SUBTABS.indexOf(tabId) === -1) return;
+        trackEvent('tab_view', {
+            tab_id: mainTab || 'app',
+            sub_tab_id: APP_SUBTABS.indexOf(tabId) !== -1 ? tabId : undefined,
+            navigation_source: source,
+            link_text: anchor ? (anchor.textContent || '').trim().slice(0, 120) : undefined,
+            page_path: window.location.pathname + '#' + tabId
+        });
+    }
+
     function linkCategory(anchor) {
         if (anchor.classList.contains('tab-button')) return 'tab_nav';
         if (anchor.closest('.blog-card')) return 'blog_card';
@@ -108,23 +141,32 @@
             var href = anchor.getAttribute('href') || '';
             var isExternal = href.indexOf('http') === 0 &&
                 href.indexOf(window.location.hostname) === -1;
+            var navTab = anchor.classList.contains('tab-button') ? tabIdFromNavTarget(anchor) : null;
             trackEvent('click', {
                 link_url: href,
                 link_text: (anchor.textContent || '').trim().slice(0, 120),
                 link_category: linkCategory(anchor),
                 outbound: isExternal ? 'true' : 'false',
                 element_id: anchor.id || undefined,
-                data_tab: anchor.getAttribute('data-tab') || undefined
+                data_tab: navTab || anchor.getAttribute('data-tab') || undefined
             });
+            if (navTab) {
+                trackTabViewFromNav(navTab, 'static_nav_link', anchor);
+            }
             return;
         }
 
         if (button && button.classList.contains('tab-button')) {
+            var btnTab = tabIdFromNavTarget(button) || button.getAttribute('data-tab');
             trackEvent('click', {
                 link_category: 'tab_button',
                 link_text: (button.textContent || '').trim().slice(0, 120),
-                data_tab: button.getAttribute('data-tab') || undefined
+                data_tab: btnTab || undefined
             });
+            /* Homepage uses <button> + ibdpal:tab; avoid duplicate tab_view */
+            if (btnTab && window.location.pathname !== '/' && window.location.pathname !== '/index.html') {
+                trackTabViewFromNav(btnTab, 'static_tab_button', button);
+            }
         }
     }
 
@@ -144,7 +186,9 @@
             if (!tab) return;
             trackEvent('tab_view', {
                 tab_id: tab,
-                page_path: window.location.pathname + '#' + tab
+                sub_tab_id: e.detail.subTab || undefined,
+                navigation_source: 'homepage_tab_event',
+                page_path: window.location.pathname + '#' + (e.detail.subTab || tab)
             });
         });
     }

@@ -32,7 +32,7 @@ In GA4: **Reports → Engagement → Events** for `click`, `tab_view`, `section_
 |--------|------|
 | `page_view` | Each page load |
 | `click` | Links, tab buttons, blog cards, footer, header |
-| `tab_view` | Homepage tab change (Overview, Features, Blogs, …) |
+| `tab_view` | Homepage tab change (`ibdpal:tab` event) or main nav on static pages (`.tab-button` with `data-tab` / `/#…` links) |
 | `section_impression` | Section scrolls into view (≥35% visible) |
 | `email_signup` | Notify Me form submitted on homepage |
 
@@ -48,4 +48,6 @@ Update your [Privacy Policy](/privacy) to mention anonymous website analytics (V
 
 - `analytics-config.js` — turn Vercel/GA4 on or off, set GA4 ID
 - `analytics.js` — tracking implementation
+- `scripts/site_nav.py` — shared tab nav (`data-tab`) + `PAGE_SCRIPTS` for generators
+- `scripts/generate_static_pages.py` / `generate_blog_posts.py` — inject nav + analytics so new pages never miss scripts
 - Included on all public HTML pages before `script.js`

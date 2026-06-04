@@ -34,7 +34,19 @@
             <span class="tagline">Apoyo a pacientes con EII</span></div>
             <nav class="header-nav"><a href="/" class="nav-link">English</a></nav>
         </header>
-        <main class="main-content" id="main-content">
+
+        <nav class="tab-navigation">
+            <div class="tab-container">
+                <a href="/#overview" class="tab-button" data-tab="overview">Overview</a>
+                <a href="/#app" class="tab-button" data-tab="app">IBDPal App</a>
+                <a href="/#resources" class="tab-button" data-tab="resources">Resources</a>
+                <a href="/#blogs" class="tab-button" data-tab="blogs">Blogs</a>
+                <a href="/#community" class="tab-button" data-tab="community">Community</a>
+                <a href="/#contact" class="tab-button" data-tab="contact">Contact</a>
+            </div>
+        </nav>
+
+        <main class="main-content" id="main-content" data-track-impression="page_main" data-track-label="Spanish resources">
             <article class="support-section">
                 <h1>Recursos para EII y Crohn</h1>
                 <p>IBDPal ofrece una aplicación gratuita y artículos educativos. <strong>No sustituye la atención médica.</strong></p>
@@ -50,6 +62,10 @@
         </main>
         <footer class="footer"><div class="footer-content"><p>&copy; 2025 MediVue · <a href="/">ibdpal.org</a></p></div></footer>
     </div>
+
     <script src="/site-global.js" defer></script>
+    <script src="/analytics-config.js"></script>
+    <script src="/analytics.js" defer></script>
+
 </body>
 </html>

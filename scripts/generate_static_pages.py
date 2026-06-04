@@ -7,19 +7,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 from seo_head import breadcrumb_json, render_seo_head, web_page_json  # noqa: E402
+from site_nav import PAGE_SCRIPTS, TAB_NAV_HTML  # noqa: E402
 
-NAV = """
-        <nav class="tab-navigation">
-            <div class="tab-container">
-                <a href="/#overview" class="tab-button">Overview</a>
-                <a href="/#app" class="tab-button">IBDPal App</a>
-                <a href="/#resources" class="tab-button">Resources</a>
-                <a href="/#blogs" class="tab-button">Blogs</a>
-                <a href="/#community" class="tab-button">Community</a>
-                <a href="/#contact" class="tab-button">Contact</a>
-            </div>
-        </nav>
-"""
+NAV = TAB_NAV_HTML
 
 FOOTER = """
         <footer class="footer">
@@ -39,11 +29,7 @@ FOOTER = """
         </footer>
 """
 
-SCRIPTS = """
-    <script src="/site-global.js" defer></script>
-    <script src="/analytics-config.js"></script>
-    <script src="/analytics.js" defer></script>
-"""
+SCRIPTS = PAGE_SCRIPTS
 
 HEAD_ASSETS = """    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -302,7 +288,8 @@ def es_page() -> str:
             <span class="tagline">Apoyo a pacientes con EII</span></div>
             <nav class="header-nav"><a href="/" class="nav-link">English</a></nav>
         </header>
-        <main class="main-content" id="main-content">
+{TAB_NAV_HTML}
+        <main class="main-content" id="main-content" data-track-impression="page_main" data-track-label="Spanish resources">
             <article class="support-section">
                 <h1>Recursos para EII y Crohn</h1>
                 <p>IBDPal ofrece una aplicación gratuita y artículos educativos. <strong>No sustituye la atención médica.</strong></p>
@@ -318,7 +305,7 @@ def es_page() -> str:
         </main>
         <footer class="footer"><div class="footer-content"><p>&copy; 2025 MediVue · <a href="/">ibdpal.org</a></p></div></footer>
     </div>
-    <script src="/site-global.js" defer></script>
+{PAGE_SCRIPTS}
 </body>
 </html>
 """

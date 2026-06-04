@@ -7,10 +7,13 @@ or Pexels CDN — not unsplash.com/photos/{slug}/download (returns HTML).
 from __future__ import annotations
 import html
 import json
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 BLOGS = ROOT / "blogs"
+sys.path.insert(0, str(ROOT / "scripts"))
+from site_nav import PAGE_SCRIPTS, TAB_NAV_HTML  # noqa: E402
 
 POSTS = [
     {
@@ -420,7 +423,7 @@ def render_post(p: dict) -> str:
     <div class="app-container">
         <header class="header">
             <div class="logo">
-                <h1><a href="/" style="color: white; text-decoration: none;">IBDPal</a></h1>
+                <p class="logo-title"><a href="/" style="color: white; text-decoration: none;">IBDPal</a></p>
                 <span class="tagline">Empowering IBD Patients</span>
             </div>
             <nav class="header-nav">
@@ -429,16 +432,7 @@ def render_post(p: dict) -> str:
             </nav>
         </header>
 
-        <nav class="tab-navigation">
-            <div class="tab-container">
-                <a href="/#overview" class="tab-button">Overview</a>
-                <a href="/#app" class="tab-button">IBDPal App</a>
-                <a href="/#resources" class="tab-button">Resources</a>
-                <a href="/#blogs" class="tab-button active">Blogs</a>
-                <a href="/#community" class="tab-button">Community</a>
-                <a href="/#contact" class="tab-button">Contact</a>
-            </div>
-        </nav>
+{TAB_NAV_HTML.replace('class="tab-button" data-tab="blogs"', 'class="tab-button active" data-tab="blogs"', 1)}
 
         <main class="main-content" data-track-impression="blog_article" data-track-label="Blog article body">
             <div class="blogs-section">
@@ -506,8 +500,7 @@ def render_post(p: dict) -> str:
     </div>
 
     <script src="/blog-votes.js" defer></script>
-    <script src="/analytics-config.js"></script>
-    <script src="/analytics.js" defer></script>
+{PAGE_SCRIPTS}
     <script src="/script.js"></script>
 </body>
 </html>
