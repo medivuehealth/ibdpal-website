@@ -56,8 +56,7 @@
     --ibd-bg: #f4f4f4;
     --ibd-surface: #ffffff;
     --ibd-border: #e0e0e0;
-    --ibd-max: 1140px;
-    --ibd-article: 760px;
+    --ibd-content-pad: clamp(1rem, 2.5vw, 2rem);
 }
 
 /* Site shell — white content on light gray (ICN-style, not full-page gradient) */
@@ -68,7 +67,9 @@ body {
 
 .app-container,
 .container {
-    max-width: 100%;
+    width: 100%;
+    max-width: none;
+    margin: 0;
     padding: 0;
     min-height: auto;
 }
@@ -83,23 +84,31 @@ body {
 }
 
 .header__inner {
-    max-width: var(--ibd-max, 1140px);
-    margin: 0 auto;
-    padding: 0.65rem clamp(1rem, 3vw, 1.75rem);
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0.75rem var(--ibd-content-pad);
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1.25rem;
+    flex-wrap: nowrap;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    justify-content: flex-start;
+    gap: 0.85rem;
     text-align: left;
     min-width: 0;
-    flex: 1 1 auto;
+    flex: 0 1 auto;
+    margin-right: auto;
+}
+
+.header__inner .site-social__list {
+    margin-left: auto;
+    flex-shrink: 0;
 }
 
 .logo-brand {
@@ -111,8 +120,8 @@ body {
 }
 
 .logo-img {
-    height: 48px;
-    width: 48px;
+    height: 56px;
+    width: 56px;
     object-fit: contain;
     display: block;
 }
@@ -126,10 +135,11 @@ body {
 
 .logo-name {
     margin: 0;
-    font-size: 1.55rem;
+    font-size: clamp(1.75rem, 3vw, 2.15rem);
     font-weight: 700;
-    line-height: 1.15;
+    line-height: 1.1;
     text-shadow: none;
+    letter-spacing: -0.02em;
 }
 
 .logo-name a {
@@ -144,10 +154,10 @@ body {
 .logo .tagline,
 .header .tagline {
     margin: 0;
-    font-size: 0.88rem;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.92);
-    line-height: 1.3;
+    font-size: clamp(0.95rem, 1.5vw, 1.12rem);
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.95);
+    line-height: 1.35;
 }
 
 .logo .logo-title,
@@ -174,14 +184,15 @@ body {
 }
 
 .tab-container {
-    max-width: var(--ibd-max);
-    margin: 0 auto;
+    width: 100%;
+    max-width: none;
+    margin: 0;
     justify-content: flex-start;
     flex-wrap: wrap;
     gap: 0;
     background: transparent;
     border-radius: 0;
-    padding: 0 clamp(0.5rem, 2vw, 1rem);
+    padding: 0 var(--ibd-content-pad);
 }
 
 .tab-button {
@@ -208,11 +219,12 @@ body {
     display: none;
 }
 
-/* Main content column */
+/* Main content — full width */
 .main-content {
     background: var(--ibd-surface);
-    max-width: var(--ibd-max);
-    margin: 0 auto;
+    width: 100%;
+    max-width: none;
+    margin: 0;
     padding: 0;
     border-radius: 0;
     box-shadow: none;
@@ -223,15 +235,22 @@ body {
     border-radius: 0;
     box-shadow: none;
     margin-bottom: 0;
-    padding: clamp(1.25rem, 3vw, 2rem) clamp(1rem, 3vw, 1.75rem) clamp(2rem, 4vw, 3rem);
+    padding: clamp(1.25rem, 3vw, 2rem) var(--ibd-content-pad) clamp(2rem, 4vw, 3rem);
     min-height: 50vh;
+    width: 100%;
+    max-width: none;
 }
 
 /* Hero band (homepage) */
 .hero-section {
     background: linear-gradient(180deg, rgba(153, 51, 204, 0.07) 0%, var(--ibd-surface) 85%);
     border-bottom: 1px solid var(--ibd-border);
-    padding: clamp(1.5rem, 4vw, 2.5rem) clamp(1rem, 3vw, 2rem);
+    padding: clamp(1.5rem, 4vw, 2.5rem) var(--ibd-content-pad);
+}
+
+.hero-description,
+.hero-tagline {
+    max-width: none;
 }
 
 .hero-tagline {
@@ -247,14 +266,17 @@ body {
 
 /* Article / news post layout (ICN LOOP-style) */
 .blogs-section {
-    max-width: var(--ibd-max);
-    padding-left: clamp(1rem, 3vw, 1.75rem);
-    padding-right: clamp(1rem, 3vw, 1.75rem);
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding-left: var(--ibd-content-pad);
+    padding-right: var(--ibd-content-pad);
 }
 
 .blog-post {
-    max-width: var(--ibd-article);
-    margin: 0 auto 2rem;
+    width: 100%;
+    max-width: none;
+    margin: 0 0 2rem;
     padding: clamp(1rem, 3vw, 2rem) 0 clamp(2rem, 4vw, 3rem);
     background: transparent;
     border-radius: 0;
@@ -353,10 +375,12 @@ body {
 
 /* Static / landing pages */
 .support-section,
-.seo-landing {
-    max-width: var(--ibd-article);
-    margin: 0 auto;
-    padding: clamp(1.5rem, 3vw, 2rem) clamp(1rem, 3vw, 1.5rem) clamp(2.5rem, 5vw, 3.5rem);
+.seo-landing,
+.legal-section {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: clamp(1.5rem, 3vw, 2rem) var(--ibd-content-pad) clamp(2.5rem, 5vw, 3.5rem);
 }
 
 .support-section h1,
@@ -418,9 +442,10 @@ body {
 }
 
 .footer-content {
-    max-width: var(--ibd-max);
-    margin: 0 auto;
-    padding: clamp(2rem, 4vw, 2.75rem) clamp(1rem, 3vw, 1.75rem);
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: clamp(2rem, 4vw, 2.75rem) var(--ibd-content-pad);
 }
 
 .footer-links {
@@ -455,10 +480,21 @@ body {
 
 /* App sub-tabs stay readable under ICN nav */
 .app-subtab-navigation {
-    margin-left: calc(-1 * clamp(1rem, 3vw, 1.75rem));
-    margin-right: calc(-1 * clamp(1rem, 3vw, 1.75rem));
-    padding-left: clamp(1rem, 3vw, 1.75rem);
-    padding-right: clamp(1rem, 3vw, 1.75rem);
+    margin-left: calc(-1 * var(--ibd-content-pad));
+    margin-right: calc(-1 * var(--ibd-content-pad));
+    padding-left: var(--ibd-content-pad);
+    padding-right: var(--ibd-content-pad);
+}
+
+/* Homepage sections — use horizontal space */
+.discovery-dashboard,
+.community-section,
+.features-section,
+.resources-hub,
+.blog-index-grid,
+.community-layout {
+    width: 100%;
+    max-width: none;
 }
 
 @media (max-width: 768px) {
@@ -472,15 +508,21 @@ body {
     }
 
     .header__inner {
-        align-items: flex-start;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .logo {
+        flex: 1 1 auto;
+        margin-right: 0;
+    }
+
+    .header__inner .site-social__list {
+        margin-left: auto;
     }
 
     .logo-img {
-        height: 40px;
-        width: 40px;
-    }
-
-    .logo-name {
-        font-size: 1.35rem;
+        height: 44px;
+        width: 44px;
     }
 }
