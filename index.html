@@ -48,6 +48,7 @@
                 <button class="tab-button" data-tab="screenshots">Screenshots</button>
                 <button class="tab-button" data-tab="research">Research</button>
                 <button class="tab-button" data-tab="blogs">Blogs</button>
+                <button class="tab-button" data-tab="community">Community</button>
                 <button class="tab-button" data-tab="contact">Contact</button>
             </div>
         </nav>
@@ -398,6 +399,30 @@
                 </div>
             </div>
 
+            <!-- Community Tab -->
+            <div class="tab-content" id="community">
+                <div class="community-section" data-track-impression="community_tab" data-track-label="IBD community map">
+                    <div class="community-section__header">
+                        <h3>IBD Community Resources</h3>
+                        <p class="community-section__lead">
+                            Find support organizations for Crohn’s disease, ulcerative colitis, and related conditions.
+                            Click a state on the map or choose from the list—starting with detailed listings for <strong>North Carolina</strong>.
+                        </p>
+                        <p class="community-edu-disclaimer"><strong>Directory only.</strong> IBDPal does not provide medical advice. Contact information may change; confirm details on each organization’s website.</p>
+                    </div>
+
+                    <div class="community-layout">
+                        <div class="community-map-panel">
+                            <label class="community-select-label" for="community-state-select">Jump to a state</label>
+                            <select id="community-state-select" class="community-state-select" aria-label="Select a U.S. state"></select>
+                            <div id="community-map" class="community-map" aria-live="polite"></div>
+                            <p class="community-map-hint">Tip: Select <strong>North Carolina</strong> on the map to see local chapters, support groups, and major IBD centers.</p>
+                        </div>
+                        <div id="community-detail" class="community-detail" aria-live="polite"></div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Contact Tab -->
             <div class="tab-content" id="contact">
                 <div class="contact-section">
@@ -432,6 +457,10 @@
         </footer>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js" defer></script>
+    <script src="/community-data.js" defer></script>
+    <script src="/community-map.js" defer></script>
     <script src="/analytics-config.js"></script>
     <script src="/analytics.js" defer></script>
     <script src="script.js"></script>
