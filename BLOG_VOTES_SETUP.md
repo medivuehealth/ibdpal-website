@@ -23,14 +23,16 @@ Creating the store under **Storage → All Databases** is not enough. You must *
 4. Choose **`ibdpal-website`**
 5. Enable **Production** and **Preview** → Connect
 
-### Step B — Confirm environment variables
+### Step B — Environment variables (dashboard only — never commit secrets)
 
-1. Open project **`ibdpal-website`** → **Settings** → **Environment Variables**
-2. You should see at least one of:
-   - `BLOB_READ_WRITE_TOKEN`, or
-   - `BLOB_STORE_ID` (+ `VERCEL_OIDC_TOKEN` on deployments)
+1. Open **`ibdpal-website`** → **Settings** → **Environment Variables**
+2. Confirm both exist for **Production** and **Preview**:
+   - `BLOB_STORE_ID` (e.g. `store_…`)
+   - `BLOB_READ_WRITE_TOKEN` (starts with `vercel_blob_rw_…`)
+3. If you connect the store from the dashboard, Vercel usually adds these automatically. If not, paste the values from **Storage → ibdpal-blob** (not into git).
+4. Do **not** put tokens in HTML, JavaScript, or commit them to GitHub.
 
-If neither exists, repeat Step A.
+If neither variable exists, repeat Step A.
 
 ### Step C — Redeploy
 
