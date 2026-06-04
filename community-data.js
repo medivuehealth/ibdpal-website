@@ -29,6 +29,34 @@ window.IBDPAL_COMMUNITY = {
         notes: 'Search in-person and virtual groups by state and community.'
       },
       {
+        name: 'ImproveCareNow',
+        type: 'Pediatric IBD learning network',
+        website: 'https://www.improvecarenow.org/',
+        phone: null,
+        notes: 'Collaborative community of patients, parents, clinicians, and researchers improving care for children and youth with Crohn’s disease and ulcerative colitis. Join the CIRCLE community, find a care center, and access family resources.'
+      },
+      {
+        name: 'ImproveCareNow — Patients, Parents & Families',
+        type: 'Family support & education',
+        website: 'https://www.improvecarenow.org/patients-parents',
+        phone: null,
+        notes: 'Guides, stories, and tools for families; not a substitute for your care team.'
+      },
+      {
+        name: 'ImproveCareNow — Find a Care Center',
+        type: 'Care center locator',
+        website: 'https://www.improvecarenow.org/care-centers',
+        phone: null,
+        notes: 'Search 100+ participating pediatric IBD care centers by state (including North Carolina).'
+      },
+      {
+        name: 'ImproveCareNow — Contact',
+        type: 'General inquiries',
+        website: 'https://www.improvecarenow.org/contact-us',
+        phone: null,
+        notes: 'Questions about the network or community programs (not for medical emergencies—contact your clinic directly).'
+      },
+      {
         name: 'GIKids (pediatric IBD)',
         type: 'Pediatric education',
         website: 'https://gikids.org/',
@@ -72,6 +100,34 @@ window.IBDPAL_COMMUNITY = {
           website: 'https://www.crohnscolitisfoundation.org/find-a-support-group',
           phone: '704-264-0587',
           notes: 'Filter by North Carolina on the support group finder for nearby or virtual meetings.'
+        },
+        {
+          name: 'ImproveCareNow',
+          type: 'Pediatric IBD learning network',
+          website: 'https://www.improvecarenow.org/',
+          phone: null,
+          notes: 'National collaborative focused on helping children and teens with IBD get better care and outcomes. North Carolina includes participating centers such as UNC Children’s and Duke—use the care center finder for locations near you.'
+        },
+        {
+          name: 'ImproveCareNow — Find NC Care Centers',
+          type: 'Care center locator',
+          website: 'https://www.improvecarenow.org/care-centers',
+          phone: null,
+          notes: 'Select North Carolina on the map to see participating pediatric IBD programs and connect with their teams for appointments.'
+        },
+        {
+          name: 'ImproveCareNow — Patients, Parents & Families',
+          type: 'Family support & education',
+          website: 'https://www.improvecarenow.org/patients-parents',
+          phone: null,
+          notes: 'Peer stories, preparation for visits, and resources for caregivers and youth with Crohn’s or colitis.'
+        },
+        {
+          name: 'ImproveCareNow — Contact',
+          type: 'General inquiries',
+          website: 'https://www.improvecarenow.org/contact-us',
+          phone: null,
+          notes: 'Network questions and community programs. For medical care, contact your IBD clinic (e.g., UNC or Duke scheduling lines below).'
         },
         {
           name: 'UNC Multidisciplinary Center for Inflammatory Bowel Disease',
