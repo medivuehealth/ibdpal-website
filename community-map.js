@@ -31,7 +31,10 @@
   };
 
   var mapBuilt = false;
+  var mapBuildInProgress = false;
   var selectedAbbr = null;
+  var stateSelectReady = false;
+  var zipSearchReady = false;
 
   function escapeHtml(s) {
     if (!s) return '';
@@ -140,7 +143,8 @@
   function buildZipSearch() {
     var input = document.getElementById('community-zip-input');
     var btn = document.getElementById('community-zip-btn');
-    if (!input || !btn) return;
+    if (!input || !btn || zipSearchReady) return;
+    zipSearchReady = true;
     function go() {
       var abbr = lookupZip(input.value);
       if (abbr) {
@@ -165,7 +169,8 @@
 
   function buildStateSelect() {
     var select = document.getElementById('community-state-select');
-    if (!select) return;
+    if (!select || stateSelectReady) return;
+    stateSelectReady = true;
     var opts = ['<option value="">Select a state…</option>'];
     Object.keys(STATE_NAMES).sort(function (a, b) {
       return STATE_NAMES[a].localeCompare(STATE_NAMES[b]);
@@ -180,11 +185,21 @@
 
   function buildMap() {
     var container = document.getElementById('community-map');
-    if (!container || mapBuilt) return;
-    if (typeof d3 === 'undefined' || typeof topojson === 'undefined') {
-      container.innerHTML = '<p class="community-map-fallback">Map loading… If this persists, use the state dropdown.</p>';
+    if (!container) return;
+    if (container.querySelector('.community-map-svg')) {
+      mapBuilt = true;
       return;
     }
+    if (mapBuilt || mapBuildInProgress) return;
+    if (typeof d3 === 'undefined' || typeof topojson === 'undefined') {
+      if (!container.querySelector('.community-map-fallback')) {
+        container.innerHTML = '<p class="community-map-fallback">Map loading… If this persists, use the state dropdown.</p>';
+      }
+      return;
+    }
+
+    mapBuildInProgress = true;
+    container.innerHTML = '';
 
     var width = 960;
     var height = 600;
@@ -229,9 +244,11 @@
           });
 
         mapBuilt = true;
+        mapBuildInProgress = false;
         renderPanel('NC');
       })
       .catch(function () {
+        mapBuildInProgress = false;
         container.innerHTML = '<p class="community-map-fallback">Could not load map. Please use the state dropdown below.</p>';
         renderPanel('NC');
       });
@@ -258,8 +275,8 @@
   document.addEventListener('ibdpal:tab', function (e) {
     if (e.detail && e.detail.tab === 'community') {
       whenLibsReady(function () {
-        if (!mapBuilt) buildMap();
-        else if (!selectedAbbr) renderPanel('NC');
+        buildMap();
+        if (mapBuilt && !selectedAbbr) renderPanel('NC');
       });
     }
   });
