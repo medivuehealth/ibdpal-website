@@ -7,7 +7,7 @@ Votes are stored in your Blob store **`ibdpal-blob`** as:
 | `blog-votes/votes.log` | Text log: `time`, `slug`, `up` or `down` |
 | `blog-votes/counts.json` | Totals per blog post |
 
-**ibdpal-blob** is a **public** Blob store (Vercel requires `access: "public"` on uploads). Vote files are not linked from the website; only the API writes them. For stricter privacy later, create a new **private** store and reconnect the project.
+**ibdpal-blob** is a **private** Blob store. Vote files are only readable/writable via the server API using `BLOB_READ_WRITE_TOKEN` — not public URLs on the website.
 
 ---
 
@@ -41,7 +41,7 @@ If neither variable exists, repeat Step A.
 
 ### Step D — Test
 
-1. API health: https://ibdpal.org/api/blog-vote?check=1 — must show `"ok":true` and `"apiBuild":"rest-v3"` (if missing, Production has not picked up the latest deploy).
+1. API health: https://ibdpal.org/api/blog-vote?check=1 — must show `"ok":true` and `"apiBuild":"rest-v4-private"` (if missing, Production has not picked up the latest deploy).
 2. Full path: https://ibdpal.org/api/blog-vote?check=1&deep=1 (read/write like voting)
 3. Open https://ibdpal.org/blog/hydration-tips-ibd  
 2. Click 👍  

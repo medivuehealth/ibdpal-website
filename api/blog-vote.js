@@ -1,10 +1,11 @@
 /**
- * Blog vote API — uses Vercel Blob REST API directly (no @vercel/blob SDK)
- * so access: public is always sent on writes (required for public stores).
+ * Blog vote API — Vercel Blob REST API (no SDK).
+ * ibdpal-blob is a private store — all uploads use x-vercel-blob-access: private.
  */
 const BLOB_API = 'https://vercel.com/api/blob';
 const BLOB_API_VERSION = '12';
-const API_BUILD = 'rest-v3';
+const BLOB_ACCESS = 'private';
+const API_BUILD = 'rest-v4-private';
 
 const LOG_PATH = 'blog-votes/votes.log';
 const COUNTS_PATH = 'blog-votes/counts.json';
@@ -105,7 +106,7 @@ async function putBlob(pathname, content, token) {
     token,
     headers: {
       'content-type': 'text/plain; charset=utf-8',
-      'x-vercel-blob-access': 'public',
+      'x-vercel-blob-access': BLOB_ACCESS,
       'x-add-random-suffix': '0',
       'x-allow-overwrite': '1'
     },
@@ -135,7 +136,9 @@ async function readBlobText(pathname) {
   }
 
   const url = blob.downloadUrl || blob.url;
-  const res = await fetch(url);
+  const res = await fetch(url, {
+    headers: { authorization: `Bearer ${token}` }
+  });
   if (!res.ok) {
     throw new Error(`Failed to read ${pathname}: ${res.status}`);
   }
