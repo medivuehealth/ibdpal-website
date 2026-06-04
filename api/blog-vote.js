@@ -2,61 +2,68 @@ import { get, list, put } from '@vercel/blob';
 
 const LOG_PATH = 'blog-votes/votes.log';
 const COUNTS_PATH = 'blog-votes/counts.json';
-const STORE_NAME = 'ibdpal-blob';
 
 function json(res, status, body) {
   res.status(status).setHeader('Content-Type', 'application/json');
   res.end(JSON.stringify(body));
 }
 
-/** Token for local dev; on Vercel, OIDC + BLOB_STORE_ID is used when connected. */
+function getBlobToken() {
+  return process.env.BLOB_READ_WRITE_TOKEN || '';
+}
+
+function hasBlobCredentials() {
+  return Boolean(getBlobToken());
+}
+
 function blobOptions() {
-  const token =
-    process.env.BLOB_READ_WRITE_TOKEN ||
-    process.env.IBDPAL_BLOB_READ_WRITE_TOKEN;
+  const token = getBlobToken();
   return token ? { token } : {};
 }
 
-function storageConfigured() {
-  if (process.env.BLOB_READ_WRITE_TOKEN) {
-    return true;
-  }
-  if (process.env.BLOB_STORE_ID) {
-    return true;
-  }
-  if (process.env.VERCEL) {
-    return true;
-  }
-  return false;
-}
-
-function storageSetupMessage() {
+function setupMessage() {
   return (
-    'Blob store "' +
-    STORE_NAME +
-    '" must be connected to the ibdpal-website project: ' +
-    'Vercel → Storage → ' +
-    STORE_NAME +
-    ' → Projects → Connect to Project → ibdpal-website (Production + Preview), then Redeploy.'
+    'Add BLOB_READ_WRITE_TOKEN to ibdpal-website (Settings → Environment Variables, Production + Preview), ' +
+    'connect store ibdpal-blob to this project, then Redeploy. ' +
+    'Check status: /api/blog-vote?check=1'
   );
 }
 
+function formatError(err) {
+  const msg = err?.message || String(err);
+  if (msg.includes('MISSING_BLOB_TOKEN')) {
+    return setupMessage();
+  }
+  if (!hasBlobCredentials()) {
+    return setupMessage();
+  }
+  return 'Blob request failed: ' + msg + '. Confirm env vars are on Production and Redeploy.';
+}
+
 async function readBlobText(pathname) {
-  const { blobs } = await list({ prefix: 'blog-votes/', ...blobOptions() });
+  const token = getBlobToken();
+  if (!token) {
+    return '';
+  }
+  const { blobs } = await list({ prefix: 'blog-votes/', token });
   const blob = blobs.find((b) => b.pathname === pathname);
   if (!blob) {
     return '';
   }
-  const result = await get(blob.url, { access: 'private', ...blobOptions() });
+  const result = await get(blob.url, { access: 'private', token });
   return result.text();
 }
 
 async function writeBlobText(pathname, content) {
+  const token = getBlobToken();
+  if (!token) {
+    throw new Error('MISSING_BLOB_TOKEN');
+  }
   await put(pathname, content, {
     access: 'private',
     addRandomSuffix: false,
     allowOverwrite: true,
-    ...blobOptions()
+    token
   });
 }
 
@@ -76,19 +83,38 @@ function isValidSlug(slug) {
   return typeof slug === 'string' && /^[a-z0-9-]+$/.test(slug) && slug.length <= 80;
 }
 
-function isBlobConfigError(err) {
-  const msg = String(err?.message || err || '').toLowerCase();
-  return (
-    msg.includes('token') ||
-    msg.includes('blob') ||
-    msg.includes('unauthorized') ||
-    msg.includes('not configured')
-  );
+async function runDiagnostic() {
+  const token = getBlobToken();
+  const out = {
+    ok: false,
+    hasBlobReadWriteToken: Boolean(token),
+    hasBlobStoreId: Boolean(process.env.BLOB_STORE_ID),
+    vercelEnv: process.env.VERCEL_ENV || null,
+    hint: setupMessage()
+  };
+
+  if (!token) {
+    return out;
+  }
+
+  try {
+    await list({ prefix: 'blog-votes/', limit: 1, token });
+    out.ok = true;
+    out.hint = 'Blob is configured. Voting should work.';
+  } catch (err) {
+    out.blobError = err?.message || String(err);
+  }
+
+  return out;
 }
 
 export default async function handler(req, res) {
-  if (!storageConfigured()) {
-    return json(res, 503, { error: storageSetupMessage() });
+  if (req.method === 'GET' && req.query?.check === '1') {
+    return json(res, 200, await runDiagnostic());
+  }
+
+  if (!hasBlobCredentials()) {
+    return json(res, 503, { error: setupMessage() });
   }
 
   try {
@@ -142,10 +168,7 @@ export default async function handler(req, res) {
     res.setHeader('Allow', 'GET, POST');
     return json(res, 405, { error: 'Method not allowed' });
   } catch (err) {
-    if (isBlobConfigError(err)) {
-      return json(res, 503, { error: storageSetupMessage() });
-    }
     console.error('blog-vote error', err);
-    return json(res, 500, { error: 'Could not save vote. Try again later.' });
+    return json(res, 503, { error: formatError(err) });
   }
 }
