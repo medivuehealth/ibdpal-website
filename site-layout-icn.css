@@ -63,13 +63,14 @@
 body {
     background: var(--ibd-bg);
     color: var(--ibd-text);
+    overflow-x: hidden;
 }
 
 .app-container,
 .container {
-    width: 100%;
+    width: 80%;
     max-width: none;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     min-height: auto;
 }
@@ -181,6 +182,15 @@ body {
     position: sticky;
     top: 0;
     z-index: 90;
+}
+
+.header,
+.tab-navigation {
+    width: 100vw;
+    max-width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    box-sizing: border-box;
 }
 
 .tab-container {
