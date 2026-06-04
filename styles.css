@@ -131,6 +131,60 @@ a.tab-button {
     animation: fadeIn 0.3s ease-in-out;
 }
 
+/* IBDPal App sub-tabs */
+#app.tab-content {
+    padding-top: 0;
+}
+
+.app-subtab-navigation {
+    background: #f4f0f8;
+    border-bottom: 1px solid #e0d6eb;
+    padding: 0.5rem 1rem 0;
+    border-radius: 0;
+}
+
+.app-subtab-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    justify-content: center;
+}
+
+.app-subtab-button {
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
+    padding: 0.65rem 1.1rem;
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: #555;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 8px 8px 0 0;
+}
+
+.app-subtab-button:hover {
+    color: #9933cc;
+    background: rgba(153, 51, 204, 0.08);
+}
+
+.app-subtab-button.active {
+    color: #9933cc;
+    font-weight: 600;
+    border-bottom-color: #9933cc;
+    background: rgba(255, 255, 255, 0.85);
+}
+
+.app-subcontent {
+    display: none;
+    padding: 1.5rem 0 0;
+    animation: fadeIn 0.25s ease-in-out;
+}
+
+.app-subcontent.active {
+    display: block;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -953,6 +1007,48 @@ a.tab-button {
     text-align: center;
     margin-bottom: 3rem;
     color: #1a1a1a; /* ibdPrimaryText */
+}
+
+/* SEO landing: IBD Crohn's support */
+.seo-landing__block {
+    margin-bottom: 2.5rem;
+}
+
+.seo-landing__block h2 {
+    font-size: 1.5rem;
+    color: #9933cc;
+    margin-bottom: 0.75rem;
+}
+
+.seo-landing__block h3 {
+    font-size: 1.15rem;
+    color: #1a1a1a;
+    margin: 1.25rem 0 0.5rem;
+}
+
+.seo-landing__list {
+    line-height: 1.7;
+    padding-left: 1.25rem;
+}
+
+.seo-landing__list li {
+    margin-bottom: 0.85rem;
+}
+
+.seo-landing__cta {
+    display: inline-block;
+    font-weight: 600;
+    color: #9933cc;
+    text-decoration: none;
+}
+
+.seo-landing__cta:hover {
+    text-decoration: underline;
+}
+
+.seo-landing__faq p {
+    margin-bottom: 1rem;
+    line-height: 1.65;
 }
 
 .support-grid {
@@ -1985,7 +2081,9 @@ a.tab-button {
     padding: 1.5rem 1rem 2.5rem;
 }
 
-.community-section__header h3 {
+.community-section__header h2,
+.community-section__header h3,
+.community-section__title {
     font-size: 1.75rem;
     color: #1a1a1a;
     margin-bottom: 0.75rem;

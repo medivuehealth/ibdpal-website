@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""One-off generator for June 2026 lifestyle blog posts."""
+"""One-off generator for June 2026 lifestyle blog posts.
+
+Images must be real JPEGs from https://images.unsplash.com/photo-{id}?auto=format&w=1200
+or Pexels CDN — not unsplash.com/photos/{slug}/download (returns HTML).
+"""
 from __future__ import annotations
 import html
 import json
@@ -413,11 +417,9 @@ def render_post(p: dict) -> str:
         <nav class="tab-navigation">
             <div class="tab-container">
                 <a href="/#overview" class="tab-button">Overview</a>
-                <a href="/#features" class="tab-button">Features</a>
-                <a href="/#how-it-works" class="tab-button">How it Works</a>
-                <a href="/#screenshots" class="tab-button">Screenshots</a>
-                <a href="/#research" class="tab-button">Research</a>
+                <a href="/#app" class="tab-button">IBDPal App</a>
                 <a href="/#blogs" class="tab-button active">Blogs</a>
+                <a href="/#community" class="tab-button">Community</a>
                 <a href="/#contact" class="tab-button">Contact</a>
             </div>
         </nav>

@@ -1,146 +1,147 @@
 // IBDPal Website JavaScript
 
-// Tab Navigation System
-document.addEventListener('DOMContentLoaded', function() {
-    // Initialize tab navigation
+var IBDPAL_MAIN_TABS = ['overview', 'app', 'blogs', 'community', 'contact'];
+var IBDPAL_APP_SUBTABS = ['features', 'how-it-works', 'screenshots', 'research'];
+var IBDPAL_DEFAULT_APP_SUBTAB = 'features';
+
+document.addEventListener('DOMContentLoaded', function () {
     initializeTabNavigation();
-    
-    // Email form handling
-    const emailForm = document.getElementById('emailForm');
-    
+
+    var emailForm = document.getElementById('emailForm');
     if (emailForm) {
-        emailForm.addEventListener('submit', function(e) {
+        emailForm.addEventListener('submit', function (e) {
             e.preventDefault();
-            
-            const email = document.getElementById('email').value;
-            
+            var email = document.getElementById('email').value;
             if (email) {
-                // Show success message
                 showNotification('Thank you! We\'ll notify you when IBDPal launches.', 'success');
                 document.dispatchEvent(new CustomEvent('ibdpal:email_signup'));
-
-                // Clear form
                 document.getElementById('email').value = '';
             }
         });
     }
 });
 
-// Tab Navigation Functions
-function initializeTabNavigation() {
-    const tabButtons = document.querySelectorAll('.tab-button');
-    const tabContents = document.querySelectorAll('.tab-content');
-    
-    // Function to switch tabs
-    function switchTab(targetTab, updateURL = true) {
-        // Remove active class from all buttons and contents
-        tabButtons.forEach(btn => btn.classList.remove('active'));
-        tabContents.forEach(content => content.classList.remove('active'));
-        
-        // Add active class to target button
-        const targetButton = document.querySelector(`[data-tab="${targetTab}"]`);
-        if (targetButton) {
-            targetButton.classList.add('active');
-        }
-        
-        // Show target tab content
-        const targetContent = document.getElementById(targetTab);
-        if (targetContent) {
-            targetContent.classList.add('active');
-        }
-        
-        // Update URL without page reload
-        if (updateURL) {
-            const newURL = targetTab === 'overview' 
-                ? window.location.pathname 
-                : `${window.location.pathname}#${targetTab}`;
-            window.history.pushState({ tab: targetTab }, '', newURL);
-        }
-
-        document.dispatchEvent(new CustomEvent('ibdpal:tab', { detail: { tab: targetTab } }));
+function resolveTabFromHash(hash) {
+    if (!hash) {
+        return { main: 'overview', sub: null };
     }
-    
-    // Handle tab button clicks
-    tabButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            const targetTab = this.getAttribute('data-tab');
-            switchTab(targetTab, true);
-        });
-    });
-    
-    // Handle browser back/forward buttons
-    window.addEventListener('popstate', function(event) {
-        const hash = window.location.hash.substring(1); // Remove #
-        const targetTab = hash || 'overview';
-        switchTab(targetTab, false);
-    });
-    
-    // Check URL on page load
-    function checkInitialTab() {
-        const hash = window.location.hash.substring(1);
-        if (hash) {
-            const targetTab = hash;
-            // Check if tab exists
-            if (document.getElementById(targetTab)) {
-                switchTab(targetTab, false);
-                return;
-            }
-        }
-        // Default to overview
-        switchTab('overview', false);
+    if (IBDPAL_MAIN_TABS.indexOf(hash) !== -1) {
+        return {
+            main: hash,
+            sub: hash === 'app' ? IBDPAL_DEFAULT_APP_SUBTAB : null
+        };
     }
-    
-    // Initialize on page load
-    checkInitialTab();
+    if (IBDPAL_APP_SUBTABS.indexOf(hash) !== -1) {
+        return { main: 'app', sub: hash };
+    }
+    return { main: 'overview', sub: null };
 }
 
-// Notification system
-function showNotification(message, type = 'info') {
-    // Create notification element
-    const notification = document.createElement('div');
-    notification.className = `notification notification-${type}`;
+function initializeTabNavigation() {
+    var mainTabButtons = document.querySelectorAll('.tab-navigation .tab-button[data-tab]');
+    var mainTabContents = document.querySelectorAll('main > .tab-content');
+    var appSubButtons = document.querySelectorAll('.app-subtab-button[data-app-subtab]');
+    var appSubContents = document.querySelectorAll('.app-subcontent');
+
+    function switchAppSubTab(subTab, updateURL) {
+        if (IBDPAL_APP_SUBTABS.indexOf(subTab) === -1) {
+            subTab = IBDPAL_DEFAULT_APP_SUBTAB;
+        }
+
+        appSubButtons.forEach(function (btn) {
+            btn.classList.toggle('active', btn.getAttribute('data-app-subtab') === subTab);
+        });
+        appSubContents.forEach(function (panel) {
+            panel.classList.toggle('active', panel.id === subTab);
+        });
+
+        if (updateURL) {
+            var newURL = window.location.pathname + '#' + subTab;
+            window.history.pushState({ main: 'app', sub: subTab }, '', newURL);
+        }
+
+        document.dispatchEvent(new CustomEvent('ibdpal:tab', { detail: { tab: 'app', subTab: subTab } }));
+    }
+
+    function switchMainTab(mainTab, subTab, updateURL) {
+        if (IBDPAL_MAIN_TABS.indexOf(mainTab) === -1) {
+            mainTab = 'overview';
+        }
+
+        mainTabButtons.forEach(function (btn) {
+            btn.classList.toggle('active', btn.getAttribute('data-tab') === mainTab);
+        });
+        mainTabContents.forEach(function (content) {
+            content.classList.toggle('active', content.id === mainTab);
+        });
+
+        if (mainTab === 'app') {
+            var targetSub = subTab && IBDPAL_APP_SUBTABS.indexOf(subTab) !== -1
+                ? subTab
+                : IBDPAL_DEFAULT_APP_SUBTAB;
+            switchAppSubTab(targetSub, false);
+        }
+
+        if (updateURL) {
+            var hash = mainTab === 'overview' ? '' : (mainTab === 'app' ? (subTab || IBDPAL_DEFAULT_APP_SUBTAB) : mainTab);
+            var newURL = hash ? window.location.pathname + '#' + hash : window.location.pathname;
+            window.history.pushState({ main: mainTab, sub: subTab || null }, '', newURL);
+        }
+
+        if (mainTab !== 'app') {
+            document.dispatchEvent(new CustomEvent('ibdpal:tab', { detail: { tab: mainTab } }));
+        }
+    }
+
+    mainTabButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+            var mainTab = this.getAttribute('data-tab');
+            var subTab = mainTab === 'app' ? IBDPAL_DEFAULT_APP_SUBTAB : null;
+            switchMainTab(mainTab, subTab, true);
+        });
+    });
+
+    appSubButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+            var subTab = this.getAttribute('data-app-subtab');
+            switchMainTab('app', subTab, true);
+        });
+    });
+
+    window.addEventListener('popstate', function () {
+        var hash = window.location.hash.substring(1);
+        var resolved = resolveTabFromHash(hash);
+        switchMainTab(resolved.main, resolved.sub, false);
+    });
+
+    var hash = window.location.hash.substring(1);
+    var initial = resolveTabFromHash(hash);
+    switchMainTab(initial.main, initial.sub, false);
+}
+
+function showNotification(message, type) {
+    type = type || 'info';
+    var notification = document.createElement('div');
+    notification.className = 'notification notification-' + type;
     notification.textContent = message;
-    
-    // Style the notification
-    notification.style.cssText = `
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        background: ${type === 'success' ? '#4dcc33' : '#9933cc'};
-        color: white;
-        padding: 1rem 2rem;
-        border-radius: 8px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-        z-index: 1000;
-        font-weight: 500;
-        max-width: 300px;
-        animation: slideIn 0.3s ease-out;
-    `;
-    
-    // Add animation keyframes
+    notification.style.cssText =
+        'position: fixed; top: 20px; right: 20px; background: ' +
+        (type === 'success' ? '#4dcc33' : '#9933cc') +
+        '; color: white; padding: 1rem 2rem; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); z-index: 1000; font-weight: 500; max-width: 300px; animation: slideIn 0.3s ease-out;';
+
     if (!document.getElementById('notification-styles')) {
-        const style = document.createElement('style');
+        var style = document.createElement('style');
         style.id = 'notification-styles';
-        style.textContent = `
-            @keyframes slideIn {
-                from { transform: translateX(100%); opacity: 0; }
-                to { transform: translateX(0); opacity: 1; }
-            }
-            @keyframes slideOut {
-                from { transform: translateX(0); opacity: 1; }
-                to { transform: translateX(100%); opacity: 0; }
-            }
-        `;
+        style.textContent =
+            '@keyframes slideIn { from { transform: translateX(100%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }' +
+            '@keyframes slideOut { from { transform: translateX(0); opacity: 1; } to { transform: translateX(100%); opacity: 0; } }';
         document.head.appendChild(style);
     }
-    
-    // Add to page
+
     document.body.appendChild(notification);
-    
-    // Remove after 3 seconds
-    setTimeout(() => {
+    setTimeout(function () {
         notification.style.animation = 'slideOut 0.3s ease-in';
-        setTimeout(() => {
+        setTimeout(function () {
             if (notification.parentNode) {
                 notification.parentNode.removeChild(notification);
             }
@@ -148,55 +149,27 @@ function showNotification(message, type = 'info') {
     }, 3000);
 }
 
-// Smooth scrolling for anchor links
-document.addEventListener('DOMContentLoaded', function() {
-    const links = document.querySelectorAll('a[href^="#"]');
-    
-    links.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            const targetId = this.getAttribute('href').substring(1);
-            const targetElement = document.getElementById(targetId);
-            
-            if (targetElement) {
-                targetElement.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        });
-    });
-});
-
-// Add loading states to submit buttons only
-document.addEventListener('DOMContentLoaded', function() {
-    // Only target submit buttons, not tab navigation buttons
-    const submitButtons = document.querySelectorAll('button[type="submit"]');
-    
-    submitButtons.forEach(button => {
-        button.addEventListener('click', function(e) {
-            // Store original text
-            const originalText = this.textContent;
-            
+document.addEventListener('DOMContentLoaded', function () {
+    var submitButtons = document.querySelectorAll('button[type="submit"]');
+    submitButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+            var originalText = this.textContent;
             this.style.opacity = '0.7';
             this.textContent = 'Sending...';
-            
-            setTimeout(() => {
-                this.style.opacity = '1';
-                this.textContent = originalText; // Restore original text
+            setTimeout(function () {
+                button.style.opacity = '1';
+                button.textContent = originalText;
             }, 2000);
         });
     });
 });
 
-// Blog Share Functions
 function getBlogShareSummary() {
-    const fromBody = document.body?.dataset?.blogShareText;
+    var fromBody = document.body && document.body.dataset && document.body.dataset.blogShareText;
     if (fromBody && fromBody.trim()) {
         return fromBody.trim();
     }
-    const titleEl = document.querySelector('.blog-title');
+    var titleEl = document.querySelector('.blog-title');
     if (titleEl && titleEl.textContent.trim()) {
         return titleEl.textContent.trim();
     }
@@ -205,21 +178,21 @@ function getBlogShareSummary() {
 
 function shareOnFacebook(event) {
     event.preventDefault();
-    const url = encodeURIComponent(window.location.href);
-    window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank', 'width=600,height=400');
+    var url = encodeURIComponent(window.location.href);
+    window.open('https://www.facebook.com/sharer/sharer.php?u=' + url, '_blank', 'width=600,height=400');
 }
 
 function shareOnTwitter(event) {
     event.preventDefault();
-    const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent(getBlogShareSummary());
-    window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank', 'width=600,height=400');
+    var url = encodeURIComponent(window.location.href);
+    var text = encodeURIComponent(getBlogShareSummary());
+    window.open('https://twitter.com/intent/tweet?url=' + url + '&text=' + text, '_blank', 'width=600,height=400');
 }
 
 function shareViaEmail(event) {
     event.preventDefault();
-    const url = window.location.href;
-    const subject = encodeURIComponent(document.querySelector('.blog-title')?.textContent?.trim() || 'IBDPal Blog');
-    const body = encodeURIComponent(`${getBlogShareSummary()}\n\n${url}`);
-    window.location.href = `mailto:?subject=${subject}&body=${body}`;
+    var url = window.location.href;
+    var subject = encodeURIComponent(document.querySelector('.blog-title')?.textContent?.trim() || 'IBDPal Blog');
+    var body = encodeURIComponent(getBlogShareSummary() + '\n\n' + url);
+    window.location.href = 'mailto:?subject=' + subject + '&body=' + body;
 }

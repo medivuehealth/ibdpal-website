@@ -96,3 +96,7 @@ Your website will now have clean, professional URLs:
 
 All navigation and links have been updated to use these clean URLs!
 
+
+
+
+

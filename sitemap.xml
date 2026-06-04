@@ -2,8 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ibdpal.org/</loc>
+    <lastmod>2026-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1</priority>
+  </url>
+  <url>
+    <loc>https://ibdpal.org/ibd-crohns-support</loc>
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.92</priority>
   </url>
   <url>
     <loc>https://ibdpal.org/blog/best-foods-crohns-flare</loc>

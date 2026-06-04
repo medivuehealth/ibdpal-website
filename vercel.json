@@ -18,6 +18,10 @@
       "destination": "/executive-summary.html"
     },
     {
+      "source": "/ibd-crohns-support",
+      "destination": "/ibd-crohns-support.html"
+    },
+    {
       "source": "/blog/best-foods-crohns-flare",
       "destination": "/blogs/best-foods-crohns-flare.html"
     },

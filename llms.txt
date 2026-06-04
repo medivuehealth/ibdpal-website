@@ -4,8 +4,10 @@
 
 ## Site
 - Homepage: https://ibdpal.org/
+- IBD Crohn's support (resources & directory): https://ibdpal.org/ibd-crohns-support
+- Community map (by U.S. state): https://ibdpal.org/#community
 - Privacy: https://ibdpal.org/privacy
-- Support: https://ibdpal.org/support
+- App support: https://ibdpal.org/support
 - Terms: https://ibdpal.org/terms
 - About / executive summary: https://ibdpal.org/about
 
@@ -16,6 +18,12 @@
 - https://ibdpal.org/blog/hydration-tips-ibd
 - https://ibdpal.org/blog/tracking-food-symptoms-ibdpal
 - https://ibdpal.org/blog/introducing-ibdpal
+- https://ibdpal.org/blog/low-residue-diet-flare
+- https://ibdpal.org/blog/travel-with-ibd
+- https://ibdpal.org/blog/understanding-biologics-ibd
+- https://ibdpal.org/blog/living-with-ibd-kids
+- https://ibdpal.org/blog/stress-emotional-wellness-ibd
+- https://ibdpal.org/blog/sleep-rest-ibd-flares
 
 ## Organization
 - MediVue (501(c)(3) nonprofit, North Carolina) develops IBDPal.
