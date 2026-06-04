@@ -1,6 +1,6 @@
 # Blog thumbs up / down (Vercel Blob: ibdpal-blob)
 
-Votes are stored in your **private** Blob store **`ibdpal-blob`** as:
+Votes are stored in your Blob store **`ibdpal-blob`** as:
 
 | File in store | Purpose |
 |---------------|---------|

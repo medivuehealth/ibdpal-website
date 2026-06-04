@@ -1,9 +1,7 @@
-import { get, list, put } from '@vercel/blob';
+import { del, list, put } from '@vercel/blob';
 
 const LOG_PATH = 'blog-votes/votes.log';
 const COUNTS_PATH = 'blog-votes/counts.json';
-/** ibdpal-blob is a public store — must use access: "public" (not private). */
-const BLOB_ACCESS = 'public';
 
 function json(res, status, body) {
   res.status(status).setHeader('Content-Type', 'application/json');
@@ -18,9 +16,13 @@ function hasBlobCredentials() {
   return Boolean(getBlobToken());
 }
 
-function blobOptions() {
-  const token = getBlobToken();
-  return token ? { token } : {};
+function putOptions(token) {
+  return {
+    access: 'public',
+    addRandomSuffix: false,
+    allowOverwrite: true,
+    token
+  };
 }
 
 function setupMessage() {
@@ -47,13 +49,19 @@ async function readBlobText(pathname) {
   if (!token) {
     return '';
   }
+
   const { blobs } = await list({ prefix: 'blog-votes/', token });
   const blob = blobs.find((b) => b.pathname === pathname);
   if (!blob) {
     return '';
   }
-  const result = await get(blob.url, { access: BLOB_ACCESS, token });
-  return result.text();
+
+  const url = blob.downloadUrl || blob.url;
+  const res = await fetch(url);
+  if (!res.ok) {
+    throw new Error(`Failed to read ${pathname}: ${res.status}`);
+  }
+  return res.text();
 }
 
 async function writeBlobText(pathname, content) {
@@ -61,12 +69,21 @@ async function writeBlobText(pathname, content) {
   if (!token) {
     throw new Error('MISSING_BLOB_TOKEN');
   }
-  await put(pathname, content, {
-    access: BLOB_ACCESS,
-    addRandomSuffix: false,
-    allowOverwrite: true,
-    token
-  });
+
+  try {
+    await put(pathname, content, putOptions(token));
+  } catch (err) {
+    const msg = err?.message || '';
+    if (!msg.includes('already exists') && !msg.includes('conflict')) {
+      throw err;
+    }
+    const { blobs } = await list({ prefix: 'blog-votes/', token });
+    const existing = blobs.find((b) => b.pathname === pathname);
+    if (existing?.url) {
+      await del(existing.url, { token });
+    }
+    await put(pathname, content, putOptions(token));
+  }
 }
 
 function parseCounts(raw) {
@@ -85,7 +102,7 @@ function isValidSlug(slug) {
   return typeof slug === 'string' && /^[a-z0-9-]+$/.test(slug) && slug.length <= 80;
 }
 
-async function runDiagnostic() {
+async function runDiagnostic(deep) {
   const token = getBlobToken();
   const out = {
     ok: false,
@@ -100,12 +117,12 @@ async function runDiagnostic() {
   }
 
   try {
-    await put('blog-votes/.health-check', 'ok', {
-      access: BLOB_ACCESS,
-      addRandomSuffix: false,
-      allowOverwrite: true,
-      token
-    });
+    await put('blog-votes/.health-check', 'ok', putOptions(token));
+    if (deep) {
+      await readBlobText(LOG_PATH);
+      await readBlobText(COUNTS_PATH);
+      await writeBlobText('blog-votes/.health-check-rw', 'ok', putOptions(token));
+    }
     out.ok = true;
     out.hint = 'Blob is configured. Voting should work.';
   } catch (err) {
@@ -117,7 +134,7 @@ async function runDiagnostic() {
 
 export default async function handler(req, res) {
   if (req.method === 'GET' && req.query?.check === '1') {
-    return json(res, 200, await runDiagnostic());
+    return json(res, 200, await runDiagnostic(req.query?.deep === '1'));
   }
 
   if (!hasBlobCredentials()) {
