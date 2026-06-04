@@ -1572,6 +1572,12 @@ a.tab-button {
     text-decoration: underline;
 }
 
+.blog-photo-credit {
+    font-size: 0.875rem;
+    color: #5c6570;
+    margin: 0.75rem 0 1.75rem;
+}
+
 .blog-edu-disclaimer {
     background: #fff8f0;
     border-left: 4px solid #cc6600;

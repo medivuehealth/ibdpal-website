@@ -40,6 +40,30 @@
     {
       "source": "/blog/introducing-ibdpal",
       "destination": "/blogs/introducing-ibdpal.html"
+    },
+    {
+      "source": "/blog/low-residue-diet-flare",
+      "destination": "/blogs/low-residue-diet-flare.html"
+    },
+    {
+      "source": "/blog/travel-with-ibd",
+      "destination": "/blogs/travel-with-ibd.html"
+    },
+    {
+      "source": "/blog/understanding-biologics-ibd",
+      "destination": "/blogs/understanding-biologics-ibd.html"
+    },
+    {
+      "source": "/blog/living-with-ibd-kids",
+      "destination": "/blogs/living-with-ibd-kids.html"
+    },
+    {
+      "source": "/blog/stress-emotional-wellness-ibd",
+      "destination": "/blogs/stress-emotional-wellness-ibd.html"
+    },
+    {
+      "source": "/blog/sleep-rest-ibd-flares",
+      "destination": "/blogs/sleep-rest-ibd-flares.html"
     }
   ],
   "headers": [
