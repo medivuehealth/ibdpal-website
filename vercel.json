@@ -1,14 +1,18 @@
 {
   "installCommand": "npm install",
-  "rewrites": [
+  "redirects": [
+    {
+      "source": "/privacy",
+      "destination": "/#privacy",
+      "permanent": true
+    },
     {
       "source": "/support",
-      "destination": "/support.html"
-    },
-    {
-      "source": "/privacy", 
-      "destination": "/privacy.html"
-    },
+      "destination": "/#support",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
     {
       "source": "/terms",
       "destination": "/terms.html"

@@ -89,7 +89,7 @@
         document.head.appendChild(script);
     }
 
-    var HOME_MAIN_TABS = ['overview', 'app', 'resources', 'blogs', 'community', 'contact'];
+    var HOME_MAIN_TABS = ['overview', 'app', 'resources', 'blogs', 'community', 'contact', 'privacy', 'support'];
     var APP_SUBTABS = ['features', 'how-it-works', 'screenshots', 'research'];
 
     function tabIdFromNavTarget(anchor) {

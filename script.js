@@ -1,6 +1,6 @@
 // IBDPal Website JavaScript
 
-var IBDPAL_MAIN_TABS = ['overview', 'app', 'resources', 'blogs', 'community', 'contact'];
+var IBDPAL_MAIN_TABS = ['overview', 'app', 'resources', 'blogs', 'community', 'contact', 'privacy', 'support'];
 var IBDPAL_APP_SUBTABS = ['features', 'how-it-works', 'screenshots', 'research'];
 var IBDPAL_DEFAULT_APP_SUBTAB = 'features';
 

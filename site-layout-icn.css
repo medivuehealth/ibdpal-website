@@ -505,6 +505,30 @@ body {
     font-size: 1.05rem;
 }
 
+/* Privacy / Support as homepage tabs (match other tab panels) */
+.tab-content .tab-page-section {
+    padding: 0;
+    max-width: none;
+    margin: 0;
+}
+
+.tab-content .legal-section h1,
+.tab-content .support-section h1 {
+    text-align: left;
+    font-size: clamp(1.65rem, 4vw, 2.25rem);
+}
+
+.tab-content .legal-section h2,
+.tab-content .support-section h2,
+.tab-content .support-section h3 {
+    text-align: left;
+}
+
+.tab-content .support-intro,
+.tab-content .last-updated {
+    text-align: left;
+}
+
 /* Homepage sections — use horizontal space */
 .discovery-dashboard,
 .community-section,

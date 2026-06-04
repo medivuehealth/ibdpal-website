@@ -105,8 +105,8 @@ _TAB_LINKS = """
                 <a href="/#blogs" class="tab-button" data-tab="blogs">Blogs</a>
                 <a href="/#community" class="tab-button" data-tab="community">Community</a>
                 <a href="/#contact" class="tab-button" data-tab="contact">Contact</a>
-                <a href="/privacy" class="tab-button">Privacy</a>
-                <a href="/support" class="tab-button">Support</a>
+                <a href="/#privacy" class="tab-button" data-tab="privacy">Privacy</a>
+                <a href="/#support" class="tab-button" data-tab="support">Support</a>
 """
 
 TAB_NAV_HTML = f"""
@@ -126,8 +126,8 @@ TAB_NAV_HOME_HTML = """
                 <button type="button" class="tab-button" data-tab="blogs">Blogs</button>
                 <button type="button" class="tab-button" data-tab="community">Community</button>
                 <button type="button" class="tab-button" data-tab="contact">Contact</button>
-                <a href="/privacy" class="tab-button">Privacy</a>
-                <a href="/support" class="tab-button">Support</a>
+                <button type="button" class="tab-button" data-tab="privacy">Privacy</button>
+                <button type="button" class="tab-button" data-tab="support">Support</button>
             </div>
         </nav>
 """
