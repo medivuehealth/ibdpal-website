@@ -6,8 +6,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 LOGO_SRC = "/IBDPal_Logo.png"
+TAGLINE = "Empowering IBD Patients"
 
-# Inline SVG icons (ImproveCareNow-style header social row)
 _SOCIAL_SVGS = {
     "facebook": (
         '<svg class="site-social__svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">'
@@ -53,7 +53,7 @@ def _load_social_links() -> dict[str, str]:
     return {key: (data.get(key) or "").strip() for key in _SOCIAL_SVGS}
 
 
-def build_social_bar_html() -> str:
+def build_social_list_html() -> str:
     links = _load_social_links()
     items: list[str] = []
     for key, svg in _SOCIAL_SVGS.items():
@@ -71,65 +71,63 @@ def build_social_bar_html() -> str:
                 f'title="{html.escape(label)} — add URL in social-links.json" '
                 f'aria-label="{html.escape(label)} (link not configured)">{svg}</span></li>'
             )
+    return f'<ul class="site-social__list" aria-label="Social media">{"".join(items)}</ul>'
+
+
+def site_header_html(*, tagline: str = TAGLINE, lang: str = "en") -> str:
+    name = "IBDPal"
+    social = build_social_list_html()
     return f"""
-        <div class="site-social-bar" role="navigation" aria-label="Social media">
-            <div class="site-social-bar__inner">
-                <span class="site-social-bar__label">Follow IBDPal</span>
-                <ul class="site-social__list">{"".join(items)}</ul>
-            </div>
-        </div>
-"""
-
-
-SITE_SOCIAL_BAR_HTML = build_social_bar_html()
-
-_HEADER_NAV = """
-            <nav class="header-nav">
-                <a href="/privacy" class="nav-link">Privacy</a>
-                <a href="/support" class="nav-link">Support</a>
-            </nav>
-"""
-
-_HEADER_NAV_STATIC = """
-            <nav class="header-nav">
-                <a href="/" class="nav-link">Home</a>
-                <a href="/privacy" class="nav-link">Privacy</a>
-                <a href="/support" class="nav-link">Support</a>
-            </nav>
-"""
-
-_LOGO_BLOCK = f"""
-            <div class="logo">
-                <a href="/" class="logo-brand" aria-label="IBDPal home">
-                    <img src="{LOGO_SRC}" alt="IBDPal" class="logo-img" width="180" height="52" decoding="async">
-                </a>
-                <span class="tagline">Empowering IBD Patients</span>
-            </div>
-"""
-
-SITE_HEADER_HTML = f"""
-{SITE_SOCIAL_BAR_HTML}
         <header class="header">
-{_LOGO_BLOCK}{_HEADER_NAV}
+            <div class="header__inner">
+                <div class="logo">
+                    <a href="/" class="logo-brand" aria-label="{html.escape(name)} home">
+                        <img src="{LOGO_SRC}" alt="" class="logo-img" width="52" height="52" decoding="async">
+                    </a>
+                    <div class="logo-text">
+                        <p class="logo-name"><a href="/">{html.escape(name)}</a></p>
+                        <p class="tagline">{html.escape(tagline)}</p>
+                    </div>
+                </div>
+                {social}
+            </div>
         </header>
 """
 
-SITE_HEADER_STATIC_HTML = f"""
-{SITE_SOCIAL_BAR_HTML}
-        <header class="header">
-{_LOGO_BLOCK}{_HEADER_NAV_STATIC}
-        </header>
-"""
 
-TAB_NAV_HTML = """
-        <nav class="tab-navigation">
-            <div class="tab-container">
+SITE_HEADER_HTML = site_header_html()
+SITE_HEADER_STATIC_HTML = SITE_HEADER_HTML
+
+_TAB_LINKS = """
                 <a href="/#overview" class="tab-button" data-tab="overview">Overview</a>
                 <a href="/#app" class="tab-button" data-tab="app">IBDPal App</a>
                 <a href="/#resources" class="tab-button" data-tab="resources">Resources</a>
                 <a href="/#blogs" class="tab-button" data-tab="blogs">Blogs</a>
                 <a href="/#community" class="tab-button" data-tab="community">Community</a>
                 <a href="/#contact" class="tab-button" data-tab="contact">Contact</a>
+                <a href="/privacy" class="tab-button">Privacy</a>
+                <a href="/support" class="tab-button">Support</a>
+"""
+
+TAB_NAV_HTML = f"""
+        <nav class="tab-navigation" aria-label="Main">
+            <div class="tab-container">
+{_TAB_LINKS}
+            </div>
+        </nav>
+"""
+
+TAB_NAV_HOME_HTML = """
+        <nav class="tab-navigation" aria-label="Main">
+            <div class="tab-container">
+                <button type="button" class="tab-button active" data-tab="overview">Overview</button>
+                <button type="button" class="tab-button" data-tab="app">IBDPal App</button>
+                <button type="button" class="tab-button" data-tab="resources">Resources</button>
+                <button type="button" class="tab-button" data-tab="blogs">Blogs</button>
+                <button type="button" class="tab-button" data-tab="community">Community</button>
+                <button type="button" class="tab-button" data-tab="contact">Contact</button>
+                <a href="/privacy" class="tab-button">Privacy</a>
+                <a href="/support" class="tab-button">Support</a>
             </div>
         </nav>
 """

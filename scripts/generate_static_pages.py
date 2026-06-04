@@ -7,7 +7,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 from seo_head import breadcrumb_json, render_seo_head, web_page_json  # noqa: E402
-from site_nav import PAGE_SCRIPTS, SITE_HEADER_STATIC_HTML, TAB_NAV_HTML  # noqa: E402
+from site_nav import PAGE_SCRIPTS, TAB_NAV_HTML, site_header_html  # noqa: E402
 
 NAV = TAB_NAV_HTML
 
@@ -72,7 +72,7 @@ def shell(title: str, description: str, path: str, body: str, active_nav: str = 
 {seo}{HEAD_ASSETS}</head>
 <body>
     <div class="container">
-{SITE_HEADER_STATIC_HTML}
+{site_header_html()}
 {nav}
         <main class="main-content" id="main-content">
 {body}
@@ -276,16 +276,20 @@ def es_page() -> str:
 {seo}{HEAD_ASSETS}</head>
 <body>
     <div class="container">
-        <header class="header">
-            <div class="logo">
-                <a href="/" class="logo-brand" aria-label="IBDPal home">
-                    <img src="/IBDPal_Logo.png" alt="IBDPal" class="logo-img" width="180" height="52" decoding="async">
-                </a>
-                <span class="tagline">Apoyo a pacientes con EII</span>
+{site_header_html(tagline="Apoyo a pacientes con EII")}
+        <nav class="tab-navigation" aria-label="Main">
+            <div class="tab-container">
+                <a href="/#overview" class="tab-button" data-tab="overview">Overview</a>
+                <a href="/#app" class="tab-button" data-tab="app">IBDPal App</a>
+                <a href="/#resources" class="tab-button" data-tab="resources">Resources</a>
+                <a href="/#blogs" class="tab-button" data-tab="blogs">Blogs</a>
+                <a href="/#community" class="tab-button" data-tab="community">Community</a>
+                <a href="/#contact" class="tab-button" data-tab="contact">Contact</a>
+                <a href="/privacy" class="tab-button">Privacy</a>
+                <a href="/support" class="tab-button">Support</a>
+                <a href="/" class="tab-button">English</a>
             </div>
-            <nav class="header-nav"><a href="/" class="nav-link">English</a></nav>
-        </header>
-{TAB_NAV_HTML}
+        </nav>
         <main class="main-content" id="main-content" data-track-impression="page_main" data-track-label="Spanish resources">
             <article class="support-section">
                 <h1>Recursos para EII y Crohn</h1>
