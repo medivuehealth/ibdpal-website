@@ -238,7 +238,7 @@ a.tab-button {
 }
 
 .hero-catchphrase {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
     color: #9933cc; /* ibdPrimary */
     margin-bottom: 1rem;
@@ -1195,7 +1195,7 @@ a.tab-button {
     }
     
     .hero-catchphrase {
-        font-size: 1.8rem;
+        font-size: 1.45rem;
         margin-bottom: 0.8rem;
     }
     
@@ -1330,7 +1330,7 @@ a.tab-button {
     }
     
     .hero-catchphrase {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         margin-bottom: 0.6rem;
     }
     
