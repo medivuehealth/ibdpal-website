@@ -1,8 +1,12 @@
 #!/usr/bin/env python3
-"""Generate static patient-resource HTML pages."""
+"""Generate static patient-resource HTML pages with full SEO heads."""
+from __future__ import annotations
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+from seo_head import breadcrumb_json, render_seo_head, web_page_json  # noqa: E402
 
 NAV = """
         <nav class="tab-navigation">
@@ -24,6 +28,7 @@ FOOTER = """
                     <a href="/ibd-crohns-support" class="footer-link">IBD Crohn's Support</a>
                     <a href="/resources" class="footer-link">Resource Library</a>
                     <a href="/newly-diagnosed" class="footer-link">Newly Diagnosed</a>
+                    <a href="/visit-prep" class="footer-link">Visit Prep</a>
                     <a href="/privacy" class="footer-link">Privacy Policy</a>
                     <a href="/support" class="footer-link">App Support</a>
                     <a href="/es/recursos" class="footer-link">Español</a>
@@ -40,29 +45,47 @@ SCRIPTS = """
     <script src="/analytics.js" defer></script>
 """
 
+HEAD_ASSETS = """    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+"""
 
-def shell(title, description, canonical, body, active_nav=""):
-    nav = NAV.replace('class="tab-button"', 'class="tab-button"', 1)
+
+def shell(title: str, description: str, path: str, body: str, active_nav: str = "") -> str:
+    nav = NAV
     if active_nav:
-        nav = nav.replace(f'href="{active_nav}" class="tab-button"', f'href="{active_nav}" class="tab-button active"', 1)
+        nav = nav.replace(
+            f'href="{active_nav}" class="tab-button"',
+            f'href="{active_nav}" class="tab-button active"',
+            1,
+        )
+    crumb_name = title.split("|")[0].strip()
+    json_ld = {
+        "@context": "https://schema.org",
+        "@graph": [
+            breadcrumb_json(path, crumb_name),
+            web_page_json(path, crumb_name, description),
+        ],
+    }
+    seo = render_seo_head(
+        title=title,
+        description=description,
+        path=path,
+        json_ld=json_ld,
+    )
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{title}</title>
-    <meta name="description" content="{description}">
-    <link rel="canonical" href="https://ibdpal.org{canonical}">
-    <link rel="stylesheet" href="/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="alternate" hreflang="es" href="https://ibdpal.org/es/recursos">
-</head>
+{seo}{HEAD_ASSETS}</head>
 <body>
     <div class="container">
         <header class="header">
             <div class="logo">
-                <h1><a href="/" style="color: white; text-decoration: none;">IBDPal</a></h1>
+                <p class="logo-title"><a href="/" style="color: white; text-decoration: none;">IBDPal</a></p>
                 <span class="tagline">Empowering IBD Patients</span>
             </div>
             <nav class="header-nav">
@@ -85,8 +108,8 @@ def shell(title, description, canonical, body, active_nav=""):
 
 PAGES = {
     "newly-diagnosed.html": (
-        "Newly Diagnosed with IBD | IBDPal",
-        "First steps after a Crohn's or colitis diagnosis: questions for your GI, how IBDPal helps, and trusted support links.",
+        "Newly Diagnosed with IBD — First Steps | IBDPal",
+        "Newly diagnosed with Crohn's or ulcerative colitis? Questions for your GI, IBDPal app basics, IBD support groups, and trusted national resources.",
         "/newly-diagnosed",
         """
             <article class="support-section seo-landing">
@@ -120,8 +143,8 @@ PAGES = {
         """,
     ),
     "visit-prep.html": (
-        "Doctor Visit Prep Checklist | IBDPal",
-        "Printable IBD appointment checklist: symptoms, meds, questions, and recent trends for Crohn's and colitis care.",
+        "IBD Doctor Visit Prep Checklist (Printable) | IBDPal",
+        "Free printable Crohn's and colitis appointment checklist: symptoms, medications, questions, and trends to share with your gastroenterologist.",
         "/visit-prep",
         """
             <article class="support-section visit-prep-page">
@@ -148,8 +171,8 @@ PAGES = {
         """,
     ),
     "resources.html": (
-        "IBD Resource Library | IBDPal",
-        "Search and filter IBD education: nutrition, support, treatment basics, family resources, and IBDPal tools.",
+        "IBD Resource Library — Crohn's & Colitis Education | IBDPal",
+        "Search 25+ IBD resources: nutrition blogs, Crohn's support, pediatric caregivers, visit prep, community map, and the free IBDPal iOS app.",
         "/resources",
         """
             <div class="resources-page" data-resource-library>
@@ -176,8 +199,8 @@ PAGES = {
         "/#resources",
     ),
     "patient-stories.html": (
-        "Patient Stories | IBDPal",
-        "Anonymized stories from people using IBDPal for Crohn's and colitis—shared with consent for education only.",
+        "IBD Patient Stories — Living With Crohn's & Colitis | IBDPal",
+        "Real-world stories from people using IBDPal for Crohn's disease and ulcerative colitis—shared with consent for education only.",
         "/patient-stories",
         """
             <article class="support-section">
@@ -194,8 +217,8 @@ PAGES = {
         """,
     ),
     "clinical-partnerships.html": (
-        "Clinical Partnerships | IBDPal",
-        "How hospitals and IBD programs can collaborate with MediVue and IBDPal as a companion self-management tool.",
+        "Clinical Partnerships — IBDPal for IBD Programs | IBDPal",
+        "Partner with MediVue: IBDPal as a companion self-management tool for hospital and clinic IBD programs—visit prep, logging, and patient education.",
         "/clinical-partnerships",
         """
             <article class="support-section">
@@ -210,8 +233,8 @@ PAGES = {
         """,
     ),
     "pediatric-caregivers.html": (
-        "Pediatric IBD & Caregivers | IBDPal",
-        "Resources for children, teens, and parents: ImproveCareNow, GIKids, school plans, and family-friendly tracking.",
+        "Pediatric IBD & Caregiver Resources | IBDPal",
+        "IBD resources for kids and parents: ImproveCareNow, GIKids, school 504 plans, family blogs, and IBDPal tracking for pediatric Crohn's and colitis.",
         "/pediatric-caregivers",
         """
             <article class="support-section">
@@ -229,8 +252,8 @@ PAGES = {
         """,
     ),
     "for-clinicians.html": (
-        "For Clinicians — Visit Summaries | IBDPal",
-        "How IBDPal helps patients export food, symptom, and trend summaries for IBD appointments—companion tool only.",
+        "For Clinicians — IBD Visit Summaries & Patient Logs | IBDPal",
+        "IBDPal helps IBD patients export symptom, nutrition, and trend summaries for gastroenterology visits—companion tool, not a medical device.",
         "/for-clinicians",
         """
             <article class="support-section">
@@ -247,22 +270,35 @@ PAGES = {
     ),
 }
 
-ES_PAGE = """<!DOCTYPE html>
+
+def es_page() -> str:
+    desc = "Recursos educativos en español para enfermedad inflamatoria intestinal (EII), Crohn y colitis ulcerosa. Solo educación, no consejo médico."
+    json_ld = {
+        "@context": "https://schema.org",
+        "@graph": [
+            breadcrumb_json("/es/recursos", "Recursos en español"),
+            web_page_json("/es/recursos", "Recursos IBD y Crohn", desc),
+        ],
+    }
+    seo = render_seo_head(
+        title="Recursos IBD y Crohn en Español | IBDPal",
+        description=desc,
+        path="/es/recursos",
+        lang="es",
+        hreflang_es=None,
+        hreflang_en="https://ibdpal.org/",
+        json_ld=json_ld,
+    )
+    return f"""<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recursos IBD y Crohn | IBDPal</title>
-    <meta name="description" content="Recursos educativos en español para enfermedad inflamatoria intestinal, Crohn y colitis. Solo educación, no consejo médico.">
-    <link rel="canonical" href="https://ibdpal.org/es/recursos">
-    <link rel="alternate" hreflang="en" href="https://ibdpal.org/">
-    <link rel="stylesheet" href="/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
+{seo}{HEAD_ASSETS}</head>
 <body>
     <div class="container">
         <header class="header">
-            <div class="logo"><h1><a href="/" style="color:white;text-decoration:none">IBDPal</a></h1>
+            <div class="logo"><p class="logo-title"><a href="/" style="color:white;text-decoration:none">IBDPal</a></p>
             <span class="tagline">Apoyo a pacientes con EII</span></div>
             <nav class="header-nav"><a href="/" class="nav-link">English</a></nav>
         </header>
@@ -272,14 +308,15 @@ ES_PAGE = """<!DOCTYPE html>
                 <p>IBDPal ofrece una aplicación gratuita y artículos educativos. <strong>No sustituye la atención médica.</strong></p>
                 <ul class="seo-landing__list">
                     <li><a href="/ibd-crohns-support">Guía de apoyo (inglés)</a></li>
-                    <li><a href="/#community">Mapa de comunidad EE. UU.</a></li>
+                    <li><a href="/resources">Biblioteca de recursos</a></li>
+                    <li><a href="/newly-diagnosed">Recién diagnosticado (inglés)</a></li>
                     <li><a href="https://www.crohnscolitisfoundation.org/" rel="noopener noreferrer">Crohn's &amp; Colitis Foundation</a></li>
                     <li><a href="https://gikids.org/es" rel="noopener noreferrer">GIKids (español)</a></li>
                 </ul>
                 <p>Emergencias: llame al 911. Síntomas urgentes: contacte a su gastroenterólogo.</p>
             </article>
         </main>
-        <footer class="footer"><div class="footer-content"><p>&copy; 2025 MediVue</p></div></footer>
+        <footer class="footer"><div class="footer-content"><p>&copy; 2025 MediVue · <a href="/">ibdpal.org</a></p></div></footer>
     </div>
     <script src="/site-global.js" defer></script>
 </body>
@@ -290,12 +327,12 @@ ES_PAGE = """<!DOCTYPE html>
 def main():
     for name, spec in PAGES.items():
         active = spec[4] if len(spec) > 4 else ""
-        html = shell(spec[0], spec[1], spec[2], spec[3], active)
-        (ROOT / name).write_text(html, encoding="utf-8")
+        html_out = shell(spec[0], spec[1], spec[2], spec[3], active)
+        (ROOT / name).write_text(html_out, encoding="utf-8")
         print("wrote", name)
     es_dir = ROOT / "es"
     es_dir.mkdir(exist_ok=True)
-    (es_dir / "recursos.html").write_text(ES_PAGE, encoding="utf-8")
+    (es_dir / "recursos.html").write_text(es_page(), encoding="utf-8")
     print("wrote es/recursos.html")
 
 

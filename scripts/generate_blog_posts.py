@@ -347,21 +347,33 @@ def render_post(p: dict) -> str:
     canonical = f"https://ibdpal.org/blog/{slug}"
     ld = {
         "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": p["title"],
-        "description": p["description"],
-        "datePublished": p["date_iso"],
-        "dateModified": p["date_iso"],
-        "author": {"@type": "Organization", "name": "MediVue", "url": "https://ibdpal.org/"},
-        "publisher": {
-            "@type": "Organization",
-            "name": "MediVue",
-            "url": "https://ibdpal.org/",
-            "logo": {"@type": "ImageObject", "url": "https://ibdpal.org/favicon.ico"},
-        },
-        "image": [f"https://ibdpal.org{thumb}"],
-        "mainEntityOfPage": {"@type": "WebPage", "@id": canonical},
-        "isAccessibleForFree": True,
+        "@graph": [
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {"@type": "ListItem", "position": 1, "name": "IBDPal", "item": "https://ibdpal.org/"},
+                    {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://ibdpal.org/#blogs"},
+                    {"@type": "ListItem", "position": 3, "name": p["title"], "item": canonical},
+                ],
+            },
+            {
+                "@type": "Article",
+                "headline": p["title"],
+                "description": p["description"],
+                "datePublished": p["date_iso"],
+                "dateModified": p["date_iso"],
+                "author": {"@type": "Organization", "name": "MediVue", "url": "https://ibdpal.org/"},
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "MediVue",
+                    "url": "https://ibdpal.org/",
+                    "logo": {"@type": "ImageObject", "url": "https://ibdpal.org/favicon.ico"},
+                },
+                "image": [f"https://ibdpal.org{thumb}"],
+                "mainEntityOfPage": {"@type": "WebPage", "@id": canonical},
+                "isAccessibleForFree": True,
+            },
+        ],
     }
     ld_json = json.dumps(ld, separators=(",", ":"))
     disclaimer = (
