@@ -39,11 +39,19 @@ def patch_file(path: Path) -> bool:
             )
     text = text.replace(
         "window.location.replace('/#privacy')",
+        "window.location.replace('https://www.ibdpal.org/#privacy')",
+    )
+    text = text.replace(
         "window.location.replace('https://ibdpal.org/#privacy')",
+        "window.location.replace('https://www.ibdpal.org/#privacy')",
     )
     text = text.replace(
         "window.location.replace('/#support')",
+        "window.location.replace('https://www.ibdpal.org/#support')",
+    )
+    text = text.replace(
         "window.location.replace('https://ibdpal.org/#support')",
+        "window.location.replace('https://www.ibdpal.org/#support')",
     )
     if text != orig:
         path.write_text(text, encoding="utf-8")

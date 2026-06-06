@@ -1,11 +1,11 @@
 /**
- * Redirect www.ibdpal.org to canonical https://ibdpal.org (preserve path + hash).
- * Load synchronously in <head> so navigation stays on a valid TLS host.
+ * Redirect bare ibdpal.org to www.ibdpal.org (preserve path + hash).
+ * Vercel already 307s apex → www; this is a client-side fallback for edge cases.
  */
 (function () {
-    if (window.location.hostname === 'www.ibdpal.org') {
+    if (window.location.hostname === 'ibdpal.org') {
         window.location.replace(
-            'https://ibdpal.org' +
+            'https://www.ibdpal.org' +
             window.location.pathname +
             window.location.search +
             window.location.hash
