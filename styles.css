@@ -1054,6 +1054,16 @@ a.tab-button {
     text-decoration: underline;
 }
 
+.seo-guide-keywords {
+    color: #666;
+    margin-bottom: 1.25rem;
+}
+
+.seo-guide-hub-list .seo-guide-cat-desc {
+    color: #555;
+    font-size: 0.9rem;
+}
+
 .seo-landing__faq p {
     margin-bottom: 1rem;
     line-height: 1.65;

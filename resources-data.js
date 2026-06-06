@@ -2,6 +2,7 @@
  * Filterable patient resource library (education links + site content).
  */
 window.IBDPAL_RESOURCES = [
+  { title: 'IBD Patient Guides (by topic)', category: 'getting-started', type: 'site', url: '/guides', tags: ['search', 'crohn', 'colitis', 'diet', 'flare'] },
   { title: 'IBD Crohn\'s Support Guide', category: 'community', type: 'site', url: '/ibd-crohns-support', tags: ['support', 'national'] },
   { title: 'Newly Diagnosed with IBD', category: 'getting-started', type: 'site', url: '/newly-diagnosed', tags: ['crohn', 'colitis', 'beginner'] },
   { title: 'Doctor Visit Prep Checklist', category: 'getting-started', type: 'site', url: '/visit-prep', tags: ['clinic', 'printable'] },

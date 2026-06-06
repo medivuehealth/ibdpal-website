@@ -43,3 +43,30 @@
 
 ## Machine-readable index
 - Sitemap: https://ibdpal.org/sitemap.xml
+
+## Patient guides (search topics)
+- https://ibdpal.org/guides
+- https://ibdpal.org/guides/what-should-i-eat-crohns-colitis
+- https://ibdpal.org/guides/foods-to-eat-crohns-flare
+- https://ibdpal.org/guides/ulcerative-colitis-diet-foods
+- https://ibdpal.org/guides/crohns-disease-diet-nutrition
+- https://ibdpal.org/guides/low-residue-diet-ibd
+- https://ibdpal.org/guides/ibd-hydration-fluids
+- https://ibdpal.org/guides/crohns-colitis-support-groups
+- https://ibdpal.org/guides/ibd-support-near-me
+- https://ibdpal.org/guides/pediatric-crohns-colitis-help
+- https://ibdpal.org/guides/newly-diagnosed-crohns-colitis
+- https://ibdpal.org/guides/crohns-flare-what-to-do
+- https://ibdpal.org/guides/ulcerative-colitis-flare-management
+- https://ibdpal.org/guides/track-ibd-symptoms-food
+- https://ibdpal.org/guides/ibd-nutrition-tracking-app
+- https://ibdpal.org/guides/crohns-doctor-visit-prep
+- https://ibdpal.org/guides/biologics-crohns-colitis
+- https://ibdpal.org/guides/ibd-travel-planning
+- https://ibdpal.org/guides/ibd-workplace-school-rights
+- https://ibdpal.org/guides/living-with-ostomy-ibd
+- https://ibdpal.org/guides/stress-anxiety-ibd
+- https://ibdpal.org/guides/sleep-ibd-flares
+- https://ibdpal.org/guides/partner-caregiver-ibd
+- https://ibdpal.org/guides/crohns-food-triggers
+- https://ibdpal.org/guides/ibd-crohns-colitis-helpline

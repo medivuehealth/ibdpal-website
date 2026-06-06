@@ -1,0 +1,352 @@
+{
+  "hub": {
+    "title": "IBD Patient Guides — Crohn's, Colitis & Daily Life | IBDPal",
+    "description": "Searchable patient guides for Crohn's disease and ulcerative colitis: diet, flares, support groups, symptom tracking, visit prep, and more. Free education from ibdpal.org.",
+    "h1": "IBD patient guides",
+    "intro": "Each guide targets a common search topic—foods to eat during a flare, finding support near you, tracking symptoms, and more. Education only; always work with your IBD care team."
+  },
+  "pages": [
+    {
+      "slug": "what-should-i-eat-crohns-colitis",
+      "category": "nutrition",
+      "keywords": ["what should i eat crohn's", "what should i eat colitis", "IBD diet guide", "crohn's colitis nutrition"],
+      "title": "What Should I Eat with Crohn's or Colitis? | IBDPal Guide",
+      "description": "Practical IBD diet guidance: foods many people tolerate in remission vs. during flares, hydration, and when to see a dietitian—education only, not medical advice.",
+      "h1": "What should I eat with Crohn's or colitis?",
+      "intro": "There is no single diet for inflammatory bowel disease. Triggers differ by person and disease activity. This guide summarizes patterns many patients discuss with their gastroenterologist or IBD dietitian.",
+      "sections": [
+        {"heading": "During remission", "paragraphs": ["A balanced pattern with fruits, vegetables, lean protein, and whole grains is a common goal when symptoms are quiet.", "Some people reintroduce higher-fiber foods slowly with their team's guidance."]},
+        {"heading": "During a flare", "paragraphs": ["Softer, lower-fiber choices—bananas, white rice, applesauce, broths, lean protein—are often easier to tolerate temporarily.", "Hydration matters when diarrhea or reduced intake is present."]}
+      ],
+      "tips": ["Keep a simple food and symptom log", "Introduce one new food at a time", "Ask about vitamin D, iron, and B12 labs"],
+      "related": [{"label": "Best foods during a Crohn's flare (article)", "url": "/blog/best-foods-crohns-flare"}, {"label": "Low-residue diet during a flare", "url": "/blog/low-residue-diet-flare"}, {"label": "Track food & symptoms with IBDPal", "url": "/blog/tracking-food-symptoms-ibdpal"}],
+      "faq": [
+        {"q": "Is there one best diet for Crohn's disease?", "a": "No. Individual triggers and disease activity vary. Work with your IBD team for a plan that fits you."},
+        {"q": "Should I avoid all fiber?", "a": "Not always. Many people reduce fiber during active symptoms and expand variety in remission—with clinician guidance."}
+      ]
+    },
+    {
+      "slug": "foods-to-eat-crohns-flare",
+      "category": "nutrition",
+      "keywords": ["foods to eat crohn's flare", "crohn's flare diet", "gentle foods IBD flare", "what to eat crohn's attack"],
+      "title": "Foods to Eat During a Crohn's Flare | IBDPal Guide",
+      "description": "Gentle food ideas, hydration, and common triggers during an active Crohn's flare. Educational guide—not a substitute for your gastroenterologist.",
+      "h1": "Foods to eat during a Crohn's flare",
+      "intro": "When inflammation is active, many people focus on easy-to-digest meals and fluids. These are general patterns—not rules that apply to everyone.",
+      "sections": [
+        {"heading": "Often easier to tolerate", "paragraphs": ["Soft fruits (bananas, applesauce), refined grains (white rice, plain pasta), broth-based soups, eggs, tofu, and lean poultry or fish are frequent choices in patient education materials."]},
+        {"heading": "Hydration", "paragraphs": ["Water, oral rehydration solutions, broth, and herbal teas may help when fluid losses are higher. Limit caffeine and alcohol if they worsen symptoms."]}
+      ],
+      "tips": ["Eat smaller, more frequent meals if large portions trigger discomfort", "Avoid known personal triggers even if they are healthy for others"],
+      "related": [{"label": "Full article: best foods during a flare", "url": "/blog/best-foods-crohns-flare"}, {"label": "Flare first 48 hours", "url": "/blog/flare-first-48-hours"}],
+      "faq": [
+        {"q": "Can diet stop a Crohn's flare?", "a": "Diet alone does not treat inflammation. Medication and medical care from your IBD team are essential; food choices may reduce irritation while you recover."}
+      ]
+    },
+    {
+      "slug": "ulcerative-colitis-diet-foods",
+      "category": "nutrition",
+      "keywords": ["ulcerative colitis diet", "UC foods to eat", "colitis nutrition", "ulcerative colitis meal ideas"],
+      "title": "Ulcerative Colitis Diet & Foods | IBDPal Guide",
+      "description": "UC nutrition basics: remission vs. flare patterns, hydration, and tracking triggers. Educational guide for ulcerative colitis patients and caregivers.",
+      "h1": "Ulcerative colitis diet and foods",
+      "intro": "Ulcerative colitis primarily affects the colon. Nutrition goals often include maintaining weight, correcting deficiencies, and identifying foods that worsen symptoms for you personally.",
+      "sections": [
+        {"heading": "Remission goals", "paragraphs": ["A varied, nutrient-dense pattern supports long-term health when tolerated.", "Some patients work with an IBD dietitian on reintroducing fiber and plant foods."]},
+        {"heading": "Active symptoms", "paragraphs": ["Lower-fiber, low-residue patterns are sometimes used short term.", "See our guide on UC trigger foods for common items patients monitor."]}
+      ],
+      "related": [{"label": "Foods that may trigger UC symptoms", "url": "/blog/foods-that-may-trigger-uc-symptoms"}, {"label": "What should I eat with IBD?", "url": "/guides/what-should-i-eat-crohns-colitis"}],
+      "faq": [
+        {"q": "Is ulcerative colitis diet the same as Crohn's?", "a": "Principles overlap, but location of disease and personal triggers differ. Follow guidance tailored to your diagnosis."}
+      ]
+    },
+    {
+      "slug": "crohns-disease-diet-nutrition",
+      "category": "nutrition",
+      "keywords": ["crohn's disease diet", "crohn's nutrition", "IBD nutrition management", "crohn's meal planning"],
+      "title": "Crohn's Disease Diet & Nutrition | IBDPal Guide",
+      "description": "How nutrition fits into Crohn's disease care: deficiencies, flare vs. remission eating, and tools to spot patterns. Education only.",
+      "h1": "Crohn's disease diet and nutrition",
+      "intro": "Crohn's can affect any part of the digestive tract, so nutritional needs vary widely. Tracking intake and symptoms helps you bring clearer data to clinic visits.",
+      "sections": [
+        {"heading": "Why nutrition matters", "paragraphs": ["Malnutrition, anemia, and vitamin deficiencies are common in IBD.", "Diet does not replace medication, but it supports energy, growth (in youth), and recovery."]},
+        {"heading": "Using data at appointments", "paragraphs": ["A food and symptom log—or IBDPal export—helps your team see patterns between visits."]}
+      ],
+      "related": [{"label": "How nutrition impacts gut health", "url": "/blog/how-nutrition-impacts-gut-health-ibd"}, {"label": "IBDPal food & symptom tracking", "url": "/blog/tracking-food-symptoms-ibdpal"}],
+      "faq": []
+    },
+    {
+      "slug": "low-residue-diet-ibd",
+      "category": "nutrition",
+      "keywords": ["low residue diet IBD", "low fiber diet crohn's", "low residue colitis", "IBD low residue foods"],
+      "title": "Low-Residue Diet for IBD | IBDPal Guide",
+      "description": "When a low-residue or low-fiber pattern may be discussed during IBD flares, example foods, and how long to use it—with your care team's input.",
+      "h1": "Low-residue diet for IBD",
+      "intro": "A low-residue pattern limits fiber and tough-to-digest foods for a short period for some patients during active symptoms. It is not meant to be permanent without medical supervision.",
+      "sections": [
+        {"heading": "Common inclusions", "paragraphs": ["Refined grains, peeled cooked vegetables, tender meats, eggs, and smooth dairy (if lactose is tolerated) appear in many patient handouts."]},
+        {"heading": "Transition back", "paragraphs": ["As symptoms improve, teams often help reintroduce fiber gradually to support long-term gut health."]}
+      ],
+      "related": [{"label": "Low-residue diet article", "url": "/blog/low-residue-diet-flare"}],
+      "faq": []
+    },
+    {
+      "slug": "ibd-hydration-fluids",
+      "category": "nutrition",
+      "keywords": ["IBD hydration", "crohn's dehydration", "colitis fluids", "diarrhea hydration IBD"],
+      "title": "Hydration & Fluids for IBD | IBDPal Guide",
+      "description": "Why dehydration is common in IBD, drink choices during flares, and when to call your care team. Educational hydration guide.",
+      "h1": "Hydration and fluids for IBD",
+      "intro": "Diarrhea, vomiting, and reduced oral intake increase dehydration risk in Crohn's disease and ulcerative colitis.",
+      "sections": [
+        {"heading": "Practical tips", "paragraphs": ["Sip fluids throughout the day; consider electrolyte drinks when losses are high.", "Broths and oral rehydration solutions are common suggestions in patient education."]}
+      ],
+      "related": [{"label": "Hydration tips article", "url": "/blog/hydration-tips-ibd"}],
+      "faq": [
+        {"q": "When is dehydration an emergency?", "a": "Dizziness, very dark urine, rapid heartbeat, or inability to keep fluids down warrant urgent medical contact—not only self-care at home."}
+      ]
+    },
+    {
+      "slug": "crohns-colitis-support-groups",
+      "category": "support",
+      "keywords": ["crohn's support group", "colitis support group", "IBD peer support", "find IBD support group"],
+      "title": "Crohn's & Colitis Support Groups | IBDPal Guide",
+      "description": "Find in-person and virtual IBD support groups by state, plus national helplines and the IBDPal community map.",
+      "h1": "Crohn's and colitis support groups",
+      "intro": "Peer support complements medical care. National finders and local chapters help you connect with others who understand IBD daily life.",
+      "sections": [
+        {"heading": "National starting points", "paragraphs": ["The Crohn's & Colitis Foundation offers chapter programs and a support group locator.", "ImproveCareNow connects pediatric IBD families with care centers and community resources."]}
+      ],
+      "related": [{"label": "IBD Crohn's support hub", "url": "/ibd-crohns-support"}, {"label": "Community map by state", "url": "/#community"}],
+      "faq": [
+        {"q": "Are support groups medical care?", "a": "No. They provide peer connection and education. Treatment decisions stay with your clinicians."}
+      ]
+    },
+    {
+      "slug": "ibd-support-near-me",
+      "category": "support",
+      "keywords": ["IBD support near me", "crohn's support near me", "colitis help local", "IBD resources by state"],
+      "title": "IBD Support Near Me — Local Resources | IBDPal",
+      "description": "Find IBD and Crohn's support near you: state chapters, support groups, and major centers on IBDPal's U.S. community map.",
+      "h1": "IBD support near me",
+      "intro": "Local chapters, hospital programs, and virtual groups vary by state. Start with national finders, then narrow by your location.",
+      "sections": [
+        {"heading": "Use the community map", "paragraphs": ["IBDPal's Community tab lists state-level chapters, helplines, and pediatric networks—with detailed listings for North Carolina and national fallbacks for all states."]}
+      ],
+      "related": [{"label": "Open community map", "url": "/#community"}, {"label": "CCF find a chapter", "url": "https://www.crohnscolitisfoundation.org/chapters"}],
+      "faq": []
+    },
+    {
+      "slug": "pediatric-crohns-colitis-help",
+      "category": "family",
+      "keywords": ["pediatric crohn's", "child with colitis", "teen IBD support", "kids IBD resources"],
+      "title": "Pediatric Crohn's & Colitis Help | IBDPal Guide",
+      "description": "Resources for children and teens with IBD: ImproveCareNow, GIKids, school planning, and family tracking with IBDPal.",
+      "h1": "Pediatric Crohn's and colitis help",
+      "intro": "Families need team-based care, school support, and trustworthy education networks—not generic adult advice.",
+      "sections": [
+        {"heading": "Trusted networks", "paragraphs": ["ImproveCareNow and GIKids are widely used for pediatric IBD education and care center discovery.", "IBDPal's pediatric hub links these resources with visit-prep and tracking tools."]}
+      ],
+      "related": [{"label": "Pediatric & caregiver hub", "url": "/pediatric-caregivers"}, {"label": "Living with IBD as a family", "url": "/blog/living-with-ibd-kids"}],
+      "faq": []
+    },
+    {
+      "slug": "newly-diagnosed-crohns-colitis",
+      "category": "getting-started",
+      "keywords": ["newly diagnosed crohn's", "newly diagnosed colitis", "just diagnosed IBD", "first steps IBD"],
+      "title": "Newly Diagnosed with Crohn's or Colitis | IBDPal",
+      "description": "First steps after an IBD diagnosis: questions for your GI, support links, visit prep, and free tracking tools.",
+      "h1": "Newly diagnosed with Crohn's or colitis",
+      "intro": "A new diagnosis is overwhelming. Focus on understanding your type of IBD, building your care team, and knowing who to call for support—not emergency medical advice online.",
+      "sections": [
+        {"heading": "Questions for your first visits", "paragraphs": ["What type of IBD do I have and where is it active?", "What are my treatment options and monitoring plan?", "Who do I contact after hours for worsening symptoms?"]}
+      ],
+      "related": [{"label": "Newly diagnosed hub", "url": "/newly-diagnosed"}, {"label": "Visit prep checklist", "url": "/visit-prep"}],
+      "faq": []
+    },
+    {
+      "slug": "crohns-flare-what-to-do",
+      "category": "flares",
+      "keywords": ["crohn's flare what to do", "IBD flare management", "crohn's attack help", "worsening crohn's symptoms"],
+      "title": "Crohn's Flare — What to Do | IBDPal Guide",
+      "description": "Calm first steps during a Crohn's flare: when to call your team, hydration, diet adjustments, and what not to delay.",
+      "h1": "Crohn's flare: what to do",
+      "intro": "A flare means worsening inflammation or symptoms. Medical treatment decisions belong with your IBD team; this guide outlines common self-care topics patients discuss in clinic.",
+      "sections": [
+        {"heading": "Contact your team if", "paragraphs": ["Fever, severe pain, blood in stool, inability to eat or drink, or symptoms very different from your baseline warrant prompt outreach."]}
+      ],
+      "related": [{"label": "First 48 hours of a flare", "url": "/blog/flare-first-48-hours"}, {"label": "Foods during a flare", "url": "/guides/foods-to-eat-crohns-flare"}],
+      "faq": []
+    },
+    {
+      "slug": "ulcerative-colitis-flare-management",
+      "category": "flares",
+      "keywords": ["ulcerative colitis flare", "UC flare management", "colitis flare symptoms", "UC worsening symptoms"],
+      "title": "Ulcerative Colitis Flare Management | IBDPal Guide",
+      "description": "UC flare basics: symptoms to report, hydration, diet patterns, and clinic communication. Education only.",
+      "h1": "Ulcerative colitis flare management",
+      "intro": "Colitis flares often involve increased bowel frequency, urgency, blood, or fatigue. Early communication with your gastroenterologist can prevent complications.",
+      "sections": [
+        {"heading": "Document for your visit", "paragraphs": ["Stool frequency, blood, pain level, weight change, and medications taken help your team adjust treatment quickly."]}
+      ],
+      "related": [{"label": "Flare first 48 hours", "url": "/blog/flare-first-48-hours"}, {"label": "UC diet guide", "url": "/guides/ulcerative-colitis-diet-foods"}],
+      "faq": []
+    },
+    {
+      "slug": "track-ibd-symptoms-food",
+      "category": "tracking",
+      "keywords": ["track IBD symptoms", "food symptom diary crohn's", "IBD journal", "crohn's symptom log"],
+      "title": "Track IBD Symptoms & Food | IBDPal Guide",
+      "description": "Why logging meals and symptoms helps IBD care, what to record, and free tracking with the IBDPal iOS app.",
+      "h1": "Track IBD symptoms and food",
+      "intro": "Patterns between diet, stress, sleep, and symptoms are hard to remember months later. A simple log improves visit conversations.",
+      "sections": [
+        {"heading": "What to log", "paragraphs": ["Meals, bowel symptoms, pain, energy, medications, and sleep are common fields patients track.", "Photos or notes about restaurant meals can help recall triggers."]}
+      ],
+      "related": [{"label": "Tracking food & symptoms article", "url": "/blog/tracking-food-symptoms-ibdpal"}, {"label": "Download IBDPal app", "url": "/#app"}],
+      "faq": []
+    },
+    {
+      "slug": "ibd-nutrition-tracking-app",
+      "category": "tracking",
+      "keywords": ["IBD nutrition app", "crohn's food tracker", "colitis diet app", "IBDPal app"],
+      "title": "IBD Nutrition Tracking App — IBDPal | Guide",
+      "description": "Free iOS app for IBD nutrition, symptom, and flare tracking with visit-prep exports. MediVue nonprofit—education only.",
+      "h1": "IBD nutrition tracking with IBDPal",
+      "intro": "IBDPal helps patients log meals, micronutrients, symptoms, and medications—then export summaries for gastroenterology visits.",
+      "sections": [
+        {"heading": "Features patients use", "paragraphs": ["Daily nutrition scoring, symptom trends, medication reminders, and PDF/CSV visit exports.", "Community features connect you with others living with IBD."]}
+      ],
+      "related": [{"label": "IBDPal app overview", "url": "/#app"}, {"label": "Introducing IBDPal", "url": "/blog/introducing-ibdpal"}],
+      "faq": []
+    },
+    {
+      "slug": "crohns-doctor-visit-prep",
+      "category": "clinical",
+      "keywords": ["crohn's doctor visit", "GI appointment IBD", "prepare for gastroenterologist", "IBD clinic checklist"],
+      "title": "Prepare for Your Crohn's / IBD Doctor Visit | IBDPal",
+      "description": "Printable IBD visit checklist: symptoms, meds, questions, and trends to share with your gastroenterologist.",
+      "h1": "Prepare for your Crohn's or IBD doctor visit",
+      "intro": "Short appointments go further when you arrive with organized notes, medication lists, and clear questions.",
+      "sections": [
+        {"heading": "Bring or export", "paragraphs": ["Symptom trends, weight changes, medication adherence, and nutrition concerns.", "IBDPal can export a visit summary from your logs."]}
+      ],
+      "related": [{"label": "Printable visit prep", "url": "/visit-prep"}, {"label": "For clinicians page", "url": "/for-clinicians"}],
+      "faq": []
+    },
+    {
+      "slug": "biologics-crohns-colitis",
+      "category": "treatment",
+      "keywords": ["biologics crohn's", "biologics ulcerative colitis", "IBD biologic therapy", "crohn's medication biologics"],
+      "title": "Biologics for Crohn's & Colitis — Overview | IBDPal",
+      "description": "Patient-friendly overview of biologic therapies in IBD: questions for your team, insurance topics, and education links.",
+      "h1": "Biologics for Crohn's and colitis — overview",
+      "intro": "Biologics are advanced therapies used for many people with moderate-to-severe IBD. Only your prescriber can say if they are appropriate for you.",
+      "sections": [
+        {"heading": "Questions patients ask", "paragraphs": ["How will we know if it's working?", "What are infusion vs. injection options?", "How do we handle insurance or prior authorization?"]}
+      ],
+      "related": [{"label": "Understanding biologics article", "url": "/blog/understanding-biologics-ibd"}, {"label": "Insurance & biologics overview", "url": "/blog/insurance-biologics-ibd"}],
+      "faq": []
+    },
+    {
+      "slug": "ibd-travel-planning",
+      "category": "wellness",
+      "keywords": ["travel with crohn's", "travel ulcerative colitis", "IBD vacation tips", "flying with IBD"],
+      "title": "Travel With IBD — Planning Guide | IBDPal",
+      "description": "Travel tips for Crohn's and colitis: medications, restrooms, food planning, and flare preparedness.",
+      "h1": "Travel planning with IBD",
+      "intro": "Travel is possible with planning: medication supply, restroom access, travel insurance, and a flare plan with your team.",
+      "sections": [],
+      "related": [{"label": "Travel with IBD article", "url": "/blog/travel-with-ibd"}],
+      "faq": []
+    },
+    {
+      "slug": "ibd-workplace-school-rights",
+      "category": "wellness",
+      "keywords": ["IBD workplace rights", "crohn's school 504", "ADA IBD", "colitis accommodations"],
+      "title": "IBD Workplace & School Rights | IBDPal Guide",
+      "description": "Overview of workplace and school accommodations for Crohn's and colitis: ADA, 504 plans, and documentation tips.",
+      "h1": "Workplace and school rights with IBD",
+      "intro": "Many students and employees benefit from documented accommodations for bathroom access, absences, and medication schedules.",
+      "sections": [],
+      "related": [{"label": "Workplace & school rights article", "url": "/blog/workplace-school-ibd-rights"}],
+      "faq": []
+    },
+    {
+      "slug": "living-with-ostomy-ibd",
+      "category": "wellness",
+      "keywords": ["ostomy IBD", "crohn's ostomy life", "colitis ostomy support", "ileostomy colitis"],
+      "title": "Living With an Ostomy & IBD | IBDPal Guide",
+      "description": "Ostomy basics for IBD patients: peer support, supplies, and emotional adjustment resources.",
+      "h1": "Living with an ostomy and IBD",
+      "intro": "An ostomy can be part of treatment for some people with Crohn's or colitis. Peer networks and clinicians help with practical and emotional adjustment.",
+      "sections": [],
+      "related": [{"label": "Ostomy basics article", "url": "/blog/ostomy-basics-ibd"}, {"label": "UOAA peer support", "url": "https://ostomy.org/"}],
+      "faq": []
+    },
+    {
+      "slug": "stress-anxiety-ibd",
+      "category": "wellness",
+      "keywords": ["stress and IBD", "anxiety crohn's", "mental health colitis", "IBD emotional wellness"],
+      "title": "Stress, Anxiety & IBD | IBDPal Guide",
+      "description": "How stress and mood interact with IBD symptoms, coping strategies, and when to seek mental health support.",
+      "h1": "Stress, anxiety, and IBD",
+      "intro": "Chronic illness affects mental health. Stress does not cause IBD, but it can worsen how you feel day to day alongside physical symptoms.",
+      "sections": [],
+      "related": [{"label": "Stress & emotional wellness article", "url": "/blog/stress-emotional-wellness-ibd"}],
+      "faq": []
+    },
+    {
+      "slug": "sleep-ibd-flares",
+      "category": "wellness",
+      "keywords": ["sleep IBD flare", "rest crohn's disease", "fatigue ulcerative colitis", "IBD insomnia"],
+      "title": "Sleep & Rest During IBD Flares | IBDPal Guide",
+      "description": "Sleep disruption and fatigue during IBD flares: practical rest tips and when to discuss symptoms with your team.",
+      "h1": "Sleep and rest during IBD flares",
+      "intro": "Nighttime symptoms, pain, and anxiety commonly disrupt sleep during flares. Rest supports recovery but does not replace medical treatment.",
+      "sections": [],
+      "related": [{"label": "Sleep and rest article", "url": "/blog/sleep-rest-ibd-flares"}],
+      "faq": []
+    },
+    {
+      "slug": "partner-caregiver-ibd",
+      "category": "family",
+      "keywords": ["IBD caregiver", "partner crohn's disease", "spouse ulcerative colitis", "family IBD support"],
+      "title": "Partner & Caregiver Guide for IBD | IBDPal",
+      "description": "How partners and caregivers can support someone with Crohn's or colitis without taking over medical decisions.",
+      "h1": "Partners and caregivers: supporting someone with IBD",
+      "intro": "Caregivers provide practical and emotional support. Clear boundaries and open communication with the medical team help everyone.",
+      "sections": [],
+      "related": [{"label": "Partner & caregiver article", "url": "/blog/partner-caregiver-ibd"}],
+      "faq": []
+    },
+    {
+      "slug": "crohns-food-triggers",
+      "category": "nutrition",
+      "keywords": ["crohn's food triggers", "IBD trigger foods", "foods to avoid crohn's", "crohn's intolerance"],
+      "title": "Crohn's Food Triggers — What Patients Track | IBDPal",
+      "description": "Common food triggers patients discuss with their IBD team—individual results vary. Track yours with a food log.",
+      "h1": "Crohn's food triggers",
+      "intro": "Trigger foods are personal. Spicy, high-fat, high-fiber, alcohol, and lactose are frequent discussion points—not universal rules.",
+      "sections": [
+        {"heading": "Track instead of guess", "paragraphs": ["A structured log beats eliminating long food lists without data.", "IBDPal helps correlate meals with symptom patterns over time."]}
+      ],
+      "related": [{"label": "UC trigger foods article", "url": "/blog/foods-that-may-trigger-uc-symptoms"}, {"label": "Track food & symptoms", "url": "/guides/track-ibd-symptoms-food"}],
+      "faq": []
+    },
+    {
+      "slug": "ibd-crohns-colitis-helpline",
+      "category": "support",
+      "keywords": ["IBD helpline", "crohn's helpline", "colitis help phone", "888 my gut pain"],
+      "title": "IBD Helpline & Help Center Numbers | IBDPal",
+      "description": "National IBD helplines and help centers—including the Crohn's & Colitis Foundation IBD Help Center—for education and referrals.",
+      "h1": "IBD helpline and help center numbers",
+      "intro": "Helplines provide information and program referrals—not emergency medical care. For urgent symptoms, contact your clinician or emergency services.",
+      "sections": [
+        {"heading": "Crohn's & Colitis Foundation", "paragraphs": ["IBD Help Center: 888-MY-GUT-PAIN (888-694-8872) for education and help finding local programs."]}
+      ],
+      "related": [{"label": "IBD Crohn's support hub", "url": "/ibd-crohns-support"}],
+      "faq": []
+    }
+  ]
+}
