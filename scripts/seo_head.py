@@ -5,6 +5,7 @@ import json
 
 SITE = "https://ibdpal.org"
 DEFAULT_OG_IMAGE = f"{SITE}/blogs/assets/ibdpal-tracking/ibdpal_app_tracker_1.png"
+CANONICAL_HOST_SCRIPT = '    <script src="/canonical-host.js"></script>\n'
 
 
 def render_seo_head(
@@ -27,6 +28,7 @@ def render_seo_head(
     og_title = title_esc.replace(" | IBDPal", "").replace(" | ibdpal.org", "")
 
     lines = [
+        CANONICAL_HOST_SCRIPT.rstrip(),
         f'    <title>{title_esc}</title>',
         f'    <meta name="description" content="{desc_esc}">',
         f'    <meta name="robots" content="{robots}">',

@@ -2,13 +2,19 @@
   "installCommand": "npm install",
   "redirects": [
     {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.ibdpal.org" }],
+      "destination": "https://ibdpal.org/:path*",
+      "permanent": true
+    },
+    {
       "source": "/privacy",
-      "destination": "/#privacy",
+      "destination": "https://ibdpal.org/#privacy",
       "permanent": true
     },
     {
       "source": "/support",
-      "destination": "/#support",
+      "destination": "https://ibdpal.org/#support",
       "permanent": true
     }
   ],

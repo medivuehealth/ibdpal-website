@@ -98,16 +98,20 @@ def site_header_html(*, tagline: str = TAGLINE, lang: str = "en") -> str:
 SITE_HEADER_HTML = site_header_html()
 SITE_HEADER_STATIC_HTML = SITE_HEADER_HTML
 
-_TAB_LINKS = """
-                <a href="/#overview" class="tab-button" data-tab="overview">Overview</a>
-                <a href="/#app" class="tab-button" data-tab="app">IBDPal App</a>
-                <a href="/#resources" class="tab-button" data-tab="resources">Resources</a>
-                <a href="/#blogs" class="tab-button" data-tab="blogs">Blogs</a>
-                <a href="/#community" class="tab-button" data-tab="community">Community</a>
-                <a href="/#contact" class="tab-button" data-tab="contact">Contact</a>
-                <a href="/#privacy" class="tab-button" data-tab="privacy">Privacy</a>
-                <a href="/#support" class="tab-button" data-tab="support">Support</a>
+_CANONICAL = "https://ibdpal.org"
+
+_TAB_LINKS = f"""
+                <a href="{_CANONICAL}/#overview" class="tab-button" data-tab="overview">Overview</a>
+                <a href="{_CANONICAL}/#app" class="tab-button" data-tab="app">IBDPal App</a>
+                <a href="{_CANONICAL}/#resources" class="tab-button" data-tab="resources">Resources</a>
+                <a href="{_CANONICAL}/#blogs" class="tab-button" data-tab="blogs">Blogs</a>
+                <a href="{_CANONICAL}/#community" class="tab-button" data-tab="community">Community</a>
+                <a href="{_CANONICAL}/#contact" class="tab-button" data-tab="contact">Contact</a>
+                <a href="{_CANONICAL}/#privacy" class="tab-button" data-tab="privacy">Privacy</a>
+                <a href="{_CANONICAL}/#support" class="tab-button" data-tab="support">Support</a>
 """
+
+CANONICAL_HOST_SCRIPT = '    <script src="/canonical-host.js"></script>\n'
 
 TAB_NAV_HTML = f"""
         <nav class="tab-navigation" aria-label="Main">
