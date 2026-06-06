@@ -265,7 +265,7 @@ def es_page() -> str:
         path="/es/recursos",
         lang="es",
         hreflang_es=None,
-        hreflang_en="https://ibdpal.org/",
+        hreflang_en="https://www.ibdpal.org/",
         json_ld=json_ld,
     )
     return f"""<!DOCTYPE html>

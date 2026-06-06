@@ -6,15 +6,24 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 CANONICAL_SCRIPT = '    <script src="/canonical-host.js"></script>\n'
+WWW = "https://www.ibdpal.org"
 TAB_REPLACEMENTS = [
-    ('href="/#overview"', 'href="https://ibdpal.org/#overview"'),
-    ('href="/#app"', 'href="https://ibdpal.org/#app"'),
-    ('href="/#resources"', 'href="https://ibdpal.org/#resources"'),
-    ('href="/#blogs"', 'href="https://ibdpal.org/#blogs"'),
-    ('href="/#community"', 'href="https://ibdpal.org/#community"'),
-    ('href="/#contact"', 'href="https://ibdpal.org/#contact"'),
-    ('href="/#privacy"', 'href="https://ibdpal.org/#privacy"'),
-    ('href="/#support"', 'href="https://ibdpal.org/#support"'),
+    ('href="/#overview"', f'href="{WWW}/#overview"'),
+    ('href="/#app"', f'href="{WWW}/#app"'),
+    ('href="/#resources"', f'href="{WWW}/#resources"'),
+    ('href="/#blogs"', f'href="{WWW}/#blogs"'),
+    ('href="/#community"', f'href="{WWW}/#community"'),
+    ('href="/#contact"', f'href="{WWW}/#contact"'),
+    ('href="/#privacy"', f'href="{WWW}/#privacy"'),
+    ('href="/#support"', f'href="{WWW}/#support"'),
+    ('href="https://www.ibdpal.org/#overview"', f'href="{WWW}/#overview"'),
+    ('href="https://www.ibdpal.org/#app"', f'href="{WWW}/#app"'),
+    ('href="https://www.ibdpal.org/#resources"', f'href="{WWW}/#resources"'),
+    ('href="https://www.ibdpal.org/#blogs"', f'href="{WWW}/#blogs"'),
+    ('href="https://www.ibdpal.org/#community"', f'href="{WWW}/#community"'),
+    ('href="https://www.ibdpal.org/#contact"', f'href="{WWW}/#contact"'),
+    ('href="https://www.ibdpal.org/#privacy"', f'href="{WWW}/#privacy"'),
+    ('href="https://www.ibdpal.org/#support"', f'href="{WWW}/#support"'),
 ]
 
 
@@ -42,7 +51,7 @@ def patch_file(path: Path) -> bool:
         "window.location.replace('https://www.ibdpal.org/#privacy')",
     )
     text = text.replace(
-        "window.location.replace('https://ibdpal.org/#privacy')",
+        "window.location.replace('https://www.ibdpal.org/#privacy')",
         "window.location.replace('https://www.ibdpal.org/#privacy')",
     )
     text = text.replace(
@@ -50,7 +59,7 @@ def patch_file(path: Path) -> bool:
         "window.location.replace('https://www.ibdpal.org/#support')",
     )
     text = text.replace(
-        "window.location.replace('https://ibdpal.org/#support')",
+        "window.location.replace('https://www.ibdpal.org/#support')",
         "window.location.replace('https://www.ibdpal.org/#support')",
     )
     if text != orig:

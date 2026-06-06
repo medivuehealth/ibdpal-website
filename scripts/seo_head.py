@@ -3,7 +3,7 @@ from __future__ import annotations
 import html
 import json
 
-SITE = "https://ibdpal.org"
+SITE = "https://www.ibdpal.org"
 DEFAULT_OG_IMAGE = f"{SITE}/blogs/assets/ibdpal-tracking/ibdpal_app_tracker_1.png"
 CANONICAL_HOST_SCRIPT = '    <script src="/canonical-host.js"></script>\n'
 
@@ -17,7 +17,7 @@ def render_seo_head(
     og_type: str = "website",
     og_image: str = DEFAULT_OG_IMAGE,
     robots: str = "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
-    hreflang_es: str | None = "https://ibdpal.org/es/recursos",
+    hreflang_es: str | None = "https://www.ibdpal.org/es/recursos",
     hreflang_en: str | None = None,
     json_ld: dict | list | None = None,
     extra_head: str = "",
@@ -51,7 +51,7 @@ def render_seo_head(
         '    <meta name="twitter:card" content="summary_large_image">',
         f'    <meta name="twitter:title" content="{og_title}">',
         f'    <meta name="twitter:description" content="{desc_esc}">',
-        '    <link rel="alternate" type="text/plain" title="LLM summary" href="https://ibdpal.org/llms.txt">',
+        '    <link rel="alternate" type="text/plain" title="LLM summary" href="https://www.ibdpal.org/llms.txt">',
     ])
     if json_ld is not None:
         payload = json.dumps(json_ld, separators=(",", ":"), ensure_ascii=False)

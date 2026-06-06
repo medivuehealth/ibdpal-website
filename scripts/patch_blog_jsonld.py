@@ -40,8 +40,8 @@ def patch_file(path: Path) -> bool:
             {
                 "@type": "BreadcrumbList",
                 "itemListElement": [
-                    {"@type": "ListItem", "position": 1, "name": "IBDPal", "item": "https://ibdpal.org/"},
-                    {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://ibdpal.org/#blogs"},
+                    {"@type": "ListItem", "position": 1, "name": "IBDPal", "item": "https://www.ibdpal.org/"},
+                    {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.ibdpal.org/#blogs"},
                     {"@type": "ListItem", "position": 3, "name": title, "item": canonical},
                 ],
             },

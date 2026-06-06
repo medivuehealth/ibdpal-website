@@ -98,7 +98,7 @@ def site_header_html(*, tagline: str = TAGLINE, lang: str = "en") -> str:
 SITE_HEADER_HTML = site_header_html()
 SITE_HEADER_STATIC_HTML = SITE_HEADER_HTML
 
-_CANONICAL = "https://ibdpal.org"
+_CANONICAL = "https://www.ibdpal.org"
 
 _TAB_LINKS = f"""
                 <a href="{_CANONICAL}/#overview" class="tab-button" data-tab="overview">Overview</a>

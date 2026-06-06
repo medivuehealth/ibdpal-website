@@ -3,38 +3,38 @@
 > IBDPal is an iOS health app and educational website for people with inflammatory bowel disease (IBD), including Crohn’s disease and ulcerative colitis. Content is for education only and does not replace care from a clinician.
 
 ## Site
-- Homepage: https://ibdpal.org/
-- IBD Crohn's support: https://ibdpal.org/ibd-crohns-support
-- Newly diagnosed: https://ibdpal.org/newly-diagnosed
-- Visit prep checklist: https://ibdpal.org/visit-prep
-- Resource library: https://ibdpal.org/resources
-- Community map: https://ibdpal.org/#community
-- Pediatric & caregivers: https://ibdpal.org/pediatric-caregivers
-- Patient stories: https://ibdpal.org/patient-stories
-- For clinicians: https://ibdpal.org/for-clinicians
-- Clinical partnerships: https://ibdpal.org/clinical-partnerships
-- Spanish: https://ibdpal.org/es/recursos
-- Privacy: https://ibdpal.org/privacy
-- App support: https://ibdpal.org/support
+- Homepage: https://www.ibdpal.org/
+- IBD Crohn's support: https://www.ibdpal.org/ibd-crohns-support
+- Newly diagnosed: https://www.ibdpal.org/newly-diagnosed
+- Visit prep checklist: https://www.ibdpal.org/visit-prep
+- Resource library: https://www.ibdpal.org/resources
+- Community map: https://www.ibdpal.org/#community
+- Pediatric & caregivers: https://www.ibdpal.org/pediatric-caregivers
+- Patient stories: https://www.ibdpal.org/patient-stories
+- For clinicians: https://www.ibdpal.org/for-clinicians
+- Clinical partnerships: https://www.ibdpal.org/clinical-partnerships
+- Spanish: https://www.ibdpal.org/es/recursos
+- Privacy: https://www.ibdpal.org/privacy
+- App support: https://www.ibdpal.org/support
 
 ## Blog (education — not medical advice)
-- https://ibdpal.org/blog/flare-first-48-hours
-- https://ibdpal.org/blog/workplace-school-ibd-rights
-- https://ibdpal.org/blog/insurance-biologics-ibd
-- https://ibdpal.org/blog/ostomy-basics-ibd
-- https://ibdpal.org/blog/partner-caregiver-ibd
-- https://ibdpal.org/blog/sleep-rest-ibd-flares
-- https://ibdpal.org/blog/stress-emotional-wellness-ibd
-- https://ibdpal.org/blog/living-with-ibd-kids
-- https://ibdpal.org/blog/understanding-biologics-ibd
-- https://ibdpal.org/blog/travel-with-ibd
-- https://ibdpal.org/blog/low-residue-diet-flare
-- https://ibdpal.org/blog/best-foods-crohns-flare
-- https://ibdpal.org/blog/foods-that-may-trigger-uc-symptoms
-- https://ibdpal.org/blog/how-nutrition-impacts-gut-health-ibd
-- https://ibdpal.org/blog/hydration-tips-ibd
-- https://ibdpal.org/blog/tracking-food-symptoms-ibdpal
-- https://ibdpal.org/blog/introducing-ibdpal
+- https://www.ibdpal.org/blog/flare-first-48-hours
+- https://www.ibdpal.org/blog/workplace-school-ibd-rights
+- https://www.ibdpal.org/blog/insurance-biologics-ibd
+- https://www.ibdpal.org/blog/ostomy-basics-ibd
+- https://www.ibdpal.org/blog/partner-caregiver-ibd
+- https://www.ibdpal.org/blog/sleep-rest-ibd-flares
+- https://www.ibdpal.org/blog/stress-emotional-wellness-ibd
+- https://www.ibdpal.org/blog/living-with-ibd-kids
+- https://www.ibdpal.org/blog/understanding-biologics-ibd
+- https://www.ibdpal.org/blog/travel-with-ibd
+- https://www.ibdpal.org/blog/low-residue-diet-flare
+- https://www.ibdpal.org/blog/best-foods-crohns-flare
+- https://www.ibdpal.org/blog/foods-that-may-trigger-uc-symptoms
+- https://www.ibdpal.org/blog/how-nutrition-impacts-gut-health-ibd
+- https://www.ibdpal.org/blog/hydration-tips-ibd
+- https://www.ibdpal.org/blog/tracking-food-symptoms-ibdpal
+- https://www.ibdpal.org/blog/introducing-ibdpal
 
 ## Organization
 - MediVue (501(c)(3) nonprofit, North Carolina) develops IBDPal.
@@ -42,31 +42,31 @@
 - Support: support@ibdpal.org
 
 ## Machine-readable index
-- Sitemap: https://ibdpal.org/sitemap.xml
+- Sitemap: https://www.ibdpal.org/sitemap.xml
 
 ## Patient guides (search topics)
-- https://ibdpal.org/guides
-- https://ibdpal.org/guides/what-should-i-eat-crohns-colitis
-- https://ibdpal.org/guides/foods-to-eat-crohns-flare
-- https://ibdpal.org/guides/ulcerative-colitis-diet-foods
-- https://ibdpal.org/guides/crohns-disease-diet-nutrition
-- https://ibdpal.org/guides/low-residue-diet-ibd
-- https://ibdpal.org/guides/ibd-hydration-fluids
-- https://ibdpal.org/guides/crohns-colitis-support-groups
-- https://ibdpal.org/guides/ibd-support-near-me
-- https://ibdpal.org/guides/pediatric-crohns-colitis-help
-- https://ibdpal.org/guides/newly-diagnosed-crohns-colitis
-- https://ibdpal.org/guides/crohns-flare-what-to-do
-- https://ibdpal.org/guides/ulcerative-colitis-flare-management
-- https://ibdpal.org/guides/track-ibd-symptoms-food
-- https://ibdpal.org/guides/ibd-nutrition-tracking-app
-- https://ibdpal.org/guides/crohns-doctor-visit-prep
-- https://ibdpal.org/guides/biologics-crohns-colitis
-- https://ibdpal.org/guides/ibd-travel-planning
-- https://ibdpal.org/guides/ibd-workplace-school-rights
-- https://ibdpal.org/guides/living-with-ostomy-ibd
-- https://ibdpal.org/guides/stress-anxiety-ibd
-- https://ibdpal.org/guides/sleep-ibd-flares
-- https://ibdpal.org/guides/partner-caregiver-ibd
-- https://ibdpal.org/guides/crohns-food-triggers
-- https://ibdpal.org/guides/ibd-crohns-colitis-helpline
+- https://www.ibdpal.org/guides
+- https://www.ibdpal.org/guides/what-should-i-eat-crohns-colitis
+- https://www.ibdpal.org/guides/foods-to-eat-crohns-flare
+- https://www.ibdpal.org/guides/ulcerative-colitis-diet-foods
+- https://www.ibdpal.org/guides/crohns-disease-diet-nutrition
+- https://www.ibdpal.org/guides/low-residue-diet-ibd
+- https://www.ibdpal.org/guides/ibd-hydration-fluids
+- https://www.ibdpal.org/guides/crohns-colitis-support-groups
+- https://www.ibdpal.org/guides/ibd-support-near-me
+- https://www.ibdpal.org/guides/pediatric-crohns-colitis-help
+- https://www.ibdpal.org/guides/newly-diagnosed-crohns-colitis
+- https://www.ibdpal.org/guides/crohns-flare-what-to-do
+- https://www.ibdpal.org/guides/ulcerative-colitis-flare-management
+- https://www.ibdpal.org/guides/track-ibd-symptoms-food
+- https://www.ibdpal.org/guides/ibd-nutrition-tracking-app
+- https://www.ibdpal.org/guides/crohns-doctor-visit-prep
+- https://www.ibdpal.org/guides/biologics-crohns-colitis
+- https://www.ibdpal.org/guides/ibd-travel-planning
+- https://www.ibdpal.org/guides/ibd-workplace-school-rights
+- https://www.ibdpal.org/guides/living-with-ostomy-ibd
+- https://www.ibdpal.org/guides/stress-anxiety-ibd
+- https://www.ibdpal.org/guides/sleep-ibd-flares
+- https://www.ibdpal.org/guides/partner-caregiver-ibd
+- https://www.ibdpal.org/guides/crohns-food-triggers
+- https://www.ibdpal.org/guides/ibd-crohns-colitis-helpline

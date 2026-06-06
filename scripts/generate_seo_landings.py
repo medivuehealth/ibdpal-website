@@ -60,7 +60,7 @@ def faq_json(faq: list[dict], page_id: str) -> dict | None:
         return None
     return {
         "@type": "FAQPage",
-        "@id": f"https://ibdpal.org{page_id}#faq",
+        "@id": f"https://www.ibdpal.org{page_id}#faq",
         "mainEntity": [
             {
                 "@type": "Question",
@@ -77,9 +77,9 @@ def guide_breadcrumb(path: str, name: str) -> dict:
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-            {"@type": "ListItem", "position": 1, "name": "IBDPal", "item": "https://ibdpal.org/"},
-            {"@type": "ListItem", "position": 2, "name": "Patient Guides", "item": "https://ibdpal.org/guides"},
-            {"@type": "ListItem", "position": 3, "name": name, "item": f"https://ibdpal.org{path}"},
+            {"@type": "ListItem", "position": 1, "name": "IBDPal", "item": "https://www.ibdpal.org/"},
+            {"@type": "ListItem", "position": 2, "name": "Patient Guides", "item": "https://www.ibdpal.org/guides"},
+            {"@type": "ListItem", "position": 3, "name": name, "item": f"https://www.ibdpal.org{path}"},
         ],
     }
 
@@ -230,7 +230,7 @@ def render_hub(hub: dict, pages: list[dict]) -> str:
                     {
                         "@type": "ListItem",
                         "position": i + 1,
-                        "url": f"https://ibdpal.org/guides/{p['slug']}",
+                        "url": f"https://www.ibdpal.org/guides/{p['slug']}",
                         "name": p["h1"],
                     }
                     for i, p in enumerate(pages)
@@ -243,10 +243,10 @@ def render_hub(hub: dict, pages: list[dict]) -> str:
 
 def patch_sitemap(pages: list[dict]) -> None:
     today = date.today().isoformat()
-    urls = ['  <url>\n    <loc>https://ibdpal.org/guides</loc>\n    <lastmod>' + today + '</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.93</priority>\n  </url>']
+    urls = ['  <url>\n    <loc>https://www.ibdpal.org/guides</loc>\n    <lastmod>' + today + '</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.93</priority>\n  </url>']
     for p in pages:
         urls.append(
-            f'  <url>\n    <loc>https://ibdpal.org/guides/{p["slug"]}</loc>\n'
+            f'  <url>\n    <loc>https://www.ibdpal.org/guides/{p["slug"]}</loc>\n'
             f'    <lastmod>{today}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.88</priority>\n  </url>'
         )
     block = "\n".join(urls)
@@ -279,8 +279,8 @@ def patch_llms(pages: list[dict]) -> None:
         return
     text = LLMS.read_text(encoding="utf-8")
     marker = "## Patient guides (search topics)"
-    block = marker + "\n- https://ibdpal.org/guides\n"
-    block += "\n".join(f"- https://ibdpal.org/guides/{p['slug']}" for p in pages)
+    block = marker + "\n- https://www.ibdpal.org/guides\n"
+    block += "\n".join(f"- https://www.ibdpal.org/guides/{p['slug']}" for p in pages)
     if marker in text:
         text = re.sub(r"## Patient guides \(search topics\).*?(?=\n## |\Z)", block + "\n", text, flags=re.DOTALL)
     else:

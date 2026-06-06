@@ -347,15 +347,15 @@ def render_post(p: dict) -> str:
     slug = p["slug"]
     asset = p["asset_dir"]
     thumb = f"/blogs/assets/{asset}/{p['images'][0]}"
-    canonical = f"https://ibdpal.org/blog/{slug}"
+    canonical = f"https://www.ibdpal.org/blog/{slug}"
     ld = {
         "@context": "https://schema.org",
         "@graph": [
             {
                 "@type": "BreadcrumbList",
                 "itemListElement": [
-                    {"@type": "ListItem", "position": 1, "name": "IBDPal", "item": "https://ibdpal.org/"},
-                    {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://ibdpal.org/#blogs"},
+                    {"@type": "ListItem", "position": 1, "name": "IBDPal", "item": "https://www.ibdpal.org/"},
+                    {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.ibdpal.org/#blogs"},
                     {"@type": "ListItem", "position": 3, "name": p["title"], "item": canonical},
                 ],
             },
@@ -365,14 +365,14 @@ def render_post(p: dict) -> str:
                 "description": p["description"],
                 "datePublished": p["date_iso"],
                 "dateModified": p["date_iso"],
-                "author": {"@type": "Organization", "name": "MediVue", "url": "https://ibdpal.org/"},
+                "author": {"@type": "Organization", "name": "MediVue", "url": "https://www.ibdpal.org/"},
                 "publisher": {
                     "@type": "Organization",
                     "name": "MediVue",
-                    "url": "https://ibdpal.org/",
-                    "logo": {"@type": "ImageObject", "url": "https://ibdpal.org/favicon.ico"},
+                    "url": "https://www.ibdpal.org/",
+                    "logo": {"@type": "ImageObject", "url": "https://www.ibdpal.org/favicon.ico"},
                 },
-                "image": [f"https://ibdpal.org{thumb}"],
+                "image": [f"https://www.ibdpal.org{thumb}"],
                 "mainEntityOfPage": {"@type": "WebPage", "@id": canonical},
                 "isAccessibleForFree": True,
             },
@@ -415,7 +415,7 @@ def render_post(p: dict) -> str:
     <meta property="og:description" content="{html.escape(p["description"])}">
     <meta property="og:site_name" content="IBDPal">
     <meta property="og:locale" content="en_US">
-    <meta property="og:image" content="https://ibdpal.org{thumb}">
+    <meta property="og:image" content="https://www.ibdpal.org{thumb}">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{html.escape(p["title"])} | IBDPal Blog">
     <meta name="twitter:description" content="{html.escape(p["description"])}">
