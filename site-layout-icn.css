@@ -186,11 +186,22 @@ body {
 
 .header,
 .tab-navigation {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+}
+
+/* Full-bleed header/nav inside the 80% site shell */
+.app-container > .header,
+.app-container > .tab-navigation,
+.container > .header,
+.container > .tab-navigation {
     width: 100vw;
     max-width: 100vw;
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
-    box-sizing: border-box;
 }
 
 .tab-container {
@@ -241,6 +252,7 @@ body {
 }
 
 .tab-content {
+    display: none;
     background: var(--ibd-surface);
     border-radius: 0;
     box-shadow: none;
@@ -249,6 +261,18 @@ body {
     min-height: 50vh;
     width: 100%;
     max-width: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.app-subcontent {
+    display: none;
+}
+
+.app-subcontent.active {
+    display: block;
 }
 
 /* Hero band (homepage) */
