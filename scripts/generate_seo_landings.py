@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Generate SEO landing pages from data/seo-landing-pages.json."""
+"""Generate SEO landing pages from data/seo-landing-pages.json.
+
+Prose style: do not use em dash. Use periods, commas, colons, or "|" in titles.
+"""
 from __future__ import annotations
 
 import html
@@ -32,7 +35,7 @@ FOOTER = """
                     <a href="/privacy" class="footer-link">Privacy Policy</a>
                     <a href="/support" class="footer-link">App Support</a>
                 </div>
-                <p><strong>IBDPal</strong> — MediVue nonprofit · Education only, not medical advice.</p>
+                <p><strong>IBDPal</strong> · MediVue nonprofit · Education only, not medical advice.</p>
                 <p>&copy; 2025 MediVue. All rights reserved.</p>
             </div>
         </footer>
@@ -202,7 +205,7 @@ def render_hub(hub: dict, pages: list[dict]) -> str:
         label = cat.replace("-", " ").title()
         links = "".join(
             f'<li><a href="/guides/{html.escape(p["slug"])}">{html.escape(p["h1"])}</a>'
-            f' <span class="seo-guide-cat-desc">— {html.escape(p["description"][:90])}…</span></li>'
+            f' <span class="seo-guide-cat-desc">,  {html.escape(p["description"][:90])}…</span></li>'
             for p in sorted(items, key=lambda x: x["h1"])
         )
         sections += f'<section class="seo-landing__block"><h2>{label}</h2><ul class="seo-landing__list seo-guide-hub-list">{links}</ul></section>'
@@ -211,7 +214,7 @@ def render_hub(hub: dict, pages: list[dict]) -> str:
             <article class="support-section seo-landing" data-track-impression="guide_hub" data-track-label="Patient guides hub">
                 <h1>{html.escape(hub['h1'])}</h1>
                 <p class="support-intro">{html.escape(hub['intro'])}</p>
-                <p><strong>{len(pages)} guides</strong> covering common Crohn's, colitis, and IBD searches—each with links to deeper articles and tools.</p>
+                <p><strong>{len(pages)} guides</strong> covering common Crohn's, colitis, and IBD searches, each with links to deeper articles and tools.</p>
 {sections}
                 {DISCLAIMER}
             </article>"""

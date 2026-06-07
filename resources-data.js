@@ -9,7 +9,7 @@ window.IBDPAL_RESOURCES = [
   { title: 'Community Map by State', category: 'community', type: 'site', url: '/#community', tags: ['local', 'map'] },
   { title: 'Pediatric & Caregiver Hub', category: 'family', type: 'site', url: '/pediatric-caregivers', tags: ['kids', 'parents'] },
   { title: 'Patient Stories', category: 'community', type: 'site', url: '/patient-stories', tags: ['peer'] },
-  { title: 'For Clinicians — Visit Summaries', category: 'clinical', type: 'site', url: '/for-clinicians', tags: ['export', 'doctor'] },
+  { title: 'For Clinicians | Visit Summaries', category: 'clinical', type: 'site', url: '/for-clinicians', tags: ['export', 'doctor'] },
   { title: 'Clinical Partnerships', category: 'clinical', type: 'site', url: '/clinical-partnerships', tags: ['hospital'] },
   { title: 'CCF IBD Help Center', category: 'community', type: 'external', url: 'https://www.crohnscolitisfoundation.org/live-full/live-full-ibd-help-center', tags: ['helpline', 'national'] },
   { title: 'CCF Find a Support Group', category: 'community', type: 'external', url: 'https://www.crohnscolitisfoundation.org/find-a-support-group', tags: ['peer'] },

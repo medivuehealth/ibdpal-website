@@ -68,7 +68,7 @@ def build_social_list_html() -> str:
         else:
             items.append(
                 f'<li><span class="site-social__link site-social__link--pending" '
-                f'title="{html.escape(label)} — add URL in social-links.json" '
+                f'title="{html.escape(label)} | add URL in social-links.json" '
                 f'aria-label="{html.escape(label)} (link not configured)">{svg}</span></li>'
             )
     return f'<ul class="site-social__list" aria-label="Social media">{"".join(items)}</ul>'

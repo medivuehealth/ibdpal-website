@@ -4,7 +4,7 @@ Site technical SEO is implemented in HTML (meta tags, canonical URLs, Open Graph
 
 ## After each deploy
 
-1. **Google Search Console** — [search.google.com/search-console](https://search.google.com/search-console)
+1. **Google Search Console** | [search.google.com/search-console](https://search.google.com/search-console)
    - Property: `https://ibdpal.org`
    - Submit sitemap: `https://ibdpal.org/sitemap.xml`
    - Request indexing for new URLs (Inspect URL → Request indexing):
@@ -13,7 +13,7 @@ Site technical SEO is implemented in HTML (meta tags, canonical URLs, Open Graph
      - `https://ibdpal.org/ibd-crohns-support`
      - New blog posts under `/blog/…`
 
-2. **Validate structured data** — [search.google.com/test/rich-results](https://search.google.com/test/rich-results)
+2. **Validate structured data** | [search.google.com/test/rich-results](https://search.google.com/test/rich-results)
    - Test homepage (FAQ + ItemList)
    - Test `/ibd-crohns-support` (FAQ)
    - Test a blog article (Article + BreadcrumbList)

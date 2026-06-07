@@ -23,7 +23,7 @@ FOOTER = """
                     <a href="/support" class="footer-link">App Support</a>
                     <a href="/es/recursos" class="footer-link">Español</a>
                 </div>
-                <p><strong>IBDPal</strong> — MediVue nonprofit · Education only, not medical advice.</p>
+                <p><strong>IBDPal</strong> · MediVue nonprofit · Education only, not medical advice.</p>
                 <p>&copy; 2025 MediVue. All rights reserved.</p>
             </div>
         </footer>
@@ -87,13 +87,13 @@ def shell(title: str, description: str, path: str, body: str, active_nav: str = 
 
 PAGES = {
     "newly-diagnosed.html": (
-        "Newly Diagnosed with IBD — First Steps | IBDPal",
+        "Newly Diagnosed with IBD | First Steps | IBDPal",
         "Newly diagnosed with Crohn's or ulcerative colitis? Questions for your GI, IBDPal app basics, IBD support groups, and trusted national resources.",
         "/newly-diagnosed",
         """
             <article class="support-section seo-landing">
                 <h1>Newly Diagnosed with IBD?</h1>
-                <p class="support-intro">A Crohn's disease or ulcerative colitis diagnosis is a lot to absorb. This hub gathers calm next steps—not a substitute for your gastroenterologist.</p>
+                <p class="support-intro">A Crohn's disease or ulcerative colitis diagnosis is a lot to absorb. This hub gathers calm next steps, not a substitute for your gastroenterologist.</p>
                 <section class="seo-landing__block">
                     <h2>Crohn's vs. ulcerative colitis (briefly)</h2>
                     <p>Both are inflammatory bowel diseases. Crohn's can affect any part of the digestive tract; colitis primarily involves the colon. Your team will name your type, severity, and treatment goals.</p>
@@ -150,7 +150,7 @@ PAGES = {
         """,
     ),
     "resources.html": (
-        "IBD Resource Library — Crohn's & Colitis Education | IBDPal",
+        "IBD Resource Library | Crohn's & Colitis Education | IBDPal",
         "Search 25+ IBD resources: nutrition blogs, Crohn's support, pediatric caregivers, visit prep, community map, and the free IBDPal iOS app.",
         "/resources",
         """
@@ -178,16 +178,16 @@ PAGES = {
         "/#resources",
     ),
     "patient-stories.html": (
-        "IBD Patient Stories — Living With Crohn's & Colitis | IBDPal",
-        "Real-world stories from people using IBDPal for Crohn's disease and ulcerative colitis—shared with consent for education only.",
+        "IBD Patient Stories | Living With Crohn's & Colitis | IBDPal",
+        "Real-world stories from people using IBDPal for Crohn's disease and ulcerative colitis, shared with consent for education only.",
         "/patient-stories",
         """
             <article class="support-section">
                 <h1>Patient Stories</h1>
-                <p class="support-intro">These vignettes are shared with permission, de-identified, and for encouragement only—not medical outcomes data.</p>
-                <div class="story-card"><h2>Maya, 34 — Crohn's disease</h2>
+                <p class="support-intro">These vignettes are shared with permission, de-identified, and for encouragement only, not medical outcomes data.</p>
+                <div class="story-card"><h2>Maya, 34 | Crohn's disease</h2>
                 <p>"Tracking protein and hydration before infusion days helped me stop guessing what to tell my nurse. IBDPal logs made my appointments shorter and clearer."</p></div>
-                <div class="story-card"><h2>James, 41 — ulcerative colitis</h2>
+                <div class="story-card"><h2>James, 41 | ulcerative colitis</h2>
                 <p>"During a flare I used the low-residue articles on the blog and my symptom log to show my GI what the week looked like. We adjusted meds faster."</p></div>
                 <div class="story-card"><h2>Priya, parent of teen with IBD</h2>
                 <p>"ImproveCareNow pointed us to a pediatric center; IBDPal helped our son notice sleep and stress patterns before finals week."</p></div>
@@ -196,13 +196,13 @@ PAGES = {
         """,
     ),
     "clinical-partnerships.html": (
-        "Clinical Partnerships — IBDPal for IBD Programs | IBDPal",
-        "Partner with MediVue: IBDPal as a companion self-management tool for hospital and clinic IBD programs—visit prep, logging, and patient education.",
+        "Clinical Partnerships | IBDPal for IBD Programs | IBDPal",
+        "Partner with MediVue: IBDPal as a companion self-management tool for hospital and clinic IBD programs, visit prep, logging, and patient education.",
         "/clinical-partnerships",
         """
             <article class="support-section">
                 <h1>Clinical Partnerships</h1>
-                <p class="support-intro">MediVue is a North Carolina 501(c)(3) nonprofit. IBDPal is designed as a <strong>companion</strong> to—not a replacement for—clinical care.</p>
+                <p class="support-intro">MediVue is a North Carolina 501(c)(3) nonprofit. IBDPal is designed as a <strong>companion</strong> to, not a replacement for, clinical care.</p>
                 <section class="seo-landing__block"><h2>Partnership goals</h2>
                 <ul class="seo-landing__list"><li>Improve visit preparation and home logging</li><li>Support nutrition and symptom awareness between appointments</li><li>Connect families to national and local IBD resources</li></ul></section>
                 <section class="seo-landing__block"><h2>Interested programs</h2>
@@ -220,19 +220,19 @@ PAGES = {
                 <h1>Pediatric IBD &amp; Caregivers</h1>
                 <p class="support-intro">Children and teens with Crohn's or colitis need team-based care and family support. Start with these trusted networks.</p>
                 <ul class="seo-landing__list">
-                    <li><a href="https://www.improvecarenow.org/patients-parents" rel="noopener noreferrer">ImproveCareNow — Patients, Parents &amp; Families</a></li>
+                    <li><a href="https://www.improvecarenow.org/patients-parents" rel="noopener noreferrer">ImproveCareNow | Patients, Parents &amp; Families</a></li>
                     <li><a href="https://www.improvecarenow.org/care-centers" rel="noopener noreferrer">Find a pediatric IBD care center</a></li>
                     <li><a href="https://gikids.org/" rel="noopener noreferrer">GIKids</a></li>
                     <li><a href="/blog/living-with-ibd-kids">Blog: Living with IBD as a family</a></li>
                     <li><a href="/blog/workplace-school-ibd-rights">Blog: School 504 plans</a></li>
                 </ul>
-                <p>IBDPal can help families log meals, symptoms, and sleep—use exports for clinic visits. <a href="/visit-prep">Visit prep checklist</a></p>
+                <p>IBDPal can help families log meals, symptoms, and sleep, use exports for clinic visits. <a href="/visit-prep">Visit prep checklist</a></p>
             </article>
         """,
     ),
     "for-clinicians.html": (
-        "For Clinicians — IBD Visit Summaries & Patient Logs | IBDPal",
-        "IBDPal helps IBD patients export symptom, nutrition, and trend summaries for gastroenterology visits—companion tool, not a medical device.",
+        "For Clinicians | IBD Visit Summaries & Patient Logs | IBDPal",
+        "IBDPal helps IBD patients export symptom, nutrition, and trend summaries for gastroenterology visits, companion tool, not a medical device.",
         "/for-clinicians",
         """
             <article class="support-section">
@@ -241,7 +241,7 @@ PAGES = {
                 <section class="seo-landing__block"><h2>Visit summary exports</h2>
                 <p>Patients can export PDF or CSV summaries from the iOS app (Settings) to support shared decision-making. Data is patient-entered and should be interpreted in clinical context.</p></section>
                 <section class="seo-landing__block"><h2>Medication &amp; appointment reminders</h2>
-                <p>The app supports medication logging and notification reminders patients configure for infusions, injections, and follow-ups—reducing missed doses between portal messages.</p></section>
+                <p>The app supports medication logging and notification reminders patients configure for infusions, injections, and follow-ups, reducing missed doses between portal messages.</p></section>
                 <section class="seo-landing__block"><h2>Not a medical device</h2>
                 <p>IBDPal does not diagnose, prescribe, or replace clinician judgment. Partner inquiries: <a href="mailto:contactus@ibdpal.org">contactus@ibdpal.org</a> · <a href="/clinical-partnerships">Partnerships</a></p></section>
             </article>

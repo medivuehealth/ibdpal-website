@@ -6,7 +6,7 @@
 
   var CRISIS_HTML =
     '<aside class="crisis-strip" role="note" aria-label="Urgent care reminder">' +
-    '<p><strong>Education only — not emergency care.</strong> ' +
+    '<p><strong>Education only | not emergency care.</strong> ' +
     'For life-threatening symptoms call <strong>911</strong>. ' +
     'For urgent IBD symptoms contact your clinician. ' +
     'IBD Help Center: <a href="tel:8886948872">888-MY-GUT-PAIN (888-694-8872)</a> · ' +

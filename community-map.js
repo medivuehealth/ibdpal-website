@@ -98,7 +98,7 @@
 
     if (state && state.resources && state.resources.length) {
       html += '<h3 class="community-detail__title">' + escapeHtml(state.name || stateName) + '</h3>';
-      html += '<p class="community-detail__intro">Organizations and programs that support people with Crohn’s disease, ulcerative colitis, and related conditions. Listing is for information only—not an endorsement.</p>';
+      html += '<p class="community-detail__intro">Organizations and programs that support people with Crohn’s disease, ulcerative colitis, and related conditions. Listing is for information only, not an endorsement.</p>';
       if (state.ccfChapter) {
         html += '<div class="community-chapter-banner">';
         html += '<p><strong>Local Crohn’s &amp; Colitis Foundation chapter:</strong> ' + escapeHtml(state.ccfChapter.name) + '</p>';

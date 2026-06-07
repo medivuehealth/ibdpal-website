@@ -1,6 +1,6 @@
 /**
- * Blog vote API — Vercel Blob REST API (no SDK).
- * ibdpal-blob is a private store — all uploads use x-vercel-blob-access: private.
+ * Blog vote API | Vercel Blob REST API (no SDK).
+ * ibdpal-blob is a private store | all uploads use x-vercel-blob-access: private.
  */
 const BLOB_API = 'https://vercel.com/api/blob';
 const BLOB_API_VERSION = '12';

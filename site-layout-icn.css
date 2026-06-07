@@ -59,7 +59,7 @@
     --ibd-content-pad: clamp(1rem, 2.5vw, 2rem);
 }
 
-/* Site shell — white content on light gray (ICN-style, not full-page gradient) */
+/* Site shell | white content on light gray (ICN-style, not full-page gradient) */
 body {
     background: var(--ibd-bg);
     color: var(--ibd-text);
@@ -240,7 +240,7 @@ body {
     display: none;
 }
 
-/* Main content — full width */
+/* Main content | full width */
 .main-content {
     background: var(--ibd-surface);
     width: 100%;
@@ -444,7 +444,7 @@ body {
     margin-bottom: 0.75rem;
 }
 
-/* Blog index cards — ICN “Stay in the LOOP” feed feel */
+/* Blog index cards | ICN “Stay in the LOOP” feed feel */
 .blog-index-grid {
     gap: 1rem;
 }
@@ -467,7 +467,7 @@ body {
     box-shadow: none;
 }
 
-/* Footer — ICN link column style */
+/* Footer | ICN link column style */
 .footer {
     background: #2a2a2a;
     padding: 0;
@@ -553,7 +553,7 @@ body {
     text-align: left;
 }
 
-/* Homepage sections — use horizontal space */
+/* Homepage sections | use horizontal space */
 .discovery-dashboard,
 .community-section,
 .features-section,

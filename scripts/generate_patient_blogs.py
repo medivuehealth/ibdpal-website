@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Generate five patient-education blog posts (June 2026)."""
+"""Generate five patient-education blog posts (June 2026).
+
+Prose style: do not use em dash. Use periods, commas, colons, or "|" in titles.
+"""
 from __future__ import annotations
 import html
 import json
@@ -21,19 +24,19 @@ POSTS = [
     {
         "slug": "workplace-school-ibd-rights",
         "title": "Workplace and School Rights When You Have IBD",
-        "description": "High-level overview of ADA workplace accommodations and 504 school plans for Crohn's and colitis—not legal advice.",
+        "description": "High-level overview of ADA workplace accommodations and 504 school plans for Crohn's and colitis, not legal advice.",
         "category": "Wellness · June 2026",
         "date_display": "June 10, 2026",
         "date_iso": "2026-06-10T12:00:00Z",
         "asset_dir": "workplace-school",
         "images": ["workplace_1.jpg"],
         "alts": ["Person working at a laptop in a comfortable setting"],
-        "share": "Workplace and school rights basics for IBD—education only.",
+        "share": "Workplace and school rights basics for IBD, education only.",
         "body": """
-<p>IBD can affect attendance, bathroom access, energy, and concentration. Many students and employees are entitled to <strong>reasonable accommodations</strong> that help them participate fully—without disclosing more than you choose.</p>
+<p>IBD can affect attendance, bathroom access, energy, and concentration. Many students and employees are entitled to <strong>reasonable accommodations</strong> that help them participate fully, without disclosing more than you choose.</p>
 <h2>At Work (United States)</h2>
 <p>The Americans with Disabilities Act (ADA) may protect qualified employees with Crohn's disease or ulcerative colitis. Examples of accommodations: flexible start times, remote work days, nearby restroom access, breaks, or a modified schedule during flares.</p>
-<p>Start with HR or your manager using a simple letter from your clinician describing functional needs—not your entire chart. An employee assistance program (EAP) can help with paperwork.</p>
+<p>Start with HR or your manager using a simple letter from your clinician describing functional needs, not your entire chart. An employee assistance program (EAP) can help with paperwork.</p>
 <h2>At School</h2>
 <p>Section 504 plans and IEPs (when applicable) can document bathroom passes, extra time, hydration, medication storage, and absence policies. Meet with the school nurse and counselor early in the year.</p>
 <h2>Documentation Tips</h2>
@@ -44,16 +47,16 @@ POSTS = [
     {
         "slug": "insurance-biologics-ibd",
         "title": "Insurance and Biologics for IBD: What Patients Often Ask",
-        "description": "Prior authorization, appeals, and questions to ask your team—educational overview, not insurance or legal advice.",
+        "description": "Prior authorization, appeals, and questions to ask your team, educational overview, not insurance or legal advice.",
         "category": "Treatment · June 2026",
         "date_display": "June 11, 2026",
         "date_iso": "2026-06-11T12:00:00Z",
         "asset_dir": "insurance-basics",
         "images": ["insurance_1.jpg"],
         "alts": ["Organized desk with paperwork and planner"],
-        "share": "Insurance basics for IBD biologics—education only.",
+        "share": "Insurance basics for IBD biologics, education only.",
         "body": """
-<p>Biologics and advanced therapies can be life-changing—and administratively heavy. Understanding the process reduces panic when a pharmacy says "prior authorization required."</p>
+<p>Biologics and advanced therapies can be life-changing, and administratively heavy. Understanding the process reduces panic when a pharmacy says "prior authorization required."</p>
 <h2>Common Steps</h2>
 <ul class="blog-list"><li>Your clinician submits clinical documentation</li><li>The insurer reviews medical necessity</li><li>You may need step therapy documentation or appeals</li><li>Specialty pharmacies coordinate delivery or infusion</li></ul>
 <h2>Questions for Your Team</h2>
@@ -65,20 +68,20 @@ POSTS = [
     {
         "slug": "ostomy-basics-ibd",
         "title": "Living With an Ostomy: Gentle Basics for IBD Patients",
-        "description": "What an ostomy is, emotional adjustment, and peer support resources—education only.",
+        "description": "What an ostomy is, emotional adjustment, and peer support resources, education only.",
         "category": "Wellness · June 2026",
         "date_display": "June 12, 2026",
         "date_iso": "2026-06-12T12:00:00Z",
         "asset_dir": "ostomy-basics",
         "images": ["ostomy_1.jpg"],
         "alts": ["Supportive conversation between two people"],
-        "share": "Ostomy basics for people with IBD—peer support links included.",
+        "share": "Ostomy basics for people with IBD, peer support links included.",
         "body": """
 <p>Some people with Crohn's disease or ulcerative colitis need a temporary or permanent ostomy. It can sound frightening at first; many people return to work, sports, travel, and intimacy with the right support and supplies.</p>
 <h2>Types</h2>
 <p><strong>Ileostomy</strong> (small intestine) and <strong>colostomy</strong> (colon) routes waste to an external pouch. Surgery teams and ostomy nurses teach pouching, skin care, and emptying routines.</p>
 <h2>Emotional Health</h2>
-<p>Grief, body image worries, and anxiety are normal. Peer groups—including United Ostomy Associations of America—connect you with people who have been there.</p>
+<p>Grief, body image worries, and anxiety are normal. Peer groups, including United Ostomy Associations of America, connect you with people who have been there.</p>
 <h2>Practical Tips</h2>
 <ul class="blog-list"><li>Pre-cut supplies for travel</li><li>Notification cards for restroom access</li><li>Clothing options that feel secure</li></ul>
 """,
@@ -86,14 +89,14 @@ POSTS = [
     {
         "slug": "flare-first-48-hours",
         "title": "The First 48 Hours of an IBD Flare: A Calm Checklist",
-        "description": "Hydration, rest, what to log, and when to call your clinician—general education, not emergency guidance.",
+        "description": "Hydration, rest, what to log, and when to call your clinician, general education, not emergency guidance.",
         "category": "Wellness · June 2026",
         "date_display": "June 13, 2026",
         "date_iso": "2026-06-13T12:00:00Z",
         "asset_dir": "flare-48h",
         "images": ["flare_1.jpg"],
         "alts": ["Restful bedroom scene emphasizing rest and recovery"],
-        "share": "First 48 hours of an IBD flare—calm checklist; not medical advice.",
+        "share": "First 48 hours of an IBD flare, calm checklist; not medical advice.",
         "body": """
 <p>Flares feel urgent even when they are not emergencies. A short plan lowers chaos.</p>
 <h2>Hour 0–12</h2>
@@ -118,7 +121,7 @@ POSTS = [
         "body": """
 <p>Supporting someone with Crohn's or colitis means balancing empathy with respect for their autonomy.</p>
 <h2>Listen First</h2>
-<p>Ask what help they want today—rides, meals, quiet, or space. Avoid comparing to others or pushing fad diets.</p>
+<p>Ask what help they want today, rides, meals, quiet, or space. Avoid comparing to others or pushing fad diets.</p>
 <h2>Practical Support</h2>
 <ul class="blog-list"><li>Learn bathroom maps for outings</li><li>Share meal prep during fatigue</li><li>Help track appointments without managing meds unless asked</li></ul>
 <h2>Care for Yourself</h2>
@@ -132,7 +135,7 @@ def render_with_review(p):
     return render_post(p)
 
 
-# Pexels CDN URLs (verified JPEGs — not unsplash.com/photos/.../download)
+# Pexels CDN URLs (verified JPEGs | not unsplash.com/photos/.../download)
 POST_IMAGE_URLS = {
     "workplace-school": "https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=1200",
     "insurance-basics": "https://images.pexels.com/photos/4386464/pexels-photo-4386464.jpeg?auto=compress&cs=tinysrgb&w=1200",

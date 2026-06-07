@@ -1,6 +1,6 @@
 # Blog image credits
 
-Images in the June 2026 lifestyle posts are from [Unsplash](https://unsplash.com/license) and [Pexels](https://www.pexels.com/license/) (free use). Download via `images.unsplash.com` or Pexels CDN — not the `/photos/{id}/download` HTML redirect.
+Images in the June 2026 lifestyle posts are from [Unsplash](https://unsplash.com/license) and [Pexels](https://www.pexels.com/license/) (free use). Download via `images.unsplash.com` or Pexels CDN | not the `/photos/{id}/download` HTML redirect.
 
 | Folder | Files | Typical subjects |
 |--------|-------|------------------|

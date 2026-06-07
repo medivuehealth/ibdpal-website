@@ -31,7 +31,7 @@
       "@type": "WebPage",
       "@id": "https://www.ibdpal.org/#webpage",
       "url": "https://www.ibdpal.org/",
-      "name": "IBDPal — IBD & Crohn's Support",
+      "name": "IBDPal | IBD & Crohn's Support",
       "description": "Homepage for IBD and Crohn's disease patient education, community resources, and the IBDPal nutrition app.",
       "isPartOf": { "@id": "https://www.ibdpal.org/#website" }
     },
@@ -63,7 +63,7 @@
           "name": "Is IBDPal free for IBD patients?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. IBDPal is a free iOS app from nonprofit MediVue for nutrition, symptom, and flare tracking—education only, not medical advice."
+            "text": "Yes. IBDPal is a free iOS app from nonprofit MediVue for nutrition, symptom, and flare tracking, education only, not medical advice."
           }
         },
         {

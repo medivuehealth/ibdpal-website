@@ -7,7 +7,7 @@ Votes are stored in your Blob store **`ibdpal-blob`** as:
 | `blog-votes/votes.log` | Text log: `time`, `slug`, `up` or `down` |
 | `blog-votes/counts.json` | Totals per blog post |
 
-**ibdpal-blob** is a **private** Blob store. Vote files are only readable/writable via the server API using `BLOB_READ_WRITE_TOKEN` — not public URLs on the website.
+**ibdpal-blob** is a **private** Blob store. Vote files are only readable/writable via the server API using `BLOB_READ_WRITE_TOKEN` | not public URLs on the website.
 
 ---
 
@@ -15,7 +15,7 @@ Votes are stored in your Blob store **`ibdpal-blob`** as:
 
 Creating the store under **Storage → All Databases** is not enough. You must **connect** it to the **ibdpal-website** project.
 
-### Step A — Connect store to project
+### Step A | Connect store to project
 
 1. [Vercel Dashboard](https://vercel.com) → **Storage** → open **`ibdpal-blob`**
 2. Open the **Projects** tab (not only Quickstart)
@@ -23,7 +23,7 @@ Creating the store under **Storage → All Databases** is not enough. You must *
 4. Choose **`ibdpal-website`**
 5. Enable **Production** and **Preview** → Connect
 
-### Step B — Environment variables (dashboard only — never commit secrets)
+### Step B | Environment variables (dashboard only | never commit secrets)
 
 1. Open **`ibdpal-website`** → **Settings** → **Environment Variables**
 2. Confirm both exist for **Production** and **Preview**:
@@ -34,14 +34,14 @@ Creating the store under **Storage → All Databases** is not enough. You must *
 
 If neither variable exists, repeat Step A.
 
-### Step C — Redeploy
+### Step C | Redeploy
 
 1. **ibdpal-website** → **Deployments**
 2. Latest deployment → **⋯** → **Redeploy** (use **Redeploy** after connecting storage)
 
-### Step D — Test
+### Step D | Test
 
-1. API health: https://ibdpal.org/api/blog-vote?check=1 — must show `"ok":true` and `"apiBuild":"rest-v4-private"` (if missing, Production has not picked up the latest deploy).
+1. API health: https://ibdpal.org/api/blog-vote?check=1 | must show `"ok":true` and `"apiBuild":"rest-v4-private"` (if missing, Production has not picked up the latest deploy).
 2. Full path: https://ibdpal.org/api/blog-vote?check=1&deep=1 (read/write like voting)
 3. Open https://ibdpal.org/blog/hydration-tips-ibd  
 2. Click 👍  
@@ -68,4 +68,4 @@ In **Storage → ibdpal-blob**, you should then see `blog-votes/votes.log`.
 
 ## Privacy
 
-Each log line stores only timestamp, article slug, and up/down — no health data or email.
+Each log line stores only timestamp, article slug, and up/down | no health data or email.

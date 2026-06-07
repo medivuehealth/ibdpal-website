@@ -46,8 +46,8 @@ Update your [Privacy Policy](/privacy) to mention anonymous website analytics (V
 
 ## 6. Files
 
-- `analytics-config.js` — turn Vercel/GA4 on or off, set GA4 ID
-- `analytics.js` — tracking implementation
-- `scripts/site_nav.py` — shared tab nav (`data-tab`) + `PAGE_SCRIPTS` for generators
-- `scripts/generate_static_pages.py` / `generate_blog_posts.py` — inject nav + analytics so new pages never miss scripts
+- `analytics-config.js` | turn Vercel/GA4 on or off, set GA4 ID
+- `analytics.js` | tracking implementation
+- `scripts/site_nav.py` | shared tab nav (`data-tab`) + `PAGE_SCRIPTS` for generators
+- `scripts/generate_static_pages.py` / `generate_blog_posts.py` | inject nav + analytics so new pages never miss scripts
 - Included on all public HTML pages before `script.js`

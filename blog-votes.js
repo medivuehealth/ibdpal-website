@@ -1,5 +1,5 @@
 /**
- * Blog thumbs up / down — records votes via /api/blog-vote (Vercel serverless + Blob).
+ * Blog thumbs up / down | records votes via /api/blog-vote (Vercel serverless + Blob).
  */
 (function () {
     'use strict';
