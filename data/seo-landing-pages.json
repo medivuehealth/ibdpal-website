@@ -19,7 +19,7 @@
         {"heading": "During a flare", "paragraphs": ["Softer, lower-fiber choices—bananas, white rice, applesauce, broths, lean protein—are often easier to tolerate temporarily.", "Hydration matters when diarrhea or reduced intake is present."]}
       ],
       "tips": ["Keep a simple food and symptom log", "Introduce one new food at a time", "Ask about vitamin D, iron, and B12 labs"],
-      "related": [{"label": "Best foods during a Crohn's flare (article)", "url": "/blog/best-foods-crohns-flare"}, {"label": "Low-residue diet during a flare", "url": "/blog/low-residue-diet-flare"}, {"label": "Track food & symptoms with IBDPal", "url": "/blog/tracking-food-symptoms-ibdpal"}],
+      "related": [{"label": "FODMAP diet for Crohn's & colitis", "url": "/blog/fodmap-diet-crohns-colitis"}, {"label": "Anti-inflammatory diet & IBD", "url": "/blog/anti-inflammatory-diet-ibd"}, {"label": "High-protein meal ideas", "url": "/blog/protein-meal-plan-ibd-remission"}, {"label": "Best foods during a Crohn's flare (article)", "url": "/blog/best-foods-crohns-flare"}, {"label": "Track food & symptoms with IBDPal", "url": "/blog/tracking-food-symptoms-ibdpal"}],
       "faq": [
         {"q": "Is there one best diet for Crohn's disease?", "a": "No. Individual triggers and disease activity vary. Work with your IBD team for a plan that fits you."},
         {"q": "Should I avoid all fiber?", "a": "Not always. Many people reduce fiber during active symptoms and expand variety in remission—with clinician guidance."}
@@ -147,7 +147,7 @@
       "sections": [
         {"heading": "Trusted networks", "paragraphs": ["ImproveCareNow and GIKids are widely used for pediatric IBD education and care center discovery.", "IBDPal's pediatric hub links these resources with visit-prep and tracking tools."]}
       ],
-      "related": [{"label": "Pediatric & caregiver hub", "url": "/pediatric-caregivers"}, {"label": "Living with IBD as a family", "url": "/blog/living-with-ibd-kids"}],
+      "related": [{"label": "High school with Crohn's or colitis", "url": "/blog/high-school-ibd-survival-guide"}, {"label": "Teen nutrition & growth", "url": "/blog/teen-nutrition-ibd-growth"}, {"label": "Social life & dating (teens)", "url": "/blog/social-life-dating-teens-ibd"}, {"label": "Pediatric & caregiver hub", "url": "/pediatric-caregivers"}, {"label": "Living with IBD as a family", "url": "/blog/living-with-ibd-kids"}],
       "faq": []
     },
     {
@@ -269,7 +269,7 @@
       "h1": "Workplace and school rights with IBD",
       "intro": "Many students and employees benefit from documented accommodations for bathroom access, absences, and medication schedules.",
       "sections": [],
-      "related": [{"label": "Workplace & school rights article", "url": "/blog/workplace-school-ibd-rights"}],
+      "related": [{"label": "High school survival guide", "url": "/blog/high-school-ibd-survival-guide"}, {"label": "Workplace & school rights article", "url": "/blog/workplace-school-ibd-rights"}],
       "faq": []
     },
     {

@@ -138,6 +138,38 @@
     {
       "source": "/blog/sleep-rest-ibd-flares",
       "destination": "/blogs/sleep-rest-ibd-flares.html"
+    },
+    {
+      "source": "/blog/fodmap-diet-crohns-colitis",
+      "destination": "/blogs/fodmap-diet-crohns-colitis.html"
+    },
+    {
+      "source": "/blog/high-school-ibd-survival-guide",
+      "destination": "/blogs/high-school-ibd-survival-guide.html"
+    },
+    {
+      "source": "/blog/teen-nutrition-ibd-growth",
+      "destination": "/blogs/teen-nutrition-ibd-growth.html"
+    },
+    {
+      "source": "/blog/anti-inflammatory-diet-ibd",
+      "destination": "/blogs/anti-inflammatory-diet-ibd.html"
+    },
+    {
+      "source": "/blog/exercise-physical-activity-ibd",
+      "destination": "/blogs/exercise-physical-activity-ibd.html"
+    },
+    {
+      "source": "/blog/iron-b12-vitamin-d-ibd",
+      "destination": "/blogs/iron-b12-vitamin-d-ibd.html"
+    },
+    {
+      "source": "/blog/social-life-dating-teens-ibd",
+      "destination": "/blogs/social-life-dating-teens-ibd.html"
+    },
+    {
+      "source": "/blog/protein-meal-plan-ibd-remission",
+      "destination": "/blogs/protein-meal-plan-ibd-remission.html"
     }
   ],
   "headers": [
