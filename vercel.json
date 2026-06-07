@@ -20,6 +20,14 @@
   ],
   "rewrites": [
     {
+      "source": "/blog/:slug/amp",
+      "destination": "/blogs/amp/:slug.html"
+    },
+    {
+      "source": "/guides/:slug/amp",
+      "destination": "/guides/amp/:slug.html"
+    },
+    {
       "source": "/guides",
       "destination": "/guides/index.html"
     },

@@ -349,6 +349,7 @@ def render_post(p: dict) -> str:
     asset = p["asset_dir"]
     thumb = f"/blogs/assets/{asset}/{p['images'][0]}"
     canonical = f"https://www.ibdpal.org/blog/{slug}"
+    amp_html = f"{canonical}/amp"
     ld = {
         "@context": "https://schema.org",
         "@graph": [
@@ -410,6 +411,7 @@ def render_post(p: dict) -> str:
 
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <link rel="canonical" href="{canonical}">
+    <link rel="amphtml" href="{amp_html}">
     <meta property="og:type" content="article">
     <meta property="og:url" content="{canonical}">
     <meta property="og:title" content="{html.escape(p["title"])} | IBDPal Blog">

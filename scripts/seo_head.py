@@ -21,6 +21,7 @@ def render_seo_head(
     hreflang_en: str | None = None,
     json_ld: dict | list | None = None,
     extra_head: str = "",
+    amphtml_path: str | None = None,
 ) -> str:
     canonical = SITE + path
     title_esc = html.escape(title)
@@ -34,6 +35,8 @@ def render_seo_head(
         f'    <meta name="robots" content="{robots}">',
         f'    <link rel="canonical" href="{canonical}">',
     ]
+    if amphtml_path:
+        lines.append(f'    <link rel="amphtml" href="{SITE}{amphtml_path}/amp">')
     if lang == "en" and hreflang_es:
         lines.append(f'    <link rel="alternate" hreflang="es" href="{hreflang_es}">')
         lines.append(f'    <link rel="alternate" hreflang="en" href="{canonical}">')

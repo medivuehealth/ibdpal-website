@@ -41,3 +41,24 @@ python scripts/patch_blog_jsonld.py
 ```
 
 Blog generator: `python scripts/generate_blog_posts.py` (June lifestyle posts only).
+
+## Accelerated Mobile Pages (AMP)
+
+AMP variants exist for **all blog posts** and **patient guides** (fast mobile cache, no custom JS).
+
+| Content | Canonical URL | AMP URL |
+|---------|---------------|---------|
+| Blog post | `/blog/{slug}` | `/blog/{slug}/amp` |
+| Patient guide | `/guides/{slug}` | `/guides/{slug}/amp` |
+
+Canonical pages include `<link rel="amphtml">`. AMP pages link back via `<link rel="canonical">`.
+
+**Regenerate after blog or guide changes:**
+
+```bash
+python scripts/generate_amp_pages.py
+```
+
+**Validate after deploy:** [validator.ampproject.org](https://validator.ampproject.org/) using a live AMP URL.
+
+**Out of AMP scope:** homepage tabs, community map, resource library (require custom JavaScript).

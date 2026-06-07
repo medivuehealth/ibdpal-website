@@ -88,7 +88,9 @@ def guide_breadcrumb(path: str, name: str) -> dict:
 
 
 def shell(title: str, description: str, path: str, body: str, json_ld: dict) -> str:
-    seo = render_seo_head(title=title, description=description, path=path, json_ld=json_ld)
+    seo = render_seo_head(
+        title=title, description=description, path=path, json_ld=json_ld, amphtml_path=path
+    )
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
