@@ -2,6 +2,14 @@
  * Filterable patient resource library (education links + site content).
  */
 window.IBDPAL_RESOURCES = [
+  { title: 'IBD Blog (all articles)', category: 'getting-started', type: 'site', url: '/blog', tags: ['articles', 'nutrition', 'flare'] },
+  { title: 'IBD Support by State', category: 'community', type: 'site', url: '/support', tags: ['local', 'map'] },
+  { title: 'IBD FAQ', category: 'getting-started', type: 'site', url: '/faq', tags: ['questions'] },
+  { title: 'IBD Flare Help Hub', category: 'wellness', type: 'site', url: '/flare-help', tags: ['flare'] },
+  { title: 'Teens & School Hub', category: 'family', type: 'site', url: '/teens-and-school', tags: ['teen', '504'] },
+  { title: 'Ulcerative Colitis Hub', category: 'getting-started', type: 'site', url: '/ulcerative-colitis', tags: ['colitis'] },
+  { title: 'Crohn\'s Disease Hub', category: 'getting-started', type: 'site', url: '/crohns-disease', tags: ['crohn'] },
+  { title: 'IBD Nutrition Hub', category: 'nutrition', type: 'site', url: '/ibd-nutrition', tags: ['food', 'diet'] },
   { title: 'IBD Patient Guides (by topic)', category: 'getting-started', type: 'site', url: '/guides', tags: ['search', 'crohn', 'colitis', 'diet', 'flare'] },
   { title: 'IBD Crohn\'s Support Guide', category: 'community', type: 'site', url: '/ibd-crohns-support', tags: ['support', 'national'] },
   { title: 'Newly Diagnosed with IBD', category: 'getting-started', type: 'site', url: '/newly-diagnosed', tags: ['crohn', 'colitis', 'beginner'] },

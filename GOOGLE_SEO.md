@@ -62,3 +62,26 @@ python scripts/generate_amp_pages.py
 **Validate after deploy:** [validator.ampproject.org](https://validator.ampproject.org/) using a live AMP URL.
 
 **Out of AMP scope:** homepage tabs, community map, resource library (require custom JavaScript).
+
+## SEO hubs & directories (Tier 1)
+
+Crawlable hub pages (not hash tabs):
+
+| URL | Purpose |
+|-----|---------|
+| `/blog` | Full blog index by category |
+| `/ibd-nutrition` | Nutrition & diet cluster |
+| `/crohns-disease` | Crohn's resources cluster |
+| `/ulcerative-colitis` | UC resources cluster |
+| `/teens-and-school` | Teen & high school cluster |
+| `/flare-help` | Flare management cluster |
+| `/faq` | FAQ with FAQPage schema |
+| `/support` | IBD support by U.S. state (51 pages) |
+
+**Regenerate after hub data changes:**
+
+```bash
+python scripts/generate_seo_hubs.py
+```
+
+Blog posts get automatic “Related topics” links to hubs when regenerated.

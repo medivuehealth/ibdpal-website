@@ -20,6 +20,38 @@
   ],
   "rewrites": [
     {
+      "source": "/blog",
+      "destination": "/blog/index.html"
+    },
+    {
+      "source": "/faq",
+      "destination": "/faq.html"
+    },
+    {
+      "source": "/ibd-nutrition",
+      "destination": "/ibd-nutrition.html"
+    },
+    {
+      "source": "/crohns-disease",
+      "destination": "/crohns-disease.html"
+    },
+    {
+      "source": "/ulcerative-colitis",
+      "destination": "/ulcerative-colitis.html"
+    },
+    {
+      "source": "/teens-and-school",
+      "destination": "/teens-and-school.html"
+    },
+    {
+      "source": "/flare-help",
+      "destination": "/flare-help.html"
+    },
+    {
+      "source": "/support/:state",
+      "destination": "/support/:state.html"
+    },
+    {
       "source": "/blog/:slug/amp",
       "destination": "/blogs/amp/:slug.html"
     },
