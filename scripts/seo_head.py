@@ -75,6 +75,31 @@ def breadcrumb_json(path: str, name: str) -> dict:
     }
 
 
+def howto_json(
+    *,
+    name: str,
+    description: str,
+    path: str,
+    steps: list[dict[str, str]],
+) -> dict:
+    return {
+        "@type": "HowTo",
+        "@id": f"{SITE}{path}#howto",
+        "name": name,
+        "description": description,
+        "inLanguage": "en-US",
+        "step": [
+            {
+                "@type": "HowToStep",
+                "position": i + 1,
+                "name": step["name"],
+                "text": step["text"],
+            }
+            for i, step in enumerate(steps)
+        ],
+    }
+
+
 def web_page_json(path: str, title: str, description: str) -> dict:
     return {
         "@context": "https://schema.org",

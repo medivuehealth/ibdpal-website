@@ -17,11 +17,12 @@ BLOG_INDEX = ROOT / "blog"
 SUPPORT = ROOT / "support"
 SITEMAP = ROOT / "sitemap.xml"
 VERCEL = ROOT / "vercel.json"
-LLMS = ROOT / "llms.txt"
 RESOURCES = ROOT / "resources-data.js"
 
 sys.path.insert(0, str(ROOT / "scripts"))
-from amp_utils import parse_blog_html  # noqa: E402
+from amp_utils import discover_blogs  # noqa: E402
+from blog_related import patch_all_blogs  # noqa: E402
+from sync_llms_txt import sync_llms_txt  # noqa: E402
 from seo_head import breadcrumb_json, render_seo_head, web_page_json  # noqa: E402
 from site_nav import PAGE_SCRIPTS, TAB_NAV_HTML, site_header_html  # noqa: E402
 
@@ -123,23 +124,6 @@ def load_chapter_hints() -> dict[str, str]:
     for m in re.finditer(r"([A-Z]{2}):\s*'([^']*)'", block.group(1)):
         hints[m.group(1)] = m.group(2)
     return hints
-
-
-def discover_blogs() -> dict[str, dict]:
-    posts: dict[str, dict] = {}
-    for path in sorted(BLOGS.glob("*.html")):
-        parsed = parse_blog_html(path)
-        if not parsed:
-            continue
-        text = path.read_text(encoding="utf-8")
-        thumb_m = re.search(r'class="blog-header-thumb"\s+src="([^"]+)"', text)
-        cat_m = re.search(r'class="blog-date">[^·]*·\s*([^<]+)</p>', text)
-        posts[parsed["slug"]] = {
-            **parsed,
-            "thumb": thumb_m.group(1) if thumb_m else "/blogs/assets/ibdpal-tracking/ibdpal_app_tracker_1.png",
-            "category": cat_m.group(1).strip() if cat_m else "Wellness",
-        }
-    return posts
 
 
 def faq_json_ld(items: list[dict], path: str) -> dict:
@@ -429,35 +413,6 @@ def render_state_page(code: str, name: str, slug: str, chapter: str, nc_extra: d
     return shell(title, description, path, body, ld, active_tab="community")
 
 
-def patch_blog_related(posts: dict[str, dict], hubs: list[dict]) -> None:
-    slug_hubs: dict[str, list[tuple[str, str]]] = {}
-    for hub in hubs:
-        label = hub["h1"]
-        url = f"/{hub['slug']}"
-        for s in hub.get("blog_slugs", []):
-            slug_hubs.setdefault(s, []).append((url, label))
-    marker = '<section class="seo-related-reading"'
-    for slug, post in posts.items():
-        path = BLOGS / f"{slug}.html"
-        text = path.read_text(encoding="utf-8")
-        if marker in text:
-            text = re.sub(r"\s*<section class=\"seo-related-reading\".*?</section>", "", text, flags=re.S)
-        related = slug_hubs.get(slug, [])[:3]
-        if not related:
-            continue
-        links = "".join(f'<li><a href="{html.escape(u)}">{html.escape(l)}</a></li>' for u, l in related)
-        block = (
-            f'\n                    <section class="seo-related-reading" aria-labelledby="related-{slug}">\n'
-            f'                        <h2 id="related-{slug}">Related topics</h2>\n'
-            f'                        <ul class="seo-landing__list">{links}</ul>\n'
-            f"                    </section>\n"
-        )
-        needle = '<div class="blog-vote" data-blog-slug='
-        if needle not in text:
-            continue
-        path.write_text(text.replace(needle, block + "                    " + needle, 1), encoding="utf-8")
-
-
 def patch_vercel(paths: list[str], support_slugs: list[str]) -> None:
     text = VERCEL.read_text(encoding="utf-8")
     inserts = []
@@ -524,22 +479,9 @@ def patch_resources() -> None:
     RESOURCES.write_text(text, encoding="utf-8")
 
 
-def patch_llms(urls: list[str]) -> None:
-    if not LLMS.exists():
-        return
-    text = LLMS.read_text(encoding="utf-8")
-    marker = "## SEO hubs & directories"
-    block = marker + "\n" + "\n".join(f"- {SITE}{u}" for u in urls)
-    if marker in text:
-        text = re.sub(r"## SEO hubs & directories.*?(?=\n## |\Z)", block + "\n", text, flags=re.DOTALL)
-    else:
-        text = text.rstrip() + "\n\n" + block + "\n"
-    LLMS.write_text(text, encoding="utf-8")
-
-
 def main() -> None:
     data = json.loads(DATA.read_text(encoding="utf-8"))
-    posts = discover_blogs()
+    posts = discover_blogs(BLOGS)
     hints = load_chapter_hints()
     BLOG_INDEX.mkdir(parents=True, exist_ok=True)
     SUPPORT.mkdir(parents=True, exist_ok=True)
@@ -570,14 +512,15 @@ def main() -> None:
     hub_paths.append("/support")
     print(f"wrote support/index.html + {len(state_triples)} state pages")
 
-    patch_blog_related(posts, data["hubs"])
+    n = patch_all_blogs(posts, data["hubs"], BLOGS)
+    print(f"Patched related reading on {n} blog posts")
 
     sitemap_urls = [(p, 0.9 if p == "/blog" else 0.88) for p in hub_paths]
     sitemap_urls += [(f"/support/{slug}", 0.82) for slug in support_slugs]
     patch_sitemap(sitemap_urls)
     patch_vercel(hub_paths, support_slugs)
     patch_resources()
-    patch_llms(hub_paths + [f"/support/{s}" for s in support_slugs[:5]])
+    sync_llms_txt()
 
     print("Updated sitemap, vercel.json, resources-data.js, llms.txt")
 

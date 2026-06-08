@@ -14,7 +14,7 @@ window.IBDPAL_RESOURCES = [
   { title: 'IBD Crohn\'s Support Guide', category: 'community', type: 'site', url: '/ibd-crohns-support', tags: ['support', 'national'] },
   { title: 'Newly Diagnosed with IBD', category: 'getting-started', type: 'site', url: '/newly-diagnosed', tags: ['crohn', 'colitis', 'beginner'] },
   { title: 'Doctor Visit Prep Checklist', category: 'getting-started', type: 'site', url: '/visit-prep', tags: ['clinic', 'printable'] },
-  { title: 'Community Map by State', category: 'community', type: 'site', url: '/#community', tags: ['local', 'map'] },
+  { title: 'Community Map by State', category: 'community', type: 'site', url: '/support', tags: ['local', 'map'] },
   { title: 'Pediatric & Caregiver Hub', category: 'family', type: 'site', url: '/pediatric-caregivers', tags: ['kids', 'parents'] },
   { title: 'Patient Stories', category: 'community', type: 'site', url: '/patient-stories', tags: ['peer'] },
   { title: 'For Clinicians | Visit Summaries', category: 'clinical', type: 'site', url: '/for-clinicians', tags: ['export', 'doctor'] },

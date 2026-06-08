@@ -128,6 +128,23 @@ def amp_shell(
 """
 
 
+def discover_blogs(blogs_dir: Path) -> dict[str, dict]:
+    posts: dict[str, dict] = {}
+    for path in sorted(blogs_dir.glob("*.html")):
+        parsed = parse_blog_html(path)
+        if not parsed:
+            continue
+        text = path.read_text(encoding="utf-8")
+        thumb_m = re.search(r'class="blog-header-thumb"\s+src="([^"]+)"', text)
+        cat_m = re.search(r'class="blog-date">[^·]*·\s*([^<]+)</p>', text)
+        posts[parsed["slug"]] = {
+            **parsed,
+            "thumb": thumb_m.group(1) if thumb_m else "/blogs/assets/ibdpal-tracking/ibdpal_app_tracker_1.png",
+            "category": cat_m.group(1).strip() if cat_m else "Wellness",
+        }
+    return posts
+
+
 def parse_blog_html(path: Path) -> dict | None:
     text = path.read_text(encoding="utf-8")
     slug = path.stem
@@ -135,7 +152,7 @@ def parse_blog_html(path: Path) -> dict | None:
     desc_m = re.search(r'<meta name="description" content="([^"]*)"', text)
     date_m = re.search(r'<p class="blog-date">(.*?)</p>', text, re.S)
     content_m = re.search(
-        r'<div class="blog-content">\s*(.*?)\s*</div>\s*<div class="blog-vote"',
+        r'<div class="blog-content">\s*(.*?)\s*</div>.*?<div class="blog-vote"',
         text,
         re.S,
     )

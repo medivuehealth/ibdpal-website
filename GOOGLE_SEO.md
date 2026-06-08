@@ -16,6 +16,7 @@ Site technical SEO is implemented in HTML (meta tags, canonical URLs, Open Graph
 2. **Validate structured data** | [search.google.com/test/rich-results](https://search.google.com/test/rich-results)
    - Test homepage (FAQ + ItemList)
    - Test `/ibd-crohns-support` (FAQ)
+   - Test `/visit-prep` (HowTo + BreadcrumbList)
    - Test a blog article (Article + BreadcrumbList)
 
 ## Target queries (content already aligned)
@@ -37,8 +38,13 @@ Site technical SEO is implemented in HTML (meta tags, canonical URLs, Open Graph
 
 ```bash
 python scripts/generate_static_pages.py
+python scripts/generate_seo_hubs.py
+python scripts/sync_llms_txt.py
 python scripts/patch_blog_jsonld.py
 ```
+
+- `generate_seo_hubs.py` rebuilds hub pages, patches related reading on all blogs, and syncs `llms.txt`.
+- `sync_llms_txt.py` alone refreshes blog, guide, and hub URL lists in `llms.txt`.
 
 Blog generator: `python scripts/generate_blog_posts.py` (June lifestyle posts only).
 

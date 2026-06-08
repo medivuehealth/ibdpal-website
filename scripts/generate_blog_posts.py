@@ -14,7 +14,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 BLOGS = ROOT / "blogs"
 sys.path.insert(0, str(ROOT / "scripts"))
+from amp_utils import discover_blogs  # noqa: E402
+from blog_related import related_reading_html  # noqa: E402
 from site_nav import PAGE_SCRIPTS, SITE_HEADER_HTML, TAB_NAV_HTML  # noqa: E402
+
+SEO_DATA = ROOT / "data" / "seo-expansion.json"
 
 POSTS = [
     {
@@ -344,8 +348,15 @@ def figure_grid(asset_dir: str, images: list[str], alts: list[str]) -> str:
     )
 
 
+def _related_section(slug: str) -> str:
+    hubs = json.loads(SEO_DATA.read_text(encoding="utf-8")).get("hubs", [])
+    posts = discover_blogs(BLOGS)
+    return related_reading_html(slug, posts, hubs)
+
+
 def render_post(p: dict) -> str:
     slug = p["slug"]
+    related = _related_section(slug)
     asset = p["asset_dir"]
     thumb = f"/blogs/assets/{asset}/{p['images'][0]}"
     canonical = f"https://www.ibdpal.org/blog/{slug}"
@@ -450,7 +461,7 @@ def render_post(p: dict) -> str:
 {figure_grid(asset, p["images"], p["alts"])}
 {medical}
                     </div>
-
+{related}
                     <div class="blog-vote" data-blog-slug="{slug}">
                         <p class="blog-vote-prompt">Was this article helpful?</p>
                         <div class="blog-vote-actions">

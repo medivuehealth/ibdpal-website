@@ -6,7 +6,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
-from seo_head import breadcrumb_json, render_seo_head, web_page_json  # noqa: E402
+from seo_head import breadcrumb_json, howto_json, render_seo_head, web_page_json  # noqa: E402
 from site_nav import PAGE_SCRIPTS, TAB_NAV_HTML, site_header_html  # noqa: E402
 
 NAV = TAB_NAV_HTML
@@ -42,7 +42,34 @@ HEAD_ASSETS = """    <link rel="preconnect" href="https://fonts.googleapis.com">
 """
 
 
-def shell(title: str, description: str, path: str, body: str, active_nav: str = "") -> str:
+VISIT_PREP_HOWTO = howto_json(
+    name="Prepare for an IBD gastroenterology visit",
+    description="Printable checklist: gather symptoms, medications, and questions before a Crohn's or colitis appointment.",
+    path="/visit-prep",
+    steps=[
+        {"name": "Compile symptom summary", "text": "Note pain on a 0-10 scale, stools per day, blood, and fever."},
+        {"name": "List medications", "text": "Bring medication names, doses, and last refill dates."},
+        {"name": "Note weight and appetite changes", "text": "Record any recent weight loss or appetite shifts."},
+        {"name": "Write your top three questions", "text": "Prioritize what you need answered at this visit."},
+        {"name": "Bring insurance details", "text": "Carry your insurance card and prior authorization status if on biologics."},
+        {"name": "Ask about disease activity", "text": "Discuss whether your IBD is active, in remission, or uncertain."},
+        {"name": "Review nutrition labs", "text": "Ask about vitamin deficiencies or nutrition labs."},
+        {"name": "Discuss treatment adjustments", "text": "Talk about changes to diet, medications, or scopes."},
+        {"name": "Clarify urgent symptoms", "text": "Ask when to call or go to urgent care."},
+        {"name": "Record follow-up plans", "text": "Note the next appointment date and portal messages."},
+        {"name": "Update your health log", "text": "Log plan changes in IBDPal or your symptom tracker."},
+    ],
+)
+
+
+def shell(
+    title: str,
+    description: str,
+    path: str,
+    body: str,
+    active_nav: str = "",
+    extra_graph: list[dict] | None = None,
+) -> str:
     nav = NAV
     if active_nav:
         nav = nav.replace(
@@ -51,13 +78,10 @@ def shell(title: str, description: str, path: str, body: str, active_nav: str = 
             1,
         )
     crumb_name = title.split("|")[0].strip()
-    json_ld = {
-        "@context": "https://schema.org",
-        "@graph": [
-            breadcrumb_json(path, crumb_name),
-            web_page_json(path, crumb_name, description),
-        ],
-    }
+    graph = [breadcrumb_json(path, crumb_name), web_page_json(path, crumb_name, description)]
+    if extra_graph:
+        graph.extend(extra_graph)
+    json_ld = {"@context": "https://schema.org", "@graph": graph}
     seo = render_seo_head(
         title=title,
         description=description,
@@ -315,7 +339,8 @@ def es_page() -> str:
 def main():
     for name, spec in PAGES.items():
         active = spec[4] if len(spec) > 4 else ""
-        html_out = shell(spec[0], spec[1], spec[2], spec[3], active)
+        extra = [VISIT_PREP_HOWTO] if name == "visit-prep.html" else None
+        html_out = shell(spec[0], spec[1], spec[2], spec[3], active, extra_graph=extra)
         (ROOT / name).write_text(html_out, encoding="utf-8")
         print("wrote", name)
     es_dir = ROOT / "es"
