@@ -74,16 +74,34 @@ def source_cards(sources: list[dict], *, compact: bool = False) -> str:
     return "\n".join(cards)
 
 
+def methodology_block(data: dict, *, compact: bool = False) -> str:
+    meta = data.get("methodology")
+    if not meta:
+        return ""
+    items = "".join(f"<li>{html.escape(item)}</li>" for item in meta.get("items", []))
+    blog_link = (
+        ""
+        if compact
+        else '<p><a href="/blog/how-ibdpal-nutrition-targets-work">Patient-friendly explainer: how nutrition targets work →</a></p>'
+    )
+    return f"""                <section class="seo-landing__block research-methodology">
+                    <h2>{html.escape(meta.get("heading", "How IBDPal nutrition baselines work"))}</h2>
+                    <ul class="seo-landing__list">{items}</ul>
+                    {blog_link}
+                </section>"""
+
+
 def tab_section(data: dict) -> str:
     return f"""            <!-- research-tab -->
             <div class="tab-content" id="research">
                 <div class="research-hub" data-track-impression="research_tab" data-track-label="Research sources tab">
                     <h2 class="resources-hub__title">{html.escape(data['h1'])}</h2>
                     <p class="community-section__lead">{html.escape(data['intro'])}</p>
+{methodology_block(data, compact=True)}
                     <div class="research-source-grid">
 {source_cards(data['sources'], compact=True)}
                     </div>
-                    <p class="resources-hub__more"><a href="/research">Open full research library page →</a> · <a href="/ibd-nutrition">Nutrition hub</a> · <a href="/blog/iron-b12-vitamin-d-ibd">Micronutrients article</a></p>
+                    <p class="resources-hub__more"><a href="/research">Open full research library page →</a> · <a href="/ibd-nutrition">Nutrition hub</a> · <a href="/blog/how-ibdpal-nutrition-targets-work">Nutrition targets article</a></p>
                     <p class="community-edu-disclaimer"><strong>Educational only.</strong> External links open publisher sites. IBDPal does not control third-party content.</p>
                 </div>
             </div>
@@ -100,10 +118,12 @@ def render_page(data: dict) -> str:
                 <div class="research-source-grid">
 {source_cards(data['sources'])}
                 </div>
+{methodology_block(data)}
                 <section class="seo-landing__block">
                     <h2>Related on IBDPal</h2>
                     <ul class="seo-landing__list">
                         <li><a href="/ibd-nutrition">IBD nutrition hub</a></li>
+                        <li><a href="/blog/how-ibdpal-nutrition-targets-work">How IBDPal sets nutrition targets</a></li>
                         <li><a href="/blog/fodmap-diet-crohns-colitis">FODMAP diet article</a></li>
                         <li><a href="/blog/iron-b12-vitamin-d-ibd">Iron, B12, and vitamin D</a></li>
                         <li><a href="/glossary">IBD glossary</a></li>

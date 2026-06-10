@@ -388,6 +388,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.87</priority>
   </url>
+  <!-- nutrition-baselines-blog -->
+  <url>
+    <loc>https://www.ibdpal.org/blog/how-ibdpal-nutrition-targets-work</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.86</priority>
+  </url>
   <!-- tier3-seo -->
   <url>
     <loc>https://www.ibdpal.org/glossary</loc>
@@ -885,6 +892,11 @@
   </url>
   <url>
     <loc>https://www.ibdpal.org/blog/high-school-ibd-survival-guide/amp</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.ibdpal.org/blog/how-ibdpal-nutrition-targets-work/amp</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

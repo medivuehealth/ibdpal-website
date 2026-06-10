@@ -20,6 +20,10 @@
   ],
   "rewrites": [
     {
+      "source": "/blog/how-ibdpal-nutrition-targets-work",
+      "destination": "/blogs/how-ibdpal-nutrition-targets-work.html"
+    },
+    {
       "source": "/research",
       "destination": "/research.html"
     },

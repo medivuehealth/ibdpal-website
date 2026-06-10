@@ -23,7 +23,7 @@
           "heading": "Start here",
           "paragraphs": [
             "If you are newly diagnosed, pair nutrition reading with our newly diagnosed hub and a food-symptom log.",
-            "See curated IBD nutrition research (AGA, Congress, WebMD, National Academies) on the Research tab or at /research."
+            "See how IBDPal sets baseline nutrition targets in our DRI article and curated research (AGA, NIH DRI, Congress) on the Research tab or at /research."
           ]
         }
       ],
@@ -50,6 +50,7 @@
         }
       ],
       "blog_slugs": [
+        "how-ibdpal-nutrition-targets-work",
         "fodmap-diet-crohns-colitis",
         "anti-inflammatory-diet-ibd",
         "protein-meal-plan-ibd-remission",

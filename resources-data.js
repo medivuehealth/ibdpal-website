@@ -2,6 +2,7 @@
  * Filterable patient resource library (education links + site content).
  */
 window.IBDPAL_RESOURCES = [
+  { title: "NIH Office of Dietary Supplements: Dietary Reference Intakes (DRI)", category: 'nutrition', type: 'external', url: "https://ods.od.nih.gov/HealthInformation/Dietary_Reference_Intakes.aspx", tags: ["DRI", "RDA", "AI", "age", "sex", "micronutrients"] },
   { title: "Dietary Reference Intakes (DRI): Summary Report", category: 'nutrition', type: 'external', url: "https://www.nationalacademies.org/our-work/summary-report-of-the-dietary-reference-intakes", tags: ["DRI", "RDAs", "nutrition standards"] },
   { title: "Micronutrient Deficiency in Crohn's Disease", category: 'nutrition', type: 'external', url: "https://www.webmd.com/ibd-crohns-disease/crohns-disease/micronutrient-deficiency-crohns", tags: ["vitamins", "iron", "B12", "malabsorption"] },
   { title: "Crohn's & Colitis Congress 2024: IBD Diet & Nutrition Research Updates", category: 'nutrition', type: 'external', url: "https://www.nutritionaltherapyforibd.org/news/crohns-colitis-congress-2024-updates-on-ibd-diet-nutrition-research", tags: ["conference", "diet research", "nutrition science"] },

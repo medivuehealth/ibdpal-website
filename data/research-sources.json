@@ -2,7 +2,17 @@
   "title": "IBD Nutrition Research Sources | Crohn's & Colitis | IBDPal",
   "description": "Trusted IBD diet and nutrition research: AGA clinical guidance, Crohn's & Colitis Congress updates, micronutrient deficiency, and Dietary Reference Intakes.",
   "h1": "IBD research sources",
-  "intro": "Peer-reviewed and clinical guidance on Crohn's disease and ulcerative colitis nutrition. IBDPal summarizes and links to original publishers. Not medical advice.",
+  "intro": "Peer-reviewed and clinical guidance on Crohn's disease and ulcerative colitis nutrition. IBDPal uses NIH Dietary Reference Intakes for baseline tracking goals in the app. Disease-specific increases belong with your care team. Not medical advice.",
+  "methodology": {
+    "heading": "How IBDPal nutrition baselines work",
+    "items": [
+      "Baseline macronutrient and micronutrient targets follow U.S. Dietary Reference Intakes (DRI) from NIH, adjusted by age and sex.",
+      "Calorie, protein, and fluid estimates also consider basic profile inputs such as current weight. A single formula like 30 kcal per kg is not enough for every patient.",
+      "Higher calorie, protein, vitamin, or mineral needs during active disease, malabsorption, or deficiency are clinical decisions made with your gastroenterologist or IBD dietitian.",
+      "IBDPal tracks food and fluids against general reference levels. It does not prescribe supplements or replace medical nutrition therapy.",
+      "AGA guidance and IBD research explain when labs and dietitian visits matter. DRI tables define population reference ranges; your team personalizes targets."
+    ]
+  },
   "sources": [
     {
       "id": "aga-diet-2024",
@@ -32,13 +42,22 @@
       "summary": "Overview of common vitamin and mineral shortfalls in Crohn's disease, including iron, B12, vitamin D, and folate. Explains why inflammation, surgery, and diet restriction can raise deficiency risk and why labs matter."
     },
     {
+      "id": "nih-ods-dri",
+      "title": "NIH Office of Dietary Supplements: Dietary Reference Intakes (DRI)",
+      "publisher": "National Institutes of Health",
+      "year": "Reference",
+      "url": "https://ods.od.nih.gov/HealthInformation/Dietary_Reference_Intakes.aspx",
+      "topics": ["DRI", "RDA", "AI", "age", "sex", "micronutrients"],
+      "summary": "Official NIH hub for U.S. Dietary Reference Intakes. Reference amounts for energy, protein, vitamins, and minerals vary by age and sex. IBDPal uses these values as baseline daily tracking goals, not personalized prescriptions."
+    },
+    {
       "id": "iom-dri",
       "title": "Dietary Reference Intakes (DRI): Summary Report",
       "publisher": "National Academies of Sciences, Engineering, and Medicine",
       "year": "Reference",
       "url": "https://www.nationalacademies.org/our-work/summary-report-of-the-dietary-reference-intakes",
       "topics": ["DRI", "RDAs", "nutrition standards"],
-      "summary": "Authoritative U.S. reference values for macronutrients, vitamins, and minerals. IBD teams sometimes adapt general DRIs when inflammation, malabsorption, or steroid use changes individual needs."
+      "summary": "Authoritative U.S. reference values for macronutrients, vitamins, and minerals. Complements the NIH ODS DRI tables. IBD teams adapt general DRIs when inflammation, malabsorption, or steroid use changes individual needs."
     }
   ]
 }
