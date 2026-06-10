@@ -2520,6 +2520,116 @@ input:focus-visible {
     background: #ede4f5;
 }
 
+.start-here-hub {
+    margin: 2rem 0 2.5rem;
+    padding: 1.5rem 1.25rem 1.25rem;
+    background: linear-gradient(180deg, #faf7fc 0%, #fff 100%);
+    border: 1px solid #e8dff0;
+    border-radius: 16px;
+}
+
+.start-here-hub__title {
+    margin: 0 0 0.35rem;
+    font-size: 1.35rem;
+    color: #333;
+    text-align: center;
+}
+
+.start-here-hub__lead {
+    margin: 0 0 1.25rem;
+    text-align: center;
+    color: #555;
+    font-size: 0.98rem;
+    max-width: 42rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.start-here-hub__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 0.75rem;
+}
+
+.start-here-hub__tile {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    padding: 1rem 1rem 0.9rem;
+    background: #fff;
+    border: 1px solid #e0d6eb;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.start-here-hub__tile:hover {
+    border-color: #9933cc;
+    box-shadow: 0 4px 14px rgba(153, 51, 204, 0.12);
+}
+
+.start-here-hub__tile--app {
+    background: #f5f0fa;
+}
+
+.start-here-hub__label {
+    font-weight: 700;
+    color: #9933cc;
+    font-size: 0.98rem;
+    line-height: 1.3;
+}
+
+.start-here-hub__desc {
+    color: #555;
+    font-size: 0.85rem;
+    line-height: 1.35;
+}
+
+.start-here-hub__more {
+    margin: 1.15rem 0 0;
+    text-align: center;
+    font-size: 0.92rem;
+    color: #666;
+}
+
+.start-here-hub__more a {
+    color: #9933cc;
+    font-weight: 600;
+}
+
+.discovery-dashboard--compact {
+    margin-top: 1rem;
+}
+
+.discovery-dashboard--compact .discovery-dashboard__title {
+    font-size: 1.1rem;
+}
+
+.discovery-dashboard--compact .discovery-metrics-row__value {
+    font-size: 1rem;
+}
+
+.app-website-links {
+    background: #f5f0fa;
+    border-bottom: 1px solid #e8dff0;
+    padding: 0.75rem 1rem;
+    margin: 0;
+    text-align: center;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+.app-website-links a {
+    color: #9933cc;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.app-website-links a:hover {
+    text-decoration: underline;
+}
+
 .community-zip-row {
     margin-bottom: 1rem;
 }

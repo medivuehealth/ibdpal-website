@@ -103,13 +103,10 @@ _CANONICAL = "https://www.ibdpal.org"
 _TAB_LINKS = f"""
                 <a href="{_CANONICAL}/#overview" class="tab-button" data-tab="overview">Overview</a>
                 <a href="{_CANONICAL}/#app" class="tab-button" data-tab="app">IBDPal App</a>
-                <a href="{_CANONICAL}/#resources" class="tab-button" data-tab="resources">Resources</a>
-                <a href="{_CANONICAL}/#research" class="tab-button" data-tab="research">Research</a>
-                <a href="{_CANONICAL}/#blogs" class="tab-button" data-tab="blogs">Blogs</a>
-                <a href="{_CANONICAL}/#community" class="tab-button" data-tab="community">Community</a>
-                <a href="{_CANONICAL}/#contact" class="tab-button" data-tab="contact">Contact</a>
-                <a href="{_CANONICAL}/#privacy" class="tab-button" data-tab="privacy">Privacy</a>
-                <a href="{_CANONICAL}/#support" class="tab-button" data-tab="support">Support</a>
+                <a href="{_CANONICAL}/#resources" class="tab-button" data-tab="resources">Guides &amp; tools</a>
+                <a href="{_CANONICAL}/#research" class="tab-button" data-tab="research">Sources</a>
+                <a href="{_CANONICAL}/#blogs" class="tab-button" data-tab="blogs">Articles</a>
+                <a href="{_CANONICAL}/#community" class="tab-button" data-tab="community">Find support</a>
 """
 
 CANONICAL_HOST_SCRIPT = '    <script src="/canonical-host.js"></script>\n'
@@ -127,13 +124,10 @@ TAB_NAV_HOME_HTML = """
             <div class="tab-container">
                 <button type="button" class="tab-button active" data-tab="overview">Overview</button>
                 <button type="button" class="tab-button" data-tab="app">IBDPal App</button>
-                <button type="button" class="tab-button" data-tab="resources">Resources</button>
-                <button type="button" class="tab-button" data-tab="research">Research</button>
-                <button type="button" class="tab-button" data-tab="blogs">Blogs</button>
-                <button type="button" class="tab-button" data-tab="community">Community</button>
-                <button type="button" class="tab-button" data-tab="contact">Contact</button>
-                <button type="button" class="tab-button" data-tab="privacy">Privacy</button>
-                <button type="button" class="tab-button" data-tab="support">Support</button>
+                <button type="button" class="tab-button" data-tab="resources">Guides &amp; tools</button>
+                <button type="button" class="tab-button" data-tab="research">Sources</button>
+                <button type="button" class="tab-button" data-tab="blogs">Articles</button>
+                <button type="button" class="tab-button" data-tab="community">Find support</button>
             </div>
         </nav>
 """

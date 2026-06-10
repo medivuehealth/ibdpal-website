@@ -95,7 +95,7 @@ def tab_section(data: dict) -> str:
     return f"""            <!-- research-tab -->
             <div class="tab-content" id="research">
                 <div class="research-hub" data-track-impression="research_tab" data-track-label="Research sources tab">
-                    <h2 class="resources-hub__title">{html.escape(data['h1'])}</h2>
+                    <h2 class="resources-hub__title">Trusted sources</h2>
                     <p class="community-section__lead">{html.escape(data['intro'])}</p>
 {methodology_block(data, compact=True)}
                     <div class="research-source-grid">

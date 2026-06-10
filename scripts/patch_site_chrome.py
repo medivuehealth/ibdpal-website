@@ -29,19 +29,7 @@ def tab_nav_for(path: Path) -> str:
     if path.name == "index.html":
         return TAB_NAV_HOME_HTML.strip()
     nav = TAB_NAV_HTML
-    if path.name == "privacy.html":
-        nav = nav.replace(
-            'data-tab="privacy"',
-            'class="tab-button active" data-tab="privacy"',
-            1,
-        )
-    elif path.name == "support.html":
-        nav = nav.replace(
-            'data-tab="support"',
-            'class="tab-button active" data-tab="support"',
-            1,
-        )
-    elif path.parent.name == "blogs":
+    if path.parent.name == "blogs":
         nav = nav.replace(
             'class="tab-button" data-tab="blogs"',
             'class="tab-button active" data-tab="blogs"',
