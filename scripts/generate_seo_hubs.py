@@ -12,6 +12,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "seo-expansion.json"
 COMMUNITY = ROOT / "community-data.js"
+INDEX = ROOT / "index.html"
 BLOGS = ROOT / "blogs"
 BLOG_INDEX = ROOT / "blog"
 SUPPORT = ROOT / "support"
@@ -210,19 +211,46 @@ def link_list(items: list[tuple[str, str]]) -> str:
     ) + "</ul>"
 
 
-def blog_cards(posts: list[dict]) -> str:
+def blog_cards(posts: list[dict], *, for_index_tab: bool = False) -> str:
     cards = []
     for p in posts:
         url = f"/blog/{p['slug']}"
+        thumb_class = "blog-card-thumb"
+        if for_index_tab and p["slug"] == "introducing-ibdpal":
+            thumb_class += " blog-card-thumb--app"
         cards.append(
             f'                        <a href="{url}" class="blog-card">\n'
-            f'                            <img src="{html.escape(p["thumb"])}" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">\n'
+            f'                            <img src="{html.escape(p["thumb"])}" alt="" class="{thumb_class}" width="800" height="600" decoding="async">\n'
             f'                            <span class="blog-card-meta">{html.escape(p["category"])}</span>\n'
             f'                            <h4>{html.escape(p["title"])}</h4>\n'
             f'                            <p>{html.escape(p["description"][:120])}</p>\n'
             f"                        </a>"
         )
     return "\n".join(cards)
+
+
+def patch_index_blogs_tab(posts: dict[str, dict]) -> None:
+    """Sync homepage #blogs tab cards from blogs/*.html (newest first)."""
+    if not INDEX.exists():
+        return
+    text = INDEX.read_text(encoding="utf-8")
+    marker_start = '                    <div class="blog-index-grid">'
+    marker_end = '                    </div>\n                </div>\n            </div>\n\n            <!-- Community Tab -->'
+    if marker_start not in text or marker_end not in text:
+        print("WARN: blogs tab markers not found in index.html")
+        return
+    ordered = sorted(posts.values(), key=lambda p: p.get("date_iso", ""), reverse=True)
+    cards = blog_cards(ordered, for_index_tab=True)
+    block = f"{marker_start}\n{cards}\n{marker_end}"
+    text = re.sub(
+        re.escape(marker_start) + r".*?" + re.escape(marker_end),
+        block,
+        text,
+        count=1,
+        flags=re.S,
+    )
+    INDEX.write_text(text, encoding="utf-8")
+    print(f"patched index.html Blogs tab ({len(ordered)} posts)")
 
 
 def render_blog_index(meta: dict, posts: dict[str, dict]) -> str:
@@ -508,6 +536,7 @@ def main() -> None:
 
     (BLOG_INDEX / "index.html").write_text(render_blog_index(data["blog_index"], posts), encoding="utf-8")
     print("wrote blog/index.html")
+    patch_index_blogs_tab(posts)
 
     hub_paths = ["/blog"]
     for hub in data["hubs"]:

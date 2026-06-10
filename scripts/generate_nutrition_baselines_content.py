@@ -165,8 +165,7 @@ def main() -> None:
     write_blog()
     patch_vercel()
     patch_sitemap()
-    print("Next: python scripts/generate_research_page.py")
-    print("      python scripts/generate_seo_hubs.py")
+    print("Next: python scripts/generate_seo_hubs.py  # syncs homepage Blogs tab")
     print("      python scripts/generate_amp_pages.py")
     print("      python scripts/sync_llms_txt.py")
 

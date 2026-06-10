@@ -137,10 +137,12 @@ def discover_blogs(blogs_dir: Path) -> dict[str, dict]:
         text = path.read_text(encoding="utf-8")
         thumb_m = re.search(r'class="blog-header-thumb"\s+src="([^"]+)"', text)
         cat_m = re.search(r'class="blog-date">[^·]*·\s*([^<]+)</p>', text)
+        iso_m = re.search(r'property="article:published_time" content="([^"]*)"', text)
         posts[parsed["slug"]] = {
             **parsed,
             "thumb": thumb_m.group(1) if thumb_m else "/blogs/assets/ibdpal-tracking/ibdpal_app_tracker_1.png",
             "category": cat_m.group(1).strip() if cat_m else "Wellness",
+            "date_iso": iso_m.group(1) if iso_m else "",
         }
     return posts
 
