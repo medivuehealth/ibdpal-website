@@ -20,6 +20,34 @@
   ],
   "rewrites": [
     {
+      "source": "/blog/dairy-lactose-ibd",
+      "destination": "/blogs/dairy-lactose-ibd.html"
+    },
+    {
+      "source": "/blog/gluten-wheat-ibd",
+      "destination": "/blogs/gluten-wheat-ibd.html"
+    },
+    {
+      "source": "/blog/immunosuppressants-ibd-basics",
+      "destination": "/blogs/immunosuppressants-ibd-basics.html"
+    },
+    {
+      "source": "/blog/steroids-prednisone-ibd",
+      "destination": "/blogs/steroids-prednisone-ibd.html"
+    },
+    {
+      "source": "/blog/fiber-and-ibd-diet",
+      "destination": "/blogs/fiber-and-ibd-diet.html"
+    },
+    {
+      "source": "/blog/alcohol-caffeine-ibd",
+      "destination": "/blogs/alcohol-caffeine-ibd.html"
+    },
+    {
+      "source": "/blog/mesalamine-5-asa-ibd",
+      "destination": "/blogs/mesalamine-5-asa-ibd.html"
+    },
+    {
       "source": "/blog/how-ibdpal-nutrition-targets-work",
       "destination": "/blogs/how-ibdpal-nutrition-targets-work.html"
     },

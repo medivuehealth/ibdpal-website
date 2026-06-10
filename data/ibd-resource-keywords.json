@@ -1,0 +1,19 @@
+{
+  "fodmap-diet-crohns-colitis": ["gluten", "glutten", "wheat", "dairy", "lactose", "garlic", "onion", "fodmap"],
+  "anti-inflammatory-diet-ibd": ["dairy", "gluten", "glutten", "inflammatory", "mediterranean"],
+  "understanding-biologics-ibd": ["biologics", "immune", "immunity", "immunosuppressant", "infliximab", "adalimumab", "humira", "remicade"],
+  "insurance-biologics-ibd": ["biologics", "immune", "insurance", "prior authorization"],
+  "how-ibdpal-nutrition-targets-work": ["nutrition", "calories", "protein", "DRI", "micronutrients"],
+  "iron-b12-vitamin-d-ibd": ["iron", "anemia", "B12", "vitamin D", "supplements"],
+  "best-foods-crohns-flare": ["food", "flare", "diet", "fiber"],
+  "low-residue-diet-flare": ["fiber", "low fiber", "residue", "flare"],
+  "foods-that-may-trigger-uc-symptoms": ["trigger", "food", "dairy", "spicy"],
+  "guides/biologics-crohns-colitis": ["biologics", "immune", "immunosuppressant", "medication"],
+  "dairy-lactose-ibd": ["dairy", "lactose", "milk", "cheese", "yogurt", "lactose-free"],
+  "gluten-wheat-ibd": ["gluten", "glutten", "wheat", "celiac", "gluten-free", "bread"],
+  "immunosuppressants-ibd-basics": ["immunosuppressant", "immunosuppressants", "immune", "immunity", "azathioprine", "methotrexate", "6-MP"],
+  "steroids-prednisone-ibd": ["steroid", "steroids", "prednisone", "budesonide", "immune", "cortisol"],
+  "fiber-and-ibd-diet": ["fiber", "fibre", "soluble", "insoluble", "roughage"],
+  "alcohol-caffeine-ibd": ["alcohol", "beer", "wine", "caffeine", "coffee"],
+  "mesalamine-5-asa-ibd": ["mesalamine", "5-ASA", "5 ASA", "Asacol", "Lialda", "aminosalicylate"]
+}

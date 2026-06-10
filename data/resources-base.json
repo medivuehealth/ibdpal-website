@@ -1,0 +1,212 @@
+[
+  {
+    "title": "NIH Office of Dietary Supplements: Dietary Reference Intakes (DRI)",
+    "category": "nutrition",
+    "type": "external",
+    "url": "https://ods.od.nih.gov/HealthInformation/Dietary_Reference_Intakes.aspx",
+    "tags": ["DRI", "RDA", "vitamins", "minerals", "micronutrients"]
+  },
+  {
+    "title": "Dietary Reference Intakes (DRI): Summary Report",
+    "category": "nutrition",
+    "type": "external",
+    "url": "https://www.nationalacademies.org/our-work/summary-report-of-the-dietary-reference-intakes",
+    "tags": ["DRI", "RDAs", "nutrition standards"]
+  },
+  {
+    "title": "Micronutrient Deficiency in Crohn's Disease",
+    "category": "nutrition",
+    "type": "external",
+    "url": "https://www.webmd.com/ibd-crohns-disease/crohns-disease/micronutrient-deficiency-crohns",
+    "tags": ["vitamins", "iron", "B12", "malabsorption"]
+  },
+  {
+    "title": "Crohn's & Colitis Congress 2024: IBD Diet & Nutrition Research Updates",
+    "category": "nutrition",
+    "type": "external",
+    "url": "https://www.nutritionaltherapyforibd.org/news/crohns-colitis-congress-2024-updates-on-ibd-diet-nutrition-research",
+    "tags": ["conference", "diet research", "nutrition science"]
+  },
+  {
+    "title": "AGA Clinical Practice Update: Diet and Nutritional Therapies in IBD (2024)",
+    "category": "nutrition",
+    "type": "external",
+    "url": "https://gastro.org/clinical-guidance/diet-and-nutritional-therapies-in-patients-with-ibd/",
+    "tags": ["clinical guidance", "nutrition therapy", "Crohn's", "colitis"]
+  },
+  {
+    "title": "IBD Research Sources",
+    "category": "nutrition",
+    "type": "site",
+    "url": "/research",
+    "tags": ["research", "diet", "clinical", "sources"]
+  },
+  {
+    "title": "IBD Glossary",
+    "category": "getting-started",
+    "type": "site",
+    "url": "/glossary",
+    "tags": ["terms", "definitions", "biologics", "flare", "remission"]
+  },
+  {
+    "title": "IBD Blog (all articles)",
+    "category": "getting-started",
+    "type": "site",
+    "url": "/blog",
+    "tags": ["articles", "nutrition", "flare", "diet", "medication"]
+  },
+  {
+    "title": "IBD Support by State",
+    "category": "community",
+    "type": "site",
+    "url": "/support",
+    "tags": ["local", "map", "support group"]
+  },
+  {
+    "title": "IBD FAQ",
+    "category": "getting-started",
+    "type": "site",
+    "url": "/faq",
+    "tags": ["questions", "dairy", "diet", "flare"]
+  },
+  {
+    "title": "IBD Flare Help Hub",
+    "category": "wellness",
+    "type": "site",
+    "url": "/flare-help",
+    "tags": ["flare", "urgent", "symptoms"]
+  },
+  {
+    "title": "Teens & School Hub",
+    "category": "family",
+    "type": "site",
+    "url": "/teens-and-school",
+    "tags": ["teen", "504", "school"]
+  },
+  {
+    "title": "Ulcerative Colitis Hub",
+    "category": "getting-started",
+    "type": "site",
+    "url": "/ulcerative-colitis",
+    "tags": ["colitis", "ulcerative colitis", "UC"]
+  },
+  {
+    "title": "Crohn's Disease Hub",
+    "category": "getting-started",
+    "type": "site",
+    "url": "/crohns-disease",
+    "tags": ["crohn", "crohn's disease"]
+  },
+  {
+    "title": "IBD Nutrition Hub",
+    "category": "nutrition",
+    "type": "site",
+    "url": "/ibd-nutrition",
+    "tags": ["food", "diet", "nutrition", "dairy", "gluten", "fiber"]
+  },
+  {
+    "title": "IBD Patient Guides (by topic)",
+    "category": "getting-started",
+    "type": "site",
+    "url": "/guides",
+    "tags": ["search", "crohn", "colitis", "diet", "flare", "medication"]
+  },
+  {
+    "title": "IBD Crohn's Support Guide",
+    "category": "community",
+    "type": "site",
+    "url": "/ibd-crohns-support",
+    "tags": ["support", "national"]
+  },
+  {
+    "title": "Newly Diagnosed with IBD",
+    "category": "getting-started",
+    "type": "site",
+    "url": "/newly-diagnosed",
+    "tags": ["crohn", "colitis", "beginner", "diagnosis"]
+  },
+  {
+    "title": "Doctor Visit Prep Checklist",
+    "category": "getting-started",
+    "type": "site",
+    "url": "/visit-prep",
+    "tags": ["clinic", "printable", "doctor"]
+  },
+  {
+    "title": "Community Map by State",
+    "category": "community",
+    "type": "site",
+    "url": "/support",
+    "tags": ["local", "map", "community"]
+  },
+  {
+    "title": "Pediatric & Caregiver Hub",
+    "category": "family",
+    "type": "site",
+    "url": "/pediatric-caregivers",
+    "tags": ["kids", "parents", "pediatric"]
+  },
+  {
+    "title": "Patient Stories",
+    "category": "community",
+    "type": "site",
+    "url": "/patient-stories",
+    "tags": ["peer", "stories"]
+  },
+  {
+    "title": "For Clinicians | Visit Summaries",
+    "category": "clinical",
+    "type": "site",
+    "url": "/for-clinicians",
+    "tags": ["export", "doctor", "clinic"]
+  },
+  {
+    "title": "Clinical Partnerships",
+    "category": "clinical",
+    "type": "site",
+    "url": "/clinical-partnerships",
+    "tags": ["hospital", "clinical"]
+  },
+  {
+    "title": "CCF IBD Help Center",
+    "category": "community",
+    "type": "external",
+    "url": "https://www.crohnscolitisfoundation.org/live-full/live-full-ibd-help-center",
+    "tags": ["helpline", "national"]
+  },
+  {
+    "title": "CCF Find a Support Group",
+    "category": "community",
+    "type": "external",
+    "url": "https://www.crohnscolitisfoundation.org/find-a-support-group",
+    "tags": ["peer", "support group"]
+  },
+  {
+    "title": "ImproveCareNow Families",
+    "category": "family",
+    "type": "external",
+    "url": "https://www.improvecarenow.org/patients-parents",
+    "tags": ["pediatric", "family"]
+  },
+  {
+    "title": "GIKids",
+    "category": "family",
+    "type": "external",
+    "url": "https://gikids.org/",
+    "tags": ["pediatric", "kids"]
+  },
+  {
+    "title": "UOAA Ostomy Support",
+    "category": "community",
+    "type": "external",
+    "url": "https://ostomy.org/",
+    "tags": ["ostomy", "stoma"]
+  },
+  {
+    "title": "Recursos en español",
+    "category": "community",
+    "type": "site",
+    "url": "/es/recursos",
+    "tags": ["spanish", "español"]
+  }
+]

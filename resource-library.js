@@ -18,6 +18,36 @@
     return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
   }
 
+  function buildHaystack(item) {
+    return (
+      item.title +
+      ' ' +
+      (item.description || '') +
+      ' ' +
+      (item.tags || []).join(' ') +
+      ' ' +
+      (item.keywords || []).join(' ')
+    ).toLowerCase();
+  }
+
+  function matchesQuery(hay, q) {
+    if (!q) return true;
+    if (hay.indexOf(q) !== -1) return true;
+    var tokens = q.split(/\s+/).filter(function (t) {
+      return t.length > 0;
+    });
+    if (!tokens.length) return true;
+    var words = hay.split(/[^a-z0-9]+/).filter(Boolean);
+    return tokens.every(function (tok) {
+      if (hay.indexOf(tok) !== -1) return true;
+      for (var i = 0; i < words.length; i++) {
+        var w = words[i];
+        if (w.indexOf(tok) === 0 || tok.indexOf(w) === 0) return true;
+      }
+      return false;
+    });
+  }
+
   function renderCard(item) {
     var cat = CATEGORY_LABELS[item.category] || item.category;
     var badge = item.type === 'external' ? 'External' : item.type === 'blog' ? 'Article' : 'On ibdpal.org';
@@ -44,8 +74,7 @@
       list.querySelectorAll('.resource-card').forEach(function (card, i) {
         var item = window.IBDPAL_RESOURCES[i];
         var matchCat = !cat || item.category === cat;
-        var hay = (item.title + ' ' + (item.tags || []).join(' ')).toLowerCase();
-        var matchQ = !q || hay.indexOf(q) !== -1;
+        var matchQ = matchesQuery(buildHaystack(item), q);
         card.style.display = matchCat && matchQ ? '' : 'none';
       });
     }

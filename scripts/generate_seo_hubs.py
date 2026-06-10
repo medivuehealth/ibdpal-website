@@ -570,7 +570,9 @@ def main() -> None:
     sitemap_urls += [(f"/support/{slug}", 0.82) for slug in support_slugs]
     patch_sitemap(sitemap_urls)
     patch_vercel(hub_paths, support_slugs)
-    patch_resources()
+    from sync_resources_library import main as sync_resources_library  # noqa: E402
+
+    sync_resources_library()
     sync_llms_txt()
 
     from generate_es_pages import main as generate_es_pages  # noqa: E402

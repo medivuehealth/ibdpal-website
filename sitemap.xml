@@ -388,6 +388,49 @@
     <changefreq>monthly</changefreq>
     <priority>0.87</priority>
   </url>
+  <!-- ibd-topic-blogs -->
+  <url>
+    <loc>https://www.ibdpal.org/blog/dairy-lactose-ibd</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.ibdpal.org/blog/gluten-wheat-ibd</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.ibdpal.org/blog/immunosuppressants-ibd-basics</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.ibdpal.org/blog/steroids-prednisone-ibd</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.ibdpal.org/blog/fiber-and-ibd-diet</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.ibdpal.org/blog/alcohol-caffeine-ibd</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.ibdpal.org/blog/mesalamine-5-asa-ibd</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
   <!-- nutrition-baselines-blog -->
   <url>
     <loc>https://www.ibdpal.org/blog/how-ibdpal-nutrition-targets-work</loc>
@@ -856,6 +899,11 @@
   </url>
   <!-- amp-pages -->
   <url>
+    <loc>https://www.ibdpal.org/blog/alcohol-caffeine-ibd/amp</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.ibdpal.org/blog/anti-inflammatory-diet-ibd/amp</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -871,7 +919,17 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.ibdpal.org/blog/dairy-lactose-ibd/amp</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.ibdpal.org/blog/exercise-physical-activity-ibd/amp</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.ibdpal.org/blog/fiber-and-ibd-diet/amp</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -887,6 +945,11 @@
   </url>
   <url>
     <loc>https://www.ibdpal.org/blog/foods-that-may-trigger-uc-symptoms/amp</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.ibdpal.org/blog/gluten-wheat-ibd/amp</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -912,6 +975,11 @@
   </url>
   <url>
     <loc>https://www.ibdpal.org/blog/ibd-pregnancy-planning/amp</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.ibdpal.org/blog/immunosuppressants-ibd-basics/amp</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -946,6 +1014,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.ibdpal.org/blog/mesalamine-5-asa-ibd/amp</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.ibdpal.org/blog/ostomy-basics-ibd/amp</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -967,6 +1040,11 @@
   </url>
   <url>
     <loc>https://www.ibdpal.org/blog/social-life-dating-teens-ibd/amp</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.ibdpal.org/blog/steroids-prednisone-ibd/amp</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
