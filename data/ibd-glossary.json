@@ -1,0 +1,31 @@
+{
+  "title": "IBD Glossary | Crohn's & Colitis Terms | IBDPal",
+  "description": "Plain-language definitions of Crohn's disease, ulcerative colitis, and IBD terms: biologics, flare, remission, 504 plans, J-pouch, and more.",
+  "h1": "IBD glossary",
+  "intro": "Short definitions for words patients often search. Your care team can explain how each term applies to you.",
+  "terms": [
+    {"term": "Biologics", "slug": "biologics", "definition": "Advanced medications that target specific parts of the immune system to reduce inflammation in Crohn's disease and ulcerative colitis. Prescribed and monitored by a gastroenterologist."},
+    {"term": "Colonoscopy", "slug": "colonoscopy", "definition": "A procedure using a flexible scope to examine the colon and rectum. Often used to diagnose IBD, assess inflammation, and screen for changes over time."},
+    {"term": "Crohn's disease", "slug": "crohns-disease", "definition": "A type of inflammatory bowel disease that can affect any part of the digestive tract from mouth to anus, with patchy inflammation."},
+    {"term": "Endoscopy", "slug": "endoscopy", "definition": "A family of procedures that use a camera on a flexible tube to look inside the digestive tract. Upper endoscopy views the esophagus and stomach; colonoscopy views the colon."},
+    {"term": "Flare", "slug": "flare", "definition": "A period when IBD symptoms worsen or inflammation becomes more active. Treatment may include medication changes, nutrition adjustments, and closer monitoring."},
+    {"term": "FODMAP", "slug": "fodmap", "definition": "Fermentable oligosaccharides, disaccharides, monosaccharides, and polyols. Some patients explore low-FODMAP patterns for symptom relief under dietitian guidance, not as a substitute for IBD treatment."},
+    {"term": "IBD", "slug": "ibd", "definition": "Inflammatory bowel disease. A group of conditions, mainly Crohn's disease and ulcerative colitis, involving chronic inflammation of the digestive tract."},
+    {"term": "IBS", "slug": "ibs", "definition": "Irritable bowel syndrome. A functional disorder without the same visible inflammatory damage as IBD. Some people have symptoms of both; only your clinician can clarify your diagnosis."},
+    {"term": "Immunomodulator", "slug": "immunomodulator", "definition": "A medication that broadly adjusts immune activity. Examples in IBD care include azathioprine and methotrexate, used under close lab monitoring."},
+    {"term": "Infusion", "slug": "infusion", "definition": "Delivery of medication into a vein, often used for certain biologics. Infusion centers coordinate scheduling, monitoring, and insurance authorization."},
+    {"term": "J-pouch", "slug": "j-pouch", "definition": "A surgical reconstruction after colectomy in some ulcerative colitis patients. The small intestine is formed into a pouch connected to the anus. Requires specialized surgical follow-up."},
+    {"term": "Low-residue diet", "slug": "low-residue-diet", "definition": "A temporary eating pattern that limits fiber and some roughage to reduce stool volume during flares or before procedures. Not meant as a long-term default for everyone."},
+    {"term": "Mesalamine", "slug": "mesalamine", "definition": "An anti-inflammatory medication used mainly in ulcerative colitis and sometimes Crohn's disease involving the colon. Available in pills, enemas, and suppositories."},
+    {"term": "Ostomy", "slug": "ostomy", "definition": "A surgically created opening (stoma) that diverts stool to an external pouch. May be temporary or permanent depending on the operation and healing."},
+    {"term": "Prior authorization", "slug": "prior-authorization", "definition": "Insurance review required before covering certain medications, especially biologics. Clinics and pharmacies often help with paperwork."},
+    {"term": "Remission", "slug": "remission", "definition": "A period when inflammation and symptoms are reduced or absent. Goals and definitions vary; your GI team measures activity with symptoms, labs, and sometimes scopes."},
+    {"term": "Resection", "slug": "resection", "definition": "Surgical removal of a diseased segment of bowel. Some Crohn's patients need repeat surgeries over time; others never need surgery."},
+    {"term": "Section 504 plan", "slug": "section-504", "definition": "A U.S. school accommodation plan for students with disabilities, including many with IBD. Can document bathroom access, flexible attendance, and medication storage."},
+    {"term": "Small bowel", "slug": "small-bowel", "definition": "The part of the intestine between the stomach and colon, where much nutrient absorption happens. Often affected in Crohn's disease."},
+    {"term": "Steroids", "slug": "steroids", "definition": "Anti-inflammatory medications such as prednisone or budesonide used short term to calm flares. Long-term use has significant side effects, so teams taper when possible."},
+    {"term": "TNF inhibitor", "slug": "tnf-inhibitor", "definition": "A class of biologics that block tumor necrosis factor (TNF), a protein involved in inflammation. Examples include infliximab and adalimumab."},
+    {"term": "Ulcerative colitis", "slug": "ulcerative-colitis", "definition": "A type of IBD that primarily involves the colon and rectum with continuous inflammation of the inner lining."},
+    {"term": "Urgency", "slug": "urgency", "definition": "A sudden, strong need to have a bowel movement. Common in active colitis and discussed in school and workplace accommodation planning."}
+  ]
+}

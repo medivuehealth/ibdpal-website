@@ -12,7 +12,7 @@ from seo_head import breadcrumb_json, howto_json, render_seo_head, web_page_json
 from site_nav import PAGE_SCRIPTS, TAB_NAV_HTML, site_header_html  # noqa: E402
 
 SITE = "https://www.ibdpal.org"
-EEAT_PATHS = {"/newly-diagnosed", "/visit-prep", "/pediatric-caregivers", "/resources", "/patient-stories"}
+EEAT_PATHS = {"/newly-diagnosed", "/visit-prep", "/pediatric-caregivers", "/resources"}
 
 NAV = TAB_NAV_HTML
 
@@ -212,24 +212,6 @@ PAGES = {
             <script src="/resource-library.js" defer></script>
         """,
         "/#resources",
-    ),
-    "patient-stories.html": (
-        "IBD Patient Stories | Living With Crohn's & Colitis | IBDPal",
-        "Real-world stories from people using IBDPal for Crohn's disease and ulcerative colitis, shared with consent for education only.",
-        "/patient-stories",
-        """
-            <article class="support-section">
-                <h1>Patient Stories</h1>
-                <p class="support-intro">These vignettes are shared with permission, de-identified, and for encouragement only, not medical outcomes data.</p>
-                <div class="story-card"><h2>Maya, 34 | Crohn's disease</h2>
-                <p>"Tracking protein and hydration before infusion days helped me stop guessing what to tell my nurse. IBDPal logs made my appointments shorter and clearer."</p></div>
-                <div class="story-card"><h2>James, 41 | ulcerative colitis</h2>
-                <p>"During a flare I used the low-residue articles on the blog and my symptom log to show my GI what the week looked like. We adjusted meds faster."</p></div>
-                <div class="story-card"><h2>Priya, parent of teen with IBD</h2>
-                <p>"ImproveCareNow pointed us to a pediatric center; IBDPal helped our son notice sleep and stress patterns before finals week."</p></div>
-                <p><em>Want to share your story?</em> Email <a href="mailto:info@ibdpal.org">info@ibdpal.org</a> with "Patient story" in the subject. We never publish without written consent.</p>
-            </article>
-        """,
     ),
     "clinical-partnerships.html": (
         "Clinical Partnerships | IBDPal for IBD Programs | IBDPal",

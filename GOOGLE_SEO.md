@@ -63,6 +63,25 @@ python scripts/patch_blog_jsonld.py
 
 Paired `hreflang` tags connect English and Spanish URLs. Guides and blogs link to English articles with an (inglés) label until translated.
 
+## Tier 3: glossary, stories, and new articles
+
+```bash
+python scripts/generate_tier3_seo.py
+python scripts/generate_seo_hubs.py
+python scripts/generate_amp_pages.py
+python scripts/sync_llms_txt.py
+```
+
+| URL | Purpose |
+|-----|---------|
+| `/glossary` | IBD term definitions (`DefinedTermSet` schema) |
+| `/patient-stories` | Story index with `ItemList` schema |
+| `/patient-stories/:slug` | Individual crawlable patient stories |
+| `/blog/ibd-pregnancy-planning` | Pregnancy planning with IBD |
+| `/blog/college-with-ibd` | College accommodations and dining |
+| `/blog/j-pouch-basics-ibd` | J-pouch patient-level overview |
+| `/blog/when-to-go-er-ibd` | When to seek emergency care |
+
 Blog generator: `python scripts/generate_blog_posts.py` (June lifestyle posts only).
 
 ## Accelerated Mobile Pages (AMP)

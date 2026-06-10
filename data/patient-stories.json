@@ -1,0 +1,52 @@
+{
+  "index": {
+    "title": "IBD Patient Stories | Living With Crohn's & Colitis | IBDPal",
+    "description": "Real-world stories from people using IBDPal for Crohn's disease and ulcerative colitis, shared with consent for education only.",
+    "h1": "Patient stories",
+    "intro": "These vignettes are shared with permission, de-identified, and for encouragement only, not medical outcomes data."
+  },
+  "stories": [
+    {
+      "slug": "maya-crohns-tracking",
+      "name": "Maya",
+      "age": 34,
+      "condition": "Crohn's disease",
+      "headline": "Tracking protein and hydration before infusion days",
+      "quote": "Tracking protein and hydration before infusion days helped me stop guessing what to tell my nurse. IBDPal logs made my appointments shorter and clearer.",
+      "paragraphs": [
+        "Maya was diagnosed with Crohn's disease in her late twenties. Between infusion appointments she wanted a simple way to remember meals, fluids, and symptom trends without carrying a notebook.",
+        "She logs breakfast protein, water intake, and any cramping in IBDPal during the week before each infusion. At the chair, she exports a one-page summary for her nurse.",
+        "Her team still makes all treatment decisions. The logs simply help her arrive prepared and ask better questions about nutrition labs and fatigue."
+      ],
+      "topics": ["tracking", "infusions", "nutrition"]
+    },
+    {
+      "slug": "james-uc-flare-log",
+      "name": "James",
+      "age": 41,
+      "condition": "ulcerative colitis",
+      "headline": "Showing my GI what the flare week looked like",
+      "quote": "During a flare I used the low-residue articles on the blog and my symptom log to show my GI what the week looked like. We adjusted meds faster.",
+      "paragraphs": [
+        "James manages ulcerative colitis while working full time. When urgency increased, he worried his description at the visit would not match what he lived through at home.",
+        "He read IBDPal's low-residue and flare articles for general education, then tracked stools per day, blood, and foods in the app for five days.",
+        "The export gave his gastroenterologist a clearer timeline. Medication changes still followed clinic protocols; James says the log reduced back-and-forth and stress."
+      ],
+      "topics": ["flare", "ulcerative colitis", "visit prep"]
+    },
+    {
+      "slug": "priya-parent-teen-ibd",
+      "name": "Priya",
+      "age": null,
+      "condition": "parent of teen with IBD",
+      "headline": "Sleep, stress, and finals week",
+      "quote": "ImproveCareNow pointed us to a pediatric center; IBDPal helped our son notice sleep and stress patterns before finals week.",
+      "paragraphs": [
+        "Priya's teenager was diagnosed with IBD during high school. The family connected with ImproveCareNow for pediatric resources and a 504 planning letter from their GI.",
+        "They use IBDPal together to note sleep hours, stress spikes, and school absences without turning logging into a grade. Patterns before finals helped them ask about pacing and hydration early.",
+        "Priya emphasizes that peer networks and clinicians lead care decisions. The app supports conversations at home and before nurse check-ins."
+      ],
+      "topics": ["pediatric", "school", "teen"]
+    }
+  ]
+}

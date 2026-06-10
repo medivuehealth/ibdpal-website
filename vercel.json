@@ -20,6 +20,30 @@
   ],
   "rewrites": [
     {
+      "source": "/glossary",
+      "destination": "/glossary.html"
+    },
+    {
+      "source": "/patient-stories/:slug",
+      "destination": "/patient-stories/:slug.html"
+    },
+    {
+      "source": "/blog/ibd-pregnancy-planning",
+      "destination": "/blogs/ibd-pregnancy-planning.html"
+    },
+    {
+      "source": "/blog/college-with-ibd",
+      "destination": "/blogs/college-with-ibd.html"
+    },
+    {
+      "source": "/blog/j-pouch-basics-ibd",
+      "destination": "/blogs/j-pouch-basics-ibd.html"
+    },
+    {
+      "source": "/blog/when-to-go-er-ibd",
+      "destination": "/blogs/when-to-go-er-ibd.html"
+    },
+    {
       "source": "/es/recien-diagnosticado",
       "destination": "/es/recien-diagnosticado.html"
     },
@@ -121,7 +145,7 @@
     },
     {
       "source": "/patient-stories",
-      "destination": "/patient-stories.html"
+      "destination": "/patient-stories/index.html"
     },
     {
       "source": "/clinical-partnerships",

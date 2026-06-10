@@ -2,6 +2,7 @@
  * Filterable patient resource library (education links + site content).
  */
 window.IBDPAL_RESOURCES = [
+  { title: 'IBD Glossary', category: 'getting-started', type: 'site', url: '/glossary', tags: ['terms', 'definitions'] },
   { title: 'IBD Blog (all articles)', category: 'getting-started', type: 'site', url: '/blog', tags: ['articles', 'nutrition', 'flare'] },
   { title: 'IBD Support by State', category: 'community', type: 'site', url: '/support', tags: ['local', 'map'] },
   { title: 'IBD FAQ', category: 'getting-started', type: 'site', url: '/faq', tags: ['questions'] },

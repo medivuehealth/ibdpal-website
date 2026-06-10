@@ -20,6 +20,7 @@
 ## Blog (education, not medical advice)
 - https://www.ibdpal.org/blog/anti-inflammatory-diet-ibd
 - https://www.ibdpal.org/blog/best-foods-crohns-flare
+- https://www.ibdpal.org/blog/college-with-ibd
 - https://www.ibdpal.org/blog/exercise-physical-activity-ibd
 - https://www.ibdpal.org/blog/flare-first-48-hours
 - https://www.ibdpal.org/blog/fodmap-diet-crohns-colitis
@@ -27,9 +28,11 @@
 - https://www.ibdpal.org/blog/high-school-ibd-survival-guide
 - https://www.ibdpal.org/blog/how-nutrition-impacts-gut-health-ibd
 - https://www.ibdpal.org/blog/hydration-tips-ibd
+- https://www.ibdpal.org/blog/ibd-pregnancy-planning
 - https://www.ibdpal.org/blog/insurance-biologics-ibd
 - https://www.ibdpal.org/blog/introducing-ibdpal
 - https://www.ibdpal.org/blog/iron-b12-vitamin-d-ibd
+- https://www.ibdpal.org/blog/j-pouch-basics-ibd
 - https://www.ibdpal.org/blog/living-with-ibd-kids
 - https://www.ibdpal.org/blog/low-residue-diet-flare
 - https://www.ibdpal.org/blog/ostomy-basics-ibd
@@ -42,6 +45,7 @@
 - https://www.ibdpal.org/blog/tracking-food-symptoms-ibdpal
 - https://www.ibdpal.org/blog/travel-with-ibd
 - https://www.ibdpal.org/blog/understanding-biologics-ibd
+- https://www.ibdpal.org/blog/when-to-go-er-ibd
 - https://www.ibdpal.org/blog/workplace-school-ibd-rights
 
 
@@ -54,6 +58,13 @@
 - https://www.ibdpal.org/es/preguntas-frecuentes
 - https://www.ibdpal.org/es/recien-diagnosticado
 - https://www.ibdpal.org/es/recursos
+
+## Glossary & stories
+- https://www.ibdpal.org/glossary
+- https://www.ibdpal.org/patient-stories
+- https://www.ibdpal.org/patient-stories/maya-crohns-tracking
+- https://www.ibdpal.org/patient-stories/james-uc-flare-log
+- https://www.ibdpal.org/patient-stories/priya-parent-teen-ibd
 
 ## Organization
 - MediVue (501(c)(3) nonprofit, North Carolina) develops IBDPal.
