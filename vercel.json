@@ -20,6 +20,34 @@
   ],
   "rewrites": [
     {
+      "source": "/es/recien-diagnosticado",
+      "destination": "/es/recien-diagnosticado.html"
+    },
+    {
+      "source": "/es/nutricion-eii",
+      "destination": "/es/nutricion-eii.html"
+    },
+    {
+      "source": "/es/enfermedad-crohn",
+      "destination": "/es/enfermedad-crohn.html"
+    },
+    {
+      "source": "/es/colitis-ulcerosa",
+      "destination": "/es/colitis-ulcerosa.html"
+    },
+    {
+      "source": "/es/adolescentes-escuela",
+      "destination": "/es/adolescentes-escuela.html"
+    },
+    {
+      "source": "/es/brotes-eii",
+      "destination": "/es/brotes-eii.html"
+    },
+    {
+      "source": "/es/preguntas-frecuentes",
+      "destination": "/es/preguntas-frecuentes.html"
+    },
+    {
       "source": "/blog",
       "destination": "/blog/index.html"
     },

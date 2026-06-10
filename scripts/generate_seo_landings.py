@@ -20,6 +20,7 @@ VERCEL = ROOT / "vercel.json"
 LLMS = ROOT / "llms.txt"
 
 sys.path.insert(0, str(ROOT / "scripts"))
+from eeat_blocks import content_note_en, edu_disclaimer_en, guide_disclaimer_en, page_review_props  # noqa: E402
 from seo_head import breadcrumb_json, render_seo_head, web_page_json  # noqa: E402
 from site_nav import PAGE_SCRIPTS, TAB_NAV_HTML, site_header_html  # noqa: E402
 
@@ -50,13 +51,6 @@ HEAD_ASSETS = """    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="icon" type="image/png" href="/IBDPal_Logo.png">
     <link rel="apple-touch-icon" href="/IBDPal_Logo.png">
 """
-
-DISCLAIMER = (
-    '<p class="community-edu-disclaimer"><strong>Educational only.</strong> '
-    "IBDPal does not provide medical advice, diagnosis, or treatment. "
-    "Always consult your gastroenterologist or IBD care team for personal decisions.</p>"
-)
-
 
 def faq_json(faq: list[dict], page_id: str) -> dict | None:
     if not faq:
@@ -160,6 +154,7 @@ def render_page(page: dict) -> str:
             <article class="support-section seo-landing" data-track-impression="guide_{slug_id}" data-track-label="{html.escape(page['h1'])}">
                 <p class="blog-back"><a href="/guides" class="blog-back-link">← All patient guides</a></p>
                 <h1>{html.escape(page['h1'])}</h1>
+{content_note_en()}{edu_disclaimer_en()}
                 <p class="support-intro">{html.escape(page['intro'])}</p>
                 <p class="seo-guide-keywords"><small>Topics: {html.escape(keywords_meta)}</small></p>
 {sections_html}
@@ -171,13 +166,14 @@ def render_page(page: dict) -> str:
                     <p>Track nutrition and symptoms, explore our <a href="/#community">community map</a>, read the <a href="/#blogs">blog</a>, or download the <a href="/#app">IBDPal iOS app</a>.</p>
                     <p><a href="/#app" class="seo-landing__cta">Explore IBDPal →</a></p>
                 </section>
-                {DISCLAIMER}
+                {guide_disclaimer_en()}
             </article>"""
 
     graph = [
         guide_breadcrumb(path, page["h1"]),
         {
             **web_page_json(path, page["h1"], page["description"]),
+            **page_review_props(),
             "keywords": keywords_meta,
             "about": {"@type": "MedicalCondition", "name": "Inflammatory bowel disease"},
         },
@@ -218,7 +214,7 @@ def render_hub(hub: dict, pages: list[dict]) -> str:
                 <p class="support-intro">{html.escape(hub['intro'])}</p>
                 <p><strong>{len(pages)} guides</strong> covering common Crohn's, colitis, and IBD searches, each with links to deeper articles and tools.</p>
 {sections}
-                {DISCLAIMER}
+                {guide_disclaimer_en()}
             </article>"""
 
     path = "/guides"

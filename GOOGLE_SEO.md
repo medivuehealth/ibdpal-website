@@ -39,12 +39,29 @@ Site technical SEO is implemented in HTML (meta tags, canonical URLs, Open Graph
 ```bash
 python scripts/generate_static_pages.py
 python scripts/generate_seo_hubs.py
+python scripts/generate_seo_landings.py
 python scripts/sync_llms_txt.py
 python scripts/patch_blog_jsonld.py
 ```
 
-- `generate_seo_hubs.py` rebuilds hub pages, patches related reading on all blogs, and syncs `llms.txt`.
+- `generate_seo_hubs.py` rebuilds hub pages, patches related reading on all blogs, syncs `llms.txt`, and regenerates Spanish mirrors.
+- `generate_es_pages.py` alone rebuilds `/es/*` pages from `data/es-pages.json`.
 - `sync_llms_txt.py` alone refreshes blog, guide, and hub URL lists in `llms.txt`.
+
+## Spanish mirrors (Tier 2)
+
+| English | Spanish |
+|---------|---------|
+| `/` (hub) | `/es/recursos` |
+| `/newly-diagnosed` | `/es/recien-diagnosticado` |
+| `/ibd-nutrition` | `/es/nutricion-eii` |
+| `/crohns-disease` | `/es/enfermedad-crohn` |
+| `/ulcerative-colitis` | `/es/colitis-ulcerosa` |
+| `/teens-and-school` | `/es/adolescentes-escuela` |
+| `/flare-help` | `/es/brotes-eii` |
+| `/faq` | `/es/preguntas-frecuentes` |
+
+Paired `hreflang` tags connect English and Spanish URLs. Guides and blogs link to English articles with an (inglés) label until translated.
 
 Blog generator: `python scripts/generate_blog_posts.py` (June lifestyle posts only).
 

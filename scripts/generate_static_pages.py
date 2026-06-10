@@ -6,8 +6,13 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
+from eeat_blocks import content_note_en, edu_disclaimer_en, hub_disclaimer_en, page_review_props  # noqa: E402
+from es_mirrors import es_url_for_en_path  # noqa: E402
 from seo_head import breadcrumb_json, howto_json, render_seo_head, web_page_json  # noqa: E402
 from site_nav import PAGE_SCRIPTS, TAB_NAV_HTML, site_header_html  # noqa: E402
+
+SITE = "https://www.ibdpal.org"
+EEAT_PATHS = {"/newly-diagnosed", "/visit-prep", "/pediatric-caregivers", "/resources", "/patient-stories"}
 
 NAV = TAB_NAV_HTML
 
@@ -78,15 +83,22 @@ def shell(
             1,
         )
     crumb_name = title.split("|")[0].strip()
-    graph = [breadcrumb_json(path, crumb_name), web_page_json(path, crumb_name, description)]
+    if path in EEAT_PATHS:
+        body = content_note_en() + edu_disclaimer_en() + body + f"\n                {hub_disclaimer_en()}"
+    graph = [
+        breadcrumb_json(path, crumb_name),
+        {**web_page_json(path, crumb_name, description), **(page_review_props() if path in EEAT_PATHS else {})},
+    ]
     if extra_graph:
         graph.extend(extra_graph)
     json_ld = {"@context": "https://schema.org", "@graph": graph}
+    hreflang_es = es_url_for_en_path(path) or f"{SITE}/es/recursos"
     seo = render_seo_head(
         title=title,
         description=description,
         path=path,
         json_ld=json_ld,
+        hreflang_es=hreflang_es,
     )
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -274,68 +286,6 @@ PAGES = {
 }
 
 
-def es_page() -> str:
-    desc = "Recursos educativos en español para enfermedad inflamatoria intestinal (EII), Crohn y colitis ulcerosa. Solo educación, no consejo médico."
-    json_ld = {
-        "@context": "https://schema.org",
-        "@graph": [
-            breadcrumb_json("/es/recursos", "Recursos en español"),
-            web_page_json("/es/recursos", "Recursos IBD y Crohn", desc),
-        ],
-    }
-    seo = render_seo_head(
-        title="Recursos IBD y Crohn en Español | IBDPal",
-        description=desc,
-        path="/es/recursos",
-        lang="es",
-        hreflang_es=None,
-        hreflang_en="https://www.ibdpal.org/",
-        json_ld=json_ld,
-    )
-    return f"""<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-{seo}{HEAD_ASSETS}</head>
-<body>
-    <div class="container">
-{site_header_html(tagline="Apoyo a pacientes con EII")}
-        <nav class="tab-navigation" aria-label="Main">
-            <div class="tab-container">
-                <a href="/#overview" class="tab-button" data-tab="overview">Overview</a>
-                <a href="/#app" class="tab-button" data-tab="app">IBDPal App</a>
-                <a href="/#resources" class="tab-button" data-tab="resources">Resources</a>
-                <a href="/#blogs" class="tab-button" data-tab="blogs">Blogs</a>
-                <a href="/#community" class="tab-button" data-tab="community">Community</a>
-                <a href="/#contact" class="tab-button" data-tab="contact">Contact</a>
-                <a href="/privacy" class="tab-button">Privacy</a>
-                <a href="/support" class="tab-button">Support</a>
-                <a href="/" class="tab-button">English</a>
-            </div>
-        </nav>
-        <main class="main-content" id="main-content" data-track-impression="page_main" data-track-label="Spanish resources">
-            <article class="support-section">
-                <h1>Recursos para EII y Crohn</h1>
-                <p>IBDPal ofrece una aplicación gratuita y artículos educativos. <strong>No sustituye la atención médica.</strong></p>
-                <ul class="seo-landing__list">
-                    <li><a href="/ibd-crohns-support">Guía de apoyo (inglés)</a></li>
-                    <li><a href="/resources">Biblioteca de recursos</a></li>
-                    <li><a href="/newly-diagnosed">Recién diagnosticado (inglés)</a></li>
-                    <li><a href="https://www.crohnscolitisfoundation.org/" rel="noopener noreferrer">Crohn's &amp; Colitis Foundation</a></li>
-                    <li><a href="https://gikids.org/es" rel="noopener noreferrer">GIKids (español)</a></li>
-                </ul>
-                <p>Emergencias: llame al 911. Síntomas urgentes: contacte a su gastroenterólogo.</p>
-            </article>
-        </main>
-        <footer class="footer"><div class="footer-content"><p>&copy; 2025 MediVue · <a href="/">ibdpal.org</a></p></div></footer>
-    </div>
-{PAGE_SCRIPTS}
-</body>
-</html>
-"""
-
-
 def main():
     for name, spec in PAGES.items():
         active = spec[4] if len(spec) > 4 else ""
@@ -343,10 +293,9 @@ def main():
         html_out = shell(spec[0], spec[1], spec[2], spec[3], active, extra_graph=extra)
         (ROOT / name).write_text(html_out, encoding="utf-8")
         print("wrote", name)
-    es_dir = ROOT / "es"
-    es_dir.mkdir(exist_ok=True)
-    (es_dir / "recursos.html").write_text(es_page(), encoding="utf-8")
-    print("wrote es/recursos.html")
+    from generate_es_pages import main as generate_es_pages  # noqa: E402
+
+    generate_es_pages()
 
 
 if __name__ == "__main__":

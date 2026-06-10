@@ -16,6 +16,13 @@ BLOGS = ROOT / "blogs"
 sys.path.insert(0, str(ROOT / "scripts"))
 from amp_utils import discover_blogs  # noqa: E402
 from blog_related import related_reading_html  # noqa: E402
+from eeat_blocks import (  # noqa: E402
+    blog_medical_footer_en,
+    content_note_en,
+    edu_disclaimer_en,
+    page_review_props,
+    reviewed_by_org,
+)
 from site_nav import PAGE_SCRIPTS, SITE_HEADER_HTML, TAB_NAV_HTML  # noqa: E402
 
 SEO_DATA = ROOT / "data" / "seo-expansion.json"
@@ -379,6 +386,8 @@ def render_post(p: dict) -> str:
                 "datePublished": p["date_iso"],
                 "dateModified": p["date_iso"],
                 "author": {"@type": "Organization", "name": "MediVue", "url": "https://www.ibdpal.org/"},
+                "reviewedBy": reviewed_by_org(),
+                **page_review_props(),
                 "publisher": {
                     "@type": "Organization",
                     "name": "MediVue",
@@ -392,20 +401,8 @@ def render_post(p: dict) -> str:
         ],
     }
     ld_json = json.dumps(ld, separators=(",", ":"))
-    disclaimer = (
-        '                        <p class="blog-medical-review"><strong>Content note:</strong> '
-        "Based on publicly available guidance from the Crohn's &amp; Colitis Foundation and "
-        "general IBD patient-education sources. Last reviewed June 2026. Not individual medical advice.</p>\n"
-        '                        <p class="blog-edu-disclaimer"><strong>Educational use only.</strong> '
-        "This article is general information and not medical advice. Always work with your healthcare team "
-        "for diagnosis, treatment, and personal decisions.</p>\n"
-    )
-    medical = (
-        "                        <h2>Medical Disclaimer</h2>\n"
-        "                        <p>This article is for educational purposes only and should not replace "
-        "professional medical advice, diagnosis, or treatment. Always consult your healthcare provider regarding "
-        "dietary, medication, or lifestyle decisions.</p>\n"
-    )
+    disclaimer = content_note_en() + edu_disclaimer_en()
+    medical = blog_medical_footer_en()
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>

@@ -22,6 +22,14 @@ RESOURCES = ROOT / "resources-data.js"
 sys.path.insert(0, str(ROOT / "scripts"))
 from amp_utils import discover_blogs  # noqa: E402
 from blog_related import patch_all_blogs  # noqa: E402
+from eeat_blocks import (  # noqa: E402
+    content_note_en,
+    edu_disclaimer_en,
+    hub_disclaimer_en,
+    page_review_props,
+    patch_blog_eeat,
+)
+from es_mirrors import es_url_for_en_path  # noqa: E402
 from sync_llms_txt import sync_llms_txt  # noqa: E402
 from seo_head import breadcrumb_json, render_seo_head, web_page_json  # noqa: E402
 from site_nav import PAGE_SCRIPTS, TAB_NAV_HTML, site_header_html  # noqa: E402
@@ -54,11 +62,6 @@ HEAD_ASSETS = """    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="icon" type="image/png" href="/IBDPal_Logo.png">
     <link rel="apple-touch-icon" href="/IBDPal_Logo.png">
 """
-
-DISCLAIMER = (
-    '<p class="community-edu-disclaimer"><strong>Educational only.</strong> '
-    "Not medical advice. Verify organization details before you rely on them.</p>"
-)
 
 US_STATES: dict[str, tuple[str, str]] = {
     "AL": ("Alabama", "alabama"),
@@ -172,7 +175,14 @@ def shell(
             1,
         )
     crumb = title.split("|")[0].strip()
-    seo = render_seo_head(title=title, description=description, path=path, json_ld=json_ld)
+    hreflang_es = es_url_for_en_path(path) or f"{SITE}/es/recursos"
+    seo = render_seo_head(
+        title=title,
+        description=description,
+        path=path,
+        json_ld=json_ld,
+        hreflang_es=hreflang_es,
+    )
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -245,10 +255,11 @@ def render_blog_index(meta: dict, posts: dict[str, dict]) -> str:
     body = f"""
             <article class="support-section seo-landing" data-track-impression="blog_index_page">
                 <h1>{html.escape(meta['h1'])}</h1>
+{content_note_en()}{edu_disclaimer_en()}
                 <p class="support-intro">{html.escape(meta['intro'])}</p>
 {hub_links}
 {sections}
-                {DISCLAIMER}
+                {hub_disclaimer_en()}
             </article>"""
     ld = {
         "@context": "https://schema.org",
@@ -278,19 +289,24 @@ def render_hub(hub: dict, posts: dict[str, dict]) -> str:
             <article class="support-section seo-landing" data-track-impression="hub_{hub['slug']}">
                 <p class="blog-back"><a href="/blog" class="blog-back-link">← All blog posts</a> · <a href="/guides">Patient guides</a></p>
                 <h1>{html.escape(hub['h1'])}</h1>
+{content_note_en()}{edu_disclaimer_en()}
                 <p class="support-intro">{html.escape(hub['intro'])}</p>
                 <p class="seo-guide-keywords"><small>Topics: {html.escape(', '.join(hub.get('keywords', [])))}</small></p>
 {sections}
                 <section class="seo-landing__block"><h2>Patient guides</h2>{link_list(guide_links)}</section>
                 <section class="seo-landing__block"><h2>Related articles</h2><div class="blog-index-grid">{blog_cards(blog_items)}</div></section>
                 <p><a href="/faq" class="seo-landing__cta">Common IBD questions (FAQ) →</a></p>
-                {DISCLAIMER}
+                {hub_disclaimer_en()}
             </article>"""
     ld = {
         "@context": "https://schema.org",
         "@graph": [
             breadcrumb_json(path, hub["h1"]),
-            {**web_page_json(path, hub["h1"], hub["description"]), "keywords": ", ".join(hub.get("keywords", []))},
+            {
+                **web_page_json(path, hub["h1"], hub["description"]),
+                **page_review_props(),
+                "keywords": ", ".join(hub.get("keywords", [])),
+            },
         ],
     }
     return shell(hub["title"], hub["description"], path, body, ld)
@@ -304,12 +320,13 @@ def render_faq(faq: dict) -> str:
     body = f"""
             <article class="support-section seo-landing seo-landing__faq" data-track-impression="faq_page">
                 <h1>{html.escape(faq['h1'])}</h1>
+{content_note_en()}{edu_disclaimer_en()}
                 <p class="support-intro">{html.escape(faq['intro'])}</p>
                 <section class="seo-landing__block" id="faq">
 {items_html}
                 </section>
                 <p><a href="/guides">Patient guides</a> · <a href="/blog">Blog</a> · <a href="/support">Support by state</a></p>
-                {DISCLAIMER}
+                {hub_disclaimer_en()}
             </article>"""
     ld = {
         "@context": "https://schema.org",
@@ -341,7 +358,7 @@ def render_support_index(meta: dict, states: list[tuple[str, str, str]]) -> str:
                     <ul class="seo-landing__list seo-guide-hub-list">{links}</ul>
                 </section>
                 <p><a href="/#community">Interactive community map</a> · <a href="/ibd-crohns-support">IBD support guide</a></p>
-                {DISCLAIMER}
+                {hub_disclaimer_en()}
             </article>"""
     ld = {"@context": "https://schema.org", "@graph": [breadcrumb_json(path, meta["h1"]), web_page_json(path, meta["h1"], meta["description"])]}
     return shell(meta["title"], meta["description"], path, body, ld, active_tab="community")
@@ -393,7 +410,7 @@ def render_state_page(code: str, name: str, slug: str, chapter: str, nc_extra: d
                         <li><a href="/guides/ibd-support-near-me">Guide: IBD support near me</a></li>
                     </ul>
                 </section>
-                {DISCLAIMER}
+                {hub_disclaimer_en()}
             </article>"""
     ld = {
         "@context": "https://schema.org",
@@ -514,6 +531,8 @@ def main() -> None:
 
     n = patch_all_blogs(posts, data["hubs"], BLOGS)
     print(f"Patched related reading on {n} blog posts")
+    eeat_n = patch_blog_eeat(BLOGS)
+    print(f"Patched E-E-A-T blocks on {eeat_n} blog posts")
 
     sitemap_urls = [(p, 0.9 if p == "/blog" else 0.88) for p in hub_paths]
     sitemap_urls += [(f"/support/{slug}", 0.82) for slug in support_slugs]
@@ -522,6 +541,9 @@ def main() -> None:
     patch_resources()
     sync_llms_txt()
 
+    from generate_es_pages import main as generate_es_pages  # noqa: E402
+
+    generate_es_pages()
     print("Updated sitemap, vercel.json, resources-data.js, llms.txt")
 
 

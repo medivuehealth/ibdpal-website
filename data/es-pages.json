@@ -1,0 +1,150 @@
+{
+  "mirrors": {
+    "/newly-diagnosed": "/es/recien-diagnosticado",
+    "/ibd-nutrition": "/es/nutricion-eii",
+    "/crohns-disease": "/es/enfermedad-crohn",
+    "/ulcerative-colitis": "/es/colitis-ulcerosa",
+    "/teens-and-school": "/es/adolescentes-escuela",
+    "/flare-help": "/es/brotes-eii",
+    "/faq": "/es/preguntas-frecuentes"
+  },
+  "recursos": {
+    "title": "Recursos IBD y Crohn en Español | IBDPal",
+    "description": "Recursos educativos en español para enfermedad inflamatoria intestinal (EII), Crohn y colitis ulcerosa. Solo educación, no consejo médico.",
+    "h1": "Recursos para EII y Crohn",
+    "intro": "IBDPal ofrece una aplicación gratuita y artículos educativos. Consulte siempre a su equipo médico para decisiones personales.",
+    "hub_links": [
+      {"url": "/es/nutricion-eii", "label": "Nutrición y dieta"},
+      {"url": "/es/enfermedad-crohn", "label": "Enfermedad de Crohn"},
+      {"url": "/es/colitis-ulcerosa", "label": "Colitis ulcerosa"},
+      {"url": "/es/adolescentes-escuela", "label": "Adolescentes y escuela"},
+      {"url": "/es/brotes-eii", "label": "Ayuda en brotes"},
+      {"url": "/es/preguntas-frecuentes", "label": "Preguntas frecuentes"}
+    ],
+    "other_links": [
+      {"url": "/es/recien-diagnosticado", "label": "Recién diagnosticado"},
+      {"url": "/ibd-crohns-support", "label": "Guía de apoyo (inglés)"},
+      {"url": "/resources", "label": "Biblioteca de recursos (inglés)"},
+      {"url": "https://www.crohnscolitisfoundation.org/", "label": "Crohn's & Colitis Foundation"},
+      {"url": "https://gikids.org/es", "label": "GIKids (español)"}
+    ]
+  },
+  "newly_diagnosed": {
+    "title": "Recién diagnosticado con EII | Primeros pasos | IBDPal",
+    "description": "¿Diagnóstico reciente de Crohn o colitis ulcerosa? Preguntas para su gastroenterólogo, recursos de apoyo y herramientas gratuitas de IBDPal.",
+    "h1": "¿Recién diagnosticado con EII?",
+    "intro": "Un diagnóstico de enfermedad de Crohn o colitis ulcerosa puede ser abrumador. Este resumen reúne pasos calmados, no sustituye a su gastroenterólogo.",
+    "sections": [
+      {
+        "heading": "Crohn vs. colitis ulcerosa (brevemente)",
+        "paragraphs": [
+          "Ambas son enfermedades inflamatorias intestinales. Crohn puede afectar cualquier parte del tracto digestivo; la colitis afecta principalmente el colon. Su equipo definirá el tipo, la gravedad y las metas de tratamiento."
+        ]
+      },
+      {
+        "heading": "Preguntas para sus primeras visitas",
+        "paragraphs": [],
+        "list": [
+          "¿Qué tipo de EII tengo y qué tan activa está?",
+          "¿Qué laboratorios, imágenes o endoscopias están planeados?",
+          "¿Qué medicamentos son opciones para mí?",
+          "¿Qué síntomas deben motivar una llamada o visita urgente?",
+          "¿Hay patrones de dieta o deficiencias que deba vigilar?"
+        ]
+      },
+      {
+        "heading": "Cómo puede ayudar IBDPal",
+        "paragraphs": [
+          "Registre comidas, síntomas, medicamentos y micronutrientes; observe patrones y llegue más preparado a las citas. Explore la app en ibdpal.org."
+        ]
+      },
+      {
+        "heading": "Apoyo entre pares y recursos nacionales",
+        "paragraphs": [
+          "Línea de ayuda CCF: 888-694-8872. Vea también nuestra guía de apoyo en inglés y el mapa comunitario en ibdpal.org."
+        ]
+      }
+    ]
+  },
+  "hubs": [
+    {
+      "slug": "nutricion-eii",
+      "en_slug": "ibd-nutrition",
+      "title": "Nutrición y dieta en EII | Crohn y colitis | IBDPal",
+      "description": "Recursos de nutrición para Crohn y colitis ulcerosa: alimentos en brotes, FODMAP, hidratación y guías para pacientes.",
+      "h1": "Nutrición y dieta en EII",
+      "intro": "No existe una sola dieta para todas las personas con EII. Estas guías y artículos ayudan a explorar patrones que muchos pacientes comentan con su equipo.",
+      "keywords": ["dieta EII", "nutrición Crohn", "dieta colitis ulcerosa", "qué comer EII"],
+      "sections": [
+        {"heading": "Empiece aquí", "paragraphs": ["Si es recién diagnosticado, combine esta lectura con un registro de alimentos y síntomas."]}
+      ]
+    },
+    {
+      "slug": "enfermedad-crohn",
+      "en_slug": "crohns-disease",
+      "title": "Enfermedad de Crohn | Síntomas, dieta y apoyo | IBDPal",
+      "description": "Educación sobre enfermedad de Crohn: dieta en brotes, tratamiento básico, grupos de apoyo y herramientas gratuitas.",
+      "h1": "Recursos sobre enfermedad de Crohn",
+      "intro": "Crohn puede afectar cualquier parte del tracto digestivo. Use estos recursos para preparar visitas y preguntas del día a día.",
+      "keywords": ["enfermedad de Crohn", "apoyo Crohn", "dieta Crohn"],
+      "sections": [
+        {"heading": "¿Nuevo en Crohn?", "paragraphs": ["Visite nuestro hub de recién diagnosticado y la lista para citas médicas antes de su próxima consulta."]}
+      ]
+    },
+    {
+      "slug": "colitis-ulcerosa",
+      "en_slug": "ulcerative-colitis",
+      "title": "Colitis ulcerosa | Dieta, brotes y apoyo | IBDPal",
+      "description": "Educación sobre colitis ulcerosa: dieta, manejo de brotes, desencadenantes y seguimiento de síntomas con IBDPal.",
+      "h1": "Recursos sobre colitis ulcerosa",
+      "intro": "La colitis ulcerosa afecta principalmente el colon. Estos recursos se centran en nutrición, brotes y apoyo entre pares.",
+      "keywords": ["colitis ulcerosa", "dieta colitis", "brote colitis"],
+      "sections": [
+        {"heading": "Registre lo importante", "paragraphs": ["Anotar deposiciones, urgencia y alimentos puede ayudar a usted y a su equipo a detectar desencadenantes personales."]}
+      ]
+    },
+    {
+      "slug": "adolescentes-escuela",
+      "en_slug": "teens-and-school",
+      "title": "Adolescentes y escuela con EII | Plan 504 | IBDPal",
+      "description": "Ayuda para adolescentes con Crohn o colitis: plan 504, nutrición, vida social, ejercicio y recursos pediátricos.",
+      "h1": "Adolescentes, escuela y EII",
+      "intro": "La EII en la escuela secundaria implica planear baños, ausencias, crecimiento y amistades. Estos recursos están pensados para adolescentes y padres.",
+      "keywords": ["adolescente Crohn", "EII escuela secundaria", "plan 504 EII"],
+      "sections": [
+        {"heading": "Planificación escolar", "paragraphs": ["Un plan 504 puede documentar acceso al baño, medicamentos y asistencia flexible. Reúnase con la enfermería escolar al inicio de cada año."]}
+      ]
+    },
+    {
+      "slug": "brotes-eii",
+      "en_slug": "flare-help",
+      "title": "Ayuda en brotes de EII | Crohn y colitis | IBDPal",
+      "description": "Educación calmada para brotes de EII: primeras 48 horas, alimentos suaves, hidratación y cuándo llamar a su clínica.",
+      "h1": "Ayuda en brotes de EII",
+      "intro": "Los brotes asustan, pero un plan ayuda. Estas guías cubren pasos tempranos que muchos pacientes comentan con su equipo de EII.",
+      "keywords": ["brote EII", "qué hacer brote Crohn", "brote colitis"],
+      "sections": [
+        {"heading": "Cuándo buscar atención urgente", "paragraphs": ["Sangrado abundante, dolor intenso, fiebre, deshidratación o abdomen rígido requieren evaluación médica pronta. Siga las instrucciones de su clínica."]}
+      ]
+    }
+  ],
+  "faq": {
+    "slug": "preguntas-frecuentes",
+    "title": "Preguntas frecuentes sobre EII | Crohn y colitis | IBDPal",
+    "description": "Respuestas a preguntas comunes sobre Crohn y colitis ulcerosa: dieta, brotes, diferencias, apoyo y seguimiento. Solo educación.",
+    "h1": "Preguntas frecuentes sobre EII",
+    "intro": "Respuestas breves a búsquedas frecuentes. Confirme siempre las decisiones personales con su gastroenterólogo o equipo de EII.",
+    "items": [
+      {"q": "¿Cuál es la diferencia entre Crohn y colitis ulcerosa?", "a": "Ambas son enfermedades inflamatorias intestinales (EII). Crohn puede afectar cualquier parte del tracto digestivo. La colitis ulcerosa afecta principalmente colon y recto. Los síntomas se superponen, pero el tratamiento y la cirugía pueden diferir. Su equipo define el diagnóstico y la actividad."},
+      {"q": "¿Existe una dieta especial para Crohn o colitis ulcerosa?", "a": "No hay una dieta única para todos. Muchas personas ajustan fibra, grasa, lácteos o desencadenantes según brotes o remisión. Un dietista con enfoque en EII puede ayudar. IBDPal apoya el registro de alimentos y síntomas para las citas."},
+      {"q": "¿Qué debo comer durante un brote de EII?", "a": "Muchos pacientes eligen temporalmente alimentos más suaves y con menos fibra, como arroz blanco, plátano, caldos, huevos y proteína magra. La hidratación importa. La dieta no reemplaza la medicación. Vea nuestro hub de brotes y hable con su médico."},
+      {"q": "¿La EII es lo mismo que el síndrome de intestino irritable (SII)?", "a": "No. La EII (Crohn y colitis) implica inflamación visible y requiere tratamiento médico. El SII es un trastorno funcional sin el mismo daño inflamatorio. Algunas personas tienen síntomas de ambos. Solo su equipo puede aclarar su diagnóstico."},
+      {"q": "¿Se puede hacer deporte con Crohn o colitis?", "a": "Muchas personas en remisión o con enfermedad leve se mantienen activas con ritmo e hidratación. En brotes, el descanso y movimiento suave pueden ser mejores. Coordine deportes escolares con documentación 504 si hace falta."},
+      {"q": "¿Qué es un plan 504 para EII en la escuela?", "a": "Un plan 504 puede documentar acceso al baño, tiempo extra, almacenamiento de medicamentos y asistencia flexible para estudiantes con Crohn o colitis. Trabaje con la enfermería escolar y una carta de su médico. No es asesoría legal."},
+      {"q": "¿Cómo encuentro apoyo de Crohn o colitis cerca de mí?", "a": "Empiece con el buscador de capítulos de la Crohn's & Colitis Foundation. IBDPal ofrece páginas de apoyo por estado y un mapa comunitario. Línea nacional: 888-694-8872."},
+      {"q": "¿Qué son los biológicos para EII?", "a": "Los biológicos son medicamentos avanzados que actúan sobre partes específicas del sistema inmune para reducir la inflamación en Crohn y colitis. Los prescribe y supervisa su equipo de gastroenterología. La autorización del seguro es común."},
+      {"q": "¿Debo registrar comida y síntomas con una app?", "a": "Muchos pacientes encuentran útil el registro para ver patrones antes de las citas. IBDPal es una app gratuita para iOS. El seguimiento apoya la conversación con su equipo; no diagnostica ni trata la enfermedad."},
+      {"q": "¿Cuándo debo llamar a mi médico durante un brote?", "a": "Llame según las instrucciones de su clínica si hay más dolor, sangrado significativo, fiebre, signos de deshidratación o síntomas distintos a su brote habitual. En emergencias, use los servicios locales."}
+    ]
+  }
+}
