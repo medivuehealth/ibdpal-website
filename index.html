@@ -99,7 +99,7 @@
                             <span class="start-here-hub__label">Visit prep</span>
                             <span class="start-here-hub__desc">Questions for your GI appointment</span>
                         </a>
-                        <a href="/#app" class="start-here-hub__tile start-here-hub__tile--app">
+                        <a href="/#download" class="start-here-hub__tile start-here-hub__tile--app">
                             <span class="start-here-hub__label">Download IBDPal</span>
                             <span class="start-here-hub__desc">Free iOS nutrition &amp; symptom tracker</span>
                         </a>
@@ -178,9 +178,37 @@
                 </div>
             </div>
 
-            <!-- IBDPal App Tab (Features, How it Works, Screenshots, Research) -->
+            <!-- IBDPal App Tab (Download, Features, How it Works, Screenshots, Research) -->
             <div class="tab-content" id="app">
-                <div class="hero-section hero-section--app-tab" data-track-impression="hero" data-track-label="App tab hero">
+                <nav class="app-subtab-navigation" aria-label="IBDPal App sections">
+                    <div class="app-subtab-container">
+                        <button type="button" class="app-subtab-button active" data-app-subtab="download">Download</button>
+                        <button type="button" class="app-subtab-button" data-app-subtab="features">Features</button>
+                        <button type="button" class="app-subtab-button" data-app-subtab="how-it-works">How it Works</button>
+                        <button type="button" class="app-subtab-button" data-app-subtab="screenshots">Screenshots</button>
+                        <button type="button" class="app-subtab-button" data-app-subtab="app-research">App research</button>
+                    </div>
+                </nav>
+                <p class="app-deep-links app-deep-links--bar" aria-label="App sections">
+                    <span>In the iOS app:</span>
+                    <a href="/#download" data-app-subtab-link="download">Home</a> ·
+                    <a href="/#features" data-app-subtab-link="features">Daily Log</a> ·
+                    <a href="/#screenshots" data-app-subtab-link="screenshots">Trends</a> ·
+                    <a href="/#app-research" data-app-subtab-link="app-research">Insights</a> ·
+                    <a href="/for-clinicians">Export for visits</a>
+                </p>
+
+                <p class="app-website-links" data-track-impression="app_website_links" data-track-label="App tab website education links">
+                    <strong>On this website:</strong>
+                    <a href="/blog/how-ibdpal-nutrition-targets-work">How nutrition targets work</a> ·
+                    <a href="/ibd-nutrition">Nutrition hub</a> ·
+                    <a href="/blog/flare-first-48-hours">First 48 hours of a flare</a> ·
+                    <a href="/visit-prep">Visit prep</a> ·
+                    <a href="/research">Sources</a>
+                </p>
+
+                <div class="app-subcontent active" id="download">
+                <div class="hero-section hero-section--app-tab" data-track-impression="hero" data-track-label="App download subtab">
                     <h1 class="hero-catchphrase">Complete nutritional intelligence<br>for your IBD journey</h1>
                     <h2 class="hero-tagline">Track <span class="highlight-text">nutrients and micronutrients</span> from daily foods</h2>
                     <h2 class="hero-title">Available at App Store</h2>
@@ -208,34 +236,9 @@
                         </div>
                     </div>
                 </div>
+                </div>
 
-                <nav class="app-subtab-navigation" aria-label="IBDPal App sections">
-                    <div class="app-subtab-container">
-                        <button type="button" class="app-subtab-button active" data-app-subtab="features">Features</button>
-                        <button type="button" class="app-subtab-button" data-app-subtab="how-it-works">How it Works</button>
-                        <button type="button" class="app-subtab-button" data-app-subtab="screenshots">Screenshots</button>
-                        <button type="button" class="app-subtab-button" data-app-subtab="app-research">App research</button>
-                    </div>
-                </nav>
-                <p class="app-deep-links app-deep-links--bar" aria-label="App sections">
-                    <span>In the iOS app:</span>
-                    <a href="/#app">Home</a> ·
-                    <a href="/#app" data-app-subtab-link="features">Daily Log</a> ·
-                    <a href="/#app" data-app-subtab-link="screenshots">Trends</a> ·
-                    <a href="/#app" data-app-subtab-link="app-research">Insights</a> ·
-                    <a href="/for-clinicians">Export for visits</a>
-                </p>
-
-                <p class="app-website-links" data-track-impression="app_website_links" data-track-label="App tab website education links">
-                    <strong>On this website:</strong>
-                    <a href="/blog/how-ibdpal-nutrition-targets-work">How nutrition targets work</a> ·
-                    <a href="/ibd-nutrition">Nutrition hub</a> ·
-                    <a href="/blog/flare-first-48-hours">First 48 hours of a flare</a> ·
-                    <a href="/visit-prep">Visit prep</a> ·
-                    <a href="/research">Sources</a>
-                </p>
-
-                <div class="app-subcontent active" id="features">
+                <div class="app-subcontent" id="features">
                 <div class="features-section">
                     <h3>Comprehensive IBD Management Features</h3>
                     <div class="features-grid">

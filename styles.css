@@ -2533,7 +2533,11 @@ input:focus-visible {
 }
 
 .hero-section--app-tab {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0;
+}
+
+#download.app-subcontent.active .hero-section--app-tab {
+    margin-top: 0.5rem;
 }
 
 .start-here-hub__title {
