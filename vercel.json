@@ -20,6 +20,10 @@
   ],
   "rewrites": [
     {
+      "source": "/research",
+      "destination": "/research.html"
+    },
+    {
       "source": "/glossary",
       "destination": "/glossary.html"
     },

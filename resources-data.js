@@ -2,6 +2,11 @@
  * Filterable patient resource library (education links + site content).
  */
 window.IBDPAL_RESOURCES = [
+  { title: "Dietary Reference Intakes (DRI): Summary Report", category: 'nutrition', type: 'external', url: "https://www.nationalacademies.org/our-work/summary-report-of-the-dietary-reference-intakes", tags: ["DRI", "RDAs", "nutrition standards"] },
+  { title: "Micronutrient Deficiency in Crohn's Disease", category: 'nutrition', type: 'external', url: "https://www.webmd.com/ibd-crohns-disease/crohns-disease/micronutrient-deficiency-crohns", tags: ["vitamins", "iron", "B12", "malabsorption"] },
+  { title: "Crohn's & Colitis Congress 2024: IBD Diet & Nutrition Research Updates", category: 'nutrition', type: 'external', url: "https://www.nutritionaltherapyforibd.org/news/crohns-colitis-congress-2024-updates-on-ibd-diet-nutrition-research", tags: ["conference", "diet research", "nutrition science"] },
+  { title: "AGA Clinical Practice Update: Diet and Nutritional Therapies in IBD (2024)", category: 'nutrition', type: 'external', url: "https://gastro.org/clinical-guidance/diet-and-nutritional-therapies-in-patients-with-ibd/", tags: ["clinical guidance", "nutrition therapy", "Crohn's", "colitis"] },
+  { title: 'IBD Research Sources', category: 'nutrition', type: 'site', url: '/research', tags: ['research', 'diet', 'clinical'] },
   { title: 'IBD Glossary', category: 'getting-started', type: 'site', url: '/glossary', tags: ['terms', 'definitions'] },
   { title: 'IBD Blog (all articles)', category: 'getting-started', type: 'site', url: '/blog', tags: ['articles', 'nutrition', 'flare'] },
   { title: 'IBD Support by State', category: 'community', type: 'site', url: '/support', tags: ['local', 'map'] },

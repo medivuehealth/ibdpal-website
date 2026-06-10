@@ -1,0 +1,44 @@
+{
+  "title": "IBD Nutrition Research Sources | Crohn's & Colitis | IBDPal",
+  "description": "Trusted IBD diet and nutrition research: AGA clinical guidance, Crohn's & Colitis Congress updates, micronutrient deficiency, and Dietary Reference Intakes.",
+  "h1": "IBD research sources",
+  "intro": "Peer-reviewed and clinical guidance on Crohn's disease and ulcerative colitis nutrition. IBDPal summarizes and links to original publishers. Not medical advice.",
+  "sources": [
+    {
+      "id": "aga-diet-2024",
+      "title": "AGA Clinical Practice Update: Diet and Nutritional Therapies in IBD (2024)",
+      "publisher": "American Gastroenterological Association",
+      "year": "2024",
+      "url": "https://gastro.org/clinical-guidance/diet-and-nutritional-therapies-in-patients-with-ibd/",
+      "topics": ["clinical guidance", "nutrition therapy", "Crohn's", "colitis"],
+      "summary": "AGA guidance on how gastroenterologists may discuss diet and nutritional therapies with IBD patients. Covers enteral nutrition, exclusion diets, micronutrients, and when to involve a dietitian. Emphasizes that diet supports medical care and is not a standalone cure."
+    },
+    {
+      "id": "ccc-nutrition-2024",
+      "title": "Crohn's & Colitis Congress 2024: IBD Diet & Nutrition Research Updates",
+      "publisher": "Nutritional Therapy for IBD / Crohn's & Colitis Congress",
+      "year": "2024",
+      "url": "https://www.nutritionaltherapyforibd.org/news/crohns-colitis-congress-2024-updates-on-ibd-diet-nutrition-research",
+      "topics": ["conference", "diet research", "nutrition science"],
+      "summary": "Recap of nutrition-focused presentations from the 2024 Crohn's & Colitis Congress. Highlights emerging diet trials, patient-reported outcomes, and practical themes clinicians discussed for Crohn's disease and ulcerative colitis."
+    },
+    {
+      "id": "webmd-micronutrients",
+      "title": "Micronutrient Deficiency in Crohn's Disease",
+      "publisher": "WebMD",
+      "year": "2024",
+      "url": "https://www.webmd.com/ibd-crohns-disease/crohns-disease/micronutrient-deficiency-crohns",
+      "topics": ["vitamins", "iron", "B12", "malabsorption"],
+      "summary": "Overview of common vitamin and mineral shortfalls in Crohn's disease, including iron, B12, vitamin D, and folate. Explains why inflammation, surgery, and diet restriction can raise deficiency risk and why labs matter."
+    },
+    {
+      "id": "iom-dri",
+      "title": "Dietary Reference Intakes (DRI): Summary Report",
+      "publisher": "National Academies of Sciences, Engineering, and Medicine",
+      "year": "Reference",
+      "url": "https://www.nationalacademies.org/our-work/summary-report-of-the-dietary-reference-intakes",
+      "topics": ["DRI", "RDAs", "nutrition standards"],
+      "summary": "Authoritative U.S. reference values for macronutrients, vitamins, and minerals. IBD teams sometimes adapt general DRIs when inflammation, malabsorption, or steroid use changes individual needs."
+    }
+  ]
+}

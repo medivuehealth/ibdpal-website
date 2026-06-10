@@ -59,6 +59,9 @@
 - https://www.ibdpal.org/es/recien-diagnosticado
 - https://www.ibdpal.org/es/recursos
 
+## Research sources
+- https://www.ibdpal.org/research
+
 ## Glossary & stories
 - https://www.ibdpal.org/glossary
 - https://www.ibdpal.org/patient-stories

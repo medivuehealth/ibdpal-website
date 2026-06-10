@@ -251,6 +251,7 @@ def render_blog_index(meta: dict, posts: dict[str, dict]) -> str:
                         <li><a href="/flare-help">Flare help</a></li>
                         <li><a href="/guides">All patient guides</a></li>
                         <li><a href="/glossary">IBD glossary</a></li>
+                        <li><a href="/research">Research sources</a></li>
                         <li><a href="/patient-stories">Patient stories</a></li>
                     </ul>
                 </section>"""

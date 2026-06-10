@@ -82,6 +82,16 @@ python scripts/sync_llms_txt.py
 | `/blog/j-pouch-basics-ibd` | J-pouch patient-level overview |
 | `/blog/when-to-go-er-ibd` | When to seek emergency care |
 
+## IBD research sources
+
+Homepage **Research** tab (`/#research`) and crawlable page `/research` list AGA, Congress, WebMD, and National Academies nutrition guidance.
+
+```bash
+python scripts/generate_research_page.py
+```
+
+Edit `data/research-sources.json` to add sources, then re-run the generator.
+
 Blog generator: `python scripts/generate_blog_posts.py` (June lifestyle posts only).
 
 ## Accelerated Mobile Pages (AMP)
