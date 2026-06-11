@@ -203,11 +203,26 @@
 
     var width = 960;
     var height = 600;
+    var tooltip = d3.select(container)
+      .append('div')
+      .attr('class', 'community-map-tooltip')
+      .style('opacity', 0);
+
     var svg = d3.select(container).append('svg')
       .attr('viewBox', '0 0 ' + width + ' ' + height)
       .attr('class', 'community-map-svg')
       .attr('role', 'img')
       .attr('aria-label', 'Map of the United States. Click a state to view IBD support resources.');
+
+    var defs = svg.append('defs');
+    var grad = defs.append('linearGradient')
+      .attr('id', 'community-state-gradient')
+      .attr('x1', '0%')
+      .attr('y1', '0%')
+      .attr('x2', '100%')
+      .attr('y2', '100%');
+    grad.append('stop').attr('offset', '0%').attr('stop-color', '#9933cc');
+    grad.append('stop').attr('offset', '100%').attr('stop-color', '#cc6600');
 
     var projection = d3.geoAlbersUsa().scale(1280).translate([width / 2, height / 2]);
     var path = d3.geoPath().projection(projection);
@@ -230,6 +245,19 @@
           .attr('aria-label', function (d) {
             var abbr = FIPS_TO_ABBR[d.id];
             return (STATE_NAMES[abbr] || abbr) + '. Click for IBD community resources.';
+          })
+          .on('mouseenter', function (event, d) {
+            var abbr = FIPS_TO_ABBR[d.id];
+            tooltip.text(STATE_NAMES[abbr] || abbr).style('opacity', 1);
+          })
+          .on('mousemove', function (event) {
+            var rect = container.getBoundingClientRect();
+            tooltip
+              .style('left', (event.clientX - rect.left) + 'px')
+              .style('top', (event.clientY - rect.top) + 'px');
+          })
+          .on('mouseleave', function () {
+            tooltip.style('opacity', 0);
           })
           .on('click', function (event, d) {
             var abbr = FIPS_TO_ABBR[d.id];

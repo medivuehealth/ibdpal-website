@@ -14,6 +14,17 @@
     clinical: 'Clinical tools'
   };
 
+  var PILL_CATEGORIES = [
+    '',
+    'getting-started',
+    'nutrition',
+    'treatment',
+    'wellness',
+    'community',
+    'family',
+    'clinical'
+  ];
+
   function escapeHtml(s) {
     return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
   }
@@ -51,19 +62,29 @@
   function renderCard(item) {
     var cat = CATEGORY_LABELS[item.category] || item.category;
     var badge = item.type === 'external' ? 'External' : item.type === 'blog' ? 'Article' : 'On ibdpal.org';
+    var desc = item.description ? '<p class="resource-card__desc">' + escapeHtml(item.description.slice(0, 100)) + '</p>' : '';
     return (
       '<article class="resource-card" data-category="' + escapeHtml(item.category) + '">' +
-      '<span class="resource-card__badge">' + escapeHtml(badge) + '</span>' +
+      '<span class="resource-card__badge resource-card__badge--' + escapeHtml(item.type) + '">' + escapeHtml(badge) + '</span>' +
       '<h4 class="resource-card__title"><a href="' + escapeHtml(item.url) + '">' + escapeHtml(item.title) + '</a></h4>' +
       '<p class="resource-card__meta">' + escapeHtml(cat) + '</p>' +
+      desc +
       '</article>'
     );
+  }
+
+  function syncPills(root, cat) {
+    root.querySelectorAll('.resource-pill').forEach(function (pill) {
+      var active = (pill.getAttribute('data-category') || '') === cat;
+      pill.classList.toggle('is-active', active);
+    });
   }
 
   function initLibrary(root) {
     var list = root.querySelector('.resource-library__grid');
     var filter = root.querySelector('.resource-library__filter');
     var search = root.querySelector('.resource-library__search');
+    var empty = root.querySelector('.resource-library__empty');
     if (!list || !window.IBDPAL_RESOURCES) return;
 
     list.innerHTML = window.IBDPAL_RESOURCES.map(renderCard).join('');
@@ -71,16 +92,36 @@
     function apply() {
       var cat = filter ? filter.value : '';
       var q = search ? search.value.trim().toLowerCase() : '';
+      var visible = 0;
       list.querySelectorAll('.resource-card').forEach(function (card, i) {
         var item = window.IBDPAL_RESOURCES[i];
         var matchCat = !cat || item.category === cat;
         var matchQ = matchesQuery(buildHaystack(item), q);
-        card.style.display = matchCat && matchQ ? '' : 'none';
+        var show = matchCat && matchQ;
+        card.style.display = show ? '' : 'none';
+        if (show) visible += 1;
       });
+      if (empty) {
+        empty.hidden = visible > 0;
+      }
+      list.hidden = visible === 0 && !!empty;
     }
 
-    if (filter) filter.addEventListener('change', apply);
+    root.querySelectorAll('.resource-pill').forEach(function (pill) {
+      pill.addEventListener('click', function () {
+        var cat = pill.getAttribute('data-category') || '';
+        if (filter) filter.value = cat;
+        syncPills(root, cat);
+        apply();
+      });
+    });
+
+    if (filter) filter.addEventListener('change', function () {
+      syncPills(root, filter.value);
+      apply();
+    });
     if (search) search.addEventListener('input', apply);
+    apply();
   }
 
   document.addEventListener('DOMContentLoaded', function () {

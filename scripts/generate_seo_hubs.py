@@ -58,7 +58,8 @@ HEAD_ASSETS = """    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="/site-layout-icn.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/site-polish.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="icon" type="image/png" href="/IBDPal_Logo.png">
     <link rel="apple-touch-icon" href="/IBDPal_Logo.png">
@@ -211,19 +212,46 @@ def link_list(items: list[tuple[str, str]]) -> str:
     ) + "</ul>"
 
 
+def blog_chip_slug(category: str) -> str:
+    c = category.lower()
+    if "nutrition" in c or "diet" in c:
+        return "nutrition"
+    if "treatment" in c or "clinical" in c:
+        return "treatment"
+    if "wellness" in c or "lifestyle" in c or "health" in c:
+        return "wellness"
+    if "family" in c:
+        return "family"
+    if "teen" in c or "school" in c or "college" in c:
+        return "teen"
+    if "flare" in c:
+        return "flare"
+    if "product" in c:
+        return "product"
+    return "default"
+
+
 def blog_cards(posts: list[dict], *, for_index_tab: bool = False) -> str:
     cards = []
-    for p in posts:
+    for i, p in enumerate(posts):
         url = f"/blog/{p['slug']}"
         thumb_class = "blog-card-thumb"
         if for_index_tab and p["slug"] == "introducing-ibdpal":
             thumb_class += " blog-card-thumb--app"
+        chip = blog_chip_slug(p["category"])
+        extra = " blog-card--magazine"
+        if for_index_tab and i == 0:
+            extra += " blog-card--featured"
         cards.append(
-            f'                        <a href="{url}" class="blog-card">\n'
+            f'                        <a href="{url}" class="blog-card{extra}" data-blog-topic="{chip}">\n'
+            f'                            <div class="blog-card__media">\n'
             f'                            <img src="{html.escape(p["thumb"])}" alt="" class="{thumb_class}" width="800" height="600" decoding="async">\n'
-            f'                            <span class="blog-card-meta">{html.escape(p["category"])}</span>\n'
+            f'                            <span class="blog-card-chip blog-card-chip--{chip}">{html.escape(p["category"])}</span>\n'
+            f"                            </div>\n"
+            f'                            <div class="blog-card__body">\n'
             f'                            <h4>{html.escape(p["title"])}</h4>\n'
             f'                            <p>{html.escape(p["description"][:120])}</p>\n'
+            f"                            </div>\n"
             f"                        </a>"
         )
     return "\n".join(cards)
@@ -233,7 +261,22 @@ def patch_index_blogs_tab(posts: dict[str, dict]) -> None:
     """Sync homepage #blogs tab cards from blogs/*.html (newest first)."""
     if not INDEX.exists():
         return
+    from ui_snippets import BLOG_FILTER_PILLS_HTML  # noqa: E402
+
     text = INDEX.read_text(encoding="utf-8")
+    if 'class="blogs-section blogs-section--magazine"' not in text:
+        text = text.replace(
+            '<div class="blogs-section" data-track-impression="blogs_index"',
+            '<div class="blogs-section blogs-section--magazine" data-track-impression="blogs_index"',
+            1,
+        )
+    toolbar_marker = '                    <div class="blog-index-toolbar"'
+    if toolbar_marker not in text:
+        text = text.replace(
+            '                    <div class="blog-index-grid">',
+            BLOG_FILTER_PILLS_HTML + "\n                    <div class=\"blog-index-grid\">",
+            1,
+        )
     marker_start = '                    <div class="blog-index-grid">'
     marker_end = '                    </div>\n                </div>\n            </div>\n\n            <!-- Community Tab -->'
     if marker_start not in text or marker_end not in text:

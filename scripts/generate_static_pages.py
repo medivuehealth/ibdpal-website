@@ -10,6 +10,7 @@ from eeat_blocks import content_note_en, edu_disclaimer_en, hub_disclaimer_en, p
 from es_mirrors import es_url_for_en_path  # noqa: E402
 from seo_head import breadcrumb_json, howto_json, render_seo_head, web_page_json  # noqa: E402
 from site_nav import PAGE_SCRIPTS, TAB_NAV_HTML, site_header_html  # noqa: E402
+from ui_snippets import RESOURCE_TOOLBAR_HTML  # noqa: E402
 
 SITE = "https://www.ibdpal.org"
 EEAT_PATHS = {"/newly-diagnosed", "/visit-prep", "/pediatric-caregivers", "/resources"}
@@ -40,7 +41,8 @@ HEAD_ASSETS = """    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="/site-layout-icn.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/site-polish.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="icon" type="image/png" href="/IBDPal_Logo.png">
     <link rel="apple-touch-icon" href="/IBDPal_Logo.png">
@@ -189,23 +191,11 @@ PAGES = {
         "IBD Resource Library | Crohn's & Colitis Education | IBDPal",
         "Search 25+ IBD resources: nutrition blogs, Crohn's support, pediatric caregivers, visit prep, community map, and the free IBDPal iOS app.",
         "/resources",
-        """
+        f"""
             <div class="resources-page" data-resource-library>
                 <h1>IBD Resource Library</h1>
                 <p class="support-intro">Filter trusted articles and tools. External links open in a new tab.</p>
-                <div class="resource-library__toolbar">
-                    <label>Category <select class="resource-library__filter" aria-label="Filter by category">
-                        <option value="">All</option>
-                        <option value="getting-started">Getting started</option>
-                        <option value="community">Community</option>
-                        <option value="nutrition">Nutrition</option>
-                        <option value="wellness">Wellness</option>
-                        <option value="treatment">Treatment</option>
-                        <option value="family">Family</option>
-                        <option value="clinical">Clinical</option>
-                    </select></label>
-                    <label>Search <input type="search" class="resource-library__search" placeholder="e.g. flare, school, ostomy" aria-label="Search resources"></label>
-                </div>
+{RESOURCE_TOOLBAR_HTML}
                 <div class="resource-library__grid"></div>
             </div>
             <script src="/resources-data.js"></script>
