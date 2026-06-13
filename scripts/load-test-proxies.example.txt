@@ -1,0 +1,19 @@
+# Copy to load-test-proxies.txt (gitignored) — one proxy per line.
+#
+# Webshare (easiest): open your Download link in a browser, Save As, copy lines here.
+# Raw Webshare format works:  ip:port:username:password
+# Or Playwright URL format:    http://username:password@ip:port
+#
+# Fetch via script (do NOT commit the URL — it contains your download token):
+#   set WEBSHARE_DOWNLOAD_URL=https://proxy.webshare.io/api/v2/proxy/list/download/TOKEN/...
+#   python scripts/fetch_webshare_proxies.py
+#
+# Option A — static list (100 lines = 100 distinct IPs when provider assigns 1:1):
+# http://customer:pass-country-us-session-001@gate.provider.com:10000
+# http://customer:pass-country-us-session-002@gate.provider.com:10000
+#
+# Option B — rotating gateway (preferred for 100 users): use CLI instead of this file:
+#   --proxy-rotate "http://customer-session-{session}-country-us:pass@gate.provider.com:10000"
+#
+# Option C — env var (comma-separated):
+#   set IBDPAL_LOAD_TEST_PROXIES=http://u:p@p1:8080,http://u:p@p2:8080

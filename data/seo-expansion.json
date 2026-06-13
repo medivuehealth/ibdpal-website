@@ -65,6 +65,8 @@
         "hydration-tips-ibd",
         "teen-nutrition-ibd-growth",
         "iron-b12-vitamin-d-ibd",
+        "micronutrients-ibd-deficiencies",
+        "probiotics-ibd-gut-health",
         "tracking-food-symptoms-ibdpal"
       ]
     },
@@ -122,7 +124,10 @@
         "understanding-biologics-ibd",
         "fodmap-diet-crohns-colitis",
         "travel-with-ibd",
-        "ostomy-basics-ibd"
+        "ostomy-basics-ibd",
+        "ibd-fatigue-brain-fog",
+        "ibd-joint-pain-arthritis",
+        "ibd-night-sweats"
       ]
     },
     {
@@ -174,7 +179,12 @@
         "hydration-tips-ibd",
         "flare-first-48-hours",
         "anti-inflammatory-diet-ibd",
-        "stress-emotional-wellness-ibd"
+        "stress-emotional-wellness-ibd",
+        "depression-anxiety-ibd",
+        "stress-coping-strategies-ibd",
+        "ibd-fatigue-brain-fog",
+        "ibd-joint-pain-arthritis",
+        "ibd-night-sweats"
       ]
     },
     {
@@ -269,7 +279,12 @@
         "low-residue-diet-flare",
         "sleep-rest-ibd-flares",
         "hydration-tips-ibd",
-        "stress-emotional-wellness-ibd"
+        "stress-emotional-wellness-ibd",
+        "depression-anxiety-ibd",
+        "stress-coping-strategies-ibd",
+        "ibd-fatigue-brain-fog",
+        "ibd-joint-pain-arthritis",
+        "ibd-night-sweats"
       ]
     }
   ],
@@ -318,6 +333,30 @@
       {
         "q": "When should I call my doctor during a flare?",
         "a": "Call per your clinic's instructions for worsening pain, significant blood, fever, dehydration signs, or symptoms that feel different from your usual flare. For emergencies, use local emergency services."
+      },
+      {
+        "q": "Is depression common with Crohn's disease or ulcerative colitis?",
+        "a": "Yes. Depression and anxiety are more common in IBD than in the general population. Gut inflammation, stress, medications, and disease burden all play a role. Tell your GI team if mood symptoms persist. Therapy, coordinated medications, and peer support can help alongside IBD treatment."
+      },
+      {
+        "q": "Should I take probiotics for IBD?",
+        "a": "Probiotics are strain-specific and not one-size-fits-all. Some evidence supports certain products for ulcerative colitis maintenance or pouchitis, but Crohn's data are mixed. Ask your gastroenterologist before starting live cultures, especially if you are immunosuppressed."
+      },
+      {
+        "q": "What vitamin deficiencies are common in IBD?",
+        "a": "Iron, B12, vitamin D, folate, zinc, magnesium, and calcium are frequently monitored in Crohn's and colitis because of malabsorption, diarrhea, surgery, or restricted diets. Blood work guides supplementation. Do not mega-dose without labs and clinician guidance."
+      },
+      {
+        "q": "Why am I so tired with Crohn's or colitis?",
+        "a": "IBD fatigue often comes from inflammation, anemia, poor sleep, dehydration, medication effects, or mood symptoms. Brain fog may link to low iron or B12. Ask your GI team about labs and treatment adjustments. Persistent exhaustion in remission still deserves a workup."
+      },
+      {
+        "q": "Can Crohn's or colitis cause joint pain?",
+        "a": "Yes. Joint pain is a common extraintestinal manifestation of IBD. Patterns include peripheral arthritis and axial spine or sacroiliac involvement. Tell your gastroenterologist about joint symptoms. NSAIDs may not be appropriate for everyone with IBD; your team can coordinate with rheumatology."
+      },
+      {
+        "q": "Are night sweats a sign of an IBD flare?",
+        "a": "Night sweats can occur with active inflammation, fever, certain medications, or infection, especially in immunosuppressed patients. Soaking sweats with fever, worsening pain, or bleeding need prompt contact with your clinic. Track temperatures and bowel changes for your care team."
       }
     ]
   },

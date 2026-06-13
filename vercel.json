@@ -20,6 +20,34 @@
   ],
   "rewrites": [
     {
+      "source": "/blog/ibd-joint-pain-arthritis",
+      "destination": "/blogs/ibd-joint-pain-arthritis.html"
+    },
+    {
+      "source": "/blog/ibd-night-sweats",
+      "destination": "/blogs/ibd-night-sweats.html"
+    },
+    {
+      "source": "/blog/ibd-fatigue-brain-fog",
+      "destination": "/blogs/ibd-fatigue-brain-fog.html"
+    },
+    {
+      "source": "/blog/depression-anxiety-ibd",
+      "destination": "/blogs/depression-anxiety-ibd.html"
+    },
+    {
+      "source": "/blog/probiotics-ibd-gut-health",
+      "destination": "/blogs/probiotics-ibd-gut-health.html"
+    },
+    {
+      "source": "/blog/micronutrients-ibd-deficiencies",
+      "destination": "/blogs/micronutrients-ibd-deficiencies.html"
+    },
+    {
+      "source": "/blog/stress-coping-strategies-ibd",
+      "destination": "/blogs/stress-coping-strategies-ibd.html"
+    },
+    {
       "source": "/blog/dairy-lactose-ibd",
       "destination": "/blogs/dairy-lactose-ibd.html"
     },

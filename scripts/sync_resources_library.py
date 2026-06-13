@@ -56,10 +56,17 @@ def blog_category_from_html(path: Path) -> str:
 
 
 def load_topic_meta() -> dict[str, dict]:
-    if not TOPIC_POSTS.exists():
-        return {}
-    data = json.loads(TOPIC_POSTS.read_text(encoding="utf-8"))
-    return {p["slug"]: p for p in data.get("posts", [])}
+    meta: dict[str, dict] = {}
+    for path in (
+        TOPIC_POSTS,
+        ROOT / "data" / "seo-wellness-posts.json",
+    ):
+        if not path.exists():
+            continue
+        data = json.loads(path.read_text(encoding="utf-8"))
+        for post in data.get("posts", []):
+            meta[post["slug"]] = post
+    return meta
 
 
 def parse_guide(path: Path) -> dict | None:
