@@ -22,7 +22,8 @@ def content_note_en() -> str:
     return (
         '<p class="blog-medical-review"><strong>Content note:</strong> '
         "Reviewed for patient education accuracy against publicly available guidance from the "
-        "Crohn's &amp; Colitis Foundation and major IBD education sources. "
+        '<a href="https://www.crohnscolitisfoundation.org/" rel="noopener noreferrer">'
+        "Crohn's &amp; Colitis Foundation</a> and major IBD education sources. "
         f"Last reviewed {REVIEW_DISPLAY}. Not individual medical advice.</p>\n"
     )
 
@@ -147,6 +148,26 @@ def patch_blog_back_links(blogs_dir) -> int:
         if new_text != text:
             path.write_text(new_text, encoding="utf-8")
             count += 1
+    return count
+
+
+def patch_content_notes(*dirs) -> int:
+    """Refresh content note + edu disclaimer blocks (e.g. after CCF link update)."""
+    import re
+
+    count = 0
+    top = content_note_en() + edu_disclaimer_en()
+    pat = re.compile(
+        r'<p class="blog-medical-review">.*?</p>\s*<p class="blog-edu-disclaimer">.*?</p>',
+        re.S,
+    )
+    for base in dirs:
+        for path in base.glob("*.html"):
+            text = path.read_text(encoding="utf-8", errors="replace")
+            new_text = pat.sub(top.strip(), text, count=1)
+            if new_text != text:
+                path.write_text(new_text, encoding="utf-8")
+                count += 1
     return count
 
 
