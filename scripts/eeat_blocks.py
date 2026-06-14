@@ -59,6 +59,25 @@ def blog_medical_footer_en() -> str:
     )
 
 
+def icn_attribution_block(source_title: str, source_url: str) -> str:
+    """Creative Commons attribution for ImproveCareNow co-produced resources."""
+    return (
+        '<aside class="icn-attribution" role="note">'
+        "<h2>ImproveCareNow resource attribution</h2>"
+        "<p>This page highlights a resource co-produced by the "
+        '<a href="https://www.improvecarenow.org/" rel="noopener noreferrer">ImproveCareNow (ICN)</a> '
+        "community. ICN releases many patient materials under a Creative Commons license. "
+        "IBDPal is <strong>not</strong> an ImproveCareNow partner or listed care center. "
+        "We share ICN materials with attribution and a link to the original resource, per ICN guidance.</p>"
+        f'<p><strong>Original resource:</strong> '
+        f'<a href="{source_url}" rel="noopener noreferrer">{source_title}</a></p>'
+        "<p>ImproveCareNow materials are attributed to ImproveCareNow. "
+        "To view Creative Commons license terms, see "
+        '<a href="https://creativecommons.org/licenses/" rel="noopener noreferrer">creativecommons.org/licenses</a>.</p>'
+        "</aside>\n"
+    )
+
+
 def content_note_es() -> str:
     return (
         '<p class="blog-medical-review"><strong>Nota de contenido:</strong> '

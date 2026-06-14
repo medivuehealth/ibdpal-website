@@ -20,6 +20,34 @@
   ],
   "rewrites": [
     {
+      "source": "/blog/icn-accommodations-toolkit-ibd",
+      "destination": "/blogs/icn-accommodations-toolkit-ibd.html"
+    },
+    {
+      "source": "/blog/icn-college-ibd-toolkit",
+      "destination": "/blogs/icn-college-ibd-toolkit.html"
+    },
+    {
+      "source": "/blog/icn-caregiver-coping-resource",
+      "destination": "/blogs/icn-caregiver-coping-resource.html"
+    },
+    {
+      "source": "/blog/icn-mental-health-provider-guide",
+      "destination": "/blogs/icn-mental-health-provider-guide.html"
+    },
+    {
+      "source": "/blog/icn-transfer-toolkit-adult-care",
+      "destination": "/blogs/icn-transfer-toolkit-adult-care.html"
+    },
+    {
+      "source": "/blog/icn-ostomy-toolkit-pediatric",
+      "destination": "/blogs/icn-ostomy-toolkit-pediatric.html"
+    },
+    {
+      "source": "/blog/icn-ibd-holidays-special-occasions",
+      "destination": "/blogs/icn-ibd-holidays-special-occasions.html"
+    },
+    {
       "source": "/blog/ibd-joint-pain-arthritis",
       "destination": "/blogs/ibd-joint-pain-arthritis.html"
     },
@@ -189,7 +217,31 @@
     },
     {
       "source": "/about",
+      "destination": "/about.html"
+    },
+    {
+      "source": "/executive-summary",
       "destination": "/executive-summary.html"
+    },
+    {
+      "source": "/founder",
+      "destination": "/founder.html"
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact.html"
+    },
+    {
+      "source": "/impact",
+      "destination": "/impact.html"
+    },
+    {
+      "source": "/library",
+      "destination": "/library.html"
+    },
+    {
+      "source": "/news",
+      "destination": "/news.html"
     },
     {
       "source": "/ibd-crohns-support",

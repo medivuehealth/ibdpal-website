@@ -48,7 +48,7 @@ FOOTER = """
                     <a href="/privacy" class="footer-link">Privacy</a>
                 </div>
                 <p><strong>IBDPal</strong> · MediVue nonprofit · Education only, not medical advice.</p>
-                <p>&copy; 2025 MediVue. All rights reserved.</p>
+                <p>&copy; 2026 MediVue. All rights reserved.</p>
             </div>
         </footer>
 """

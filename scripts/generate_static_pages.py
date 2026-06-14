@@ -10,6 +10,7 @@ from eeat_blocks import content_note_en, edu_disclaimer_en, hub_disclaimer_en, p
 from es_mirrors import es_url_for_en_path  # noqa: E402
 from seo_head import breadcrumb_json, howto_json, render_seo_head, web_page_json  # noqa: E402
 from site_nav import PAGE_SCRIPTS, TAB_NAV_HTML, site_header_html  # noqa: E402
+from site_footer import SITE_FOOTER_STATIC  # noqa: E402
 from ui_snippets import RESOURCE_TOOLBAR_HTML  # noqa: E402
 
 SITE = "https://www.ibdpal.org"
@@ -17,23 +18,7 @@ EEAT_PATHS = {"/newly-diagnosed", "/visit-prep", "/pediatric-caregivers", "/reso
 
 NAV = TAB_NAV_HTML
 
-FOOTER = """
-        <footer class="footer">
-            <div class="footer-content">
-                <div class="footer-links">
-                    <a href="/ibd-crohns-support" class="footer-link">IBD Crohn's Support</a>
-                    <a href="/resources" class="footer-link">Resource Library</a>
-                    <a href="/newly-diagnosed" class="footer-link">Newly Diagnosed</a>
-                    <a href="/visit-prep" class="footer-link">Visit Prep</a>
-                    <a href="/privacy" class="footer-link">Privacy Policy</a>
-                    <a href="/support" class="footer-link">App Support</a>
-                    <a href="/es/recursos" class="footer-link">Español</a>
-                </div>
-                <p><strong>IBDPal</strong> · MediVue nonprofit · Education only, not medical advice.</p>
-                <p>&copy; 2025 MediVue. All rights reserved.</p>
-            </div>
-        </footer>
-"""
+FOOTER = SITE_FOOTER_STATIC
 
 SCRIPTS = PAGE_SCRIPTS
 
@@ -252,6 +237,237 @@ PAGES = {
                 <p>The app supports medication logging and notification reminders patients configure for infusions, injections, and follow-ups, reducing missed doses between portal messages.</p></section>
                 <section class="seo-landing__block"><h2>Not a medical device</h2>
                 <p>IBDPal does not diagnose, prescribe, or replace clinician judgment. Partner inquiries: <a href="mailto:contactus@ibdpal.org">contactus@ibdpal.org</a> · <a href="/clinical-partnerships">Partnerships</a></p></section>
+            </article>
+        """,
+    ),
+    "about.html": (
+        "About IBDPal | Free IBD Patient Education | MediVue",
+        "IBDPal helps people with Crohn's and ulcerative colitis through free patient education, guides, and a nonprofit iOS tracking app built by MediVue.",
+        "/about",
+        """
+            <article class="support-section seo-landing">
+                <h1>About IBDPal</h1>
+                <p class="support-intro mission-block"><strong>Our mission:</strong> IBDPal helps people with Crohn's disease and ulcerative colitis understand nutrition, flares, and daily management through free patient education and a tracking app from nonprofit MediVue.</p>
+                <section class="seo-landing__block">
+                    <h2>Who we are</h2>
+                    <p><strong>IBDPal</strong> is a program of <strong>MediVue</strong>, a North Carolina 501(c)(3) nonprofit focused on IBD community education and self-management tools. We combine a free iOS app for food and symptom tracking with a growing library of articles, guides, and state support resources on ibdpal.org.</p>
+                    <p>We are not a hospital, drug company, or substitute for your gastroenterologist. Everything on this site is educational. Clinical decisions belong with your care team.</p>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>What you will find here</h2>
+                    <ul class="seo-landing__list">
+                        <li><a href="/blog">50+ in-depth articles</a> on nutrition, treatment basics, wellness, and daily life</li>
+                        <li><a href="/guides">24 step-by-step patient guides</a> for flares, diet, travel, and more</li>
+                        <li><a href="/#community">50 state support pages</a> with chapters and helplines</li>
+                        <li><a href="/library">140+ total education pages</a> including Spanish resources and topic hubs</li>
+                        <li>Free <a href="/#app">IBDPal iOS app</a> for logging meals, symptoms, and visit prep</li>
+                    </ul>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>ImproveCareNow resources</h2>
+                    <p>We highlight select co-produced resources from <a href="https://www.improvecarenow.org/" rel="noopener noreferrer">ImproveCareNow (ICN)</a> under their Creative Commons policy, with attribution and links to originals. IBDPal is not an ICN partner or listed care center.</p>
+                    <p><a href="/blog/icn-accommodations-toolkit-ibd">Browse ICN resource highlights →</a></p>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>Learn more</h2>
+                    <p><a href="/founder">MediVue Founders</a> · <a href="/impact">Impact</a> · <a href="/news">Latest updates</a> · <a href="/clinical-partnerships">Clinical partnerships</a> · <a href="/research">Trusted sources</a></p>
+                    <p>Organizational overview for funders: <a href="/executive-summary">Executive summary</a></p>
+                </section>
+            </article>
+        """,
+    ),
+    "founder.html": (
+        "MediVue Founders | IBD Education Nonprofit | IBDPal",
+        "Meet the MediVue Founders behind IBDPal: a nonprofit building free IBD education and an iOS tracking app for Crohn's and colitis.",
+        "/founder",
+        """
+            <article class="support-section seo-landing">
+                <h1>MediVue Founders</h1>
+                <p class="support-intro">IBDPal began after identifying a gap between clinic visits: hard-to-track meals, unpredictable symptoms, and scattered education online.</p>
+                <section class="seo-landing__block">
+                    <h2>Why we built IBDPal</h2>
+                    <p>The MediVue Founders team set out to build two things: a calm place to log food and symptoms between appointments, and honest, readable education that does not require a medical degree to understand.</p>
+                    <p>We built the <strong>IBDPal iOS app</strong> for daily tracking, micronutrient awareness, and visit summaries. We built <strong>ibdpal.org</strong> as a free library of articles, guides, and state support links so no one starts from zero after diagnosis.</p>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>What the team does today</h2>
+                    <ul class="seo-landing__list">
+                        <li>Write and review patient education articles and guides</li>
+                        <li>Maintain the IBDPal app and website as a MediVue nonprofit program</li>
+                        <li>Curate trusted external resources (AGA, CCF, ImproveCareNow, NIH)</li>
+                        <li>Share ICN Creative Commons materials with proper attribution</li>
+                        <li>Listen to community feedback through support channels and outreach</li>
+                    </ul>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>Nonprofit structure</h2>
+                    <p>MediVue is a 501(c)(3) nonprofit registered in North Carolina. IBDPal is a trademark of MediVue. We pursue grants and community partnerships to keep patient education free.</p>
+                    <p>We are growing participation in the IBD patient community, including ImproveCareNow's Patient Advisory Council pathway, while continuing to publish resources our readers find useful.</p>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>Try IBDPal</h2>
+                    <p><a href="https://apps.apple.com/app/ibdpal" class="app-store-badge" rel="noopener noreferrer">Download on the App Store</a></p>
+                    <p><a href="/about">About IBDPal</a> · <a href="/impact">Our impact</a> · <a href="/contact">Contact us</a></p>
+                </section>
+            </article>
+        """,
+    ),
+    "contact.html": (
+        "Contact IBDPal | MediVue Nonprofit",
+        "Contact MediVue and IBDPal: general inquiries, app support, privacy requests, and partnership questions.",
+        "/contact",
+        """
+            <article class="support-section seo-landing">
+                <h1>Contact IBDPal</h1>
+                <p class="support-intro">Reach the MediVue team by email. We respond to patient, clinician, and partnership inquiries as capacity allows.</p>
+                <section class="seo-landing__block">
+                    <h2>Email</h2>
+                    <ul class="seo-landing__list">
+                        <li><strong>General:</strong> <a href="mailto:info@ibdpal.org">info@ibdpal.org</a></li>
+                        <li><strong>App support:</strong> <a href="mailto:support@ibdpal.org">support@ibdpal.org</a> · <a href="/support">Support page</a></li>
+                        <li><strong>Privacy:</strong> <a href="mailto:privacy@ibdpal.org">privacy@ibdpal.org</a> · <a href="/privacy">Privacy policy</a></li>
+                        <li><strong>Partnerships &amp; outreach:</strong> <a href="mailto:contactus@ibdpal.org">contactus@ibdpal.org</a></li>
+                    </ul>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>Organization</h2>
+                    <p><strong>MediVue</strong> (501(c)(3) nonprofit) · IBDPal patient education program<br>
+                    Website: <a href="https://www.ibdpal.org">ibdpal.org</a></p>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>Before you write</h2>
+                    <p>IBDPal cannot provide personal medical advice by email. For urgent symptoms, contact your gastroenterologist or emergency services. For app how-to questions, see <a href="/support">App Support</a> and <a href="/faq">FAQ</a>.</p>
+                </section>
+            </article>
+        """,
+    ),
+    "impact.html": (
+        "IBDPal Impact | Patient Education & App Reach | MediVue",
+        "IBDPal impact: 140+ free education pages, 50+ articles, App Store reach, and nonprofit mission outcomes for the IBD community.",
+        "/impact",
+        """
+            <article class="support-section seo-landing">
+                <h1>Our Impact</h1>
+                <p class="support-intro">IBDPal measures impact by useful education published, app availability, and community reach, not by replacing clinical care.</p>
+                <section class="seo-landing__block">
+                    <h2>Education library (June 2026)</h2>
+                    <ul class="seo-landing__list">
+                        <li><strong>51+ articles</strong> including ImproveCareNow resource highlights</li>
+                        <li><strong>24 patient guides</strong> for diet, flares, travel, and clinic prep</li>
+                        <li><strong>50 state support pages</strong> with chapters and helplines</li>
+                        <li><strong>140+ total education pages</strong> including hubs, FAQ, glossary, and Spanish resources</li>
+                    </ul>
+                    <p><a href="/library">Browse the full content library →</a></p>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>IBDPal iOS app</h2>
+                    <ul class="seo-landing__list">
+                        <li>Free nutrition and symptom tracking for Crohn's and colitis</li>
+                        <li>App Store search visibility: 1.5K+ impressions (organic)</li>
+                        <li>Visit summary exports for gastroenterology appointments</li>
+                    </ul>
+                    <p><a href="https://apps.apple.com/app/ibdpal" rel="noopener noreferrer">Download on the App Store</a></p>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>Community engagement</h2>
+                    <p>MediVue participates in the broader IBD learning community. We share ImproveCareNow Creative Commons resources with attribution, contribute to patient advisory pathways, and attend community events such as the ICN Community Conference Engagement Fair.</p>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>Mission</h2>
+                    <p class="mission-block">Help people with IBD understand nutrition, flares, and daily management through free education and tools from MediVue.</p>
+                    <p><a href="/about">About</a> · <a href="/founder">MediVue Founders</a> · <a href="/news">Latest updates</a></p>
+                </section>
+            </article>
+        """,
+    ),
+    "library.html": (
+        "IBD Content Library | 140+ Free Education Pages | IBDPal",
+        "Full index of IBDPal education: articles, guides, state support, Spanish pages, ICN resources, and topic hubs for Crohn's and colitis.",
+        "/library",
+        """
+            <article class="support-section seo-landing">
+                <h1>Content Library</h1>
+                <p class="support-intro">Every page below is free patient education from MediVue's IBDPal program. Nothing here replaces your gastroenterologist.</p>
+                <section class="seo-landing__block">
+                    <h2>By the numbers (June 2026)</h2>
+                    <div class="library-stats-grid">
+                        <div class="library-stat"><span class="library-stat__n">51+</span><span class="library-stat__l">Articles</span></div>
+                        <div class="library-stat"><span class="library-stat__n">24</span><span class="library-stat__l">Patient guides</span></div>
+                        <div class="library-stat"><span class="library-stat__n">50</span><span class="library-stat__l">State support pages</span></div>
+                        <div class="library-stat"><span class="library-stat__n">8</span><span class="library-stat__l">Spanish pages</span></div>
+                        <div class="library-stat"><span class="library-stat__n">140+</span><span class="library-stat__l">Total education pages</span></div>
+                    </div>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>Start here</h2>
+                    <ul class="seo-landing__list">
+                        <li><a href="/newly-diagnosed">Newly diagnosed</a></li>
+                        <li><a href="/ibd-nutrition">Nutrition hub</a></li>
+                        <li><a href="/flare-help">Flare help</a></li>
+                        <li><a href="/visit-prep">Visit prep checklist</a></li>
+                        <li><a href="/faq">FAQ</a> · <a href="/glossary">Glossary</a></li>
+                    </ul>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>Articles &amp; guides</h2>
+                    <ul class="seo-landing__list">
+                        <li><a href="/blog">All articles</a> (nutrition, wellness, treatment basics, lifestyle)</li>
+                        <li><a href="/guides">All patient guides</a> (step-by-step topics)</li>
+                        <li><a href="/patient-stories">Patient stories</a></li>
+                    </ul>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>ImproveCareNow highlights (CC attributed)</h2>
+                    <ul class="seo-landing__list">
+                        <li><a href="/blog/icn-accommodations-toolkit-ibd">School &amp; workplace accommodations</a></li>
+                        <li><a href="/blog/icn-college-ibd-toolkit">College &amp; IBD handbook</a></li>
+                        <li><a href="/blog/icn-caregiver-coping-resource">Caregiver coping resource</a></li>
+                        <li><a href="/blog/icn-mental-health-provider-guide">Mental health provider guide</a></li>
+                        <li><a href="/blog/icn-transfer-toolkit-adult-care">Transfer to adult care</a></li>
+                        <li><a href="/blog/icn-ostomy-toolkit-pediatric">Ostomy toolkit</a></li>
+                        <li><a href="/blog/icn-ibd-holidays-special-occasions">Holidays &amp; special occasions</a></li>
+                    </ul>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>Support &amp; tools</h2>
+                    <ul class="seo-landing__list">
+                        <li><a href="/#community">Find support by state</a></li>
+                        <li><a href="/resources">Searchable resource library</a></li>
+                        <li><a href="/research">Trusted clinical sources</a></li>
+                        <li><a href="/#app">IBDPal iOS app</a></li>
+                    </ul>
+                </section>
+            </article>
+        """,
+    ),
+    "news.html": (
+        "IBDPal Updates | Latest Articles & Site News",
+        "What's new on IBDPal: recent articles, ImproveCareNow resource highlights, and site updates from MediVue.",
+        "/news",
+        """
+            <article class="support-section seo-landing">
+                <h1>Latest Updates</h1>
+                <p class="support-intro">Site maintenance and new patient education from MediVue. Last updated June 2026.</p>
+                <section class="seo-landing__block">
+                    <h2>June 2026</h2>
+                    <ul class="seo-landing__list">
+                        <li><strong>New site pages:</strong> <a href="/about">About</a>, <a href="/founder">MediVue Founders</a>, <a href="/contact">Contact</a>, <a href="/impact">Impact</a>, <a href="/library">Content Library</a></li>
+                        <li><strong>7 wellness articles:</strong> <a href="/blog/depression-anxiety-ibd">depression &amp; anxiety</a>, <a href="/blog/probiotics-ibd-gut-health">probiotics</a>, <a href="/blog/micronutrients-ibd-deficiencies">micronutrients</a>, <a href="/blog/stress-coping-strategies-ibd">stress coping</a>, <a href="/blog/ibd-fatigue-brain-fog">fatigue &amp; brain fog</a>, <a href="/blog/ibd-joint-pain-arthritis">joint pain</a>, <a href="/blog/ibd-night-sweats">night sweats</a></li>
+                        <li><strong>7 ICN resource highlights</strong> (Creative Commons attributed): <a href="/blog/icn-accommodations-toolkit-ibd">accommodations</a>, <a href="/blog/icn-college-ibd-toolkit">college</a>, <a href="/blog/icn-caregiver-coping-resource">caregivers</a>, <a href="/blog/icn-mental-health-provider-guide">mental health</a>, <a href="/blog/icn-transfer-toolkit-adult-care">adult transfer</a>, <a href="/blog/icn-ostomy-toolkit-pediatric">ostomy</a>, <a href="/blog/icn-ibd-holidays-special-occasions">holidays</a></li>
+                    </ul>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>Earlier 2026</h2>
+                    <ul class="seo-landing__list">
+                        <li>Lifestyle and treatment articles: travel, biologics, low-residue diet, workplace rights</li>
+                        <li>Patient guides expansion: flares, nutrition, pediatric help, ostomy living</li>
+                        <li>50-state community support map refreshed</li>
+                    </ul>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>Stay current</h2>
+                    <p><a href="/blog">All articles</a> · <a href="/news">This page</a> · <a href="/contact">Contact</a></p>
+                </section>
             </article>
         """,
     ),

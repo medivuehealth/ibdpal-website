@@ -24,6 +24,7 @@ from eeat_blocks import (  # noqa: E402
     reviewed_by_org,
 )
 from site_nav import PAGE_SCRIPTS, SITE_HEADER_HTML, TAB_NAV_HTML  # noqa: E402
+from site_footer import SITE_FOOTER_BLOG  # noqa: E402
 
 SEO_DATA = ROOT / "data" / "seo-expansion.json"
 
@@ -486,23 +487,7 @@ def render_post(p: dict) -> str:
             </div>
         </main>
 
-        <footer class="footer">
-            <div class="footer-content">
-                <div class="footer-links">
-                    <a href="/privacy" class="footer-link">Privacy Policy</a>
-                    <a href="/support" class="footer-link">Support</a>
-                    <a href="/terms" class="footer-link">Terms of Service</a>
-                </div>
-
-                <p><strong>IBDPal iOS App</strong> and <strong>IBDPal.org</strong> are trademarks of MediVue, a nonprofit organization registered in the State of North Carolina.</p>
-
-                <p>&copy; 2025 MediVue. All rights reserved. All content, software, algorithms, user interface designs, and intellectual property associated with IBDPal are proprietary to MediVue and protected by copyright, patent, and other intellectual property laws. No portion of this application or website may be reproduced, distributed, or transmitted without the express written permission of MediVue.</p>
-
-                <p>IBDPal is designed to assist patients in managing their IBD condition but should not replace professional medical advice. Always consult with healthcare providers for medical decisions.</p>
-
-                <p>MediVue is a 501(c)(3) nonprofit organization dedicated to improving healthcare outcomes for patients with inflammatory bowel diseases through innovative technology solutions and community support.</p>
-            </div>
-        </footer>
+{SITE_FOOTER_BLOG}
     </div>
 
     <script src="/blog-votes.js" defer></script>

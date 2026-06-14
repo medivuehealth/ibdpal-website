@@ -52,7 +52,7 @@ ES_FOOTER = """
         <footer class="footer">
             <div class="footer-content">
                 <p><strong>IBDPal</strong> · MediVue · Solo educación, no consejo médico.</p>
-                <p>&copy; 2025 MediVue. <a href="/">ibdpal.org (English)</a></p>
+                <p>&copy; 2026 MediVue. <a href="/">ibdpal.org (English)</a></p>
             </div>
         </footer>
 """

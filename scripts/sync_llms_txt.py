@@ -42,12 +42,45 @@ def section_block(title: str, urls: list[str]) -> str:
     return "\n".join(lines)
 
 
+def site_block() -> str:
+    pages = [
+        f"{SITE}/",
+        f"{SITE}/about",
+        f"{SITE}/founder",
+        f"{SITE}/contact",
+        f"{SITE}/impact",
+        f"{SITE}/library",
+        f"{SITE}/news",
+        f"{SITE}/executive-summary",
+        f"{SITE}/ibd-crohns-support",
+        f"{SITE}/newly-diagnosed",
+        f"{SITE}/visit-prep",
+        f"{SITE}/resources",
+        f"{SITE}/#community",
+        f"{SITE}/pediatric-caregivers",
+        f"{SITE}/patient-stories",
+        f"{SITE}/for-clinicians",
+        f"{SITE}/clinical-partnerships",
+        f"{SITE}/es/recursos",
+        f"{SITE}/privacy",
+        f"{SITE}/support",
+    ]
+    return section_block("## Site", pages)
+
+
 def sync_llms_txt() -> None:
     text = LLMS.read_text(encoding="utf-8")
+    site_section = site_block()
     blog_block = section_block("## Blog (education, not medical advice)", blog_urls())
     guide_block = section_block("## Patient guides (search topics)", guide_urls())
     hub_block = section_block("## SEO hubs & directories", hub_urls())
 
+    text = re.sub(
+        r"## Site\n.*?(?=\n## Blog)",
+        site_section + "\n\n",
+        text,
+        flags=re.DOTALL,
+    )
     text = re.sub(
         r"## Blog \(education, not medical advice\).*?(?=\n## )",
         blog_block + "\n\n",

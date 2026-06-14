@@ -65,12 +65,8 @@ def build_social_list_html() -> str:
                 f'target="_blank" rel="noopener noreferrer" aria-label="{html.escape(label)}">'
                 f"{svg}</a></li>"
             )
-        else:
-            items.append(
-                f'<li><span class="site-social__link site-social__link--pending" '
-                f'title="{html.escape(label)} | add URL in social-links.json" '
-                f'aria-label="{html.escape(label)} (link not configured)">{svg}</span></li>'
-            )
+    if not items:
+        return ""
     return f'<ul class="site-social__list" aria-label="Social media">{"".join(items)}</ul>'
 
 
