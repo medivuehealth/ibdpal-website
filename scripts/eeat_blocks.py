@@ -35,6 +35,14 @@ def edu_disclaimer_en() -> str:
     )
 
 
+def hub_header_footnote_en() -> str:
+    return (
+        f'<p class="hub-header-footnote"><small>'
+        f"Educational only · Reviewed {REVIEW_DISPLAY} · Not medical advice"
+        f"</small></p>\n"
+    )
+
+
 def guide_disclaimer_en() -> str:
     return (
         '<p class="community-edu-disclaimer"><strong>Educational only.</strong> '

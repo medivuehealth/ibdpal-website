@@ -1319,6 +1319,37 @@ a {
     background: #1f2937;
 }
 
+/* Compact topic hub headers (e.g. /ibd-nutrition) */
+.seo-landing.support-section > .blog-back {
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.seo-landing.support-section > h1 {
+    margin: 0 0 0.5rem;
+    font-size: clamp(1.5rem, 4vw, 1.85rem);
+    line-height: 1.2;
+    text-align: left;
+}
+
+.support-intro--hub {
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    text-align: left;
+    margin: 0 0 0.35rem;
+    color: #6B7280;
+}
+
+.hub-header-footnote {
+    margin: 0 0 1rem;
+    color: #9CA3AF;
+    line-height: 1.4;
+}
+
+.hub-header-footnote small {
+    font-size: 0.8125rem;
+}
+
 /* Bright white page chrome — beats legacy off-whites in styles.css */
 body,
 .app-container,

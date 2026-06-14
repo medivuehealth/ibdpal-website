@@ -27,6 +27,7 @@ from eeat_blocks import (  # noqa: E402
     content_note_en,
     edu_disclaimer_en,
     hub_disclaimer_en,
+    hub_header_footnote_en,
     page_review_props,
     patch_blog_eeat,
 )
@@ -363,9 +364,8 @@ def render_hub(hub: dict, posts: dict[str, dict]) -> str:
             <article class="support-section seo-landing" data-track-impression="hub_{hub['slug']}">
                 <p class="blog-back"><a href="/blog" class="blog-back-link">← All blog posts</a> · <a href="/guides">Patient guides</a></p>
                 <h1>{html.escape(hub['h1'])}</h1>
-{content_note_en()}{edu_disclaimer_en()}
-                <p class="support-intro">{html.escape(hub['intro'])}</p>
-                <p class="seo-guide-keywords"><small>Topics: {html.escape(', '.join(hub.get('keywords', [])))}</small></p>
+                <p class="support-intro support-intro--hub">{html.escape(hub['intro'])}</p>
+                {hub_header_footnote_en()}
 {sections}
                 <section class="seo-landing__block"><h2>Patient guides</h2>{link_list(guide_links)}</section>
                 <section class="seo-landing__block"><h2>Related articles</h2><div class="blog-index-grid">{blog_cards(blog_items)}</div></section>

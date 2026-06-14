@@ -34,8 +34,13 @@
 
   function init() {
     var toolbar = document.querySelector('.blog-index-toolbar');
-    var grid = document.querySelector('#blogs .blog-index-grid');
-    if (!toolbar || !grid) return;
+    if (!toolbar) return;
+
+    var grid =
+      toolbar.nextElementSibling && toolbar.nextElementSibling.classList.contains('blog-index-grid')
+        ? toolbar.nextElementSibling
+        : document.querySelector('#articles .blog-index-grid, #blogs .blog-index-grid');
+    if (!grid) return;
 
     var cards = grid.querySelectorAll('.blog-card');
 
