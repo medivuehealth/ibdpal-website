@@ -62,11 +62,18 @@ function initializeTabNavigation() {
     var librarySubButtons = document.querySelectorAll('.library-subtab-button[data-library-subtab]');
     var librarySubContents = document.querySelectorAll('.library-subcontent');
     var librarySubtabBar = document.getElementById('library-subtab-bar');
+    var appSubtabBar = document.getElementById('app-subtab-bar');
 
     function setLibrarySubtabBarVisible(visible) {
         if (!librarySubtabBar) return;
         librarySubtabBar.hidden = !visible;
         librarySubtabBar.classList.toggle('is-active', visible);
+    }
+
+    function setAppSubtabBarVisible(visible) {
+        if (!appSubtabBar) return;
+        appSubtabBar.hidden = !visible;
+        appSubtabBar.classList.toggle('is-active', visible);
     }
 
     function switchLibrarySubTab(subTab, updateURL) {
@@ -136,6 +143,7 @@ function initializeTabNavigation() {
         }
 
         setLibrarySubtabBarVisible(mainTab === 'library');
+        setAppSubtabBarVisible(mainTab === 'app');
 
         if (updateURL) {
             var hash = '';

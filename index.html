@@ -64,11 +64,20 @@
                     <button type="button" class="tab-button" data-tab="about">About</button>
                 </div>
             </nav>
-            <nav class="library-subtab-navigation library-subtab-navigation--dock app-subtab-navigation" id="library-subtab-bar" aria-label="Patient Library sections" hidden>
-                <div class="library-subtab-container app-subtab-container">
-                    <button type="button" class="library-subtab-button app-subtab-button active" data-library-subtab="guides">Guides &amp; tools</button>
-                    <button type="button" class="library-subtab-button app-subtab-button" data-library-subtab="sources">Sources</button>
-                    <button type="button" class="library-subtab-button app-subtab-button" data-library-subtab="articles">Articles</button>
+            <nav class="library-subtab-navigation library-subtab-navigation--dock subtab-navigation--dock" id="library-subtab-bar" aria-label="Patient Library sections" hidden>
+                <div class="library-subtab-container subtab-dock-container">
+                    <button type="button" class="library-subtab-button subtab-dock-button active" data-library-subtab="guides">Guides &amp; tools</button>
+                    <button type="button" class="library-subtab-button subtab-dock-button" data-library-subtab="sources">Sources</button>
+                    <button type="button" class="library-subtab-button subtab-dock-button" data-library-subtab="articles">Articles</button>
+                </div>
+            </nav>
+            <nav class="app-subtab-navigation subtab-navigation--dock" id="app-subtab-bar" aria-label="IBDPal App sections" hidden>
+                <div class="app-subtab-container subtab-dock-container">
+                    <button type="button" class="app-subtab-button subtab-dock-button active" data-app-subtab="download">Download</button>
+                    <button type="button" class="app-subtab-button subtab-dock-button" data-app-subtab="features">Features</button>
+                    <button type="button" class="app-subtab-button subtab-dock-button" data-app-subtab="how-it-works">How it Works</button>
+                    <button type="button" class="app-subtab-button subtab-dock-button" data-app-subtab="screenshots">Screenshots</button>
+                    <button type="button" class="app-subtab-button subtab-dock-button" data-app-subtab="app-research">App research</button>
                 </div>
             </nav>
         </div>
@@ -136,32 +145,6 @@
 
             <!-- IBDPal App Tab (Download, Features, How it Works, Screenshots, Research) -->
             <div class="tab-content" id="app">
-                <nav class="app-subtab-navigation" aria-label="IBDPal App sections">
-                    <div class="app-subtab-container">
-                        <button type="button" class="app-subtab-button active" data-app-subtab="download">Download</button>
-                        <button type="button" class="app-subtab-button" data-app-subtab="features">Features</button>
-                        <button type="button" class="app-subtab-button" data-app-subtab="how-it-works">How it Works</button>
-                        <button type="button" class="app-subtab-button" data-app-subtab="screenshots">Screenshots</button>
-                        <button type="button" class="app-subtab-button" data-app-subtab="app-research">App research</button>
-                    </div>
-                </nav>
-                <p class="app-deep-links app-deep-links--bar" aria-label="App sections">
-                    <span>In the iOS app:</span>
-                    <a href="/#download" data-app-subtab-link="download">Home</a> ·
-                    <a href="/#features" data-app-subtab-link="features">Daily Log</a> ·
-                    <a href="/#screenshots" data-app-subtab-link="screenshots">Trends</a> ·
-                    <a href="/#app-research" data-app-subtab-link="app-research">Insights</a> ·
-                    <a href="/for-clinicians">Export for visits</a>
-                </p>
-
-                <p class="app-website-links" data-track-impression="app_website_links" data-track-label="App tab website education links">
-                    <strong>On this website:</strong>
-                    <a href="/blog/how-ibdpal-nutrition-targets-work">How nutrition targets work</a> ·
-                    <a href="/ibd-nutrition">Nutrition hub</a> ·
-                    <a href="/blog/flare-first-48-hours">First 48 hours of a flare</a> ·
-                    <a href="/visit-prep">Visit prep</a> ·
-                    <a href="/research">Sources</a>
-                </p>
 
                 <div class="app-subcontent active" id="download">
                 <div class="app-hero-premium hero-section hero-section--app-tab" data-track-impression="hero" data-track-label="App download subtab">
@@ -377,8 +360,6 @@
             <!-- Guides & tools -->
             <div class="library-subcontent active" id="guides">
                 <div class="resources-hub" data-resource-library>
-                    <h2 class="resources-hub__title">Guides &amp; tools</h2>
-                    <p class="community-section__lead">Search patient guides, articles, and trusted links for Crohn's disease and ulcerative colitis. <a href="/newly-diagnosed">Newly diagnosed?</a> Start here. Educational only, not medical advice.</p>
                     <div class="resource-library__toolbar resource-library__toolbar--premium">
                         <div class="resource-library__search-wrap">
                             <svg class="resource-library__search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3-3"/></svg>
@@ -418,8 +399,6 @@
             <!-- Sources -->
             <div class="library-subcontent" id="sources">
                 <div class="research-hub" data-track-impression="research_tab" data-track-label="Research sources tab">
-                    <h2 class="resources-hub__title">Trusted sources</h2>
-                    <p class="community-section__lead">Peer-reviewed and clinical guidance on Crohn&#x27;s disease and ulcerative colitis nutrition. IBDPal uses NIH Dietary Reference Intakes for baseline tracking goals in the app. Disease-specific increases belong with your care team. Not medical advice.</p>
                 <section class="seo-landing__block research-methodology">
                     <h2>How IBDPal nutrition baselines work</h2>
                     <ul class="seo-landing__list"><li>Baseline macronutrient and micronutrient targets follow U.S. Dietary Reference Intakes (DRI) from NIH, adjusted by age and sex.</li><li>Calorie, protein, and fluid estimates also consider basic profile inputs such as current weight. A single formula like 30 kcal per kg is not enough for every patient.</li><li>Higher calorie, protein, vitamin, or mineral needs during active disease, malabsorption, or deficiency are clinical decisions made with your gastroenterologist or IBD dietitian.</li><li>IBDPal tracks food and fluids against general reference levels. It does not prescribe supplements or replace medical nutrition therapy.</li><li>AGA guidance and IBD research explain when labs and dietitian visits matter. DRI tables define population reference ranges; your team personalizes targets.</li></ul>
@@ -440,17 +419,11 @@
             <!-- Articles -->
             <div class="library-subcontent" id="articles">
                 <div class="blogs-section blogs-section--magazine" data-track-impression="blogs_index" data-track-label="Blog index cards">
-                    <div class="blogs-section-title-row">
-                        <img src="/blogs/assets/ibdpal-tracking/ibdpal_app_tracker_1.png" alt="" class="blogs-section-icon" width="64" height="64" decoding="async">
-                        <h3>Patient articles</h3>
-                    </div>
-                    <p class="support-intro" style="margin-top:0.5rem;margin-bottom:1.25rem;">
-                        <a href="/blog">Full article index</a> ·
+                    <p class="library-panel-links">
+                        <a href="/blog">Full index</a> ·
                         <a href="/ibd-nutrition">Nutrition</a> ·
-                        <a href="/teens-and-school">Teens &amp; school</a> ·
                         <a href="/flare-help">Flare help</a> ·
-                        <a href="/faq">FAQ</a> ·
-                        <a href="/support">Support by state</a>
+                        <a href="/faq">FAQ</a>
                     </p>
 
                     <div class="blog-index-toolbar" role="group" aria-label="Filter articles">
@@ -916,15 +889,11 @@
             <!-- Support Tab -->
             <div class="tab-content" id="community">
                 <div class="community-section" data-track-impression="community_tab" data-track-label="IBD community map">
-                    <div class="community-section__header">
-                        <h2 class="community-section__title">IBD &amp; Crohn's Support | Community Resources</h2>
-                        <p class="community-section__lead">
-                            Looking for <strong>IBD Crohn's support</strong> near you? Browse national and state-level organizations for
-                            Crohn’s disease, ulcerative colitis, and related conditions. Click a state on the map or choose from the list, starting
-                            with detailed listings for <strong>North Carolina</strong>. See also our
-                            <a href="/ibd-crohns-support">dedicated support guide</a>.
+                    <div class="community-section__header community-section__header--compact">
+                        <h2 class="community-section__title">Find IBD support near you</h2>
+                        <p class="community-section__lead community-section__lead--compact">
+                            Browse national and state organizations. <a href="/ibd-crohns-support">Support guide</a>
                         </p>
-                        <p class="community-edu-disclaimer"><strong>Directory only.</strong> IBDPal does not provide medical advice. Contact information may change; confirm details on each organization’s website.</p>
                     </div>
 
                     <div class="community-zip-row">

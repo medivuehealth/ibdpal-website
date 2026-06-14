@@ -31,10 +31,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* Header — clean white with purple accent */
+/* Header — light lavender tint, white page below */
 .header {
-    background: #ffffff;
-    border-bottom: 1px solid var(--ibd-border);
+    background: var(--ibd-header-bg, #F8F5FF);
+    border-bottom: 1px solid var(--ibd-header-border, #E9DDFB);
     box-shadow: none;
     position: relative;
 }
@@ -89,10 +89,11 @@ body {
     border-top-color: var(--ibd-border);
 }
 
-.library-subtab-navigation--dock .library-subtab-button.active {
+.library-subtab-navigation--dock .library-subtab-button.active,
+.subtab-navigation--dock .subtab-dock-button.active {
     color: var(--ibd-primary);
     font-weight: 700;
-    border-bottom: 3px solid var(--ibd-primary);
+    border-bottom: 2px solid var(--ibd-primary);
 }
 
 .tab-button {
@@ -156,8 +157,8 @@ body {
 
 /* Homepage hero — Apple Health typography */
 .home-hero {
-    padding: clamp(2rem, 5vw, 3.5rem) var(--ibd-content-pad) clamp(1.75rem, 4vw, 2.5rem);
-    background: linear-gradient(180deg, rgba(139, 92, 246, 0.06) 0%, rgba(244, 114, 182, 0.04) 45%, #FFFFFF 100%);
+    padding: clamp(1.25rem, 3vw, 2rem) var(--ibd-content-pad) clamp(1rem, 2.5vw, 1.5rem);
+    background: linear-gradient(180deg, rgba(139, 92, 246, 0.05) 0%, rgba(244, 114, 182, 0.03) 40%, #FFFFFF 100%);
     text-align: center;
 }
 
@@ -981,24 +982,26 @@ body {
 
 /* Mission hero (homepage) */
 .mission-hero {
-    margin: 0 0 1.5rem;
+    margin: 0 0 1.25rem;
     padding: 1.25rem 1.5rem;
-    background: linear-gradient(135deg, rgba(153, 51, 204, 0.08), rgba(99, 102, 241, 0.06));
-    border: 1px solid rgba(153, 51, 204, 0.15);
-    border-radius: 14px;
+    background: #ffffff;
+    border: 1px solid var(--ibd-border);
+    border-radius: var(--ibd-radius-md);
+    box-shadow: var(--ibd-shadow-sm);
 }
 
 .mission-hero__title {
     margin: 0 0 0.5rem;
-    font-size: 1.35rem;
+    font-size: clamp(1.35rem, 3vw, 1.65rem);
     font-weight: 700;
-    color: #1a1a2e;
+    color: #222222;
 }
 
 .mission-hero__text {
     margin: 0 0 0.5rem;
-    line-height: 1.6;
-    color: #374151;
+    line-height: 1.65;
+    color: #6B7280;
+    font-weight: 400;
 }
 
 .mission-hero__links {
@@ -1007,22 +1010,44 @@ body {
 }
 
 .library-hub-footer {
-    margin-top: 2rem;
-    padding: 1rem 1.1rem;
-    background: #f8f9fc;
-    border: 1px solid rgba(153, 51, 204, 0.12);
+    margin-top: 1.5rem;
+    padding: 0.85rem 1rem;
+    background: var(--ibd-bg-alt);
+    border: 1px solid var(--ibd-border);
     border-radius: var(--ibd-radius-md, 10px);
 }
 
 .library-hub-footer__text {
     margin: 0;
-    font-size: 0.9rem;
-    line-height: 1.55;
-    color: #4b5563;
+    font-size: 0.8125rem;
+    line-height: 1.5;
+    color: #6B7280;
 }
 
 #library .library-subcontent {
-    padding-top: 1rem;
+    padding-top: 0.75rem;
+}
+
+#articles .blogs-section-title-row {
+    display: none;
+}
+
+.library-panel-links {
+    margin: 0 0 0.75rem;
+    font-size: 0.8125rem;
+    color: #6B7280;
+}
+
+.library-panel-links a {
+    color: var(--ibd-primary);
+    font-weight: 500;
+}
+
+.mission-block {
+    padding: 1rem 1.25rem;
+    background: var(--ibd-bg-alt);
+    border-left: 3px solid var(--ibd-primary);
+    border-radius: 0 var(--ibd-radius-sm) var(--ibd-radius-sm) 0;
 }
 
 .mission-hero--tab .mission-hero__title {
@@ -1035,16 +1060,9 @@ body {
 
 @media (max-width: 1100px) {
     .tab-navigation .tab-button {
-        padding: 0.85rem 0.75rem;
-        font-size: 0.85rem;
+        padding: 0.55rem 0.65rem;
+        font-size: 0.8125rem;
     }
-}
-
-.mission-block {
-    padding: 1rem 1.25rem;
-    background: #f8f9ff;
-    border-left: 4px solid #9933cc;
-    border-radius: 0 8px 8px 0;
 }
 
 .library-stats-grid {
@@ -1058,15 +1076,16 @@ body {
     text-align: center;
     padding: 1rem;
     background: #fff;
-    border: 1px solid rgba(153, 51, 204, 0.12);
-    border-radius: 12px;
+    border: 1px solid var(--ibd-border);
+    border-radius: var(--ibd-radius-md);
+    box-shadow: var(--ibd-shadow-sm);
 }
 
 .library-stat__n {
     display: block;
     font-size: 1.75rem;
     font-weight: 800;
-    color: #9933cc;
+    color: var(--ibd-primary);
 }
 
 .library-stat__l {
@@ -1089,4 +1108,214 @@ body {
     margin: 0 0 0.75rem;
     font-size: 1.1rem;
     color: #166534;
+}
+
+/* ── Sitewide health UI (tabs + inner pages) ── */
+.container,
+.app-container {
+    background: #ffffff;
+}
+
+a {
+    color: var(--ibd-primary);
+}
+
+.tab-page-section,
+.support-section,
+.legal-section,
+.seo-landing {
+    color: var(--ibd-text);
+}
+
+.tab-page-section h1,
+.support-section h1,
+.legal-section h1 {
+    font-family: var(--ibd-font-display);
+    font-size: clamp(1.5rem, 3.5vw, 2rem);
+    font-weight: 700;
+    color: #222222;
+    letter-spacing: -0.03em;
+    margin: 0 0 0.5rem;
+}
+
+.tab-page-section h2,
+.support-section h2,
+.seo-landing__block h2,
+.community-section__title {
+    font-family: var(--ibd-font-display);
+    font-size: clamp(1.15rem, 2.5vw, 1.35rem);
+    font-weight: 700;
+    color: #222222;
+    letter-spacing: -0.02em;
+}
+
+.support-intro,
+.community-section__lead,
+.last-updated {
+    color: #6B7280;
+    font-weight: 400;
+    line-height: 1.65;
+    font-size: 1rem;
+}
+
+.community-section__header--compact {
+    margin-bottom: 1rem;
+}
+
+.community-section__lead--compact {
+    margin: 0;
+    font-size: 0.9375rem;
+}
+
+.seo-landing__block {
+    margin: 1.25rem 0;
+    padding: 1.25rem 1.35rem;
+    background: #ffffff;
+    border: 1px solid var(--ibd-border);
+    border-radius: var(--ibd-radius-md);
+    box-shadow: var(--ibd-shadow-sm);
+}
+
+.feature-card,
+.preview-card,
+.benefit-card,
+.research-source-card {
+    background: #ffffff;
+    border: 1px solid var(--ibd-border);
+    border-radius: var(--ibd-radius-md);
+    box-shadow: var(--ibd-shadow-sm);
+    transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.2s ease;
+}
+
+.feature-card:hover,
+.preview-card:hover,
+.benefit-card:hover,
+.research-source-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(139, 92, 246, 0.28);
+    box-shadow: var(--ibd-shadow-md);
+}
+
+.feature-card h4,
+.preview-card h4,
+.benefit-card h4,
+.research-source-card h3 {
+    color: #222222;
+    font-weight: 700;
+}
+
+.blog-edu-disclaimer,
+.community-edu-disclaimer {
+    font-size: 0.8125rem;
+    color: #6B7280;
+    background: var(--ibd-bg-alt);
+    border: 1px solid var(--ibd-border);
+    border-left: 3px solid var(--ibd-primary);
+    border-radius: 0 var(--ibd-radius-sm) var(--ibd-radius-sm) 0;
+    padding: 0.65rem 0.85rem;
+    line-height: 1.5;
+}
+
+.community-detail,
+.community-map,
+.discovery-dashboard__panel {
+    background: #ffffff;
+    border: 1px solid var(--ibd-border);
+    border-radius: var(--ibd-radius-md);
+    box-shadow: var(--ibd-shadow-sm);
+}
+
+.signup-section {
+    background: var(--ibd-bg-alt);
+    border: 1px solid var(--ibd-border);
+    border-radius: var(--ibd-radius-md);
+    padding: 1.25rem 1.35rem;
+}
+
+.signup-section h3 {
+    font-weight: 700;
+    color: #222222;
+}
+
+.input-group button,
+.community-zip-btn,
+.resource-pill.is-active,
+.blog-pill.is-active {
+    background: var(--ibd-primary);
+    border-color: var(--ibd-primary);
+}
+
+.input-group button:hover,
+.community-zip-btn:hover {
+    background: var(--ibd-primary-dark);
+}
+
+.resource-pill,
+.blog-pill {
+    border: 1px solid var(--ibd-border);
+    background: #ffffff;
+    color: #6B7280;
+    border-radius: 999px;
+}
+
+.resource-pill.is-active,
+.blog-pill.is-active {
+    color: #ffffff;
+}
+
+.resource-library__toolbar--premium {
+    margin-bottom: 0.75rem;
+}
+
+#community.tab-content,
+#updates.tab-content,
+#about.tab-content {
+    background: var(--ibd-bg-alt);
+}
+
+#community .community-section,
+#updates .tab-page-section,
+#about .tab-page-section {
+    background: #ffffff;
+    border: 1px solid var(--ibd-border);
+    border-radius: var(--ibd-radius-md);
+    padding: clamp(1rem, 2.5vw, 1.5rem);
+    box-shadow: var(--ibd-shadow-sm);
+}
+
+.hero-catchphrase,
+.hero-title {
+    color: #222222;
+    font-weight: 700;
+}
+
+.hero-tagline {
+    color: #6B7280;
+    font-weight: 500;
+    border-left-color: var(--ibd-primary);
+    border-right-color: var(--ibd-primary);
+}
+
+.hero-description {
+    color: #6B7280;
+    line-height: 1.65;
+}
+
+.highlight-text {
+    color: var(--ibd-primary);
+}
+
+.features-section h3,
+.blogs-section h3,
+.resources-hub h3 {
+    color: #222222;
+    font-weight: 700;
+}
+
+.app-subcontent {
+    padding-top: 0.75rem;
+}
+
+.footer {
+    background: #1f2937;
 }
