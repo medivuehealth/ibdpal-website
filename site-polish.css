@@ -14,7 +14,7 @@
     --ibd-radius-md: 14px;
     --ibd-radius-sm: 10px;
     --ibd-gradient-brand: linear-gradient(180deg, #8B5CF6 0%, #C084FC 55%, #FDF4FF 85%, #FFFFFF 100%);
-    --ibd-gradient-soft: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%);
+    --ibd-gradient-soft: #ffffff;
     --ibd-font-display: "Plus Jakarta Sans", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
@@ -31,10 +31,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* Header — light lavender tint, white page below */
+/* Header — light coral tint (logo bar only); page stays white */
 .header {
-    background: var(--ibd-header-bg, #F8F5FF);
-    border-bottom: 1px solid var(--ibd-header-border, #E9DDFB);
+    background: var(--ibd-header-bg, #FFF4F1);
+    border-bottom: 1px solid var(--ibd-header-border, #FFD8CF);
     box-shadow: none;
     position: relative;
 }
@@ -61,7 +61,7 @@ body {
 
 .site-social__link {
     border-radius: 10px;
-    background: var(--ibd-bg-alt);
+    background: rgba(255, 255, 255, 0.85);
     color: var(--ibd-primary);
 }
 
@@ -84,8 +84,9 @@ body {
     box-shadow: none;
 }
 
-.library-subtab-navigation--dock {
-    background: var(--ibd-bg-alt);
+.library-subtab-navigation--dock,
+.subtab-navigation--dock {
+    background: #ffffff;
     border-top-color: var(--ibd-border);
 }
 
@@ -105,7 +106,7 @@ body {
 }
 
 .tab-button:hover {
-    background: var(--ibd-bg-alt);
+    background: rgba(15, 23, 42, 0.04);
     color: var(--ibd-text);
 }
 
@@ -128,10 +129,10 @@ body {
     background: var(--ibd-primary);
 }
 
-/* Main panels */
+/* Main panels — white throughout; lavender is header-only */
 .main-content,
 .tab-content {
-    background: transparent;
+    background: #ffffff;
 }
 
 #home.tab-content {
@@ -155,10 +156,10 @@ body {
     }
 }
 
-/* Homepage hero — Apple Health typography */
+/* Homepage hero — white, typography only */
 .home-hero {
     padding: clamp(1.25rem, 3vw, 2rem) var(--ibd-content-pad) clamp(1rem, 2.5vw, 1.5rem);
-    background: linear-gradient(180deg, rgba(139, 92, 246, 0.05) 0%, rgba(244, 114, 182, 0.03) 40%, #FFFFFF 100%);
+    background: #ffffff;
     text-align: center;
 }
 
@@ -181,12 +182,12 @@ body {
     color: #6B7280;
 }
 
-/* Start-here hub — card grid on alt background */
+/* Start-here hub — white page, elevated cards */
 .start-here-hub {
     position: relative;
     margin: 0;
     padding: clamp(2rem, 4vw, 3rem) var(--ibd-content-pad) clamp(2.5rem, 5vw, 3.5rem);
-    background: var(--ibd-bg-alt);
+    background: #ffffff;
     border: none;
     border-radius: 0;
     box-shadow: none;
@@ -518,7 +519,7 @@ body {
 /* ── Phase 2: App download hero ── */
 .app-hero-premium {
     padding: clamp(1.5rem, 4vw, 3rem) 0 2rem;
-    background: linear-gradient(180deg, rgba(139, 92, 246, 0.05) 0%, rgba(244, 114, 182, 0.03) 40%, #FFFFFF 100%);
+    background: #ffffff;
     border-radius: var(--ibd-radius-lg);
     margin-bottom: 1rem;
 }
@@ -1012,7 +1013,7 @@ body {
 .library-hub-footer {
     margin-top: 1.5rem;
     padding: 0.85rem 1rem;
-    background: var(--ibd-bg-alt);
+    background: #ffffff;
     border: 1px solid var(--ibd-border);
     border-radius: var(--ibd-radius-md, 10px);
 }
@@ -1045,7 +1046,8 @@ body {
 
 .mission-block {
     padding: 1rem 1.25rem;
-    background: var(--ibd-bg-alt);
+    background: #ffffff;
+    border: 1px solid var(--ibd-border);
     border-left: 3px solid var(--ibd-primary);
     border-radius: 0 var(--ibd-radius-sm) var(--ibd-radius-sm) 0;
 }
@@ -1208,7 +1210,7 @@ a {
 .community-edu-disclaimer {
     font-size: 0.8125rem;
     color: #6B7280;
-    background: var(--ibd-bg-alt);
+    background: #ffffff;
     border: 1px solid var(--ibd-border);
     border-left: 3px solid var(--ibd-primary);
     border-radius: 0 var(--ibd-radius-sm) var(--ibd-radius-sm) 0;
@@ -1226,10 +1228,11 @@ a {
 }
 
 .signup-section {
-    background: var(--ibd-bg-alt);
+    background: #ffffff;
     border: 1px solid var(--ibd-border);
     border-radius: var(--ibd-radius-md);
     padding: 1.25rem 1.35rem;
+    box-shadow: var(--ibd-shadow-sm);
 }
 
 .signup-section h3 {
@@ -1270,17 +1273,17 @@ a {
 #community.tab-content,
 #updates.tab-content,
 #about.tab-content {
-    background: var(--ibd-bg-alt);
+    background: #ffffff;
 }
 
 #community .community-section,
 #updates .tab-page-section,
 #about .tab-page-section {
     background: #ffffff;
-    border: 1px solid var(--ibd-border);
-    border-radius: var(--ibd-radius-md);
-    padding: clamp(1rem, 2.5vw, 1.5rem);
-    box-shadow: var(--ibd-shadow-sm);
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    box-shadow: none;
 }
 
 .hero-catchphrase,

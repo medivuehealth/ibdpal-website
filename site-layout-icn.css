@@ -22,7 +22,7 @@
     height: 34px;
     border-radius: 8px;
     color: var(--ibd-primary);
-    background: var(--ibd-bg-alt);
+    background: rgba(255, 255, 255, 0.85);
     text-decoration: none;
     transition: background 0.2s ease, color 0.2s ease;
 }
@@ -58,8 +58,8 @@
     --ibd-bg-alt: #F8FAFC;
     --ibd-surface: #ffffff;
     --ibd-border: #E5E7EB;
-    --ibd-header-bg: #F8F5FF;
-    --ibd-header-border: #E9DDFB;
+    --ibd-header-bg: #FFF4F1;
+    --ibd-header-border: #FFD8CF;
     --ibd-content-pad: clamp(1rem, 2.5vw, 2rem);
 }
 
@@ -79,12 +79,12 @@ body {
     min-height: auto;
 }
 
-/* Brand header: light lavender tint for separation from white page */
+/* Brand header: light coral tint (logo header only) */
 .header {
-    background: var(--ibd-header-bg, #F8F5FF);
+    background: var(--ibd-header-bg, #FFF4F1);
     margin: 0;
     padding: 0;
-    border-bottom: 1px solid var(--ibd-header-border, #E9DDFB);
+    border-bottom: 1px solid var(--ibd-header-border, #FFD8CF);
     box-shadow: none;
 }
 
@@ -306,7 +306,7 @@ body {
     border-bottom: none;
     margin: 0;
     padding: 0;
-    background: var(--ibd-bg-alt);
+    background: #ffffff;
 }
 
 .subtab-dock-container {
