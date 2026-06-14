@@ -270,7 +270,7 @@ body {
     border-radius: 0;
     box-shadow: none;
     margin-bottom: 0;
-    padding: clamp(1rem, 2.5vw, 1.5rem) var(--ibd-content-pad) clamp(1.5rem, 3vw, 2.5rem);
+    padding: clamp(0.5rem, 1.2vw, 0.75rem) var(--ibd-content-pad) clamp(1rem, 2vw, 1.35rem);
     min-height: 50vh;
     width: 100%;
     max-width: none;
@@ -513,29 +513,30 @@ body {
 
 .support-section h1,
 .seo-landing h1 {
-    font-size: clamp(1.65rem, 4vw, 2.15rem);
+    font-size: clamp(1.2rem, 2.8vw, 1.5rem);
     color: var(--ibd-text);
     text-align: left;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.3rem;
 }
 
 .support-intro {
-    font-size: 1.05rem;
+    font-size: 0.875rem;
     color: var(--ibd-muted);
-    line-height: 1.65;
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
 }
 
 .seo-landing__block {
-    margin-top: 2rem;
+    margin-top: 0.85rem;
     padding-top: 0;
 }
 
 .seo-landing__block h2 {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     color: var(--ibd-primary);
     border-bottom: 2px solid rgba(153, 51, 204, 0.2);
-    padding-bottom: 0.35rem;
-    margin-bottom: 0.75rem;
+    padding-bottom: 0.25rem;
+    margin-bottom: 0.5rem;
 }
 
 /* Blog index cards | ICN “Stay in the LOOP” feed feel */
