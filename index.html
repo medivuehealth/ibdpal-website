@@ -25,7 +25,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="IBDPal | IBD &amp; Crohn's Support, Free App &amp; Resources">
     <meta name="twitter:description" content="IBD and Crohn's support: free app, U.S. community map, and tools for Crohn's disease and ulcerative colitis.">
-    <style>.tab-content:not(.active){display:none!important}.app-subcontent:not(.active){display:none!important}.library-subcontent:not(.active){display:none!important}</style>
+    <style>.tab-content:not(.active){display:none!important}.app-subcontent:not(.active){display:none!important}.library-subcontent:not(.active){display:none!important}.about-subcontent:not(.active){display:none!important}</style>
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="/site-layout-icn.css">
     <link rel="stylesheet" href="/site-polish.css">
@@ -55,13 +55,20 @@
         <!-- Main + library sub-tabs (sticky dock for mobile) -->
         <div class="main-tab-dock" id="main-tab-dock">
             <nav class="tab-navigation" aria-label="Main">
-                <div class="tab-container">
-                    <button type="button" class="tab-button active" data-tab="home">Home</button>
-                    <button type="button" class="tab-button" data-tab="library">Patient Library</button>
-                    <button type="button" class="tab-button" data-tab="app">IBDPal App</button>
-                    <button type="button" class="tab-button" data-tab="community">Support</button>
-                    <button type="button" class="tab-button" data-tab="updates">Updates</button>
-                    <button type="button" class="tab-button" data-tab="about">About</button>
+            <div class="tab-container">
+                <button type="button" class="tab-button active" data-tab="home">Home</button>
+                <button type="button" class="tab-button" data-tab="library">Patient Library</button>
+                <button type="button" class="tab-button" data-tab="app">IBDPal App</button>
+                <button type="button" class="tab-button" data-tab="community">Support</button>
+                <button type="button" class="tab-button" data-tab="news">News</button>
+                <button type="button" class="tab-button" data-tab="about">About</button>
+            </div>
+        </nav>
+            <nav class="about-subtab-navigation subtab-navigation--dock" id="about-subtab-bar" aria-label="About sections" hidden>
+                <div class="about-subtab-container subtab-dock-container">
+                    <button type="button" class="about-subtab-button subtab-dock-button active" data-about-subtab="about-overview">About</button>
+                    <button type="button" class="about-subtab-button subtab-dock-button" data-about-subtab="site-updates">Updates</button>
+                    <button type="button" class="about-subtab-button subtab-dock-button" data-about-subtab="metrics">Analytics</button>
                 </div>
             </nav>
             <nav class="library-subtab-navigation library-subtab-navigation--dock subtab-navigation--dock" id="library-subtab-bar" aria-label="Patient Library sections" hidden>
@@ -915,10 +922,127 @@
                 </div>
             </div>
 
-            <!-- Updates Tab -->
-            <div class="tab-content" id="updates">
+            <!-- News Tab -->
+            <div class="tab-content" id="news">
                 <article class="support-section seo-landing tab-page-section">
-                    <h1>Latest Updates</h1>
+                    <h1>IBD Policy &amp; Advocacy News</h1>
+                    <p class="support-intro">Highlights on federal and state legislation affecting people with Crohn&rsquo;s disease and ulcerative colitis. Summaries link to the <a href="https://www.crohnscolitisfoundation.org/" rel="noopener noreferrer">Crohn&rsquo;s &amp; Colitis Foundation</a> and public sources. Education only, not legal advice.</p>
+
+                    <section class="seo-landing__block ibd-news-featured">
+                        <h2>Under review</h2>
+                        <article class="ibd-news-card">
+                            <p class="ibd-news-card__tag">Federal regulation &middot; Prior authorization</p>
+                            <h3 class="ibd-news-card__title">Days, not weeks: faster prior authorization decisions</h3>
+                            <p>The federal <strong>CMS Interoperability and Prior Authorization Final Rule (CMS-0057-F)</strong> sets maximum turnaround times for many government-backed plans (Medicare Advantage, Medicaid managed care, CHIP, and Affordable Care Act marketplace plans). Insurers must approve or deny <strong>urgent</strong> requests within <strong>72 hours</strong> and <strong>standard</strong> requests within <strong>7 calendar days</strong>.</p>
+                            <p>This is a crucial first step toward shorter waits for IBD tests and treatments. Patient advocates are urging federal officials to fully implement and expand these protections.</p>
+                            <p class="ibd-news-card__actions">
+                                <a href="https://www.cms.gov/newsroom/fact-sheets/cms-interoperability-and-prior-authorization-final-rule-cms-0057-f" rel="noopener noreferrer">CMS fact sheet</a>
+                                &middot;
+                                <a href="https://www.crohnscolitisfoundation.org/your-guide-to-navigating-prior-authorization" rel="noopener noreferrer">CCF prior authorization guide</a>
+                                &middot;
+                                <a href="https://www.crohnscolitisfoundation.org/get-involved/be-an-advocate/action-center" rel="noopener noreferrer">Take action (CCF)</a>
+                            </p>
+                        </article>
+                        <article class="ibd-news-card">
+                            <p class="ibd-news-card__tag">Congress &middot; Step therapy</p>
+                            <h3 class="ibd-news-card__title">Safe Step Act: reforming fail-first protocols</h3>
+                            <p>The <strong>Safe Step Act</strong> (H.R. 2630 / S. 652) would create a clearer appeal process when insurers require patients to try and fail on preferred drugs before covering a provider-prescribed treatment. More than 40% of IBD patients report experiencing step therapy barriers.</p>
+                            <p>At a recent U.S. House committee hearing, lawmakers highlighted how step therapy can leave patients behind. The Crohn&rsquo;s &amp; Colitis Foundation continues grassroots advocacy on Capitol Hill for commonsense reform.</p>
+                            <p class="ibd-news-card__actions">
+                                <a href="https://www.crohnscolitisfoundation.org/get-involved/be-advocate/advocacy-priorities/step-therapy/federal-safe-step-act" rel="noopener noreferrer">Safe Step Act overview</a>
+                                &middot;
+                                <a href="https://action.crohnscolitisfoundation.org/a/ssa-webpage" rel="noopener noreferrer">Ask Congress to pass it</a>
+                            </p>
+                        </article>
+                    </section>
+
+                    <section class="seo-landing__block">
+                        <h2>Recently approved &amp; in effect</h2>
+                        <ul class="seo-landing__list">
+                            <li><strong>Jan. 1, 2026:</strong> Faster prior authorization decision timelines under CMS-0057-F begin for impacted federal plans</li>
+                            <li><strong>March 31, 2026:</strong> First public prior authorization performance metrics due from impacted payers</li>
+                            <li><strong>Jan. 1, 2027:</strong> Prior authorization and interoperability FHIR APIs required in production (next implementation milestone)</li>
+                        </ul>
+                    </section>
+
+                    <section class="seo-landing__block">
+                        <h2>Advocacy highlights</h2>
+                        <ul class="seo-landing__list">
+                            <li><strong>Capitol Hill briefing:</strong> The Crohn&rsquo;s &amp; Colitis Foundation hosted a bipartisan briefing on how additional federal IBD research investment could accelerate prevention and treatment progress</li>
+                            <li><strong>Step therapy in Congress:</strong> Rep. Lucy McBath cited an IBD volunteer&rsquo;s story at a House committee hearing, calling step therapy a sweeping mandate that too often leaves patients behind</li>
+                            <li><strong>Prior auth pushback:</strong> After thousands of patient letters and a rally, UnitedHealthcare delayed a planned expansion of prior authorization for many endoscopy and colonoscopy procedures</li>
+                        </ul>
+                        <p><em>Source: Crohn&rsquo;s &amp; Colitis Foundation federal and grassroots advocacy updates.</em></p>
+                    </section>
+
+                    <section class="seo-landing__block">
+                        <h2>Take action</h2>
+                        <ul class="seo-landing__list">
+                            <li><a href="https://www.crohnscolitisfoundation.org/get-involved/be-an-advocate/action-center" rel="noopener noreferrer">CCF Action Center</a> &mdash; contact lawmakers in two clicks</li>
+                            <li><a href="https://action.crohnscolitisfoundation.org/a/ssa-webpage" rel="noopener noreferrer">Support the Safe Step Act</a></li>
+                            <li><a href="https://www.crohnscolitisfoundation.org/science-and-professionals/program-materials/appeal-letters" rel="noopener noreferrer">Appeal letter templates</a> for denied biologics and treatments</li>
+                            <li><a href="https://www.crohnscolitisfoundation.org/get-involved/be-an-advocate/advocacy-priorities/step-therapy/state-legislation" rel="noopener noreferrer">Step therapy state legislation</a></li>
+                        </ul>
+                    </section>
+
+                    <section class="seo-landing__block">
+                        <h2>More resources</h2>
+                        <p><a href="/#site-updates" data-about-subtab-link="site-updates">IBDPal site updates</a> &middot; <a href="/#about">About MediVue</a> &middot; <a href="/research">Trusted clinical sources</a> &middot; <a href="/#community">Find support by state</a></p>
+                    </section>
+                </article>
+            </div>
+
+            <!-- About Tab -->
+            <div class="tab-content" id="about">
+                <div class="about-subcontent active" id="about-overview">
+                <article class="support-section seo-landing tab-page-section">
+                    <section class="mission-hero mission-hero--tab" aria-labelledby="about-mission-heading">
+                        <h1 id="about-mission-heading" class="mission-hero__title">Free nonprofit IBD education from MediVue</h1>
+                        <p class="mission-hero__text">IBDPal helps people with Crohn's disease and ulcerative colitis understand nutrition, flares, and daily management through <strong>140+ free education pages</strong> and a nonprofit iOS tracking app.</p>
+                    </section>
+                    <p class="support-intro mission-block"><strong>Our mission:</strong> Free patient education and self-management tools for the IBD community, from nonprofit MediVue. Not medical advice; always work with your care team.</p>
+                    <section class="seo-landing__block">
+                        <h2>Who we are</h2>
+                        <p><strong>IBDPal</strong> is a program of <strong>MediVue</strong>, a North Carolina 501(c)(3) nonprofit focused on IBD community education. We combine a free iOS app with articles, guides, and state support resources on ibdpal.org.</p>
+                    </section>
+                    <section class="seo-landing__block">
+                        <h2>What you will find here</h2>
+                        <ul class="seo-landing__list">
+                            <li><a href="/#articles">51+ in-depth articles</a> on nutrition, treatment, wellness, and daily life</li>
+                            <li><a href="/guides">24 step-by-step patient guides</a></li>
+                            <li><a href="/#community">50 state support pages</a></li>
+                            <li><a href="/library">140+ total education pages</a></li>
+                            <li>Free <a href="/#app">IBDPal iOS app</a></li>
+                        </ul>
+                    </section>
+                    <section class="seo-landing__block" id="medivue-founders">
+                        <h2>MediVue Founders</h2>
+                        <p>IBDPal began after identifying a gap between clinic visits: hard-to-track meals, unpredictable symptoms, and scattered education online.</p>
+                        <p>The MediVue Founders team set out to build a calm place to log food and symptoms between appointments, plus honest, readable education that does not require a medical degree to understand.</p>
+                        <ul class="seo-landing__list">
+                            <li>Write and review patient education articles and guides</li>
+                            <li>Maintain the IBDPal app and website as a MediVue nonprofit program</li>
+                            <li>Curate trusted resources (AGA, CCF, ImproveCareNow, NIH)</li>
+                            <li>Share ICN Creative Commons materials with proper attribution</li>
+                        </ul>
+                        <p><a href="/founder">Full founders page</a> · <a href="/impact">Impact</a> · <a href="/contact">Contact</a></p>
+                    </section>
+                    <section class="seo-landing__block">
+                        <h2>ImproveCareNow resources</h2>
+                        <p>We highlight select co-produced resources from <a href="https://www.improvecarenow.org/" rel="noopener noreferrer">ImproveCareNow (ICN)</a> under their Creative Commons policy. IBDPal is not an ICN partner or listed care center.</p>
+                        <p><a href="/blog/icn-accommodations-toolkit-ibd">Browse ICN resource highlights →</a></p>
+                    </section>
+                    <section class="seo-landing__block">
+                        <h2>More</h2>
+                        <p><a href="/#news">IBD policy news</a> · <a href="/#site-updates" data-about-subtab-link="site-updates">Site updates</a> · <a href="/#metrics" data-about-subtab-link="metrics">Analytics</a></p>
+                        <p><a href="/clinical-partnerships">Clinical partnerships</a> · <a href="/research">Trusted sources</a> · <a href="/executive-summary">Executive summary</a> · <a href="/for-clinicians">For clinicians</a></p>
+                        <p><a href="https://apps.apple.com/app/ibdpal" class="app-store-badge" rel="noopener noreferrer">Download on the App Store</a></p>
+                    </section>
+                </article>
+                </div>
+                <div class="about-subcontent" id="site-updates">
+                <article class="support-section seo-landing tab-page-section">
+                    <h1>Site Updates</h1>
                     <p class="support-intro">Site improvements phased month by month since launch in September 2025. Last updated June 2026.</p>
                     <section class="seo-landing__block updates-month">
                         <h2>June 2026</h2>
@@ -1002,7 +1126,7 @@
                     </section>
                     <section class="seo-landing__block">
                         <h2>Stay in the loop</h2>
-                        <p><a href="/blog">All articles</a> · <a href="/library">Content library</a> · <a href="/#about">About MediVue</a></p>
+                        <p><a href="/blog">All articles</a> · <a href="/#news">IBD policy news</a> · <a href="/library">Content library</a></p>
                     </section>
                     <div class="signup-section" data-track-impression="email_signup_section" data-track-label="Stay Updated signup">
                         <h3>Email updates</h3>
@@ -1016,52 +1140,16 @@
                         </form>
                     </div>
                 </article>
-            </div>
-
-            <!-- About Tab -->
-            <div class="tab-content" id="about">
+                </div>
+                <div class="about-subcontent" id="metrics">
                 <article class="support-section seo-landing tab-page-section">
-                    <section class="mission-hero mission-hero--tab" aria-labelledby="about-mission-heading">
-                        <h1 id="about-mission-heading" class="mission-hero__title">Free nonprofit IBD education from MediVue</h1>
-                        <p class="mission-hero__text">IBDPal helps people with Crohn's disease and ulcerative colitis understand nutrition, flares, and daily management through <strong>140+ free education pages</strong> and a nonprofit iOS tracking app.</p>
-                    </section>
-                    <p class="support-intro mission-block"><strong>Our mission:</strong> Free patient education and self-management tools for the IBD community, from nonprofit MediVue. Not medical advice; always work with your care team.</p>
-                    <section class="seo-landing__block">
-                        <h2>Who we are</h2>
-                        <p><strong>IBDPal</strong> is a program of <strong>MediVue</strong>, a North Carolina 501(c)(3) nonprofit focused on IBD community education. We combine a free iOS app with articles, guides, and state support resources on ibdpal.org.</p>
-                    </section>
-                    <section class="seo-landing__block">
-                        <h2>What you will find here</h2>
-                        <ul class="seo-landing__list">
-                            <li><a href="/#articles">51+ in-depth articles</a> on nutrition, treatment, wellness, and daily life</li>
-                            <li><a href="/guides">24 step-by-step patient guides</a></li>
-                            <li><a href="/#community">50 state support pages</a></li>
-                            <li><a href="/library">140+ total education pages</a></li>
-                            <li>Free <a href="/#app">IBDPal iOS app</a></li>
-                        </ul>
-                    </section>
-                    <section class="seo-landing__block" id="medivue-founders">
-                        <h2>MediVue Founders</h2>
-                        <p>IBDPal began after identifying a gap between clinic visits: hard-to-track meals, unpredictable symptoms, and scattered education online.</p>
-                        <p>The MediVue Founders team set out to build a calm place to log food and symptoms between appointments, plus honest, readable education that does not require a medical degree to understand.</p>
-                        <ul class="seo-landing__list">
-                            <li>Write and review patient education articles and guides</li>
-                            <li>Maintain the IBDPal app and website as a MediVue nonprofit program</li>
-                            <li>Curate trusted resources (AGA, CCF, ImproveCareNow, NIH)</li>
-                            <li>Share ICN Creative Commons materials with proper attribution</li>
-                        </ul>
-                        <p><a href="/founder">Full founders page</a> · <a href="/impact">Impact</a> · <a href="/contact">Contact</a></p>
-                    </section>
-                    <section class="seo-landing__block">
-                        <h2>ImproveCareNow resources</h2>
-                        <p>We highlight select co-produced resources from <a href="https://www.improvecarenow.org/" rel="noopener noreferrer">ImproveCareNow (ICN)</a> under their Creative Commons policy. IBDPal is not an ICN partner or listed care center.</p>
-                        <p><a href="/blog/icn-accommodations-toolkit-ibd">Browse ICN resource highlights →</a></p>
-                    </section>
-                    <section class="discovery-dashboard discovery-dashboard--compact" aria-labelledby="about-metrics-heading">
+                    <h1>Website &amp; App Analytics</h1>
+                    <p class="support-intro">Public snapshots of how patients discover IBDPal. Updated periodically by MediVue.</p>
+                    <section class="discovery-dashboard discovery-dashboard--compact" aria-labelledby="metrics-app-heading">
                         <div class="discovery-dashboard__panel">
                             <header class="discovery-dashboard__head">
                                 <p class="discovery-dashboard__eyebrow">IBDPal app</p>
-                                <h2 id="about-metrics-heading" class="discovery-dashboard__title">App Store reach</h2>
+                                <h2 id="metrics-app-heading" class="discovery-dashboard__title">App Store reach</h2>
                             </header>
                             <div class="discovery-metrics-rows" role="group" aria-label="App discovery snapshot">
                                 <div class="discovery-metrics-row">
@@ -1080,11 +1168,15 @@
                         </div>
                     </section>
                     <section class="seo-landing__block">
-                        <h2>More</h2>
-                        <p><a href="/clinical-partnerships">Clinical partnerships</a> · <a href="/research">Trusted sources</a> · <a href="/executive-summary">Executive summary</a> · <a href="/for-clinicians">For clinicians</a></p>
-                        <p><a href="https://apps.apple.com/app/ibdpal" class="app-store-badge" rel="noopener noreferrer">Download on the App Store</a></p>
+                        <h2>Website (ibdpal.org)</h2>
+                        <ul class="seo-landing__list">
+                            <li><strong>140+</strong> patient education pages (articles, guides, state support)</li>
+                            <li>Privacy-oriented analytics via Vercel Web Analytics (anonymous page views, no PHI)</li>
+                            <li>Structured data and sitemap for search discovery; organic SEO metrics on Overview</li>
+                        </ul>
                     </section>
                 </article>
+                </div>
             </div>
 
             <!-- Privacy Tab -->
@@ -1300,7 +1392,8 @@
                 <!-- Legal Links -->
                 <div class="footer-links">
                     <a href="/#about" class="footer-link">About</a>
-                    <a href="/#updates" class="footer-link">Updates</a>
+                    <a href="/#news" class="footer-link">News</a>
+                    <a href="/#site-updates" class="footer-link">Site Updates</a>
                     <a href="/contact" class="footer-link">Contact</a>
                     <a href="/library" class="footer-link">Content Library</a>
                     <a href="/impact" class="footer-link">Impact</a>

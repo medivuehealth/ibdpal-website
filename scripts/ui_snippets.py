@@ -146,6 +146,135 @@ UPDATES_MONTHLY_SECTIONS_HTML = """
                     </section>
 """
 
+SITE_UPDATES_SUBTAB_HTML = """
+                <article class="support-section seo-landing tab-page-section">
+                    <h1>Site Updates</h1>
+                    <p class="support-intro">Site improvements phased month by month since launch in September 2025. Last updated June 2026.</p>
+{UPDATES_MONTHLY_SECTIONS_HTML}
+                    <section class="seo-landing__block">
+                        <h2>Stay in the loop</h2>
+                        <p><a href="/blog">All articles</a> &middot; <a href="/library">Content library</a> &middot; <a href="/#about">About MediVue</a></p>
+                    </section>
+                    <div class="signup-section" data-track-impression="email_signup_section" data-track-label="Stay Updated signup">
+                        <h3>Email updates</h3>
+                        <p>Get notified about new IBDPal features and articles.</p>
+                        <form class="email-form" id="emailForm">
+                            <div class="input-group">
+                                <input type="email" id="email" placeholder="Enter your email address" required>
+                                <button type="submit">Notify Me</button>
+                            </div>
+                            <p class="form-note">We respect your privacy. Unsubscribe at any time.</p>
+                        </form>
+                    </div>
+                </article>
+"""
+
+METRICS_SUBTAB_HTML = """
+                <article class="support-section seo-landing tab-page-section">
+                    <h1>Website &amp; App Analytics</h1>
+                    <p class="support-intro">Public snapshots of how patients discover IBDPal. Updated periodically by MediVue.</p>
+                    <section class="discovery-dashboard discovery-dashboard--compact" aria-labelledby="metrics-app-heading">
+                        <div class="discovery-dashboard__panel">
+                            <header class="discovery-dashboard__head">
+                                <p class="discovery-dashboard__eyebrow">IBDPal app</p>
+                                <h2 id="metrics-app-heading" class="discovery-dashboard__title">App Store reach</h2>
+                            </header>
+                            <div class="discovery-metrics-rows" role="group" aria-label="App discovery snapshot">
+                                <div class="discovery-metrics-row">
+                                    <span class="discovery-metrics-row__label">Search visibility</span>
+                                    <span class="discovery-metrics-row__value">1.5K+</span>
+                                </div>
+                                <div class="discovery-metrics-row">
+                                    <span class="discovery-metrics-row__label">Total reach</span>
+                                    <span class="discovery-metrics-row__value">1.6K+</span>
+                                </div>
+                                <div class="discovery-metrics-row">
+                                    <span class="discovery-metrics-row__label">Organic discovery</span>
+                                    <span class="discovery-metrics-row__value">87%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="seo-landing__block">
+                        <h2>Website (ibdpal.org)</h2>
+                        <ul class="seo-landing__list">
+                            <li><strong>140+</strong> patient education pages (articles, guides, state support)</li>
+                            <li>Privacy-oriented analytics via Vercel Web Analytics (anonymous page views, no PHI)</li>
+                            <li>Structured data and sitemap for search discovery; organic SEO metrics on Overview</li>
+                        </ul>
+                    </section>
+                </article>
+"""
+
+IBD_NEWS_TAB_HTML = """
+                <article class="support-section seo-landing tab-page-section">
+                    <h1>IBD Policy &amp; Advocacy News</h1>
+                    <p class="support-intro">Highlights on federal and state legislation affecting people with Crohn&rsquo;s disease and ulcerative colitis. Summaries link to the <a href="https://www.crohnscolitisfoundation.org/" rel="noopener noreferrer">Crohn&rsquo;s &amp; Colitis Foundation</a> and public sources. Education only, not legal advice.</p>
+
+                    <section class="seo-landing__block ibd-news-featured">
+                        <h2>Under review</h2>
+                        <article class="ibd-news-card">
+                            <p class="ibd-news-card__tag">Federal regulation &middot; Prior authorization</p>
+                            <h3 class="ibd-news-card__title">Days, not weeks: faster prior authorization decisions</h3>
+                            <p>The federal <strong>CMS Interoperability and Prior Authorization Final Rule (CMS-0057-F)</strong> sets maximum turnaround times for many government-backed plans (Medicare Advantage, Medicaid managed care, CHIP, and Affordable Care Act marketplace plans). Insurers must approve or deny <strong>urgent</strong> requests within <strong>72 hours</strong> and <strong>standard</strong> requests within <strong>7 calendar days</strong>.</p>
+                            <p>This is a crucial first step toward shorter waits for IBD tests and treatments. Patient advocates are urging federal officials to fully implement and expand these protections.</p>
+                            <p class="ibd-news-card__actions">
+                                <a href="https://www.cms.gov/newsroom/fact-sheets/cms-interoperability-and-prior-authorization-final-rule-cms-0057-f" rel="noopener noreferrer">CMS fact sheet</a>
+                                &middot;
+                                <a href="https://www.crohnscolitisfoundation.org/your-guide-to-navigating-prior-authorization" rel="noopener noreferrer">CCF prior authorization guide</a>
+                                &middot;
+                                <a href="https://www.crohnscolitisfoundation.org/get-involved/be-an-advocate/action-center" rel="noopener noreferrer">Take action (CCF)</a>
+                            </p>
+                        </article>
+                        <article class="ibd-news-card">
+                            <p class="ibd-news-card__tag">Congress &middot; Step therapy</p>
+                            <h3 class="ibd-news-card__title">Safe Step Act: reforming fail-first protocols</h3>
+                            <p>The <strong>Safe Step Act</strong> (H.R. 2630 / S. 652) would create a clearer appeal process when insurers require patients to try and fail on preferred drugs before covering a provider-prescribed treatment. More than 40% of IBD patients report experiencing step therapy barriers.</p>
+                            <p>At a recent U.S. House committee hearing, lawmakers highlighted how step therapy can leave patients behind. The Crohn&rsquo;s &amp; Colitis Foundation continues grassroots advocacy on Capitol Hill for commonsense reform.</p>
+                            <p class="ibd-news-card__actions">
+                                <a href="https://www.crohnscolitisfoundation.org/get-involved/be-advocate/advocacy-priorities/step-therapy/federal-safe-step-act" rel="noopener noreferrer">Safe Step Act overview</a>
+                                &middot;
+                                <a href="https://action.crohnscolitisfoundation.org/a/ssa-webpage" rel="noopener noreferrer">Ask Congress to pass it</a>
+                            </p>
+                        </article>
+                    </section>
+
+                    <section class="seo-landing__block">
+                        <h2>Recently approved &amp; in effect</h2>
+                        <ul class="seo-landing__list">
+                            <li><strong>Jan. 1, 2026:</strong> Faster prior authorization decision timelines under CMS-0057-F begin for impacted federal plans</li>
+                            <li><strong>March 31, 2026:</strong> First public prior authorization performance metrics due from impacted payers</li>
+                            <li><strong>Jan. 1, 2027:</strong> Prior authorization and interoperability FHIR APIs required in production (next implementation milestone)</li>
+                        </ul>
+                    </section>
+
+                    <section class="seo-landing__block">
+                        <h2>Advocacy highlights</h2>
+                        <ul class="seo-landing__list">
+                            <li><strong>Capitol Hill briefing:</strong> The Crohn&rsquo;s &amp; Colitis Foundation hosted a bipartisan briefing on how additional federal IBD research investment could accelerate prevention and treatment progress</li>
+                            <li><strong>Step therapy in Congress:</strong> Rep. Lucy McBath cited an IBD volunteer&rsquo;s story at a House committee hearing, calling step therapy a sweeping mandate that too often leaves patients behind</li>
+                            <li><strong>Prior auth pushback:</strong> After thousands of patient letters and a rally, UnitedHealthcare delayed a planned expansion of prior authorization for many endoscopy and colonoscopy procedures</li>
+                        </ul>
+                        <p><em>Source: Crohn&rsquo;s &amp; Colitis Foundation federal and grassroots advocacy updates.</em></p>
+                    </section>
+
+                    <section class="seo-landing__block">
+                        <h2>Take action</h2>
+                        <ul class="seo-landing__list">
+                            <li><a href="https://www.crohnscolitisfoundation.org/get-involved/be-an-advocate/action-center" rel="noopener noreferrer">CCF Action Center</a> &mdash; contact lawmakers in two clicks</li>
+                            <li><a href="https://action.crohnscolitisfoundation.org/a/ssa-webpage" rel="noopener noreferrer">Support the Safe Step Act</a></li>
+                            <li><a href="https://www.crohnscolitisfoundation.org/science-and-professionals/program-materials/appeal-letters" rel="noopener noreferrer">Appeal letter templates</a> for denied biologics and treatments</li>
+                            <li><a href="https://www.crohnscolitisfoundation.org/get-involved/be-an-advocate/advocacy-priorities/step-therapy/state-legislation" rel="noopener noreferrer">Step therapy state legislation</a></li>
+                        </ul>
+                    </section>
+
+                    <section class="seo-landing__block">
+                        <h2>More resources</h2>
+                        <p><a href="/#site-updates">IBDPal site updates</a> &middot; <a href="/#about">About MediVue</a> &middot; <a href="/research">Trusted clinical sources</a> &middot; <a href="/#community">Find support by state</a></p>
+                    </section>
+                </article>
+"""
+
 
 def blog_vote_widget(slug: str) -> str:
     """Thumbs up/down feedback block for blog articles (SVG icons, encoding-safe)."""

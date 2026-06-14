@@ -1176,6 +1176,47 @@ a {
     margin-top: 0.85rem;
 }
 
+.ibd-news-card {
+    margin: 0 0 1.1rem;
+    padding: 1.1rem 1.2rem;
+    background: #FFF9F8;
+    border: 1px solid rgba(232, 107, 90, 0.22);
+    border-radius: var(--ibd-radius-md);
+}
+
+.ibd-news-card__tag {
+    margin: 0 0 0.35rem;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--ibd-coral, #E86B5A);
+}
+
+.ibd-news-card__title {
+    margin: 0 0 0.55rem;
+    font-size: 1.05rem;
+}
+
+.ibd-news-card__actions {
+    margin: 0.75rem 0 0;
+    font-size: 0.9rem;
+}
+
+.about-subtab-navigation--dock .about-subtab-button.active,
+.subtab-navigation--dock .about-subtab-button.active {
+    color: var(--ibd-coral, #E86B5A);
+    border-bottom-color: var(--ibd-coral, #E86B5A);
+}
+
+#about .about-subcontent {
+    display: none;
+}
+
+#about .about-subcontent.active {
+    display: block;
+}
+
 .feature-card,
 .preview-card,
 .benefit-card,

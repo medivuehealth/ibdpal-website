@@ -11,7 +11,12 @@ from es_mirrors import es_url_for_en_path  # noqa: E402
 from seo_head import breadcrumb_json, howto_json, render_seo_head, web_page_json  # noqa: E402
 from site_nav import PAGE_SCRIPTS, TAB_NAV_HTML, site_header_html  # noqa: E402
 from site_footer import SITE_FOOTER_STATIC  # noqa: E402
-from ui_snippets import RESOURCE_TOOLBAR_HTML, UPDATES_MONTHLY_SECTIONS_HTML  # noqa: E402
+from ui_snippets import (  # noqa: E402
+    IBD_NEWS_TAB_HTML,
+    RESOURCE_TOOLBAR_HTML,
+    SITE_UPDATES_SUBTAB_HTML,
+    UPDATES_MONTHLY_SECTIONS_HTML,
+)
 
 SITE = "https://www.ibdpal.org"
 EEAT_PATHS = {"/newly-diagnosed", "/visit-prep", "/pediatric-caregivers", "/resources"}
@@ -276,7 +281,7 @@ PAGES = {
                 </section>
                 <section class="seo-landing__block">
                     <h2>Learn more</h2>
-                    <p><a href="/#updates">Latest updates</a> · <a href="/impact">Impact</a> · <a href="/contact">Contact</a> · <a href="/clinical-partnerships">Clinical partnerships</a> · <a href="/research">Trusted sources</a></p>
+                    <p><a href="/#site-updates">Site updates</a> · <a href="/impact">Impact</a> · <a href="/contact">Contact</a> · <a href="/clinical-partnerships">Clinical partnerships</a> · <a href="/research">Trusted sources</a></p>
                     <p>Organizational overview for funders: <a href="/executive-summary">Executive summary</a></p>
                 </section>
             </article>
@@ -381,7 +386,7 @@ PAGES = {
                 <section class="seo-landing__block">
                     <h2>Mission</h2>
                     <p class="mission-block">Help people with IBD understand nutrition, flares, and daily management through free education and tools from MediVue.</p>
-                    <p><a href="/about">About</a> · <a href="/founder">MediVue Founders</a> · <a href="/news">Latest updates</a></p>
+                    <p><a href="/about">About</a> · <a href="/founder">MediVue Founders</a> · <a href="/#news">IBD policy news</a> · <a href="/#site-updates">Site updates</a></p>
                 </section>
             </article>
         """,
@@ -447,17 +452,25 @@ PAGES = {
         """,
     ),
     "news.html": (
-        "IBDPal Updates | Latest Articles & Site News",
-        "What's new on IBDPal: recent articles, ImproveCareNow resource highlights, and site updates from MediVue.",
+        "IBD Policy News | Advocacy & Legislation | IBDPal",
+        "Federal and state IBD policy highlights: prior authorization reform, Safe Step Act, and Crohn's and Colitis Foundation advocacy.",
         "/news",
         f"""
+            {IBD_NEWS_TAB_HTML}
+        """,
+    ),
+    "site-updates.html": (
+        "IBDPal Site Updates | Monthly Release Notes",
+        "Month-by-month site improvements on IBDPal since September 2025 launch.",
+        "/site-updates",
+        f"""
             <article class="support-section seo-landing">
-                <h1>Latest Updates</h1>
-                <p class="support-intro">Site improvements phased month by month since launch in September 2025. <a href="/#updates">View on homepage Updates tab</a>.</p>
+                <h1>Site Updates</h1>
+                <p class="support-intro">Site improvements phased month by month since launch in September 2025. <a href="/#site-updates">View on homepage About tab</a>.</p>
 {UPDATES_MONTHLY_SECTIONS_HTML}
                 <section class="seo-landing__block">
                     <h2>Stay current</h2>
-                    <p><a href="/blog">All articles</a> &middot; <a href="/news">This page</a> &middot; <a href="/contact">Contact</a></p>
+                    <p><a href="/blog">All articles</a> &middot; <a href="/#news">IBD policy news</a> &middot; <a href="/contact">Contact</a></p>
                 </section>
             </article>
         """,

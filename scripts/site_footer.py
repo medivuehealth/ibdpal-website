@@ -5,7 +5,8 @@ SITE_FOOTER_STATIC = """
             <div class="footer-content">
                 <div class="footer-links">
                     <a href="/#about" class="footer-link">About</a>
-                    <a href="/#updates" class="footer-link">Updates</a>
+                    <a href="/#news" class="footer-link">News</a>
+                    <a href="/#site-updates" class="footer-link">Site Updates</a>
                     <a href="/contact" class="footer-link">Contact</a>
                     <a href="/library" class="footer-link">Content Library</a>
                     <a href="/impact" class="footer-link">Impact</a>
@@ -30,7 +31,8 @@ SITE_FOOTER_HOME = """
             <div class="footer-content">
                 <div class="footer-links">
                     <a href="/#about" class="footer-link">About</a>
-                    <a href="/#updates" class="footer-link">Updates</a>
+                    <a href="/#news" class="footer-link">News</a>
+                    <a href="/#site-updates" class="footer-link">Site Updates</a>
                     <a href="/contact" class="footer-link">Contact</a>
                     <a href="/library" class="footer-link">Content Library</a>
                     <a href="/impact" class="footer-link">Impact</a>
@@ -58,7 +60,8 @@ SITE_FOOTER_BLOG = """
             <div class="footer-content">
                 <div class="footer-links">
                     <a href="/#about" class="footer-link">About</a>
-                    <a href="/#updates" class="footer-link">Updates</a>
+                    <a href="/#news" class="footer-link">News</a>
+                    <a href="/#site-updates" class="footer-link">Site Updates</a>
                     <a href="/contact" class="footer-link">Contact</a>
                     <a href="/library" class="footer-link">Content Library</a>
                     <a href="/privacy" class="footer-link">Privacy Policy</a>

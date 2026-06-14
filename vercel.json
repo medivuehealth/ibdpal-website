@@ -243,6 +243,10 @@
       "destination": "/news.html"
     },
     {
+      "source": "/site-updates",
+      "destination": "/site-updates.html"
+    },
+    {
       "source": "/ibd-crohns-support",
       "destination": "/ibd-crohns-support.html"
     },
