@@ -20,15 +20,16 @@
     justify-content: center;
     width: 34px;
     height: 34px;
-    border-radius: 4px;
-    color: #fff;
+    border-radius: 8px;
+    color: var(--ibd-primary);
+    background: var(--ibd-bg-alt);
     text-decoration: none;
-    transition: background 0.2s ease, opacity 0.2s ease;
+    transition: background 0.2s ease, color 0.2s ease;
 }
 
 .site-social__link:hover {
-    background: rgba(255, 255, 255, 0.18);
-    color: #fff;
+    background: rgba(139, 92, 246, 0.12);
+    color: var(--ibd-primary-dark);
 }
 
 .site-social__link--pending {
@@ -48,14 +49,15 @@
 }
 
 :root {
-    --ibd-primary: #9933cc;
-    --ibd-secondary: #cc6600;
-    --ibd-primary-dark: #7a2a9f;
-    --ibd-text: #1a1a1a;
-    --ibd-muted: #666666;
-    --ibd-bg: #f4f4f4;
+    --ibd-primary: #8B5CF6;
+    --ibd-secondary: #A855F7;
+    --ibd-primary-dark: #7C3AED;
+    --ibd-text: #222222;
+    --ibd-muted: #6B7280;
+    --ibd-bg: #FFFFFF;
+    --ibd-bg-alt: #F8FAFC;
     --ibd-surface: #ffffff;
-    --ibd-border: #e0e0e0;
+    --ibd-border: #E5E7EB;
     --ibd-content-pad: clamp(1rem, 2.5vw, 2rem);
 }
 
@@ -75,13 +77,13 @@ body {
     min-height: auto;
 }
 
-/* Brand header: logo + IBDPal name + tagline + social */
+/* Brand header: clean white bar with purple accent */
 .header {
-    background: var(--ibd-primary);
+    background: #ffffff;
     margin: 0;
     padding: 0;
-    border-bottom: 3px solid var(--ibd-secondary);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+    border-bottom: 1px solid var(--ibd-border);
+    box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
 }
 
 .header__inner {
@@ -144,12 +146,13 @@ body {
 }
 
 .logo-name a {
-    color: #fff;
+    color: var(--ibd-text);
     text-decoration: none;
 }
 
 .logo-name a:hover {
-    text-decoration: underline;
+    color: var(--ibd-primary);
+    text-decoration: none;
 }
 
 .logo .tagline,
@@ -157,7 +160,7 @@ body {
     margin: 0;
     font-size: clamp(0.95rem, 1.5vw, 1.12rem);
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.95);
+    color: var(--ibd-muted);
     line-height: 1.35;
 }
 
@@ -250,7 +253,7 @@ body {
 
 /* Main content | full width */
 .main-content {
-    background: var(--ibd-surface);
+    background: #ffffff;
     width: 100%;
     max-width: none;
     margin: 0;

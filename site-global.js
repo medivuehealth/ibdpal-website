@@ -5,12 +5,10 @@
   'use strict';
 
   var CRISIS_HTML =
-    '<aside class="crisis-strip" role="note" aria-label="Urgent care reminder">' +
-    '<p><strong>Education only | not emergency care.</strong> ' +
-    'For life-threatening symptoms call <strong>911</strong>. ' +
-    'For urgent IBD symptoms contact your clinician. ' +
-    'IBD Help Center: <a href="tel:8886948872">888-MY-GUT-PAIN (888-694-8872)</a> · ' +
-    '<a href="https://www.crohnscolitisfoundation.org/live-full/live-full-ibd-help-center" target="_blank" rel="noopener noreferrer">CCF Help Center</a></p>' +
+    '<aside class="crisis-strip" role="note" aria-label="Educational use reminder">' +
+    '<p><span class="crisis-strip__icon" aria-hidden="true">ⓘ</span> ' +
+    '<span class="crisis-strip__text">Educational resource only. ' +
+    'For emergencies call <strong>911</strong>.</span></p>' +
     '</aside>';
 
   var SKIP_HTML = '<a class="skip-link" href="#main-content">Skip to main content</a>';
