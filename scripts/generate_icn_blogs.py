@@ -17,7 +17,6 @@ VERCEL = ROOT / "vercel.json"
 SITE = "https://www.ibdpal.org"
 
 sys.path.insert(0, str(ROOT / "scripts"))
-from eeat_blocks import icn_attribution_block  # noqa: E402
 from generate_blog_posts import render_post  # noqa: E402
 
 FALLBACK_IMAGE = BLOGS / "assets" / "low-residue" / "low-residue_1.jpg"
@@ -54,8 +53,6 @@ def prepare_post(raw: dict) -> dict:
     img_name = f"{asset}_1.jpg"
     post.setdefault("images", [img_name])
     post.setdefault("alts", [post["title"]])
-    attribution = icn_attribution_block(post["icn_source_title"], post["icn_source_url"])
-    post["body"] = post["body"] + "\n" + attribution
     return post
 
 

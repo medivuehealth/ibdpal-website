@@ -15,11 +15,13 @@ ROOT = Path(__file__).resolve().parents[1]
 BLOGS = ROOT / "blogs"
 sys.path.insert(0, str(ROOT / "scripts"))
 from ui_snippets import BLOG_BACK_LINK_HTML, blog_vote_widget  # noqa: E402
+from amp_utils import discover_blogs  # noqa: E402
 from blog_related import related_reading_html  # noqa: E402
 from eeat_blocks import (  # noqa: E402
     blog_medical_footer_en,
     content_note_en,
     edu_disclaimer_en,
+    icn_attribution_block,
     page_review_props,
     reviewed_by_org,
 )
@@ -404,6 +406,9 @@ def render_post(p: dict) -> str:
     ld_json = json.dumps(ld, separators=(",", ":"))
     disclaimer = content_note_en() + edu_disclaimer_en()
     medical = blog_medical_footer_en()
+    icn_attr = ""
+    if p.get("icn_source_url") and p.get("icn_source_title"):
+        icn_attr = icn_attribution_block(p["icn_source_title"], p["icn_source_url"])
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -458,7 +463,7 @@ def render_post(p: dict) -> str:
 {disclaimer}
 {p["body"].strip()}
 {figure_grid(asset, p["images"], p["alts"])}
-{medical}
+{icn_attr}{medical}
                     </div>
 {related}
 {blog_vote_widget(slug)}

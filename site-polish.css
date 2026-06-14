@@ -1094,18 +1094,9 @@ body {
 }
 
 .icn-attribution {
-    margin: 2rem 0 1rem;
-    padding: 1.25rem 1.5rem;
-    background: #f0fdf4;
-    border: 1px solid #86efac;
-    border-radius: 12px;
-    font-size: 0.95rem;
-}
-
-.icn-attribution h2 {
-    margin: 0 0 0.75rem;
-    font-size: 1.1rem;
-    color: #166534;
+    font-size: 0.875rem;
+    color: #5c6570;
+    margin: 0.25rem 0 1.75rem;
 }
 
 /* ── Sitewide health UI (tabs + inner pages) ── */
