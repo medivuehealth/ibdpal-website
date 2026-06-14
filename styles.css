@@ -2091,7 +2091,12 @@ a.tab-button {
     color: white;
 }
 
-.blog-vote-icon {
+.blog-vote-icon,
+.blog-vote-svg {
+    display: inline-flex;
+    width: 1.15rem;
+    height: 1.15rem;
+    flex-shrink: 0;
     font-size: 1.15rem;
     line-height: 1;
 }

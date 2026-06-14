@@ -45,3 +45,33 @@ BLOG_FILTER_PILLS_HTML = """
                         <button type="button" class="blog-pill" data-blog-filter="flare">Flares</button>
                     </div>
 """
+
+BLOG_VOTE_THUMB_UP_SVG = (
+    '<svg class="blog-vote-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">'
+    '<path fill="currentColor" d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.96 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/>'
+    "</svg>"
+)
+
+BLOG_VOTE_THUMB_DOWN_SVG = (
+    '<svg class="blog-vote-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">'
+    '<path fill="currentColor" d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41-.17.79-.44 1.06L9.83 23 16.41 16.41c.37-.37.59-.86.59-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"/>'
+    "</svg>"
+)
+
+
+def blog_vote_widget(slug: str) -> str:
+    """Thumbs up/down feedback block for blog articles (SVG icons, encoding-safe)."""
+    return f"""                    <div class="blog-vote" data-blog-slug="{slug}">
+                        <p class="blog-vote-prompt">Was this article helpful?</p>
+                        <div class="blog-vote-actions">
+                            <button type="button" class="blog-vote-btn blog-vote-btn--up" data-vote="up" aria-label="Thumbs up, helpful">
+                                {BLOG_VOTE_THUMB_UP_SVG}
+                                <span class="blog-vote-count" data-vote-count="up">0</span>
+                            </button>
+                            <button type="button" class="blog-vote-btn blog-vote-btn--down" data-vote="down" aria-label="Thumbs down, not helpful">
+                                {BLOG_VOTE_THUMB_DOWN_SVG}
+                                <span class="blog-vote-count" data-vote-count="down">0</span>
+                            </button>
+                        </div>
+                        <p class="blog-vote-status" hidden></p>
+                    </div>"""

@@ -103,6 +103,33 @@ def edu_disclaimer_es() -> str:
     )
 
 
+def patch_blog_vote_icons(blogs_dir) -> int:
+    """Replace corrupted emoji thumbs (??) with inline SVG icons."""
+    import re
+
+    from ui_snippets import BLOG_VOTE_THUMB_DOWN_SVG, BLOG_VOTE_THUMB_UP_SVG
+
+    up_pat = re.compile(
+        r'(<button type="button" class="blog-vote-btn blog-vote-btn--up"[^>]*>)\s*'
+        r'(?:<span class="blog-vote-icon"[^>]*>.*?</span>|' + re.escape(BLOG_VOTE_THUMB_UP_SVG) + r')\s*',
+        re.S,
+    )
+    down_pat = re.compile(
+        r'(<button type="button" class="blog-vote-btn blog-vote-btn--down"[^>]*>)\s*'
+        r'(?:<span class="blog-vote-icon"[^>]*>.*?</span>|' + re.escape(BLOG_VOTE_THUMB_DOWN_SVG) + r')\s*',
+        re.S,
+    )
+    count = 0
+    for path in blogs_dir.glob("*.html"):
+        text = path.read_text(encoding="utf-8", errors="replace")
+        new_text = up_pat.sub(rf"\1\n                                {BLOG_VOTE_THUMB_UP_SVG}\n                                ", text, count=1)
+        new_text = down_pat.sub(rf"\1\n                                {BLOG_VOTE_THUMB_DOWN_SVG}\n                                ", new_text, count=1)
+        if new_text != text:
+            path.write_text(new_text, encoding="utf-8")
+            count += 1
+    return count
+
+
 def patch_blog_eeat(blogs_dir) -> int:
     import re
 

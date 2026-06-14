@@ -14,7 +14,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 BLOGS = ROOT / "blogs"
 sys.path.insert(0, str(ROOT / "scripts"))
-from amp_utils import discover_blogs  # noqa: E402
+from ui_snippets import blog_vote_widget  # noqa: E402
 from blog_related import related_reading_html  # noqa: E402
 from eeat_blocks import (  # noqa: E402
     blog_medical_footer_en,
@@ -461,20 +461,7 @@ def render_post(p: dict) -> str:
 {medical}
                     </div>
 {related}
-                    <div class="blog-vote" data-blog-slug="{slug}">
-                        <p class="blog-vote-prompt">Was this article helpful?</p>
-                        <div class="blog-vote-actions">
-                            <button type="button" class="blog-vote-btn blog-vote-btn--up" data-vote="up" aria-label="Thumbs up, helpful">
-                                <span class="blog-vote-icon" aria-hidden="true">👍</span>
-                                <span class="blog-vote-count" data-vote-count="up">0</span>
-                            </button>
-                            <button type="button" class="blog-vote-btn blog-vote-btn--down" data-vote="down" aria-label="Thumbs down, not helpful">
-                                <span class="blog-vote-icon" aria-hidden="true">👎</span>
-                                <span class="blog-vote-count" data-vote-count="down">0</span>
-                            </button>
-                        </div>
-                        <p class="blog-vote-status" hidden></p>
-                    </div>
+{blog_vote_widget(slug)}
                     <div class="blog-footer">
                         <div class="blog-share">
                             <span class="share-label">Share this post:</span>
