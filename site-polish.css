@@ -15,7 +15,6 @@
     --ibd-radius-sm: 10px;
     --ibd-gradient-brand: linear-gradient(180deg, #8B5CF6 0%, #C084FC 55%, #FDF4FF 85%, #FFFFFF 100%);
     --ibd-gradient-soft: #ffffff;
-    --ibd-font-display: "Plus Jakarta Sans", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 html {
@@ -25,8 +24,10 @@ html {
 body {
     background: #FFFFFF;
     color: var(--ibd-text);
+    font-family: var(--ibd-font-body);
+    font-size: var(--ibd-text-base);
     font-weight: 400;
-    line-height: 1.6;
+    line-height: var(--ibd-line);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -166,9 +167,9 @@ body {
 .home-hero__title {
     margin: 0 0 0.15rem;
     font-family: var(--ibd-font-display);
-    font-size: clamp(1.3rem, 3.2vw, 1.65rem);
+    font-size: var(--ibd-display);
     font-weight: 700;
-    line-height: 1.2;
+    line-height: var(--ibd-line-tight);
     letter-spacing: -0.02em;
     color: #222222;
 }
@@ -176,9 +177,10 @@ body {
 .home-hero__lead {
     margin: 0;
     max-width: none;
-    font-size: 0.8125rem;
+    font-family: var(--ibd-font-body);
+    font-size: var(--ibd-text-sm);
     font-weight: 500;
-    line-height: 1.45;
+    line-height: var(--ibd-line);
     color: #6B7280;
 }
 
@@ -205,17 +207,19 @@ body {
 
 .start-here-hub__title {
     font-family: var(--ibd-font-display);
-    font-size: clamp(1.45rem, 3vw, 1.85rem);
+    font-size: var(--ibd-display);
     font-weight: 700;
     letter-spacing: -0.03em;
     color: #222222;
+    line-height: var(--ibd-line-tight);
 }
 
 .start-here-hub__lead {
+    font-family: var(--ibd-font-body);
     color: #6B7280;
-    font-size: 1.0625rem;
+    font-size: var(--ibd-text-md);
     font-weight: 500;
-    line-height: 1.65;
+    line-height: var(--ibd-line);
 }
 
 .start-here-hub__grid {
@@ -264,25 +268,27 @@ body {
 
 .start-here-hub__label {
     font-family: var(--ibd-font-display);
-    font-size: 1.05rem;
+    font-size: var(--ibd-text-lg);
     font-weight: 700;
     letter-spacing: -0.02em;
     color: #222222;
 }
 
 .start-here-hub__desc {
+    font-family: var(--ibd-font-body);
     color: #6B7280;
-    font-size: 0.9375rem;
+    font-size: var(--ibd-text-md);
     font-weight: 400;
-    line-height: 1.5;
+    line-height: var(--ibd-line);
 }
 
 .start-here-hub__more {
     margin-top: 0.85rem;
     text-align: left;
-    font-size: 0.8125rem;
+    font-family: var(--ibd-font-body);
+    font-size: var(--ibd-text-sm);
     color: #6B7280;
-    line-height: 1.6;
+    line-height: var(--ibd-line);
 }
 
 .start-here-hub__more a {
@@ -532,7 +538,8 @@ body {
 
 .app-hero-premium__eyebrow {
     display: inline-block;
-    font-size: 0.78rem;
+    font-family: var(--ibd-font-body);
+    font-size: var(--ibd-text-xs);
     font-weight: 700;
     letter-spacing: 0.12em;
     text-transform: uppercase;
@@ -544,24 +551,29 @@ body {
 }
 
 .app-hero-premium__content .hero-catchphrase {
+    font-family: var(--ibd-font-display);
     text-align: left;
-    font-size: clamp(1.3rem, 3vw, 1.75rem);
+    font-size: var(--ibd-display);
+    line-height: var(--ibd-line-tight);
     margin-bottom: 0.35rem;
 }
 
 .app-hero-premium__content .hero-tagline {
+    font-family: var(--ibd-font-body);
     text-align: left;
     margin: 0 0 0.5rem;
     max-width: none;
-    font-size: clamp(0.95rem, 2vw, 1.15rem);
+    font-size: var(--ibd-text-lg);
+    line-height: var(--ibd-line);
 }
 
 .app-hero-premium__content .hero-description {
+    font-family: var(--ibd-font-body);
     text-align: left;
     margin: 0 0 0.75rem;
     max-width: 36rem;
-    font-size: 0.875rem;
-    line-height: 1.5;
+    font-size: var(--ibd-text-base);
+    line-height: var(--ibd-line);
 }
 
 .app-hero-premium__cta {
@@ -633,7 +645,7 @@ body {
 /* ── Phase 3: Magazine blog grid ── */
 .blogs-section--magazine .blogs-section-title-row h3 {
     font-family: var(--ibd-font-display);
-    font-size: clamp(1.2rem, 2.5vw, 1.45rem);
+    font-size: var(--ibd-h1);
     font-weight: 800;
     letter-spacing: -0.02em;
 }
@@ -650,7 +662,8 @@ body {
     border: 1px solid rgba(153, 51, 204, 0.18);
     background: #fff;
     color: #5c5c68;
-    font-size: 0.88rem;
+    font-family: var(--ibd-font-body);
+    font-size: var(--ibd-text-base);
     font-weight: 600;
     padding: 0.45rem 0.9rem;
     border-radius: 999px;
@@ -701,7 +714,8 @@ body {
     position: absolute;
     left: 0.75rem;
     top: 0.75rem;
-    font-size: 0.72rem;
+    font-family: var(--ibd-font-body);
+    font-size: var(--ibd-text-xs);
     font-weight: 700;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -727,16 +741,17 @@ body {
 
 .blog-card--magazine h4 {
     font-family: var(--ibd-font-display);
-    font-size: 1.05rem;
-    line-height: 1.35;
+    font-size: var(--ibd-text-lg);
+    line-height: var(--ibd-line-tight);
     margin: 0 0 0.45rem;
     color: #1a1a22;
 }
 
 .blog-card--magazine p {
-    font-size: 0.9rem;
+    font-family: var(--ibd-font-body);
+    font-size: var(--ibd-text-base);
     color: #5c5c68;
-    line-height: 1.5;
+    line-height: var(--ibd-line);
     margin: 0;
 }
 
@@ -820,7 +835,8 @@ body {
     border: 1px solid rgba(153, 51, 204, 0.16);
     background: #fff;
     color: #555;
-    font-size: 0.84rem;
+    font-family: var(--ibd-font-body);
+    font-size: var(--ibd-text-sm);
     font-weight: 600;
     padding: 0.4rem 0.85rem;
     border-radius: 999px;
@@ -860,27 +876,29 @@ body {
 .resource-library__empty-title {
     font-family: var(--ibd-font-display);
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: var(--ibd-text-lg);
     margin: 0 0 0.35rem;
     color: #333;
 }
 
 .resource-library__empty-hint {
+    font-family: var(--ibd-font-body);
     margin: 0;
     color: #666;
-    font-size: 0.95rem;
+    font-size: var(--ibd-text-md);
+}
+
+.resource-card__desc {
+    font-family: var(--ibd-font-body);
+    font-size: var(--ibd-text-sm);
+    color: #666;
+    line-height: var(--ibd-line);
+    margin: 0.35rem 0 0;
 }
 
 .resource-card__badge--blog { background: rgba(153, 51, 204, 0.12); color: #7a3aa8; }
 .resource-card__badge--external { background: rgba(204, 102, 0, 0.12); color: #b35a00; }
 .resource-card__badge--site { background: rgba(46, 125, 50, 0.1); color: #2e7d32; }
-
-.resource-card__desc {
-    font-size: 0.85rem;
-    color: #666;
-    line-height: 1.45;
-    margin: 0.35rem 0 0;
-}
 
 /* ── Phase 5: Community map polish ── */
 .community-map-panel {
@@ -917,7 +935,8 @@ body {
     pointer-events: none;
     z-index: 30;
     padding: 0.35rem 0.65rem;
-    font-size: 0.82rem;
+    font-family: var(--ibd-font-body);
+    font-size: var(--ibd-text-sm);
     font-weight: 600;
     color: #fff;
     background: linear-gradient(135deg, #9933cc, #7a2a9f);
@@ -991,22 +1010,26 @@ body {
 
 .mission-hero__title {
     margin: 0 0 0.5rem;
-    font-size: clamp(1.35rem, 3vw, 1.65rem);
+    font-family: var(--ibd-font-display);
+    font-size: var(--ibd-display);
     font-weight: 700;
+    line-height: var(--ibd-line-tight);
     color: #222222;
 }
 
 .mission-hero__text {
     margin: 0;
-    line-height: 1.5;
+    font-family: var(--ibd-font-body);
+    line-height: var(--ibd-line);
     color: #6B7280;
     font-weight: 400;
-    font-size: 0.875rem;
+    font-size: var(--ibd-text-base);
 }
 
 .mission-hero__links {
     margin: 0;
-    font-size: 0.95rem;
+    font-family: var(--ibd-font-body);
+    font-size: var(--ibd-text-md);
 }
 
 .library-hub-footer {
@@ -1019,8 +1042,9 @@ body {
 
 .library-hub-footer__text {
     margin: 0;
-    font-size: 0.8125rem;
-    line-height: 1.5;
+    font-family: var(--ibd-font-body);
+    font-size: var(--ibd-text-sm);
+    line-height: var(--ibd-line);
     color: #6B7280;
 }
 
@@ -1034,7 +1058,8 @@ body {
 
 .library-panel-links {
     margin: 0 0 0.75rem;
-    font-size: 0.8125rem;
+    font-family: var(--ibd-font-body);
+    font-size: var(--ibd-text-sm);
     color: #6B7280;
 }
 
@@ -1046,8 +1071,9 @@ body {
 .mission-block {
     padding: 0.6rem 0.85rem;
     margin: 0 0 0.65rem;
-    font-size: 0.875rem;
-    line-height: 1.5;
+    font-family: var(--ibd-font-body);
+    font-size: var(--ibd-text-base);
+    line-height: var(--ibd-line);
     background: #FFFFFF;
     border: 1px solid var(--ibd-border);
     border-left: 3px solid var(--ibd-primary);
@@ -1055,7 +1081,7 @@ body {
 }
 
 .mission-hero--tab .mission-hero__title {
-    font-size: 1.2rem;
+    font-size: var(--ibd-h2);
     margin-bottom: 0.25rem;
 }
 
@@ -1066,7 +1092,7 @@ body {
 @media (max-width: 1100px) {
     .tab-navigation .tab-button {
         padding: 0.55rem 0.65rem;
-        font-size: 0.8125rem;
+        font-size: var(--ibd-text-sm);
     }
 }
 
@@ -1095,13 +1121,15 @@ body {
 
 .library-stat__l {
     display: block;
-    font-size: 0.85rem;
+    font-family: var(--ibd-font-body);
+    font-size: var(--ibd-text-sm);
     color: #6b7280;
     margin-top: 0.25rem;
 }
 
 .icn-attribution {
-    font-size: 0.875rem;
+    font-family: var(--ibd-font-body);
+    font-size: var(--ibd-text-base);
     color: #5c6570;
     margin: 0.25rem 0 1.75rem;
 }
@@ -1127,11 +1155,12 @@ a {
 .support-section h1,
 .legal-section h1 {
     font-family: var(--ibd-font-display);
-    font-size: clamp(1.2rem, 2.8vw, 1.5rem);
+    font-size: var(--ibd-h1);
     font-weight: 700;
     color: #222222;
     letter-spacing: -0.02em;
     margin: 0 0 0.3rem;
+    line-height: var(--ibd-line-tight);
 }
 
 .tab-page-section h2,
@@ -1139,7 +1168,7 @@ a {
 .seo-landing__block h2,
 .community-section__title {
     font-family: var(--ibd-font-display);
-    font-size: clamp(1.05rem, 2.2vw, 1.2rem);
+    font-size: var(--ibd-h2);
     font-weight: 700;
     color: #222222;
     letter-spacing: -0.02em;
@@ -1148,10 +1177,11 @@ a {
 .support-intro,
 .community-section__lead,
 .last-updated {
+    font-family: var(--ibd-font-body);
     color: #6B7280;
     font-weight: 400;
-    line-height: 1.5;
-    font-size: 0.875rem;
+    line-height: var(--ibd-line);
+    font-size: var(--ibd-text-sm);
     margin: 0 0 0.75rem;
 }
 
@@ -1161,7 +1191,7 @@ a {
 
 .community-section__lead--compact {
     margin: 0;
-    font-size: 0.8125rem;
+    font-size: var(--ibd-text-sm);
 }
 
 .seo-landing__block {
@@ -1174,7 +1204,8 @@ a {
 }
 
 .updates-month h2 {
-    font-size: 1.05rem;
+    font-family: var(--ibd-font-display);
+    font-size: var(--ibd-h3);
     letter-spacing: 0.02em;
     color: var(--ibd-coral, #E86B5A);
     margin-bottom: 0.65rem;
@@ -1194,7 +1225,8 @@ a {
 
 .ibd-news-card__tag {
     margin: 0 0 0.35rem;
-    font-size: 0.78rem;
+    font-family: var(--ibd-font-body);
+    font-size: var(--ibd-text-xs);
     font-weight: 600;
     letter-spacing: 0.04em;
     text-transform: uppercase;
@@ -1203,12 +1235,15 @@ a {
 
 .ibd-news-card__title {
     margin: 0 0 0.55rem;
-    font-size: 1.05rem;
+    font-family: var(--ibd-font-display);
+    font-size: var(--ibd-text-lg);
+    line-height: var(--ibd-line-tight);
 }
 
 .ibd-news-card__actions {
     margin: 0.75rem 0 0;
-    font-size: 0.9rem;
+    font-family: var(--ibd-font-body);
+    font-size: var(--ibd-text-base);
 }
 
 .about-subtab-navigation--dock .about-subtab-button.active,
@@ -1255,14 +1290,15 @@ a {
 
 .blog-edu-disclaimer,
 .community-edu-disclaimer {
-    font-size: 0.8125rem;
+    font-family: var(--ibd-font-body);
+    font-size: var(--ibd-text-sm);
     color: #6B7280;
     background: #FFFFFF;
     border: 1px solid var(--ibd-border);
     border-left: 3px solid var(--ibd-primary);
     border-radius: 0 var(--ibd-radius-sm) var(--ibd-radius-sm) 0;
     padding: 0.65rem 0.85rem;
-    line-height: 1.5;
+    line-height: var(--ibd-line);
 }
 
 .community-detail,
@@ -1321,6 +1357,147 @@ a {
 #news.tab-content,
 #about.tab-content {
     background: #FFFFFF;
+    padding-top: 0.25rem;
+}
+
+/* Compact page headers (Overview + About sub-tabs) */
+.page-header-compact {
+    padding: 0 0 0.4rem;
+    margin: 0 0 0.45rem;
+    text-align: left;
+    background: none;
+    border: none;
+}
+
+.page-header-compact__title {
+    margin: 0 0 0.12rem;
+    font-family: var(--ibd-font-display);
+    font-size: var(--ibd-h1);
+    font-weight: 700;
+    line-height: var(--ibd-line-tight);
+    letter-spacing: -0.02em;
+    color: #222222;
+}
+
+.page-header-compact__lead {
+    margin: 0;
+    font-family: var(--ibd-font-body);
+    font-size: var(--ibd-text-sm);
+    font-weight: 500;
+    line-height: var(--ibd-line);
+    color: #6B7280;
+}
+
+.tab-page-section--compact > .seo-landing__block:first-of-type,
+.tab-page-section--compact > header + .seo-landing__block {
+    margin-top: 0.35rem;
+}
+
+.tab-page-section--compact .seo-landing__block {
+    margin: 0.45rem 0;
+    padding: 0.6rem 0.8rem;
+}
+
+.tab-page-section--compact .seo-landing__block h2 {
+    font-family: var(--ibd-font-display);
+    font-size: var(--ibd-h3);
+    margin-bottom: 0.3rem;
+    padding-bottom: 0.18rem;
+}
+
+.tab-page-section--compact .seo-landing__block p,
+.tab-page-section--compact .seo-landing__list {
+    font-family: var(--ibd-font-body);
+    font-size: var(--ibd-text-base);
+    line-height: var(--ibd-line);
+}
+
+.tab-page-section--compact .seo-landing__list {
+    padding-left: 1rem;
+    margin: 0.25rem 0 0;
+}
+
+.tab-page-section--compact .seo-landing__list li {
+    margin-bottom: 0.3rem;
+}
+
+.tab-page-section--compact .updates-month {
+    margin: 0.35rem 0;
+    padding: 0.55rem 0.7rem;
+}
+
+.tab-page-section--compact .updates-month h2 {
+    font-size: var(--ibd-text-base);
+    margin-bottom: 0.25rem;
+}
+
+.tab-page-section--compact .updates-month + .updates-month {
+    margin-top: 0.35rem;
+}
+
+.tab-page-section--compact .discovery-dashboard--compact {
+    margin: 0.35rem 0 0.5rem;
+}
+
+.tab-page-section--compact .discovery-dashboard__panel {
+    padding: 0.6rem 0.8rem;
+}
+
+.tab-page-section--compact .discovery-dashboard__head {
+    margin-bottom: 0.35rem;
+}
+
+.tab-page-section--compact .discovery-dashboard__eyebrow {
+    font-family: var(--ibd-font-body);
+    font-size: var(--ibd-text-xs);
+    margin-bottom: 0.15rem;
+}
+
+.tab-page-section--compact .discovery-dashboard__title {
+    font-family: var(--ibd-font-display);
+    font-size: var(--ibd-text-md);
+    line-height: var(--ibd-line-tight);
+}
+
+.tab-page-section--compact .discovery-metrics-row {
+    padding: 0.35rem 0;
+}
+
+.tab-page-section--compact .discovery-metrics-row__label,
+.tab-page-section--compact .discovery-metrics-row__value {
+    font-family: var(--ibd-font-body);
+    font-size: var(--ibd-text-base);
+}
+
+.signup-section--compact {
+    margin-top: 0.5rem;
+    padding: 0.65rem 0.8rem;
+}
+
+.signup-section--compact h3 {
+    font-family: var(--ibd-font-display);
+    font-size: var(--ibd-h3);
+    margin: 0 0 0.2rem;
+}
+
+.signup-section--compact p {
+    font-family: var(--ibd-font-body);
+    font-size: var(--ibd-text-sm);
+    margin: 0 0 0.45rem;
+}
+
+.signup-section--compact .form-note {
+    font-family: var(--ibd-font-body);
+    font-size: var(--ibd-text-xs);
+    margin-top: 0.35rem;
+}
+
+#about .tab-page-section {
+    background: #FFFFFF;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    box-shadow: none;
 }
 
 #home.tab-content {
@@ -1328,8 +1505,7 @@ a {
 }
 
 #community .community-section,
-#news .tab-page-section,
-#about .tab-page-section {
+#news .tab-page-section {
     background: #FFFFFF;
     border: none;
     border-radius: 0;
@@ -1377,19 +1553,22 @@ a {
 /* Compact topic hub headers (e.g. /ibd-nutrition) */
 .seo-landing.support-section > .blog-back {
     margin-bottom: 0.5rem;
-    font-size: 0.875rem;
+    font-family: var(--ibd-font-body);
+    font-size: var(--ibd-text-base);
 }
 
 .seo-landing.support-section > h1 {
-    margin: 0 0 0.5rem;
-    font-size: clamp(1.5rem, 4vw, 1.85rem);
-    line-height: 1.2;
+    margin: 0 0 0.35rem;
+    font-family: var(--ibd-font-display);
+    font-size: var(--ibd-h1);
+    line-height: var(--ibd-line-tight);
     text-align: left;
 }
 
 .support-intro--hub {
-    font-size: 0.9375rem;
-    line-height: 1.5;
+    font-family: var(--ibd-font-body);
+    font-size: var(--ibd-text-sm);
+    line-height: var(--ibd-line);
     text-align: left;
     margin: 0 0 0.35rem;
     color: #6B7280;
@@ -1398,11 +1577,12 @@ a {
 .hub-header-footnote {
     margin: 0 0 1rem;
     color: #9CA3AF;
-    line-height: 1.4;
+    line-height: var(--ibd-line);
 }
 
 .hub-header-footnote small {
-    font-size: 0.8125rem;
+    font-family: var(--ibd-font-body);
+    font-size: var(--ibd-text-sm);
 }
 
 /* Bright white page chrome — beats legacy off-whites in styles.css */
@@ -1421,4 +1601,135 @@ body,
 .app-deep-links--bar,
 .contact-section {
     background-color: #FFFFFF;
+}
+
+/* ── Sitewide typography enforcement (final cascade; beats legacy styles.css) ── */
+
+.logo h1,
+.logo .logo-title {
+    font-family: var(--ibd-font-display);
+    font-size: var(--ibd-logo);
+    font-weight: 700;
+    color: var(--ibd-text);
+    text-shadow: none;
+}
+
+.tagline {
+    font-family: var(--ibd-font-body);
+    font-size: var(--ibd-text-sm);
+    font-weight: 500;
+    color: var(--ibd-muted);
+}
+
+.tab-button,
+a.tab-button,
+.subtab-dock-button,
+.about-subtab-button,
+.library-subtab-button,
+.app-subtab-button {
+    font-family: var(--ibd-font-display);
+}
+
+.crisis-strip {
+    font-family: var(--ibd-font-body);
+    font-size: var(--ibd-text-sm);
+    line-height: var(--ibd-line);
+}
+
+.tab-page-section h1,
+.support-section h1,
+.legal-section h1,
+.seo-landing h1,
+.hero-catchphrase,
+.hero-title {
+    font-family: var(--ibd-font-display);
+    font-size: var(--ibd-h1);
+    line-height: var(--ibd-line-tight);
+    letter-spacing: -0.02em;
+}
+
+.tab-page-section h2,
+.support-section h2,
+.seo-landing__block h2,
+.community-section__title,
+.features-section h3,
+.blogs-section h3,
+.resources-hub h3,
+.discovery-dashboard__title {
+    font-family: var(--ibd-font-display);
+    font-size: var(--ibd-h2);
+    line-height: var(--ibd-line-tight);
+    letter-spacing: -0.02em;
+}
+
+.tab-page-section h3,
+.support-section h3,
+.seo-landing h3 {
+    font-family: var(--ibd-font-display);
+    font-size: var(--ibd-h3);
+    line-height: var(--ibd-line-tight);
+}
+
+.tab-content p,
+.seo-landing p,
+.support-section p,
+.legal-section p,
+.tab-page-section p,
+.hero-description,
+.hero-tagline {
+    font-family: var(--ibd-font-body);
+    font-size: var(--ibd-text-base);
+    line-height: var(--ibd-line);
+}
+
+.support-intro,
+.community-section__lead,
+.last-updated,
+.seo-landing__list {
+    font-family: var(--ibd-font-body);
+    font-size: var(--ibd-text-sm);
+    line-height: var(--ibd-line);
+}
+
+.discovery-dashboard__eyebrow {
+    font-family: var(--ibd-font-body);
+    font-size: var(--ibd-text-xs);
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.discovery-metrics-row__label,
+.discovery-metrics-row__value {
+    font-family: var(--ibd-font-body);
+    font-size: var(--ibd-text-base);
+    line-height: var(--ibd-line);
+}
+
+.footer-link {
+    font-family: var(--ibd-font-body);
+    font-size: var(--ibd-text-sm);
+    border: none;
+    padding: 0;
+    border-radius: 0;
+}
+
+.footer-content p {
+    font-family: var(--ibd-font-body);
+    font-size: var(--ibd-text-sm);
+    line-height: var(--ibd-line);
+}
+
+.footer-content strong {
+    font-family: var(--ibd-font-display);
+    font-weight: 600;
+}
+
+.feature-card h4,
+.preview-card h4,
+.benefit-card h4,
+.research-source-card h3 {
+    font-family: var(--ibd-font-display);
+    font-size: var(--ibd-text-lg);
+    line-height: var(--ibd-line-tight);
 }

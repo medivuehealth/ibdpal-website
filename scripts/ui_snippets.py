@@ -147,15 +147,17 @@ UPDATES_MONTHLY_SECTIONS_HTML = """
 """
 
 SITE_UPDATES_SUBTAB_HTML = """
-                <article class="support-section seo-landing tab-page-section">
-                    <h1>Site Updates</h1>
-                    <p class="support-intro">Site improvements phased month by month since launch in September 2025. Last updated June 2026.</p>
+                <article class="support-section seo-landing tab-page-section tab-page-section--compact">
+                    <header class="page-header-compact">
+                        <h1 class="page-header-compact__title">Site Updates</h1>
+                        <p class="page-header-compact__lead">Month-by-month changelog &middot; updated June 2026</p>
+                    </header>
 {UPDATES_MONTHLY_SECTIONS_HTML}
                     <section class="seo-landing__block">
                         <h2>Stay in the loop</h2>
                         <p><a href="/blog">All articles</a> &middot; <a href="/library">Content library</a> &middot; <a href="/#about">About MediVue</a></p>
                     </section>
-                    <div class="signup-section" data-track-impression="email_signup_section" data-track-label="Stay Updated signup">
+                    <div class="signup-section signup-section--compact" data-track-impression="email_signup_section" data-track-label="Stay Updated signup">
                         <h3>Email updates</h3>
                         <p>Get notified about new IBDPal features and articles.</p>
                         <form class="email-form" id="emailForm">
@@ -170,9 +172,11 @@ SITE_UPDATES_SUBTAB_HTML = """
 """
 
 METRICS_SUBTAB_HTML = """
-                <article class="support-section seo-landing tab-page-section">
-                    <h1>Website &amp; App Analytics</h1>
-                    <p class="support-intro">Public snapshots of how patients discover IBDPal. Updated periodically by MediVue.</p>
+                <article class="support-section seo-landing tab-page-section tab-page-section--compact">
+                    <header class="page-header-compact">
+                        <h1 class="page-header-compact__title">Website &amp; App Analytics</h1>
+                        <p class="page-header-compact__lead">App Store and site discovery snapshots</p>
+                    </header>
                     <section class="discovery-dashboard discovery-dashboard--compact" aria-labelledby="metrics-app-heading">
                         <div class="discovery-dashboard__panel">
                             <header class="discovery-dashboard__head">

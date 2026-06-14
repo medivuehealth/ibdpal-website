@@ -464,9 +464,11 @@ PAGES = {
         "Month-by-month site improvements on IBDPal since September 2025 launch.",
         "/site-updates",
         f"""
-            <article class="support-section seo-landing">
-                <h1>Site Updates</h1>
-                <p class="support-intro">Site improvements phased month by month since launch in September 2025. <a href="/#site-updates">View on homepage About tab</a>.</p>
+            <article class="support-section seo-landing tab-page-section tab-page-section--compact">
+                <header class="page-header-compact">
+                    <h1 class="page-header-compact__title">Site Updates</h1>
+                    <p class="page-header-compact__lead">Month-by-month changelog &middot; <a href="/#site-updates">View on homepage About tab</a></p>
+                </header>
 {UPDATES_MONTHLY_SECTIONS_HTML}
                 <section class="seo-landing__block">
                     <h2>Stay current</h2>
