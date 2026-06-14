@@ -376,7 +376,7 @@ def render_post(p: dict) -> str:
                 "@type": "BreadcrumbList",
                 "itemListElement": [
                     {"@type": "ListItem", "position": 1, "name": "IBDPal", "item": "https://www.ibdpal.org/"},
-                    {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.ibdpal.org/#blogs"},
+                    {"@type": "ListItem", "position": 2, "name": "Patient Library", "item": "https://www.ibdpal.org/#articles"},
                     {"@type": "ListItem", "position": 3, "name": p["title"], "item": canonical},
                 ],
             },
@@ -439,11 +439,11 @@ def render_post(p: dict) -> str:
     <div class="app-container">
 {SITE_HEADER_HTML}
 
-{TAB_NAV_HTML.replace('class="tab-button" data-tab="blogs"', 'class="tab-button active" data-tab="blogs"', 1)}
+{TAB_NAV_HTML.replace('class="tab-button" data-tab="library"', 'class="tab-button active" data-tab="library"', 1)}
 
         <main class="main-content" data-track-impression="blog_article" data-track-label="Blog article body">
             <div class="blogs-section">
-                <p class="blog-back"><a href="/#blogs" class="blog-back-link">← All posts</a></p>
+                <p class="blog-back"><a href="/#articles" class="blog-back-link">← All posts</a></p>
 
                 <article class="blog-post">
                     <div class="blog-header blog-header--with-thumb">

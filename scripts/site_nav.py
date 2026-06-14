@@ -97,12 +97,12 @@ SITE_HEADER_STATIC_HTML = SITE_HEADER_HTML
 _CANONICAL = "https://www.ibdpal.org"
 
 _TAB_LINKS = f"""
-                <a href="{_CANONICAL}/#overview" class="tab-button" data-tab="overview">Overview</a>
-                <a href="{_CANONICAL}/#app" class="tab-button" data-tab="app">IBDPal App</a>
-                <a href="{_CANONICAL}/#resources" class="tab-button" data-tab="resources">Guides &amp; tools</a>
-                <a href="{_CANONICAL}/#research" class="tab-button" data-tab="research">Sources</a>
-                <a href="{_CANONICAL}/#blogs" class="tab-button" data-tab="blogs">Articles</a>
-                <a href="{_CANONICAL}/#community" class="tab-button" data-tab="community">Find support</a>
+                <a href="{_CANONICAL}/" class="tab-button" data-tab="home">Home</a>
+                <a href="{_CANONICAL}/#guides" class="tab-button" data-tab="library">Patient Library</a>
+                <a href="{_CANONICAL}/#download" class="tab-button" data-tab="app">IBDPal App</a>
+                <a href="{_CANONICAL}/#community" class="tab-button" data-tab="community">Support</a>
+                <a href="{_CANONICAL}/#updates" class="tab-button" data-tab="updates">Updates</a>
+                <a href="{_CANONICAL}/#about" class="tab-button" data-tab="about">About</a>
 """
 
 CANONICAL_HOST_SCRIPT = '    <script src="/canonical-host.js"></script>\n'
@@ -118,12 +118,12 @@ TAB_NAV_HTML = f"""
 TAB_NAV_HOME_HTML = """
         <nav class="tab-navigation" aria-label="Main">
             <div class="tab-container">
-                <button type="button" class="tab-button active" data-tab="overview">Overview</button>
+                <button type="button" class="tab-button active" data-tab="home">Home</button>
+                <button type="button" class="tab-button" data-tab="library">Patient Library</button>
                 <button type="button" class="tab-button" data-tab="app">IBDPal App</button>
-                <button type="button" class="tab-button" data-tab="resources">Guides &amp; tools</button>
-                <button type="button" class="tab-button" data-tab="research">Sources</button>
-                <button type="button" class="tab-button" data-tab="blogs">Articles</button>
-                <button type="button" class="tab-button" data-tab="community">Find support</button>
+                <button type="button" class="tab-button" data-tab="community">Support</button>
+                <button type="button" class="tab-button" data-tab="updates">Updates</button>
+                <button type="button" class="tab-button" data-tab="about">About</button>
             </div>
         </nav>
 """

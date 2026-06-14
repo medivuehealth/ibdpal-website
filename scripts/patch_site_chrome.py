@@ -31,8 +31,8 @@ def tab_nav_for(path: Path) -> str:
     nav = TAB_NAV_HTML
     if path.parent.name == "blogs":
         nav = nav.replace(
-            'class="tab-button" data-tab="blogs"',
-            'class="tab-button active" data-tab="blogs"',
+            'class="tab-button" data-tab="library"',
+            'class="tab-button active" data-tab="library"',
             1,
         )
     return nav.strip()

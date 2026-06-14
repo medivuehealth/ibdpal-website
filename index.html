@@ -25,7 +25,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="IBDPal | IBD &amp; Crohn's Support, Free App &amp; Resources">
     <meta name="twitter:description" content="IBD and Crohn's support: free app, U.S. community map, and tools for Crohn's disease and ulcerative colitis.">
-    <style>.tab-content:not(.active){display:none!important}.app-subcontent:not(.active){display:none!important}</style>
+    <style>.tab-content:not(.active){display:none!important}.app-subcontent:not(.active){display:none!important}.library-subcontent:not(.active){display:none!important}</style>
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="/site-layout-icn.css">
     <link rel="stylesheet" href="/site-polish.css">
@@ -55,25 +55,19 @@
         <!-- Tab Navigation -->
         <nav class="tab-navigation" aria-label="Main">
             <div class="tab-container">
-                <button type="button" class="tab-button active" data-tab="overview">Overview</button>
+                <button type="button" class="tab-button active" data-tab="home">Home</button>
+                <button type="button" class="tab-button" data-tab="library">Patient Library</button>
                 <button type="button" class="tab-button" data-tab="app">IBDPal App</button>
-                <button type="button" class="tab-button" data-tab="resources">Guides &amp; tools</button>
-                <button type="button" class="tab-button" data-tab="research">Sources</button>
-                <button type="button" class="tab-button" data-tab="blogs">Articles</button>
-                <button type="button" class="tab-button" data-tab="community">Find support</button>
+                <button type="button" class="tab-button" data-tab="community">Support</button>
+                <button type="button" class="tab-button" data-tab="updates">Updates</button>
+                <button type="button" class="tab-button" data-tab="about">About</button>
             </div>
         </nav>
 
         <!-- Main Content -->
         <main class="main-content">
-            <!-- Overview Tab -->
-            <div class="tab-content active" id="overview">
-                <section class="mission-hero" aria-labelledby="mission-heading">
-                    <h2 id="mission-heading" class="mission-hero__title">Free nonprofit IBD education from MediVue</h2>
-                    <p class="mission-hero__text">IBDPal helps people with Crohn's disease and ulcerative colitis understand nutrition, flares, and daily management through <strong>140+ free education pages</strong> and a nonprofit iOS tracking app, from <a href="/about">MediVue</a>.</p>
-                    <p class="mission-hero__links"><a href="/about">About</a> · <a href="/founder">MediVue Founders</a> · <a href="/library">Content library</a> · <a href="/news">Updates</a></p>
-                </section>
-
+            <!-- Home Tab -->
+            <div class="tab-content active" id="home">
                 <section class="start-here-hub start-here-hub--lead" aria-labelledby="start-here-heading" data-track-impression="start_here_hub" data-track-label="Overview start here hub">
                     <h2 id="start-here-heading" class="start-here-hub__title">What do you need today?</h2>
                     <p class="start-here-hub__lead">Free patient education for Crohn's disease and ulcerative colitis. Pick a path below, or open the IBDPal App tab to download the iOS tracker.</p>
@@ -121,76 +115,12 @@
                     </div>
                     <p class="start-here-hub__more">
                         Also browse <a href="/guides">patient guides</a> ·
-                        <a href="/#resources">Guides &amp; tools tab</a> ·
+                        <a href="/#guides" data-library-subtab-link="guides">Guides &amp; tools</a> ·
                         <a href="/glossary">IBD glossary</a> ·
-                        <a href="/faq">FAQ</a>
+                        <a href="/faq">FAQ</a> ·
+                        <a href="/#about">About MediVue</a>
                     </p>
                 </section>
-
-                <section class="discovery-dashboard discovery-dashboard--compact" aria-labelledby="discovery-dashboard-heading" data-track-impression="discovery_dashboard" data-track-label="Organic Discovery Metrics">
-                    <div class="discovery-dashboard__panel">
-                        <header class="discovery-dashboard__head">
-                            <p class="discovery-dashboard__eyebrow">App Store performance</p>
-                            <h2 id="discovery-dashboard-heading" class="discovery-dashboard__title">Organic Discovery Metrics</h2>
-                        </header>
-                        <div class="discovery-metrics-rows" role="group" aria-label="Organic discovery snapshot">
-                            <div class="discovery-metrics-row">
-                                <span class="discovery-metrics-row__label">App Store Search Visibility</span>
-                                <span class="discovery-metrics-row__value">1.5K+</span>
-                            </div>
-                            <div class="discovery-metrics-row">
-                                <span class="discovery-metrics-row__label">Total App Store Reach</span>
-                                <span class="discovery-metrics-row__value">1.6K+</span>
-                            </div>
-                            <div class="discovery-metrics-row">
-                                <span class="discovery-metrics-row__label">Organic Discovery Source</span>
-                                <span class="discovery-metrics-row__value">87%</span>
-                            </div>
-                            <div class="discovery-metrics-row discovery-metrics-row--highlight">
-                                <span class="discovery-metrics-row__label">Growing User Interest</span>
-                                <span class="discovery-metrics-row__value discovery-metrics-row__value--live">
-                                    <span class="discovery-live-dot" aria-hidden="true"></span>
-                                    Daily
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Advanced IBD Management Capabilities -->
-                <div class="app-preview-section">
-                    <h3>Advanced IBD Management Capabilities</h3>
-                    <div class="app-preview-grid">
-                        <div class="preview-card">
-                            <div class="preview-icon">🏠</div>
-                            <h4>Intelligent Home Dashboard</h4>
-                            <p>Real-time nutrition scoring (0-100), micronutrient deficiency alerts, and personalized insights with immediate action recommendations for optimal IBD management</p>
-                        </div>
-                        <div class="preview-card">
-                            <div class="preview-icon">📝</div>
-                            <h4>Comprehensive Daily Tracking</h4>
-                            <p>Advanced logging system for meals, symptoms, medications, bowel movements, pain levels, and hydration with IBD-specific tracking categories and severity scales</p>
-                        </div>
-                        <div class="preview-card">
-                            <div class="preview-icon">🧠</div>
-                            <h4>Machine Learning Analytics</h4>
-                            <p>AI-powered flare prediction using 3-month trend analysis, symptom correlation algorithms, and personalized risk assessment with early intervention recommendations</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Email Signup -->
-                <div class="signup-section" data-track-impression="email_signup_section" data-track-label="Stay Updated signup">
-                    <h3>Stay Updated</h3>
-                    <p>Get the latest updates and features for IBDPal</p>
-                    <form class="email-form" id="emailForm">
-                        <div class="input-group">
-                            <input type="email" id="email" placeholder="Enter your email address" required>
-                            <button type="submit">Notify Me</button>
-                        </div>
-                        <p class="form-note">We respect your privacy. Unsubscribe at any time.</p>
-                    </form>
-                </div>
             </div>
 
             <!-- IBDPal App Tab (Download, Features, How it Works, Screenshots, Research) -->
@@ -430,8 +360,22 @@
                 </div>
             </div>
 
-            <!-- Resources Tab -->
-            <div class="tab-content" id="resources">
+            <!-- Patient Library Tab -->
+            <div class="tab-content" id="library">
+                <div class="library-hub-intro">
+                    <h2 class="resources-hub__title">Patient Library</h2>
+                    <p class="community-section__lead">Searchable guides, patient articles, and trusted clinical sources for Crohn's disease and ulcerative colitis. Educational only, not medical advice. <a href="/library">Full content index →</a></p>
+                </div>
+                <nav class="library-subtab-navigation app-subtab-navigation" aria-label="Patient Library sections">
+                    <div class="library-subtab-container app-subtab-container">
+                        <button type="button" class="library-subtab-button app-subtab-button active" data-library-subtab="guides">Guides &amp; tools</button>
+                        <button type="button" class="library-subtab-button app-subtab-button" data-library-subtab="sources">Sources</button>
+                        <button type="button" class="library-subtab-button app-subtab-button" data-library-subtab="articles">Articles</button>
+                    </div>
+                </nav>
+
+            <!-- Guides & tools -->
+            <div class="library-subcontent active" id="guides">
                 <div class="resources-hub" data-resource-library>
                     <h2 class="resources-hub__title">Guides &amp; tools</h2>
                     <p class="community-section__lead">Search patient guides, articles, and trusted links for Crohn's disease and ulcerative colitis. <a href="/newly-diagnosed">Newly diagnosed?</a> Start here. Educational only, not medical advice.</p>
@@ -471,8 +415,8 @@
                 </div>
             </div>
 
-            <!-- research-tab -->
-            <div class="tab-content" id="research">
+            <!-- Sources -->
+            <div class="library-subcontent" id="sources">
                 <div class="research-hub" data-track-impression="research_tab" data-track-label="Research sources tab">
                     <h2 class="resources-hub__title">Trusted sources</h2>
                     <p class="community-section__lead">Peer-reviewed and clinical guidance on Crohn&#x27;s disease and ulcerative colitis nutrition. IBDPal uses NIH Dietary Reference Intakes for baseline tracking goals in the app. Disease-specific increases belong with your care team. Not medical advice.</p>
@@ -492,10 +436,9 @@
                     <p class="community-edu-disclaimer"><strong>Educational only.</strong> External links open publisher sites. IBDPal does not control third-party content.</p>
                 </div>
             </div>
-            <!-- /research-tab -->
 
-            <!-- Blogs Tab -->
-            <div class="tab-content" id="blogs">
+            <!-- Articles -->
+            <div class="library-subcontent" id="articles">
                 <div class="blogs-section blogs-section--magazine" data-track-impression="blogs_index" data-track-label="Blog index cards">
                     <div class="blogs-section-title-row">
                         <img src="/blogs/assets/ibdpal-tracking/ibdpal_app_tracker_1.png" alt="" class="blogs-section-icon" width="64" height="64" decoding="async">
@@ -964,8 +907,9 @@
                     </div>
                 </div>
             </div>
+            </div>
 
-            <!-- Community Tab -->
+            <!-- Support Tab -->
             <div class="tab-content" id="community">
                 <div class="community-section" data-track-impression="community_tab" data-track-label="IBD community map">
                     <div class="community-section__header">
@@ -998,6 +942,113 @@
                 </div>
             </div>
 
+            <!-- Updates Tab -->
+            <div class="tab-content" id="updates">
+                <article class="support-section seo-landing tab-page-section">
+                    <h1>Latest Updates</h1>
+                    <p class="support-intro">New articles, site improvements, and education from MediVue. Last updated June 2026.</p>
+                    <section class="seo-landing__block">
+                        <h2>June 2026</h2>
+                        <ul class="seo-landing__list">
+                            <li><strong>Site refresh:</strong> Overview streamlined; About and Updates are now main tabs</li>
+                            <li><strong>7 wellness articles:</strong> <a href="/blog/depression-anxiety-ibd">depression &amp; anxiety</a>, <a href="/blog/probiotics-ibd-gut-health">probiotics</a>, <a href="/blog/micronutrients-ibd-deficiencies">micronutrients</a>, <a href="/blog/stress-coping-strategies-ibd">stress coping</a>, <a href="/blog/ibd-fatigue-brain-fog">fatigue &amp; brain fog</a>, <a href="/blog/ibd-joint-pain-arthritis">joint pain</a>, <a href="/blog/ibd-night-sweats">night sweats</a></li>
+                            <li><strong>7 ICN resource highlights</strong> (Creative Commons attributed): <a href="/blog/icn-accommodations-toolkit-ibd">accommodations</a>, <a href="/blog/icn-college-ibd-toolkit">college</a>, <a href="/blog/icn-caregiver-coping-resource">caregivers</a>, <a href="/blog/icn-mental-health-provider-guide">mental health</a>, <a href="/blog/icn-transfer-toolkit-adult-care">adult transfer</a>, <a href="/blog/icn-ostomy-toolkit-pediatric">ostomy</a>, <a href="/blog/icn-ibd-holidays-special-occasions">holidays</a></li>
+                        </ul>
+                    </section>
+                    <section class="seo-landing__block">
+                        <h2>Earlier 2026</h2>
+                        <ul class="seo-landing__list">
+                            <li>Lifestyle and treatment articles: travel, biologics, low-residue diet, workplace rights</li>
+                            <li>Patient guides expansion: flares, nutrition, pediatric help, ostomy living</li>
+                            <li>50-state community support map refreshed</li>
+                        </ul>
+                    </section>
+                    <section class="seo-landing__block">
+                        <h2>Stay in the loop</h2>
+                        <p><a href="/blog">All articles</a> · <a href="/library">Content library</a> · <a href="/#about">About MediVue</a></p>
+                    </section>
+                    <div class="signup-section" data-track-impression="email_signup_section" data-track-label="Stay Updated signup">
+                        <h3>Email updates</h3>
+                        <p>Get notified about new IBDPal features and articles.</p>
+                        <form class="email-form" id="emailForm">
+                            <div class="input-group">
+                                <input type="email" id="email" placeholder="Enter your email address" required>
+                                <button type="submit">Notify Me</button>
+                            </div>
+                            <p class="form-note">We respect your privacy. Unsubscribe at any time.</p>
+                        </form>
+                    </div>
+                </article>
+            </div>
+
+            <!-- About Tab -->
+            <div class="tab-content" id="about">
+                <article class="support-section seo-landing tab-page-section">
+                    <section class="mission-hero mission-hero--tab" aria-labelledby="about-mission-heading">
+                        <h1 id="about-mission-heading" class="mission-hero__title">Free nonprofit IBD education from MediVue</h1>
+                        <p class="mission-hero__text">IBDPal helps people with Crohn's disease and ulcerative colitis understand nutrition, flares, and daily management through <strong>140+ free education pages</strong> and a nonprofit iOS tracking app.</p>
+                    </section>
+                    <p class="support-intro mission-block"><strong>Our mission:</strong> Free patient education and self-management tools for the IBD community, from nonprofit MediVue. Not medical advice; always work with your care team.</p>
+                    <section class="seo-landing__block">
+                        <h2>Who we are</h2>
+                        <p><strong>IBDPal</strong> is a program of <strong>MediVue</strong>, a North Carolina 501(c)(3) nonprofit focused on IBD community education. We combine a free iOS app with articles, guides, and state support resources on ibdpal.org.</p>
+                    </section>
+                    <section class="seo-landing__block">
+                        <h2>What you will find here</h2>
+                        <ul class="seo-landing__list">
+                            <li><a href="/#articles">51+ in-depth articles</a> on nutrition, treatment, wellness, and daily life</li>
+                            <li><a href="/guides">24 step-by-step patient guides</a></li>
+                            <li><a href="/#community">50 state support pages</a></li>
+                            <li><a href="/library">140+ total education pages</a></li>
+                            <li>Free <a href="/#app">IBDPal iOS app</a></li>
+                        </ul>
+                    </section>
+                    <section class="seo-landing__block" id="medivue-founders">
+                        <h2>MediVue Founders</h2>
+                        <p>IBDPal began after identifying a gap between clinic visits: hard-to-track meals, unpredictable symptoms, and scattered education online.</p>
+                        <p>The MediVue Founders team set out to build a calm place to log food and symptoms between appointments, plus honest, readable education that does not require a medical degree to understand.</p>
+                        <ul class="seo-landing__list">
+                            <li>Write and review patient education articles and guides</li>
+                            <li>Maintain the IBDPal app and website as a MediVue nonprofit program</li>
+                            <li>Curate trusted resources (AGA, CCF, ImproveCareNow, NIH)</li>
+                            <li>Share ICN Creative Commons materials with proper attribution</li>
+                        </ul>
+                        <p><a href="/founder">Full founders page</a> · <a href="/impact">Impact</a> · <a href="/contact">Contact</a></p>
+                    </section>
+                    <section class="seo-landing__block">
+                        <h2>ImproveCareNow resources</h2>
+                        <p>We highlight select co-produced resources from <a href="https://www.improvecarenow.org/" rel="noopener noreferrer">ImproveCareNow (ICN)</a> under their Creative Commons policy. IBDPal is not an ICN partner or listed care center.</p>
+                        <p><a href="/blog/icn-accommodations-toolkit-ibd">Browse ICN resource highlights →</a></p>
+                    </section>
+                    <section class="discovery-dashboard discovery-dashboard--compact" aria-labelledby="about-metrics-heading">
+                        <div class="discovery-dashboard__panel">
+                            <header class="discovery-dashboard__head">
+                                <p class="discovery-dashboard__eyebrow">IBDPal app</p>
+                                <h2 id="about-metrics-heading" class="discovery-dashboard__title">App Store reach</h2>
+                            </header>
+                            <div class="discovery-metrics-rows" role="group" aria-label="App discovery snapshot">
+                                <div class="discovery-metrics-row">
+                                    <span class="discovery-metrics-row__label">Search visibility</span>
+                                    <span class="discovery-metrics-row__value">1.5K+</span>
+                                </div>
+                                <div class="discovery-metrics-row">
+                                    <span class="discovery-metrics-row__label">Total reach</span>
+                                    <span class="discovery-metrics-row__value">1.6K+</span>
+                                </div>
+                                <div class="discovery-metrics-row">
+                                    <span class="discovery-metrics-row__label">Organic discovery</span>
+                                    <span class="discovery-metrics-row__value">87%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="seo-landing__block">
+                        <h2>More</h2>
+                        <p><a href="/clinical-partnerships">Clinical partnerships</a> · <a href="/research">Trusted sources</a> · <a href="/executive-summary">Executive summary</a> · <a href="/for-clinicians">For clinicians</a></p>
+                        <p><a href="https://apps.apple.com/app/ibdpal" class="app-store-badge" rel="noopener noreferrer">Download on the App Store</a></p>
+                    </section>
+                </article>
+            </div>
 
             <!-- Privacy Tab -->
             <div class="tab-content" id="privacy">
@@ -1211,11 +1262,10 @@
             <div class="footer-content">
                 <!-- Legal Links -->
                 <div class="footer-links">
-                    <a href="/about" class="footer-link">About</a>
-                    <a href="/founder" class="footer-link">MediVue Founders</a>
+                    <a href="/#about" class="footer-link">About</a>
+                    <a href="/#updates" class="footer-link">Updates</a>
                     <a href="/contact" class="footer-link">Contact</a>
                     <a href="/library" class="footer-link">Content Library</a>
-                    <a href="/news" class="footer-link">Updates</a>
                     <a href="/impact" class="footer-link">Impact</a>
                     <a href="/newly-diagnosed" class="footer-link">Newly Diagnosed</a>
                     <a href="/ibd-crohns-support" class="footer-link">IBD Crohn's Support</a>

@@ -1,8 +1,19 @@
 // IBDPal Website JavaScript
 
-var IBDPAL_MAIN_TABS = ['overview', 'app', 'resources', 'research', 'blogs', 'community', 'contact', 'privacy', 'support'];
+var IBDPAL_MAIN_TABS = ['home', 'library', 'app', 'community', 'updates', 'about', 'contact', 'privacy', 'support'];
 var IBDPAL_APP_SUBTABS = ['download', 'features', 'how-it-works', 'screenshots', 'app-research'];
+var IBDPAL_LIBRARY_SUBTABS = ['guides', 'sources', 'articles'];
 var IBDPAL_DEFAULT_APP_SUBTAB = 'download';
+var IBDPAL_DEFAULT_LIBRARY_SUBTAB = 'guides';
+
+var IBDPAL_HASH_ALIASES = {
+    overview: { main: 'home', sub: null },
+    news: { main: 'updates', sub: null },
+    resources: { main: 'library', sub: 'guides' },
+    research: { main: 'library', sub: 'sources' },
+    blogs: { main: 'library', sub: 'articles' },
+    library: { main: 'library', sub: 'guides' }
+};
 
 document.addEventListener('DOMContentLoaded', function () {
     initializeTabNavigation();
@@ -23,18 +34,24 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function resolveTabFromHash(hash) {
     if (!hash) {
-        return { main: 'overview', sub: null };
+        return { main: 'home', sub: null };
     }
-    if (IBDPAL_MAIN_TABS.indexOf(hash) !== -1) {
-        return {
-            main: hash,
-            sub: hash === 'app' ? IBDPAL_DEFAULT_APP_SUBTAB : null
-        };
+    if (IBDPAL_HASH_ALIASES[hash]) {
+        return IBDPAL_HASH_ALIASES[hash];
+    }
+    if (IBDPAL_LIBRARY_SUBTABS.indexOf(hash) !== -1) {
+        return { main: 'library', sub: hash };
     }
     if (IBDPAL_APP_SUBTABS.indexOf(hash) !== -1) {
         return { main: 'app', sub: hash };
     }
-    return { main: 'overview', sub: null };
+    if (IBDPAL_MAIN_TABS.indexOf(hash) !== -1) {
+        return {
+            main: hash,
+            sub: hash === 'app' ? IBDPAL_DEFAULT_APP_SUBTAB : (hash === 'library' ? IBDPAL_DEFAULT_LIBRARY_SUBTAB : null)
+        };
+    }
+    return { main: 'home', sub: null };
 }
 
 function initializeTabNavigation() {
@@ -42,6 +59,28 @@ function initializeTabNavigation() {
     var mainTabContents = document.querySelectorAll('main > .tab-content');
     var appSubButtons = document.querySelectorAll('.app-subtab-button[data-app-subtab]');
     var appSubContents = document.querySelectorAll('.app-subcontent');
+    var librarySubButtons = document.querySelectorAll('.library-subtab-button[data-library-subtab]');
+    var librarySubContents = document.querySelectorAll('.library-subcontent');
+
+    function switchLibrarySubTab(subTab, updateURL) {
+        if (IBDPAL_LIBRARY_SUBTABS.indexOf(subTab) === -1) {
+            subTab = IBDPAL_DEFAULT_LIBRARY_SUBTAB;
+        }
+
+        librarySubButtons.forEach(function (btn) {
+            btn.classList.toggle('active', btn.getAttribute('data-library-subtab') === subTab);
+        });
+        librarySubContents.forEach(function (panel) {
+            panel.classList.toggle('active', panel.id === subTab);
+        });
+
+        if (updateURL) {
+            var newURL = window.location.pathname + '#' + subTab;
+            window.history.pushState({ main: 'library', sub: subTab }, '', newURL);
+        }
+
+        document.dispatchEvent(new CustomEvent('ibdpal:tab', { detail: { tab: 'library', subTab: subTab } }));
+    }
 
     function switchAppSubTab(subTab, updateURL) {
         if (IBDPAL_APP_SUBTABS.indexOf(subTab) === -1) {
@@ -65,7 +104,7 @@ function initializeTabNavigation() {
 
     function switchMainTab(mainTab, subTab, updateURL) {
         if (IBDPAL_MAIN_TABS.indexOf(mainTab) === -1) {
-            mainTab = 'overview';
+            mainTab = 'home';
         }
 
         mainTabButtons.forEach(function (btn) {
@@ -76,19 +115,35 @@ function initializeTabNavigation() {
         });
 
         if (mainTab === 'app') {
-            var targetSub = subTab && IBDPAL_APP_SUBTABS.indexOf(subTab) !== -1
+            var appSub = subTab && IBDPAL_APP_SUBTABS.indexOf(subTab) !== -1
                 ? subTab
                 : IBDPAL_DEFAULT_APP_SUBTAB;
-            switchAppSubTab(targetSub, false);
+            switchAppSubTab(appSub, false);
+        }
+
+        if (mainTab === 'library') {
+            var libSub = subTab && IBDPAL_LIBRARY_SUBTABS.indexOf(subTab) !== -1
+                ? subTab
+                : IBDPAL_DEFAULT_LIBRARY_SUBTAB;
+            switchLibrarySubTab(libSub, false);
         }
 
         if (updateURL) {
-            var hash = mainTab === 'overview' ? '' : (mainTab === 'app' ? (subTab || IBDPAL_DEFAULT_APP_SUBTAB) : mainTab);
+            var hash = '';
+            if (mainTab === 'home') {
+                hash = '';
+            } else if (mainTab === 'app') {
+                hash = subTab && IBDPAL_APP_SUBTABS.indexOf(subTab) !== -1 ? subTab : IBDPAL_DEFAULT_APP_SUBTAB;
+            } else if (mainTab === 'library') {
+                hash = subTab && IBDPAL_LIBRARY_SUBTABS.indexOf(subTab) !== -1 ? subTab : IBDPAL_DEFAULT_LIBRARY_SUBTAB;
+            } else {
+                hash = mainTab;
+            }
             var newURL = hash ? window.location.pathname + '#' + hash : window.location.pathname;
             window.history.pushState({ main: mainTab, sub: subTab || null }, '', newURL);
         }
 
-        if (mainTab !== 'app') {
+        if (mainTab !== 'app' && mainTab !== 'library') {
             document.dispatchEvent(new CustomEvent('ibdpal:tab', { detail: { tab: mainTab } }));
         }
     }
@@ -96,7 +151,12 @@ function initializeTabNavigation() {
     mainTabButtons.forEach(function (button) {
         button.addEventListener('click', function () {
             var mainTab = this.getAttribute('data-tab');
-            var subTab = mainTab === 'app' ? IBDPAL_DEFAULT_APP_SUBTAB : null;
+            var subTab = null;
+            if (mainTab === 'app') {
+                subTab = IBDPAL_DEFAULT_APP_SUBTAB;
+            } else if (mainTab === 'library') {
+                subTab = IBDPAL_DEFAULT_LIBRARY_SUBTAB;
+            }
             switchMainTab(mainTab, subTab, true);
         });
     });
@@ -105,6 +165,13 @@ function initializeTabNavigation() {
         button.addEventListener('click', function () {
             var subTab = this.getAttribute('data-app-subtab');
             switchMainTab('app', subTab, true);
+        });
+    });
+
+    librarySubButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+            var subTab = this.getAttribute('data-library-subtab');
+            switchMainTab('library', subTab, true);
         });
     });
 
@@ -124,6 +191,15 @@ function initializeTabNavigation() {
             if (!sub) return;
             e.preventDefault();
             switchMainTab('app', sub, true);
+        });
+    });
+
+    document.querySelectorAll('[data-library-subtab-link]').forEach(function (link) {
+        link.addEventListener('click', function (e) {
+            var sub = link.getAttribute('data-library-subtab-link');
+            if (!sub) return;
+            e.preventDefault();
+            switchMainTab('library', sub, true);
         });
     });
 }

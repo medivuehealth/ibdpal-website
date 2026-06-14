@@ -264,13 +264,19 @@ PAGES = {
                     </ul>
                 </section>
                 <section class="seo-landing__block">
+                    <h2>MediVue Founders</h2>
+                    <p>IBDPal began after identifying a gap between clinic visits: hard-to-track meals, unpredictable symptoms, and scattered education online.</p>
+                    <p>The MediVue Founders team set out to build a calm place to log food and symptoms between appointments, plus honest, readable education that does not require a medical degree to understand.</p>
+                    <p><a href="/founder">Read the full founders page</a> · <a href="/#about">View on homepage</a></p>
+                </section>
+                <section class="seo-landing__block">
                     <h2>ImproveCareNow resources</h2>
                     <p>We highlight select co-produced resources from <a href="https://www.improvecarenow.org/" rel="noopener noreferrer">ImproveCareNow (ICN)</a> under their Creative Commons policy, with attribution and links to originals. IBDPal is not an ICN partner or listed care center.</p>
                     <p><a href="/blog/icn-accommodations-toolkit-ibd">Browse ICN resource highlights →</a></p>
                 </section>
                 <section class="seo-landing__block">
                     <h2>Learn more</h2>
-                    <p><a href="/founder">MediVue Founders</a> · <a href="/impact">Impact</a> · <a href="/news">Latest updates</a> · <a href="/clinical-partnerships">Clinical partnerships</a> · <a href="/research">Trusted sources</a></p>
+                    <p><a href="/#updates">Latest updates</a> · <a href="/impact">Impact</a> · <a href="/contact">Contact</a> · <a href="/clinical-partnerships">Clinical partnerships</a> · <a href="/research">Trusted sources</a></p>
                     <p>Organizational overview for funders: <a href="/executive-summary">Executive summary</a></p>
                 </section>
             </article>
@@ -307,7 +313,7 @@ PAGES = {
                 <section class="seo-landing__block">
                     <h2>Try IBDPal</h2>
                     <p><a href="https://apps.apple.com/app/ibdpal" class="app-store-badge" rel="noopener noreferrer">Download on the App Store</a></p>
-                    <p><a href="/about">About IBDPal</a> · <a href="/impact">Our impact</a> · <a href="/contact">Contact us</a></p>
+                    <p><a href="/#about">About IBDPal</a> · <a href="/impact">Our impact</a> · <a href="/contact">Contact us</a></p>
                 </section>
             </article>
         """,
@@ -447,7 +453,7 @@ PAGES = {
         """
             <article class="support-section seo-landing">
                 <h1>Latest Updates</h1>
-                <p class="support-intro">Site maintenance and new patient education from MediVue. Last updated June 2026.</p>
+                <p class="support-intro">New articles and site improvements from MediVue. <a href="/#updates">View on homepage Updates tab</a>.</p>
                 <section class="seo-landing__block">
                     <h2>June 2026</h2>
                     <ul class="seo-landing__list">

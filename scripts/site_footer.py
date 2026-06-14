@@ -4,11 +4,10 @@ SITE_FOOTER_STATIC = """
         <footer class="footer">
             <div class="footer-content">
                 <div class="footer-links">
-                    <a href="/about" class="footer-link">About</a>
-                    <a href="/founder" class="footer-link">MediVue Founders</a>
+                    <a href="/#about" class="footer-link">About</a>
+                    <a href="/#updates" class="footer-link">Updates</a>
                     <a href="/contact" class="footer-link">Contact</a>
                     <a href="/library" class="footer-link">Content Library</a>
-                    <a href="/news" class="footer-link">Updates</a>
                     <a href="/impact" class="footer-link">Impact</a>
                     <a href="/newly-diagnosed" class="footer-link">Newly Diagnosed</a>
                     <a href="/ibd-crohns-support" class="footer-link">IBD Crohn's Support</a>
@@ -30,11 +29,10 @@ SITE_FOOTER_HOME = """
         <footer class="footer">
             <div class="footer-content">
                 <div class="footer-links">
-                    <a href="/about" class="footer-link">About</a>
-                    <a href="/founder" class="footer-link">MediVue Founders</a>
+                    <a href="/#about" class="footer-link">About</a>
+                    <a href="/#updates" class="footer-link">Updates</a>
                     <a href="/contact" class="footer-link">Contact</a>
                     <a href="/library" class="footer-link">Content Library</a>
-                    <a href="/news" class="footer-link">Updates</a>
                     <a href="/impact" class="footer-link">Impact</a>
                     <a href="/newly-diagnosed" class="footer-link">Newly Diagnosed</a>
                     <a href="/ibd-crohns-support" class="footer-link">IBD Crohn's Support</a>
@@ -59,8 +57,8 @@ SITE_FOOTER_BLOG = """
         <footer class="footer">
             <div class="footer-content">
                 <div class="footer-links">
-                    <a href="/about" class="footer-link">About</a>
-                    <a href="/founder" class="footer-link">MediVue Founders</a>
+                    <a href="/#about" class="footer-link">About</a>
+                    <a href="/#updates" class="footer-link">Updates</a>
                     <a href="/contact" class="footer-link">Contact</a>
                     <a href="/library" class="footer-link">Content Library</a>
                     <a href="/privacy" class="footer-link">Privacy Policy</a>

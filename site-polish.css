@@ -959,6 +959,33 @@ body {
     font-size: 0.95rem;
 }
 
+.library-hub-intro {
+    margin-bottom: 0.5rem;
+}
+
+.library-hub-intro .resources-hub__title {
+    margin-bottom: 0.35rem;
+}
+
+#library .library-subtab-navigation {
+    margin-bottom: 1.25rem;
+}
+
+.mission-hero--tab .mission-hero__title {
+    font-size: 1.5rem;
+}
+
+.tab-navigation .tab-container {
+    gap: 0;
+}
+
+@media (max-width: 1100px) {
+    .tab-navigation .tab-button {
+        padding: 0.85rem 0.75rem;
+        font-size: 0.85rem;
+    }
+}
+
 .mission-block {
     padding: 1rem 1.25rem;
     background: #f8f9ff;

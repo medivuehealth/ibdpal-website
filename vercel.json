@@ -16,6 +16,11 @@
       "source": "/support",
       "destination": "https://www.ibdpal.org/#support",
       "permanent": true
+    },
+    {
+      "source": "/news",
+      "destination": "https://www.ibdpal.org/#updates",
+      "permanent": true
     }
   ],
   "rewrites": [

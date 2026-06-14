@@ -271,8 +271,13 @@ body {
     display: none;
 }
 
-.app-subcontent.active {
+.app-subcontent.active,
+.library-subcontent.active {
     display: block;
+}
+
+.library-subcontent {
+    display: none;
 }
 
 /* Hero band (homepage) */
