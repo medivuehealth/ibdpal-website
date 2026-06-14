@@ -130,6 +130,32 @@ def patch_blog_vote_icons(blogs_dir) -> int:
     return count
 
 
+def patch_blog_back_links(blogs_dir) -> int:
+    """Fix corrupted left-arrow (? or mojibake) and middle-dot separators in blog posts."""
+    import re
+
+    from ui_snippets import BLOG_BACK_LINK_HTML
+
+    back_pat = re.compile(
+        r'^\s*<p class="blog-back"><a href="[^"]*" class="blog-back-link">[^<]*All posts</a></p>',
+        re.I | re.M,
+    )
+    back_repl = '                ' + BLOG_BACK_LINK_HTML
+    date_pat = re.compile(
+        r'(<p class="blog-date">Posted on [^<]+?)\s*(?:\?|←|·|\u00b7|\ufffd)\s*([^<]+)</p>',
+        re.I,
+    )
+    count = 0
+    for path in blogs_dir.glob("*.html"):
+        text = path.read_text(encoding="utf-8", errors="replace")
+        new_text = back_pat.sub(back_repl, text, count=1)
+        new_text = date_pat.sub(r"\1 &middot; \2</p>", new_text)
+        if new_text != text:
+            path.write_text(new_text, encoding="utf-8")
+            count += 1
+    return count
+
+
 def patch_blog_eeat(blogs_dir) -> int:
     import re
 

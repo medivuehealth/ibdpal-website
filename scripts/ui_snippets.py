@@ -58,6 +58,11 @@ BLOG_VOTE_THUMB_DOWN_SVG = (
     "</svg>"
 )
 
+BLOG_BACK_LINK_HTML = (
+    '<p class="blog-back">'
+    '<a href="/#articles" class="blog-back-link">&larr; All posts</a></p>'
+)
+
 
 def blog_vote_widget(slug: str) -> str:
     """Thumbs up/down feedback block for blog articles (SVG icons, encoding-safe)."""

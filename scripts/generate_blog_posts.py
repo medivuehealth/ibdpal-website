@@ -14,7 +14,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 BLOGS = ROOT / "blogs"
 sys.path.insert(0, str(ROOT / "scripts"))
-from ui_snippets import blog_vote_widget  # noqa: E402
+from ui_snippets import BLOG_BACK_LINK_HTML, blog_vote_widget  # noqa: E402
 from blog_related import related_reading_html  # noqa: E402
 from eeat_blocks import (  # noqa: E402
     blog_medical_footer_en,
@@ -443,14 +443,14 @@ def render_post(p: dict) -> str:
 
         <main class="main-content" data-track-impression="blog_article" data-track-label="Blog article body">
             <div class="blogs-section">
-                <p class="blog-back"><a href="/#articles" class="blog-back-link">← All posts</a></p>
+                {BLOG_BACK_LINK_HTML}
 
                 <article class="blog-post">
                     <div class="blog-header blog-header--with-thumb">
                         <img class="blog-header-thumb" src="{thumb}" alt="{html.escape(p["alts"][0])}" width="96" height="96" decoding="async">
                         <div class="blog-header-text">
                             <h1 class="blog-title">{html.escape(p["title"])}</h1>
-                            <p class="blog-date">Posted on {p["date_display"]} · {html.escape(p["category"].split(" · ")[0])}</p>
+                            <p class="blog-date">Posted on {p["date_display"]} &middot; {html.escape(p["category"].split(" · ")[0])}</p>
                         </div>
                     </div>
 
