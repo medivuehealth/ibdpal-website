@@ -22,7 +22,7 @@
     height: 34px;
     border-radius: 8px;
     color: var(--ibd-primary);
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 1);
     text-decoration: none;
     transition: background 0.2s ease, color 0.2s ease;
 }
@@ -58,12 +58,12 @@
     --ibd-bg-alt: #F8FAFC;
     --ibd-surface: #ffffff;
     --ibd-border: #E5E7EB;
-    --ibd-header-bg: #FFF4F1;
-    --ibd-header-border: #FFD8CF;
+    --ibd-header-bg: #FFE5DC;
+    --ibd-header-border: #FFAB94;
     --ibd-content-pad: clamp(1rem, 2.5vw, 2rem);
 }
 
-/* Site shell | white content on light gray (ICN-style, not full-page gradient) */
+/* Site shell | bright white page chrome; coral tint on header only */
 body {
     background: var(--ibd-bg);
     color: var(--ibd-text);
@@ -79,12 +79,12 @@ body {
     min-height: auto;
 }
 
-/* Brand header: light coral tint (logo header only) */
+/* Brand header: coral tint (logo header only) */
 .header {
-    background: var(--ibd-header-bg, #FFF4F1);
+    background: var(--ibd-header-bg, #FFE5DC);
     margin: 0;
     padding: 0;
-    border-bottom: 1px solid var(--ibd-header-border, #FFD8CF);
+    border-bottom: 1px solid var(--ibd-header-border, #FFAB94);
     box-shadow: none;
 }
 

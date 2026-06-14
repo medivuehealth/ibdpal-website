@@ -4,7 +4,7 @@
  */
 
 :root {
-    --ibd-glass: rgba(255, 255, 255, 0.96);
+    --ibd-glass: #FFFFFF;
     --ibd-glass-border: rgba(229, 231, 235, 0.9);
     --ibd-shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
     --ibd-shadow-md: 0 4px 16px rgba(15, 23, 42, 0.08), 0 2px 6px rgba(15, 23, 42, 0.04);
@@ -31,10 +31,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* Header — light coral tint (logo bar only); page stays white */
+/* Header — coral tint (logo bar only); page stays bright white */
 .header {
-    background: var(--ibd-header-bg, #FFF4F1);
-    border-bottom: 1px solid var(--ibd-header-border, #FFD8CF);
+    background: var(--ibd-header-bg, #FFE5DC);
+    border-bottom: 1px solid var(--ibd-header-border, #FFAB94);
     box-shadow: none;
     position: relative;
 }
@@ -61,7 +61,7 @@ body {
 
 .site-social__link {
     border-radius: 10px;
-    background: rgba(255, 255, 255, 0.85);
+    background: #FFFFFF;
     color: var(--ibd-primary);
 }
 
@@ -70,9 +70,9 @@ body {
     transform: translateY(-1px);
 }
 
-/* Sticky nav — clean white dock */
+/* Sticky nav — bright white dock */
 .main-tab-dock {
-    background: #ffffff;
+    background: #FFFFFF;
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
     box-shadow: 0 1px 0 var(--ibd-border);
@@ -86,7 +86,7 @@ body {
 
 .library-subtab-navigation--dock,
 .subtab-navigation--dock {
-    background: #ffffff;
+    background: #FFFFFF;
     border-top-color: var(--ibd-border);
 }
 
@@ -129,10 +129,10 @@ body {
     background: var(--ibd-primary);
 }
 
-/* Main panels — white throughout; lavender is header-only */
+/* Main panels — bright white throughout; coral is header-only */
 .main-content,
 .tab-content {
-    background: #ffffff;
+    background: #FFFFFF;
 }
 
 #home.tab-content {
@@ -159,7 +159,7 @@ body {
 /* Homepage hero — white, typography only */
 .home-hero {
     padding: clamp(1.25rem, 3vw, 2rem) var(--ibd-content-pad) clamp(1rem, 2.5vw, 1.5rem);
-    background: #ffffff;
+    background: #FFFFFF;
     text-align: center;
 }
 
@@ -187,7 +187,7 @@ body {
     position: relative;
     margin: 0;
     padding: clamp(2rem, 4vw, 3rem) var(--ibd-content-pad) clamp(2.5rem, 5vw, 3.5rem);
-    background: #ffffff;
+    background: #FFFFFF;
     border: none;
     border-radius: 0;
     box-shadow: none;
@@ -227,7 +227,7 @@ body {
 .start-here-hub__tile {
     position: relative;
     padding: 1.35rem 1.25rem 1.2rem;
-    background: #ffffff;
+    background: #FFFFFF;
     border: 1px solid var(--ibd-border);
     border-radius: 16px;
     box-shadow: var(--ibd-shadow-sm);
@@ -246,7 +246,7 @@ body {
 }
 
 .start-here-hub__tile--app {
-    background: #ffffff;
+    background: #FFFFFF;
     border-color: rgba(139, 92, 246, 0.25);
 }
 
@@ -365,9 +365,7 @@ body {
 
 /* Hero & download */
 .hero-section {
-    background:
-        radial-gradient(ellipse 80% 60% at 50% 0%, rgba(153, 51, 204, 0.08) 0%, transparent 70%),
-        linear-gradient(180deg, #faf8fc 0%, #fff 100%);
+    background: #FFFFFF;
 }
 
 .hero-catchphrase,
@@ -381,8 +379,7 @@ body {
     border-left-width: 4px;
     border-right-width: 0;
     box-shadow: var(--ibd-shadow-md);
-    background: rgba(255, 255, 255, 0.85);
-    backdrop-filter: blur(6px);
+    background: #FFFFFF;
 }
 
 .app-store-badge {
@@ -449,8 +446,7 @@ body {
 
 /* App sub-tabs */
 .app-subtab-navigation {
-    background: rgba(255, 255, 255, 0.92);
-    backdrop-filter: blur(10px);
+    background: #FFFFFF;
     border-bottom-color: rgba(153, 51, 204, 0.1);
 }
 
@@ -519,7 +515,7 @@ body {
 /* ── Phase 2: App download hero ── */
 .app-hero-premium {
     padding: clamp(1.5rem, 4vw, 3rem) 0 2rem;
-    background: #ffffff;
+    background: #FFFFFF;
     border-radius: var(--ibd-radius-lg);
     margin-bottom: 1rem;
 }
@@ -985,7 +981,7 @@ body {
 .mission-hero {
     margin: 0 0 1.25rem;
     padding: 1.25rem 1.5rem;
-    background: #ffffff;
+    background: #FFFFFF;
     border: 1px solid var(--ibd-border);
     border-radius: var(--ibd-radius-md);
     box-shadow: var(--ibd-shadow-sm);
@@ -1013,7 +1009,7 @@ body {
 .library-hub-footer {
     margin-top: 1.5rem;
     padding: 0.85rem 1rem;
-    background: #ffffff;
+    background: #FFFFFF;
     border: 1px solid var(--ibd-border);
     border-radius: var(--ibd-radius-md, 10px);
 }
@@ -1046,7 +1042,7 @@ body {
 
 .mission-block {
     padding: 1rem 1.25rem;
-    background: #ffffff;
+    background: #FFFFFF;
     border: 1px solid var(--ibd-border);
     border-left: 3px solid var(--ibd-primary);
     border-radius: 0 var(--ibd-radius-sm) var(--ibd-radius-sm) 0;
@@ -1115,7 +1111,7 @@ body {
 /* ── Sitewide health UI (tabs + inner pages) ── */
 .container,
 .app-container {
-    background: #ffffff;
+    background: #FFFFFF;
 }
 
 a {
@@ -1172,7 +1168,7 @@ a {
 .seo-landing__block {
     margin: 1.25rem 0;
     padding: 1.25rem 1.35rem;
-    background: #ffffff;
+    background: #FFFFFF;
     border: 1px solid var(--ibd-border);
     border-radius: var(--ibd-radius-md);
     box-shadow: var(--ibd-shadow-sm);
@@ -1182,7 +1178,7 @@ a {
 .preview-card,
 .benefit-card,
 .research-source-card {
-    background: #ffffff;
+    background: #FFFFFF;
     border: 1px solid var(--ibd-border);
     border-radius: var(--ibd-radius-md);
     box-shadow: var(--ibd-shadow-sm);
@@ -1210,7 +1206,7 @@ a {
 .community-edu-disclaimer {
     font-size: 0.8125rem;
     color: #6B7280;
-    background: #ffffff;
+    background: #FFFFFF;
     border: 1px solid var(--ibd-border);
     border-left: 3px solid var(--ibd-primary);
     border-radius: 0 var(--ibd-radius-sm) var(--ibd-radius-sm) 0;
@@ -1221,14 +1217,14 @@ a {
 .community-detail,
 .community-map,
 .discovery-dashboard__panel {
-    background: #ffffff;
+    background: #FFFFFF;
     border: 1px solid var(--ibd-border);
     border-radius: var(--ibd-radius-md);
     box-shadow: var(--ibd-shadow-sm);
 }
 
 .signup-section {
-    background: #ffffff;
+    background: #FFFFFF;
     border: 1px solid var(--ibd-border);
     border-radius: var(--ibd-radius-md);
     padding: 1.25rem 1.35rem;
@@ -1256,7 +1252,7 @@ a {
 .resource-pill,
 .blog-pill {
     border: 1px solid var(--ibd-border);
-    background: #ffffff;
+    background: #FFFFFF;
     color: #6B7280;
     border-radius: 999px;
 }
@@ -1273,13 +1269,13 @@ a {
 #community.tab-content,
 #updates.tab-content,
 #about.tab-content {
-    background: #ffffff;
+    background: #FFFFFF;
 }
 
 #community .community-section,
 #updates .tab-page-section,
 #about .tab-page-section {
-    background: #ffffff;
+    background: #FFFFFF;
     border: none;
     border-radius: 0;
     padding: 0;
@@ -1321,4 +1317,22 @@ a {
 
 .footer {
     background: #1f2937;
+}
+
+/* Bright white page chrome — beats legacy off-whites in styles.css */
+body,
+.app-container,
+.main-content,
+.tab-navigation,
+.tab-container,
+.main-tab-dock,
+.library-subtab-navigation--dock,
+.subtab-navigation--dock,
+.crisis-strip,
+.hero-section,
+.home-hero,
+.start-here-hub,
+.app-deep-links--bar,
+.contact-section {
+    background-color: #FFFFFF;
 }

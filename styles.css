@@ -59,7 +59,7 @@ body {
 
 /* Tab Navigation */
 .tab-navigation {
-    background: rgba(255, 255, 255, 0.95);
+    background: #FFFFFF;
     border-radius: 15px 15px 0 0;
     padding: 0;
     margin: 0.5rem 0 0 0;
@@ -71,7 +71,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     gap: 0;
-    background: rgba(255, 255, 255, 0.95);
+    background: #FFFFFF;
     border-radius: 15px 15px 0 0;
     overflow: hidden;
 }
@@ -119,7 +119,7 @@ a.tab-button {
 /* Tab Content */
 .tab-content {
     display: none;
-    background: rgba(255, 255, 255, 0.95);
+    background: #FFFFFF;
     border-radius: 0 0 15px 15px;
     padding: 1.5rem 2rem;
     margin-bottom: 1rem;
@@ -250,7 +250,7 @@ a.tab-button {
 
 /* Main Content */
 .main-content {
-    background: #fafafa; /* ibdBackground */
+    background: #FFFFFF;
     border-radius: 20px;
     box-shadow: 0 20px 40px rgba(0,0,0,0.1);
     margin: 0.5rem 0;
@@ -261,7 +261,7 @@ a.tab-button {
 .hero-section {
     text-align: center;
     padding: 0.8rem 2rem;
-    background: linear-gradient(135deg, #fafafa 0%, #f2f2f2 100%); /* ibdBackground gradient */
+    background: #FFFFFF;
 }
 
 .hero-catchphrase {
@@ -879,7 +879,7 @@ a.tab-button {
 /* Contact Section */
 .contact-section {
     padding: 4rem 2rem;
-    background: #fafafa; /* ibdBackground */
+    background: #FFFFFF;
     text-align: center;
 }
 
@@ -2415,7 +2415,7 @@ a.tab-button {
 }
 
 .crisis-strip {
-    background: var(--ibd-bg-alt, #F8FAFC);
+    background: #FFFFFF;
     border-bottom: 1px solid var(--ibd-border, #E5E7EB);
     padding: 0.4rem 1rem;
     font-size: 0.8125rem;
@@ -2716,7 +2716,7 @@ input:focus-visible {
 }
 
 .app-deep-links--bar {
-    background: #fafafa;
+    background: #FFFFFF;
     border-bottom: 1px solid #eee;
     padding: 0.65rem 1rem;
     font-size: 1.05rem;
