@@ -11,16 +11,6 @@
       "source": "/privacy",
       "destination": "https://www.ibdpal.org/#privacy",
       "permanent": true
-    },
-    {
-      "source": "/support",
-      "destination": "https://www.ibdpal.org/#support",
-      "permanent": true
-    },
-    {
-      "source": "/news",
-      "destination": "https://www.ibdpal.org/#updates",
-      "permanent": true
     }
   ],
   "rewrites": [
@@ -199,6 +189,10 @@
     {
       "source": "/support/:state",
       "destination": "/support/:state.html"
+    },
+    {
+      "source": "/support",
+      "destination": "/support/index.html"
     },
     {
       "source": "/blog/:slug/amp",
