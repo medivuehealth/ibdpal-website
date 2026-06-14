@@ -133,7 +133,8 @@ a.tab-button {
 }
 
 /* IBDPal App sub-tabs */
-#app.tab-content {
+#app.tab-content,
+#library.tab-content {
     padding-top: 0;
     overflow: hidden;
 }

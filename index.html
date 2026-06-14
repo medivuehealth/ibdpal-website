@@ -52,17 +52,26 @@
             </div>
         </header>
 
-        <!-- Tab Navigation -->
-        <nav class="tab-navigation" aria-label="Main">
-            <div class="tab-container">
-                <button type="button" class="tab-button active" data-tab="home">Home</button>
-                <button type="button" class="tab-button" data-tab="library">Patient Library</button>
-                <button type="button" class="tab-button" data-tab="app">IBDPal App</button>
-                <button type="button" class="tab-button" data-tab="community">Support</button>
-                <button type="button" class="tab-button" data-tab="updates">Updates</button>
-                <button type="button" class="tab-button" data-tab="about">About</button>
-            </div>
-        </nav>
+        <!-- Main + library sub-tabs (sticky dock for mobile) -->
+        <div class="main-tab-dock" id="main-tab-dock">
+            <nav class="tab-navigation" aria-label="Main">
+                <div class="tab-container">
+                    <button type="button" class="tab-button active" data-tab="home">Home</button>
+                    <button type="button" class="tab-button" data-tab="library">Patient Library</button>
+                    <button type="button" class="tab-button" data-tab="app">IBDPal App</button>
+                    <button type="button" class="tab-button" data-tab="community">Support</button>
+                    <button type="button" class="tab-button" data-tab="updates">Updates</button>
+                    <button type="button" class="tab-button" data-tab="about">About</button>
+                </div>
+            </nav>
+            <nav class="library-subtab-navigation library-subtab-navigation--dock app-subtab-navigation" id="library-subtab-bar" aria-label="Patient Library sections" hidden>
+                <div class="library-subtab-container app-subtab-container">
+                    <button type="button" class="library-subtab-button app-subtab-button active" data-library-subtab="guides">Guides &amp; tools</button>
+                    <button type="button" class="library-subtab-button app-subtab-button" data-library-subtab="sources">Sources</button>
+                    <button type="button" class="library-subtab-button app-subtab-button" data-library-subtab="articles">Articles</button>
+                </div>
+            </nav>
+        </div>
 
         <!-- Main Content -->
         <main class="main-content">
@@ -362,17 +371,6 @@
 
             <!-- Patient Library Tab -->
             <div class="tab-content" id="library">
-                <div class="library-hub-intro">
-                    <h2 class="resources-hub__title">Patient Library</h2>
-                    <p class="community-section__lead">Searchable guides, patient articles, and trusted clinical sources for Crohn's disease and ulcerative colitis. Educational only, not medical advice. <a href="/library">Full content index →</a></p>
-                </div>
-                <nav class="library-subtab-navigation app-subtab-navigation" aria-label="Patient Library sections">
-                    <div class="library-subtab-container app-subtab-container">
-                        <button type="button" class="library-subtab-button app-subtab-button active" data-library-subtab="guides">Guides &amp; tools</button>
-                        <button type="button" class="library-subtab-button app-subtab-button" data-library-subtab="sources">Sources</button>
-                        <button type="button" class="library-subtab-button app-subtab-button" data-library-subtab="articles">Articles</button>
-                    </div>
-                </nav>
 
             <!-- Guides & tools -->
             <div class="library-subcontent active" id="guides">
@@ -907,6 +905,10 @@
                     </div>
                 </div>
             </div>
+
+                <aside class="library-hub-footer" aria-label="About Patient Library">
+                    <p class="library-hub-footer__text">Searchable guides, patient articles, and trusted clinical sources for Crohn's disease and ulcerative colitis. <strong>Educational only</strong>, not medical advice. <a href="/library">Full content index →</a></p>
+                </aside>
             </div>
 
             <!-- Support Tab -->
