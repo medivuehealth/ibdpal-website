@@ -11,7 +11,7 @@ from es_mirrors import es_url_for_en_path  # noqa: E402
 from seo_head import breadcrumb_json, howto_json, render_seo_head, web_page_json  # noqa: E402
 from site_nav import PAGE_SCRIPTS, TAB_NAV_HTML, site_header_html  # noqa: E402
 from site_footer import SITE_FOOTER_STATIC  # noqa: E402
-from ui_snippets import RESOURCE_TOOLBAR_HTML  # noqa: E402
+from ui_snippets import RESOURCE_TOOLBAR_HTML, UPDATES_MONTHLY_SECTIONS_HTML  # noqa: E402
 
 SITE = "https://www.ibdpal.org"
 EEAT_PATHS = {"/newly-diagnosed", "/visit-prep", "/pediatric-caregivers", "/resources"}
@@ -450,29 +450,14 @@ PAGES = {
         "IBDPal Updates | Latest Articles & Site News",
         "What's new on IBDPal: recent articles, ImproveCareNow resource highlights, and site updates from MediVue.",
         "/news",
-        """
+        f"""
             <article class="support-section seo-landing">
                 <h1>Latest Updates</h1>
-                <p class="support-intro">New articles and site improvements from MediVue. <a href="/#updates">View on homepage Updates tab</a>.</p>
-                <section class="seo-landing__block">
-                    <h2>June 2026</h2>
-                    <ul class="seo-landing__list">
-                        <li><strong>New site pages:</strong> <a href="/about">About</a>, <a href="/founder">MediVue Founders</a>, <a href="/contact">Contact</a>, <a href="/impact">Impact</a>, <a href="/library">Content Library</a></li>
-                        <li><strong>7 wellness articles:</strong> <a href="/blog/depression-anxiety-ibd">depression &amp; anxiety</a>, <a href="/blog/probiotics-ibd-gut-health">probiotics</a>, <a href="/blog/micronutrients-ibd-deficiencies">micronutrients</a>, <a href="/blog/stress-coping-strategies-ibd">stress coping</a>, <a href="/blog/ibd-fatigue-brain-fog">fatigue &amp; brain fog</a>, <a href="/blog/ibd-joint-pain-arthritis">joint pain</a>, <a href="/blog/ibd-night-sweats">night sweats</a></li>
-                        <li><strong>7 ICN resource highlights</strong> (Creative Commons attributed): <a href="/blog/icn-accommodations-toolkit-ibd">accommodations</a>, <a href="/blog/icn-college-ibd-toolkit">college</a>, <a href="/blog/icn-caregiver-coping-resource">caregivers</a>, <a href="/blog/icn-mental-health-provider-guide">mental health</a>, <a href="/blog/icn-transfer-toolkit-adult-care">adult transfer</a>, <a href="/blog/icn-ostomy-toolkit-pediatric">ostomy</a>, <a href="/blog/icn-ibd-holidays-special-occasions">holidays</a></li>
-                    </ul>
-                </section>
-                <section class="seo-landing__block">
-                    <h2>Earlier 2026</h2>
-                    <ul class="seo-landing__list">
-                        <li>Lifestyle and treatment articles: travel, biologics, low-residue diet, workplace rights</li>
-                        <li>Patient guides expansion: flares, nutrition, pediatric help, ostomy living</li>
-                        <li>50-state community support map refreshed</li>
-                    </ul>
-                </section>
+                <p class="support-intro">Site improvements phased month by month since launch in September 2025. <a href="/#updates">View on homepage Updates tab</a>.</p>
+{UPDATES_MONTHLY_SECTIONS_HTML}
                 <section class="seo-landing__block">
                     <h2>Stay current</h2>
-                    <p><a href="/blog">All articles</a> · <a href="/news">This page</a> · <a href="/contact">Contact</a></p>
+                    <p><a href="/blog">All articles</a> &middot; <a href="/news">This page</a> &middot; <a href="/contact">Contact</a></p>
                 </section>
             </article>
         """,

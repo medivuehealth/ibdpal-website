@@ -1446,6 +1446,55 @@
     <changefreq>monthly</changefreq>
     <priority>0.60</priority>
   </url>
+  <!-- es-pages -->
+  <url>
+    <loc>https://www.ibdpal.org/es/recursos</loc>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.86</priority>
+  </url>
+  <url>
+    <loc>https://www.ibdpal.org/es/recien-diagnosticado</loc>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.86</priority>
+  </url>
+  <url>
+    <loc>https://www.ibdpal.org/es/nutricion-eii</loc>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.86</priority>
+  </url>
+  <url>
+    <loc>https://www.ibdpal.org/es/enfermedad-crohn</loc>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.86</priority>
+  </url>
+  <url>
+    <loc>https://www.ibdpal.org/es/colitis-ulcerosa</loc>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.86</priority>
+  </url>
+  <url>
+    <loc>https://www.ibdpal.org/es/adolescentes-escuela</loc>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.86</priority>
+  </url>
+  <url>
+    <loc>https://www.ibdpal.org/es/brotes-eii</loc>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.86</priority>
+  </url>
+  <url>
+    <loc>https://www.ibdpal.org/es/preguntas-frecuentes</loc>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.86</priority>
+  </url>
   <!-- amp-pages -->
   <url>
     <loc>https://www.ibdpal.org/blog/alcohol-caffeine-ibd/amp</loc>

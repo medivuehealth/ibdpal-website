@@ -1165,6 +1165,17 @@ a {
     box-shadow: var(--ibd-shadow-sm);
 }
 
+.updates-month h2 {
+    font-size: 1.05rem;
+    letter-spacing: 0.02em;
+    color: var(--ibd-coral, #E86B5A);
+    margin-bottom: 0.65rem;
+}
+
+.updates-month + .updates-month {
+    margin-top: 0.85rem;
+}
+
 .feature-card,
 .preview-card,
 .benefit-card,
