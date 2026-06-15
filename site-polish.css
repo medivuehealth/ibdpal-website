@@ -518,6 +518,16 @@ body {
     }
 }
 
+@media (max-width: 480px) {
+    .start-here-hub__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-index-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* ── Phase 2: App download hero ── */
 .app-hero-premium {
     padding: 0.75rem 0 0.85rem;
@@ -1732,4 +1742,100 @@ a.tab-button,
     font-family: var(--ibd-font-display);
     font-size: var(--ibd-text-lg);
     line-height: var(--ibd-line-tight);
+}
+
+/* ── Mobile polish (beats legacy styles.css stacked tabs / oversized hero) ── */
+@media (max-width: 768px) {
+    .app-container {
+        padding: 0 !important;
+    }
+
+    .tab-navigation {
+        border-radius: 0 !important;
+        margin: 0 !important;
+        box-shadow: none !important;
+    }
+
+    .tab-navigation .tab-container {
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        border-radius: 0 !important;
+        justify-content: flex-start !important;
+    }
+
+    .tab-navigation .tab-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .tab-navigation .tab-button,
+    .tab-navigation a.tab-button {
+        flex: 0 0 auto !important;
+        min-height: 44px !important;
+        min-width: 44px !important;
+        padding: 0.65rem 0.9rem !important;
+        border-bottom: 3px solid transparent !important;
+        border-radius: 0 !important;
+        text-align: center;
+    }
+
+    .tab-navigation .tab-button:last-child {
+        border-bottom: 3px solid transparent !important;
+    }
+
+    .tab-navigation .tab-button.active {
+        border-bottom-color: var(--ibd-primary) !important;
+    }
+
+    .tab-content {
+        border-radius: 0 !important;
+        min-height: auto !important;
+        padding: 0.75rem max(var(--ibd-content-pad), env(safe-area-inset-right, 0)) 1.25rem max(var(--ibd-content-pad), env(safe-area-inset-left, 0)) !important;
+    }
+
+    .header {
+        flex-direction: row !important;
+        gap: 0 !important;
+    }
+
+    .logo h1,
+    .logo .logo-title {
+        font-size: var(--ibd-logo) !important;
+        text-shadow: none !important;
+    }
+
+    .tagline {
+        font-size: var(--ibd-text-sm) !important;
+        font-weight: 500 !important;
+        color: var(--ibd-muted) !important;
+    }
+
+    .hero-catchphrase,
+    .hero-title {
+        font-size: var(--ibd-display) !important;
+        line-height: var(--ibd-line-tight) !important;
+    }
+
+    .hero-tagline {
+        font-size: var(--ibd-text-lg) !important;
+        max-width: 100% !important;
+        padding: 0.35rem 0 !important;
+        margin: 0.35rem 0 0.5rem !important;
+        border-left-width: 3px;
+        border-right-width: 0;
+    }
+
+    .hero-subtitle {
+        font-size: var(--ibd-text-base) !important;
+    }
+
+    .subtab-dock-button,
+    .about-subtab-button,
+    .library-subtab-button,
+    .app-subtab-button {
+        min-height: 44px !important;
+        min-width: 44px !important;
+    }
 }

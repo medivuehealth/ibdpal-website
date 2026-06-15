@@ -7,6 +7,10 @@ SITE = "https://www.ibdpal.org"
 SITEMAP_URL = f"{SITE}/sitemap.xml"
 DEFAULT_OG_IMAGE = f"{SITE}/blogs/assets/ibdpal-tracking/ibdpal_app_tracker_1.png"
 CANONICAL_HOST_SCRIPT = '    <script src="/canonical-host.js"></script>\n'
+VIEWPORT_META = (
+    '    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">'
+)
+THEME_COLOR_META = '    <meta name="theme-color" content="#FFE5DC">'
 
 from seo_keywords import keywords_for_path
 

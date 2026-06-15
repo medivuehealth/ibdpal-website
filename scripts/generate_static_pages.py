@@ -8,7 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 from eeat_blocks import content_note_en, edu_disclaimer_en, hub_disclaimer_en, page_review_props  # noqa: E402
 from es_mirrors import es_url_for_en_path  # noqa: E402
-from seo_head import breadcrumb_json, howto_json, render_seo_head, web_page_json  # noqa: E402
+from seo_head import breadcrumb_json, howto_json, render_seo_head, web_page_json, THEME_COLOR_META, VIEWPORT_META  # noqa: E402
 from site_nav import PAGE_SCRIPTS, TAB_NAV_HTML, site_header_html  # noqa: E402
 from site_footer import SITE_FOOTER_STATIC  # noqa: E402
 from ui_snippets import (  # noqa: E402
@@ -96,7 +96,8 @@ def shell(
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{VIEWPORT_META}
+{THEME_COLOR_META}
 {seo}{HEAD_ASSETS}</head>
 <body>
     <div class="container">

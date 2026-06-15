@@ -414,7 +414,8 @@ def render_post(p: dict) -> str:
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#FFE5DC">
     <title>{html.escape(p["title"])} | IBDPal Blog</title>
     <meta name="description" content="{html.escape(p["description"])}">
     <meta name="keywords" content="{html.escape(keywords_for_path(f'/blog/{p["slug"]}'))}">

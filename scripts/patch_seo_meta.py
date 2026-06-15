@@ -10,12 +10,33 @@ from seo_keywords import html_path_to_url, keywords_for_path
 ROOT = Path(__file__).resolve().parents[1]
 SITEMAP_LINK = '    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.ibdpal.org/sitemap.xml">'
 AUTHOR_META = '    <meta name="author" content="MediVue">'
+THEME_COLOR_META = '    <meta name="theme-color" content="#FFE5DC">'
 ROBOTS_META = (
     '    <meta name="robots" content="index, follow, max-image-preview:large, '
     'max-snippet:-1, max-video-preview:-1">'
 )
+VIEWPORT_OLD = '<meta name="viewport" content="width=device-width, initial-scale=1.0">'
+VIEWPORT_NEW = '<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">'
 
 SKIP_DIRS = {"scripts", "node_modules"}
+
+
+def patch_viewport_theme(text: str) -> tuple[str, list[str]]:
+    changes: list[str] = []
+    if VIEWPORT_OLD in text and "viewport-fit=cover" not in text:
+        text = text.replace(VIEWPORT_OLD, VIEWPORT_NEW, 1)
+        changes.append("viewport")
+    # Normalize: theme-color belongs after viewport (not before charset)
+    text = re.sub(r"\s*<meta name=\"theme-color\" content=\"#FFE5DC\">\n?", "\n", text)
+    if 'name="theme-color"' not in text and "viewport-fit=cover" in text:
+        text = re.sub(
+            r'(<meta name="viewport" content="width=device-width[^"]+">)',
+            r"\1\n" + THEME_COLOR_META,
+            text,
+            count=1,
+        )
+        changes.append("theme-color")
+    return text, changes
 
 
 def canonical_from_html(text: str) -> str | None:
@@ -51,11 +72,12 @@ def patch_file(path: Path) -> list[str]:
     original = text
     changes: list[str] = []
 
-    url_path = canonical_from_html(text) or html_path_to_url(rel)
-    if not url_path:
-        return []
+    text, mobile_changes = patch_viewport_theme(text)
+    changes.extend(mobile_changes)
 
-    if 'name="keywords"' not in text:
+    url_path = canonical_from_html(text) or html_path_to_url(rel)
+
+    if url_path and 'name="keywords"' not in text:
         kw = keywords_for_path(url_path)
         kw_line = f'    <meta name="keywords" content="{kw}">'
         text = inject_after_description(text, kw_line)
