@@ -116,7 +116,7 @@ def patch_blog_vote_icons(blogs_dir) -> int:
     )
     count = 0
     for path in blogs_dir.glob("*.html"):
-        text = path.read_text(encoding="utf-8", errors="replace")
+        text = path.read_text(encoding="utf-8")
         new_text = up_pat.sub(rf"\1\n                                {BLOG_VOTE_THUMB_UP_SVG}\n                                ", text, count=1)
         new_text = down_pat.sub(rf"\1\n                                {BLOG_VOTE_THUMB_DOWN_SVG}\n                                ", new_text, count=1)
         if new_text != text:
@@ -142,7 +142,7 @@ def patch_blog_back_links(blogs_dir) -> int:
     )
     count = 0
     for path in blogs_dir.glob("*.html"):
-        text = path.read_text(encoding="utf-8", errors="replace")
+        text = path.read_text(encoding="utf-8")
         new_text = back_pat.sub(back_repl, text, count=1)
         new_text = date_pat.sub(r"\1 &middot; \2</p>", new_text)
         if new_text != text:
@@ -163,7 +163,7 @@ def patch_content_notes(*dirs) -> int:
     )
     for base in dirs:
         for path in base.glob("*.html"):
-            text = path.read_text(encoding="utf-8", errors="replace")
+            text = path.read_text(encoding="utf-8")
             new_text = pat.sub(top.strip(), text, count=1)
             if new_text != text:
                 path.write_text(new_text, encoding="utf-8")
