@@ -4,8 +4,11 @@ import html
 import json
 
 SITE = "https://www.ibdpal.org"
+SITEMAP_URL = f"{SITE}/sitemap.xml"
 DEFAULT_OG_IMAGE = f"{SITE}/blogs/assets/ibdpal-tracking/ibdpal_app_tracker_1.png"
 CANONICAL_HOST_SCRIPT = '    <script src="/canonical-host.js"></script>\n'
+
+from seo_keywords import keywords_for_path
 
 
 def render_seo_head(
@@ -22,19 +25,27 @@ def render_seo_head(
     json_ld: dict | list | None = None,
     extra_head: str = "",
     amphtml_path: str | None = None,
+    keywords: str | None = None,
+    include_sitemap_link: bool = True,
 ) -> str:
     canonical = SITE + path
     title_esc = html.escape(title)
     desc_esc = html.escape(description)
+    kw = keywords or keywords_for_path(path)
+    kw_esc = html.escape(kw)
     og_title = title_esc.replace(" | IBDPal", "").replace(" | ibdpal.org", "")
 
     lines = [
         CANONICAL_HOST_SCRIPT.rstrip(),
         f'    <title>{title_esc}</title>',
         f'    <meta name="description" content="{desc_esc}">',
+        f'    <meta name="keywords" content="{kw_esc}">',
         f'    <meta name="robots" content="{robots}">',
+        f'    <meta name="author" content="MediVue">',
         f'    <link rel="canonical" href="{canonical}">',
     ]
+    if include_sitemap_link:
+        lines.append(f'    <link rel="sitemap" type="application/xml" title="Sitemap" href="{SITEMAP_URL}">')
     if amphtml_path:
         lines.append(f'    <link rel="amphtml" href="{SITE}{amphtml_path}/amp">')
     if lang == "en" and hreflang_es:

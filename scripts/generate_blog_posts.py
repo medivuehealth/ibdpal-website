@@ -17,6 +17,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from ui_snippets import BLOG_BACK_LINK_HTML, blog_vote_widget  # noqa: E402
 from amp_utils import discover_blogs  # noqa: E402
 from blog_related import related_reading_html  # noqa: E402
+from seo_keywords import keywords_for_path  # noqa: E402
 from eeat_blocks import (  # noqa: E402
     blog_medical_footer_en,
     content_note_en,
@@ -416,6 +417,8 @@ def render_post(p: dict) -> str:
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{html.escape(p["title"])} | IBDPal Blog</title>
     <meta name="description" content="{html.escape(p["description"])}">
+    <meta name="keywords" content="{html.escape(keywords_for_path(f'/blog/{p["slug"]}'))}">
+    <meta name="author" content="MediVue">
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="/site-layout-icn.css">
     <link rel="stylesheet" href="/site-polish.css">

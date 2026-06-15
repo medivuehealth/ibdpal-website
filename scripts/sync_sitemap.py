@@ -13,6 +13,11 @@ SKIP_ROOT_HTML = {
     "support.html",  # legacy stub; /support/index.html is canonical
 }
 
+# Hash-canonical or redirect-only URLs (not indexable standalone pages)
+SKIP_URL_PATHS = {
+    "/privacy",  # 301 to /#privacy; canonical is fragment URL
+}
+
 HUB_SLUGS = {
     "ibd-nutrition",
     "crohns-disease",
@@ -93,9 +98,9 @@ def priority_for(path: str) -> float:
         return 0.84
     if path.startswith("/support/"):
         return 0.82
-    if path in {"/about", "/impact", "/news", "/resources", "/visit-prep", "/glossary"}:
+    if path in {"/about", "/impact", "/news", "/site-updates", "/resources", "/visit-prep", "/glossary"}:
         return 0.85
-    if path in {"/privacy", "/terms", "/executive-summary", "/contact", "/founder"}:
+    if path in {"/terms", "/executive-summary", "/contact", "/founder"}:
         return 0.55
     if path.startswith("/es/"):
         return 0.78
@@ -107,7 +112,7 @@ def priority_for(path: str) -> float:
 def changefreq_for(path: str) -> str:
     if path == "/":
         return "weekly"
-    if path.startswith("/blog/") or path == "/news":
+    if path.startswith("/blog/") or path in {"/news", "/site-updates"}:
         return "monthly"
     if path in {"/privacy", "/terms", "/executive-summary"}:
         return "yearly"
@@ -128,7 +133,7 @@ def discover_entries() -> dict[str, tuple[str, float, str]]:
             continue
 
         url_path = path_to_url(rel)
-        if not url_path:
+        if not url_path or url_path in SKIP_URL_PATHS:
             continue
 
         lastmod = file_lastmod(html_path)

@@ -5,8 +5,8 @@ Site technical SEO is implemented in HTML (meta tags, canonical URLs, Open Graph
 ## After each deploy
 
 1. **Google Search Console** | [search.google.com/search-console](https://search.google.com/search-console)
-   - Property: `https://ibdpal.org`
-   - Submit sitemap: `https://ibdpal.org/sitemap.xml`
+   - Property: `https://www.ibdpal.org` (preferred; apex redirects to www)
+   - Submit sitemap: `https://www.ibdpal.org/sitemap.xml`
    - Request indexing for new URLs (Inspect URL → Request indexing):
      - `https://ibdpal.org/resources`
      - `https://ibdpal.org/newly-diagnosed`
@@ -38,11 +38,17 @@ Site technical SEO is implemented in HTML (meta tags, canonical URLs, Open Graph
 
 ```bash
 python scripts/generate_static_pages.py
+python scripts/patch_seo_meta.py
+python scripts/sync_sitemap.py
+python scripts/sync_llms_txt.py
 python scripts/generate_seo_hubs.py
 python scripts/generate_seo_landings.py
-python scripts/sync_llms_txt.py
 python scripts/patch_blog_jsonld.py
 ```
+
+- **`sync_sitemap.py`** rebuilds the full deduplicated `sitemap.xml` from all HTML files. Run after content changes; do not run legacy `patch_sitemap()` scripts afterward.
+- **`patch_seo_meta.py`** adds `meta keywords`, sitemap link, and missing robots/canonical tags across HTML.
+- **`seo_keywords.py`** defines per-path keyword phrases used by `seo_head.py` and the patcher.
 
 - `generate_seo_hubs.py` rebuilds hub pages, patches related reading on all blogs, syncs `llms.txt`, and regenerates Spanish mirrors.
 - `generate_es_pages.py` alone rebuilds `/es/*` pages from `data/es-pages.json`.
