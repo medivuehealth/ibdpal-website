@@ -59,29 +59,10 @@ def patch_vercel_amp() -> None:
 
 
 def patch_sitemap_amp(blog_slugs: list[str], guide_slugs: list[str]) -> None:
-    text = SITEMAP.read_text(encoding="utf-8")
-    if "<!-- amp-pages -->" in text:
-        text = re.sub(
-            r"\n  <!-- amp-pages -->.*?(?=\n</urlset>)",
-            "",
-            text,
-            flags=re.DOTALL,
-        )
-    urls = []
-    for slug in blog_slugs:
-        urls.append(
-            f'  <url>\n    <loc>https://www.ibdpal.org/blog/{slug}/amp</loc>\n'
-            f"    <changefreq>monthly</changefreq>\n    <priority>0.6</priority>\n  </url>"
-        )
-    for slug in guide_slugs:
-        urls.append(
-            f'  <url>\n    <loc>https://www.ibdpal.org/guides/{slug}/amp</loc>\n'
-            f"    <changefreq>monthly</changefreq>\n    <priority>0.6</priority>\n  </url>"
-        )
-    block = "  <!-- amp-pages -->\n" + "\n".join(urls)
-    text = text.replace("</urlset>", f"{block}\n</urlset>")
-    SITEMAP.write_text(text, encoding="utf-8")
-    print(f"Added {len(urls)} AMP URLs to sitemap")
+    """Delegate to sync_sitemap (single source of truth; avoids duplicate AMP URLs)."""
+    from sync_sitemap import main as sync_sitemap_main
+
+    sync_sitemap_main()
 
 
 def generate_blogs() -> list[str]:

@@ -82,9 +82,13 @@ def guide_breadcrumb(path: str, name: str) -> dict:
     }
 
 
-def shell(title: str, description: str, path: str, body: str, json_ld: dict) -> str:
+def shell(title: str, description: str, path: str, body: str, json_ld: dict, *, include_amp: bool = True) -> str:
     seo = render_seo_head(
-        title=title, description=description, path=path, json_ld=json_ld, amphtml_path=path
+        title=title,
+        description=description,
+        path=path,
+        json_ld=json_ld,
+        amphtml_path=path if include_amp else None,
     )
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -240,7 +244,7 @@ def render_hub(hub: dict, pages: list[dict]) -> str:
             },
         ],
     }
-    return shell(hub["title"], hub["description"], path, body, json_ld)
+    return shell(hub["title"], hub["description"], path, body, json_ld, include_amp=False)
 
 
 def patch_sitemap(pages: list[dict]) -> None:
