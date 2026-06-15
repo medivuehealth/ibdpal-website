@@ -1097,6 +1097,15 @@ body {
 
 .tab-navigation .tab-container {
     gap: 0;
+    justify-content: center;
+}
+
+@media (min-width: 769px) {
+    .tab-navigation .tab-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        overflow-x: visible;
+    }
 }
 
 @media (max-width: 1100px) {

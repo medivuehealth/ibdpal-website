@@ -249,19 +249,12 @@ body {
     margin: 0;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 0;
     background: transparent;
     border-radius: 0;
     padding: 0 var(--ibd-content-pad);
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-}
-
-.tab-container::-webkit-scrollbar {
-    display: none;
 }
 
 .tab-button {
@@ -771,8 +764,15 @@ body {
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: flex-start;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
         padding-left: max(var(--ibd-content-pad), env(safe-area-inset-left, 0));
         padding-right: max(var(--ibd-content-pad), env(safe-area-inset-right, 0));
+    }
+
+    .tab-container::-webkit-scrollbar {
+        display: none;
     }
 
     .tab-button,
