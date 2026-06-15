@@ -1106,6 +1106,13 @@ body {
         justify-content: center;
         overflow-x: visible;
     }
+
+    .subtab-dock-container,
+    .library-subtab-navigation--dock .library-subtab-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        overflow-x: visible;
+    }
 }
 
 @media (max-width: 1100px) {
@@ -1796,6 +1803,20 @@ a.tab-button,
 
     .tab-navigation .tab-button.active {
         border-bottom-color: var(--ibd-primary) !important;
+    }
+
+    .subtab-dock-container,
+    .library-subtab-navigation--dock .library-subtab-container {
+        flex-wrap: nowrap !important;
+        justify-content: flex-start !important;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    .subtab-dock-container::-webkit-scrollbar,
+    .library-subtab-navigation--dock .library-subtab-container::-webkit-scrollbar {
+        display: none;
     }
 
     .tab-content {

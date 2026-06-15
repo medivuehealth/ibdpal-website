@@ -345,17 +345,10 @@ body {
 
 .subtab-dock-container {
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 0;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
     padding: 0 var(--ibd-content-pad);
-}
-
-.subtab-dock-container::-webkit-scrollbar {
-    display: none;
 }
 
 .subtab-dock-button {
@@ -390,21 +383,19 @@ body {
 
 .library-subtab-navigation--dock .library-subtab-container {
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 0;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
     padding: 0 var(--ibd-content-pad);
 }
 
 .library-subtab-navigation--dock .library-subtab-button {
     flex: 0 0 auto;
     white-space: nowrap;
-    min-height: 36px;
-    padding: 0.45rem 0.75rem;
-    font-size: 0.8125rem;
+    min-height: 44px;
+    min-width: 44px;
+    padding: 0.55rem 0.85rem;
+    font-size: var(--ibd-text-sm);
     border-radius: 0;
 }
 
@@ -772,6 +763,22 @@ body {
     }
 
     .tab-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .subtab-dock-container,
+    .library-subtab-navigation--dock .library-subtab-container {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        padding-left: max(var(--ibd-content-pad), env(safe-area-inset-left, 0));
+        padding-right: max(var(--ibd-content-pad), env(safe-area-inset-right, 0));
+    }
+
+    .subtab-dock-container::-webkit-scrollbar,
+    .library-subtab-navigation--dock .library-subtab-container::-webkit-scrollbar {
         display: none;
     }
 
