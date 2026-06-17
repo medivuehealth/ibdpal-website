@@ -28,6 +28,9 @@ IMAGE_URLS = {
     "icn-transfer": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&w=1200&q=80",
     "icn-ostomy": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&w=1200&q=80",
     "icn-holidays": "https://images.unsplash.com/photo-1512389142860-9c449e58a543?auto=format&w=1200&q=80",
+    "icn-self-mgmt": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&w=1200&q=80",
+    "icn-health-literacy": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&w=1200&q=80",
+    "icn-lifestyle": "https://images.unsplash.com/photo-1498837167922-ddd27525fc3a?auto=format&w=1200&q=80",
 }
 
 

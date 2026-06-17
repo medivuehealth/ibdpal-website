@@ -2,7 +2,7 @@
 from __future__ import annotations
 
 SITE = "https://www.ibdpal.org"
-REVIEW_ISO = "2026-06-03"
+REVIEW_ISO = "2026-06-16"
 REVIEW_DISPLAY = "June 2026"
 
 
@@ -21,9 +21,10 @@ def page_review_props() -> dict:
 def content_note_en() -> str:
     return (
         '<p class="blog-medical-review"><strong>Content note:</strong> '
-        "Reviewed for patient education accuracy against publicly available guidance from the "
+        "Educational content aligned with publicly available patient materials from the "
         '<a href="https://www.crohnscolitisfoundation.org/" rel="noopener noreferrer">'
-        "Crohn's &amp; Colitis Foundation</a> and major IBD education sources. "
+        "Crohn's &amp; Colitis Foundation</a> and other major IBD education sources. "
+        "IBDPal is not affiliated with or endorsed by the Foundation. "
         f"Last reviewed {REVIEW_DISPLAY}. Not individual medical advice.</p>\n"
     )
 
@@ -84,9 +85,19 @@ def icn_attribution_block(source_title: str, source_url: str) -> str:
 def content_note_es() -> str:
     return (
         '<p class="blog-medical-review"><strong>Nota de contenido:</strong> '
-        "Revisado para educación al paciente según orientación pública de la "
-        "Crohn's &amp; Colitis Foundation y fuentes educativas sobre EII. "
+        "Contenido educativo alineado con materiales públicos para pacientes de la "
+        "Crohn's &amp; Colitis Foundation y otras fuentes educativas sobre EII. "
+        "IBDPal no está afiliado ni respaldado por la Foundation. "
         f"Última revisión: {REVIEW_DISPLAY}. No es consejo médico individual.</p>\n"
+    )
+
+
+def ccf_nonaffiliation_about_en() -> str:
+    return (
+        '<p><strong>Independent education.</strong> IBDPal is a MediVue nonprofit patient '
+        "education project. We are not affiliated with, endorsed by, or a partner of the "
+        '<a href="https://www.crohnscolitisfoundation.org/" rel="noopener noreferrer">'
+        "Crohn's &amp; Colitis Foundation</a>.</p>\n"
     )
 
 

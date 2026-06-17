@@ -110,31 +110,33 @@
 
 ## Patient guides (search topics)
 - https://www.ibdpal.org/guides
-- https://www.ibdpal.org/guides/biologics-crohns-colitis
-- https://www.ibdpal.org/guides/crohns-colitis-support-groups
-- https://www.ibdpal.org/guides/crohns-disease-diet-nutrition
-- https://www.ibdpal.org/guides/crohns-doctor-visit-prep
-- https://www.ibdpal.org/guides/crohns-flare-what-to-do
-- https://www.ibdpal.org/guides/crohns-food-triggers
+- https://www.ibdpal.org/guides/what-should-i-eat-crohns-colitis
 - https://www.ibdpal.org/guides/foods-to-eat-crohns-flare
-- https://www.ibdpal.org/guides/ibd-crohns-colitis-helpline
+- https://www.ibdpal.org/guides/ulcerative-colitis-diet-foods
+- https://www.ibdpal.org/guides/crohns-disease-diet-nutrition
+- https://www.ibdpal.org/guides/low-residue-diet-ibd
 - https://www.ibdpal.org/guides/ibd-hydration-fluids
-- https://www.ibdpal.org/guides/ibd-nutrition-tracking-app
+- https://www.ibdpal.org/guides/crohns-colitis-support-groups
 - https://www.ibdpal.org/guides/ibd-support-near-me
+- https://www.ibdpal.org/guides/pediatric-crohns-colitis-help
+- https://www.ibdpal.org/guides/newly-diagnosed-crohns-colitis
+- https://www.ibdpal.org/guides/crohns-flare-what-to-do
+- https://www.ibdpal.org/guides/ulcerative-colitis-flare-management
+- https://www.ibdpal.org/guides/track-ibd-symptoms-food
+- https://www.ibdpal.org/guides/ibd-nutrition-tracking-app
+- https://www.ibdpal.org/guides/crohns-doctor-visit-prep
+- https://www.ibdpal.org/guides/biologics-crohns-colitis
 - https://www.ibdpal.org/guides/ibd-travel-planning
 - https://www.ibdpal.org/guides/ibd-workplace-school-rights
 - https://www.ibdpal.org/guides/living-with-ostomy-ibd
-- https://www.ibdpal.org/guides/low-residue-diet-ibd
-- https://www.ibdpal.org/guides/newly-diagnosed-crohns-colitis
-- https://www.ibdpal.org/guides/partner-caregiver-ibd
-- https://www.ibdpal.org/guides/pediatric-crohns-colitis-help
-- https://www.ibdpal.org/guides/sleep-ibd-flares
 - https://www.ibdpal.org/guides/stress-anxiety-ibd
-- https://www.ibdpal.org/guides/track-ibd-symptoms-food
-- https://www.ibdpal.org/guides/ulcerative-colitis-diet-foods
-- https://www.ibdpal.org/guides/ulcerative-colitis-flare-management
-- https://www.ibdpal.org/guides/what-should-i-eat-crohns-colitis
-
+- https://www.ibdpal.org/guides/sleep-ibd-flares
+- https://www.ibdpal.org/guides/partner-caregiver-ibd
+- https://www.ibdpal.org/guides/crohns-food-triggers
+- https://www.ibdpal.org/guides/ibd-crohns-colitis-helpline
+- https://www.ibdpal.org/guides/first-gastroenterology-appointment-ibd
+- https://www.ibdpal.org/guides/ibd-flare-emergency-supplies
+- https://www.ibdpal.org/guides/dining-out-with-ibd
 
 ## SEO hubs & directories
 - https://www.ibdpal.org/blog

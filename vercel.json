@@ -15,6 +15,42 @@
   ],
   "rewrites": [
     {
+      "source": "/blog/icn-self-management-handbook-ibd",
+      "destination": "/blogs/icn-self-management-handbook-ibd.html"
+    },
+    {
+      "source": "/blog/icn-health-literacy-toolkit-ibd",
+      "destination": "/blogs/icn-health-literacy-toolkit-ibd.html"
+    },
+    {
+      "source": "/blog/icn-lifestyle-ibd-toolkit",
+      "destination": "/blogs/icn-lifestyle-ibd-toolkit.html"
+    },
+    {
+      "source": "/blog/ibd-summer-heat-hydration",
+      "destination": "/blogs/ibd-summer-heat-hydration.html"
+    },
+    {
+      "source": "/blog/ibd-flare-go-bag",
+      "destination": "/blogs/ibd-flare-go-bag.html"
+    },
+    {
+      "source": "/blog/siblings-when-child-has-ibd",
+      "destination": "/blogs/siblings-when-child-has-ibd.html"
+    },
+    {
+      "source": "/blog/when-to-call-ibd-help-center",
+      "destination": "/blogs/when-to-call-ibd-help-center.html"
+    },
+    {
+      "source": "/blog/dining-out-ibd-restaurants",
+      "destination": "/blogs/dining-out-ibd-restaurants.html"
+    },
+    {
+      "source": "/blog/infusion-day-what-to-expect",
+      "destination": "/blogs/infusion-day-what-to-expect.html"
+    },
+    {
       "source": "/blog/icn-accommodations-toolkit-ibd",
       "destination": "/blogs/icn-accommodations-toolkit-ibd.html"
     },

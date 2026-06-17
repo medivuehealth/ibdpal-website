@@ -6,7 +6,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
-from eeat_blocks import content_note_en, edu_disclaimer_en, hub_disclaimer_en, page_review_props  # noqa: E402
+from eeat_blocks import content_note_en, ccf_nonaffiliation_about_en, edu_disclaimer_en, hub_disclaimer_en, page_review_props  # noqa: E402
 from es_mirrors import es_url_for_en_path  # noqa: E402
 from seo_head import breadcrumb_json, howto_json, render_seo_head, web_page_json, THEME_COLOR_META, VIEWPORT_META  # noqa: E402
 from site_nav import PAGE_SCRIPTS, TAB_NAV_HTML, site_header_html  # noqa: E402
@@ -250,7 +250,7 @@ PAGES = {
         "About IBDPal | Free IBD Patient Education | MediVue",
         "IBDPal helps people with Crohn's and ulcerative colitis through free patient education, guides, and a nonprofit iOS tracking app built by MediVue.",
         "/about",
-        """
+        f"""
             <article class="support-section seo-landing">
                 <h1>About IBDPal</h1>
                 <p class="support-intro mission-block"><strong>Our mission:</strong> IBDPal helps people with Crohn's disease and ulcerative colitis understand nutrition, flares, and daily management through free patient education and a tracking app from nonprofit MediVue.</p>
@@ -258,12 +258,13 @@ PAGES = {
                     <h2>Who we are</h2>
                     <p><strong>IBDPal</strong> is a program of <strong>MediVue</strong>, a North Carolina 501(c)(3) nonprofit focused on IBD community education and self-management tools. We combine a free iOS app for food and symptom tracking with a growing library of articles, guides, and state support resources on ibdpal.org.</p>
                     <p>We are not a hospital, drug company, or substitute for your gastroenterologist. Everything on this site is educational. Clinical decisions belong with your care team.</p>
+                    {ccf_nonaffiliation_about_en()}
                 </section>
                 <section class="seo-landing__block">
                     <h2>What you will find here</h2>
                     <ul class="seo-landing__list">
-                        <li><a href="/blog">50+ in-depth articles</a> on nutrition, treatment basics, wellness, and daily life</li>
-                        <li><a href="/guides">24 step-by-step patient guides</a> for flares, diet, travel, and more</li>
+                        <li><a href="/blog">55+ in-depth articles</a> on nutrition, treatment basics, wellness, and daily life</li>
+                        <li><a href="/guides">27 step-by-step patient guides</a> for flares, diet, travel, and more</li>
                         <li><a href="/#community">50 state support pages</a> with chapters and helplines</li>
                         <li><a href="/library">140+ total education pages</a> including Spanish resources and topic hubs</li>
                         <li>Free <a href="/#app">IBDPal iOS app</a> for logging meals, symptoms, and visit prep</li>
@@ -438,6 +439,9 @@ PAGES = {
                         <li><a href="/blog/icn-transfer-toolkit-adult-care">Transfer to adult care</a></li>
                         <li><a href="/blog/icn-ostomy-toolkit-pediatric">Ostomy toolkit</a></li>
                         <li><a href="/blog/icn-ibd-holidays-special-occasions">Holidays &amp; special occasions</a></li>
+                        <li><a href="/blog/icn-self-management-handbook-ibd">Self-management handbook</a></li>
+                        <li><a href="/blog/icn-health-literacy-toolkit-ibd">Health literacy toolkit</a></li>
+                        <li><a href="/blog/icn-lifestyle-ibd-toolkit">Lifestyle &amp; IBD toolkit</a></li>
                     </ul>
                 </section>
                 <section class="seo-landing__block">

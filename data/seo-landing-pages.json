@@ -347,6 +347,64 @@
       ],
       "related": [{"label": "IBD Crohn's support hub", "url": "/ibd-crohns-support"}],
       "faq": []
+    },
+    {
+      "slug": "first-gastroenterology-appointment-ibd",
+      "category": "getting-started",
+      "keywords": ["first gastroenterologist appointment IBD", "new GI visit crohn's", "first IBD specialist visit", "what to expect GI appointment colitis"],
+      "title": "First Gastroenterology Appointment With IBD | IBDPal Guide",
+      "description": "What many patients bring, ask, and expect at a first GI visit for Crohn's or colitis. Educational prep guide, not medical advice.",
+      "h1": "First gastroenterology appointment with IBD",
+      "intro": "Your first visit with a gastroenterologist or IBD specialist sets the tone for ongoing care. Arriving with basic records and questions helps you use the time well.",
+      "sections": [
+        {"heading": "Before the visit", "paragraphs": ["Gather prior test results, imaging reports, and a list of current medications and supplements.", "Note symptom patterns: stool frequency, blood, pain location, weight changes, and fatigue.", "Write down your top three questions so they do not get lost if the visit runs short."]},
+        {"heading": "What to bring", "paragraphs": ["Insurance card, photo ID, and referral paperwork if your plan requires it.", "A symptom and food log, or an IBDPal export, if you have been tracking.", "Names and contact details for prior doctors or hospitals."]},
+        {"heading": "Questions patients often ask", "paragraphs": ["What type of IBD do I have, and where is inflammation located?", "What tests are needed next, and when will we review results?", "What should I do if symptoms worsen before the follow-up visit?"]}
+      ],
+      "tips": ["Ask who to call after hours", "Request a visit summary or patient portal access", "Bring a family member or friend if you want support taking notes"],
+      "related": [{"label": "Newly diagnosed guide", "url": "/guides/newly-diagnosed-crohns-colitis"}, {"label": "Doctor visit prep guide", "url": "/guides/crohns-doctor-visit-prep"}, {"label": "Infusion day article", "url": "/blog/infusion-day-what-to-expect"}],
+      "faq": [
+        {"q": "How long does a first GI appointment usually take?", "a": "Timing varies by clinic. Many first visits run 30 to 60 minutes including intake, exam, and planning next steps."},
+        {"q": "Should I change my diet before the first visit?", "a": "Do not start major diet changes without guidance unless your referring doctor told you to. A simple symptom log is often more helpful than eliminating many foods at once."}
+      ]
+    },
+    {
+      "slug": "ibd-flare-emergency-supplies",
+      "category": "flares",
+      "keywords": ["IBD flare emergency kit", "crohn's go bag", "colitis urgency supplies", "IBD bathroom emergency kit"],
+      "title": "IBD Flare Emergency Supplies & Go-Bag | IBDPal Guide",
+      "description": "Checklist of supplies many patients pack for urgency, school, work, and travel during Crohn's or colitis flares. Education only.",
+      "h1": "IBD flare emergency supplies and go-bag",
+      "intro": "A small kit reduces stress when bathroom access is uncertain. Customize contents for age, activity, and what your care team recommends.",
+      "sections": [
+        {"heading": "Core supplies", "paragraphs": ["Travel wipes, spare underwear, discreet disposal bags, and hand sanitizer.", "Panty liners or pads if helpful for your symptoms.", "A gentle barrier cream if your clinician suggests it for irritated skin."]},
+        {"heading": "Information to carry", "paragraphs": ["Clinician name, clinic phone, and after-hours instructions.", "Medication list and any as-needed meds approved for travel or school.", "Insurance card for unexpected urgent visits."]},
+        {"heading": "School and workplace", "paragraphs": ["Duplicate kits in a nurse's office or desk drawer when accommodations allow.", "Know restroom locations on your route; practice accessing supplies quickly and discreetly."]}
+      ],
+      "tips": ["Refresh kits after use", "Keep one bag at home and one in your daily carry", "Add comfort items: headphones, calming music, or a short note from family"],
+      "related": [{"label": "Flare go-bag article", "url": "/blog/ibd-flare-go-bag"}, {"label": "First 48 hours of a flare", "url": "/blog/flare-first-48-hours"}, {"label": "When to go to the ER", "url": "/blog/when-to-go-er-ibd"}],
+      "faq": [
+        {"q": "Does a go-bag replace medical treatment?", "a": "No. Supplies help you manage urgency with dignity while you follow your flare plan and contact your IBD team."}
+      ]
+    },
+    {
+      "slug": "dining-out-with-ibd",
+      "category": "nutrition",
+      "keywords": ["dining out IBD", "restaurant tips crohn's", "eating out ulcerative colitis", "IBD restaurant guide"],
+      "title": "Dining Out With IBD | Restaurant Guide | IBDPal",
+      "description": "How many patients plan restaurant meals with Crohn's or colitis: menus, portions, restrooms, and social situations. Individual triggers vary.",
+      "h1": "Dining out with IBD",
+      "intro": "Restaurants combine unpredictable ingredients with social pressure. Planning around your known patterns and current disease activity can make meals more enjoyable.",
+      "sections": [
+        {"heading": "Before you go", "paragraphs": ["Preview menus online when possible.", "Choose locations with reliable restroom access.", "Eat a small safe snack at home if arriving very hungry leads to rushed choices."]},
+        {"heading": "Ordering strategies", "paragraphs": ["Simple preparations (grilled protein, plain rice, broth soups) are common starting points during sensitive weeks.", "Ask about hidden dairy, spice levels, and high-fiber sides.", "Smaller portions or to-go boxes reduce pressure to finish large plates."]},
+        {"heading": "After the meal", "paragraphs": ["Log what you ate and how you felt; patterns build a personal shortlist over time.", "If symptoms flare, contact your team using your usual flare plan."]}
+      ],
+      "tips": ["Use brief scripts if you want to decline food without a long explanation", "Pack approved medications or supplies", "Track meals in IBDPal or a notebook"],
+      "related": [{"label": "Dining out article", "url": "/blog/dining-out-ibd-restaurants"}, {"label": "Crohn's food triggers guide", "url": "/guides/crohns-food-triggers"}, {"label": "Travel planning guide", "url": "/guides/ibd-travel-planning"}],
+      "faq": [
+        {"q": "Are there safe restaurant foods for everyone with IBD?", "a": "No single menu works for all patients. Triggers and tolerance change with disease activity. Work with your IBD team on choices that fit you."}
+      ]
     }
   ]
 }
