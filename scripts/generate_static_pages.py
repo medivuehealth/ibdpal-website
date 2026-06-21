@@ -19,7 +19,16 @@ from ui_snippets import (  # noqa: E402
 )
 
 SITE = "https://www.ibdpal.org"
-EEAT_PATHS = {"/newly-diagnosed", "/visit-prep", "/pediatric-caregivers", "/resources"}
+EEAT_PATHS = {
+    "/start-here",
+    "/newly-diagnosed",
+    "/visit-prep",
+    "/pediatric-caregivers",
+    "/resources",
+    "/crohns-colitis-foundation-resources",
+    "/trusted-ibd-resources",
+    "/ibd-red-flags-urgent-care",
+}
 
 NAV = TAB_NAV_HTML
 
@@ -115,6 +124,46 @@ def shell(
 
 
 PAGES = {
+    "start-here.html": (
+        "Start Here with IBD | Newly Diagnosed Roadmap | IBDPal",
+        "A calm first path through IBDPal for Crohn's and colitis: diagnosis basics, first GI visit, flare planning, tracking, and trusted support.",
+        "/start-here",
+        """
+            <article class="support-section seo-landing">
+                <h1>Start Here with IBD</h1>
+                <p class="support-intro">If Crohn's disease or ulcerative colitis is new to you, start with a simple path. Learn the basics, prepare for your first appointments, make a flare plan, and connect with trusted support.</p>
+                <section class="seo-landing__block">
+                    <h2>1. Understand the diagnosis</h2>
+                    <p>IBD is a chronic inflammatory condition. Crohn's disease can affect any part of the digestive tract; ulcerative colitis affects the colon. Your GI team will explain your disease location, severity, and treatment goals.</p>
+                    <p><a href="/newly-diagnosed">Newly diagnosed hub</a> · <a href="/crohns-disease">Crohn's overview</a> · <a href="/ulcerative-colitis">Ulcerative colitis overview</a></p>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>2. Prepare for the first GI visit</h2>
+                    <ul class="seo-landing__list">
+                        <li>Bring prior scopes, labs, imaging reports, and medication lists.</li>
+                        <li>Write your top three questions before the visit.</li>
+                        <li>Ask who to call after hours and what symptoms need urgent attention.</li>
+                    </ul>
+                    <p><a href="/guides/first-gastroenterology-appointment-ibd">First GI appointment guide</a> · <a href="/visit-prep">Printable visit prep checklist</a></p>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>3. Make a flare plan before you need it</h2>
+                    <p>A flare plan should come from your care team. Keep clinic contact details, medication instructions, and red-flag symptoms in one place.</p>
+                    <p><a href="/flare-help">Flare help hub</a> · <a href="/ibd-red-flags-urgent-care">Red flags and urgent care guide</a> · <a href="/guides/ibd-flare-emergency-supplies">Flare supplies guide</a></p>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>4. Track what matters</h2>
+                    <p>Short daily notes help appointments go better: stools, pain, blood, fatigue, meals, medications, and weight changes. IBDPal can help you organize patterns and export a visit summary.</p>
+                    <p><a href="/guides/track-ibd-symptoms-food">Symptom tracking guide</a> · <a href="/#app">IBDPal app</a></p>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>5. Find support you can trust</h2>
+                    <p>Use national organizations and clinician-reviewed resources alongside your medical team. IBDPal is independent and links out because patients benefit from strong support networks.</p>
+                    <p><a href="/crohns-colitis-foundation-resources">Crohn's &amp; Colitis Foundation resources</a> · <a href="/trusted-ibd-resources">Trusted IBD resources</a> · <a href="/#community">State support map</a></p>
+                </section>
+            </article>
+        """,
+    ),
     "newly-diagnosed.html": (
         "Newly Diagnosed with IBD | First Steps | IBDPal",
         "Newly diagnosed with Crohn's or ulcerative colitis? Questions for your GI, IBDPal app basics, IBD support groups, and trusted national resources.",
@@ -215,17 +264,164 @@ PAGES = {
         "IBD resources for kids and parents: ImproveCareNow, GIKids, school 504 plans, family blogs, and IBDPal tracking for pediatric Crohn's and colitis.",
         "/pediatric-caregivers",
         """
-            <article class="support-section">
+            <article class="support-section seo-landing">
                 <h1>Pediatric IBD &amp; Caregivers</h1>
-                <p class="support-intro">Children and teens with Crohn's or colitis need team-based care and family support. Start with these trusted networks.</p>
-                <ul class="seo-landing__list">
-                    <li><a href="https://www.improvecarenow.org/patients-parents" rel="noopener noreferrer">ImproveCareNow | Patients, Parents &amp; Families</a></li>
-                    <li><a href="https://www.improvecarenow.org/care-centers" rel="noopener noreferrer">Find a pediatric IBD care center</a></li>
-                    <li><a href="https://gikids.org/" rel="noopener noreferrer">GIKids</a></li>
-                    <li><a href="/blog/living-with-ibd-kids">Blog: Living with IBD as a family</a></li>
-                    <li><a href="/blog/workplace-school-ibd-rights">Blog: School 504 plans</a></li>
-                </ul>
-                <p>IBDPal can help families log meals, symptoms, and sleep, use exports for clinic visits. <a href="/visit-prep">Visit prep checklist</a></p>
+                <p class="support-intro">Children and teens with Crohn's or colitis need team-based care and family support. This page gathers parent, sibling, school, and teen resources in one place.</p>
+                <section class="seo-landing__block">
+                    <h2>For parents and caregivers</h2>
+                    <ul class="seo-landing__list">
+                        <li><a href="https://www.improvecarenow.org/patients-parents" rel="noopener noreferrer">ImproveCareNow | Patients, Parents &amp; Families</a></li>
+                        <li><a href="https://www.improvecarenow.org/care-centers" rel="noopener noreferrer">Find a pediatric IBD care center</a></li>
+                        <li><a href="https://gikids.org/" rel="noopener noreferrer">GIKids patient education</a></li>
+                        <li><a href="/blog/icn-caregiver-coping-resource">ICN caregiver coping resource</a></li>
+                        <li><a href="/guides/pediatric-crohns-colitis-help">Pediatric Crohn's and colitis help guide</a></li>
+                    </ul>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>For siblings</h2>
+                    <p>Siblings may feel worry, resentment, guilt, or confusion when plans change around flares and appointments. Short, age-appropriate explanations and one-on-one time can help.</p>
+                    <p><a href="/blog/siblings-when-child-has-ibd">When a sibling has IBD</a> · <a href="/blog/living-with-ibd-kids">Living with IBD as a family</a></p>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>For school nurses and 504 teams</h2>
+                    <ul class="seo-landing__list">
+                        <li>Bathroom access, attendance flexibility, hydration, and medication storage often need explicit plans.</li>
+                        <li>Ask the GI team for documentation that supports school accommodations.</li>
+                        <li>Keep emergency contacts and after-hours instructions current.</li>
+                    </ul>
+                    <p><a href="/blog/icn-accommodations-toolkit-ibd">ICN accommodations toolkit</a> · <a href="/guides/ibd-workplace-school-rights">School rights guide</a> · <a href="/blog/workplace-school-ibd-rights">School 504 overview</a></p>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>For teens</h2>
+                    <p>Teens may need privacy, independence, and practical scripts for school, sports, dating, and clinic visits. Practice self-advocacy in small steps before transfer to adult care.</p>
+                    <p><a href="/teens-and-school">Teens and school hub</a> · <a href="/blog/high-school-ibd-survival-guide">High school survival guide</a> · <a href="/blog/icn-transfer-toolkit-adult-care">Transition to adult care</a></p>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>Tracking between visits</h2>
+                    <p>IBDPal can help families log meals, symptoms, sleep, medications, and notes for clinic visits. Use exports as a conversation aid, not as a diagnosis tool.</p>
+                    <p><a href="/visit-prep">Visit prep checklist</a> · <a href="/guides/track-ibd-symptoms-food">Symptom tracking guide</a> · <a href="/#app">IBDPal app</a></p>
+                </section>
+            </article>
+        """,
+    ),
+    "crohns-colitis-foundation-resources.html": (
+        "Crohn's & Colitis Foundation Resources | IBDPal",
+        "How IBD patients can use Crohn's & Colitis Foundation public resources: Help Center, chapters, education, support groups, and advocacy. IBDPal is independent.",
+        "/crohns-colitis-foundation-resources",
+        """
+            <article class="support-section seo-landing">
+                <h1>Crohn's &amp; Colitis Foundation Resources</h1>
+                <p class="support-intro">The Crohn's &amp; Colitis Foundation is a major public source for IBD education, support programs, advocacy, and local chapters. IBDPal is independent and not affiliated with or endorsed by the Foundation.</p>
+                <section class="seo-landing__block">
+                    <h2>IBD Help Center</h2>
+                    <p>The Foundation's IBD Help Center can help with education, support, and referrals to programs. It does not replace your gastroenterologist or emergency services.</p>
+                    <ul class="seo-landing__list">
+                        <li>Phone: <a href="tel:8886948872">888-MY-GUT-PAIN (888-694-8872)</a></li>
+                        <li>Use for general education, local resources, support groups, and program referrals.</li>
+                        <li>For severe symptoms, call your GI team, urgent care, or emergency services.</li>
+                    </ul>
+                    <p><a href="/blog/when-to-call-ibd-help-center">When to call the Help Center vs your clinic</a></p>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>Education and disease basics</h2>
+                    <p>The Foundation publishes patient education on Crohn's disease, ulcerative colitis, medications, diet, tests, research, and living with IBD. Use those materials alongside guidance from your clinician.</p>
+                    <p><a href="https://www.crohnscolitisfoundation.org/" rel="noopener noreferrer">Visit crohnscolitisfoundation.org</a> · <a href="/research">IBDPal trusted sources</a></p>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>Chapters, events, and support groups</h2>
+                    <p>Local chapters can help families find education events, community programs, and support groups. Availability varies by region.</p>
+                    <p><a href="/#community">Find support by state</a> · <a href="/guides/ibd-support-near-me">Support near me guide</a></p>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>IBDPal's role</h2>
+                    <p>IBDPal curates links to reputable public resources and provides a free tracking app and education library. We do not speak for the Foundation, imply partnership, or provide medical advice.</p>
+                    <p><a href="/about">About IBDPal</a> · <a href="/trusted-ibd-resources">Trusted IBD resources comparison</a></p>
+                </section>
+            </article>
+        """,
+    ),
+    "trusted-ibd-resources.html": (
+        "Trusted IBD Resources | IBDPal, CCF, ICN, GI Kids, ACG, AGA",
+        "Compare trusted public IBD resources for Crohn's and colitis patients: IBDPal, Crohn's & Colitis Foundation, ImproveCareNow, GI Kids, ACG, AGA, NASPGHAN, and NIH.",
+        "/trusted-ibd-resources",
+        """
+            <article class="support-section seo-landing">
+                <h1>Trusted IBD Resources</h1>
+                <p class="support-intro">No single website should be your only source for IBD education. Use IBDPal as a guide to practical tracking and patient-friendly pages, then verify decisions with your care team and reputable organizations.</p>
+                <section class="seo-landing__block">
+                    <h2>Where each resource fits</h2>
+                    <ul class="seo-landing__list">
+                        <li><strong>IBDPal:</strong> free tracking app, practical guides, state support links, and curated patient education.</li>
+                        <li><strong>Crohn's &amp; Colitis Foundation:</strong> national patient education, Help Center, chapters, research, and advocacy.</li>
+                        <li><strong>ImproveCareNow:</strong> pediatric IBD quality-improvement network and co-produced family resources.</li>
+                        <li><strong>GI Kids / NASPGHAN:</strong> pediatric GI education for families.</li>
+                        <li><strong>ACG and AGA:</strong> professional society information and clinical guideline context.</li>
+                        <li><strong>NIH / MedlinePlus:</strong> federal health education and condition summaries.</li>
+                    </ul>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>Quick links</h2>
+                    <ul class="seo-landing__list">
+                        <li><a href="https://www.crohnscolitisfoundation.org/" rel="noopener noreferrer">Crohn's &amp; Colitis Foundation</a></li>
+                        <li><a href="https://www.improvecarenow.org/" rel="noopener noreferrer">ImproveCareNow</a></li>
+                        <li><a href="https://gikids.org/" rel="noopener noreferrer">GI Kids</a></li>
+                        <li><a href="https://gi.org/" rel="noopener noreferrer">American College of Gastroenterology</a></li>
+                        <li><a href="https://gastro.org/" rel="noopener noreferrer">American Gastroenterological Association</a></li>
+                        <li><a href="https://medlineplus.gov/inflammatoryboweldiseases.html" rel="noopener noreferrer">MedlinePlus: inflammatory bowel diseases</a></li>
+                    </ul>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>How to use resource pages safely</h2>
+                    <p>Look for publication dates, source citations, medical disclaimers, and whether content separates general education from personal medical advice. Bring questions to your GI team before changing medications, supplements, or flare plans.</p>
+                    <p><a href="/research">IBDPal trusted clinical sources</a> · <a href="/crohns-colitis-foundation-resources">Foundation resources guide</a> · <a href="/library">IBDPal content library</a></p>
+                </section>
+            </article>
+        """,
+    ),
+    "ibd-red-flags-urgent-care.html": (
+        "IBD Red Flags | When to Call Your GI Team or Seek Urgent Care",
+        "Conservative educational guide to IBD warning signs: dehydration, heavy bleeding, fever, severe pain, obstruction symptoms, medication reactions, and when to contact your care team.",
+        "/ibd-red-flags-urgent-care",
+        """
+            <article class="support-section seo-landing">
+                <h1>IBD Red Flags: When to Call or Seek Urgent Care</h1>
+                <p class="support-intro">This guide is educational and conservative. If symptoms feel severe, new, or unsafe, contact your gastroenterologist, urgent care, emergency services, or local emergency number.</p>
+                <section class="seo-landing__block">
+                    <h2>Call your GI team promptly</h2>
+                    <ul class="seo-landing__list">
+                        <li>Symptoms are clearly worsening compared with your usual baseline.</li>
+                        <li>New or increasing blood in stool.</li>
+                        <li>Persistent diarrhea, urgency, or nighttime stools.</li>
+                        <li>Fever, chills, or signs of infection while on immune-suppressing medicine.</li>
+                        <li>You cannot keep medications down or missed an infusion, injection, or refill.</li>
+                        <li>Weight loss, poor intake, or dehydration symptoms that are not improving.</li>
+                    </ul>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>Consider urgent care or emergency care now</h2>
+                    <ul class="seo-landing__list">
+                        <li>Severe or rapidly worsening abdominal pain.</li>
+                        <li>Fainting, confusion, chest pain, trouble breathing, or signs of shock.</li>
+                        <li>Inability to keep fluids down, very dark urine, dizziness, or rapid heartbeat.</li>
+                        <li>Heavy rectal bleeding or black/tarry stool.</li>
+                        <li>Severe vomiting, swollen abdomen, or inability to pass stool or gas.</li>
+                        <li>High fever, severe weakness, or concern for infection after surgery or while immunosuppressed.</li>
+                    </ul>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>What to keep ready</h2>
+                    <ul class="seo-landing__list">
+                        <li>GI clinic phone number and after-hours instructions.</li>
+                        <li>Current medication list, allergies, recent procedures, and diagnosis summary.</li>
+                        <li>Insurance card, photo ID, and preferred hospital if your team has one.</li>
+                        <li>IBDPal export or symptom log if you have it, without delaying urgent care.</li>
+                    </ul>
+                    <p><a href="/guides/ibd-flare-emergency-supplies">Flare emergency supplies guide</a> · <a href="/blog/when-to-go-er-ibd">When to go to the ER article</a> · <a href="/flare-help">Flare help hub</a></p>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>Do not wait for a website to decide</h2>
+                    <p>IBDPal cannot triage your symptoms. When you are unsure whether symptoms are urgent, it is reasonable to call your care team or seek urgent medical advice.</p>
+                </section>
             </article>
         """,
     ),
@@ -365,8 +561,8 @@ PAGES = {
                 <section class="seo-landing__block">
                     <h2>Education library (June 2026)</h2>
                     <ul class="seo-landing__list">
-                        <li><strong>51+ articles</strong> including ImproveCareNow resource highlights</li>
-                        <li><strong>24 patient guides</strong> for diet, flares, travel, and clinic prep</li>
+                        <li><strong>55+ articles</strong> including ImproveCareNow resource highlights</li>
+                        <li><strong>27 patient guides</strong> for diet, flares, travel, and clinic prep</li>
                         <li><strong>50 state support pages</strong> with chapters and helplines</li>
                         <li><strong>140+ total education pages</strong> including hubs, FAQ, glossary, and Spanish resources</li>
                     </ul>
@@ -404,8 +600,8 @@ PAGES = {
                 <section class="seo-landing__block">
                     <h2>By the numbers (June 2026)</h2>
                     <div class="library-stats-grid">
-                        <div class="library-stat"><span class="library-stat__n">51+</span><span class="library-stat__l">Articles</span></div>
-                        <div class="library-stat"><span class="library-stat__n">24</span><span class="library-stat__l">Patient guides</span></div>
+                        <div class="library-stat"><span class="library-stat__n">55+</span><span class="library-stat__l">Articles</span></div>
+                        <div class="library-stat"><span class="library-stat__n">27</span><span class="library-stat__l">Patient guides</span></div>
                         <div class="library-stat"><span class="library-stat__n">50</span><span class="library-stat__l">State support pages</span></div>
                         <div class="library-stat"><span class="library-stat__n">8</span><span class="library-stat__l">Spanish pages</span></div>
                         <div class="library-stat"><span class="library-stat__n">140+</span><span class="library-stat__l">Total education pages</span></div>
@@ -414,9 +610,11 @@ PAGES = {
                 <section class="seo-landing__block">
                     <h2>Start here</h2>
                     <ul class="seo-landing__list">
+                        <li><a href="/start-here">Start here roadmap</a></li>
                         <li><a href="/newly-diagnosed">Newly diagnosed</a></li>
                         <li><a href="/ibd-nutrition">Nutrition hub</a></li>
                         <li><a href="/flare-help">Flare help</a></li>
+                        <li><a href="/ibd-red-flags-urgent-care">Red flags and urgent care</a></li>
                         <li><a href="/visit-prep">Visit prep checklist</a></li>
                         <li><a href="/faq">FAQ</a> · <a href="/glossary">Glossary</a></li>
                     </ul>
@@ -450,6 +648,8 @@ PAGES = {
                         <li><a href="/#community">Find support by state</a></li>
                         <li><a href="/resources">Searchable resource library</a></li>
                         <li><a href="/research">Trusted clinical sources</a></li>
+                        <li><a href="/trusted-ibd-resources">Trusted IBD resources comparison</a></li>
+                        <li><a href="/crohns-colitis-foundation-resources">Crohn's &amp; Colitis Foundation resources</a></li>
                         <li><a href="/#app">IBDPal iOS app</a></li>
                     </ul>
                 </section>

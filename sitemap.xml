@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.ibdpal.org/</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.00</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/about</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -20,25 +20,31 @@
   </url>
   <url>
     <loc>https://www.ibdpal.org/clinical-partnerships</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/contact</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.55</priority>
   </url>
   <url>
+    <loc>https://www.ibdpal.org/crohns-colitis-foundation-resources</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.92</priority>
+  </url>
+  <url>
     <loc>https://www.ibdpal.org/crohns-disease</loc>
-    <lastmod>2026-06-14</lastmod>
+    <lastmod>2026-06-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.88</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/executive-summary</loc>
-    <lastmod>2026-06-14</lastmod>
+    <lastmod>2026-06-16</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.55</priority>
   </url>
@@ -50,19 +56,19 @@
   </url>
   <url>
     <loc>https://www.ibdpal.org/flare-help</loc>
-    <lastmod>2026-06-14</lastmod>
+    <lastmod>2026-06-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.88</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/for-clinicians</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/founder</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.55</priority>
   </url>
@@ -86,31 +92,37 @@
   </url>
   <url>
     <loc>https://www.ibdpal.org/ibd-nutrition</loc>
-    <lastmod>2026-06-14</lastmod>
+    <lastmod>2026-06-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.88</priority>
   </url>
   <url>
+    <loc>https://www.ibdpal.org/ibd-red-flags-urgent-care</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.92</priority>
+  </url>
+  <url>
     <loc>https://www.ibdpal.org/impact</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/library</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.92</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/newly-diagnosed</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.92</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/news</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -122,7 +134,7 @@
   </url>
   <url>
     <loc>https://www.ibdpal.org/pediatric-caregivers</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -134,15 +146,21 @@
   </url>
   <url>
     <loc>https://www.ibdpal.org/resources</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/site-updates</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.ibdpal.org/start-here</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.92</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support</loc>
@@ -152,7 +170,7 @@
   </url>
   <url>
     <loc>https://www.ibdpal.org/teens-and-school</loc>
-    <lastmod>2026-06-14</lastmod>
+    <lastmod>2026-06-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.88</priority>
   </url>
@@ -163,14 +181,20 @@
     <priority>0.55</priority>
   </url>
   <url>
+    <loc>https://www.ibdpal.org/trusted-ibd-resources</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.92</priority>
+  </url>
+  <url>
     <loc>https://www.ibdpal.org/ulcerative-colitis</loc>
-    <lastmod>2026-06-14</lastmod>
+    <lastmod>2026-06-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.88</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/visit-prep</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -536,49 +560,49 @@
   </url>
   <url>
     <loc>https://www.ibdpal.org/es/adolescentes-escuela</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/es/brotes-eii</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/es/colitis-ulcerosa</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/es/enfermedad-crohn</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/es/nutricion-eii</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/es/preguntas-frecuentes</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/es/recien-diagnosticado</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/es/recursos</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>

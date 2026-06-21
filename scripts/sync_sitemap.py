@@ -84,7 +84,18 @@ def path_to_url(rel: Path) -> str | None:
 def priority_for(path: str) -> float:
     if path == "/":
         return 1.0
-    if path in {"/blog", "/guides", "/support", "/library", "/ibd-crohns-support", "/newly-diagnosed"}:
+    if path in {
+        "/blog",
+        "/guides",
+        "/support",
+        "/library",
+        "/ibd-crohns-support",
+        "/newly-diagnosed",
+        "/start-here",
+        "/crohns-colitis-foundation-resources",
+        "/trusted-ibd-resources",
+        "/ibd-red-flags-urgent-care",
+    }:
         return 0.92
     if path in {f"/{s}" for s in HUB_SLUGS} or path == "/faq" or path == "/research":
         return 0.88

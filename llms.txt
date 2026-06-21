@@ -12,8 +12,12 @@
 - https://www.ibdpal.org/news
 - https://www.ibdpal.org/site-updates
 - https://www.ibdpal.org/executive-summary
+- https://www.ibdpal.org/start-here
 - https://www.ibdpal.org/ibd-crohns-support
 - https://www.ibdpal.org/newly-diagnosed
+- https://www.ibdpal.org/crohns-colitis-foundation-resources
+- https://www.ibdpal.org/trusted-ibd-resources
+- https://www.ibdpal.org/ibd-red-flags-urgent-care
 - https://www.ibdpal.org/visit-prep
 - https://www.ibdpal.org/resources
 - https://www.ibdpal.org/#community
@@ -33,6 +37,7 @@
 - https://www.ibdpal.org/blog/college-with-ibd
 - https://www.ibdpal.org/blog/dairy-lactose-ibd
 - https://www.ibdpal.org/blog/depression-anxiety-ibd
+- https://www.ibdpal.org/blog/dining-out-ibd-restaurants
 - https://www.ibdpal.org/blog/exercise-physical-activity-ibd
 - https://www.ibdpal.org/blog/fiber-and-ibd-diet
 - https://www.ibdpal.org/blog/flare-first-48-hours
@@ -44,17 +49,23 @@
 - https://www.ibdpal.org/blog/how-nutrition-impacts-gut-health-ibd
 - https://www.ibdpal.org/blog/hydration-tips-ibd
 - https://www.ibdpal.org/blog/ibd-fatigue-brain-fog
+- https://www.ibdpal.org/blog/ibd-flare-go-bag
 - https://www.ibdpal.org/blog/ibd-joint-pain-arthritis
 - https://www.ibdpal.org/blog/ibd-night-sweats
 - https://www.ibdpal.org/blog/ibd-pregnancy-planning
+- https://www.ibdpal.org/blog/ibd-summer-heat-hydration
 - https://www.ibdpal.org/blog/icn-accommodations-toolkit-ibd
 - https://www.ibdpal.org/blog/icn-caregiver-coping-resource
 - https://www.ibdpal.org/blog/icn-college-ibd-toolkit
+- https://www.ibdpal.org/blog/icn-health-literacy-toolkit-ibd
 - https://www.ibdpal.org/blog/icn-ibd-holidays-special-occasions
+- https://www.ibdpal.org/blog/icn-lifestyle-ibd-toolkit
 - https://www.ibdpal.org/blog/icn-mental-health-provider-guide
 - https://www.ibdpal.org/blog/icn-ostomy-toolkit-pediatric
+- https://www.ibdpal.org/blog/icn-self-management-handbook-ibd
 - https://www.ibdpal.org/blog/icn-transfer-toolkit-adult-care
 - https://www.ibdpal.org/blog/immunosuppressants-ibd-basics
+- https://www.ibdpal.org/blog/infusion-day-what-to-expect
 - https://www.ibdpal.org/blog/insurance-biologics-ibd
 - https://www.ibdpal.org/blog/introducing-ibdpal
 - https://www.ibdpal.org/blog/iron-b12-vitamin-d-ibd
@@ -67,6 +78,7 @@
 - https://www.ibdpal.org/blog/partner-caregiver-ibd
 - https://www.ibdpal.org/blog/probiotics-ibd-gut-health
 - https://www.ibdpal.org/blog/protein-meal-plan-ibd-remission
+- https://www.ibdpal.org/blog/siblings-when-child-has-ibd
 - https://www.ibdpal.org/blog/sleep-rest-ibd-flares
 - https://www.ibdpal.org/blog/social-life-dating-teens-ibd
 - https://www.ibdpal.org/blog/steroids-prednisone-ibd
@@ -76,6 +88,7 @@
 - https://www.ibdpal.org/blog/tracking-food-symptoms-ibdpal
 - https://www.ibdpal.org/blog/travel-with-ibd
 - https://www.ibdpal.org/blog/understanding-biologics-ibd
+- https://www.ibdpal.org/blog/when-to-call-ibd-help-center
 - https://www.ibdpal.org/blog/when-to-go-er-ibd
 - https://www.ibdpal.org/blog/workplace-school-ibd-rights
 
@@ -110,33 +123,34 @@
 
 ## Patient guides (search topics)
 - https://www.ibdpal.org/guides
-- https://www.ibdpal.org/guides/what-should-i-eat-crohns-colitis
-- https://www.ibdpal.org/guides/foods-to-eat-crohns-flare
-- https://www.ibdpal.org/guides/ulcerative-colitis-diet-foods
-- https://www.ibdpal.org/guides/crohns-disease-diet-nutrition
-- https://www.ibdpal.org/guides/low-residue-diet-ibd
-- https://www.ibdpal.org/guides/ibd-hydration-fluids
-- https://www.ibdpal.org/guides/crohns-colitis-support-groups
-- https://www.ibdpal.org/guides/ibd-support-near-me
-- https://www.ibdpal.org/guides/pediatric-crohns-colitis-help
-- https://www.ibdpal.org/guides/newly-diagnosed-crohns-colitis
-- https://www.ibdpal.org/guides/crohns-flare-what-to-do
-- https://www.ibdpal.org/guides/ulcerative-colitis-flare-management
-- https://www.ibdpal.org/guides/track-ibd-symptoms-food
-- https://www.ibdpal.org/guides/ibd-nutrition-tracking-app
-- https://www.ibdpal.org/guides/crohns-doctor-visit-prep
 - https://www.ibdpal.org/guides/biologics-crohns-colitis
+- https://www.ibdpal.org/guides/crohns-colitis-support-groups
+- https://www.ibdpal.org/guides/crohns-disease-diet-nutrition
+- https://www.ibdpal.org/guides/crohns-doctor-visit-prep
+- https://www.ibdpal.org/guides/crohns-flare-what-to-do
+- https://www.ibdpal.org/guides/crohns-food-triggers
+- https://www.ibdpal.org/guides/dining-out-with-ibd
+- https://www.ibdpal.org/guides/first-gastroenterology-appointment-ibd
+- https://www.ibdpal.org/guides/foods-to-eat-crohns-flare
+- https://www.ibdpal.org/guides/ibd-crohns-colitis-helpline
+- https://www.ibdpal.org/guides/ibd-flare-emergency-supplies
+- https://www.ibdpal.org/guides/ibd-hydration-fluids
+- https://www.ibdpal.org/guides/ibd-nutrition-tracking-app
+- https://www.ibdpal.org/guides/ibd-support-near-me
 - https://www.ibdpal.org/guides/ibd-travel-planning
 - https://www.ibdpal.org/guides/ibd-workplace-school-rights
 - https://www.ibdpal.org/guides/living-with-ostomy-ibd
-- https://www.ibdpal.org/guides/stress-anxiety-ibd
-- https://www.ibdpal.org/guides/sleep-ibd-flares
+- https://www.ibdpal.org/guides/low-residue-diet-ibd
+- https://www.ibdpal.org/guides/newly-diagnosed-crohns-colitis
 - https://www.ibdpal.org/guides/partner-caregiver-ibd
-- https://www.ibdpal.org/guides/crohns-food-triggers
-- https://www.ibdpal.org/guides/ibd-crohns-colitis-helpline
-- https://www.ibdpal.org/guides/first-gastroenterology-appointment-ibd
-- https://www.ibdpal.org/guides/ibd-flare-emergency-supplies
-- https://www.ibdpal.org/guides/dining-out-with-ibd
+- https://www.ibdpal.org/guides/pediatric-crohns-colitis-help
+- https://www.ibdpal.org/guides/sleep-ibd-flares
+- https://www.ibdpal.org/guides/stress-anxiety-ibd
+- https://www.ibdpal.org/guides/track-ibd-symptoms-food
+- https://www.ibdpal.org/guides/ulcerative-colitis-diet-foods
+- https://www.ibdpal.org/guides/ulcerative-colitis-flare-management
+- https://www.ibdpal.org/guides/what-should-i-eat-crohns-colitis
+
 
 ## SEO hubs & directories
 - https://www.ibdpal.org/blog
