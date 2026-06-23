@@ -838,7 +838,12 @@ body {
 .resource-library__pills {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 0.45rem;
+    width: 100%;
+    margin-inline: auto;
+    text-align: center;
 }
 
 .resource-pill {

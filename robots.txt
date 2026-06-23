@@ -1,16 +1,33 @@
 # IBDPal (ibdpal.org) — nonprofit IBD patient education
 # https://www.robotstxt.org/robotstxt.html
+# Public educational content is crawlable. Private tooling and build artifacts are not.
 
 User-agent: *
 Allow: /
 Disallow: /scripts/
 Disallow: /node_modules/
 
+# Search crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
 # AI / LLM crawlers — public education content welcome
 User-agent: GPTBot
 Allow: /
 
 User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
 Allow: /
 
 User-agent: Google-Extended
@@ -25,4 +42,9 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
+User-agent: Perplexity-User
+Allow: /
+
+# Machine-readable content index for assistants and retrieval systems:
+# https://www.ibdpal.org/llms.txt
 Sitemap: https://www.ibdpal.org/sitemap.xml

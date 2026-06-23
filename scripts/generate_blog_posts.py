@@ -18,6 +18,7 @@ from ui_snippets import BLOG_BACK_LINK_HTML, blog_vote_widget  # noqa: E402
 from amp_utils import discover_blogs  # noqa: E402
 from blog_related import related_reading_html  # noqa: E402
 from seo_keywords import keywords_for_path  # noqa: E402
+from seo_head import organization_json, website_json  # noqa: E402
 from eeat_blocks import (  # noqa: E402
     blog_medical_footer_en,
     content_note_en,
@@ -375,6 +376,8 @@ def render_post(p: dict) -> str:
     ld = {
         "@context": "https://schema.org",
         "@graph": [
+            organization_json(),
+            website_json(),
             {
                 "@type": "BreadcrumbList",
                 "itemListElement": [

@@ -15,6 +15,53 @@ THEME_COLOR_META = '    <meta name="theme-color" content="#FFE5DC">'
 from seo_keywords import keywords_for_path
 
 
+def organization_json() -> dict:
+    return {
+        "@type": "Organization",
+        "@id": f"{SITE}/#organization",
+        "name": "MediVue",
+        "url": f"{SITE}/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": f"{SITE}/IBDPal_Logo.png",
+        },
+        "sameAs": [
+            "https://apps.apple.com/app/ibdpal",
+        ],
+    }
+
+
+def website_json() -> dict:
+    return {
+        "@type": "WebSite",
+        "@id": f"{SITE}/#website",
+        "name": "IBDPal",
+        "url": f"{SITE}/",
+        "publisher": {"@id": f"{SITE}/#organization"},
+        "inLanguage": "en-US",
+        "about": [
+            {"@type": "MedicalCondition", "name": "Crohn's disease"},
+            {"@type": "MedicalCondition", "name": "Ulcerative colitis"},
+            {"@type": "MedicalCondition", "name": "Inflammatory bowel disease"},
+        ],
+        "audience": {"@type": "PatientAudience", "healthCondition": "Inflammatory bowel disease"},
+    }
+
+
+def with_site_graph(json_ld: dict | list) -> dict:
+    base = [organization_json(), website_json()]
+    if isinstance(json_ld, list):
+        graph = json_ld
+        context = "https://schema.org"
+    elif isinstance(json_ld, dict) and "@graph" in json_ld:
+        graph = json_ld.get("@graph", [])
+        context = json_ld.get("@context", "https://schema.org")
+    else:
+        graph = [json_ld]
+        context = "https://schema.org"
+    return {"@context": context, "@graph": [*base, *graph]}
+
+
 def render_seo_head(
     *,
     title: str,
@@ -72,7 +119,7 @@ def render_seo_head(
         '    <link rel="alternate" type="text/plain" title="LLM summary" href="https://www.ibdpal.org/llms.txt">',
     ])
     if json_ld is not None:
-        payload = json.dumps(json_ld, separators=(",", ":"), ensure_ascii=False)
+        payload = json.dumps(with_site_graph(json_ld), separators=(",", ":"), ensure_ascii=False)
         lines.append(f'    <script type="application/ld+json">{payload}</script>')
     if extra_head:
         lines.append(extra_head.rstrip())
@@ -123,5 +170,5 @@ def web_page_json(path: str, title: str, description: str) -> dict:
         "name": title,
         "description": description,
         "isPartOf": {"@type": "WebSite", "name": "IBDPal", "url": SITE + "/"},
-        "publisher": {"@type": "Organization", "name": "MediVue", "url": SITE + "/"},
+        "publisher": {"@id": f"{SITE}/#organization"},
     }

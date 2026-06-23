@@ -112,7 +112,7 @@
     <loc>https://www.ibdpal.org/library</loc>
     <lastmod>2026-06-22</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.92</priority>
+    <priority>0.94</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/newly-diagnosed</loc>
@@ -142,13 +142,13 @@
     <loc>https://www.ibdpal.org/research</loc>
     <lastmod>2026-06-22</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.88</priority>
+    <priority>0.94</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/resources</loc>
     <lastmod>2026-06-22</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.94</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/site-updates</loc>
@@ -160,7 +160,7 @@
     <loc>https://www.ibdpal.org/start-here</loc>
     <lastmod>2026-06-22</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.92</priority>
+    <priority>0.94</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support</loc>
