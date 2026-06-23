@@ -1802,7 +1802,8 @@ a.tab-button,
 
 .tools-lab__header h1 {
     color: #2d143f;
-    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-size: var(--ibd-text-2xl);
+    line-height: var(--ibd-line-tight);
     margin: 0 0 0.5rem;
 }
 
@@ -1822,14 +1823,6 @@ a.tab-button,
     color: #9f1239;
 }
 
-.tools-lab-howto {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 0.75rem;
-    margin: 0 0 1.35rem;
-}
-
-.tools-lab-howto div,
 .tools-lab-steps {
     background: rgba(255, 255, 255, 0.84);
     border: 1px solid rgba(153, 51, 204, 0.14);
@@ -1837,19 +1830,12 @@ a.tab-button,
     padding: 0.9rem;
 }
 
-.tools-lab-howto strong,
-.tools-lab-howto span {
-    display: block;
-}
-
-.tools-lab-howto strong,
 .tools-lab-steps h3 {
     color: #352140;
     font-size: 0.98rem;
     margin: 0 0 0.35rem;
 }
 
-.tools-lab-howto span,
 .tools-lab-steps li {
     color: #66546f;
     font-size: 0.93rem;
@@ -2128,7 +2114,6 @@ a.tab-button,
 }
 
 @media (max-width: 860px) {
-    .tools-lab-howto,
     .tools-lab-grid {
         grid-template-columns: 1fr;
     }
