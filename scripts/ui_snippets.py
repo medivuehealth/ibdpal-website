@@ -206,7 +206,7 @@ METRICS_SUBTAB_HTML = """
                     <section class="seo-landing__block">
                         <h2>Website (ibdpal.org)</h2>
                         <ul class="seo-landing__list">
-                            <li><strong>140+</strong> patient education pages (articles, guides, state support)</li>
+                            <li><strong>185+</strong> patient education and resource pages (articles, guides, state support)</li>
                             <li>Privacy-oriented analytics via Vercel Web Analytics (anonymous page views, no PHI)</li>
                             <li>Structured data and sitemap for search discovery; organic SEO metrics on Overview</li>
                         </ul>

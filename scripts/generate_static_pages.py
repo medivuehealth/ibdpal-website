@@ -459,10 +459,10 @@ PAGES = {
                 <section class="seo-landing__block">
                     <h2>What you will find here</h2>
                     <ul class="seo-landing__list">
-                        <li><a href="/blog">55+ in-depth articles</a> on nutrition, treatment basics, wellness, and daily life</li>
-                        <li><a href="/guides">27 step-by-step patient guides</a> for flares, diet, travel, and more</li>
-                        <li><a href="/#community">50 state support pages</a> with chapters and helplines</li>
-                        <li><a href="/library">140+ total education pages</a> including Spanish resources and topic hubs</li>
+                        <li><a href="/blog">63 in-depth articles</a> on nutrition, treatment, wellness, and daily life</li>
+                        <li><a href="/guides">27 step-by-step patient guides</a></li>
+                        <li><a href="/#community">50 state support pages</a></li>
+                        <li><a href="/library">185+ total education and resource pages</a></li>
                         <li>Free <a href="/#app">IBDPal iOS app</a> for logging meals, symptoms, and visit prep</li>
                     </ul>
                 </section>
@@ -552,7 +552,7 @@ PAGES = {
     ),
     "impact.html": (
         "IBDPal Impact | Patient Education & App Reach | MediVue",
-        "IBDPal impact: 140+ free education pages, 50+ articles, App Store reach, and nonprofit mission outcomes for the IBD community.",
+        "IBDPal impact: 185+ free education and resource pages, 63 articles, App Store reach, and nonprofit mission outcomes for the IBD community.",
         "/impact",
         """
             <article class="support-section seo-landing">
@@ -561,10 +561,10 @@ PAGES = {
                 <section class="seo-landing__block">
                     <h2>Education library (June 2026)</h2>
                     <ul class="seo-landing__list">
-                        <li><strong>55+ articles</strong> including ImproveCareNow resource highlights</li>
+                        <li><strong>63 articles</strong> including ImproveCareNow resource highlights</li>
                         <li><strong>27 patient guides</strong> for diet, flares, travel, and clinic prep</li>
                         <li><strong>50 state support pages</strong> with chapters and helplines</li>
-                        <li><strong>140+ total education pages</strong> including hubs, FAQ, glossary, and Spanish resources</li>
+                        <li><strong>185+ total education and resource pages</strong> including hubs, FAQ, glossary, and Spanish resources</li>
                     </ul>
                     <p><a href="/library">Browse the full content library →</a></p>
                 </section>
@@ -590,7 +590,7 @@ PAGES = {
         """,
     ),
     "library.html": (
-        "IBD Content Library | 140+ Free Education Pages | IBDPal",
+        "IBD Content Library | 185+ Free Education Pages | IBDPal",
         "Full index of IBDPal education: articles, guides, state support, Spanish pages, ICN resources, and topic hubs for Crohn's and colitis.",
         "/library",
         """
@@ -600,11 +600,11 @@ PAGES = {
                 <section class="seo-landing__block">
                     <h2>By the numbers (June 2026)</h2>
                     <div class="library-stats-grid">
-                        <div class="library-stat"><span class="library-stat__n">55+</span><span class="library-stat__l">Articles</span></div>
+                        <div class="library-stat"><span class="library-stat__n">63</span><span class="library-stat__l">Articles</span></div>
                         <div class="library-stat"><span class="library-stat__n">27</span><span class="library-stat__l">Patient guides</span></div>
                         <div class="library-stat"><span class="library-stat__n">50</span><span class="library-stat__l">State support pages</span></div>
                         <div class="library-stat"><span class="library-stat__n">8</span><span class="library-stat__l">Spanish pages</span></div>
-                        <div class="library-stat"><span class="library-stat__n">140+</span><span class="library-stat__l">Total education pages</span></div>
+                        <div class="library-stat"><span class="library-stat__n">185+</span><span class="library-stat__l">Education and resource pages</span></div>
                     </div>
                 </section>
                 <section class="seo-landing__block">
