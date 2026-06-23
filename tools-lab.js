@@ -3,6 +3,8 @@
 
   var STORAGE_KEY = 'ibdpal_food_detective_clues_v1';
   var NLM_ENDPOINT = 'https://clinicaltables.nlm.nih.gov/api/conditions/v3/search';
+  var WEB_API_BASE = (window.IBDPAL_SITE_CONFIG && window.IBDPAL_SITE_CONFIG.webApiBase) ||
+    'https://ibdpal-server-production.up.railway.app/api/web';
   var TERM_ALIASES = {
     fatigue: ['fatigue', 'tired', 'exhaustion', 'brain fog', 'energy', 'anemia', 'sleep', 'lethargy'],
     tired: ['fatigue', 'tired', 'exhaustion', 'brain fog', 'energy', 'anemia', 'sleep'],
@@ -77,6 +79,33 @@
     return String(value || '').toLowerCase().replace(/[^\w\s'-]/g, ' ').replace(/\s+/g, ' ').trim();
   }
 
+  function slugFromUrl(value) {
+    var parts = String(value || '').split('?')[0].split('#')[0].split('/').filter(Boolean);
+    return parts.length ? parts[parts.length - 1] : '';
+  }
+
+  function recordSearchEvent(payload) {
+    var term = String(payload.term || '').trim();
+    var normalizedTerm = normalizeTerm(payload.normalizedTerm || term);
+    if (normalizedTerm.length < 2) return;
+
+    window.fetch(WEB_API_BASE + '/search-events', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      keepalive: true,
+      body: JSON.stringify({
+        term: term.slice(0, 120),
+        normalizedTerm: normalizedTerm,
+        source: 'tools_lab',
+        resultCount: payload.resultCount || 0,
+        clickedArticleUrl: payload.clickedArticleUrl || null,
+        clickedArticleSlug: payload.clickedArticleSlug || null
+      })
+    }).catch(function () {
+      // Analytics should never interrupt patient education tools.
+    });
+  }
+
   function termsForRelatedSearch(value) {
     var normalized = normalizeTerm(value);
     var terms = normalized ? [normalized] : [];
@@ -102,6 +131,7 @@
     var related = root.querySelector('[data-clinical-related]');
     var relatedList = root.querySelector('[data-clinical-related-list]');
     var relatedNote = root.querySelector('[data-clinical-related-note]');
+    var lastTrackedSearch = '';
     if (!input || !results || !status) return;
 
     function setStatus(message) {
@@ -178,14 +208,14 @@
     }
 
     function renderRelated(value) {
-      if (!related || !relatedList || !relatedNote) return;
+      if (!related || !relatedList || !relatedNote) return 0;
 
       var term = String(value || '').trim();
       if (term.length < 2) {
         related.hidden = true;
         relatedList.innerHTML = '';
         relatedNote.textContent = 'Type or select a term to see matching IBDPal education links.';
-        return;
+        return 0;
       }
 
       var matches = relatedResourcesFor(term);
@@ -200,15 +230,27 @@
           '<strong>Browse the full resource library</strong>' +
           '<span>Search all guides, articles, and trusted sources.</span>' +
           '</a>';
-        return;
+        return 0;
       }
 
       relatedList.innerHTML = matches.map(function (resource) {
-        return '<a class="clinical-related-card" href="' + escapeHtml(resource.url) + '">' +
+        return '<a class="clinical-related-card" href="' + escapeHtml(resource.url) + '" data-clinical-related-card data-related-url="' + escapeHtml(resource.url) + '">' +
           '<strong>' + escapeHtml(resource.title) + '</strong>' +
           '<span>' + escapeHtml(resource.description || 'IBDPal education link.') + '</span>' +
           '</a>';
       }).join('');
+      return matches.length;
+    }
+
+    function trackLookup(term, resultCount) {
+      var normalized = normalizeTerm(term);
+      if (normalized.length < 2 || normalized === lastTrackedSearch) return;
+      lastTrackedSearch = normalized;
+      recordSearchEvent({
+        term: term,
+        normalizedTerm: normalized,
+        resultCount: resultCount
+      });
     }
 
     var runSearch = debounce(function () {
@@ -221,7 +263,8 @@
       }
 
       setStatus('Searching NLM Clinical Tables...');
-      renderRelated(term);
+      var relatedCount = renderRelated(term);
+      trackLookup(term, relatedCount);
       var url = NLM_ENDPOINT + '?terms=' + encodeURIComponent(term) + '&maxList=8&df=primary_name';
 
       window.fetch(url)
@@ -243,14 +286,34 @@
     input.addEventListener('input', runSearch);
 
     root.addEventListener('click', function (event) {
+      var relatedCard = event.target.closest('[data-clinical-related-card]');
+      if (relatedCard) {
+        var relatedUrl = relatedCard.getAttribute('data-related-url') || relatedCard.getAttribute('href') || '';
+        recordSearchEvent({
+          term: input.value,
+          normalizedTerm: normalizeTerm(input.value),
+          resultCount: relatedList ? relatedList.querySelectorAll('[data-clinical-related-card]').length : 0,
+          clickedArticleUrl: relatedUrl,
+          clickedArticleSlug: slugFromUrl(relatedUrl)
+        });
+        return;
+      }
+
       var pick = event.target.closest('[data-clinical-pick], [data-clinical-result]');
       if (!pick) return;
       input.value = pick.getAttribute('data-clinical-pick') || pick.getAttribute('data-clinical-result') || '';
       results.innerHTML = '';
       setStatus('Selected term. This is terminology lookup only, not a clinical confirmation.');
-      renderRelated(input.value);
+      var relatedCount = renderRelated(input.value);
+      trackLookup(input.value, relatedCount);
       input.focus();
     });
+
+    var initialTerm = new URLSearchParams(window.location.search).get('toolTerm');
+    if (initialTerm) {
+      input.value = initialTerm;
+      runSearch();
+    }
   }
 
   function initFoodDetective() {

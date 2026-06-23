@@ -4,6 +4,9 @@
 (function () {
   'use strict';
 
+  var WEB_API_BASE = (window.IBDPAL_SITE_CONFIG && window.IBDPAL_SITE_CONFIG.webApiBase) ||
+    'https://ibdpal-server-production.up.railway.app/api/web';
+
   var CATEGORY_LABELS = {
     'getting-started': 'Getting started',
     community: 'Community & support',
@@ -39,6 +42,40 @@
       ' ' +
       (item.keywords || []).join(' ')
     ).toLowerCase();
+  }
+
+  function debounce(fn, delay) {
+    var timer = null;
+    return function () {
+      var args = arguments;
+      window.clearTimeout(timer);
+      timer = window.setTimeout(function () {
+        fn.apply(null, args);
+      }, delay);
+    };
+  }
+
+  function normalizeTerm(value) {
+    return String(value || '').toLowerCase().replace(/[^\w\s'-]/g, ' ').replace(/\s+/g, ' ').trim();
+  }
+
+  function recordSearchEvent(term, resultCount) {
+    var normalizedTerm = normalizeTerm(term);
+    if (normalizedTerm.length < 2) return;
+
+    window.fetch(WEB_API_BASE + '/search-events', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      keepalive: true,
+      body: JSON.stringify({
+        term: String(term || '').trim().slice(0, 120),
+        normalizedTerm: normalizedTerm,
+        source: 'patient_library',
+        resultCount: resultCount || 0
+      })
+    }).catch(function () {
+      // Search analytics should never interrupt the resource library.
+    });
   }
 
   function matchesQuery(hay, q) {
@@ -85,6 +122,7 @@
     var filter = root.querySelector('.resource-library__filter');
     var search = root.querySelector('.resource-library__search');
     var empty = root.querySelector('.resource-library__empty');
+    var lastTrackedSearch = '';
     if (!list || !window.IBDPAL_RESOURCES) return;
 
     list.innerHTML = window.IBDPAL_RESOURCES.map(renderCard).join('');
@@ -105,7 +143,17 @@
         empty.hidden = visible > 0;
       }
       list.hidden = visible === 0 && !!empty;
+      return visible;
     }
+
+    var trackSearch = debounce(function () {
+      if (!search) return;
+      var q = search.value.trim();
+      var normalized = normalizeTerm(q);
+      if (normalized.length < 2 || normalized === lastTrackedSearch) return;
+      lastTrackedSearch = normalized;
+      recordSearchEvent(q, apply());
+    }, 700);
 
     root.querySelectorAll('.resource-pill').forEach(function (pill) {
       pill.addEventListener('click', function () {
@@ -120,7 +168,10 @@
       syncPills(root, filter.value);
       apply();
     });
-    if (search) search.addEventListener('input', apply);
+    if (search) search.addEventListener('input', function () {
+      apply();
+      trackSearch();
+    });
     apply();
   }
 

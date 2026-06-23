@@ -2,6 +2,33 @@
 
 ## Global Guardrails for Health Tools
 
+## Database and Usage Analytics Notes
+
+### Website Tools Lab Search Analytics
+- Railway/Postgres table created and verified on June 22, 2026: `ibdpal_web_search_events`.
+- Search table verified indexes:
+  - `ibdpal_web_search_events_pkey`
+  - `idx_ibdpal_web_search_events_created_at`
+  - `idx_ibdpal_web_search_events_normalized_term`
+  - `idx_ibdpal_web_search_events_term_recent`
+- Railway/Postgres table created and verified on June 22, 2026: `ibdpal_web_content_events`.
+- Content table verified indexes:
+  - `ibdpal_web_content_events_pkey`
+  - `idx_ibdpal_web_content_events_content_slug`
+  - `idx_ibdpal_web_content_events_created_at`
+  - `idx_ibdpal_web_content_events_type_recent`
+  - `idx_ibdpal_web_content_events_url_recent`
+- Intended use: anonymous Tools Lab search terms and related-article click events for aggregate website improvements and homepage popular education searches.
+- Also capture aggregate content view/click events for blog posts, guides, research pages, library/resource pages, and links from search/tab contexts.
+- Website implementation owns same-origin Vercel API routes under `/api/web/*`; configure `DATABASE_URL` in the website deployment environment, not in client-side JavaScript.
+- Do not store personal identifiers, IP addresses, Food Detective logs, symptoms tied to a user, diagnoses, medications, or other patient-level health records in this table.
+
+### Future IBDPal App Usage Summary
+- Follow-up task: inspect the hosted Postgres tables used by the IBDPal iOS app and identify aggregate, privacy-preserving usage metrics that can be posted on the website.
+- Candidate public metrics: total registered users, active users over broad time windows, number of journal entries, meals logged, reminders created, or app feature usage counts.
+- Use only aggregate thresholds and avoid small-cell counts that could expose individual behavior.
+- Any website copy should say "IBDPal app usage" or "community activity" and should not imply clinical outcomes, diagnoses, or treatment effectiveness unless validated.
+
 ### Strict Non-Diagnostic Disclaimer
 - Do not tell a user they "have" Crohn's disease, ulcerative colitis, IBD, or any other condition.
 - Market these tools as management aids, symptom loggers, educational trackers, or clinician-conversation aids.

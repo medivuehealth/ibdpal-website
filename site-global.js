@@ -12,6 +12,15 @@
     '</aside>';
 
   var SKIP_HTML = '<a class="skip-link" href="#main-content">Skip to main content</a>';
+  var WEB_API_BASE = (window.IBDPAL_SITE_CONFIG && window.IBDPAL_SITE_CONFIG.webApiBase) ||
+    'https://ibdpal-server-production.up.railway.app/api/web';
+  var FALLBACK_SEARCHES = [
+    { term: 'fatigue', label: 'Fatigue' },
+    { term: 'diarrhea', label: 'Diarrhea' },
+    { term: 'abdominal pain', label: 'Abdominal pain' },
+    { term: 'crohn diet', label: 'Crohn\'s diet' },
+    { term: 'flare symptoms', label: 'Flare symptoms' }
+  ];
 
   function injectCrisisStrip() {
     if (document.querySelector('.crisis-strip')) return;
@@ -65,6 +74,143 @@
     form.appendChild(p);
   }
 
+  function topSearchHref(term) {
+    return '/?toolTerm=' + encodeURIComponent(term) + '#tools-lab';
+  }
+
+  function contentTypeFromPath(pathname) {
+    if (pathname.indexOf('/blog/') === 0) return 'article';
+    if (pathname.indexOf('/guides/') === 0) return 'guide';
+    if (pathname === '/research' || pathname.indexOf('/research/') === 0) return 'research';
+    if (pathname === '/resources' || pathname === '/library') return 'library';
+    return 'page';
+  }
+
+  function contentSlugFromPath(pathname) {
+    var parts = String(pathname || '').split('/').filter(Boolean);
+    return parts.length ? parts[parts.length - 1] : '';
+  }
+
+  function isTrackableContentPath(pathname) {
+    return pathname.indexOf('/blog/') === 0 ||
+      pathname.indexOf('/guides/') === 0 ||
+      pathname === '/research' ||
+      pathname.indexOf('/research/') === 0 ||
+      pathname === '/resources' ||
+      pathname === '/library';
+  }
+
+  function recordContentEvent(payload) {
+    var contentUrl = payload.contentUrl || window.location.pathname;
+    if (!contentUrl || contentUrl === '/') return;
+
+    window.fetch(WEB_API_BASE + '/content-events', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      keepalive: true,
+      body: JSON.stringify({
+        contentUrl: contentUrl,
+        contentSlug: payload.contentSlug || contentSlugFromPath(contentUrl),
+        contentType: payload.contentType || contentTypeFromPath(contentUrl),
+        source: payload.source || 'direct',
+        eventType: payload.eventType || 'view',
+        referrerPath: payload.referrerPath || window.location.pathname
+      })
+    }).catch(function () {
+      // Content analytics should never block navigation or reading.
+    });
+  }
+
+  function trackCurrentContentView() {
+    var pathname = window.location.pathname;
+    if (!isTrackableContentPath(pathname)) return;
+    recordContentEvent({
+      contentUrl: pathname,
+      contentSlug: contentSlugFromPath(pathname),
+      contentType: contentTypeFromPath(pathname),
+      source: document.referrer ? 'direct' : 'direct',
+      eventType: 'view',
+      referrerPath: document.referrer ? new URL(document.referrer, window.location.origin).pathname : ''
+    });
+  }
+
+  function sourceFromLink(anchor) {
+    if (anchor.closest('[data-clinical-related]')) return 'tools_lab';
+    if (anchor.closest('[data-resource-library]')) return 'patient_library';
+    if (anchor.closest('#articles')) return 'articles_tab';
+    if (anchor.closest('#sources')) return 'research_tab';
+    if (anchor.closest('#home')) return 'homepage';
+    if (anchor.closest('.tab-navigation')) return 'site_nav';
+    return 'direct';
+  }
+
+  function trackContentClicks() {
+    document.addEventListener('click', function (event) {
+      var anchor = event.target.closest('a[href]');
+      if (!anchor) return;
+
+      var url;
+      try {
+        url = new URL(anchor.getAttribute('href'), window.location.origin);
+      } catch (error) {
+        return;
+      }
+
+      if (url.origin !== window.location.origin || !isTrackableContentPath(url.pathname)) return;
+
+      recordContentEvent({
+        contentUrl: url.pathname,
+        contentSlug: contentSlugFromPath(url.pathname),
+        contentType: contentTypeFromPath(url.pathname),
+        source: sourceFromLink(anchor),
+        eventType: 'click',
+        referrerPath: window.location.pathname + window.location.hash
+      });
+    });
+  }
+
+  function renderTopSearches(items, isFallback) {
+    var section = document.querySelector('[data-top-searches]');
+    if (!section) return;
+
+    var list = section.querySelector('[data-top-searches-list]');
+    var title = section.querySelector('[data-top-searches-title]');
+    var note = section.querySelector('[data-top-searches-note]');
+    if (!list || !title || !note) return;
+
+    var searches = (items && items.length ? items : FALLBACK_SEARCHES).slice(0, 6);
+    title.textContent = isFallback || !items || !items.length
+      ? 'Common education searches'
+      : 'Popular education searches';
+    note.textContent = isFallback || !items || !items.length
+      ? 'Start with common IBDPal topics while live anonymous search data builds.'
+      : 'Anonymous Tools Lab topics readers are exploring.';
+
+    list.innerHTML = searches.map(function (item) {
+      var term = item.term || item.normalized_term || item.label || '';
+      var label = item.label || term;
+      return '<a href="' + topSearchHref(term) + '">' + label + '</a>';
+    }).join('');
+    section.hidden = false;
+  }
+
+  function loadTopSearches() {
+    var section = document.querySelector('[data-top-searches]');
+    if (!section) return;
+
+    window.fetch(WEB_API_BASE + '/top-searches?days=14&limit=6&minCount=3')
+      .then(function (response) {
+        if (!response.ok) throw new Error('Top searches unavailable');
+        return response.json();
+      })
+      .then(function (payload) {
+        renderTopSearches(payload && payload.searches, false);
+      })
+      .catch(function () {
+        renderTopSearches(FALLBACK_SEARCHES, true);
+      });
+  }
+
   function ratingsPrompt() {
     if (localStorage.getItem('ibdpal_ratings_dismissed')) return;
     var eligible = document.querySelector('[data-tab="blogs"].active') ||
@@ -96,6 +242,9 @@
     markMainId();
     ensureToolsLabNav();
     seasonalNewsletterHint();
+    loadTopSearches();
+    trackCurrentContentView();
+    trackContentClicks();
     setTimeout(ratingsPrompt, 8000);
   });
 })();
