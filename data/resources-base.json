@@ -35,6 +35,83 @@
     "tags": ["clinical guidance", "nutrition therapy", "Crohn's", "colitis"]
   },
   {
+    "title": "NIDDK: Crohn's Disease",
+    "category": "getting-started",
+    "type": "external",
+    "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/crohns-disease",
+    "tags": ["NIH", "NIDDK", "Crohn's", "symptoms", "diagnosis", "treatment"]
+  },
+  {
+    "title": "NIDDK: Ulcerative Colitis",
+    "category": "getting-started",
+    "type": "external",
+    "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/ulcerative-colitis",
+    "tags": ["NIH", "NIDDK", "ulcerative colitis", "UC", "symptoms", "treatment"]
+  },
+  {
+    "title": "MedlinePlus: Crohn's Disease",
+    "category": "getting-started",
+    "type": "external",
+    "url": "https://medlineplus.gov/crohnsdisease.html",
+    "tags": ["MedlinePlus", "NLM", "Crohn's", "patient handouts", "clinical trials"]
+  },
+  {
+    "title": "MedlinePlus: Ulcerative Colitis",
+    "category": "getting-started",
+    "type": "external",
+    "url": "https://medlineplus.gov/ulcerativecolitis.html",
+    "tags": ["MedlinePlus", "NLM", "ulcerative colitis", "UC", "patient handouts"]
+  },
+  {
+    "title": "CDC: IBD Basics",
+    "category": "getting-started",
+    "type": "external",
+    "url": "https://www.cdc.gov/inflammatory-bowel-disease/about/index.html",
+    "tags": ["CDC", "IBD basics", "symptoms", "complications", "public health"]
+  },
+  {
+    "title": "CDC: IBD Facts and Stats",
+    "category": "clinical",
+    "type": "external",
+    "url": "https://www.cdc.gov/inflammatory-bowel-disease/php/facts-stats/index.html",
+    "tags": ["CDC", "statistics", "prevalence", "costs", "public health"]
+  },
+  {
+    "title": "NIDDK: Clinical Trials for Crohn's Disease",
+    "category": "clinical",
+    "type": "external",
+    "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/crohns-disease/clinical-trials",
+    "tags": ["NIH", "NIDDK", "clinical trials", "Crohn's", "research"]
+  },
+  {
+    "title": "NIDDK: Clinical Trials for Ulcerative Colitis",
+    "category": "clinical",
+    "type": "external",
+    "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/ulcerative-colitis/clinical-trials",
+    "tags": ["NIH", "NIDDK", "clinical trials", "UC", "research"]
+  },
+  {
+    "title": "ClinicalTrials.gov: Inflammatory Bowel Diseases",
+    "category": "clinical",
+    "type": "external",
+    "url": "https://clinicaltrials.gov/search?cond=%22Inflammatory%20Bowel%20Diseases%22",
+    "tags": ["ClinicalTrials.gov", "NLM", "clinical trials", "research registry"]
+  },
+  {
+    "title": "NCCIH: Probiotics | What You Need To Know",
+    "category": "wellness",
+    "type": "external",
+    "url": "https://www.nccih.nih.gov/health/probiotics-what-you-need-to-know",
+    "tags": ["NIH", "NCCIH", "probiotics", "supplements", "safety"]
+  },
+  {
+    "title": "FDA: Biosimilar and Interchangeable Biologics",
+    "category": "treatment",
+    "type": "external",
+    "url": "https://www.fda.gov/consumers/consumer-updates/biosimilar-and-interchangeable-biologics-more-treatment-choices",
+    "tags": ["FDA", "biosimilars", "biologics", "treatment access"]
+  },
+  {
     "title": "IBD Research Sources",
     "category": "nutrition",
     "type": "site",

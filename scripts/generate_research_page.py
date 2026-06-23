@@ -57,6 +57,7 @@ def source_cards(sources: list[dict], *, compact: bool = False) -> str:
         topics = ", ".join(html.escape(t) for t in s.get("topics", []))
         pub = html.escape(s.get("publisher", ""))
         year = html.escape(str(s.get("year", "")))
+        license_note = html.escape(s.get("license_note", ""))
         cards.append(
             f'<article class="research-source-card" id="{html.escape(s["id"])}">'
             f'<h3><a href="{html.escape(s["url"])}" rel="noopener noreferrer">{html.escape(s["title"])}</a></h3>'
@@ -65,6 +66,7 @@ def source_cards(sources: list[dict], *, compact: bool = False) -> str:
             + (f' · <span class="research-source-topics">{topics}</span>' if topics else "")
             + "</p>"
             f'<p>{html.escape(s["summary"])}</p>'
+            + (f'<p class="research-source-meta"><em>{license_note}</em></p>' if license_note and not compact else "")
             + (
                 ""
                 if compact
@@ -116,6 +118,10 @@ def render_page(data: dict) -> str:
                 <h1>{html.escape(data['h1'])}</h1>
 {content_note_en()}{edu_disclaimer_en()}
                 <p class="support-intro">{html.escape(data['intro'])}</p>
+                <section class="seo-landing__block">
+                    <h2>Reuse and licensing notes</h2>
+                    <p>Many U.S. government health pages are public information, but not every image, journal article, or third-party item on a federal site is reusable. IBDPal links to originals, summarizes in our own words, and notes source reuse guidance when available. Always check the publisher page before copying charts, images, PDFs, or licensed third-party material.</p>
+                </section>
                 <div class="research-source-grid">
 {source_cards(data['sources'])}
                 </div>

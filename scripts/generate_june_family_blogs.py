@@ -47,6 +47,21 @@ IMAGE_URLS = {
         "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&w=1200&q=80",
         "https://images.unsplash.com/photo-1586773866518-84b05970a393?auto=format&w=1200&q=80",
     ],
+    "summer-travel-ibd": [
+        "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&w=1200&q=80",
+        "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&w=1200&q=80",
+        "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&w=1200&q=80",
+    ],
+    "school-planning-ibd": [
+        "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&w=1200&q=80",
+        "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&w=1200&q=80",
+        "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&w=1200&q=80",
+    ],
+    "gov-ibd-research": [
+        "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&w=1200&q=80",
+        "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&w=1200&q=80",
+        "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&w=1200&q=80",
+    ],
 }
 
 

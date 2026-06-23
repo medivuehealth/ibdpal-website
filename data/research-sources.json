@@ -1,8 +1,8 @@
 {
-  "title": "IBD Nutrition Research Sources | Crohn's & Colitis | IBDPal",
-  "description": "Trusted IBD diet and nutrition research: AGA clinical guidance, Crohn's & Colitis Congress updates, micronutrient deficiency, and Dietary Reference Intakes.",
+  "title": "IBD Research Sources | NIH, CDC, FDA & Clinical Guidance | IBDPal",
+  "description": "Trusted IBD research and public health sources for Crohn's and ulcerative colitis: NIH/NIDDK, MedlinePlus, CDC, FDA, ClinicalTrials.gov, and clinical nutrition guidance.",
   "h1": "IBD research sources",
-  "intro": "Peer-reviewed and clinical guidance on Crohn's disease and ulcerative colitis nutrition. IBDPal uses NIH Dietary Reference Intakes for baseline tracking goals in the app. Disease-specific increases belong with your care team. Not medical advice.",
+  "intro": "Government public health pages, clinical guidance, and research registries for Crohn's disease and ulcerative colitis. IBDPal links to originals and summarizes in patient-friendly language. Not medical advice.",
   "methodology": {
     "heading": "How IBDPal nutrition baselines work",
     "items": [
@@ -21,7 +21,8 @@
       "year": "2024",
       "url": "https://gastro.org/clinical-guidance/diet-and-nutritional-therapies-in-patients-with-ibd/",
       "topics": ["clinical guidance", "nutrition therapy", "Crohn's", "colitis"],
-      "summary": "AGA guidance on how gastroenterologists may discuss diet and nutritional therapies with IBD patients. Covers enteral nutrition, exclusion diets, micronutrients, and when to involve a dietitian. Emphasizes that diet supports medical care and is not a standalone cure."
+      "summary": "AGA guidance on how gastroenterologists may discuss diet and nutritional therapies with IBD patients. Covers enteral nutrition, exclusion diets, micronutrients, and when to involve a dietitian. Emphasizes that diet supports medical care and is not a standalone cure.",
+      "license_note": "Professional society guidance. Link and summarize; do not assume open reuse of full text or graphics."
     },
     {
       "id": "ccc-nutrition-2024",
@@ -30,7 +31,8 @@
       "year": "2024",
       "url": "https://www.nutritionaltherapyforibd.org/news/crohns-colitis-congress-2024-updates-on-ibd-diet-nutrition-research",
       "topics": ["conference", "diet research", "nutrition science"],
-      "summary": "Recap of nutrition-focused presentations from the 2024 Crohn's & Colitis Congress. Highlights emerging diet trials, patient-reported outcomes, and practical themes clinicians discussed for Crohn's disease and ulcerative colitis."
+      "summary": "Recap of nutrition-focused presentations from the 2024 Crohn's & Colitis Congress. Highlights emerging diet trials, patient-reported outcomes, and practical themes clinicians discussed for Crohn's disease and ulcerative colitis.",
+      "license_note": "Third-party recap. Link and summarize; verify permissions before reusing substantial text or media."
     },
     {
       "id": "webmd-micronutrients",
@@ -39,7 +41,8 @@
       "year": "2024",
       "url": "https://www.webmd.com/ibd-crohns-disease/crohns-disease/micronutrient-deficiency-crohns",
       "topics": ["vitamins", "iron", "B12", "malabsorption"],
-      "summary": "Overview of common vitamin and mineral shortfalls in Crohn's disease, including iron, B12, vitamin D, and folate. Explains why inflammation, surgery, and diet restriction can raise deficiency risk and why labs matter."
+      "summary": "Overview of common vitamin and mineral shortfalls in Crohn's disease, including iron, B12, vitamin D, and folate. Explains why inflammation, surgery, and diet restriction can raise deficiency risk and why labs matter.",
+      "license_note": "Commercial health publisher. Link only unless permission is granted."
     },
     {
       "id": "nih-ods-dri",
@@ -48,7 +51,8 @@
       "year": "Reference",
       "url": "https://ods.od.nih.gov/HealthInformation/Dietary_Reference_Intakes.aspx",
       "topics": ["DRI", "RDA", "AI", "age", "sex", "micronutrients"],
-      "summary": "Official NIH hub for U.S. Dietary Reference Intakes. Reference amounts for energy, protein, vitamins, and minerals vary by age and sex. IBDPal uses these values as baseline daily tracking goals, not personalized prescriptions."
+      "summary": "Official NIH hub for U.S. Dietary Reference Intakes. Reference amounts for energy, protein, vitamins, and minerals vary by age and sex. IBDPal uses these values as baseline daily tracking goals, not personalized prescriptions.",
+      "license_note": "NIH public information; verify page notices before reusing charts, tables, or third-party material."
     },
     {
       "id": "iom-dri",
@@ -57,7 +61,118 @@
       "year": "Reference",
       "url": "https://www.nationalacademies.org/our-work/summary-report-of-the-dietary-reference-intakes",
       "topics": ["DRI", "RDAs", "nutrition standards"],
-      "summary": "Authoritative U.S. reference values for macronutrients, vitamins, and minerals. Complements the NIH ODS DRI tables. IBD teams adapt general DRIs when inflammation, malabsorption, or steroid use changes individual needs."
+      "summary": "Authoritative U.S. reference values for macronutrients, vitamins, and minerals. Complements the NIH ODS DRI tables. IBD teams adapt general DRIs when inflammation, malabsorption, or steroid use changes individual needs.",
+      "license_note": "National Academies source. Link and summarize; verify reuse terms before copying report text or tables."
+    },
+    {
+      "id": "niddk-crohns",
+      "title": "Crohn's Disease",
+      "publisher": "NIDDK, National Institutes of Health",
+      "year": "Last reviewed July 2024",
+      "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/crohns-disease",
+      "topics": ["Crohn's", "symptoms", "diagnosis", "treatment", "diet"],
+      "summary": "NIDDK's Crohn's disease hub covers definition and facts, symptoms and causes, diagnosis, treatment, eating and nutrition, and clinical trials. Useful as a public, government-backed starting point for patient education.",
+      "license_note": "U.S. government public health information; verify page-specific notices before reusing images or third-party content."
+    },
+    {
+      "id": "niddk-ulcerative-colitis",
+      "title": "Ulcerative Colitis",
+      "publisher": "NIDDK, National Institutes of Health",
+      "year": "Last reviewed September 2020",
+      "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/ulcerative-colitis",
+      "topics": ["ulcerative colitis", "UC", "symptoms", "diagnosis", "treatment", "diet"],
+      "summary": "NIDDK's ulcerative colitis hub explains UC basics, symptoms, diagnosis, treatment options, diet and nutrition, and research links in patient-friendly language.",
+      "license_note": "U.S. government public health information; verify page-specific notices before reusing images or third-party content."
+    },
+    {
+      "id": "medlineplus-crohns",
+      "title": "Crohn's Disease",
+      "publisher": "MedlinePlus, National Library of Medicine",
+      "year": "Health topic",
+      "url": "https://medlineplus.gov/crohnsdisease.html",
+      "topics": ["Crohn's", "summary", "diagnosis", "treatments", "living with IBD"],
+      "summary": "MedlinePlus brings together Crohn's disease summaries, tests, treatments, living-with resources, clinical trials, journal article links, and patient handouts from NLM, NIH, and other trusted organizations.",
+      "license_note": "MedlinePlus summaries are public domain, but some linked encyclopedia, drug, image, and partner content is copyrighted. Link and acknowledge MedlinePlus/NLM."
+    },
+    {
+      "id": "medlineplus-uc",
+      "title": "Ulcerative Colitis",
+      "publisher": "MedlinePlus, National Library of Medicine",
+      "year": "Health topic",
+      "url": "https://medlineplus.gov/ulcerativecolitis.html",
+      "topics": ["ulcerative colitis", "UC", "diagnosis", "treatments", "clinical trials"],
+      "summary": "MedlinePlus collects UC summaries, diagnosis and test resources, treatment links, clinical trial links, journal article references, and patient handouts in one government health topic page.",
+      "license_note": "MedlinePlus summaries are public domain, but some linked encyclopedia, drug, image, and partner content is copyrighted. Link and acknowledge MedlinePlus/NLM."
+    },
+    {
+      "id": "cdc-ibd-basics",
+      "title": "Inflammatory Bowel Disease (IBD) Basics",
+      "publisher": "Centers for Disease Control and Prevention",
+      "year": "2024",
+      "url": "https://www.cdc.gov/inflammatory-bowel-disease/about/index.html",
+      "topics": ["IBD basics", "symptoms", "complications", "quality of life", "public health"],
+      "summary": "CDC overview of IBD as a lifelong group of diseases, including Crohn's and ulcerative colitis, with symptoms, complications, medication categories, and quality-of-life context.",
+      "license_note": "CDC public health information; verify page notices before reusing graphics, tables, or third-party material."
+    },
+    {
+      "id": "cdc-ibd-facts-stats",
+      "title": "IBD Facts and Stats",
+      "publisher": "Centers for Disease Control and Prevention",
+      "year": "2024",
+      "url": "https://www.cdc.gov/inflammatory-bowel-disease/php/facts-stats/index.html",
+      "topics": ["statistics", "prevalence", "costs", "public health"],
+      "summary": "CDC summarizes U.S. IBD prevalence estimates, differences across groups, health behaviors, comorbidities, and health care cost patterns, including estimates of 2.4 to 3.1 million people affected.",
+      "license_note": "CDC public health information; verify page notices and cite CDC when reusing statistics."
+    },
+    {
+      "id": "niddk-crohns-clinical-trials",
+      "title": "Clinical Trials for Crohn's Disease",
+      "publisher": "NIDDK, National Institutes of Health",
+      "year": "Last reviewed July 2024",
+      "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/crohns-disease/clinical-trials",
+      "topics": ["clinical trials", "research participation", "microbiome", "genetics"],
+      "summary": "NIDDK explains what Crohn's clinical trials are, how ClinicalTrials.gov lists studies, and examples of NIDDK-supported research such as IBD genetics and microbiome work.",
+      "license_note": "U.S. government public health information. Clinical trial participation requires discussion with a qualified clinician."
+    },
+    {
+      "id": "niddk-uc-clinical-trials",
+      "title": "Clinical Trials for Ulcerative Colitis",
+      "publisher": "NIDDK, National Institutes of Health",
+      "year": "Research resource",
+      "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/ulcerative-colitis/clinical-trials",
+      "topics": ["clinical trials", "ulcerative colitis", "research participation", "pediatric colitis"],
+      "summary": "NIDDK explains ulcerative colitis clinical studies, ClinicalTrials.gov search pathways, and NIDDK-supported work such as IBD genetics and pediatric colitis response research.",
+      "license_note": "U.S. government public health information. NIH does not review every non-federal study listed on ClinicalTrials.gov."
+    },
+    {
+      "id": "clinicaltrials-ibd",
+      "title": "ClinicalTrials.gov: Inflammatory Bowel Diseases",
+      "publisher": "ClinicalTrials.gov, National Library of Medicine",
+      "year": "Registry",
+      "url": "https://clinicaltrials.gov/search?cond=%22Inflammatory%20Bowel%20Diseases%22",
+      "topics": ["clinical trials", "registry", "research participation"],
+      "summary": "Official U.S. registry for clinical studies. Patients can search IBD studies by condition, recruiting status, location, sponsor, and study type, then discuss possible participation with their care team.",
+      "license_note": "Public registry. Study records can change; verify details on ClinicalTrials.gov and with study contacts."
+    },
+    {
+      "id": "nccih-probiotics",
+      "title": "Probiotics: What You Need To Know",
+      "publisher": "National Center for Complementary and Integrative Health, NIH",
+      "year": "NIH health information",
+      "url": "https://www.nccih.nih.gov/health/probiotics-what-you-need-to-know",
+      "topics": ["probiotics", "supplements", "safety", "microbiome"],
+      "summary": "NCCIH explains probiotics, research uncertainty, safety considerations, and why supplement use should be discussed with clinicians, especially for people with serious illness or immune concerns.",
+      "license_note": "NIH public health information; verify page notices before reusing images, graphics, or third-party content."
+    },
+    {
+      "id": "fda-biosimilars",
+      "title": "Biosimilar and Interchangeable Biologics: More Treatment Choices",
+      "publisher": "U.S. Food and Drug Administration",
+      "year": "FDA consumer update",
+      "url": "https://www.fda.gov/consumers/consumer-updates/biosimilar-and-interchangeable-biologics-more-treatment-choices",
+      "topics": ["biosimilars", "biologics", "FDA", "treatment access"],
+      "summary": "FDA consumer education explaining biosimilars and interchangeable biologics, how they compare with reference biologics, and why they may increase treatment options and access.",
+      "license_note": "FDA public information; verify page notices before reusing graphics, videos, or downloaded PDFs."
     }
   ]
 }
