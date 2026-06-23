@@ -99,6 +99,7 @@ _CANONICAL = "https://www.ibdpal.org"
 _TAB_LINKS = f"""
                 <a href="{_CANONICAL}/" class="tab-button" data-tab="home">Home</a>
                 <a href="{_CANONICAL}/#guides" class="tab-button" data-tab="library">Patient Library</a>
+                <a href="{_CANONICAL}/#tools-lab" class="tab-button" data-tab="tools-lab">Tools Lab</a>
                 <a href="{_CANONICAL}/#download" class="tab-button" data-tab="app">IBDPal App</a>
                 <a href="{_CANONICAL}/#community" class="tab-button" data-tab="community">Support</a>
                 <a href="{_CANONICAL}/#news" class="tab-button" data-tab="news">News</a>
@@ -120,6 +121,7 @@ TAB_NAV_HOME_HTML = """
             <div class="tab-container">
                 <button type="button" class="tab-button active" data-tab="home">Home</button>
                 <button type="button" class="tab-button" data-tab="library">Patient Library</button>
+                <button type="button" class="tab-button" data-tab="tools-lab">Tools Lab</button>
                 <button type="button" class="tab-button" data-tab="app">IBDPal App</button>
                 <button type="button" class="tab-button" data-tab="community">Support</button>
                 <button type="button" class="tab-button" data-tab="news">News</button>

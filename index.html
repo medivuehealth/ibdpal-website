@@ -62,6 +62,7 @@
             <div class="tab-container">
                 <button type="button" class="tab-button active" data-tab="home">Home</button>
                 <button type="button" class="tab-button" data-tab="library">Patient Library</button>
+                <button type="button" class="tab-button" data-tab="tools-lab">Tools Lab</button>
                 <button type="button" class="tab-button" data-tab="app">IBDPal App</button>
                 <button type="button" class="tab-button" data-tab="community">Support</button>
                 <button type="button" class="tab-button" data-tab="news">News</button>
@@ -1382,6 +1383,96 @@
                 </div>
             </div>
 
+            <!-- Tools Lab Tab -->
+            <div class="tab-content" id="tools-lab">
+                <section class="tools-lab" aria-labelledby="tools-lab-heading">
+                    <header class="tools-lab__header">
+                        <p class="tools-lab__eyebrow">Prototype &middot; local-first</p>
+                        <h1 id="tools-lab-heading">Tools Lab</h1>
+                        <p class="support-intro">Try early IBDPal experiments: a terminology lookup powered by the National Library of Medicine and a Food Detective notebook for food and symptom patterns.</p>
+                    </header>
+
+                    <div class="tools-lab-guardrail" role="note">
+                        <strong>Education only.</strong> These tools do not diagnose Crohn's disease, ulcerative colitis, IBD, food triggers, or flares. Food Detective entries stay in this browser unless you clear them or your browser storage is reset.
+                    </div>
+
+                    <div class="tools-lab-grid">
+                        <article class="tools-lab-card" data-clinical-lookup>
+                            <div class="tools-lab-card__head">
+                                <p class="tools-lab-card__kicker">Idea #3</p>
+                                <h2>NLM condition & symptom lookup</h2>
+                                <p>Autocomplete clinical terms using the National Library of Medicine Clinical Table Search Service. Use this as terminology lookup, not diagnosis.</p>
+                            </div>
+                            <label class="tools-lab-label" for="clinicalTermSearch">Search a symptom or condition</label>
+                            <div class="clinical-lookup">
+                                <input type="search" id="clinicalTermSearch" class="clinical-lookup__input" placeholder="Try diarrhea, abdominal pain, ulcerative colitis" autocomplete="off" aria-describedby="clinicalLookupHint">
+                                <div class="clinical-lookup__status" id="clinicalLookupHint">Type 2 or more letters. Results come from NLM Clinical Tables.</div>
+                                <div class="clinical-quick-picks" aria-label="Quick picks">
+                                    <button type="button" data-clinical-pick="Crohn's disease">Crohn's disease</button>
+                                    <button type="button" data-clinical-pick="Ulcerative colitis">Ulcerative colitis</button>
+                                    <button type="button" data-clinical-pick="Diarrhea">Diarrhea</button>
+                                    <button type="button" data-clinical-pick="Abdominal pain">Abdominal pain</button>
+                                    <button type="button" data-clinical-pick="Fatigue">Fatigue</button>
+                                </div>
+                                <ul class="clinical-lookup__results" id="clinicalLookupResults" aria-live="polite"></ul>
+                            </div>
+                            <p class="tools-lab-note">Selecting a term does not mean it applies to you clinically. Confirm diagnoses and symptom concerns with your care team.</p>
+                        </article>
+
+                        <article class="tools-lab-card tools-lab-card--detective" data-food-detective>
+                            <div class="tools-lab-card__head">
+                                <p class="tools-lab-card__kicker">Idea #1</p>
+                                <h2>Food Detective notebook</h2>
+                                <p>Log a meal clue, symptom level, and context. The suspect list ranks foods by local notes only, using cautious "possible pattern" language.</p>
+                            </div>
+
+                            <div class="food-detective-alert" data-red-flag-alert tabindex="-1" hidden>
+                                <strong>Urgent symptoms selected.</strong> This tool cannot assess emergencies. Contact your gastroenterologist, urgent care, emergency services, or your local emergency number for severe symptoms.
+                            </div>
+
+                            <form class="food-detective-form" id="foodDetectiveForm">
+                                <label class="tools-lab-label" for="detectiveFood">Food, meal, or ingredient suspect</label>
+                                <input type="text" id="detectiveFood" placeholder="Example: spicy takeout, dairy, popcorn" required>
+
+                                <label class="tools-lab-label" for="detectiveSymptoms">Symptoms or notes</label>
+                                <textarea id="detectiveSymptoms" rows="3" placeholder="Example: bloating after dinner, urgency next morning, slept poorly"></textarea>
+
+                                <div class="food-detective-row">
+                                    <label class="tools-lab-label" for="detectiveSeverity">Symptom intensity</label>
+                                    <select id="detectiveSeverity">
+                                        <option value="1">1 &middot; mild</option>
+                                        <option value="2">2 &middot; noticeable</option>
+                                        <option value="3">3 &middot; moderate</option>
+                                        <option value="4">4 &middot; rough day</option>
+                                        <option value="5">5 &middot; severe</option>
+                                    </select>
+                                </div>
+
+                                <fieldset class="food-detective-redflags">
+                                    <legend>Red flags today?</legend>
+                                    <label><input type="checkbox" value="high fever"> High fever</label>
+                                    <label><input type="checkbox" value="heavy bleeding"> Persistent/heavy bleeding</label>
+                                    <label><input type="checkbox" value="severe pain"> Severe or unbearable pain</label>
+                                    <label><input type="checkbox" value="dehydration"> Dehydration or fainting</label>
+                                    <label><input type="checkbox" value="unable fluids"> Unable to keep fluids down</label>
+                                </fieldset>
+
+                                <button type="submit" class="tools-lab-primary">Add clue locally</button>
+                            </form>
+
+                            <section class="food-detective-summary" aria-labelledby="suspectListHeading">
+                                <div class="food-detective-summary__head">
+                                    <h3 id="suspectListHeading">Suspect list</h3>
+                                    <button type="button" class="tools-lab-secondary" data-clear-detective>Clear local clues</button>
+                                </div>
+                                <ol class="food-detective-suspects" data-suspect-list></ol>
+                                <p class="tools-lab-note">Ranking is based only on your local entries and is not proof that a food causes symptoms. Bring patterns to a GI dietitian or gastroenterologist.</p>
+                            </section>
+                        </article>
+                    </div>
+                </section>
+            </div>
+
             <!-- Contact Tab -->
             <div class="tab-content" id="contact">
                 <div class="contact-section">
@@ -1437,6 +1528,7 @@
     <script src="/community-map.js" defer></script>
     <script src="/resources-data.js" defer></script>
     <script src="/resource-library.js" defer></script>
+    <script src="/tools-lab.js" defer></script>
     <script src="/blog-index-filter.js" defer></script>
     <script src="/site-global.js" defer></script>
     <script src="/analytics-config.js"></script>

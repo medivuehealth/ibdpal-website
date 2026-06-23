@@ -1779,6 +1779,257 @@ a.tab-button,
     line-height: var(--ibd-line-tight);
 }
 
+.tools-lab {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.tools-lab__header {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.tools-lab__eyebrow,
+.tools-lab-card__kicker {
+    color: #7c2fb3;
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    margin: 0 0 0.35rem;
+    text-transform: uppercase;
+}
+
+.tools-lab__header h1 {
+    color: #2d143f;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    margin: 0 0 0.5rem;
+}
+
+.tools-lab-guardrail,
+.food-detective-alert {
+    background: #fff7ed;
+    border: 1px solid #fed7aa;
+    border-radius: 16px;
+    color: #7c2d12;
+    margin: 1rem 0 1.35rem;
+    padding: 1rem 1.1rem;
+}
+
+.food-detective-alert {
+    background: #fff1f2;
+    border-color: #fecdd3;
+    color: #9f1239;
+}
+
+.tools-lab-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 1rem;
+}
+
+.tools-lab-card {
+    background: linear-gradient(180deg, #ffffff 0%, #fcf7ff 100%);
+    border: 1px solid rgba(153, 51, 204, 0.16);
+    border-radius: 22px;
+    box-shadow: 0 18px 42px rgba(55, 28, 78, 0.1);
+    padding: clamp(1rem, 3vw, 1.4rem);
+}
+
+.tools-lab-card--detective {
+    background:
+        linear-gradient(180deg, rgba(255, 251, 235, 0.9), rgba(255, 255, 255, 0.96)),
+        repeating-linear-gradient(0deg, rgba(120, 76, 31, 0.08) 0 1px, transparent 1px 34px);
+}
+
+.tools-lab-card__head h2 {
+    color: #2d143f;
+    font-size: 1.45rem;
+    margin: 0 0 0.5rem;
+}
+
+.tools-lab-card__head p {
+    color: #4b3b55;
+}
+
+.tools-lab-label {
+    color: #352140;
+    display: block;
+    font-weight: 800;
+    margin: 1rem 0 0.35rem;
+}
+
+.clinical-lookup__input,
+.food-detective-form input[type="text"],
+.food-detective-form textarea,
+.food-detective-form select {
+    background: #ffffff;
+    border: 1px solid rgba(153, 51, 204, 0.22);
+    border-radius: 14px;
+    color: #2f2140;
+    font: inherit;
+    padding: 0.85rem 0.95rem;
+    width: 100%;
+}
+
+.clinical-lookup__input:focus,
+.food-detective-form input[type="text"]:focus,
+.food-detective-form textarea:focus,
+.food-detective-form select:focus {
+    border-color: #9933cc;
+    box-shadow: 0 0 0 3px rgba(153, 51, 204, 0.14);
+    outline: none;
+}
+
+.clinical-lookup__status,
+.tools-lab-note {
+    color: #66546f;
+    font-size: 0.92rem;
+    margin: 0.55rem 0 0;
+}
+
+.clinical-quick-picks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0.85rem 0;
+}
+
+.clinical-quick-picks button,
+.clinical-lookup__results button,
+.tools-lab-secondary {
+    background: #fff;
+    border: 1px solid rgba(153, 51, 204, 0.22);
+    border-radius: 999px;
+    color: #6d2494;
+    cursor: pointer;
+    font-weight: 800;
+    padding: 0.52rem 0.82rem;
+}
+
+.clinical-quick-picks button:hover,
+.clinical-lookup__results button:hover,
+.tools-lab-secondary:hover {
+    background: #f5e8ff;
+}
+
+.clinical-lookup__results,
+.food-detective-suspects {
+    list-style: none;
+    margin: 0.85rem 0 0;
+    padding: 0;
+}
+
+.clinical-lookup__results li + li,
+.food-detective-suspects li + li {
+    margin-top: 0.55rem;
+}
+
+.clinical-lookup__results button {
+    border-radius: 12px;
+    display: block;
+    text-align: left;
+    width: 100%;
+}
+
+.clinical-lookup__empty,
+.food-detective-suspects__empty {
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px dashed rgba(153, 51, 204, 0.24);
+    border-radius: 14px;
+    color: #66546f;
+    padding: 0.85rem;
+}
+
+.food-detective-row {
+    max-width: 220px;
+}
+
+.food-detective-redflags {
+    border: 1px dashed rgba(159, 18, 57, 0.28);
+    border-radius: 16px;
+    display: grid;
+    gap: 0.5rem;
+    margin: 1rem 0;
+    padding: 0.9rem;
+}
+
+.food-detective-redflags legend {
+    color: #7f1d1d;
+    font-weight: 800;
+    padding: 0 0.35rem;
+}
+
+.food-detective-redflags label {
+    color: #4b3b55;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.tools-lab-primary {
+    background: linear-gradient(135deg, #9933cc, #6d28d9);
+    border: 0;
+    border-radius: 14px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 900;
+    padding: 0.85rem 1.15rem;
+}
+
+.food-detective-summary {
+    border-top: 1px solid rgba(153, 51, 204, 0.14);
+    margin-top: 1.2rem;
+    padding-top: 1rem;
+}
+
+.food-detective-summary__head {
+    align-items: center;
+    display: flex;
+    gap: 0.75rem;
+    justify-content: space-between;
+}
+
+.food-detective-summary__head h3 {
+    color: #2d143f;
+    margin: 0;
+}
+
+.food-detective-suspects li {
+    background: rgba(255, 255, 255, 0.84);
+    border: 1px solid rgba(120, 76, 31, 0.16);
+    border-radius: 16px;
+    padding: 0.85rem;
+}
+
+.food-detective-suspects li div {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+}
+
+.food-detective-suspects li span {
+    background: #fef3c7;
+    border-radius: 999px;
+    color: #7c2d12;
+    font-size: 0.78rem;
+    font-weight: 900;
+    padding: 0.22rem 0.5rem;
+}
+
+.food-detective-suspects p,
+.food-detective-suspects small {
+    color: #66546f;
+    display: block;
+    margin: 0.35rem 0 0;
+}
+
+@media (max-width: 860px) {
+    .tools-lab-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* ── Mobile polish (beats legacy styles.css stacked tabs / oversized hero) ── */
 @media (max-width: 768px) {
     .app-container {

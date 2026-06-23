@@ -33,6 +33,19 @@
     if (main && !main.id) main.id = 'main-content';
   }
 
+  function ensureToolsLabNav() {
+    if (document.querySelector('.tab-navigation [data-tab="tools-lab"]')) return;
+    var libraryTab = document.querySelector('.tab-navigation [data-tab="library"]');
+    if (!libraryTab || !libraryTab.parentNode) return;
+
+    var link = document.createElement('a');
+    link.href = '/#tools-lab';
+    link.className = 'tab-button';
+    link.setAttribute('data-tab', 'tools-lab');
+    link.textContent = 'Tools Lab';
+    libraryTab.parentNode.insertBefore(link, libraryTab.nextSibling);
+  }
+
   function seasonalNewsletterHint() {
     var form = document.getElementById('emailForm');
     if (!form) return;
@@ -81,6 +94,7 @@
   document.addEventListener('DOMContentLoaded', function () {
     injectCrisisStrip();
     markMainId();
+    ensureToolsLabNav();
     seasonalNewsletterHint();
     setTimeout(ratingsPrompt, 8000);
   });
