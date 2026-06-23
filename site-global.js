@@ -21,6 +21,13 @@
     { term: 'crohn diet', label: 'Crohn\'s diet' },
     { term: 'flare symptoms', label: 'Flare symptoms' }
   ];
+  var FALLBACK_CONTENT = [
+    { url: '/blog/ibd-fatigue-brain-fog', title: 'IBD fatigue and brain fog' },
+    { url: '/blog/flare-first-48-hours', title: 'First 48 hours of a flare' },
+    { url: '/blog/hydration-tips-ibd', title: 'Hydration tips for IBD' },
+    { url: '/guides/sleep-ibd-flares', title: 'Sleep and rest during flares' },
+    { url: '/research', title: 'IBD research sources' }
+  ];
 
   function injectCrisisStrip() {
     if (document.querySelector('.crisis-strip')) return;
@@ -76,6 +83,28 @@
 
   function topSearchHref(term) {
     return '/?toolTerm=' + encodeURIComponent(term) + '#tools-lab';
+  }
+
+  function titleFromSlug(slug) {
+    return String(slug || '')
+      .replace(/-/g, ' ')
+      .replace(/\bibd\b/gi, 'IBD')
+      .replace(/\buc\b/gi, 'UC')
+      .replace(/\b\w/g, function (char) {
+        return char.toUpperCase();
+      });
+  }
+
+  function resourceTitleForUrl(url) {
+    var pathname = String(url || '');
+    var resources = Array.isArray(window.IBDPAL_RESOURCES) ? window.IBDPAL_RESOURCES : [];
+    for (var i = 0; i < resources.length; i++) {
+      if (resources[i].url === pathname) return resources[i].title;
+    }
+    if (pathname === '/research') return 'IBD research sources';
+    if (pathname === '/resources') return 'Guides and tools';
+    if (pathname === '/library') return 'Patient library';
+    return titleFromSlug(contentSlugFromPath(pathname));
   }
 
   function contentTypeFromPath(pathname) {
@@ -178,13 +207,13 @@
     var note = section.querySelector('[data-top-searches-note]');
     if (!list || !title || !note) return;
 
-    var searches = (items && items.length ? items : FALLBACK_SEARCHES).slice(0, 6);
+    var searches = (items && items.length ? items : FALLBACK_SEARCHES).slice(0, 5);
     title.textContent = isFallback || !items || !items.length
       ? 'Common education searches'
-      : 'Popular education searches';
+      : 'Trending searches';
     note.textContent = isFallback || !items || !items.length
-      ? 'Start with common IBDPal topics while live anonymous search data builds.'
-      : 'Anonymous Tools Lab topics readers are exploring.';
+      ? 'Common topics while daily search data builds.'
+      : 'Top anonymous searches from recent site activity.';
 
     list.innerHTML = searches.map(function (item) {
       var term = item.term || item.normalized_term || item.label || '';
@@ -198,7 +227,7 @@
     var section = document.querySelector('[data-top-searches]');
     if (!section) return;
 
-    window.fetch(WEB_API_BASE + '/top-searches?days=14&limit=6&minCount=3')
+    window.fetch(WEB_API_BASE + '/top-searches?days=1&limit=5&minCount=2')
       .then(function (response) {
         if (!response.ok) throw new Error('Top searches unavailable');
         return response.json();
@@ -208,6 +237,55 @@
       })
       .catch(function () {
         renderTopSearches(FALLBACK_SEARCHES, true);
+      });
+  }
+
+  function renderTopContent(items, isFallback) {
+    var section = document.querySelector('[data-top-content]');
+    if (!section) return;
+
+    var list = section.querySelector('[data-top-content-list]');
+    var note = section.querySelector('[data-top-content-note]');
+    if (!list || !note) return;
+
+    var content = (items && items.length ? items : FALLBACK_CONTENT).slice(0, 5);
+    note.textContent = isFallback || !items || !items.length
+      ? 'Common reads while daily view data builds.'
+      : 'Top anonymous views from recent site activity.';
+
+    list.innerHTML = content.map(function (item) {
+      var url = item.url || item.content_url || '/blog';
+      var title = item.title || resourceTitleForUrl(url);
+      return '<a href="' + url + '">' + title + '</a>';
+    }).join('');
+    section.hidden = false;
+  }
+
+  function loadTopContent() {
+    var section = document.querySelector('[data-top-content]');
+    if (!section) return;
+
+    window.fetch(WEB_API_BASE + '/top-content?days=1&limit=5&minCount=1&eventType=view')
+      .then(function (response) {
+        if (!response.ok) throw new Error('Top content unavailable');
+        return response.json();
+      })
+      .then(function (payload) {
+        if (payload && payload.content && payload.content.length) {
+          renderTopContent(payload.content, false);
+          return;
+        }
+        return window.fetch(WEB_API_BASE + '/top-content?days=1&limit=5&minCount=1&eventType=click')
+          .then(function (response) {
+            if (!response.ok) throw new Error('Top clicked content unavailable');
+            return response.json();
+          })
+          .then(function (clickPayload) {
+            renderTopContent(clickPayload && clickPayload.content, false);
+          });
+      })
+      .catch(function () {
+        renderTopContent(FALLBACK_CONTENT, true);
       });
   }
 
@@ -243,6 +321,7 @@
     ensureToolsLabNav();
     seasonalNewsletterHint();
     loadTopSearches();
+    loadTopContent();
     trackCurrentContentView();
     trackContentClicks();
     setTimeout(ratingsPrompt, 8000);
