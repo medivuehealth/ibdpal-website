@@ -27,9 +27,24 @@
     'family',
     'clinical'
   ];
+  var FALLBACK_SUGGESTIONS = [
+    { term: 'fatigue', label: 'Fatigue' },
+    { term: 'flare', label: 'Flare' },
+    { term: 'low residue', label: 'Low residue' },
+    { term: 'biologics', label: 'Biologics' },
+    { term: 'school', label: 'School' }
+  ];
 
   function escapeHtml(s) {
-    return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    return String(s || '').replace(/[&<>"']/g, function (char) {
+      return {
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#39;'
+      }[char];
+    });
   }
 
   function buildHaystack(item) {
@@ -78,6 +93,10 @@
     });
   }
 
+  function suggestionLabel(item) {
+    return item.label || item.term || item.normalized_term || '';
+  }
+
   function matchesQuery(hay, q) {
     if (!q) return true;
     if (hay.indexOf(q) !== -1) return true;
@@ -121,6 +140,7 @@
     var list = root.querySelector('.resource-library__grid');
     var filter = root.querySelector('.resource-library__filter');
     var search = root.querySelector('.resource-library__search');
+    var suggestions = root.querySelector('[data-resource-suggestions]');
     var empty = root.querySelector('.resource-library__empty');
     var lastTrackedSearch = '';
     if (!list || !window.IBDPAL_RESOURCES) return;
@@ -155,6 +175,34 @@
       recordSearchEvent(q, apply());
     }, 700);
 
+    function renderSuggestions(items, isFallback) {
+      if (!suggestions) return;
+      var source = (items && items.length ? items : FALLBACK_SUGGESTIONS).slice(0, 5);
+      suggestions.innerHTML =
+        '<span>' + (isFallback ? 'Try:' : 'Popular searches:') + '</span>' +
+        source.map(function (item) {
+          var label = suggestionLabel(item);
+          var term = item.term || item.normalized_term || label;
+          return '<button type="button" data-resource-suggestion="' + escapeHtml(term) + '">' + escapeHtml(label) + '</button>';
+        }).join('');
+      suggestions.hidden = false;
+    }
+
+    function loadSuggestions() {
+      if (!suggestions) return;
+      window.fetch(WEB_API_BASE + '/search-suggestions?days=14&limit=5&source=patient_library')
+        .then(function (response) {
+          if (!response.ok) throw new Error('Suggestions unavailable');
+          return response.json();
+        })
+        .then(function (payload) {
+          renderSuggestions(payload && payload.suggestions, false);
+        })
+        .catch(function () {
+          renderSuggestions(FALLBACK_SUGGESTIONS, true);
+        });
+    }
+
     root.querySelectorAll('.resource-pill').forEach(function (pill) {
       pill.addEventListener('click', function () {
         var cat = pill.getAttribute('data-category') || '';
@@ -164,6 +212,19 @@
       });
     });
 
+    if (suggestions) {
+      suggestions.addEventListener('click', function (event) {
+        var button = event.target.closest('[data-resource-suggestion]');
+        if (!button || !search) return;
+        search.value = button.getAttribute('data-resource-suggestion') || '';
+        var visible = apply();
+        var normalized = normalizeTerm(search.value);
+        lastTrackedSearch = normalized;
+        recordSearchEvent(search.value, visible);
+        search.focus();
+      });
+    }
+
     if (filter) filter.addEventListener('change', function () {
       syncPills(root, filter.value);
       apply();
@@ -172,6 +233,7 @@
       apply();
       trackSearch();
     });
+    loadSuggestions();
     apply();
   }
 

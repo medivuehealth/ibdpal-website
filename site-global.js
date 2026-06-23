@@ -28,6 +28,23 @@
     { url: '/guides/sleep-ibd-flares', title: 'Sleep and rest during flares' },
     { url: '/research', title: 'IBD research sources' }
   ];
+  var FALLBACK_CONTENT_IDEAS = [
+    { title: 'Fatigue: questions to ask and what to track', term: 'fatigue' },
+    { title: 'Flare foods: gentle options and red flags', term: 'flare foods' },
+    { title: 'Biologics: visit questions for new starts', term: 'biologics' }
+  ];
+
+  function escapeHtml(value) {
+    return String(value || '').replace(/[&<>"']/g, function (char) {
+      return {
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#39;'
+      }[char];
+    });
+  }
 
   function injectCrisisStrip() {
     if (document.querySelector('.crisis-strip')) return;
@@ -177,6 +194,7 @@
     document.addEventListener('click', function (event) {
       var anchor = event.target.closest('a[href]');
       if (!anchor) return;
+      if (anchor.closest('[data-start-route]')) return;
 
       var url;
       try {
@@ -208,17 +226,15 @@
     if (!list || !title || !note) return;
 
     var searches = (items && items.length ? items : FALLBACK_SEARCHES).slice(0, 5);
-    title.textContent = isFallback || !items || !items.length
-      ? 'Common education searches'
-      : 'Trending searches';
+    title.textContent = 'Readers are looking for';
     note.textContent = isFallback || !items || !items.length
       ? 'Common topics while daily search data builds.'
-      : 'Top anonymous searches from recent site activity.';
+      : 'Tap a topic to open Tools Lab with related education links.';
 
     list.innerHTML = searches.map(function (item) {
       var term = item.term || item.normalized_term || item.label || '';
       var label = item.label || term;
-      return '<a href="' + topSearchHref(term) + '">' + label + '</a>';
+      return '<a href="' + topSearchHref(term) + '">' + escapeHtml(label) + '</a>';
     }).join('');
     section.hidden = false;
   }
@@ -245,18 +261,22 @@
     if (!section) return;
 
     var list = section.querySelector('[data-top-content-list]');
+    var heading = section.querySelector('[data-top-content-title]');
+    var windowLabel = section.querySelector('[data-top-content-window]');
     var note = section.querySelector('[data-top-content-note]');
     if (!list || !note) return;
 
     var content = (items && items.length ? items : FALLBACK_CONTENT).slice(0, 5);
+    if (heading) heading.textContent = 'Most helpful this week';
+    if (windowLabel) windowLabel.textContent = 'This week';
     note.textContent = isFallback || !items || !items.length
-      ? 'Common reads while daily view data builds.'
-      : 'Top anonymous views from recent site activity.';
+      ? 'Common reads while weekly view data builds.'
+      : 'Articles and guides readers are opening most this week.';
 
     list.innerHTML = content.map(function (item) {
       var url = item.url || item.content_url || '/blog';
-      var title = item.title || resourceTitleForUrl(url);
-      return '<a href="' + url + '">' + title + '</a>';
+      var contentTitle = item.title || resourceTitleForUrl(url);
+      return '<a href="' + escapeHtml(url) + '">' + escapeHtml(contentTitle) + '</a>';
     }).join('');
     section.hidden = false;
   }
@@ -265,7 +285,7 @@
     var section = document.querySelector('[data-top-content]');
     if (!section) return;
 
-    window.fetch(WEB_API_BASE + '/top-content?days=1&limit=5&minCount=1&eventType=view')
+    window.fetch(WEB_API_BASE + '/top-content?days=7&limit=5&minCount=1&eventType=view')
       .then(function (response) {
         if (!response.ok) throw new Error('Top content unavailable');
         return response.json();
@@ -275,7 +295,7 @@
           renderTopContent(payload.content, false);
           return;
         }
-        return window.fetch(WEB_API_BASE + '/top-content?days=1&limit=5&minCount=1&eventType=click')
+        return window.fetch(WEB_API_BASE + '/top-content?days=7&limit=5&minCount=1&eventType=click')
           .then(function (response) {
             if (!response.ok) throw new Error('Top clicked content unavailable');
             return response.json();
@@ -287,6 +307,63 @@
       .catch(function () {
         renderTopContent(FALLBACK_CONTENT, true);
       });
+  }
+
+  function renderContentIdeas(items, isFallback) {
+    var section = document.querySelector('[data-content-ideas]');
+    if (!section) return;
+
+    var list = section.querySelector('[data-content-ideas-list]');
+    if (!list) return;
+
+    var ideas = (items && items.length ? items : FALLBACK_CONTENT_IDEAS).slice(0, 3);
+    list.innerHTML = ideas.map(function (item) {
+      var term = item.term || item.label || item.title || '';
+      var title = item.title || ((item.label || term) + ': questions to ask and what to track');
+      return '<a href="' + topSearchHref(term) + '">' + escapeHtml(title) + '</a>';
+    }).join('');
+    section.hidden = false;
+  }
+
+  function loadContentIdeas() {
+    var section = document.querySelector('[data-content-ideas]');
+    if (!section) return;
+
+    window.fetch(WEB_API_BASE + '/content-ideas?days=30&limit=3')
+      .then(function (response) {
+        if (!response.ok) throw new Error('Content ideas unavailable');
+        return response.json();
+      })
+      .then(function (payload) {
+        renderContentIdeas(payload && payload.ideas, false);
+      })
+      .catch(function () {
+        renderContentIdeas(FALLBACK_CONTENT_IDEAS, true);
+      });
+  }
+
+  function trackStartRoutes() {
+    document.addEventListener('click', function (event) {
+      var route = event.target.closest('[data-start-route]');
+      if (!route) return;
+
+      var url;
+      try {
+        url = new URL(route.getAttribute('href'), window.location.origin);
+      } catch (error) {
+        return;
+      }
+
+      if (url.origin !== window.location.origin) return;
+      recordContentEvent({
+        contentUrl: url.pathname,
+        contentSlug: contentSlugFromPath(url.pathname),
+        contentType: contentTypeFromPath(url.pathname),
+        source: 'homepage',
+        eventType: 'click',
+        referrerPath: 'start_route:' + (route.getAttribute('data-start-route') || '')
+      });
+    });
   }
 
   function ratingsPrompt() {
@@ -322,8 +399,10 @@
     seasonalNewsletterHint();
     loadTopSearches();
     loadTopContent();
+    loadContentIdeas();
     trackCurrentContentView();
     trackContentClicks();
+    trackStartRoutes();
     setTimeout(ratingsPrompt, 8000);
   });
 })();

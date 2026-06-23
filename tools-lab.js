@@ -35,6 +35,13 @@
       }
     ]
   };
+  var FALLBACK_SUGGESTIONS = [
+    { term: 'fatigue', label: 'Fatigue' },
+    { term: 'flare symptoms', label: 'Flare symptoms' },
+    { term: 'abdominal pain', label: 'Abdominal pain' },
+    { term: 'diarrhea', label: 'Diarrhea' },
+    { term: 'biologics', label: 'Biologics' }
+  ];
 
   function debounce(fn, delay) {
     var timer = null;
@@ -84,6 +91,10 @@
     return parts.length ? parts[parts.length - 1] : '';
   }
 
+  function suggestionLabel(item) {
+    return item.label || item.term || item.normalized_term || '';
+  }
+
   function recordSearchEvent(payload) {
     var term = String(payload.term || '').trim();
     var normalizedTerm = normalizeTerm(payload.normalizedTerm || term);
@@ -131,6 +142,7 @@
     var related = root.querySelector('[data-clinical-related]');
     var relatedList = root.querySelector('[data-clinical-related-list]');
     var relatedNote = root.querySelector('[data-clinical-related-note]');
+    var suggestions = root.querySelector('[data-clinical-suggestions]');
     var lastTrackedSearch = '';
     if (!input || !results || !status) return;
 
@@ -253,6 +265,34 @@
       });
     }
 
+    function renderSuggestions(items, isFallback) {
+      if (!suggestions) return;
+      var source = (items && items.length ? items : FALLBACK_SUGGESTIONS).slice(0, 5);
+      suggestions.innerHTML =
+        '<span>' + (isFallback ? 'Try:' : 'Readers also search:') + '</span>' +
+        source.map(function (item) {
+          var label = suggestionLabel(item);
+          var term = item.term || item.normalized_term || label;
+          return '<button type="button" data-clinical-pick="' + escapeHtml(term) + '">' + escapeHtml(label) + '</button>';
+        }).join('');
+      suggestions.hidden = false;
+    }
+
+    function loadSuggestions() {
+      if (!suggestions) return;
+      window.fetch(WEB_API_BASE + '/search-suggestions?days=14&limit=5&source=tools_lab')
+        .then(function (response) {
+          if (!response.ok) throw new Error('Suggestions unavailable');
+          return response.json();
+        })
+        .then(function (payload) {
+          renderSuggestions(payload && payload.suggestions, false);
+        })
+        .catch(function () {
+          renderSuggestions(FALLBACK_SUGGESTIONS, true);
+        });
+    }
+
     var runSearch = debounce(function () {
       var term = input.value.trim();
       if (term.length < 2) {
@@ -314,6 +354,7 @@
       input.value = initialTerm;
       runSearch();
     }
+    loadSuggestions();
   }
 
   function initFoodDetective() {

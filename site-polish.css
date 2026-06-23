@@ -184,6 +184,52 @@ body {
     color: #6B7280;
 }
 
+.start-route-card {
+    background: linear-gradient(135deg, rgba(245, 232, 255, 0.72), rgba(255, 255, 255, 0.96));
+    border: 1px solid rgba(153, 51, 204, 0.14);
+    border-radius: 20px;
+    box-shadow: var(--ibd-shadow-sm);
+    margin: 0.45rem var(--ibd-content-pad) 0.2rem;
+    padding: 0.85rem 0.95rem;
+}
+
+.start-route-card__eyebrow {
+    color: #7c2fb3;
+    font-size: 0.76rem;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    margin: 0 0 0.2rem;
+    text-transform: uppercase;
+}
+
+.start-route-card h2 {
+    color: #2d143f;
+    font-size: var(--ibd-text-lg);
+    line-height: var(--ibd-line-tight);
+    margin: 0 0 0.65rem;
+}
+
+.start-route-card__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.start-route-card__actions a {
+    background: #ffffff;
+    border: 1px solid rgba(153, 51, 204, 0.18);
+    border-radius: 999px;
+    color: #6d2494;
+    font-size: var(--ibd-text-sm);
+    font-weight: 800;
+    padding: 0.5rem 0.75rem;
+    text-decoration: none;
+}
+
+.start-route-card__actions a:hover {
+    background: #f5e8ff;
+}
+
 /* Start-here hub — white page, elevated cards */
 .start-here-hub {
     position: relative;
@@ -1849,6 +1895,45 @@ a.tab-button,
 
 .home-side-rail__links a:hover {
     background: #f5e8ff;
+}
+
+.home-side-rail__section {
+    border-top: 1px solid rgba(153, 51, 204, 0.14);
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+
+.search-suggestions {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin: 0.65rem 0 0;
+}
+
+.search-suggestions span {
+    color: #66546f;
+    font-size: var(--ibd-text-sm);
+    font-weight: 800;
+}
+
+.search-suggestions button {
+    background: #ffffff;
+    border: 1px solid rgba(153, 51, 204, 0.2);
+    border-radius: 999px;
+    color: #6d2494;
+    cursor: pointer;
+    font-size: 0.86rem;
+    font-weight: 800;
+    padding: 0.42rem 0.68rem;
+}
+
+.search-suggestions button:hover {
+    background: #f5e8ff;
+}
+
+.search-suggestions--tools {
+    margin-top: -0.2rem;
 }
 
 .tools-lab {
