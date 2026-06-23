@@ -3,6 +3,36 @@
 
   var STORAGE_KEY = 'ibdpal_food_detective_clues_v1';
   var NLM_ENDPOINT = 'https://clinicaltables.nlm.nih.gov/api/conditions/v3/search';
+  var TERM_ALIASES = {
+    fatigue: ['fatigue', 'tired', 'exhaustion', 'brain fog', 'energy', 'anemia', 'sleep', 'lethargy'],
+    tired: ['fatigue', 'tired', 'exhaustion', 'brain fog', 'energy', 'anemia', 'sleep'],
+    diarrhea: ['diarrhea', 'loose stool', 'stool', 'flare', 'hydration', 'urgent'],
+    'abdominal pain': ['abdominal pain', 'pain', 'cramping', 'flare', 'urgent'],
+    pain: ['pain', 'cramping', 'flare', 'urgent', 'joint pain'],
+    'crohn\'s disease': ['crohn', 'crohn\'s disease', 'flare', 'nutrition', 'treatment'],
+    crohn: ['crohn', 'crohn\'s disease', 'flare', 'nutrition', 'treatment'],
+    'ulcerative colitis': ['ulcerative colitis', 'colitis', 'uc', 'flare', 'blood', 'urgency'],
+    colitis: ['ulcerative colitis', 'colitis', 'uc', 'flare', 'blood', 'urgency']
+  };
+  var RELATED_FALLBACKS = {
+    fatigue: [
+      {
+        title: 'IBD Fatigue and Brain Fog: Why You Feel Exhausted and What Helps',
+        url: '/blog/ibd-fatigue-brain-fog',
+        description: 'Inflammation, anemia, sleep, medications, pacing strategies, and labs to discuss.'
+      },
+      {
+        title: 'Sleep and rest during IBD flares',
+        url: '/guides/sleep-ibd-flares',
+        description: 'Sleep disruption and fatigue during flares, with practical rest tips.'
+      },
+      {
+        title: 'First gastroenterology appointment for IBD',
+        url: '/guides/first-gastroenterology-appointment-ibd',
+        description: 'What to bring and how to describe fatigue, stool changes, pain, and other patterns.'
+      }
+    ]
+  };
 
   function debounce(fn, delay) {
     var timer = null;
@@ -43,6 +73,25 @@
     return String(value || '').trim().replace(/\s+/g, ' ');
   }
 
+  function normalizeTerm(value) {
+    return String(value || '').toLowerCase().replace(/[^\w\s'-]/g, ' ').replace(/\s+/g, ' ').trim();
+  }
+
+  function termsForRelatedSearch(value) {
+    var normalized = normalizeTerm(value);
+    var terms = normalized ? [normalized] : [];
+
+    Object.keys(TERM_ALIASES).forEach(function (key) {
+      if (normalized === key || normalized.indexOf(key) !== -1 || key.indexOf(normalized) !== -1) {
+        terms = terms.concat(TERM_ALIASES[key]);
+      }
+    });
+
+    return terms.filter(function (term, index, list) {
+      return term && list.indexOf(term) === index;
+    });
+  }
+
   function initClinicalLookup() {
     var root = document.querySelector('[data-clinical-lookup]');
     if (!root) return;
@@ -50,6 +99,9 @@
     var input = document.getElementById('clinicalTermSearch');
     var results = document.getElementById('clinicalLookupResults');
     var status = document.getElementById('clinicalLookupHint');
+    var related = root.querySelector('[data-clinical-related]');
+    var relatedList = root.querySelector('[data-clinical-related-list]');
+    var relatedNote = root.querySelector('[data-clinical-related-note]');
     if (!input || !results || !status) return;
 
     function setStatus(message) {
@@ -75,15 +127,101 @@
       }).filter(Boolean).slice(0, 8);
     }
 
+    function resourceHaystack(resource) {
+      return [
+        resource.title,
+        resource.description,
+        (resource.tags || []).join(' '),
+        (resource.keywords || []).join(' ')
+      ].join(' ').toLowerCase();
+    }
+
+    function relatedFallbackFor(value) {
+      var terms = termsForRelatedSearch(value);
+      var key = terms.indexOf('fatigue') !== -1 ? 'fatigue' : '';
+      return key ? RELATED_FALLBACKS[key] || [] : [];
+    }
+
+    function relatedResourcesFor(value) {
+      var terms = termsForRelatedSearch(value);
+      var resources = Array.isArray(window.IBDPAL_RESOURCES) ? window.IBDPAL_RESOURCES : [];
+      if (!terms.length || !resources.length) {
+        return relatedFallbackFor(value);
+      }
+
+      var scored = resources.map(function (resource) {
+        if (resource.type === 'external') return null;
+
+        var title = String(resource.title || '').toLowerCase();
+        var description = String(resource.description || '').toLowerCase();
+        var tags = (resource.tags || []).join(' ').toLowerCase();
+        var keywords = (resource.keywords || []).join(' ').toLowerCase();
+        var haystack = resourceHaystack(resource);
+        var score = 0;
+
+        terms.forEach(function (term) {
+          if (title.indexOf(term) !== -1) score += 6;
+          if (tags.indexOf(term) !== -1) score += 4;
+          if (keywords.indexOf(term) !== -1) score += 4;
+          if (description.indexOf(term) !== -1) score += 2;
+          if (haystack.indexOf(term) !== -1) score += 1;
+        });
+
+        return score > 0 ? { score: score, resource: resource } : null;
+      }).filter(Boolean).sort(function (a, b) {
+        return b.score - a.score;
+      }).slice(0, 4).map(function (entry) {
+        return entry.resource;
+      });
+
+      return scored.length ? scored : relatedFallbackFor(value);
+    }
+
+    function renderRelated(value) {
+      if (!related || !relatedList || !relatedNote) return;
+
+      var term = String(value || '').trim();
+      if (term.length < 2) {
+        related.hidden = true;
+        relatedList.innerHTML = '';
+        relatedNote.textContent = 'Type or select a term to see matching IBDPal education links.';
+        return;
+      }
+
+      var matches = relatedResourcesFor(term);
+      related.hidden = false;
+      relatedNote.textContent = matches.length
+        ? 'Helpful IBDPal content related to "' + term + '":'
+        : 'No close IBDPal matches yet. Try a broader term or browse the library.';
+
+      if (!matches.length) {
+        relatedList.innerHTML =
+          '<a class="clinical-related-card" href="/resources">' +
+          '<strong>Browse the full resource library</strong>' +
+          '<span>Search all guides, articles, and trusted sources.</span>' +
+          '</a>';
+        return;
+      }
+
+      relatedList.innerHTML = matches.map(function (resource) {
+        return '<a class="clinical-related-card" href="' + escapeHtml(resource.url) + '">' +
+          '<strong>' + escapeHtml(resource.title) + '</strong>' +
+          '<span>' + escapeHtml(resource.description || 'IBDPal education link.') + '</span>' +
+          '</a>';
+      }).join('');
+    }
+
     var runSearch = debounce(function () {
       var term = input.value.trim();
       if (term.length < 2) {
         results.innerHTML = '';
         setStatus('Type 2 or more letters. Results come from NLM Clinical Tables.');
+        renderRelated(term);
         return;
       }
 
       setStatus('Searching NLM Clinical Tables...');
+      renderRelated(term);
       var url = NLM_ENDPOINT + '?terms=' + encodeURIComponent(term) + '&maxList=8&df=primary_name';
 
       window.fetch(url)
@@ -110,6 +248,7 @@
       input.value = pick.getAttribute('data-clinical-pick') || pick.getAttribute('data-clinical-result') || '';
       results.innerHTML = '';
       setStatus('Selected term. This is terminology lookup only, not a clinical confirmation.');
+      renderRelated(input.value);
       input.focus();
     });
   }

@@ -1387,21 +1387,36 @@
             <div class="tab-content" id="tools-lab">
                 <section class="tools-lab" aria-labelledby="tools-lab-heading">
                     <header class="tools-lab__header">
-                        <p class="tools-lab__eyebrow">Prototype &middot; local-first</p>
+                        <p class="tools-lab__eyebrow">New patient tools &middot; local-first</p>
                         <h1 id="tools-lab-heading">Tools Lab</h1>
-                        <p class="support-intro">Try early IBDPal experiments: a terminology lookup powered by the National Library of Medicine and a Food Detective notebook for food and symptom patterns.</p>
+                        <p class="support-intro">Use this space to look up trusted health terms and keep a simple private notebook of foods, symptoms, and possible patterns to discuss with your care team.</p>
                     </header>
 
                     <div class="tools-lab-guardrail" role="note">
                         <strong>Education only.</strong> These tools do not diagnose Crohn's disease, ulcerative colitis, IBD, food triggers, or flares. Food Detective entries stay in this browser unless you clear them or your browser storage is reset.
                     </div>
 
+                    <div class="tools-lab-howto" aria-label="How to use Tools Lab">
+                        <div>
+                            <strong>1. Look up terms</strong>
+                            <span>Use the search box when you want the standard wording for a symptom or condition.</span>
+                        </div>
+                        <div>
+                            <strong>2. Add food clues</strong>
+                            <span>Write down meals or ingredients and what happened afterward.</span>
+                        </div>
+                        <div>
+                            <strong>3. Bring patterns to visits</strong>
+                            <span>Use the suspect list as a conversation starter, not a diagnosis.</span>
+                        </div>
+                    </div>
+
                     <div class="tools-lab-grid">
                         <article class="tools-lab-card" data-clinical-lookup>
                             <div class="tools-lab-card__head">
-                                <p class="tools-lab-card__kicker">Idea #3</p>
-                                <h2>NLM condition & symptom lookup</h2>
-                                <p>Autocomplete clinical terms using the National Library of Medicine Clinical Table Search Service. Use this as terminology lookup, not diagnosis.</p>
+                                <p class="tools-lab-card__kicker">Trusted term lookup</p>
+                                <h2>Find the right health term</h2>
+                                <p>Search symptoms or conditions to see standard terms from the National Library of Medicine. This helps you spell and phrase notes more clearly for appointments.</p>
                             </div>
                             <label class="tools-lab-label" for="clinicalTermSearch">Search a symptom or condition</label>
                             <div class="clinical-lookup">
@@ -1416,18 +1431,40 @@
                                 </div>
                                 <ul class="clinical-lookup__results" id="clinicalLookupResults" aria-live="polite"></ul>
                             </div>
+                            <section class="clinical-related" data-clinical-related hidden aria-live="polite">
+                                <h3>Related IBDPal articles</h3>
+                                <p data-clinical-related-note>Type or select a term to see matching IBDPal education links.</p>
+                                <div class="clinical-related__grid" data-clinical-related-list></div>
+                            </section>
+                            <div class="tools-lab-steps">
+                                <h3>How to use it</h3>
+                                <ol>
+                                    <li>Type a symptom or condition, or tap a quick pick.</li>
+                                    <li>Select a matching term if it fits what you meant.</li>
+                                    <li>Use that wording in your notes or visit prep questions.</li>
+                                </ol>
+                            </div>
                             <p class="tools-lab-note">Selecting a term does not mean it applies to you clinically. Confirm diagnoses and symptom concerns with your care team.</p>
                         </article>
 
                         <article class="tools-lab-card tools-lab-card--detective" data-food-detective>
                             <div class="tools-lab-card__head">
-                                <p class="tools-lab-card__kicker">Idea #1</p>
+                                <p class="tools-lab-card__kicker">Private pattern notebook</p>
                                 <h2>Food Detective notebook</h2>
-                                <p>Log a meal clue, symptom level, and context. The suspect list ranks foods by local notes only, using cautious "possible pattern" language.</p>
+                                <p>Track meals, ingredients, symptoms, and context in a detective-style notebook. The goal is to notice possible patterns without blaming foods too quickly.</p>
                             </div>
 
                             <div class="food-detective-alert" data-red-flag-alert tabindex="-1" hidden>
                                 <strong>Urgent symptoms selected.</strong> This tool cannot assess emergencies. Contact your gastroenterologist, urgent care, emergency services, or your local emergency number for severe symptoms.
+                            </div>
+
+                            <div class="tools-lab-steps">
+                                <h3>How to use it</h3>
+                                <ol>
+                                    <li>Add one food, meal, or ingredient you want to watch.</li>
+                                    <li>Describe symptoms and choose how intense the day felt.</li>
+                                    <li>Repeat over time. The suspect list will show single clues, watch items, and possible patterns.</li>
+                                </ol>
                             </div>
 
                             <form class="food-detective-form" id="foodDetectiveForm">

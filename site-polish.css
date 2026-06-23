@@ -1822,6 +1822,53 @@ a.tab-button,
     color: #9f1239;
 }
 
+.tools-lab-howto {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.75rem;
+    margin: 0 0 1.35rem;
+}
+
+.tools-lab-howto div,
+.tools-lab-steps {
+    background: rgba(255, 255, 255, 0.84);
+    border: 1px solid rgba(153, 51, 204, 0.14);
+    border-radius: 16px;
+    padding: 0.9rem;
+}
+
+.tools-lab-howto strong,
+.tools-lab-howto span {
+    display: block;
+}
+
+.tools-lab-howto strong,
+.tools-lab-steps h3 {
+    color: #352140;
+    font-size: 0.98rem;
+    margin: 0 0 0.35rem;
+}
+
+.tools-lab-howto span,
+.tools-lab-steps li {
+    color: #66546f;
+    font-size: 0.93rem;
+    line-height: 1.5;
+}
+
+.tools-lab-steps {
+    margin: 1rem 0;
+}
+
+.tools-lab-steps ol {
+    margin: 0;
+    padding-left: 1.2rem;
+}
+
+.tools-lab-steps li + li {
+    margin-top: 0.35rem;
+}
+
 .tools-lab-grid {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
@@ -1941,6 +1988,62 @@ a.tab-button,
     padding: 0.85rem;
 }
 
+.clinical-related {
+    background: rgba(245, 232, 255, 0.48);
+    border: 1px solid rgba(153, 51, 204, 0.14);
+    border-radius: 18px;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+.clinical-related h3 {
+    color: #352140;
+    margin: 0 0 0.35rem;
+}
+
+.clinical-related p {
+    color: #66546f;
+    font-size: 0.93rem;
+    margin: 0 0 0.8rem;
+}
+
+.clinical-related__grid {
+    display: grid;
+    gap: 0.65rem;
+}
+
+.clinical-related-card {
+    background: #ffffff;
+    border: 1px solid rgba(153, 51, 204, 0.14);
+    border-radius: 14px;
+    color: #352140;
+    display: block;
+    padding: 0.85rem;
+    text-decoration: none;
+}
+
+.clinical-related-card:hover {
+    border-color: rgba(153, 51, 204, 0.34);
+    box-shadow: 0 8px 22px rgba(55, 28, 78, 0.08);
+    transform: translateY(-1px);
+}
+
+.clinical-related-card strong,
+.clinical-related-card span {
+    display: block;
+}
+
+.clinical-related-card strong {
+    color: #6d2494;
+    margin-bottom: 0.25rem;
+}
+
+.clinical-related-card span {
+    color: #66546f;
+    font-size: 0.9rem;
+    line-height: 1.45;
+}
+
 .food-detective-row {
     max-width: 220px;
 }
@@ -2025,6 +2128,7 @@ a.tab-button,
 }
 
 @media (max-width: 860px) {
+    .tools-lab-howto,
     .tools-lab-grid {
         grid-template-columns: 1fr;
     }
