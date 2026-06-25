@@ -63,6 +63,7 @@
                 <button type="button" class="tab-button active" data-tab="home">Home</button>
                 <button type="button" class="tab-button" data-tab="library">Patient Library</button>
                 <button type="button" class="tab-button" data-tab="tools-lab">Tools Lab</button>
+                <button type="button" class="tab-button" data-tab="ai-recipes">AI Recipes</button>
                 <button type="button" class="tab-button" data-tab="app">IBDPal App</button>
                 <button type="button" class="tab-button" data-tab="community">Support</button>
                 <button type="button" class="tab-button" data-tab="news">News</button>
@@ -1532,6 +1533,59 @@
                 </section>
             </div>
 
+            <!-- AI Recipes Tab -->
+            <div class="tab-content" id="ai-recipes">
+                <section class="ai-recipes" aria-labelledby="ai-recipes-heading" data-ai-recipes>
+                    <header class="ai-recipes__header">
+                        <p class="ai-recipes__eyebrow">Live AI ideas &middot; education only</p>
+                        <h1 id="ai-recipes-heading">AI recipe idea helper</h1>
+                        <p class="support-intro">Generate gentle meal ideas from ingredients you have, then open related YouTube cooking searches for preparation inspiration.</p>
+                    </header>
+
+                    <div class="ai-recipes-guardrail" role="note">
+                        <strong>Not medical advice.</strong> AI recipes cannot diagnose food triggers, treat IBD, or confirm what is safe for you. Use these ideas as a starting point and follow your gastroenterologist or dietitian's restrictions.
+                    </div>
+
+                    <div class="ai-recipes-grid">
+                        <article class="ai-recipes-card">
+                            <h2>Create recipe ideas</h2>
+                            <form class="ai-recipes-form" id="aiRecipeForm">
+                                <label for="recipeGoal">What kind of idea do you want?</label>
+                                <select id="recipeGoal">
+                                    <option value="gentle everyday meal">Gentle everyday meal</option>
+                                    <option value="flare-friendly style">Sensitive-day / flare-friendly style</option>
+                                    <option value="higher protein meal">Higher protein meal</option>
+                                    <option value="low appetite snack">Low appetite snack</option>
+                                    <option value="travel friendly meal">Travel-friendly meal</option>
+                                </select>
+
+                                <label for="recipeIngredients">Ingredients you have</label>
+                                <textarea id="recipeIngredients" rows="3" placeholder="Example: rice, chicken, carrots, broth" required></textarea>
+
+                                <label for="recipeAvoid">Avoid or limit</label>
+                                <input type="text" id="recipeAvoid" placeholder="Example: dairy, spicy foods, nuts, high fiber">
+
+                                <label for="recipeNotes">Optional context</label>
+                                <textarea id="recipeNotes" rows="3" placeholder="Example: low appetite, need something quick, prefer soft foods"></textarea>
+
+                                <button type="submit" class="ai-recipes-primary">Generate recipe ideas</button>
+                                <p class="ai-recipes-note" data-ai-recipes-limit-note>To protect the free API quota, this browser is limited to 3 AI recipe requests per day.</p>
+                            </form>
+                        </article>
+
+                        <article class="ai-recipes-card ai-recipes-card--results">
+                            <div class="ai-recipes-results__head">
+                                <h2>Recipe ideas &amp; videos</h2>
+                                <span data-ai-recipes-status>Enter ingredients to generate ideas.</span>
+                            </div>
+                            <div class="ai-recipes-results" data-ai-recipes-results>
+                                <p class="ai-recipes-empty">Recipe cards and YouTube cooking searches will appear here.</p>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </div>
+
             <!-- Contact Tab -->
             <div class="tab-content" id="contact">
                 <div class="contact-section">
@@ -1589,6 +1643,7 @@
     <script src="/resources-data.js" defer></script>
     <script src="/resource-library.js" defer></script>
     <script src="/tools-lab.js" defer></script>
+    <script src="/recipe-lab.js" defer></script>
     <script src="/blog-index-filter.js" defer></script>
     <script src="/site-global.js" defer></script>
     <script src="/analytics-config.js"></script>

@@ -79,6 +79,19 @@
     libraryTab.parentNode.insertBefore(link, libraryTab.nextSibling);
   }
 
+  function ensureAiRecipesNav() {
+    if (document.querySelector('.tab-navigation [data-tab="ai-recipes"]')) return;
+    var toolsTab = document.querySelector('.tab-navigation [data-tab="tools-lab"]');
+    if (!toolsTab || !toolsTab.parentNode) return;
+
+    var link = document.createElement('a');
+    link.href = '/#ai-recipes';
+    link.className = 'tab-button';
+    link.setAttribute('data-tab', 'ai-recipes');
+    link.textContent = 'AI Recipes';
+    toolsTab.parentNode.insertBefore(link, toolsTab.nextSibling);
+  }
+
   function seasonalNewsletterHint() {
     var form = document.getElementById('emailForm');
     if (!form) return;
@@ -396,6 +409,7 @@
     injectCrisisStrip();
     markMainId();
     ensureToolsLabNav();
+    ensureAiRecipesNav();
     seasonalNewsletterHint();
     loadTopSearches();
     loadTopContent();
