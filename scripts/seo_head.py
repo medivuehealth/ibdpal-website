@@ -102,9 +102,11 @@ def render_seo_head(
     if lang == "en" and hreflang_es:
         lines.append(f'    <link rel="alternate" hreflang="es" href="{hreflang_es}">')
         lines.append(f'    <link rel="alternate" hreflang="en" href="{canonical}">')
+        lines.append(f'    <link rel="alternate" hreflang="x-default" href="{canonical}">')
     if lang == "es" and hreflang_en:
         lines.append(f'    <link rel="alternate" hreflang="en" href="{hreflang_en}">')
         lines.append(f'    <link rel="alternate" hreflang="es" href="{canonical}">')
+        lines.append(f'    <link rel="alternate" hreflang="x-default" href="{hreflang_en}">')
     lines.extend([
         f'    <meta property="og:type" content="{og_type}">',
         f'    <meta property="og:url" content="{canonical}">',

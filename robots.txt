@@ -1,11 +1,21 @@
 # IBDPal (ibdpal.org) — nonprofit IBD patient education
 # https://www.robotstxt.org/robotstxt.html
-# Public educational content is crawlable. Private tooling and build artifacts are not.
+# Public educational content is crawlable. Private tooling, serverless endpoints,
+# dependency folders, and local build artifacts are not indexable content.
 
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /.vercel/
 Disallow: /scripts/
 Disallow: /node_modules/
+Disallow: /load-test-
+Disallow: /*.json$
+Allow: /community-data.js
+Allow: /community-states-extra.js
+Allow: /resources-data.js
+Allow: /site-config.js
 
 # Search crawlers
 User-agent: Googlebot
@@ -47,4 +57,5 @@ Allow: /
 
 # Machine-readable content index for assistants and retrieval systems:
 # https://www.ibdpal.org/llms.txt
+Host: https://www.ibdpal.org
 Sitemap: https://www.ibdpal.org/sitemap.xml

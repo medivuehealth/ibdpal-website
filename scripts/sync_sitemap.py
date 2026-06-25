@@ -3,11 +3,14 @@
 from __future__ import annotations
 
 from datetime import date, datetime
+import html
+import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SITEMAP = ROOT / "sitemap.xml"
 SITE = "https://www.ibdpal.org"
+ES_DATA = ROOT / "data" / "es-pages.json"
 
 SKIP_ROOT_HTML = {
     "support.html",  # legacy stub; /support/index.html is canonical
@@ -61,13 +64,13 @@ def path_to_url(rel: Path) -> str | None:
         return f"/blog/{name[:-5]}"
 
     if len(parts) == 3 and parts[0] == "blogs" and parts[1] == "amp" and name.endswith(".html"):
-        return f"/blog/{name[:-5]}/amp"
+        return None
 
     if len(parts) == 2 and parts[0] == "guides" and name.endswith(".html"):
         return f"/guides/{name[:-5]}"
 
     if len(parts) == 3 and parts[0] == "guides" and parts[1] == "amp" and name.endswith(".html"):
-        return f"/guides/{name[:-5]}/amp"
+        return None
 
     if len(parts) == 2 and parts[0] == "support" and name.endswith(".html"):
         return f"/support/{name[:-5]}"
@@ -130,6 +133,25 @@ def changefreq_for(path: str) -> str:
     return "monthly"
 
 
+def load_hreflang_pairs() -> dict[str, dict[str, str]]:
+    if not ES_DATA.is_file():
+        return {}
+    data = json.loads(ES_DATA.read_text(encoding="utf-8"))
+    pairs: dict[str, dict[str, str]] = {}
+    for en_path, es_path in data.get("mirrors", {}).items():
+        pairs[en_path] = {
+            "en": f"{SITE}{en_path}",
+            "es": f"{SITE}{es_path}",
+            "x-default": f"{SITE}{en_path}",
+        }
+        pairs[es_path] = {
+            "en": f"{SITE}{en_path}",
+            "es": f"{SITE}{es_path}",
+            "x-default": f"{SITE}{en_path}",
+        }
+    return pairs
+
+
 def discover_entries() -> dict[str, tuple[str, float, str]]:
     entries: dict[str, tuple[str, float, str]] = {}
     today = date.today().isoformat()
@@ -156,14 +178,19 @@ def discover_entries() -> dict[str, tuple[str, float, str]]:
 
 
 def render_sitemap(entries: dict[str, tuple[str, float, str]]) -> str:
+    alternates = load_hreflang_pairs()
     lines = [
         '<?xml version="1.0" encoding="UTF-8"?>',
-        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">',
     ]
     for path in sorted(entries.keys(), key=lambda p: (p.count("/"), p)):
         lastmod, priority, changefreq = entries[path]
         lines.append("  <url>")
         lines.append(f"    <loc>{SITE}{path}</loc>")
+        for hreflang, href in alternates.get(path, {}).items():
+            lines.append(
+                f'    <xhtml:link rel="alternate" hreflang="{hreflang}" href="{html.escape(href, quote=True)}" />'
+            )
         lines.append(f"    <lastmod>{lastmod}</lastmod>")
         lines.append(f"    <changefreq>{changefreq}</changefreq>")
         lines.append(f"    <priority>{priority:.2f}</priority>")

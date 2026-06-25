@@ -1,6 +1,6 @@
 // IBDPal Website JavaScript
 
-var IBDPAL_MAIN_TABS = ['home', 'library', 'tools-lab', 'ai-recipes', 'app', 'community', 'news', 'about', 'contact', 'privacy', 'support'];
+var IBDPAL_MAIN_TABS = ['home', 'library', 'tools-lab', 'recipe-ideas', 'app', 'community', 'news', 'about', 'contact', 'privacy', 'support'];
 var IBDPAL_APP_SUBTABS = ['download', 'features', 'how-it-works', 'screenshots', 'app-research'];
 var IBDPAL_LIBRARY_SUBTABS = ['guides', 'sources', 'articles'];
 var IBDPAL_ABOUT_SUBTABS = ['about-overview', 'site-updates', 'metrics'];
@@ -17,9 +17,9 @@ var IBDPAL_HASH_ALIASES = {
     library: { main: 'library', sub: 'guides' },
     tools: { main: 'tools-lab', sub: null },
     lab: { main: 'tools-lab', sub: null },
-    recipes: { main: 'ai-recipes', sub: null },
-    'recipe-lab': { main: 'ai-recipes', sub: null },
-    ai: { main: 'ai-recipes', sub: null }
+    recipes: { main: 'recipe-ideas', sub: null },
+    'recipe-lab': { main: 'recipe-ideas', sub: null },
+    'recipe-ideas': { main: 'recipe-ideas', sub: null }
 };
 
 document.addEventListener('DOMContentLoaded', function () {

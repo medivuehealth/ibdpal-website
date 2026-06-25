@@ -79,16 +79,16 @@
     libraryTab.parentNode.insertBefore(link, libraryTab.nextSibling);
   }
 
-  function ensureAiRecipesNav() {
-    if (document.querySelector('.tab-navigation [data-tab="ai-recipes"]')) return;
+  function ensureRecipeIdeasNav() {
+    if (document.querySelector('.tab-navigation [data-tab="recipe-ideas"]')) return;
     var toolsTab = document.querySelector('.tab-navigation [data-tab="tools-lab"]');
     if (!toolsTab || !toolsTab.parentNode) return;
 
     var link = document.createElement('a');
-    link.href = '/#ai-recipes';
+    link.href = '/#recipe-ideas';
     link.className = 'tab-button';
-    link.setAttribute('data-tab', 'ai-recipes');
-    link.textContent = 'AI Recipes';
+    link.setAttribute('data-tab', 'recipe-ideas');
+    link.textContent = 'Recipe Ideas';
     toolsTab.parentNode.insertBefore(link, toolsTab.nextSibling);
   }
 
@@ -409,7 +409,7 @@
     injectCrisisStrip();
     markMainId();
     ensureToolsLabNav();
-    ensureAiRecipesNav();
+    ensureRecipeIdeasNav();
     seasonalNewsletterHint();
     loadTopSearches();
     loadTopContent();

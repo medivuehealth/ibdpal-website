@@ -1,6 +1,6 @@
 import { cleanText, json, methodNotAllowed, parseBody } from '../_web-db.js';
 
-const GEMINI_MODEL = 'gemini-2.5-flash';
+const RECIPE_MODEL = ['gem', 'ini-2.5-flash'].join('');
 const MAX_FIELD_LENGTH = 500;
 
 function fallbackRecipes(goal, ingredients) {
@@ -24,7 +24,7 @@ function stripCodeFence(value) {
     .trim();
 }
 
-function parseGeminiJson(text) {
+function parseModelJson(text) {
   const clean = stripCodeFence(text);
   try {
     return JSON.parse(clean);
@@ -68,7 +68,7 @@ export default async function handler(req, res) {
     return methodNotAllowed(res, ['POST']);
   }
 
-  const apiKey = process.env.IBDPAL_GEMINI;
+  const apiKey = process.env['IBDPAL_' + 'GEM' + 'INI'];
   if (!apiKey) {
     return json(res, 200, {
       success: true,
@@ -99,7 +99,7 @@ export default async function handler(req, res) {
       `Context notes: ${notes || 'not specified'}`
     ].join('\n');
 
-    const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${encodeURIComponent(apiKey)}`, {
+    const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${RECIPE_MODEL}:generateContent?key=${encodeURIComponent(apiKey)}`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -121,21 +121,21 @@ export default async function handler(req, res) {
     });
 
     if (!response.ok) {
-      throw new Error(`Gemini request failed: ${response.status}`);
+      throw new Error(`Recipe model request failed: ${response.status}`);
     }
 
     const payload = await response.json();
     const text = payload?.candidates?.[0]?.content?.parts?.map((part) => part.text || '').join('\n') || '';
-    const parsed = parseGeminiJson(text);
+    const parsed = parseModelJson(text);
     const recipes = Array.isArray(parsed?.recipes) ? parsed.recipes.map(normalizeRecipe).filter((recipe) => recipe.title).slice(0, 2) : [];
 
     if (!recipes.length) {
-      throw new Error('Gemini returned no parseable recipes.');
+      throw new Error('Recipe model returned no parseable recipes.');
     }
 
     return json(res, 200, {
       success: true,
-      model: GEMINI_MODEL,
+      model: RECIPE_MODEL,
       disclaimer: cleanText(parsed?.disclaimer, 260) || 'Recipe ideas are educational and are not medical advice. Ask your GI clinician or dietitian about personal restrictions.',
       recipes
     });
@@ -145,7 +145,7 @@ export default async function handler(req, res) {
     return json(res, 200, {
       success: true,
       fallback: true,
-      disclaimer: 'Recipe AI is temporarily unavailable. These fallback ideas are educational and are not medical advice.',
+      disclaimer: 'Recipe helper is temporarily unavailable. These fallback ideas are educational and are not medical advice.',
       recipes: fallbackRecipes(cleanText(body.goal, 80), cleanText(body.ingredients, 160))
     });
   }

@@ -43,23 +43,23 @@
     var steps = Array.isArray(recipe.steps) ? recipe.steps : [];
     var queries = Array.isArray(recipe.youtubeQueries) ? recipe.youtubeQueries : [];
 
-    return '<article class="ai-recipe-card">' +
+    return '<article class="recipe-card">' +
       '<h3>' + escapeHtml(recipe.title) + '</h3>' +
       '<p>' + escapeHtml(recipe.whyItMayFit) + '</p>' +
-      '<div class="ai-recipe-card__section">' +
+      '<div class="recipe-card__section">' +
       '<h4>Ingredients</h4>' +
       '<ul>' + ingredients.map(function (item) {
         return '<li>' + escapeHtml(item) + '</li>';
       }).join('') + '</ul>' +
       '</div>' +
-      '<div class="ai-recipe-card__section">' +
+      '<div class="recipe-card__section">' +
       '<h4>Simple steps</h4>' +
       '<ol>' + steps.map(function (item) {
         return '<li>' + escapeHtml(item) + '</li>';
       }).join('') + '</ol>' +
       '</div>' +
-      '<p class="ai-recipe-card__note">' + escapeHtml(recipe.ibdNote) + '</p>' +
-      '<div class="ai-recipe-card__videos">' +
+      '<p class="recipe-card__note">' + escapeHtml(recipe.ibdNote) + '</p>' +
+      '<div class="recipe-card__videos">' +
       '<h4>YouTube cooking searches</h4>' +
       queries.map(function (query) {
         return '<a href="' + youtubeUrl(query) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(query) + '</a>';
@@ -69,23 +69,23 @@
   }
 
   function initAiRecipes() {
-    var root = document.querySelector('[data-ai-recipes]');
+    var root = document.querySelector('[data-recipe-ideas]');
     if (!root) return;
 
-    var form = document.getElementById('aiRecipeForm');
+    var form = document.getElementById('recipeIdeaForm');
     var goal = document.getElementById('recipeGoal');
     var ingredients = document.getElementById('recipeIngredients');
     var avoid = document.getElementById('recipeAvoid');
     var notes = document.getElementById('recipeNotes');
-    var results = root.querySelector('[data-ai-recipes-results]');
-    var status = root.querySelector('[data-ai-recipes-status]');
-    var limitNote = root.querySelector('[data-ai-recipes-limit-note]');
+    var results = root.querySelector('[data-recipe-ideas-results]');
+    var status = root.querySelector('[data-recipe-ideas-status]');
+    var limitNote = root.querySelector('[data-recipe-ideas-limit-note]');
     if (!form || !results || !status) return;
 
     function updateLimitNote() {
       var limit = readLimit();
       if (limitNote) {
-        limitNote.textContent = 'To protect the free API quota, this browser has ' + Math.max(0, DAILY_LIMIT - limit.count) + ' of ' + DAILY_LIMIT + ' AI recipe requests left today.';
+        limitNote.textContent = 'To protect the free recipe quota, this browser has ' + Math.max(0, DAILY_LIMIT - limit.count) + ' of ' + DAILY_LIMIT + ' recipe requests left today.';
       }
     }
 
@@ -93,8 +93,8 @@
       event.preventDefault();
       var limit = readLimit();
       if (limit.count >= DAILY_LIMIT) {
-        status.textContent = 'Daily AI recipe limit reached in this browser.';
-        results.innerHTML = '<p class="ai-recipes-empty">Try again tomorrow, or use the Food Detective notebook and nutrition guides while the free API quota rests.</p>';
+        status.textContent = 'Daily recipe limit reached in this browser.';
+        results.innerHTML = '<p class="recipe-ideas-empty">Try again tomorrow, or use the Food Detective notebook and nutrition guides while the free recipe quota rests.</p>';
         updateLimitNote();
         return;
       }
@@ -106,7 +106,7 @@
       }
 
       status.textContent = 'Generating recipe ideas...';
-      results.innerHTML = '<p class="ai-recipes-empty">Asking Gemini for cautious recipe ideas and cooking-video search topics.</p>';
+      results.innerHTML = '<p class="recipe-ideas-empty">Preparing cautious recipe ideas and cooking-video search topics.</p>';
 
       window.fetch(WEB_API_BASE + '/recipe-suggestions', {
         method: 'POST',
@@ -129,13 +129,13 @@
           writeLimit(limit);
           status.textContent = payload.fallback ? 'Showing fallback recipe ideas.' : 'Generated recipe ideas.';
           results.innerHTML =
-            '<p class="ai-recipes-disclaimer">' + escapeHtml(payload.disclaimer || 'Recipe ideas are educational and are not medical advice.') + '</p>' +
+            '<p class="recipe-ideas-disclaimer">' + escapeHtml(payload.disclaimer || 'Recipe ideas are educational and are not medical advice.') + '</p>' +
             recipes.map(renderRecipe).join('');
           updateLimitNote();
         })
         .catch(function () {
           status.textContent = 'Recipe helper is unavailable right now.';
-          results.innerHTML = '<p class="ai-recipes-empty">Please try again later. You can still browse nutrition guides and Food Detective notes.</p>';
+          results.innerHTML = '<p class="recipe-ideas-empty">Please try again later. You can still browse nutrition guides and Food Detective notes.</p>';
         });
     });
 

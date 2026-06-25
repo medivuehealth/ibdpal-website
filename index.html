@@ -16,6 +16,7 @@
     <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.ibdpal.org/sitemap.xml">
     <link rel="alternate" hreflang="en" href="https://www.ibdpal.org/">
     <link rel="alternate" hreflang="es" href="https://www.ibdpal.org/es/recursos">
+    <link rel="alternate" hreflang="x-default" href="https://www.ibdpal.org/">
     <link rel="alternate" type="text/plain" title="LLM summary (llms.txt)" href="https://www.ibdpal.org/llms.txt">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -63,7 +64,7 @@
                 <button type="button" class="tab-button active" data-tab="home">Home</button>
                 <button type="button" class="tab-button" data-tab="library">Patient Library</button>
                 <button type="button" class="tab-button" data-tab="tools-lab">Tools Lab</button>
-                <button type="button" class="tab-button" data-tab="ai-recipes">AI Recipes</button>
+                <button type="button" class="tab-button" data-tab="recipe-ideas">Recipe Ideas</button>
                 <button type="button" class="tab-button" data-tab="app">IBDPal App</button>
                 <button type="button" class="tab-button" data-tab="community">Support</button>
                 <button type="button" class="tab-button" data-tab="news">News</button>
@@ -1533,23 +1534,23 @@
                 </section>
             </div>
 
-            <!-- AI Recipes Tab -->
-            <div class="tab-content" id="ai-recipes">
-                <section class="ai-recipes" aria-labelledby="ai-recipes-heading" data-ai-recipes>
-                    <header class="ai-recipes__header">
-                        <p class="ai-recipes__eyebrow">Live AI ideas &middot; education only</p>
-                        <h1 id="ai-recipes-heading">AI recipe idea helper</h1>
+            <!-- Recipe Ideas Tab -->
+            <div class="tab-content" id="recipe-ideas">
+                <section class="recipe-ideas" aria-labelledby="recipe-ideas-heading" data-recipe-ideas>
+                    <header class="recipe-ideas__header">
+                        <p class="recipe-ideas__eyebrow">Live recipe ideas &middot; education only</p>
+                        <h1 id="recipe-ideas-heading">Recipe idea helper</h1>
                         <p class="support-intro">Generate gentle meal ideas from ingredients you have, then open related YouTube cooking searches for preparation inspiration.</p>
                     </header>
 
-                    <div class="ai-recipes-guardrail" role="note">
-                        <strong>Not medical advice.</strong> AI recipes cannot diagnose food triggers, treat IBD, or confirm what is safe for you. Use these ideas as a starting point and follow your gastroenterologist or dietitian's restrictions.
+                    <div class="recipe-ideas-guardrail" role="note">
+                        <strong>Not medical advice.</strong> Recipe ideas cannot diagnose food triggers, treat IBD, or confirm what is safe for you. Use these ideas as a starting point and follow your gastroenterologist or dietitian's restrictions.
                     </div>
 
-                    <div class="ai-recipes-grid">
-                        <article class="ai-recipes-card">
+                    <div class="recipe-ideas-grid">
+                        <article class="recipe-ideas-card">
                             <h2>Create recipe ideas</h2>
-                            <form class="ai-recipes-form" id="aiRecipeForm">
+                            <form class="recipe-ideas-form" id="recipeIdeaForm">
                                 <label for="recipeGoal">What kind of idea do you want?</label>
                                 <select id="recipeGoal">
                                     <option value="gentle everyday meal">Gentle everyday meal</option>
@@ -1568,18 +1569,18 @@
                                 <label for="recipeNotes">Optional context</label>
                                 <textarea id="recipeNotes" rows="3" placeholder="Example: low appetite, need something quick, prefer soft foods"></textarea>
 
-                                <button type="submit" class="ai-recipes-primary">Generate recipe ideas</button>
-                                <p class="ai-recipes-note" data-ai-recipes-limit-note>To protect the free API quota, this browser is limited to 3 AI recipe requests per day.</p>
+                                <button type="submit" class="recipe-ideas-primary">Generate recipe ideas</button>
+                                <p class="recipe-ideas-note" data-recipe-ideas-limit-note>To protect the free recipe quota, this browser is limited to 3 recipe requests per day.</p>
                             </form>
                         </article>
 
-                        <article class="ai-recipes-card ai-recipes-card--results">
-                            <div class="ai-recipes-results__head">
+                        <article class="recipe-ideas-card recipe-ideas-card--results">
+                            <div class="recipe-ideas-results__head">
                                 <h2>Recipe ideas &amp; videos</h2>
-                                <span data-ai-recipes-status>Enter ingredients to generate ideas.</span>
+                                <span data-recipe-ideas-status>Enter ingredients to generate ideas.</span>
                             </div>
-                            <div class="ai-recipes-results" data-ai-recipes-results>
-                                <p class="ai-recipes-empty">Recipe cards and YouTube cooking searches will appear here.</p>
+                            <div class="recipe-ideas-results" data-recipe-ideas-results>
+                                <p class="recipe-ideas-empty">Recipe cards and YouTube cooking searches will appear here.</p>
                             </div>
                         </article>
                     </div>
