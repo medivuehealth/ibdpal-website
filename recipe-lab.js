@@ -2,8 +2,8 @@
   'use strict';
 
   var WEB_API_BASE = (window.IBDPAL_SITE_CONFIG && window.IBDPAL_SITE_CONFIG.webApiBase) || '/api/web';
-  var LIMIT_KEY = 'ibdpal_ai_recipe_requests_v1';
-  var DAILY_LIMIT = 3;
+  var LIMIT_KEY = 'ibdpal_recipe_requests_v2';
+  var DAILY_LIMIT = 20;
 
   function escapeHtml(value) {
     return String(value || '').replace(/[&<>"']/g, function (char) {

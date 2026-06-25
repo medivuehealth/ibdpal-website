@@ -5,6 +5,11 @@ const RECIPE_MODELS = [
   ['gem', 'ini-2.0-flash'].join(''),
   ['gem', 'ini-1.5-flash'].join('')
 ];
+const BACKUP_RECIPE_MODELS = [
+  'llama-3.1-8b-instant',
+  'llama-3.3-70b-versatile',
+  'openai/gpt-oss-20b'
+];
 const MAX_FIELD_LENGTH = 500;
 
 function fallbackRecipes(goal, ingredients) {
@@ -104,7 +109,20 @@ async function parseResponse(response) {
   }
 }
 
-async function generateRecipes(apiKey, userPrompt) {
+function recipeResultFromText(text, model) {
+  const parsed = parseModelJson(text);
+  const recipes = Array.isArray(parsed?.recipes) ? parsed.recipes.map(normalizeRecipe).filter((recipe) => recipe.title).slice(0, 2) : [];
+
+  if (!recipes.length) return null;
+
+  return {
+    model,
+    recipes,
+    disclaimer: cleanText(parsed?.disclaimer, 260) || 'Recipe ideas are educational and are not medical advice. Ask your GI clinician or dietitian about personal restrictions.'
+  };
+}
+
+async function generatePrimaryRecipes(apiKey, userPrompt) {
   let lastProblem = 'unknown';
   const attempts = [
     { jsonMode: true, systemInstruction: true },
@@ -128,16 +146,8 @@ async function generateRecipes(apiKey, userPrompt) {
 
         const payload = await parseResponse(response);
         const text = payload?.candidates?.[0]?.content?.parts?.map((part) => part.text || '').join('\n') || payload?.rawText || '';
-        const parsed = parseModelJson(text);
-        const recipes = Array.isArray(parsed?.recipes) ? parsed.recipes.map(normalizeRecipe).filter((recipe) => recipe.title).slice(0, 2) : [];
-
-        if (recipes.length) {
-          return {
-            model,
-            recipes,
-            disclaimer: cleanText(parsed?.disclaimer, 260) || 'Recipe ideas are educational and are not medical advice. Ask your GI clinician or dietitian about personal restrictions.'
-          };
-        }
+        const result = recipeResultFromText(text, model);
+        if (result) return result;
 
         lastProblem = 'empty_recipe_output';
       } catch (error) {
@@ -149,13 +159,81 @@ async function generateRecipes(apiKey, userPrompt) {
   throw new Error(`Recipe provider unavailable: ${lastProblem}`);
 }
 
+function backupRequestBody(userPrompt, options) {
+  const messages = [
+    {
+      role: 'system',
+      content: systemPrompt()
+    },
+    {
+      role: 'user',
+      content: userPrompt
+    }
+  ];
+
+  const body = {
+    messages,
+    temperature: 0.45,
+    max_tokens: 1800
+  };
+
+  if (options.jsonMode) {
+    body.response_format = { type: 'json_object' };
+  }
+
+  return body;
+}
+
+async function generateBackupRecipes(apiKey, userPrompt) {
+  let lastProblem = 'unknown';
+  const attempts = [
+    { jsonMode: true },
+    { jsonMode: false }
+  ];
+
+  for (const model of BACKUP_RECIPE_MODELS) {
+    for (const attempt of attempts) {
+      try {
+        const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+          method: 'POST',
+          headers: {
+            'Authorization': `Bearer ${apiKey}`,
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            model,
+            ...backupRequestBody(userPrompt, attempt)
+          })
+        });
+
+        if (!response.ok) {
+          lastProblem = `status_${response.status}`;
+          continue;
+        }
+
+        const payload = await parseResponse(response);
+        const text = payload?.choices?.[0]?.message?.content || payload?.rawText || '';
+        const result = recipeResultFromText(text, model);
+        if (result) return result;
+
+        lastProblem = 'empty_recipe_output';
+      } catch (error) {
+        lastProblem = error?.name || 'request_error';
+      }
+    }
+  }
+
+  throw new Error(`Backup recipe provider unavailable: ${lastProblem}`);
+}
+
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     return methodNotAllowed(res, ['POST']);
   }
 
-  const apiKey = process.env['IBDPAL_' + 'GEM' + 'INI'];
-  if (!apiKey) {
+  const primaryKey = process.env['IBDPAL_' + 'GEM' + 'INI'];
+  const backupKey = process.env.IBDPAL_GRQ_KEY;
+  if (!primaryKey && !backupKey) {
     return json(res, 200, {
       success: true,
       fallback: true,
@@ -185,7 +263,24 @@ export default async function handler(req, res) {
       `Context notes: ${notes || 'not specified'}`
     ].join('\n');
 
-    const result = await generateRecipes(apiKey, userPrompt);
+    let result = null;
+    let primaryError = null;
+
+    if (primaryKey) {
+      try {
+        result = await generatePrimaryRecipes(primaryKey, userPrompt);
+      } catch (error) {
+        primaryError = error;
+      }
+    }
+
+    if (!result && backupKey) {
+      result = await generateBackupRecipes(backupKey, userPrompt);
+    }
+
+    if (!result && primaryError) {
+      throw primaryError;
+    }
 
     return json(res, 200, {
       success: true,
