@@ -68,7 +68,7 @@
       '</article>';
   }
 
-  function initAiRecipes() {
+  function initRecipeIdeas() {
     var root = document.querySelector('[data-recipe-ideas]');
     if (!root) return;
 
@@ -94,7 +94,7 @@
       var limit = readLimit();
       if (limit.count >= DAILY_LIMIT) {
         status.textContent = 'Daily recipe limit reached in this browser.';
-        results.innerHTML = '<p class="recipe-ideas-empty">Try again tomorrow, or use the Food Detective notebook and nutrition guides while the free recipe quota rests.</p>';
+        results.innerHTML = '<p class="recipe-ideas-empty">Try again tomorrow, or use the Food Detective notebook and nutrition guides today.</p>';
         updateLimitNote();
         return;
       }
@@ -125,8 +125,10 @@
         .then(function (payload) {
           var recipes = payload && Array.isArray(payload.recipes) ? payload.recipes : [];
           if (!recipes.length) throw new Error('No recipes returned');
-          limit.count += 1;
-          writeLimit(limit);
+          if (!payload.fallback) {
+            limit.count += 1;
+            writeLimit(limit);
+          }
           status.textContent = payload.fallback ? 'Showing fallback recipe ideas.' : 'Generated recipe ideas.';
           results.innerHTML =
             '<p class="recipe-ideas-disclaimer">' + escapeHtml(payload.disclaimer || 'Recipe ideas are educational and are not medical advice.') + '</p>' +
@@ -142,5 +144,5 @@
     updateLimitNote();
   }
 
-  document.addEventListener('DOMContentLoaded', initAiRecipes);
+  document.addEventListener('DOMContentLoaded', initRecipeIdeas);
 })();

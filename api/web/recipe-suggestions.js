@@ -1,6 +1,10 @@
 import { cleanText, json, methodNotAllowed, parseBody } from '../_web-db.js';
 
-const RECIPE_MODEL = ['gem', 'ini-2.5-flash'].join('');
+const RECIPE_MODELS = [
+  ['gem', 'ini-2.5-flash'].join(''),
+  ['gem', 'ini-2.0-flash'].join(''),
+  ['gem', 'ini-1.5-flash'].join('')
+];
 const MAX_FIELD_LENGTH = 500;
 
 function fallbackRecipes(goal, ingredients) {
@@ -63,6 +67,88 @@ function systemPrompt() {
   ].join('\n');
 }
 
+function requestBody(userPrompt, options) {
+  const useSystemInstruction = options.systemInstruction !== false;
+  const body = {
+    contents: [
+      {
+        role: 'user',
+        parts: [{ text: useSystemInstruction ? userPrompt : `${systemPrompt()}\n\n${userPrompt}` }]
+      }
+    ],
+    generationConfig: {
+      temperature: 0.45,
+      maxOutputTokens: 1800
+    }
+  };
+
+  if (useSystemInstruction) {
+    body.systemInstruction = {
+      parts: [{ text: systemPrompt() }]
+    };
+  }
+
+  if (options.jsonMode) {
+    body.generationConfig.responseMimeType = 'application/json';
+  }
+
+  return body;
+}
+
+async function parseResponse(response) {
+  const text = await response.text();
+  try {
+    return JSON.parse(text);
+  } catch {
+    return { rawText: text };
+  }
+}
+
+async function generateRecipes(apiKey, userPrompt) {
+  let lastProblem = 'unknown';
+  const attempts = [
+    { jsonMode: true, systemInstruction: true },
+    { jsonMode: false, systemInstruction: true },
+    { jsonMode: false, systemInstruction: false }
+  ];
+
+  for (const model of RECIPE_MODELS) {
+    for (const attempt of attempts) {
+      try {
+        const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${encodeURIComponent(apiKey)}`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(requestBody(userPrompt, attempt))
+        });
+
+        if (!response.ok) {
+          lastProblem = `status_${response.status}`;
+          continue;
+        }
+
+        const payload = await parseResponse(response);
+        const text = payload?.candidates?.[0]?.content?.parts?.map((part) => part.text || '').join('\n') || payload?.rawText || '';
+        const parsed = parseModelJson(text);
+        const recipes = Array.isArray(parsed?.recipes) ? parsed.recipes.map(normalizeRecipe).filter((recipe) => recipe.title).slice(0, 2) : [];
+
+        if (recipes.length) {
+          return {
+            model,
+            recipes,
+            disclaimer: cleanText(parsed?.disclaimer, 260) || 'Recipe ideas are educational and are not medical advice. Ask your GI clinician or dietitian about personal restrictions.'
+          };
+        }
+
+        lastProblem = 'empty_recipe_output';
+      } catch (error) {
+        lastProblem = error?.name || 'request_error';
+      }
+    }
+  }
+
+  throw new Error(`Recipe provider unavailable: ${lastProblem}`);
+}
+
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     return methodNotAllowed(res, ['POST']);
@@ -99,45 +185,13 @@ export default async function handler(req, res) {
       `Context notes: ${notes || 'not specified'}`
     ].join('\n');
 
-    const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${RECIPE_MODEL}:generateContent?key=${encodeURIComponent(apiKey)}`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        systemInstruction: {
-          parts: [{ text: systemPrompt() }]
-        },
-        contents: [
-          {
-            role: 'user',
-            parts: [{ text: userPrompt }]
-          }
-        ],
-        generationConfig: {
-          temperature: 0.45,
-          maxOutputTokens: 1800,
-          responseMimeType: 'application/json'
-        }
-      })
-    });
-
-    if (!response.ok) {
-      throw new Error(`Recipe model request failed: ${response.status}`);
-    }
-
-    const payload = await response.json();
-    const text = payload?.candidates?.[0]?.content?.parts?.map((part) => part.text || '').join('\n') || '';
-    const parsed = parseModelJson(text);
-    const recipes = Array.isArray(parsed?.recipes) ? parsed.recipes.map(normalizeRecipe).filter((recipe) => recipe.title).slice(0, 2) : [];
-
-    if (!recipes.length) {
-      throw new Error('Recipe model returned no parseable recipes.');
-    }
+    const result = await generateRecipes(apiKey, userPrompt);
 
     return json(res, 200, {
       success: true,
-      model: RECIPE_MODEL,
-      disclaimer: cleanText(parsed?.disclaimer, 260) || 'Recipe ideas are educational and are not medical advice. Ask your GI clinician or dietitian about personal restrictions.',
-      recipes
+      model: result.model,
+      disclaimer: result.disclaimer,
+      recipes: result.recipes
     });
   } catch (error) {
     console.error('recipe-suggestions error', error);
