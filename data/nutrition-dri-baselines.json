@@ -1,0 +1,141 @@
+{
+  "sourceNote": "Reference values from NIH Dietary Reference Intakes (DRI). IBDPal app baselines align with these age- and sex-specific tables. Higher targets during flares, malabsorption, or deficiency treatment require your gastroenterologist or IBD dietitian.",
+  "profiles": [
+    {
+      "id": "female-19-50",
+      "label": "Adult female (19–50)",
+      "macros": [
+        { "nutrient": "Calories (energy)", "baseline": "~1,800–2,400 kcal/day", "note": "Varies by age, weight, height, and activity (NIH EER tables)", "source": "NIH DRI" },
+        { "nutrient": "Protein", "baseline": "46 g/day (RDA)", "note": "0.8 g/kg body weight for most adults; higher needs are clinician-directed", "source": "NIH DRI" },
+        { "nutrient": "Fiber", "baseline": "25 g/day (AI)", "note": "During active flares many patients temporarily use lower-fiber patterns with their team", "source": "NIH DRI" },
+        { "nutrient": "Hydration (total water)", "baseline": "~2.7 L/day (AI)", "note": "Includes fluids from drinks and food; increase with diarrhea, heat, or exercise", "source": "NIH DRI" }
+      ],
+      "micros": [
+        { "nutrient": "Vitamin D", "baseline": "600 IU / 15 mcg (RDA)", "note": "800 IU (20 mcg) for adults 70+", "source": "NIH DRI" },
+        { "nutrient": "Vitamin B12", "baseline": "2.4 mcg/day (RDA)", "note": "Injectable or high-dose B12 is a treatment decision, not a food-log goal", "source": "NIH DRI" },
+        { "nutrient": "Iron", "baseline": "18 mg/day (RDA)", "note": "Menstruating adults; labs guide replacement doses in IBD", "source": "NIH DRI" },
+        { "nutrient": "Folate (DFE)", "baseline": "400 mcg/day (RDA)", "note": "Higher in pregnancy; methotrexate users often need prescribed folate", "source": "NIH DRI" },
+        { "nutrient": "Calcium", "baseline": "1,000 mg/day (RDA)", "note": "1,200 mg for women 51+; important with steroid courses", "source": "NIH DRI" },
+        { "nutrient": "Zinc", "baseline": "8 mg/day (RDA)", "note": "Diarrhea and malabsorption can increase deficiency risk", "source": "NIH DRI" },
+        { "nutrient": "Omega-3 (ALA)", "baseline": "1.1 g/day (AI)", "note": "EPA/DHA from fish or supplements is a separate clinical discussion", "source": "NIH DRI" }
+      ]
+    },
+    {
+      "id": "male-19-50",
+      "label": "Adult male (19–50)",
+      "macros": [
+        { "nutrient": "Calories (energy)", "baseline": "~2,200–3,000 kcal/day", "note": "Varies by age, weight, height, and activity (NIH EER tables)", "source": "NIH DRI" },
+        { "nutrient": "Protein", "baseline": "56 g/day (RDA)", "note": "0.8 g/kg body weight for most adults; surgery or malnutrition may need more with your team", "source": "NIH DRI" },
+        { "nutrient": "Fiber", "baseline": "38 g/day (AI)", "note": "Reintroduce gradually in remission when approved", "source": "NIH DRI" },
+        { "nutrient": "Hydration (total water)", "baseline": "~3.7 L/day (AI)", "note": "Includes fluids from drinks and food", "source": "NIH DRI" }
+      ],
+      "micros": [
+        { "nutrient": "Vitamin D", "baseline": "600 IU / 15 mcg (RDA)", "note": "800 IU (20 mcg) for adults 70+", "source": "NIH DRI" },
+        { "nutrient": "Vitamin B12", "baseline": "2.4 mcg/day (RDA)", "note": "Ileal Crohn's disease or resection may require monitoring and treatment", "source": "NIH DRI" },
+        { "nutrient": "Iron", "baseline": "8 mg/day (RDA)", "note": "Anemia workup still matters even when RDA is lower for men", "source": "NIH DRI" },
+        { "nutrient": "Folate (DFE)", "baseline": "400 mcg/day (RDA)", "note": "", "source": "NIH DRI" },
+        { "nutrient": "Calcium", "baseline": "1,000 mg/day (RDA)", "note": "1,200 mg for men 71+", "source": "NIH DRI" },
+        { "nutrient": "Zinc", "baseline": "11 mg/day (RDA)", "note": "", "source": "NIH DRI" },
+        { "nutrient": "Omega-3 (ALA)", "baseline": "1.6 g/day (AI)", "note": "", "source": "NIH DRI" }
+      ]
+    },
+    {
+      "id": "female-14-18",
+      "label": "Teen female (14–18)",
+      "macros": [
+        { "nutrient": "Calories (energy)", "baseline": "~1,800–2,400 kcal/day", "note": "Growth and puberty increase needs; poor growth needs a clinic call", "source": "NIH DRI" },
+        { "nutrient": "Protein", "baseline": "46 g/day (RDA)", "note": "Teens with active IBD may need higher protein with pediatric GI input", "source": "NIH DRI" },
+        { "nutrient": "Fiber", "baseline": "26 g/day (AI)", "note": "Adjust during flares with your team", "source": "NIH DRI" },
+        { "nutrient": "Hydration (total water)", "baseline": "~2.3 L/day (AI)", "note": "", "source": "NIH DRI" }
+      ],
+      "micros": [
+        { "nutrient": "Vitamin D", "baseline": "600 IU / 15 mcg (RDA)", "note": "", "source": "NIH DRI" },
+        { "nutrient": "Vitamin B12", "baseline": "2.4 mcg/day (RDA)", "note": "", "source": "NIH DRI" },
+        { "nutrient": "Iron", "baseline": "15 mg/day (RDA)", "note": "Higher during adolescent growth and menstruation", "source": "NIH DRI" },
+        { "nutrient": "Folate (DFE)", "baseline": "400 mcg/day (RDA)", "note": "", "source": "NIH DRI" },
+        { "nutrient": "Calcium", "baseline": "1,300 mg/day (RDA)", "note": "Critical for bone growth in teens", "source": "NIH DRI" },
+        { "nutrient": "Zinc", "baseline": "9 mg/day (RDA)", "note": "", "source": "NIH DRI" },
+        { "nutrient": "Omega-3 (ALA)", "baseline": "1.1 g/day (AI)", "note": "", "source": "NIH DRI" }
+      ]
+    },
+    {
+      "id": "male-14-18",
+      "label": "Teen male (14–18)",
+      "macros": [
+        { "nutrient": "Calories (energy)", "baseline": "~2,000–3,200 kcal/day", "note": "Growth spurts can require more calories than adult baselines", "source": "NIH DRI" },
+        { "nutrient": "Protein", "baseline": "52 g/day (RDA)", "note": "", "source": "NIH DRI" },
+        { "nutrient": "Fiber", "baseline": "38 g/day (AI)", "note": "", "source": "NIH DRI" },
+        { "nutrient": "Hydration (total water)", "baseline": "~3.3 L/day (AI)", "note": "", "source": "NIH DRI" }
+      ],
+      "micros": [
+        { "nutrient": "Vitamin D", "baseline": "600 IU / 15 mcg (RDA)", "note": "", "source": "NIH DRI" },
+        { "nutrient": "Vitamin B12", "baseline": "2.4 mcg/day (RDA)", "note": "", "source": "NIH DRI" },
+        { "nutrient": "Iron", "baseline": "11 mg/day (RDA)", "note": "", "source": "NIH DRI" },
+        { "nutrient": "Folate (DFE)", "baseline": "400 mcg/day (RDA)", "note": "", "source": "NIH DRI" },
+        { "nutrient": "Calcium", "baseline": "1,300 mg/day (RDA)", "note": "", "source": "NIH DRI" },
+        { "nutrient": "Zinc", "baseline": "11 mg/day (RDA)", "note": "", "source": "NIH DRI" },
+        { "nutrient": "Omega-3 (ALA)", "baseline": "1.6 g/day (AI)", "note": "", "source": "NIH DRI" }
+      ]
+    },
+    {
+      "id": "female-51-plus",
+      "label": "Adult female (51+)",
+      "macros": [
+        { "nutrient": "Calories (energy)", "baseline": "~1,600–2,200 kcal/day", "note": "Often lower than younger adults; weight change still needs review", "source": "NIH DRI" },
+        { "nutrient": "Protein", "baseline": "46 g/day (RDA)", "note": "Some clinicians target higher protein in older adults with IBD", "source": "NIH DRI" },
+        { "nutrient": "Fiber", "baseline": "22 g/day (AI)", "note": "51+ AI for women", "source": "NIH DRI" },
+        { "nutrient": "Hydration (total water)", "baseline": "~2.7 L/day (AI)", "note": "", "source": "NIH DRI" }
+      ],
+      "micros": [
+        { "nutrient": "Vitamin D", "baseline": "800 IU / 20 mcg (RDA)", "note": "Higher RDA after age 70", "source": "NIH DRI" },
+        { "nutrient": "Vitamin B12", "baseline": "2.4 mcg/day (RDA)", "note": "Absorption can decrease with age", "source": "NIH DRI" },
+        { "nutrient": "Iron", "baseline": "8 mg/day (RDA)", "note": "Post-menopause; still check for anemia if fatigued", "source": "NIH DRI" },
+        { "nutrient": "Folate (DFE)", "baseline": "400 mcg/day (RDA)", "note": "", "source": "NIH DRI" },
+        { "nutrient": "Calcium", "baseline": "1,200 mg/day (RDA)", "note": "Bone health with steroids or low dairy intake", "source": "NIH DRI" },
+        { "nutrient": "Zinc", "baseline": "8 mg/day (RDA)", "note": "", "source": "NIH DRI" },
+        { "nutrient": "Omega-3 (ALA)", "baseline": "1.1 g/day (AI)", "note": "", "source": "NIH DRI" }
+      ]
+    }
+  ],
+  "researchSources": [
+    {
+      "title": "NIH Office of Dietary Supplements: Dietary Reference Intakes (DRI)",
+      "url": "https://ods.od.nih.gov/HealthInformation/Dietary_Reference_Intakes.aspx",
+      "use": "Primary baseline tables for IBDPal nutrition targets"
+    },
+    {
+      "title": "Dietary Reference Intakes: Summary Report (National Academies)",
+      "url": "https://www.nationalacademies.org/our-work/summary-report-of-the-dietary-reference-intakes",
+      "use": "Overview of RDA, AI, EAR, and UL definitions"
+    },
+    {
+      "title": "AGA Clinical Practice Update: Diet and Nutritional Therapies in IBD (2024)",
+      "url": "https://gastro.org/clinical-guidance/diet-and-nutritional-therapies-in-patients-with-ibd/",
+      "use": "How diet supports medical care in Crohn's and colitis"
+    },
+    {
+      "title": "Crohn's & Colitis Congress 2024: IBD Diet & Nutrition Research",
+      "url": "https://www.nutritionaltherapyforibd.org/news/crohns-colitis-congress-2024-updates-on-ibd-diet-nutrition-research",
+      "use": "Recent nutrition science summaries for IBD"
+    },
+    {
+      "title": "Micronutrient Deficiency in Crohn's Disease (WebMD patient overview)",
+      "url": "https://www.webmd.com/ibd-crohns-disease/crohns-disease/micronutrient-deficiency-crohns",
+      "use": "Patient-friendly context on deficiency risk (not a prescribing source)"
+    }
+  ],
+  "relatedPosts": [
+    { "url": "/blog/how-ibdpal-nutrition-targets-work", "title": "How IBDPal sets nutrition targets", "topic": "Baselines" },
+    { "url": "/blog/micronutrients-ibd-deficiencies", "title": "Micronutrient deficiencies in IBD", "topic": "Micronutrients" },
+    { "url": "/blog/iron-b12-vitamin-d-ibd", "title": "Iron, B12, and vitamin D in IBD", "topic": "Micronutrients" },
+    { "url": "/blog/hydration-tips-ibd", "title": "Hydration tips for IBD", "topic": "Macronutrients" },
+    { "url": "/blog/protein-meal-plan-ibd-remission", "title": "Protein meal plan in remission", "topic": "Macronutrients" },
+    { "url": "/blog/fiber-and-ibd-diet", "title": "Fiber and IBD", "topic": "Macronutrients" },
+    { "url": "/blog/teen-nutrition-ibd-growth", "title": "Teen nutrition and growth", "topic": "Macronutrients" },
+    { "url": "/blog/probiotics-ibd-gut-health", "title": "Probiotics and gut health", "topic": "Micronutrients" },
+    { "url": "/blog/tracking-food-symptoms-ibdpal", "title": "Tracking food and symptoms", "topic": "Baselines" },
+    { "url": "/blog/how-nutrition-impacts-gut-health-ibd", "title": "How nutrition impacts gut health", "topic": "Baselines" },
+    { "url": "/guides/ibd-hydration-fluids", "title": "Hydration and fluids guide", "topic": "Macronutrients" },
+    { "url": "/guides/crohns-disease-diet-nutrition", "title": "Crohn's disease diet guide", "topic": "Baselines" }
+  ]
+}

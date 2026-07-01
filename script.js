@@ -1,6 +1,6 @@
 // IBDPal Website JavaScript
 
-var IBDPAL_MAIN_TABS = ['home', 'library', 'tools-lab', 'recipe-ideas', 'app', 'community', 'news', 'about', 'contact', 'privacy', 'support'];
+var IBDPAL_MAIN_TABS = ['home', 'library', 'tools-lab', 'recipe-ideas', 'nutrition-targets', 'app', 'community', 'news', 'about', 'contact', 'privacy', 'support'];
 var IBDPAL_APP_SUBTABS = ['download', 'features', 'how-it-works', 'screenshots', 'app-research'];
 var IBDPAL_LIBRARY_SUBTABS = ['guides', 'sources', 'articles'];
 var IBDPAL_ABOUT_SUBTABS = ['about-overview', 'site-updates', 'metrics'];
@@ -19,7 +19,12 @@ var IBDPAL_HASH_ALIASES = {
     lab: { main: 'tools-lab', sub: null },
     recipes: { main: 'recipe-ideas', sub: null },
     'recipe-lab': { main: 'recipe-ideas', sub: null },
-    'recipe-ideas': { main: 'recipe-ideas', sub: null }
+    'recipe-ideas': { main: 'recipe-ideas', sub: null },
+    nutrients: { main: 'nutrition-targets', sub: null },
+    nutrition: { main: 'nutrition-targets', sub: null },
+    'nutrition-targets': { main: 'nutrition-targets', sub: null },
+    micronutrients: { main: 'nutrition-targets', sub: null },
+    dri: { main: 'nutrition-targets', sub: null }
 };
 
 document.addEventListener('DOMContentLoaded', function () {

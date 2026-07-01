@@ -101,6 +101,7 @@ _TAB_LINKS = f"""
                 <a href="{_CANONICAL}/#guides" class="tab-button" data-tab="library">Patient Library</a>
                 <a href="{_CANONICAL}/#tools-lab" class="tab-button" data-tab="tools-lab">Tools Lab</a>
                 <a href="{_CANONICAL}/#recipe-ideas" class="tab-button" data-tab="recipe-ideas">Recipe Ideas</a>
+                <a href="{_CANONICAL}/#nutrition-targets" class="tab-button" data-tab="nutrition-targets">Nutrients</a>
                 <a href="{_CANONICAL}/#download" class="tab-button" data-tab="app">IBDPal App</a>
                 <a href="{_CANONICAL}/#community" class="tab-button" data-tab="community">Support</a>
                 <a href="{_CANONICAL}/#news" class="tab-button" data-tab="news">News</a>
@@ -124,6 +125,7 @@ TAB_NAV_HOME_HTML = """
                 <button type="button" class="tab-button" data-tab="library">Patient Library</button>
                 <button type="button" class="tab-button" data-tab="tools-lab">Tools Lab</button>
                 <button type="button" class="tab-button" data-tab="recipe-ideas">Recipe Ideas</button>
+                <button type="button" class="tab-button" data-tab="nutrition-targets">Nutrients</button>
                 <button type="button" class="tab-button" data-tab="app">IBDPal App</button>
                 <button type="button" class="tab-button" data-tab="community">Support</button>
                 <button type="button" class="tab-button" data-tab="news">News</button>

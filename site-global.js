@@ -92,6 +92,20 @@
     toolsTab.parentNode.insertBefore(link, toolsTab.nextSibling);
   }
 
+  function ensureNutritionTargetsNav() {
+    if (document.querySelector('.tab-navigation [data-tab="nutrition-targets"]')) return;
+    var recipeTab = document.querySelector('.tab-navigation [data-tab="recipe-ideas"]');
+    var anchor = recipeTab || document.querySelector('.tab-navigation [data-tab="library"]');
+    if (!anchor || !anchor.parentNode) return;
+
+    var link = document.createElement('a');
+    link.href = '/#nutrition-targets';
+    link.className = 'tab-button';
+    link.setAttribute('data-tab', 'nutrition-targets');
+    link.textContent = 'Nutrients';
+    anchor.parentNode.insertBefore(link, anchor.nextSibling);
+  }
+
   function seasonalNewsletterHint() {
     var form = document.getElementById('emailForm');
     if (!form) return;
@@ -410,6 +424,7 @@
     markMainId();
     ensureToolsLabNav();
     ensureRecipeIdeasNav();
+    ensureNutritionTargetsNav();
     seasonalNewsletterHint();
     loadTopSearches();
     loadTopContent();
