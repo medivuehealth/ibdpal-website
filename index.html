@@ -135,7 +135,7 @@
                                 <a href="/#nutrition-targets" class="start-here-hub__tile">
                                     <span class="start-here-hub__icon" aria-hidden="true"><svg class="hub-icon-svg" viewBox="0 0 24 24"><path d="M12 3c-1 2-4 4-4 8a4 4 0 0 0 8 0c0-4-3-6-4-8z"/><path d="M12 15v6"/><path d="M8 21h8"/></svg></span>
                                     <span class="start-here-hub__label">Nutrients &amp; DRI</span>
-                                    <span class="start-here-hub__desc">Recommended intake and deficiency guides</span>
+                                    <span class="start-here-hub__desc">DRI tables, food sources, and deficiency guides</span>
                                 </a>
                                 <a href="/ibd-nutrition" class="start-here-hub__tile">
                                     <span class="start-here-hub__icon" aria-hidden="true"><svg class="hub-icon-svg" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></span>
@@ -1721,7 +1721,7 @@
                     <header class="nutrition-targets__header">
                         <p class="nutrition-targets__eyebrow">NIH DRI reference &middot; education only</p>
                         <h1 id="nutrition-targets-heading">Nutrients &amp; micronutrients</h1>
-                        <p class="support-intro">Daily reference tables for macronutrients and micronutrients, aligned with how the IBDPal app tracks baseline nutrition. Personal increases belong with your gastroenterologist or IBD dietitian.</p>
+                        <p class="support-intro">Daily reference tables, natural food sources per serving and per ounce, and micronutrient guides for Crohn's disease and ulcerative colitis. Supports remission planning with your care team; not medical advice.</p>
                     </header>
 
                     <div class="nutrition-targets-guardrail" role="note">
@@ -1751,13 +1751,32 @@
                         <aside class="nutrition-targets-card nutrition-targets-card--context">
                             <h2>Why this matters with IBD</h2>
                             <ul class="nutrition-targets-facts">
-                                <li>Research summaries often cite that a large share of IBD patients develop vitamin or mineral gaps because of inflammation, diarrhea, surgery, or restricted diets.</li>
+                                <li>Micronutrients support healing, energy, bone health, and immune function while you pursue remission with medication and lifestyle care.</li>
+                                <li>A large share of IBD patients develop vitamin or mineral gaps because of inflammation, diarrhea, surgery, or restricted diets.</li>
                                 <li>Malabsorption can occur even when calories look adequate, which is why clinics monitor labs, not food logs alone.</li>
                                 <li>IBDPal compares your meals and supplements against NIH DRI baselines for your age and sex. The app also supports logging lab results and daily supplements for visit prep.</li>
-                                <li>Simple rules like a fixed calories-per-kilogram formula do not capture growth, gender, activity, or flare healing. Registered dietitians use fuller assessments when targets need to rise.</li>
+                                <li>Registered dietitians personalize targets using age, sex, weight, disease activity, and labs rather than one formula for everyone.</li>
                             </ul>
                             <p class="tools-lab-note">Read <a href="/blog/how-ibdpal-nutrition-targets-work">how IBDPal sets nutrition targets</a> or download the free app under the IBDPal App tab.</p>
                         </aside>
+
+                        <div data-nutrition-remission class="nutrition-targets-card--wide-slot"></div>
+
+                        <article class="nutrition-targets-card nutrition-targets-card--wide nutrition-targets-card--foods">
+                            <div class="tools-lab-card__head">
+                                <p class="tools-lab-card__kicker">USDA FoodData Central</p>
+                                <h2>Where to get micronutrients from food</h2>
+                                <p data-nutrition-food-intro>Loading food source guide...</p>
+                            </div>
+
+                            <label class="tools-lab-label" for="nutritionNutrientSelect">Choose a micronutrient</label>
+                            <select id="nutritionNutrientSelect" class="nutrition-targets-profile" data-nutrition-nutrient aria-describedby="nutritionFoodNote">
+                                <option value="">Loading nutrients...</option>
+                            </select>
+                            <p class="tools-lab-note" id="nutritionFoodNote">Values are per standard serving and per ounce for comparison. Ask your IBD dietitian which foods fit your current symptoms and texture needs.</p>
+
+                            <div data-nutrition-food-detail aria-live="polite"></div>
+                        </article>
 
                         <article class="nutrition-targets-card nutrition-targets-card--wide">
                             <h2>Research sources</h2>

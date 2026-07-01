@@ -119,6 +119,11 @@
       "use": "Recent nutrition science summaries for IBD"
     },
     {
+      "title": "USDA FoodData Central",
+      "url": "https://fdc.nal.usda.gov/",
+      "use": "Per-serving and per-ounce food source amounts on the Nutrients tab"
+    },
+    {
       "title": "Micronutrient Deficiency in Crohn's Disease (WebMD patient overview)",
       "url": "https://www.webmd.com/ibd-crohns-disease/crohns-disease/micronutrient-deficiency-crohns",
       "use": "Patient-friendly context on deficiency risk (not a prescribing source)"

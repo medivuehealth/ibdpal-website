@@ -1,0 +1,282 @@
+{
+  "intro": "Amounts below are rounded from USDA FoodData Central standard portions. They help you compare foods, not prescribe a diet. Tolerance changes during Crohn's or colitis flares; reintroduce produce and fiber with your IBD dietitian.",
+  "dataSource": {
+    "title": "USDA FoodData Central",
+    "url": "https://fdc.nal.usda.gov/",
+    "note": "Per-serving values use common household measures (cups, ounces, pieces). Per-ounce columns help compare protein-rich and produce foods."
+  },
+  "remissionContext": {
+    "title": "Micronutrients and remission support",
+    "points": [
+      "Micronutrients do not replace medical therapy for Crohn's disease or ulcerative colitis, but correcting gaps supports energy, bone health, immunity, and healing while you work toward remission.",
+      "Inflammation, diarrhea, bowel surgery, and narrow diets make deficiencies common. Labs (iron, B12, vitamin D, zinc, folate, magnesium) guide whether food alone is enough.",
+      "During active flares, many patients use gentler textures and lower fiber until symptoms calm, then rebuild variety in remission.",
+      "Pair iron-rich plants with vitamin C (for example lentils with bell pepper) to improve non-heme iron absorption. Separate high-calcium foods from iron supplements when your dietitian advises.",
+      "Log meals in IBDPal, bring this food list to visits, and ask: \"Which nutrients should I prioritize based on my latest labs?\""
+    ]
+  },
+  "nutrients": [
+    {
+      "id": "iron",
+      "name": "Iron",
+      "unit": "mg",
+      "driAdultFemale": "18 mg/day (RDA, menstruating adults)",
+      "driAdultMale": "8 mg/day (RDA)",
+      "ibdNote": "Very common gap with bleeding, inflammation, and restricted diets. Heme iron (meat) is absorbed more easily than plant iron.",
+      "foods": [
+        { "food": "Beef liver, pan-fried", "serving": "3 oz (85 g)", "amount": "5.2 mg", "perOz": "1.7 mg/oz", "type": "protein" },
+        { "food": "Oysters, cooked", "serving": "3 oz (85 g)", "amount": "8.0 mg", "perOz": "2.7 mg/oz", "type": "protein" },
+        { "food": "Ground beef, 85% lean, cooked", "serving": "3 oz (85 g)", "amount": "2.2 mg", "perOz": "0.7 mg/oz", "type": "protein" },
+        { "food": "Chicken thigh, roasted", "serving": "3 oz (85 g)", "amount": "1.1 mg", "perOz": "0.4 mg/oz", "type": "protein" },
+        { "food": "Firm tofu", "serving": "1/2 cup (126 g)", "amount": "3.4 mg", "perOz": "0.4 mg/oz", "type": "protein" },
+        { "food": "Lentils, cooked", "serving": "1/2 cup (99 g)", "amount": "3.3 mg", "perOz": "0.5 mg/oz", "type": "legume" },
+        { "food": "Pumpkin seeds (pepitas)", "serving": "1 oz (28 g)", "amount": "2.5 mg", "perOz": "2.5 mg/oz", "type": "seed" },
+        { "food": "Fortified breakfast cereal", "serving": "1 cup (40 g, varies by brand)", "amount": "8–18 mg", "perOz": "varies", "type": "grain" },
+        { "food": "Spinach, boiled and drained", "serving": "1/2 cup (90 g)", "amount": "3.2 mg", "perOz": "0.6 mg/oz", "type": "vegetable" }
+      ],
+      "produce": [
+        { "food": "Spinach, boiled", "serving": "1/2 cup", "amount": "3.2 mg", "perOz": "0.6 mg/oz" },
+        { "food": "Swiss chard, cooked", "serving": "1/2 cup", "amount": "2.0 mg", "perOz": "0.4 mg/oz" },
+        { "food": "Potato with skin, baked", "serving": "1 medium", "amount": "1.9 mg", "perOz": "0.2 mg/oz" },
+        { "food": "Prunes", "serving": "1/4 cup", "amount": "0.9 mg", "perOz": "0.4 mg/oz" },
+        { "food": "Strawberries", "serving": "1 cup halves", "amount": "0.6 mg", "perOz": "0.1 mg/oz" }
+      ],
+      "gentleIbd": ["Ground beef or turkey in broth-based soup", "Smooth lentil soup (strained if needed)", "Fortified oatmeal or cream of rice", "Well-cooked spinach puree in remission"]
+    },
+    {
+      "id": "vitamin-b12",
+      "name": "Vitamin B12",
+      "unit": "mcg",
+      "driAdultFemale": "2.4 mcg/day (RDA)",
+      "driAdultMale": "2.4 mcg/day (RDA)",
+      "ibdNote": "Ileal Crohn's disease, resection, or metformin use raise malabsorption risk. Food may not restore low levels; injections are common.",
+      "foods": [
+        { "food": "Clams, cooked", "serving": "3 oz (85 g)", "amount": "84 mcg", "perOz": "28 mcg/oz", "type": "protein" },
+        { "food": "Beef liver, pan-fried", "serving": "3 oz (85 g)", "amount": "71 mcg", "perOz": "24 mcg/oz", "type": "protein" },
+        { "food": "Salmon, Atlantic, cooked", "serving": "3 oz (85 g)", "amount": "4.8 mcg", "perOz": "1.6 mcg/oz", "type": "fish" },
+        { "food": "Ground beef, cooked", "serving": "3 oz (85 g)", "amount": "2.4 mcg", "perOz": "0.8 mcg/oz", "type": "protein" },
+        { "food": "Milk, 2% fat", "serving": "1 cup (244 g)", "amount": "1.3 mcg", "perOz": "0.05 mcg/oz", "type": "dairy" },
+        { "food": "Plain yogurt", "serving": "1 cup (245 g)", "amount": "1.1 mcg", "perOz": "0.04 mcg/oz", "type": "dairy" },
+        { "food": "Egg, large", "serving": "1 egg (50 g)", "amount": "0.6 mcg", "perOz": "0.3 mcg/oz", "type": "protein" },
+        { "food": "Fortified nutritional yeast", "serving": "2 tbsp (16 g)", "amount": "8 mcg", "perOz": "14 mcg/oz", "type": "fortified" }
+      ],
+      "produce": [
+        { "food": "White button mushrooms", "serving": "1 cup sliced", "amount": "0.1 mcg", "perOz": "trace", "note": "Produce is not a primary B12 source; rely on animal foods or fortified foods unless supplemented." }
+      ],
+      "gentleIbd": ["Broth with shredded chicken", "Soft scrambled eggs", "Lactose-free milk or fortified plant milk if dairy is tolerated", "Flaked salmon or tuna if approved"]
+    },
+    {
+      "id": "vitamin-d",
+      "name": "Vitamin D",
+      "unit": "mcg (IU)",
+      "driAdultFemale": "600 IU / 15 mcg (RDA); 800 IU after 70",
+      "driAdultMale": "600 IU / 15 mcg (RDA); 800 IU after 70",
+      "ibdNote": "Low sun exposure, inflammation, and malabsorption are common. Many IBD clinics monitor 25-OH vitamin D and supplement beyond food.",
+      "foods": [
+        { "food": "Rainbow trout, farmed, cooked", "serving": "3 oz (85 g)", "amount": "16 mcg (645 IU)", "perOz": "5.4 mcg/oz", "type": "fish" },
+        { "food": "Sockeye salmon, cooked", "serving": "3 oz (85 g)", "amount": "14 mcg (570 IU)", "perOz": "4.7 mcg/oz", "type": "fish" },
+        { "food": "Sardines, canned in oil, drained", "serving": "3 oz (85 g)", "amount": "4.4 mcg (175 IU)", "perOz": "1.5 mcg/oz", "type": "fish" },
+        { "food": "Fortified milk", "serving": "1 cup (244 g)", "amount": "2.9 mcg (115 IU)", "perOz": "0.1 mcg/oz", "type": "dairy" },
+        { "food": "Fortified orange juice", "serving": "1 cup (248 g)", "amount": "2.5 mcg (100 IU)", "perOz": "0.1 mcg/oz", "type": "fortified" },
+        { "food": "Egg, large (yolk)", "serving": "1 egg", "amount": "1.1 mcg (44 IU)", "perOz": "0.4 mcg/oz", "type": "protein" },
+        { "food": "UV-exposed mushrooms", "serving": "1/2 cup sliced", "amount": "7.6 mcg (304 IU)", "perOz": "1.5 mcg/oz", "type": "vegetable" }
+      ],
+      "produce": [
+        { "food": "UV-exposed portabella mushrooms", "serving": "1/2 cup", "amount": "7.6 mcg", "perOz": "1.5 mcg/oz" },
+        { "food": "Standard white mushrooms", "serving": "1 cup", "amount": "0.2 mcg", "perOz": "trace", "note": "Only UV-treated mushrooms are meaningful food sources." }
+      ],
+      "gentleIbd": ["Canned salmon or tuna in remission", "Fortified lactose-free milk", "Egg custard or soft omelet", "Vitamin D supplement per clinician labs"]
+    },
+    {
+      "id": "calcium",
+      "name": "Calcium",
+      "unit": "mg",
+      "driAdultFemale": "1,000 mg/day (RDA); 1,200 mg for women 51+",
+      "driAdultMale": "1,000 mg/day (RDA); 1,200 mg for men 71+",
+      "ibdNote": "Steroids, low dairy intake, and vitamin D gaps threaten bone health. Lactose intolerance may require lactose-free or fortified alternatives.",
+      "foods": [
+        { "food": "Plain low-fat yogurt", "serving": "1 cup (245 g)", "amount": "415 mg", "perOz": "17 mg/oz", "type": "dairy" },
+        { "food": "Milk, 2% fat", "serving": "1 cup (244 g)", "amount": "307 mg", "perOz": "13 mg/oz", "type": "dairy" },
+        { "food": "Cheddar cheese", "serving": "1.5 oz (42 g)", "amount": "307 mg", "perOz": "205 mg/oz", "type": "dairy" },
+        { "food": "Sardines with bones, canned", "serving": "3 oz (85 g)", "amount": "325 mg", "perOz": "108 mg/oz", "type": "fish" },
+        { "food": "Calcium-set firm tofu", "serving": "1/2 cup (126 g)", "amount": "253 mg", "perOz": "30 mg/oz", "type": "protein" },
+        { "food": "Fortified orange juice", "serving": "1 cup", "amount": "350 mg", "perOz": "14 mg/oz", "type": "fortified" },
+        { "food": "Almonds", "serving": "1 oz (28 g)", "amount": "76 mg", "perOz": "76 mg/oz", "type": "nut" }
+      ],
+      "produce": [
+        { "food": "Collard greens, cooked", "serving": "1 cup chopped", "amount": "268 mg", "perOz": "34 mg/oz" },
+        { "food": "Kale, cooked", "serving": "1 cup chopped", "amount": "94 mg", "perOz": "12 mg/oz" },
+        { "food": "Bok choy, cooked", "serving": "1 cup", "amount": "158 mg", "perOz": "20 mg/oz" },
+        { "food": "Broccoli, cooked", "serving": "1 cup chopped", "amount": "60 mg", "perOz": "7 mg/oz" },
+        { "food": "Orange", "serving": "1 medium", "amount": "52 mg", "perOz": "6 mg/oz" },
+        { "food": "Figs, dried", "serving": "1/4 cup", "amount": "57 mg", "perOz": "38 mg/oz" }
+      ],
+      "gentleIbd": ["Lactose-free milk or fortified oat milk", "Smooth yogurt or kefir if tolerated", "Mashed canned salmon with soft rice", "Calcium-set tofu in mild soup"]
+    },
+    {
+      "id": "folate",
+      "name": "Folate (DFE)",
+      "unit": "mcg DFE",
+      "driAdultFemale": "400 mcg/day (RDA)",
+      "driAdultMale": "400 mcg/day (RDA)",
+      "ibdNote": "Methotrexate users often need prescribed folic acid. Malabsorption and low produce intake lower folate stores.",
+      "foods": [
+        { "food": "Beef liver, pan-fried", "serving": "3 oz (85 g)", "amount": "215 mcg", "perOz": "72 mcg/oz", "type": "protein" },
+        { "food": "Black-eyed peas, cooked", "serving": "1/2 cup (86 g)", "amount": "105 mcg", "perOz": "12 mcg/oz", "type": "legume" },
+        { "food": "Fortified breakfast cereal", "serving": "1 cup (40 g)", "amount": "100–400 mcg", "perOz": "varies", "type": "fortified" },
+        { "food": "Asparagus, boiled", "serving": "4 spears (60 g)", "amount": "89 mcg", "perOz": "15 mcg/oz", "type": "vegetable" },
+        { "food": "Spinach, raw", "serving": "1 cup (30 g)", "amount": "58 mcg", "perOz": "19 mcg/oz", "type": "vegetable" },
+        { "food": "Avocado", "serving": "1/2 fruit (68 g)", "amount": "59 mcg", "perOz": "25 mcg/oz", "type": "fruit" },
+        { "food": "Peanuts", "serving": "1 oz (28 g)", "amount": "68 mcg", "perOz": "68 mcg/oz", "type": "nut" }
+      ],
+      "produce": [
+        { "food": "Spinach, raw", "serving": "1 cup", "amount": "58 mcg", "perOz": "19 mcg/oz" },
+        { "food": "Asparagus, boiled", "serving": "4 spears", "amount": "89 mcg", "perOz": "15 mcg/oz" },
+        { "food": "Avocado", "serving": "1/2 fruit", "amount": "59 mcg", "perOz": "25 mcg/oz" },
+        { "food": "Broccoli, cooked", "serving": "1/2 cup", "amount": "52 mcg", "perOz": "9 mcg/oz" },
+        { "food": "Orange", "serving": "1 medium", "amount": "40 mcg", "perOz": "5 mcg/oz" },
+        { "food": "Romaine lettuce", "serving": "1 cup shredded", "amount": "64 mcg", "perOz": "8 mcg/oz" },
+        { "food": "Mango", "serving": "1 cup pieces", "amount": "71 mcg", "perOz": "9 mcg/oz" }
+      ],
+      "gentleIbd": ["Avocado on white toast", "Well-cooked carrots or squash puree", "Fortified cereal or rice", "Strained lentil soup in remission"]
+    },
+    {
+      "id": "zinc",
+      "name": "Zinc",
+      "unit": "mg",
+      "driAdultFemale": "8 mg/day (RDA)",
+      "driAdultMale": "11 mg/day (RDA)",
+      "ibdNote": "Lost through diarrhea and poor intake. High doses from supplements need clinician oversight.",
+      "foods": [
+        { "food": "Oysters, cooked", "serving": "3 oz (85 g)", "amount": "74 mg", "perOz": "25 mg/oz", "type": "protein" },
+        { "food": "Beef chuck roast, cooked", "serving": "3 oz (85 g)", "amount": "7.0 mg", "perOz": "2.3 mg/oz", "type": "protein" },
+        { "food": "Alaska king crab, cooked", "serving": "3 oz (85 g)", "amount": "6.5 mg", "perOz": "2.2 mg/oz", "type": "protein" },
+        { "food": "Pumpkin seeds", "serving": "1 oz (28 g)", "amount": "2.2 mg", "perOz": "2.2 mg/oz", "type": "seed" },
+        { "food": "Cashews", "serving": "1 oz (28 g)", "amount": "1.6 mg", "perOz": "1.6 mg/oz", "type": "nut" },
+        { "food": "Chickpeas, cooked", "serving": "1/2 cup (82 g)", "amount": "1.3 mg", "perOz": "0.2 mg/oz", "type": "legume" },
+        { "food": "Plain yogurt", "serving": "1 cup", "amount": "1.4 mg", "perOz": "0.06 mg/oz", "type": "dairy" }
+      ],
+      "produce": [
+        { "food": "Green peas, cooked", "serving": "1/2 cup", "amount": "0.5 mg", "perOz": "0.1 mg/oz" },
+        { "food": "Corn, cooked", "serving": "1/2 cup", "amount": "0.5 mg", "perOz": "0.1 mg/oz" },
+        { "food": "Mushrooms, white", "serving": "1 cup", "amount": "0.4 mg", "perOz": "0.05 mg/oz" }
+      ],
+      "gentleIbd": ["Shredded beef or chicken in soup", "Smooth yogurt", "Pumpkin seed butter on soft bread (if seeds tolerated)", "Crab or shrimp if shellfish is safe for you"]
+    },
+    {
+      "id": "magnesium",
+      "name": "Magnesium",
+      "unit": "mg",
+      "driAdultFemale": "310–320 mg/day (RDA)",
+      "driAdultMale": "400–420 mg/day (RDA)",
+      "ibdNote": "Diarrhea depletes magnesium and can worsen cramps or fatigue. Replete only with labs and clinician guidance.",
+      "foods": [
+        { "food": "Pumpkin seeds", "serving": "1 oz (28 g)", "amount": "156 mg", "perOz": "156 mg/oz", "type": "seed" },
+        { "food": "Almonds", "serving": "1 oz (28 g)", "amount": "76 mg", "perOz": "76 mg/oz", "type": "nut" },
+        { "food": "Spinach, boiled", "serving": "1/2 cup (90 g)", "amount": "78 mg", "perOz": "15 mg/oz", "type": "vegetable" },
+        { "food": "Black beans, cooked", "serving": "1/2 cup (86 g)", "amount": "60 mg", "perOz": "7 mg/oz", "type": "legume" },
+        { "food": "Brown rice, cooked", "serving": "1 cup (195 g)", "amount": "86 mg", "perOz": "4 mg/oz", "type": "grain" },
+        { "food": "Salmon, Atlantic", "serving": "3 oz (85 g)", "amount": "26 mg", "perOz": "9 mg/oz", "type": "fish" },
+        { "food": "Banana", "serving": "1 medium (118 g)", "amount": "32 mg", "perOz": "8 mg/oz", "type": "fruit" }
+      ],
+      "produce": [
+        { "food": "Spinach, boiled", "serving": "1/2 cup", "amount": "78 mg", "perOz": "15 mg/oz" },
+        { "food": "Avocado", "serving": "1 cup cubed", "amount": "44 mg", "perOz": "5 mg/oz" },
+        { "food": "Banana", "serving": "1 medium", "amount": "32 mg", "perOz": "8 mg/oz" },
+        { "food": "Potato with skin, baked", "serving": "1 medium", "amount": "48 mg", "perOz": "5 mg/oz" },
+        { "food": "Raisins", "serving": "1/4 cup", "amount": "12 mg", "perOz": "12 mg/oz" }
+      ],
+      "gentleIbd": ["Banana or applesauce", "White rice fortified with broth", "Smooth almond butter on toast", "Canned salmon with soft potatoes"]
+    },
+    {
+      "id": "potassium",
+      "name": "Potassium",
+      "unit": "mg",
+      "driAdultFemale": "2,600 mg/day (AI)",
+      "driAdultMale": "3,400 mg/day (AI)",
+      "ibdNote": "Critical with diarrhea, vomiting, or diuretics. Very low or high potassium can be dangerous; follow clinic advice.",
+      "foods": [
+        { "food": "Potato, baked with skin", "serving": "1 medium (173 g)", "amount": "926 mg", "perOz": "54 mg/oz", "type": "vegetable" },
+        { "food": "Sweet potato, baked", "serving": "1 medium (114 g)", "amount": "542 mg", "perOz": "48 mg/oz", "type": "vegetable" },
+        { "food": "Salmon, Atlantic", "serving": "3 oz (85 g)", "amount": "326 mg", "perOz": "109 mg/oz", "type": "fish" },
+        { "food": "Plain yogurt", "serving": "1 cup", "amount": "573 mg", "perOz": "23 mg/oz", "type": "dairy" },
+        { "food": "Coconut water", "serving": "1 cup (240 ml)", "amount": "600 mg", "perOz": "25 mg/oz", "type": "beverage" },
+        { "food": "Lentils, cooked", "serving": "1 cup", "amount": "731 mg", "perOz": "46 mg/oz", "type": "legume" }
+      ],
+      "produce": [
+        { "food": "Banana", "serving": "1 medium", "amount": "422 mg", "perOz": "106 mg/oz" },
+        { "food": "Spinach, cooked", "serving": "1/2 cup", "amount": "420 mg", "perOz": "84 mg/oz" },
+        { "food": "Cantaloupe", "serving": "1 cup cubes", "amount": "427 mg", "perOz": "53 mg/oz" },
+        { "food": "Orange", "serving": "1 medium", "amount": "237 mg", "perOz": "30 mg/oz" },
+        { "food": "Tomato sauce", "serving": "1/2 cup", "amount": "405 mg", "perOz": "34 mg/oz" },
+        { "food": "Avocado", "serving": "1/2 fruit", "amount": "345 mg", "perOz": "145 mg/oz" }
+      ],
+      "gentleIbd": ["Banana or melon if fiber is tolerated", "Mashed potato without skins during flares", "Oral rehydration solutions per clinician", "Broth-based soups with soft vegetables"]
+    },
+    {
+      "id": "vitamin-c",
+      "name": "Vitamin C",
+      "unit": "mg",
+      "driAdultFemale": "75 mg/day (RDA)",
+      "driAdultMale": "90 mg/day (RDA)",
+      "ibdNote": "Helps absorb plant iron and supports tissue repair. Citrus and raw produce may irritate some active flares.",
+      "foods": [
+        { "food": "Red bell pepper, raw", "serving": "1/2 cup sliced (75 g)", "amount": "95 mg", "perOz": "40 mg/oz", "type": "vegetable" },
+        { "food": "Orange juice", "serving": "1 cup (248 g)", "amount": "124 mg", "perOz": "5 mg/oz", "type": "beverage" },
+        { "food": "Strawberries", "serving": "1 cup halves (152 g)", "amount": "89 mg", "perOz": "8 mg/oz", "type": "fruit" },
+        { "food": "Broccoli, cooked", "serving": "1/2 cup (78 g)", "amount": "51 mg", "perOz": "11 mg/oz", "type": "vegetable" },
+        { "food": "Kiwi", "serving": "1 medium (69 g)", "amount": "64 mg", "perOz": "29 mg/oz", "type": "fruit" },
+        { "food": "Brussels sprouts, cooked", "serving": "1/2 cup", "amount": "48 mg", "perOz": "10 mg/oz", "type": "vegetable" }
+      ],
+      "produce": [
+        { "food": "Red bell pepper, raw", "serving": "1/2 cup", "amount": "95 mg", "perOz": "40 mg/oz" },
+        { "food": "Strawberries", "serving": "1 cup", "amount": "89 mg", "perOz": "8 mg/oz" },
+        { "food": "Kiwi", "serving": "1 medium", "amount": "64 mg", "perOz": "29 mg/oz" },
+        { "food": "Orange", "serving": "1 medium", "amount": "70 mg", "perOz": "9 mg/oz" },
+        { "food": "Broccoli, cooked", "serving": "1/2 cup", "amount": "51 mg", "perOz": "11 mg/oz" },
+        { "food": "Papaya", "serving": "1 cup cubes", "amount": "87 mg", "perOz": "11 mg/oz" },
+        { "food": "Tomato", "serving": "1 medium", "amount": "17 mg", "perOz": "6 mg/oz" }
+      ],
+      "gentleIbd": ["Strained orange or kiwi smoothie", "Well-cooked broccoli (small portions)", "Bell pepper strips if raw veggies are tolerated", "Vitamin C-rich juice with iron-rich meals when approved"]
+    },
+    {
+      "id": "omega-3",
+      "name": "Omega-3 fats",
+      "unit": "g (EPA+DHA or ALA)",
+      "driAdultFemale": "1.1 g ALA/day (AI); EPA+DHA from fish as clinically discussed",
+      "driAdultMale": "1.6 g ALA/day (AI); EPA+DHA from fish as clinically discussed",
+      "ibdNote": "Fatty fish provide EPA and DHA; walnuts and seeds provide ALA. Discuss fish oil supplements with your team if intake is low.",
+      "foods": [
+        { "food": "Salmon, wild Atlantic, cooked", "serving": "3 oz (85 g)", "amount": "1.8 g EPA+DHA", "perOz": "0.6 g/oz", "type": "fish" },
+        { "food": "Sardines, canned", "serving": "3 oz (85 g)", "amount": "1.2 g EPA+DHA", "perOz": "0.4 g/oz", "type": "fish" },
+        { "food": "Rainbow trout, cooked", "serving": "3 oz (85 g)", "amount": "1.0 g EPA+DHA", "perOz": "0.3 g/oz", "type": "fish" },
+        { "food": "Walnuts", "serving": "1 oz (28 g)", "amount": "2.5 g ALA", "perOz": "2.5 g/oz", "type": "nut" },
+        { "food": "Chia seeds", "serving": "1 tbsp (12 g)", "amount": "2.4 g ALA", "perOz": "6.4 g/oz", "type": "seed" },
+        { "food": "Ground flaxseed", "serving": "1 tbsp (7 g)", "amount": "1.6 g ALA", "perOz": "6.4 g/oz", "type": "seed" }
+      ],
+      "produce": [],
+      "gentleIbd": ["Flaked salmon or tuna", "Walnut butter on soft bread", "Ground chia in yogurt or oatmeal", "Fish oil supplement if prescribed"]
+    },
+    {
+      "id": "selenium",
+      "name": "Selenium",
+      "unit": "mcg",
+      "driAdultFemale": "55 mcg/day (RDA)",
+      "driAdultMale": "55 mcg/day (RDA)",
+      "ibdNote": "Brazil nuts are extremely concentrated; one nut may exceed a daily need. Prefer varied sources unless directed.",
+      "foods": [
+        { "food": "Brazil nuts", "serving": "1 nut (5 g)", "amount": "68–91 mcg", "perOz": "380+ mcg/oz", "type": "nut" },
+        { "food": "Yellowfin tuna, cooked", "serving": "3 oz (85 g)", "amount": "92 mcg", "perOz": "31 mcg/oz", "type": "fish" },
+        { "food": "Sardines, canned", "serving": "3 oz (85 g)", "amount": "45 mcg", "perOz": "15 mcg/oz", "type": "fish" },
+        { "food": "Ham, roasted", "serving": "3 oz (85 g)", "amount": "25 mcg", "perOz": "8 mcg/oz", "type": "protein" },
+        { "food": "Eggs", "serving": "2 large", "amount": "30 mcg", "perOz": "0.5 mcg/oz", "type": "protein" },
+        { "food": "Brown rice, cooked", "serving": "1 cup", "amount": "19 mcg", "perOz": "1 mcg/oz", "type": "grain" }
+      ],
+      "produce": [
+        { "food": "Mushrooms, cooked", "serving": "1 cup", "amount": "19 mcg", "perOz": "2 mcg/oz" },
+        { "food": "Spinach, cooked", "serving": "1/2 cup", "amount": "6 mcg", "perOz": "1 mcg/oz" }
+      ],
+      "gentleIbd": ["Tuna or sardines if tolerated", "Eggs in soft preparations", "Avoid large Brazil nut portions unless clinician directs"]
+    }
+  ]
+}
