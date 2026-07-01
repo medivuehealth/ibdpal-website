@@ -99,7 +99,7 @@
     if (!anchor || !anchor.parentNode) return;
 
     var link = document.createElement('a');
-    link.href = '/#nutrition-targets';
+    link.href = '/#nutrition-dri';
     link.className = 'tab-button';
     link.setAttribute('data-tab', 'nutrition-targets');
     link.textContent = 'Nutrients';

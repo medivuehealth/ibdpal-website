@@ -1717,7 +1717,8 @@ a.tab-button,
 .subtab-dock-button,
 .about-subtab-button,
 .library-subtab-button,
-.app-subtab-button {
+.app-subtab-button,
+.nutrition-subtab-button {
     font-family: var(--ibd-font-display);
 }
 
@@ -2345,6 +2346,21 @@ a.tab-button,
     padding: 0.95rem 1rem;
 }
 
+#nutrition-targets .nutrition-subcontent {
+    margin-top: 0.25rem;
+}
+
+#nutrition-targets .nutrition-subcontent.active {
+    display: block;
+}
+
+.nutrition-subtab-navigation--dock .nutrition-subtab-button.active,
+.subtab-navigation--dock .nutrition-subtab-button.active {
+    background: #2d6a3e;
+    border-color: #2d6a3e;
+    color: #ffffff;
+}
+
 .nutrition-targets-layout {
     display: grid;
     gap: 1rem;
@@ -2963,7 +2979,8 @@ a.tab-button,
     .subtab-dock-button,
     .about-subtab-button,
     .library-subtab-button,
-    .app-subtab-button {
+    .app-subtab-button,
+    .nutrition-subtab-button {
         min-height: 44px !important;
         min-width: 44px !important;
     }

@@ -4,9 +4,11 @@ var IBDPAL_MAIN_TABS = ['home', 'library', 'tools-lab', 'recipe-ideas', 'nutriti
 var IBDPAL_APP_SUBTABS = ['download', 'features', 'how-it-works', 'screenshots', 'app-research'];
 var IBDPAL_LIBRARY_SUBTABS = ['guides', 'sources', 'articles'];
 var IBDPAL_ABOUT_SUBTABS = ['about-overview', 'site-updates', 'metrics'];
+var IBDPAL_NUTRITION_SUBTABS = ['nutrition-dri', 'nutrition-foods', 'nutrition-learn'];
 var IBDPAL_DEFAULT_APP_SUBTAB = 'download';
 var IBDPAL_DEFAULT_LIBRARY_SUBTAB = 'guides';
 var IBDPAL_DEFAULT_ABOUT_SUBTAB = 'about-overview';
+var IBDPAL_DEFAULT_NUTRITION_SUBTAB = 'nutrition-dri';
 
 var IBDPAL_HASH_ALIASES = {
     overview: { main: 'home', sub: null },
@@ -20,11 +22,16 @@ var IBDPAL_HASH_ALIASES = {
     recipes: { main: 'recipe-ideas', sub: null },
     'recipe-lab': { main: 'recipe-ideas', sub: null },
     'recipe-ideas': { main: 'recipe-ideas', sub: null },
-    nutrients: { main: 'nutrition-targets', sub: null },
-    nutrition: { main: 'nutrition-targets', sub: null },
-    'nutrition-targets': { main: 'nutrition-targets', sub: null },
-    micronutrients: { main: 'nutrition-targets', sub: null },
-    dri: { main: 'nutrition-targets', sub: null }
+    nutrients: { main: 'nutrition-targets', sub: 'nutrition-dri' },
+    nutrition: { main: 'nutrition-targets', sub: 'nutrition-dri' },
+    'nutrition-targets': { main: 'nutrition-targets', sub: 'nutrition-dri' },
+    micronutrients: { main: 'nutrition-targets', sub: 'nutrition-dri' },
+    dri: { main: 'nutrition-targets', sub: 'nutrition-dri' },
+    'nutrition-dri': { main: 'nutrition-targets', sub: 'nutrition-dri' },
+    'nutrition-foods': { main: 'nutrition-targets', sub: 'nutrition-foods' },
+    'food-sources': { main: 'nutrition-targets', sub: 'nutrition-foods' },
+    foods: { main: 'nutrition-targets', sub: 'nutrition-foods' },
+    'nutrition-learn': { main: 'nutrition-targets', sub: 'nutrition-learn' }
 };
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -60,6 +67,9 @@ function resolveTabFromHash(hash) {
     if (IBDPAL_ABOUT_SUBTABS.indexOf(hash) !== -1) {
         return { main: 'about', sub: hash };
     }
+    if (IBDPAL_NUTRITION_SUBTABS.indexOf(hash) !== -1) {
+        return { main: 'nutrition-targets', sub: hash };
+    }
     if (IBDPAL_MAIN_TABS.indexOf(hash) !== -1) {
         return {
             main: hash,
@@ -67,7 +77,9 @@ function resolveTabFromHash(hash) {
                 ? IBDPAL_DEFAULT_APP_SUBTAB
                 : (hash === 'library'
                     ? IBDPAL_DEFAULT_LIBRARY_SUBTAB
-                    : (hash === 'about' ? IBDPAL_DEFAULT_ABOUT_SUBTAB : null))
+                    : (hash === 'about'
+                        ? IBDPAL_DEFAULT_ABOUT_SUBTAB
+                        : (hash === 'nutrition-targets' ? IBDPAL_DEFAULT_NUTRITION_SUBTAB : null)))
         };
     }
     return { main: 'home', sub: null };
@@ -82,9 +94,12 @@ function initializeTabNavigation() {
     var librarySubContents = document.querySelectorAll('.library-subcontent');
     var aboutSubButtons = document.querySelectorAll('.about-subtab-button[data-about-subtab]');
     var aboutSubContents = document.querySelectorAll('.about-subcontent');
+    var nutritionSubButtons = document.querySelectorAll('.nutrition-subtab-button[data-nutrition-subtab]');
+    var nutritionSubContents = document.querySelectorAll('.nutrition-subcontent');
     var librarySubtabBar = document.getElementById('library-subtab-bar');
     var appSubtabBar = document.getElementById('app-subtab-bar');
     var aboutSubtabBar = document.getElementById('about-subtab-bar');
+    var nutritionSubtabBar = document.getElementById('nutrition-subtab-bar');
 
     function setLibrarySubtabBarVisible(visible) {
         if (!librarySubtabBar) return;
@@ -102,6 +117,12 @@ function initializeTabNavigation() {
         if (!aboutSubtabBar) return;
         aboutSubtabBar.hidden = !visible;
         aboutSubtabBar.classList.toggle('is-active', visible);
+    }
+
+    function setNutritionSubtabBarVisible(visible) {
+        if (!nutritionSubtabBar) return;
+        nutritionSubtabBar.hidden = !visible;
+        nutritionSubtabBar.classList.toggle('is-active', visible);
     }
 
     function switchLibrarySubTab(subTab, updateURL) {
@@ -165,6 +186,26 @@ function initializeTabNavigation() {
         document.dispatchEvent(new CustomEvent('ibdpal:tab', { detail: { tab: 'about', subTab: subTab } }));
     }
 
+    function switchNutritionSubTab(subTab, updateURL) {
+        if (IBDPAL_NUTRITION_SUBTABS.indexOf(subTab) === -1) {
+            subTab = IBDPAL_DEFAULT_NUTRITION_SUBTAB;
+        }
+
+        nutritionSubButtons.forEach(function (btn) {
+            btn.classList.toggle('active', btn.getAttribute('data-nutrition-subtab') === subTab);
+        });
+        nutritionSubContents.forEach(function (panel) {
+            panel.classList.toggle('active', panel.id === subTab);
+        });
+
+        if (updateURL) {
+            var newURL = window.location.pathname + '#' + subTab;
+            window.history.pushState({ main: 'nutrition-targets', sub: subTab }, '', newURL);
+        }
+
+        document.dispatchEvent(new CustomEvent('ibdpal:tab', { detail: { tab: 'nutrition-targets', subTab: subTab } }));
+    }
+
     function switchMainTab(mainTab, subTab, updateURL) {
         if (IBDPAL_MAIN_TABS.indexOf(mainTab) === -1) {
             mainTab = 'home';
@@ -198,9 +239,17 @@ function initializeTabNavigation() {
             switchAboutSubTab(aboutSub, false);
         }
 
+        if (mainTab === 'nutrition-targets') {
+            var nutritionSub = subTab && IBDPAL_NUTRITION_SUBTABS.indexOf(subTab) !== -1
+                ? subTab
+                : IBDPAL_DEFAULT_NUTRITION_SUBTAB;
+            switchNutritionSubTab(nutritionSub, false);
+        }
+
         setLibrarySubtabBarVisible(mainTab === 'library');
         setAppSubtabBarVisible(mainTab === 'app');
         setAboutSubtabBarVisible(mainTab === 'about');
+        setNutritionSubtabBarVisible(mainTab === 'nutrition-targets');
 
         if (updateURL) {
             var hash = '';
@@ -215,6 +264,10 @@ function initializeTabNavigation() {
                     ? subTab
                     : IBDPAL_DEFAULT_ABOUT_SUBTAB;
                 hash = resolvedAbout === IBDPAL_DEFAULT_ABOUT_SUBTAB ? 'about' : resolvedAbout;
+            } else if (mainTab === 'nutrition-targets') {
+                hash = subTab && IBDPAL_NUTRITION_SUBTABS.indexOf(subTab) !== -1
+                    ? subTab
+                    : IBDPAL_DEFAULT_NUTRITION_SUBTAB;
             } else {
                 hash = mainTab;
             }
@@ -222,7 +275,7 @@ function initializeTabNavigation() {
             window.history.pushState({ main: mainTab, sub: subTab || null }, '', newURL);
         }
 
-        if (mainTab !== 'app' && mainTab !== 'library' && mainTab !== 'about') {
+        if (mainTab !== 'app' && mainTab !== 'library' && mainTab !== 'about' && mainTab !== 'nutrition-targets') {
             document.dispatchEvent(new CustomEvent('ibdpal:tab', { detail: { tab: mainTab } }));
         }
     }
@@ -237,6 +290,8 @@ function initializeTabNavigation() {
                 subTab = IBDPAL_DEFAULT_LIBRARY_SUBTAB;
             } else if (mainTab === 'about') {
                 subTab = IBDPAL_DEFAULT_ABOUT_SUBTAB;
+            } else if (mainTab === 'nutrition-targets') {
+                subTab = IBDPAL_DEFAULT_NUTRITION_SUBTAB;
             }
             switchMainTab(mainTab, subTab, true);
         });
@@ -260,6 +315,13 @@ function initializeTabNavigation() {
         button.addEventListener('click', function () {
             var subTab = this.getAttribute('data-about-subtab');
             switchMainTab('about', subTab, true);
+        });
+    });
+
+    nutritionSubButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+            var subTab = this.getAttribute('data-nutrition-subtab');
+            switchMainTab('nutrition-targets', subTab, true);
         });
     });
 
@@ -297,6 +359,15 @@ function initializeTabNavigation() {
             if (!sub) return;
             e.preventDefault();
             switchMainTab('about', sub, true);
+        });
+    });
+
+    document.querySelectorAll('[data-nutrition-subtab-link]').forEach(function (link) {
+        link.addEventListener('click', function (e) {
+            var sub = link.getAttribute('data-nutrition-subtab-link');
+            if (!sub) return;
+            e.preventDefault();
+            switchMainTab('nutrition-targets', sub, true);
         });
     });
 }

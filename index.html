@@ -30,7 +30,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="IBDPal | IBD &amp; Crohn's Support, Free App &amp; Resources">
     <meta name="twitter:description" content="IBD and Crohn's support: free app, U.S. community map, and tools for Crohn's disease and ulcerative colitis.">
-    <style>.tab-content:not(.active){display:none!important}.app-subcontent:not(.active){display:none!important}.library-subcontent:not(.active){display:none!important}.about-subcontent:not(.active){display:none!important}</style>
+    <style>.tab-content:not(.active){display:none!important}.app-subcontent:not(.active){display:none!important}.library-subcontent:not(.active){display:none!important}.about-subcontent:not(.active){display:none!important}.nutrition-subcontent:not(.active){display:none!important}</style>
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="/site-layout-icn.css">
     <link rel="stylesheet" href="/site-polish.css">
@@ -95,6 +95,13 @@
                     <button type="button" class="app-subtab-button subtab-dock-button" data-app-subtab="app-research">App research</button>
                 </div>
             </nav>
+            <nav class="nutrition-subtab-navigation subtab-navigation--dock" id="nutrition-subtab-bar" aria-label="Nutrients sections" hidden>
+                <div class="nutrition-subtab-container subtab-dock-container">
+                    <button type="button" class="nutrition-subtab-button subtab-dock-button active" data-nutrition-subtab="nutrition-dri">Daily targets</button>
+                    <button type="button" class="nutrition-subtab-button subtab-dock-button" data-nutrition-subtab="nutrition-foods">Food sources</button>
+                    <button type="button" class="nutrition-subtab-button subtab-dock-button" data-nutrition-subtab="nutrition-learn">Sources &amp; articles</button>
+                </div>
+            </nav>
         </div>
 
         <!-- Main Content -->
@@ -119,7 +126,7 @@
                             <h2>What are you dealing with today?</h2>
                             <div class="start-route-card__actions">
                                 <a href="/flare-help" data-start-route="flare">Flare symptoms</a>
-                                <a href="/#nutrition-targets" data-start-route="food">Food or nutrition</a>
+                                <a href="/#nutrition-foods" data-start-route="food">Food or nutrition</a>
                                 <a href="/blog/understanding-biologics-ibd" data-start-route="medication">Medication questions</a>
                                 <a href="/blog/workplace-school-ibd-rights" data-start-route="school-work">School or work</a>
                                 <a href="/blog/stress-emotional-wellness-ibd" data-start-route="stress">Stress or emotions</a>
@@ -132,7 +139,7 @@
                                     <span class="start-here-hub__label">Newly diagnosed</span>
                                     <span class="start-here-hub__desc">First steps, terms, and visit prep</span>
                                 </a>
-                                <a href="/#nutrition-targets" class="start-here-hub__tile">
+                                <a href="/#nutrition-dri" class="start-here-hub__tile">
                                     <span class="start-here-hub__icon" aria-hidden="true"><svg class="hub-icon-svg" viewBox="0 0 24 24"><path d="M12 3c-1 2-4 4-4 8a4 4 0 0 0 8 0c0-4-3-6-4-8z"/><path d="M12 15v6"/><path d="M8 21h8"/></svg></span>
                                     <span class="start-here-hub__label">Nutrients &amp; DRI</span>
                                     <span class="start-here-hub__desc">DRI tables, food sources, and deficiency guides</span>
@@ -1728,75 +1735,85 @@
                         <strong>Not a prescription.</strong> These are general U.S. Dietary Reference Intake (DRI) values by age and sex. IBD can raise deficiency risk, but replacement doses, flare diets, and higher calorie or protein targets should come from your care team, not from a website table alone.
                     </div>
 
-                    <div class="nutrition-targets-layout">
-                        <article class="nutrition-targets-card nutrition-targets-card--wide">
-                            <div class="nutrition-targets-card__head">
-                                <h2>Recommended daily intake</h2>
-                                <p>Choose a profile to view macronutrient and micronutrient reference ranges used in IBDPal baseline tracking.</p>
-                            </div>
+                    <div class="nutrition-subcontent active" id="nutrition-dri">
+                        <div class="nutrition-targets-layout">
+                            <article class="nutrition-targets-card">
+                                <div class="nutrition-targets-card__head">
+                                    <h2>Recommended daily intake</h2>
+                                    <p>Choose a profile to view macronutrient and micronutrient reference ranges used in IBDPal baseline tracking.</p>
+                                </div>
 
-                            <label class="tools-lab-label" for="nutritionProfileSelect">Profile</label>
-                            <select id="nutritionProfileSelect" class="nutrition-targets-profile" data-nutrition-profile aria-describedby="nutritionProfileNote">
-                                <option value="">Loading profiles...</option>
-                            </select>
-                            <p class="tools-lab-note" id="nutritionProfileNote" data-nutrition-profile-note></p>
+                                <label class="tools-lab-label" for="nutritionProfileSelect">Profile</label>
+                                <select id="nutritionProfileSelect" class="nutrition-targets-profile" data-nutrition-profile aria-describedby="nutritionProfileNote">
+                                    <option value="">Loading profiles...</option>
+                                </select>
+                                <p class="tools-lab-note" id="nutritionProfileNote" data-nutrition-profile-note></p>
 
-                            <h3 class="nutrition-targets-section-title">Macronutrients</h3>
-                            <div data-nutrition-macros aria-live="polite"></div>
+                                <h3 class="nutrition-targets-section-title">Macronutrients</h3>
+                                <div data-nutrition-macros aria-live="polite"></div>
 
-                            <h3 class="nutrition-targets-section-title">Micronutrients</h3>
-                            <div data-nutrition-micros aria-live="polite"></div>
-                        </article>
+                                <h3 class="nutrition-targets-section-title">Micronutrients</h3>
+                                <div data-nutrition-micros aria-live="polite"></div>
+                            </article>
 
-                        <aside class="nutrition-targets-card nutrition-targets-card--context">
-                            <h2>Why this matters with IBD</h2>
-                            <ul class="nutrition-targets-facts">
-                                <li>Micronutrients support healing, energy, bone health, and immune function while you pursue remission with medication and lifestyle care.</li>
-                                <li>A large share of IBD patients develop vitamin or mineral gaps because of inflammation, diarrhea, surgery, or restricted diets.</li>
-                                <li>Malabsorption can occur even when calories look adequate, which is why clinics monitor labs, not food logs alone.</li>
-                                <li>IBDPal compares your meals and supplements against NIH DRI baselines for your age and sex. The app also supports logging lab results and daily supplements for visit prep.</li>
-                                <li>Registered dietitians personalize targets using age, sex, weight, disease activity, and labs rather than one formula for everyone.</li>
-                            </ul>
-                            <p class="tools-lab-note">Read <a href="/blog/how-ibdpal-nutrition-targets-work">how IBDPal sets nutrition targets</a> or download the free app under the IBDPal App tab.</p>
-                        </aside>
+                            <aside class="nutrition-targets-card nutrition-targets-card--context">
+                                <h2>Why this matters with IBD</h2>
+                                <ul class="nutrition-targets-facts">
+                                    <li>Micronutrients support healing, energy, bone health, and immune function while you pursue remission with medication and lifestyle care.</li>
+                                    <li>A large share of IBD patients develop vitamin or mineral gaps because of inflammation, diarrhea, surgery, or restricted diets.</li>
+                                    <li>Malabsorption can occur even when calories look adequate, which is why clinics monitor labs, not food logs alone.</li>
+                                    <li>IBDPal compares your meals and supplements against NIH DRI baselines for your age and sex. The app also supports logging lab results and daily supplements for visit prep.</li>
+                                    <li>Registered dietitians personalize targets using age, sex, weight, disease activity, and labs rather than one formula for everyone.</li>
+                                </ul>
+                                <p class="tools-lab-note">Read <a href="/blog/how-ibdpal-nutrition-targets-work">how IBDPal sets nutrition targets</a> or download the free app under the IBDPal App tab.</p>
+                            </aside>
+                        </div>
+                    </div>
 
-                        <div data-nutrition-remission class="nutrition-targets-card--wide-slot"></div>
+                    <div class="nutrition-subcontent" id="nutrition-foods">
+                        <div class="nutrition-targets-layout">
+                            <div data-nutrition-remission class="nutrition-targets-card--wide-slot"></div>
 
-                        <article class="nutrition-targets-card nutrition-targets-card--wide nutrition-targets-card--foods">
-                            <div class="tools-lab-card__head">
-                                <p class="tools-lab-card__kicker">USDA FoodData Central</p>
-                                <h2>Where to get micronutrients from food</h2>
-                                <p data-nutrition-food-intro>Loading food source guide...</p>
-                            </div>
+                            <article class="nutrition-targets-card nutrition-targets-card--wide nutrition-targets-card--foods">
+                                <div class="tools-lab-card__head">
+                                    <p class="tools-lab-card__kicker">USDA FoodData Central</p>
+                                    <h2>Where to get micronutrients from food</h2>
+                                    <p data-nutrition-food-intro>Loading food source guide...</p>
+                                </div>
 
-                            <label class="tools-lab-label" for="nutritionNutrientSelect">Choose a micronutrient</label>
-                            <select id="nutritionNutrientSelect" class="nutrition-targets-profile" data-nutrition-nutrient aria-describedby="nutritionFoodNote">
-                                <option value="">Loading nutrients...</option>
-                            </select>
-                            <p class="tools-lab-note" id="nutritionFoodNote">Values are per standard serving and per ounce for comparison. Ask your IBD dietitian which foods fit your current symptoms and texture needs.</p>
+                                <label class="tools-lab-label" for="nutritionNutrientSelect">Choose a micronutrient</label>
+                                <select id="nutritionNutrientSelect" class="nutrition-targets-profile" data-nutrition-nutrient aria-describedby="nutritionFoodNote">
+                                    <option value="">Loading nutrients...</option>
+                                </select>
+                                <p class="tools-lab-note" id="nutritionFoodNote">Values are per standard serving and per ounce for comparison. Ask your IBD dietitian which foods fit your current symptoms and texture needs.</p>
 
-                            <div data-nutrition-food-detail aria-live="polite"></div>
-                        </article>
+                                <div data-nutrition-food-detail aria-live="polite"></div>
+                            </article>
+                        </div>
+                    </div>
 
-                        <article class="nutrition-targets-card nutrition-targets-card--wide">
-                            <h2>Research sources</h2>
-                            <p>IBDPal education aligns with NIH DRI tables first, then IBD-specific nutrition guidance from major clinical sources.</p>
-                            <div data-nutrition-sources></div>
-                        </article>
+                    <div class="nutrition-subcontent" id="nutrition-learn">
+                        <div class="nutrition-targets-layout">
+                            <article class="nutrition-targets-card nutrition-targets-card--wide">
+                                <h2>Research sources</h2>
+                                <p>IBDPal education aligns with NIH DRI tables first, then IBD-specific nutrition guidance from major clinical sources.</p>
+                                <div data-nutrition-sources></div>
+                            </article>
 
-                        <article class="nutrition-targets-card nutrition-targets-card--wide">
-                            <div class="nutrition-targets-card__head">
-                                <h2>Related nutrition articles &amp; guides</h2>
-                                <p>Macronutrient, micronutrient, and tracking posts grouped for quick reading.</p>
-                            </div>
-                            <div class="nutrition-targets-filters" data-nutrition-post-filter role="tablist" aria-label="Filter nutrition articles">
-                                <button type="button" class="nutrition-targets-filter is-active" data-nutrition-filter="all">All</button>
-                                <button type="button" class="nutrition-targets-filter" data-nutrition-filter="Baselines">Baselines</button>
-                                <button type="button" class="nutrition-targets-filter" data-nutrition-filter="Macronutrients">Macronutrients</button>
-                                <button type="button" class="nutrition-targets-filter" data-nutrition-filter="Micronutrients">Micronutrients</button>
-                            </div>
-                            <div data-nutrition-posts aria-live="polite"></div>
-                        </article>
+                            <article class="nutrition-targets-card nutrition-targets-card--wide">
+                                <div class="nutrition-targets-card__head">
+                                    <h2>Related nutrition articles &amp; guides</h2>
+                                    <p>Macronutrient, micronutrient, and tracking posts grouped for quick reading.</p>
+                                </div>
+                                <div class="nutrition-targets-filters" data-nutrition-post-filter role="tablist" aria-label="Filter nutrition articles">
+                                    <button type="button" class="nutrition-targets-filter is-active" data-nutrition-filter="all">All</button>
+                                    <button type="button" class="nutrition-targets-filter" data-nutrition-filter="Baselines">Baselines</button>
+                                    <button type="button" class="nutrition-targets-filter" data-nutrition-filter="Macronutrients">Macronutrients</button>
+                                    <button type="button" class="nutrition-targets-filter" data-nutrition-filter="Micronutrients">Micronutrients</button>
+                                </div>
+                                <div data-nutrition-posts aria-live="polite"></div>
+                            </article>
+                        </div>
                     </div>
                 </section>
             </div>
