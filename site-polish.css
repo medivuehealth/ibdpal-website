@@ -2200,6 +2200,117 @@ a.tab-button,
     gap: 1rem;
 }
 
+.tools-lab-card--wide {
+    grid-column: 1 / -1;
+}
+
+.tools-lab-card--weather {
+    background:
+        linear-gradient(180deg, rgba(232, 244, 255, 0.92), rgba(255, 255, 255, 0.98)),
+        radial-gradient(circle at top right, rgba(255, 214, 120, 0.25), transparent 55%);
+}
+
+.gut-weather-grid {
+    display: grid;
+    gap: 0.75rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 0.75rem;
+}
+
+.gut-weather-form select {
+    background: #ffffff;
+    border: 1px solid rgba(153, 51, 204, 0.22);
+    border-radius: 14px;
+    color: #2f2140;
+    font: inherit;
+    padding: 0.85rem 0.95rem;
+    width: 100%;
+}
+
+.gut-weather-form select:focus {
+    border-color: #9933cc;
+    box-shadow: 0 0 0 3px rgba(153, 51, 204, 0.14);
+    outline: none;
+}
+
+.gut-weather-result {
+    align-items: flex-start;
+    background: rgba(255, 255, 255, 0.88);
+    border: 1px solid rgba(153, 51, 204, 0.16);
+    border-radius: 18px;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: auto 1fr;
+    margin-top: 1rem;
+    padding: 1rem 1.1rem;
+}
+
+.gut-weather-result__icon {
+    align-items: center;
+    border-radius: 999px;
+    display: flex;
+    font-size: 2rem;
+    height: 4rem;
+    justify-content: center;
+    width: 4rem;
+}
+
+.gut-weather-result--sunny .gut-weather-result__icon {
+    background: linear-gradient(180deg, #fff4c2, #ffe08a);
+}
+
+.gut-weather-result--cloudy .gut-weather-result__icon {
+    background: linear-gradient(180deg, #e8eef5, #c9d6e6);
+}
+
+.gut-weather-result--storm .gut-weather-result__icon {
+    background: linear-gradient(180deg, #dfe7ff, #b8c7ef);
+}
+
+.gut-weather-result__label {
+    color: #6b4d86;
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    margin: 0 0 0.25rem;
+    text-transform: uppercase;
+}
+
+.gut-weather-result h3 {
+    color: #2d143f;
+    font-size: 1.35rem;
+    margin: 0 0 0.45rem;
+}
+
+.gut-weather-result__tips {
+    color: #4b3b55;
+    margin: 0.75rem 0 0;
+    padding-left: 1.2rem;
+}
+
+.gut-weather-history {
+    margin-top: 1rem;
+}
+
+.gut-weather-history__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.gut-weather-history__list li {
+    border-top: 1px solid rgba(153, 51, 204, 0.12);
+    display: flex;
+    gap: 0.75rem;
+    justify-content: space-between;
+    padding: 0.65rem 0;
+}
+
+.gut-weather-history__list li span {
+    color: #66546f;
+    font-size: 0.92rem;
+}
+
 .tools-lab-card {
     background: linear-gradient(180deg, #ffffff 0%, #fcf7ff 100%);
     border: 1px solid rgba(153, 51, 204, 0.16);
@@ -2471,6 +2582,18 @@ a.tab-button,
 
 @media (max-width: 860px) {
     .tools-lab-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tools-lab-card--wide {
+        grid-column: auto;
+    }
+
+    .gut-weather-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gut-weather-result {
         grid-template-columns: 1fr;
     }
 

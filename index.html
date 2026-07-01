@@ -1431,7 +1431,7 @@
                     </header>
 
                     <div class="tools-lab-guardrail" role="note">
-                        <strong>Education only.</strong> These tools do not diagnose Crohn's disease, ulcerative colitis, IBD, food triggers, or flares. Food Detective entries stay in this browser unless you clear them or your browser storage is reset.
+                        <strong>Education only.</strong> These tools do not diagnose Crohn's disease, ulcerative colitis, IBD, food triggers, or flares. Food Detective and Gut Weather entries stay in this browser unless you clear them or your browser storage is reset.
                     </div>
 
                     <div class="tools-lab-grid">
@@ -1529,6 +1529,128 @@
                                 <ol class="food-detective-suspects" data-suspect-list></ol>
                                 <p class="tools-lab-note">Ranking is based only on your local entries and is not proof that a food causes symptoms. Bring patterns to a GI dietitian or gastroenterologist.</p>
                             </section>
+                        </article>
+
+                        <article class="tools-lab-card tools-lab-card--weather tools-lab-card--wide" data-gut-weather>
+                            <div class="tools-lab-card__head">
+                                <p class="tools-lab-card__kicker">Symptom pattern check</p>
+                                <h2>Gut Weather</h2>
+                                <p>Answer a few questions about today. You get a calm, cloudy, or storm-watch readout to help you notice patterns. This does not predict flares or diagnose IBD.</p>
+                            </div>
+
+                            <div class="food-detective-alert gut-weather-alert" data-gut-weather-urgent tabindex="-1" hidden>
+                                <strong>Urgent symptoms selected.</strong> Gut Weather stops here. Contact your gastroenterologist, urgent care, emergency services, or your local emergency number for severe symptoms.
+                            </div>
+
+                            <div class="tools-lab-steps">
+                                <h3>How to use it</h3>
+                                <ol>
+                                    <li>Check red flags first if any apply today.</li>
+                                    <li>Answer the short symptom questions honestly.</li>
+                                    <li>Use the readout as a conversation starter with your care team, not a diagnosis.</li>
+                                </ol>
+                            </div>
+
+                            <form class="gut-weather-form" id="gutWeatherForm">
+                                <fieldset class="food-detective-redflags gut-weather-redflags">
+                                    <legend>Red flags today?</legend>
+                                    <label><input type="checkbox" value="high fever"> High fever</label>
+                                    <label><input type="checkbox" value="heavy bleeding"> Persistent/heavy bleeding</label>
+                                    <label><input type="checkbox" value="severe pain"> Severe or unbearable pain</label>
+                                    <label><input type="checkbox" value="dehydration"> Dehydration or fainting</label>
+                                    <label><input type="checkbox" value="unable fluids"> Unable to keep fluids down</label>
+                                </fieldset>
+
+                                <div class="gut-weather-grid">
+                                    <div class="food-detective-row">
+                                        <label class="tools-lab-label" for="gutWeatherStool">Stool frequency vs your usual</label>
+                                        <select id="gutWeatherStool" required>
+                                            <option value="lower">Lower than usual</option>
+                                            <option value="same" selected>About the same</option>
+                                            <option value="somewhat-higher">Somewhat higher</option>
+                                            <option value="much-higher">Much higher</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="food-detective-row">
+                                        <label class="tools-lab-label" for="gutWeatherPain">Abdominal pain today</label>
+                                        <select id="gutWeatherPain" required>
+                                            <option value="1">1 &middot; none or minimal</option>
+                                            <option value="2">2 &middot; mild</option>
+                                            <option value="3" selected>3 &middot; noticeable</option>
+                                            <option value="4">4 &middot; rough</option>
+                                            <option value="5">5 &middot; severe</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="food-detective-row">
+                                        <label class="tools-lab-label" for="gutWeatherBlood">Blood in stool</label>
+                                        <select id="gutWeatherBlood" required>
+                                            <option value="none" selected>None noticed</option>
+                                            <option value="streaks">Small streaks or spots</option>
+                                            <option value="more">More than my usual</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="food-detective-row">
+                                        <label class="tools-lab-label" for="gutWeatherSleep">Sleep last night</label>
+                                        <select id="gutWeatherSleep" required>
+                                            <option value="good">Good</option>
+                                            <option value="fair" selected>Fair</option>
+                                            <option value="poor">Poor</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="food-detective-row">
+                                        <label class="tools-lab-label" for="gutWeatherStress">Stress today</label>
+                                        <select id="gutWeatherStress" required>
+                                            <option value="low">Low</option>
+                                            <option value="moderate" selected>Moderate</option>
+                                            <option value="high">High</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="food-detective-row">
+                                        <label class="tools-lab-label" for="gutWeatherAppetite">Appetite today</label>
+                                        <select id="gutWeatherAppetite" required>
+                                            <option value="normal" selected>Normal</option>
+                                            <option value="reduced">Reduced</option>
+                                            <option value="very-low">Very low</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="food-detective-row">
+                                        <label class="tools-lab-label" for="gutWeatherMeds">Planned IBD medications today</label>
+                                        <select id="gutWeatherMeds" required>
+                                            <option value="yes" selected>Took as planned</option>
+                                            <option value="missed">Missed a dose</option>
+                                            <option value="na">Not on daily meds / not sure</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="tools-lab-primary">Check today's gut weather</button>
+                            </form>
+
+                            <section class="gut-weather-result" data-gut-weather-result hidden aria-live="polite">
+                                <div class="gut-weather-result__icon" data-gut-weather-icon aria-hidden="true"></div>
+                                <div class="gut-weather-result__body">
+                                    <p class="gut-weather-result__label" data-gut-weather-label></p>
+                                    <h3 data-gut-weather-title></h3>
+                                    <p data-gut-weather-summary></p>
+                                    <ul class="gut-weather-result__tips" data-gut-weather-tips></ul>
+                                </div>
+                            </section>
+
+                            <section class="gut-weather-history" data-gut-weather-history hidden aria-labelledby="gutWeatherHistoryHeading">
+                                <div class="food-detective-summary__head">
+                                    <h3 id="gutWeatherHistoryHeading">Recent local check-ins</h3>
+                                    <button type="button" class="tools-lab-secondary" data-clear-gut-weather>Clear history</button>
+                                </div>
+                                <ol class="gut-weather-history__list" data-gut-weather-history-list></ol>
+                            </section>
+
+                            <p class="tools-lab-note">Gut Weather uses simple rules in your browser only. It cannot tell you that you have Crohn's disease, ulcerative colitis, or that a flare is coming. See <a href="/ibd-red-flags-urgent-care">urgent care red flags</a> and <a href="/visit-prep">visit prep</a> for more help.</p>
                         </article>
                     </div>
                 </section>

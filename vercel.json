@@ -15,6 +15,10 @@
   ],
   "rewrites": [
     {
+      "source": "/blog/ibd-leg-knee-pain",
+      "destination": "/blogs/ibd-leg-knee-pain.html"
+    },
+    {
       "source": "/blog/free-government-ibd-research-sources",
       "destination": "/blogs/free-government-ibd-research-sources.html"
     },

@@ -8,6 +8,10 @@
   var TERM_ALIASES = {
     fatigue: ['fatigue', 'tired', 'exhaustion', 'brain fog', 'energy', 'anemia', 'sleep', 'lethargy'],
     tired: ['fatigue', 'tired', 'exhaustion', 'brain fog', 'energy', 'anemia', 'sleep'],
+    'knee pain': ['knee pain', 'knee', 'leg pain', 'leg', 'joint pain', 'arthritis', 'extraintestinal'],
+    'leg pain': ['leg pain', 'leg', 'knee pain', 'knee', 'joint pain', 'arthritis', 'extraintestinal'],
+    leg: ['leg pain', 'leg', 'knee pain', 'knee', 'joint pain', 'arthritis'],
+    knee: ['knee pain', 'knee', 'leg pain', 'leg', 'joint pain', 'arthritis'],
     diarrhea: ['diarrhea', 'loose stool', 'stool', 'flare', 'hydration', 'urgent'],
     'abdominal pain': ['abdominal pain', 'pain', 'cramping', 'flare', 'urgent'],
     pain: ['pain', 'cramping', 'flare', 'urgent', 'joint pain'],
@@ -32,6 +36,30 @@
         title: 'First gastroenterology appointment for IBD',
         url: '/guides/first-gastroenterology-appointment-ibd',
         description: 'What to bring and how to describe fatigue, stool changes, pain, and other patterns.'
+      }
+    ],
+    'knee pain': [
+      {
+        title: 'IBD Leg Pain and Knee Pain: What Patients Search For and When to Ask for Help',
+        url: '/blog/ibd-leg-knee-pain',
+        description: 'Extraintestinal leg and knee symptoms, red flags, and clinic questions.'
+      },
+      {
+        title: 'IBD Joint Pain and Arthritis: Extraintestinal Symptoms Patients Ask About',
+        url: '/blog/ibd-joint-pain-arthritis',
+        description: 'Peripheral arthritis, sacroiliitis, biologics, and rheumatology referrals.'
+      }
+    ],
+    'leg pain': [
+      {
+        title: 'IBD Leg Pain and Knee Pain: What Patients Search For and When to Ask for Help',
+        url: '/blog/ibd-leg-knee-pain',
+        description: 'Extraintestinal leg and knee symptoms, red flags, and clinic questions.'
+      },
+      {
+        title: 'IBD Joint Pain and Arthritis: Extraintestinal Symptoms Patients Ask About',
+        url: '/blog/ibd-joint-pain-arthritis',
+        description: 'Peripheral arthritis, sacroiliitis, biologics, and rheumatology referrals.'
       }
     ]
   };
@@ -180,7 +208,10 @@
 
     function relatedFallbackFor(value) {
       var terms = termsForRelatedSearch(value);
-      var key = terms.indexOf('fatigue') !== -1 ? 'fatigue' : '';
+      var key = terms.indexOf('fatigue') !== -1 ? 'fatigue'
+        : terms.indexOf('knee pain') !== -1 || terms.indexOf('knee') !== -1 ? 'knee pain'
+        : terms.indexOf('leg pain') !== -1 || terms.indexOf('leg') !== -1 ? 'leg pain'
+        : '';
       return key ? RELATED_FALLBACKS[key] || [] : [];
     }
 
@@ -457,8 +488,193 @@
     renderSuspects();
   }
 
+  var GUT_WEATHER_STORAGE_KEY = 'ibdpal_gut_weather_v1';
+
+  function initGutWeather() {
+    var root = document.querySelector('[data-gut-weather]');
+    var form = document.getElementById('gutWeatherForm');
+    if (!root || !form) return;
+
+    var urgentBox = root.querySelector('[data-gut-weather-urgent]');
+    var result = root.querySelector('[data-gut-weather-result]');
+    var resultIcon = root.querySelector('[data-gut-weather-icon]');
+    var resultLabel = root.querySelector('[data-gut-weather-label]');
+    var resultTitle = root.querySelector('[data-gut-weather-title]');
+    var resultSummary = root.querySelector('[data-gut-weather-summary]');
+    var resultTips = root.querySelector('[data-gut-weather-tips]');
+    var historySection = root.querySelector('[data-gut-weather-history]');
+    var historyList = root.querySelector('[data-gut-weather-history-list]');
+    var clearHistoryButton = root.querySelector('[data-clear-gut-weather]');
+
+    function currentRedFlags() {
+      return Array.prototype.slice.call(root.querySelectorAll('.gut-weather-redflags input:checked')).map(function (item) {
+        return item.value;
+      });
+    }
+
+    function readHistory() {
+      try {
+        return JSON.parse(window.localStorage.getItem(GUT_WEATHER_STORAGE_KEY) || '[]');
+      } catch (err) {
+        return [];
+      }
+    }
+
+    function writeHistory(entries) {
+      window.localStorage.setItem(GUT_WEATHER_STORAGE_KEY, JSON.stringify(entries.slice(0, 7)));
+    }
+
+    function weatherCopy(level) {
+      if (level === 'storm') {
+        return {
+          icon: '⛈',
+          label: 'Storm watch',
+          title: 'Rougher signals today',
+          summary: 'Your answers suggest today may feel harder than your usual baseline. This is not a flare prediction. It is a prompt to rest, hydrate, and use your action plan.',
+          tips: [
+            'Review the <a href="/blog/flare-first-48-hours">first 48 hours of a flare</a> checklist.',
+            'Call your clinic if symptoms are new, worsening, or match your urgent instructions.',
+            'Log today in IBDPal or your notebook so patterns are clear at your next visit.'
+          ]
+        };
+      }
+      if (level === 'cloudy') {
+        return {
+          icon: '☁',
+          label: 'Cloudy',
+          title: 'Mixed signals worth watching',
+          summary: 'Some answers point to a bumpier day than usual. Many people have cloudy days without a major flare. Tracking for a few days helps separate noise from patterns.',
+          tips: [
+            'Compare sleep, stress, and meals with yesterday.',
+            'Use gentle foods and hydration if appetite is lower. See <a href="/ibd-nutrition">nutrition hub</a>.',
+            'Bring a one-week trend to your team if cloudy days stack up.'
+          ]
+        };
+      }
+      return {
+        icon: '☀',
+        label: 'Calm skies',
+        title: 'Relatively steady day',
+        summary: 'Your answers suggest a calmer day compared with stormier patterns. Keep up routines that support you, and still watch for changes over the next few days.',
+        tips: [
+          'Note what helped today so you can repeat it on harder days.',
+          'Keep medications on schedule if you use daily therapy.',
+          'Use <a href="/#tools-lab">Food Detective</a> if you are testing meal patterns.'
+        ]
+      };
+    }
+
+    function scoreGutWeather(answers) {
+      var points = 0;
+
+      if (answers.stool === 'somewhat-higher') points += 1;
+      if (answers.stool === 'much-higher') points += 2;
+      if (answers.pain >= 4) points += 2;
+      else if (answers.pain >= 3) points += 1;
+      if (answers.blood === 'streaks') points += 1;
+      if (answers.blood === 'more') points += 3;
+      if (answers.sleep === 'poor') points += 1;
+      if (answers.stress === 'high') points += 1;
+      if (answers.appetite === 'reduced') points += 1;
+      if (answers.appetite === 'very-low') points += 2;
+      if (answers.meds === 'missed') points += 1;
+
+      if (answers.blood === 'more' || answers.pain >= 5 || points >= 5) return 'storm';
+      if (points >= 2) return 'cloudy';
+      return 'sunny';
+    }
+
+    function renderResult(level) {
+      if (!result || !resultIcon || !resultLabel || !resultTitle || !resultSummary || !resultTips) return;
+
+      var copy = weatherCopy(level);
+      result.hidden = false;
+      result.className = 'gut-weather-result gut-weather-result--' + level;
+      resultIcon.textContent = copy.icon;
+      resultLabel.textContent = copy.label;
+      resultTitle.textContent = copy.title;
+      resultSummary.textContent = copy.summary;
+      resultTips.innerHTML = copy.tips.map(function (tip) {
+        return '<li>' + tip + '</li>';
+      }).join('');
+    }
+
+    function renderHistory() {
+      if (!historySection || !historyList) return;
+
+      var entries = readHistory();
+      if (!entries.length) {
+        historySection.hidden = true;
+        historyList.innerHTML = '';
+        return;
+      }
+
+      historySection.hidden = false;
+      historyList.innerHTML = entries.map(function (entry) {
+        var dateLabel = new Date(entry.createdAt).toLocaleString(undefined, {
+          month: 'short',
+          day: 'numeric',
+          hour: 'numeric',
+          minute: '2-digit'
+        });
+        return '<li><strong>' + escapeHtml(entry.label) + '</strong><span>' + escapeHtml(dateLabel) + '</span></li>';
+      }).join('');
+    }
+
+    root.addEventListener('change', function () {
+      if (!urgentBox) return;
+      urgentBox.hidden = currentRedFlags().length === 0;
+    });
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      var redFlags = currentRedFlags();
+      if (redFlags.length) {
+        if (urgentBox) {
+          urgentBox.hidden = false;
+          urgentBox.focus && urgentBox.focus();
+        }
+        if (result) result.hidden = true;
+        return;
+      }
+
+      var answers = {
+        stool: document.getElementById('gutWeatherStool').value,
+        pain: Number(document.getElementById('gutWeatherPain').value),
+        blood: document.getElementById('gutWeatherBlood').value,
+        sleep: document.getElementById('gutWeatherSleep').value,
+        stress: document.getElementById('gutWeatherStress').value,
+        appetite: document.getElementById('gutWeatherAppetite').value,
+        meds: document.getElementById('gutWeatherMeds').value
+      };
+
+      var level = scoreGutWeather(answers);
+      var copy = weatherCopy(level);
+      renderResult(level);
+
+      var history = readHistory();
+      history.unshift({
+        level: level,
+        label: copy.label,
+        createdAt: new Date().toISOString()
+      });
+      writeHistory(history);
+      renderHistory();
+    });
+
+    if (clearHistoryButton) {
+      clearHistoryButton.addEventListener('click', function () {
+        window.localStorage.removeItem(GUT_WEATHER_STORAGE_KEY);
+        renderHistory();
+      });
+    }
+
+    renderHistory();
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
     initClinicalLookup();
     initFoodDetective();
+    initGutWeather();
   });
 })();

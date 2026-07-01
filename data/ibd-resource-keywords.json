@@ -22,5 +22,6 @@
   "stress-coping-strategies-ibd": ["stress", "coping", "mindfulness", "CBT", "meditation", "breathing", "relaxation", "anxiety", "stress management"],
   "ibd-fatigue-brain-fog": ["fatigue", "tired", "exhaustion", "brain fog", "energy", "anemia", "sleep", "lethargy", "cognitive"],
   "ibd-joint-pain-arthritis": ["joint pain", "arthritis", "joints", "knee", "ankle", "back pain", "sacroiliitis", "extraintestinal", "swelling"],
+  "ibd-leg-knee-pain": ["leg pain", "knee pain", "leg", "knee", "leg ache", "thigh pain", "calf pain", "extraintestinal", "peripheral arthritis"],
   "ibd-night-sweats": ["night sweats", "sweating", "fever", "chills", "temperature", "flare", "infection"]
 }
