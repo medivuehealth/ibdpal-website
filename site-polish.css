@@ -2347,18 +2347,73 @@ a.tab-button,
 }
 
 #nutrition-targets .nutrition-subcontent {
-    margin-top: 0.25rem;
+    display: none;
 }
 
 #nutrition-targets .nutrition-subcontent.active {
     display: block;
 }
 
-.nutrition-subtab-navigation--dock .nutrition-subtab-button.active,
-.subtab-navigation--dock .nutrition-subtab-button.active {
-    background: #2d6a3e;
+.nutrition-targets-subtabs {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-bottom: 0;
+    padding: 0.45rem;
+    background: linear-gradient(180deg, #e8f5e9 0%, #f4faf4 100%);
+    border: 2px solid rgba(46, 125, 50, 0.35);
+    border-bottom: none;
+    border-radius: 16px 16px 0 0;
+    box-shadow: 0 4px 14px rgba(28, 78, 38, 0.08);
+}
+
+.nutrition-subtab-button {
+    appearance: none;
+    background: rgba(255, 255, 255, 0.72);
+    border: 2px solid rgba(46, 125, 50, 0.28);
+    border-radius: 12px;
+    color: #355a3d;
+    cursor: pointer;
+    font-family: var(--ibd-font-display);
+    font-size: 0.92rem;
+    font-weight: 700;
+    line-height: 1.25;
+    min-height: 48px;
+    padding: 0.65rem 0.75rem;
+    text-align: center;
+    transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+}
+
+.nutrition-subtab-button:hover {
+    background: #ffffff;
+    border-color: rgba(46, 125, 50, 0.5);
+    color: #1f4d2c;
+}
+
+.nutrition-subtab-button.active {
+    background: #ffffff;
     border-color: #2d6a3e;
-    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(46, 125, 50, 0.18);
+    color: #1b5e20;
+}
+
+.nutrition-subtab-button.active::after {
+    content: "";
+    display: block;
+    width: 2.5rem;
+    height: 3px;
+    margin: 0.45rem auto 0;
+    border-radius: 999px;
+    background: #2d6a3e;
+}
+
+.nutrition-targets-panels {
+    background: #ffffff;
+    border: 2px solid rgba(46, 125, 50, 0.35);
+    border-radius: 0 0 18px 18px;
+    box-shadow: 0 10px 28px rgba(28, 78, 38, 0.08);
+    margin-bottom: 1rem;
+    padding: clamp(0.85rem, 2.5vw, 1.15rem);
 }
 
 .nutrition-targets-layout {
@@ -2868,6 +2923,15 @@ a.tab-button,
 
     .nutrition-targets-layout {
         grid-template-columns: 1fr;
+    }
+
+    .nutrition-targets-subtabs {
+        grid-template-columns: 1fr;
+    }
+
+    .nutrition-subtab-button {
+        font-size: 0.95rem;
+        min-height: 52px;
     }
 
     .nutrition-targets-posts {

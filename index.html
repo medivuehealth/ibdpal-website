@@ -95,13 +95,6 @@
                     <button type="button" class="app-subtab-button subtab-dock-button" data-app-subtab="app-research">App research</button>
                 </div>
             </nav>
-            <nav class="nutrition-subtab-navigation subtab-navigation--dock" id="nutrition-subtab-bar" aria-label="Nutrients sections" hidden>
-                <div class="nutrition-subtab-container subtab-dock-container">
-                    <button type="button" class="nutrition-subtab-button subtab-dock-button active" data-nutrition-subtab="nutrition-dri">Daily targets</button>
-                    <button type="button" class="nutrition-subtab-button subtab-dock-button" data-nutrition-subtab="nutrition-foods">Food sources</button>
-                    <button type="button" class="nutrition-subtab-button subtab-dock-button" data-nutrition-subtab="nutrition-learn">Sources &amp; articles</button>
-                </div>
-            </nav>
         </div>
 
         <!-- Main Content -->
@@ -1735,7 +1728,14 @@
                         <strong>Not a prescription.</strong> These are general U.S. Dietary Reference Intake (DRI) values by age and sex. IBD can raise deficiency risk, but replacement doses, flare diets, and higher calorie or protein targets should come from your care team, not from a website table alone.
                     </div>
 
-                    <div class="nutrition-subcontent active" id="nutrition-dri">
+                    <div class="nutrition-targets-subtabs" id="nutrition-subtab-bar" role="tablist" aria-label="Nutrients sections">
+                        <button type="button" class="nutrition-subtab-button active" role="tab" aria-selected="true" aria-controls="nutrition-dri" id="nutrition-subtab-dri" data-nutrition-subtab="nutrition-dri">Daily targets</button>
+                        <button type="button" class="nutrition-subtab-button" role="tab" aria-selected="false" aria-controls="nutrition-foods" id="nutrition-subtab-foods" data-nutrition-subtab="nutrition-foods">Food sources</button>
+                        <button type="button" class="nutrition-subtab-button" role="tab" aria-selected="false" aria-controls="nutrition-learn" id="nutrition-subtab-learn" data-nutrition-subtab="nutrition-learn">Sources &amp; articles</button>
+                    </div>
+
+                    <div class="nutrition-targets-panels">
+                    <div class="nutrition-subcontent active" id="nutrition-dri" role="tabpanel" aria-labelledby="nutrition-subtab-dri">
                         <div class="nutrition-targets-layout">
                             <article class="nutrition-targets-card">
                                 <div class="nutrition-targets-card__head">
@@ -1770,7 +1770,7 @@
                         </div>
                     </div>
 
-                    <div class="nutrition-subcontent" id="nutrition-foods">
+                    <div class="nutrition-subcontent" id="nutrition-foods" role="tabpanel" aria-labelledby="nutrition-subtab-foods">
                         <div class="nutrition-targets-layout">
                             <div data-nutrition-remission class="nutrition-targets-card--wide-slot"></div>
 
@@ -1792,7 +1792,7 @@
                         </div>
                     </div>
 
-                    <div class="nutrition-subcontent" id="nutrition-learn">
+                    <div class="nutrition-subcontent" id="nutrition-learn" role="tabpanel" aria-labelledby="nutrition-subtab-learn">
                         <div class="nutrition-targets-layout">
                             <article class="nutrition-targets-card nutrition-targets-card--wide">
                                 <h2>Research sources</h2>
@@ -1814,6 +1814,7 @@
                                 <div data-nutrition-posts aria-live="polite"></div>
                             </article>
                         </div>
+                    </div>
                     </div>
                 </section>
             </div>

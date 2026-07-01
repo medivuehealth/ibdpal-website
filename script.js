@@ -99,7 +99,6 @@ function initializeTabNavigation() {
     var librarySubtabBar = document.getElementById('library-subtab-bar');
     var appSubtabBar = document.getElementById('app-subtab-bar');
     var aboutSubtabBar = document.getElementById('about-subtab-bar');
-    var nutritionSubtabBar = document.getElementById('nutrition-subtab-bar');
 
     function setLibrarySubtabBarVisible(visible) {
         if (!librarySubtabBar) return;
@@ -117,12 +116,6 @@ function initializeTabNavigation() {
         if (!aboutSubtabBar) return;
         aboutSubtabBar.hidden = !visible;
         aboutSubtabBar.classList.toggle('is-active', visible);
-    }
-
-    function setNutritionSubtabBarVisible(visible) {
-        if (!nutritionSubtabBar) return;
-        nutritionSubtabBar.hidden = !visible;
-        nutritionSubtabBar.classList.toggle('is-active', visible);
     }
 
     function switchLibrarySubTab(subTab, updateURL) {
@@ -192,7 +185,9 @@ function initializeTabNavigation() {
         }
 
         nutritionSubButtons.forEach(function (btn) {
-            btn.classList.toggle('active', btn.getAttribute('data-nutrition-subtab') === subTab);
+            var isActive = btn.getAttribute('data-nutrition-subtab') === subTab;
+            btn.classList.toggle('active', isActive);
+            btn.setAttribute('aria-selected', isActive ? 'true' : 'false');
         });
         nutritionSubContents.forEach(function (panel) {
             panel.classList.toggle('active', panel.id === subTab);
@@ -249,7 +244,6 @@ function initializeTabNavigation() {
         setLibrarySubtabBarVisible(mainTab === 'library');
         setAppSubtabBarVisible(mainTab === 'app');
         setAboutSubtabBarVisible(mainTab === 'about');
-        setNutritionSubtabBarVisible(mainTab === 'nutrition-targets');
 
         if (updateURL) {
             var hash = '';
