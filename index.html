@@ -72,27 +72,11 @@
                 <button type="button" class="tab-button" data-tab="about">About</button>
             </div>
         </nav>
-            <nav class="about-subtab-navigation subtab-navigation--dock" id="about-subtab-bar" aria-label="About sections" hidden>
-                <div class="about-subtab-container subtab-dock-container">
-                    <button type="button" class="about-subtab-button subtab-dock-button active" data-about-subtab="about-overview">About</button>
-                    <button type="button" class="about-subtab-button subtab-dock-button" data-about-subtab="site-updates">Updates</button>
-                    <button type="button" class="about-subtab-button subtab-dock-button" data-about-subtab="metrics">Analytics</button>
-                </div>
-            </nav>
             <nav class="library-subtab-navigation library-subtab-navigation--dock subtab-navigation--dock" id="library-subtab-bar" aria-label="Patient Library sections" hidden>
                 <div class="library-subtab-container subtab-dock-container">
                     <button type="button" class="library-subtab-button subtab-dock-button active" data-library-subtab="guides">Guides &amp; tools</button>
                     <button type="button" class="library-subtab-button subtab-dock-button" data-library-subtab="sources">Sources</button>
                     <button type="button" class="library-subtab-button subtab-dock-button" data-library-subtab="articles">Articles</button>
-                </div>
-            </nav>
-            <nav class="app-subtab-navigation subtab-navigation--dock" id="app-subtab-bar" aria-label="IBDPal App sections" hidden>
-                <div class="app-subtab-container subtab-dock-container">
-                    <button type="button" class="app-subtab-button subtab-dock-button active" data-app-subtab="download">Download</button>
-                    <button type="button" class="app-subtab-button subtab-dock-button" data-app-subtab="features">Features</button>
-                    <button type="button" class="app-subtab-button subtab-dock-button" data-app-subtab="how-it-works">How it Works</button>
-                    <button type="button" class="app-subtab-button subtab-dock-button" data-app-subtab="screenshots">Screenshots</button>
-                    <button type="button" class="app-subtab-button subtab-dock-button" data-app-subtab="app-research">App research</button>
                 </div>
             </nav>
         </div>
@@ -201,7 +185,17 @@
             <!-- IBDPal App Tab (Download, Features, How it Works, Screenshots, Research) -->
             <div class="tab-content" id="app">
 
-                <div class="app-subcontent active" id="download">
+                <div class="ibd-segmented-subtabs ibd-segmented-subtabs--five" id="app-subtab-bar" role="tablist" aria-label="IBDPal App sections">
+                    <button type="button" class="ibd-segmented-subtab active" role="tab" aria-selected="true" aria-controls="download" id="app-subtab-download" data-app-subtab="download">Download</button>
+                    <button type="button" class="ibd-segmented-subtab" role="tab" aria-selected="false" aria-controls="features" id="app-subtab-features" data-app-subtab="features">Features</button>
+                    <button type="button" class="ibd-segmented-subtab" role="tab" aria-selected="false" aria-controls="how-it-works" id="app-subtab-how-it-works" data-app-subtab="how-it-works">How it Works</button>
+                    <button type="button" class="ibd-segmented-subtab" role="tab" aria-selected="false" aria-controls="screenshots" id="app-subtab-screenshots" data-app-subtab="screenshots">Screenshots</button>
+                    <button type="button" class="ibd-segmented-subtab" role="tab" aria-selected="false" aria-controls="app-research" id="app-subtab-app-research" data-app-subtab="app-research">App research</button>
+                </div>
+
+                <div class="ibd-segmented-panels ibd-segmented-panels--flush">
+
+                <div class="app-subcontent active" id="download" role="tabpanel" aria-labelledby="app-subtab-download">
                 <div class="app-hero-premium hero-section hero-section--app-tab" data-track-impression="hero" data-track-label="App download subtab">
                     <div class="app-hero-premium__inner">
                         <div class="app-hero-premium__content">
@@ -241,7 +235,7 @@
                 </div>
                 </div>
 
-                <div class="app-subcontent" id="features">
+                <div class="app-subcontent" id="features" role="tabpanel" aria-labelledby="app-subtab-features">
                 <div class="features-section">
                     <h3>Comprehensive IBD Management Features</h3>
                     <div class="features-grid">
@@ -289,7 +283,7 @@
                 </div>
                 </div>
 
-                <div class="app-subcontent" id="how-it-works">
+                <div class="app-subcontent" id="how-it-works" role="tabpanel" aria-labelledby="app-subtab-how-it-works">
                 <div class="how-it-works-section">
                     <h3>How IBDPal Works: Your Personalized IBD Journey</h3>
                     <p class="how-it-works-intro">IBDPal empowers you with AI-driven insights and evidence-based nutrition strategies to manage your IBD condition effectively.</p>
@@ -342,7 +336,7 @@
                 </div>
                 </div>
 
-                <div class="app-subcontent" id="screenshots">
+                <div class="app-subcontent" id="screenshots" role="tabpanel" aria-labelledby="app-subtab-screenshots">
                 <div class="screenshots-section">
                     <h3>App Screenshots</h3>
                     <div class="screenshots-gallery">
@@ -385,7 +379,7 @@
                 </div>
                 </div>
 
-                <div class="app-subcontent" id="app-research">
+                <div class="app-subcontent" id="app-research" role="tabpanel" aria-labelledby="app-subtab-app-research">
                 <div class="benefits-section">
                     <h3>Medical Research Foundation</h3>
                     <div class="benefits-grid">
@@ -405,6 +399,7 @@
                             <p>Individualized recommendations based on your specific IBD type, symptom patterns, and nutritional needs, reducing trial-and-error approaches to diet and lifestyle management</p>
                         </div>
                     </div>
+                </div>
                 </div>
                 </div>
             </div>
@@ -1043,7 +1038,16 @@
 
             <!-- About Tab -->
             <div class="tab-content" id="about">
-                <div class="about-subcontent active" id="about-overview">
+                <section class="about-tab-shell">
+                <div class="ibd-segmented-subtabs" id="about-subtab-bar" role="tablist" aria-label="About sections">
+                    <button type="button" class="ibd-segmented-subtab active" role="tab" aria-selected="true" aria-controls="about-overview" id="about-subtab-overview" data-about-subtab="about-overview">About</button>
+                    <button type="button" class="ibd-segmented-subtab" role="tab" aria-selected="false" aria-controls="site-updates" id="about-subtab-site-updates" data-about-subtab="site-updates">Updates</button>
+                    <button type="button" class="ibd-segmented-subtab" role="tab" aria-selected="false" aria-controls="metrics" id="about-subtab-metrics" data-about-subtab="metrics">Analytics</button>
+                </div>
+
+                <div class="ibd-segmented-panels">
+
+                <div class="about-subcontent active" id="about-overview" role="tabpanel" aria-labelledby="about-subtab-overview">
                 <article class="support-section seo-landing tab-page-section tab-page-section--compact">
                     <header class="page-header-compact">
                         <h1 class="page-header-compact__title">Free nonprofit IBD education from MediVue</h1>
@@ -1088,7 +1092,7 @@
                     </section>
                 </article>
                 </div>
-                <div class="about-subcontent" id="site-updates">
+                <div class="about-subcontent" id="site-updates" role="tabpanel" aria-labelledby="about-subtab-site-updates">
                 <article class="support-section seo-landing tab-page-section tab-page-section--compact">
                     <header class="page-header-compact">
                         <h1 class="page-header-compact__title">Site Updates</h1>
@@ -1193,7 +1197,7 @@
                     </div>
                 </article>
                 </div>
-                <div class="about-subcontent" id="metrics">
+                <div class="about-subcontent" id="metrics" role="tabpanel" aria-labelledby="about-subtab-metrics">
                 <article class="support-section seo-landing tab-page-section tab-page-section--compact">
                     <header class="page-header-compact">
                         <h1 class="page-header-compact__title">Website &amp; App Analytics</h1>
@@ -1231,6 +1235,8 @@
                     </section>
                 </article>
                 </div>
+                </div>
+                </section>
             </div>
 
             <!-- Privacy Tab -->
@@ -1728,13 +1734,13 @@
                         <strong>Not a prescription.</strong> These are general U.S. Dietary Reference Intake (DRI) values by age and sex. IBD can raise deficiency risk, but replacement doses, flare diets, and higher calorie or protein targets should come from your care team, not from a website table alone.
                     </div>
 
-                    <div class="nutrition-targets-subtabs" id="nutrition-subtab-bar" role="tablist" aria-label="Nutrients sections">
-                        <button type="button" class="nutrition-subtab-button active" role="tab" aria-selected="true" aria-controls="nutrition-dri" id="nutrition-subtab-dri" data-nutrition-subtab="nutrition-dri">Daily targets</button>
-                        <button type="button" class="nutrition-subtab-button" role="tab" aria-selected="false" aria-controls="nutrition-foods" id="nutrition-subtab-foods" data-nutrition-subtab="nutrition-foods">Food sources</button>
-                        <button type="button" class="nutrition-subtab-button" role="tab" aria-selected="false" aria-controls="nutrition-learn" id="nutrition-subtab-learn" data-nutrition-subtab="nutrition-learn">Sources &amp; articles</button>
+                    <div class="ibd-segmented-subtabs" id="nutrition-subtab-bar" role="tablist" aria-label="Nutrients sections">
+                        <button type="button" class="ibd-segmented-subtab active" role="tab" aria-selected="true" aria-controls="nutrition-dri" id="nutrition-subtab-dri" data-nutrition-subtab="nutrition-dri">Daily targets</button>
+                        <button type="button" class="ibd-segmented-subtab" role="tab" aria-selected="false" aria-controls="nutrition-foods" id="nutrition-subtab-foods" data-nutrition-subtab="nutrition-foods">Food sources</button>
+                        <button type="button" class="ibd-segmented-subtab" role="tab" aria-selected="false" aria-controls="nutrition-learn" id="nutrition-subtab-learn" data-nutrition-subtab="nutrition-learn">Sources &amp; articles</button>
                     </div>
 
-                    <div class="nutrition-targets-panels">
+                    <div class="ibd-segmented-panels">
                     <div class="nutrition-subcontent active" id="nutrition-dri" role="tabpanel" aria-labelledby="nutrition-subtab-dri">
                         <div class="nutrition-targets-layout">
                             <article class="nutrition-targets-card">

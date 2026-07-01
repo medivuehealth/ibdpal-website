@@ -1633,8 +1633,8 @@ a {
     font-weight: 700;
 }
 
-.app-subcontent {
-    padding-top: 0.75rem;
+#app .ibd-segmented-panels .app-subcontent {
+    padding-top: 0;
 }
 
 .footer {
@@ -1718,7 +1718,7 @@ a.tab-button,
 .about-subtab-button,
 .library-subtab-button,
 .app-subtab-button,
-.nutrition-subtab-button {
+.ibd-segmented-subtab {
     font-family: var(--ibd-font-display);
 }
 
@@ -2354,11 +2354,29 @@ a.tab-button,
     display: block;
 }
 
-.nutrition-targets-subtabs {
+#app .app-subcontent {
+    display: none;
+}
+
+#app .app-subcontent.active {
+    display: block;
+}
+
+#about .about-subcontent {
+    display: none;
+}
+
+#about .about-subcontent.active {
+    display: block;
+}
+
+/* Shared segmented sub-tab bar (Nutrients, App, About) */
+.ibd-segmented-subtabs {
     display: grid;
     gap: 0.5rem;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    margin-bottom: 0;
+    margin: 0 auto;
+    max-width: 980px;
     padding: 0.45rem;
     background: linear-gradient(180deg, #e8f5e9 0%, #f4faf4 100%);
     border: 2px solid rgba(46, 125, 50, 0.35);
@@ -2367,7 +2385,19 @@ a.tab-button,
     box-shadow: 0 4px 14px rgba(28, 78, 38, 0.08);
 }
 
-.nutrition-subtab-button {
+.ibd-segmented-subtabs--five {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    max-width: none;
+}
+
+#app .ibd-segmented-subtabs {
+    margin-left: var(--ibd-content-pad);
+    margin-right: var(--ibd-content-pad);
+    margin-top: clamp(0.75rem, 2vw, 1rem);
+    max-width: none;
+}
+
+.ibd-segmented-subtab {
     appearance: none;
     background: rgba(255, 255, 255, 0.72);
     border: 2px solid rgba(46, 125, 50, 0.28);
@@ -2384,20 +2414,20 @@ a.tab-button,
     transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
 }
 
-.nutrition-subtab-button:hover {
+.ibd-segmented-subtab:hover {
     background: #ffffff;
     border-color: rgba(46, 125, 50, 0.5);
     color: #1f4d2c;
 }
 
-.nutrition-subtab-button.active {
+.ibd-segmented-subtab.active {
     background: #ffffff;
     border-color: #2d6a3e;
     box-shadow: 0 4px 12px rgba(46, 125, 50, 0.18);
     color: #1b5e20;
 }
 
-.nutrition-subtab-button.active::after {
+.ibd-segmented-subtab.active::after {
     content: "";
     display: block;
     width: 2.5rem;
@@ -2407,13 +2437,37 @@ a.tab-button,
     background: #2d6a3e;
 }
 
-.nutrition-targets-panels {
+.ibd-segmented-panels {
     background: #ffffff;
     border: 2px solid rgba(46, 125, 50, 0.35);
     border-radius: 0 0 18px 18px;
     box-shadow: 0 10px 28px rgba(28, 78, 38, 0.08);
-    margin-bottom: 1rem;
+    margin: 0 auto 1rem;
+    max-width: 980px;
     padding: clamp(0.85rem, 2.5vw, 1.15rem);
+}
+
+.ibd-segmented-panels--flush {
+    max-width: none;
+    padding: 0;
+}
+
+#app .ibd-segmented-panels {
+    margin-left: var(--ibd-content-pad);
+    margin-right: var(--ibd-content-pad);
+}
+
+.about-tab-shell {
+    margin: 0 auto;
+    max-width: 980px;
+    padding: clamp(1rem, 3vw, 1.5rem) var(--ibd-content-pad) 2rem;
+}
+
+.about-tab-shell .ibd-segmented-subtabs,
+.about-tab-shell .ibd-segmented-panels {
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .nutrition-targets-layout {
@@ -2925,10 +2979,16 @@ a.tab-button,
         grid-template-columns: 1fr;
     }
 
-    .nutrition-targets-subtabs {
+    .nutrition-targets-subtabs,
+    .ibd-segmented-subtabs {
         grid-template-columns: 1fr;
     }
 
+    .ibd-segmented-subtabs--five {
+        grid-template-columns: 1fr;
+    }
+
+    .ibd-segmented-subtab,
     .nutrition-subtab-button {
         font-size: 0.95rem;
         min-height: 52px;
@@ -3044,7 +3104,7 @@ a.tab-button,
     .about-subtab-button,
     .library-subtab-button,
     .app-subtab-button,
-    .nutrition-subtab-button {
+    .ibd-segmented-subtab {
         min-height: 44px !important;
         min-width: 44px !important;
     }

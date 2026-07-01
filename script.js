@@ -88,34 +88,20 @@ function resolveTabFromHash(hash) {
 function initializeTabNavigation() {
     var mainTabButtons = document.querySelectorAll('.tab-navigation .tab-button[data-tab]');
     var mainTabContents = document.querySelectorAll('main > .tab-content');
-    var appSubButtons = document.querySelectorAll('.app-subtab-button[data-app-subtab]');
+    var appSubButtons = document.querySelectorAll('.ibd-segmented-subtab[data-app-subtab]');
     var appSubContents = document.querySelectorAll('.app-subcontent');
     var librarySubButtons = document.querySelectorAll('.library-subtab-button[data-library-subtab]');
     var librarySubContents = document.querySelectorAll('.library-subcontent');
-    var aboutSubButtons = document.querySelectorAll('.about-subtab-button[data-about-subtab]');
+    var aboutSubButtons = document.querySelectorAll('.ibd-segmented-subtab[data-about-subtab]');
     var aboutSubContents = document.querySelectorAll('.about-subcontent');
-    var nutritionSubButtons = document.querySelectorAll('.nutrition-subtab-button[data-nutrition-subtab]');
+    var nutritionSubButtons = document.querySelectorAll('.ibd-segmented-subtab[data-nutrition-subtab]');
     var nutritionSubContents = document.querySelectorAll('.nutrition-subcontent');
     var librarySubtabBar = document.getElementById('library-subtab-bar');
-    var appSubtabBar = document.getElementById('app-subtab-bar');
-    var aboutSubtabBar = document.getElementById('about-subtab-bar');
 
     function setLibrarySubtabBarVisible(visible) {
         if (!librarySubtabBar) return;
         librarySubtabBar.hidden = !visible;
         librarySubtabBar.classList.toggle('is-active', visible);
-    }
-
-    function setAppSubtabBarVisible(visible) {
-        if (!appSubtabBar) return;
-        appSubtabBar.hidden = !visible;
-        appSubtabBar.classList.toggle('is-active', visible);
-    }
-
-    function setAboutSubtabBarVisible(visible) {
-        if (!aboutSubtabBar) return;
-        aboutSubtabBar.hidden = !visible;
-        aboutSubtabBar.classList.toggle('is-active', visible);
     }
 
     function switchLibrarySubTab(subTab, updateURL) {
@@ -144,7 +130,9 @@ function initializeTabNavigation() {
         }
 
         appSubButtons.forEach(function (btn) {
-            btn.classList.toggle('active', btn.getAttribute('data-app-subtab') === subTab);
+            var isActive = btn.getAttribute('data-app-subtab') === subTab;
+            btn.classList.toggle('active', isActive);
+            btn.setAttribute('aria-selected', isActive ? 'true' : 'false');
         });
         appSubContents.forEach(function (panel) {
             panel.classList.toggle('active', panel.id === subTab);
@@ -164,7 +152,9 @@ function initializeTabNavigation() {
         }
 
         aboutSubButtons.forEach(function (btn) {
-            btn.classList.toggle('active', btn.getAttribute('data-about-subtab') === subTab);
+            var isActive = btn.getAttribute('data-about-subtab') === subTab;
+            btn.classList.toggle('active', isActive);
+            btn.setAttribute('aria-selected', isActive ? 'true' : 'false');
         });
         aboutSubContents.forEach(function (panel) {
             panel.classList.toggle('active', panel.id === subTab);
@@ -242,8 +232,6 @@ function initializeTabNavigation() {
         }
 
         setLibrarySubtabBarVisible(mainTab === 'library');
-        setAppSubtabBarVisible(mainTab === 'app');
-        setAboutSubtabBarVisible(mainTab === 'about');
 
         if (updateURL) {
             var hash = '';

@@ -522,7 +522,7 @@ async def _run_user_session_body(
         await goto_home()
         await click_tab(page, "app")
         sub = APP_SUBTABS[user_id % len(APP_SUBTABS)]
-        sub_btn = page.locator(f'.app-subtab-button[data-app-subtab="{sub}"]')
+        sub_btn = page.locator(f'.ibd-segmented-subtab[data-app-subtab="{sub}"]')
         await sub_btn.click()
         await page.locator(f".app-subcontent#{sub}").wait_for(state="visible", timeout=10_000)
         return sub
