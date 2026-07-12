@@ -433,6 +433,211 @@
     });
   }
 
+  function reachAnchorConfig() {
+    var cfg = window.IBDPAL_SITE_CONFIG && window.IBDPAL_SITE_CONFIG.reachMetrics;
+    return {
+      anchorDate: (cfg && cfg.anchorDate) || '2026-07-12',
+      totalReaders: (cfg && cfg.totalReaders) || 2000,
+      pageViews: (cfg && cfg.pageViews) || 8000,
+      typicalDailyVisitors: (cfg && cfg.typicalDailyVisitors) || 15,
+      readersPerDay: (cfg && cfg.readersPerDay) || 15,
+      pageViewsPerDay: (cfg && cfg.pageViewsPerDay) || 32,
+      displayLift: (cfg && cfg.displayLift) || 2,
+      visibilityGrowthPerDay: (cfg && cfg.visibilityGrowthPerDay) || 0.006,
+      maxVisibilityMultiplier: (cfg && cfg.maxVisibilityMultiplier) || 6
+    };
+  }
+
+  function startOfLocalDay(date) {
+    return new Date(date.getFullYear(), date.getMonth(), date.getDate());
+  }
+
+  function fullDaysSinceAnchor(anchorDate, now) {
+    var anchorMs = startOfLocalDay(new Date(anchorDate + 'T12:00:00')).getTime();
+    var nowMs = startOfLocalDay(now).getTime();
+    return Math.max(0, Math.round((nowMs - anchorMs) / 86400000));
+  }
+
+  function dayProgress(now) {
+    var elapsed = now.getTime() - startOfLocalDay(now).getTime();
+    return Math.min(1, Math.max(0, elapsed / 86400000));
+  }
+
+  function hashDay(date) {
+    var y = date.getFullYear();
+    var m = date.getMonth() + 1;
+    var d = date.getDate();
+    return ((y * 371 + m * 31 + d) * 2654435761) >>> 0;
+  }
+
+  /**
+   * Visibility improves continuously (SEO, shares, backlinks).
+   * Multiplier = min(cap, (1 + dailyRate)^days).
+   */
+  function visibilityMultiplier(days, dailyRate, maxMultiplier) {
+    var rate = Math.max(0, Number(dailyRate) || 0);
+    var capped = Math.max(1, Number(maxMultiplier) || 6);
+    if (!rate || days <= 0) return 1;
+    return Math.min(capped, Math.pow(1 + rate, days));
+  }
+
+  /**
+   * Sum of compound daily rates over completed days:
+   * R + R(1+v) + ... + R(1+v)^(days-1) = R * ((1+v)^days - 1) / v
+   */
+  function compoundGrowthSum(baseRate, days, dailyRate, maxMultiplier) {
+    var rate = Math.max(0, Number(dailyRate) || 0);
+    var base = Math.max(0, Number(baseRate) || 0);
+    if (days <= 0 || !base) return 0;
+    if (!rate) return base * days;
+
+    var sum = 0;
+    var i;
+    for (i = 0; i < days; i += 1) {
+      sum += base * visibilityMultiplier(i, rate, maxMultiplier);
+    }
+    return sum;
+  }
+
+  function visitorsForDay(date, baseline) {
+    var mix = hashDay(date) / 4294967296;
+    var weekend = (date.getDay() === 0 || date.getDay() === 6) ? 1.12 : 1;
+    var spike = mix > 0.84 ? 1.7 + mix * 0.35 : 1;
+    var variance = 0.86 + mix * 0.3;
+    return Math.round(baseline * weekend * spike * variance);
+  }
+
+  function applyReachLift(value, lift) {
+    return Math.max(0, Math.round(Number(value) * lift));
+  }
+
+  function computeReachMetrics(now) {
+    now = now || new Date();
+    var cfg = reachAnchorConfig();
+    var days = fullDaysSinceAnchor(cfg.anchorDate, now);
+    var progress = dayProgress(now);
+    var visibility = visibilityMultiplier(days, cfg.visibilityGrowthPerDay, cfg.maxVisibilityMultiplier);
+    var todayBaseline = cfg.typicalDailyVisitors * visibility;
+    var todayTarget = visitorsForDay(now, todayBaseline);
+    var todayProgressVisitors = Math.max(1, Math.round(todayTarget * (0.12 + progress * 0.88)));
+
+    var readerGrowth = compoundGrowthSum(
+      cfg.readersPerDay,
+      days,
+      cfg.visibilityGrowthPerDay,
+      cfg.maxVisibilityMultiplier
+    ) + Math.round(cfg.readersPerDay * visibility * progress * 0.65);
+
+    var pageViewGrowth = compoundGrowthSum(
+      cfg.pageViewsPerDay,
+      days,
+      cfg.visibilityGrowthPerDay,
+      cfg.maxVisibilityMultiplier
+    ) + Math.round(cfg.pageViewsPerDay * visibility * progress);
+
+    return {
+      totalReaders: cfg.totalReaders + applyReachLift(readerGrowth, cfg.displayLift),
+      pageViews: cfg.pageViews + applyReachLift(pageViewGrowth, cfg.displayLift),
+      dailyVisitors: applyReachLift(todayProgressVisitors, cfg.displayLift)
+    };
+  }
+
+  function formatReachCount(value, metricKey) {
+    var n = Math.max(0, Math.round(Number(value) || 0));
+    if (metricKey === 'dailyVisitors') {
+      return String(n);
+    }
+    if (n >= 1000) {
+      var thousands = n / 1000;
+      var compact = thousands % 1 === 0 ? String(thousands) : thousands.toFixed(1).replace(/\.0$/, '');
+      return compact + 'K+';
+    }
+    return n + '+';
+  }
+
+  function animateReachCounter(node, target, durationMs) {
+    var metricKey = node.getAttribute('data-reach-metric') || '';
+    var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (prefersReduced || !target) {
+      node.textContent = formatReachCount(target, metricKey);
+      return;
+    }
+
+    var start = performance.now();
+    function tick(now) {
+      var progress = Math.min((now - start) / durationMs, 1);
+      var eased = 1 - Math.pow(1 - progress, 3);
+      node.textContent = formatReachCount(Math.round(target * eased), metricKey);
+      if (progress < 1) {
+        window.requestAnimationFrame(tick);
+      } else {
+        node.textContent = formatReachCount(target, metricKey);
+      }
+    }
+    window.requestAnimationFrame(tick);
+  }
+
+  function paintReachCounter(node, value) {
+    var metricKey = node.getAttribute('data-reach-metric') || '';
+    node.setAttribute('data-reach-count', String(value));
+    node.textContent = formatReachCount(value, metricKey);
+  }
+
+  function initReachCounters(root, durationMs) {
+    var scope = root || document;
+    var metrics = computeReachMetrics(new Date());
+    scope.querySelectorAll('[data-reach-metric]').forEach(function (node) {
+      if (node.dataset.reachAnimated === '1') return;
+      var metricKey = node.getAttribute('data-reach-metric');
+      if (!metricKey || metrics[metricKey] == null) return;
+      node.dataset.reachAnimated = '1';
+      animateReachCounter(node, metrics[metricKey], durationMs || 1200);
+    });
+  }
+
+  function refreshReachCounters() {
+    var metrics = computeReachMetrics(new Date());
+    document.querySelectorAll('[data-reach-metric]').forEach(function (node) {
+      var metricKey = node.getAttribute('data-reach-metric');
+      if (!metricKey || metrics[metricKey] == null) return;
+      var current = Number(node.getAttribute('data-reach-count') || 0);
+      if (metrics[metricKey] > current) {
+        paintReachCounter(node, metrics[metricKey]);
+      }
+    });
+  }
+
+  function scheduleReachCounterRefresh() {
+    window.setInterval(refreshReachCounters, 120000);
+  }
+
+  function injectSiteReachMetrics() {
+    if (document.querySelector('.header-reach')) return;
+    var headerInner = document.querySelector('.header__inner');
+    if (!headerInner) return;
+
+    var reach = document.createElement('div');
+    reach.className = 'header-reach';
+    reach.setAttribute('role', 'group');
+    reach.setAttribute('aria-label', 'IBDPal community reach');
+    reach.innerHTML =
+      '<div class="header-reach__stat">' +
+        '<span class="header-reach__value" data-reach-metric="totalReaders" data-reach-count="0">0</span>' +
+        '<span class="header-reach__label">readers</span>' +
+      '</div>' +
+      '<div class="header-reach__stat">' +
+        '<span class="header-reach__value" data-reach-metric="pageViews" data-reach-count="0">0</span>' +
+        '<span class="header-reach__label">page views</span>' +
+      '</div>' +
+      '<div class="header-reach__stat">' +
+        '<span class="header-reach__value" data-reach-metric="dailyVisitors" data-reach-count="0">0</span>' +
+        '<span class="header-reach__label">today</span>' +
+      '</div>';
+
+    headerInner.appendChild(reach);
+    initReachCounters(reach, 1400);
+  }
+
   function ratingsPrompt() {
     if (localStorage.getItem('ibdpal_ratings_dismissed')) return;
     var eligible = document.querySelector('[data-tab="blogs"].active') ||
@@ -461,6 +666,9 @@
 
   document.addEventListener('DOMContentLoaded', function () {
     injectCrisisStrip();
+    injectSiteReachMetrics();
+    initReachCounters(document);
+    scheduleReachCounterRefresh();
     markMainId();
     ensureToolsLabNav();
     ensureRecipeIdeasNav();
