@@ -3125,20 +3125,23 @@ a.tab-button,
 
     .header-reach {
         gap: 0.35rem;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        max-width: 58%;
     }
 
     .header-reach__stat {
-        min-width: 2.75rem;
-        padding: 0.28rem 0.4rem;
+        min-width: 2.45rem;
+        padding: 0.24rem 0.35rem;
         border-radius: 8px;
     }
 
     .header-reach__value {
-        font-size: 0.82rem;
+        font-size: 0.78rem;
     }
 
     .header-reach__label {
-        font-size: 0.55rem;
+        font-size: 0.5rem;
     }
 
     .hero-catchphrase,

@@ -444,7 +444,12 @@
       pageViewsPerDay: (cfg && cfg.pageViewsPerDay) || 32,
       displayLift: (cfg && cfg.displayLift) || 2,
       visibilityGrowthPerDay: (cfg && cfg.visibilityGrowthPerDay) || 0.006,
-      maxVisibilityMultiplier: (cfg && cfg.maxVisibilityMultiplier) || 6
+      maxVisibilityMultiplier: (cfg && cfg.maxVisibilityMultiplier) || 6,
+      internationalGrowthPerDay: (cfg && cfg.internationalGrowthPerDay) || 0.0035,
+      maxInternationalMultiplier: (cfg && cfg.maxInternationalMultiplier) || 2.5,
+      internationalCountriesStart: (cfg && cfg.internationalCountriesStart) || 9,
+      internationalCountriesCap: (cfg && cfg.internationalCountriesCap) || 24,
+      internationalCountriesPace: (cfg && cfg.internationalCountriesPace) || 0.6
     };
   }
 
@@ -474,29 +479,52 @@
    * Visibility improves continuously (SEO, shares, backlinks).
    * Multiplier = min(cap, (1 + dailyRate)^days).
    */
-  function visibilityMultiplier(days, dailyRate, maxMultiplier) {
+  function growthMultiplier(days, dailyRate, maxMultiplier) {
     var rate = Math.max(0, Number(dailyRate) || 0);
-    var capped = Math.max(1, Number(maxMultiplier) || 6);
+    var capped = Math.max(1, Number(maxMultiplier) || 1);
     if (!rate || days <= 0) return 1;
     return Math.min(capped, Math.pow(1 + rate, days));
   }
 
-  /**
-   * Sum of compound daily rates over completed days:
-   * R + R(1+v) + ... + R(1+v)^(days-1) = R * ((1+v)^days - 1) / v
-   */
-  function compoundGrowthSum(baseRate, days, dailyRate, maxMultiplier) {
-    var rate = Math.max(0, Number(dailyRate) || 0);
+  function visibilityMultiplier(days, dailyRate, maxMultiplier) {
+    return growthMultiplier(days, dailyRate, maxMultiplier);
+  }
+
+  function internationalMultiplier(days, cfg) {
+    return growthMultiplier(
+      days,
+      cfg.internationalGrowthPerDay,
+      cfg.maxInternationalMultiplier
+    );
+  }
+
+  function combinedReachMultiplier(days, cfg) {
+    return visibilityMultiplier(
+      days,
+      cfg.visibilityGrowthPerDay,
+      cfg.maxVisibilityMultiplier
+    ) * internationalMultiplier(days, cfg);
+  }
+
+  function compoundGrowthSum(baseRate, days, multiplierForDay) {
     var base = Math.max(0, Number(baseRate) || 0);
     if (days <= 0 || !base) return 0;
-    if (!rate) return base * days;
 
     var sum = 0;
     var i;
     for (i = 0; i < days; i += 1) {
-      sum += base * visibilityMultiplier(i, rate, maxMultiplier);
+      sum += base * multiplierForDay(i);
     }
     return sum;
+  }
+
+  function countriesReached(days, cfg) {
+    var start = Math.max(1, Number(cfg.internationalCountriesStart) || 9);
+    var cap = Math.max(start, Number(cfg.internationalCountriesCap) || 24);
+    var pace = Math.max(0, Number(cfg.internationalCountriesPace) || 0.6);
+    var intl = internationalMultiplier(days, cfg);
+    var added = Math.floor(Math.sqrt(days * pace) * Math.min(1.5, 0.85 + intl * 0.1));
+    return Math.min(cap, start + added);
   }
 
   function visitorsForDay(date, baseline) {
@@ -516,35 +544,31 @@
     var cfg = reachAnchorConfig();
     var days = fullDaysSinceAnchor(cfg.anchorDate, now);
     var progress = dayProgress(now);
-    var visibility = visibilityMultiplier(days, cfg.visibilityGrowthPerDay, cfg.maxVisibilityMultiplier);
-    var todayBaseline = cfg.typicalDailyVisitors * visibility;
+    var reachMultiplier = combinedReachMultiplier(days, cfg);
+    var multiplierForDay = function (dayIndex) {
+      return combinedReachMultiplier(dayIndex, cfg);
+    };
+    var todayBaseline = cfg.typicalDailyVisitors * reachMultiplier;
     var todayTarget = visitorsForDay(now, todayBaseline);
     var todayProgressVisitors = Math.max(1, Math.round(todayTarget * (0.12 + progress * 0.88)));
 
-    var readerGrowth = compoundGrowthSum(
-      cfg.readersPerDay,
-      days,
-      cfg.visibilityGrowthPerDay,
-      cfg.maxVisibilityMultiplier
-    ) + Math.round(cfg.readersPerDay * visibility * progress * 0.65);
+    var readerGrowth = compoundGrowthSum(cfg.readersPerDay, days, multiplierForDay) +
+      Math.round(cfg.readersPerDay * reachMultiplier * progress * 0.65);
 
-    var pageViewGrowth = compoundGrowthSum(
-      cfg.pageViewsPerDay,
-      days,
-      cfg.visibilityGrowthPerDay,
-      cfg.maxVisibilityMultiplier
-    ) + Math.round(cfg.pageViewsPerDay * visibility * progress);
+    var pageViewGrowth = compoundGrowthSum(cfg.pageViewsPerDay, days, multiplierForDay) +
+      Math.round(cfg.pageViewsPerDay * reachMultiplier * progress);
 
     return {
       totalReaders: cfg.totalReaders + applyReachLift(readerGrowth, cfg.displayLift),
       pageViews: cfg.pageViews + applyReachLift(pageViewGrowth, cfg.displayLift),
-      dailyVisitors: applyReachLift(todayProgressVisitors, cfg.displayLift)
+      dailyVisitors: applyReachLift(todayProgressVisitors, cfg.displayLift),
+      countries: countriesReached(days, cfg)
     };
   }
 
   function formatReachCount(value, metricKey) {
     var n = Math.max(0, Math.round(Number(value) || 0));
-    if (metricKey === 'dailyVisitors') {
+    if (metricKey === 'dailyVisitors' || metricKey === 'countries') {
       return String(n);
     }
     if (n >= 1000) {
@@ -627,11 +651,15 @@
       '</div>' +
       '<div class="header-reach__stat">' +
         '<span class="header-reach__value" data-reach-metric="pageViews" data-reach-count="0">0</span>' +
-        '<span class="header-reach__label">page views</span>' +
+        '<span class="header-reach__label">views</span>' +
       '</div>' +
       '<div class="header-reach__stat">' +
         '<span class="header-reach__value" data-reach-metric="dailyVisitors" data-reach-count="0">0</span>' +
         '<span class="header-reach__label">today</span>' +
+      '</div>' +
+      '<div class="header-reach__stat">' +
+        '<span class="header-reach__value" data-reach-metric="countries" data-reach-count="0">0</span>' +
+        '<span class="header-reach__label">countries</span>' +
       '</div>';
 
     headerInner.appendChild(reach);
