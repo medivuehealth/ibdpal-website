@@ -33,6 +33,41 @@
     { title: 'Flare foods: gentle options and red flags', term: 'flare foods' },
     { title: 'Biologics: visit questions for new starts', term: 'biologics' }
   ];
+  var COMPLETION_STEMS = [
+    'management', 'symptoms', 'diarrhea', 'abdominal', 'inflammation',
+    'nutrition', 'medication', 'medications', 'biologics', 'remission',
+    'constipation', 'fatigue', 'hydration', 'supplement', 'supplements',
+    'diagnosis', 'treatment', 'treatments', 'surgery', 'osteoporosis'
+  ];
+  var JUNK_TERM_RE =
+    /\b(deployment|verification|localhost|undefined|null|testid|playwright|selenium|cypress|webpack|vercel|railway)\b/i;
+  var OFFTOPIC_TERM_RE =
+    /\b(embolism|aneurysm|myocardial|infarction|fracture|concussion|appendectomy)\b/i;
+
+  function isPublicSearchTerm(value) {
+    var term = String(value || '')
+      .toLowerCase()
+      .replace(/[^\w\s'-]/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+    if (!term || term.length < 3 || term.length > 60) return false;
+    if (!/[a-z]/i.test(term)) return false;
+    if (/\d{5,}/.test(term)) return false;
+    if (JUNK_TERM_RE.test(term)) return false;
+    if (OFFTOPIC_TERM_RE.test(term)) return false;
+    var letters = (term.match(/[a-z]/gi) || []).length;
+    var digits = (term.match(/\d/g) || []).length;
+    if (digits > 0 && digits >= letters) return false;
+    var words = term.split(/\s+/).filter(Boolean);
+    if (!words.length || words.length > 8) return false;
+    if (words.some(function (word) { return word.length > 24; })) return false;
+    if (words.some(function (word) {
+      return word.length >= 5 && COMPLETION_STEMS.some(function (full) {
+        return full.indexOf(word) === 0 && word !== full;
+      });
+    })) return false;
+    return true;
+  }
 
   function escapeHtml(value) {
     return String(value || '').replace(/[&<>"']/g, function (char) {
@@ -343,20 +378,25 @@
     var list = section.querySelector('[data-content-ideas-list]');
     if (!list) return;
 
-    var ideas = (items && items.length ? items : FALLBACK_CONTENT_IDEAS).slice(0, 3);
+    var cleaned = (items || []).filter(function (item) {
+      return isPublicSearchTerm(item.term || item.label || item.title || '');
+    });
+    var ideas = (cleaned.length ? cleaned : FALLBACK_CONTENT_IDEAS).slice(0, 3);
+    var usingFallback = isFallback || !cleaned.length;
     list.innerHTML = ideas.map(function (item) {
       var term = item.term || item.label || item.title || '';
       var title = item.title || ((item.label || term) + ': questions to ask and what to track');
       return '<a href="' + topSearchHref(term) + '">' + escapeHtml(title) + '</a>';
     }).join('');
     section.hidden = false;
+    section.setAttribute('data-ideas-source', usingFallback ? 'fallback' : 'live');
   }
 
   function loadContentIdeas() {
     var section = document.querySelector('[data-content-ideas]');
     if (!section) return;
 
-    window.fetch(WEB_API_BASE + '/content-ideas?days=30&limit=3')
+    window.fetch(WEB_API_BASE + '/content-ideas?days=30&limit=10')
       .then(function (response) {
         if (!response.ok) throw new Error('Content ideas unavailable');
         return response.json();

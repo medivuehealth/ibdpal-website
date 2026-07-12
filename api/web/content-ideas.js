@@ -1,4 +1,4 @@
-import { db, json, methodNotAllowed } from '../_web-db.js';
+import { db, filterPublicSearchRows, json, methodNotAllowed } from '../_web-db.js';
 
 function titleFromTerm(term) {
   const label = String(term || '').trim();
@@ -14,6 +14,8 @@ export default async function handler(req, res) {
   try {
     const days = Math.max(1, Math.min(parseInt(req.query.days, 10) || 30, 90));
     const limit = Math.max(1, Math.min(parseInt(req.query.limit, 10) || 5, 10));
+    // Over-fetch so junk filters still leave enough education-gap ideas.
+    const fetchLimit = Math.min(Math.max(limit * 4, 12), 40);
 
     const result = await db().query(
       `SELECT
@@ -26,19 +28,20 @@ export default async function handler(req, res) {
       WHERE created_at >= NOW() - ($1::int * INTERVAL '1 day')
         AND clicked_article_slug IS NULL
         AND normalized_term <> ''
+        AND normalized_term !~ '[0-9]{5,}'
+        AND normalized_term !~* '(deployment|verification|localhost|undefined|testid|playwright|selenium|cypress)'
       GROUP BY normalized_term
       ORDER BY
         CASE WHEN AVG(result_count) <= 1 THEN 0 ELSE 1 END,
         search_count DESC,
         last_searched_at DESC
       LIMIT $2`,
-      [days, limit]
+      [days, fetchLimit]
     );
 
-    return json(res, 200, {
-      success: true,
-      days,
-      ideas: result.rows.map((row) => ({
+    const ideas = filterPublicSearchRows(result.rows)
+      .slice(0, limit)
+      .map((row) => ({
         term: row.normalized_term,
         label: row.label,
         title: titleFromTerm(row.label),
@@ -46,7 +49,12 @@ export default async function handler(req, res) {
           ? 'Readers searched this but found few matching resources.'
           : 'Readers are asking about this topic often.',
         count: row.search_count
-      }))
+      }));
+
+    return json(res, 200, {
+      success: true,
+      days,
+      ideas
     });
   } catch (error) {
     console.error('content-ideas error', error);

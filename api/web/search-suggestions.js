@@ -1,4 +1,4 @@
-import { db, json, methodNotAllowed } from '../_web-db.js';
+import { db, filterPublicSearchRows, json, methodNotAllowed } from '../_web-db.js';
 
 const ALLOWED_SOURCES = new Set(['tools_lab', 'patient_library', 'homepage']);
 
@@ -11,7 +11,8 @@ export default async function handler(req, res) {
     const days = Math.max(1, Math.min(parseInt(req.query.days, 10) || 14, 90));
     const limit = Math.max(1, Math.min(parseInt(req.query.limit, 10) || 8, 12));
     const source = ALLOWED_SOURCES.has(req.query.source) ? req.query.source : null;
-    const params = [days, limit];
+    const fetchLimit = Math.min(Math.max(limit * 4, 12), 40);
+    const params = [days, fetchLimit];
     const sourceFilter = source ? 'AND source = $3' : '';
     if (source) params.push(source);
 
@@ -25,6 +26,8 @@ export default async function handler(req, res) {
       WHERE created_at >= NOW() - ($1::int * INTERVAL '1 day')
         AND clicked_article_slug IS NULL
         AND normalized_term <> ''
+        AND normalized_term !~ '[0-9]{5,}'
+        AND normalized_term !~* '(deployment|verification|localhost|undefined|testid|playwright|selenium|cypress)'
         ${sourceFilter}
       GROUP BY normalized_term
       ORDER BY search_count DESC, last_searched_at DESC
@@ -36,7 +39,7 @@ export default async function handler(req, res) {
       success: true,
       days,
       source,
-      suggestions: result.rows.map((row) => ({
+      suggestions: filterPublicSearchRows(result.rows).slice(0, limit).map((row) => ({
         term: row.normalized_term,
         label: row.label,
         count: row.search_count

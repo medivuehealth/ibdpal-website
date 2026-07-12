@@ -38,6 +38,57 @@ export function normalizeTerm(value) {
     .slice(0, 80);
 }
 
+/** Stems used to catch truncated typed queries like "self manageme". */
+const COMPLETION_STEMS = [
+  'management', 'symptoms', 'diarrhea', 'abdominal', 'inflammation',
+  'nutrition', 'medication', 'medications', 'biologics', 'remission',
+  'constipation', 'fatigue', 'hydration', 'supplement', 'supplements',
+  'diagnosis', 'treatment', 'treatments', 'surgery', 'osteoporosis'
+];
+
+const JUNK_TERM_RE =
+  /\b(deployment|verification|localhost|undefined|null|testid|playwright|selenium|cypress|webpack|vercel|railway)\b/i;
+
+/** Off-topic medical noise that should not become homepage “cover next” ideas. */
+const OFFTOPIC_TERM_RE =
+  /\b(embolism|aneurysm|myocardial|infarction|fracture|concussion|appendectomy)\b/i;
+
+/**
+ * Keep homepage/search analytics free of bot, QA, ID, and truncated junk.
+ * Used on ingest and when surfacing top searches / content ideas.
+ */
+export function isPublicSearchTerm(value) {
+  const term = normalizeTerm(value);
+  if (!term || term.length < 3 || term.length > 60) return false;
+  if (!/[a-z]/i.test(term)) return false;
+  if (/\d{5,}/.test(term)) return false;
+  if (JUNK_TERM_RE.test(term)) return false;
+  if (OFFTOPIC_TERM_RE.test(term)) return false;
+
+  const letters = (term.match(/[a-z]/gi) || []).length;
+  const digits = (term.match(/\d/g) || []).length;
+  if (digits > 0 && digits >= letters) return false;
+
+  const words = term.split(/\s+/).filter(Boolean);
+  if (!words.length || words.length > 8) return false;
+  if (words.some((word) => word.length > 24)) return false;
+
+  // Truncated common education words ("manageme" -> management).
+  if (words.some((word) => (
+    word.length >= 5 &&
+    COMPLETION_STEMS.some((full) => full.startsWith(word) && word !== full)
+  ))) {
+    return false;
+  }
+
+  return true;
+}
+
+export function filterPublicSearchRows(rows, termKey = 'normalized_term') {
+  if (!Array.isArray(rows)) return [];
+  return rows.filter((row) => isPublicSearchTerm(row?.[termKey] || row?.term || row?.label));
+}
+
 export function cleanText(value, maxLength) {
   const text = String(value || '').trim();
   return text ? text.slice(0, maxLength) : null;

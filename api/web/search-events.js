@@ -1,4 +1,7 @@
-import { cleanText, db, json, methodNotAllowed, normalizeTerm, parseBody, slugFromUrl } from '../_web-db.js';
+import {
+  cleanText, db, isPublicSearchTerm, json, methodNotAllowed,
+  normalizeTerm, parseBody, slugFromUrl
+} from '../_web-db.js';
 
 const ALLOWED_SOURCES = new Set(['tools_lab', 'patient_library', 'homepage']);
 
@@ -23,6 +26,11 @@ export default async function handler(req, res) {
         success: false,
         error: 'Search term must be at least 2 characters.'
       });
+    }
+
+    // Soft-drop bot/QA/truncated junk so it never surfaces on the homepage.
+    if (!isPublicSearchTerm(normalizedTerm)) {
+      return json(res, 201, { success: true, ignored: true });
     }
 
     await db().query(
