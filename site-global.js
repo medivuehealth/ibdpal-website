@@ -692,6 +692,102 @@
     });
   }
 
+  var APP_STORE_URL = 'https://apps.apple.com/app/ibdpal';
+
+  function appNudgeCopy(pathname) {
+    var path = String(pathname || '').toLowerCase();
+    if (
+      path.indexOf('/flare-help') === 0 ||
+      path.indexOf('/ibd-red-flags') === 0 ||
+      /\/blog\/(when-to-go-er|when-to-call-gi|blood-in-stool|chronic-diarrhea|flare-first|ibd-flare)/.test(path)
+    ) {
+      return {
+        key: 'flare',
+        title: 'Track this flare for your clinic call',
+        text: 'Log stool counts, pain, fever, and bleeding notes in IBDPal so you can share a clear timeline with your GI team.'
+      };
+    }
+    if (
+      path.indexOf('/newly-diagnosed') === 0 ||
+      path.indexOf('/blog/newly-diagnosed') === 0 ||
+      path.indexOf('/visit-prep') === 0
+    ) {
+      return {
+        key: 'newdx',
+        title: 'Bring better notes to your first visits',
+        text: 'Use free IBDPal tracking for meals, symptoms, medications, and questions during your first month after diagnosis.'
+      };
+    }
+    if (
+      path.indexOf('/ibd-nutrition') === 0 ||
+      /\/blog\/(complete-ibd-nutrition|dairy|fodmap|fiber|hydration|low-residue|protein|gluten|micronutrients|iron-b12|best-foods|anti-inflammatory)/.test(path) ||
+      path.indexOf('/guides/') === 0 && /diet|food|nutrition|hydrate|residue|fodmap/.test(path)
+    ) {
+      return {
+        key: 'nutrition',
+        title: 'Log meals with the nutrients that matter',
+        text: 'IBDPal helps you track foods, micronutrients, and symptoms together so diet patterns are easier to discuss with your care team.'
+      };
+    }
+    if (path.indexOf('/blog/') === 0 || path.indexOf('/guides/') === 0) {
+      return {
+        key: 'article',
+        title: 'Turn reading into a useful visit log',
+        text: 'The free IBDPal iOS app tracks food, symptoms, and flare trends, then helps you export a summary for appointments.'
+      };
+    }
+    return null;
+  }
+
+  function buildAppNudge(copy) {
+    var el = document.createElement('aside');
+    el.className = 'app-nudge';
+    el.setAttribute('aria-label', 'Free IBDPal app');
+    el.setAttribute('data-app-nudge-context', copy.key);
+    el.innerHTML =
+      '<p class="app-nudge__eyebrow">Free iOS app</p>' +
+      '<p class="app-nudge__title">' + escapeHtml(copy.title) + '</p>' +
+      '<p class="app-nudge__text">' + escapeHtml(copy.text) + '</p>' +
+      '<div class="app-nudge__actions">' +
+        '<a href="' + APP_STORE_URL + '" class="app-nudge__primary" target="_blank" rel="noopener noreferrer" data-app-nudge="' + copy.key + '">Get the free app</a>' +
+        '<a href="/#download" class="app-nudge__secondary" data-app-nudge="' + copy.key + '-learn">See how it works</a>' +
+      '</div>';
+    return el;
+  }
+
+  function injectAppNudge() {
+    if (document.querySelector('.app-nudge')) return;
+    var path = window.location.pathname.replace(/\/+$/, '') || '/';
+    if (path === '/' || path === '/index.html') return;
+    if (path.indexOf('/amp') !== -1) return;
+    if (path.indexOf('/es/') === 0) return;
+
+    var copy = appNudgeCopy(path);
+    if (!copy) return;
+
+    var nudge = buildAppNudge(copy);
+    var blogContent = document.querySelector('.blog-content');
+    var related = document.querySelector('.seo-related-reading');
+    var article = document.querySelector('article.seo-landing, article.support-section, article.blog-post');
+    var main = document.querySelector('main.main-content');
+
+    if (blogContent && related) {
+      related.parentNode.insertBefore(nudge, related);
+      return;
+    }
+    if (blogContent) {
+      blogContent.appendChild(nudge);
+      return;
+    }
+    if (article) {
+      article.appendChild(nudge);
+      return;
+    }
+    if (main) {
+      main.appendChild(nudge);
+    }
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
     injectCrisisStrip();
     injectSiteReachMetrics();
@@ -702,6 +798,7 @@
     ensureRecipeIdeasNav();
     ensureNutritionTargetsNav();
     seasonalNewsletterHint();
+    injectAppNudge();
     loadTopSearches();
     loadTopContent();
     loadContentIdeas();
