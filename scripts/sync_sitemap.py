@@ -16,9 +16,9 @@ SKIP_ROOT_HTML = {
     "support.html",  # legacy stub; /support/index.html is canonical
 }
 
-# Hash-canonical or redirect-only URLs (not indexable standalone pages)
+# Non-canonical path aliases (served via rewrite from a differently named file)
 SKIP_URL_PATHS = {
-    "/privacy",  # 301 to /#privacy; canonical is fragment URL
+    "/privacy-app",  # canonical is /privacy/app
 }
 
 HUB_SLUGS = {
@@ -58,6 +58,8 @@ def path_to_url(rel: Path) -> str | None:
 
     if len(parts) == 1 and name.endswith(".html"):
         slug = name[:-5]
+        if slug == "privacy-app":
+            return "/privacy/app"
         return f"/{slug}"
 
     if len(parts) == 2 and parts[0] == "blogs" and name.endswith(".html"):
@@ -114,7 +116,7 @@ def priority_for(path: str) -> float:
         return 0.82
     if path in {"/about", "/impact", "/news", "/site-updates", "/resources", "/visit-prep", "/glossary"}:
         return 0.85
-    if path in {"/terms", "/executive-summary", "/contact", "/founder"}:
+    if path in {"/privacy", "/privacy/app", "/terms", "/executive-summary", "/contact", "/founder"}:
         return 0.55
     if path.startswith("/es/"):
         return 0.78
@@ -128,7 +130,7 @@ def changefreq_for(path: str) -> str:
         return "weekly"
     if path.startswith("/blog/") or path in {"/news", "/site-updates"}:
         return "monthly"
-    if path in {"/privacy", "/terms", "/executive-summary"}:
+    if path in {"/privacy", "/privacy/app", "/terms", "/executive-summary"}:
         return "yearly"
     return "monthly"
 

@@ -6,14 +6,17 @@
       "has": [{ "type": "host", "value": "ibdpal.org" }],
       "destination": "https://www.ibdpal.org/:path*",
       "permanent": true
-    },
-    {
-      "source": "/privacy",
-      "destination": "https://www.ibdpal.org/#privacy",
-      "permanent": true
     }
   ],
   "rewrites": [
+    {
+      "source": "/privacy",
+      "destination": "/privacy.html"
+    },
+    {
+      "source": "/privacy/app",
+      "destination": "/privacy-app.html"
+    },
     {
       "source": "/es/cuando-ir-urgencias-eii",
       "destination": "/es/cuando-ir-urgencias-eii.html"
