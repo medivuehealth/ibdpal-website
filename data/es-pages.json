@@ -19,6 +19,7 @@
       {"url": "/es/colitis-ulcerosa", "label": "Colitis ulcerosa"},
       {"url": "/es/adolescentes-escuela", "label": "Adolescentes y escuela"},
       {"url": "/es/brotes-eii", "label": "Ayuda en brotes"},
+      {"url": "/es/cuando-ir-urgencias-eii", "label": "Cuándo ir a urgencias"},
       {"url": "/es/preguntas-frecuentes", "label": "Preguntas frecuentes"}
     ],
     "other_links": [
@@ -124,7 +125,22 @@
       "intro": "Los brotes asustan, pero un plan ayuda. Estas guías cubren pasos tempranos que muchos pacientes comentan con su equipo de EII.",
       "keywords": ["brote EII", "qué hacer brote Crohn", "brote colitis"],
       "sections": [
-        {"heading": "Cuándo buscar atención urgente", "paragraphs": ["Sangrado abundante, dolor intenso, fiebre, deshidratación o abdomen rígido requieren evaluación médica pronta. Siga las instrucciones de su clínica."]}
+        {"heading": "Cuándo buscar atención urgente", "paragraphs": ["Sangrado abundante, dolor intenso, fiebre, deshidratación o abdomen rígido requieren evaluación médica pronta. Siga las instrucciones de su clínica.", "Lea también: <a href=\"/es/cuando-ir-urgencias-eii\">¿Cuándo ir a urgencias con EII?</a>"]}
+      ]
+    },
+    {
+      "slug": "cuando-ir-urgencias-eii",
+      "en_slug": "when-to-go-er-ibd",
+      "title": "¿Cuándo ir a urgencias con EII? | Crohn y colitis | IBDPal",
+      "description": "Síntomas urgentes en Crohn o colitis: dolor intenso, sangrado, fiebre, deshidratación. Solo educación, no sustituye a su clínica.",
+      "h1": "¿Cuándo ir a urgencias con EII?",
+      "intro": "Los brotes son frecuentes, pero algunos síntomas requieren evaluación de emergencia. Este resumen refleja señales de alerta que muchas clínicas mencionan. Siga primero las instrucciones de guardia de su gastroenterólogo.",
+      "keywords": ["urgencias EII", "cuándo ir emergencias Crohn", "sangrado colitis urgente"],
+      "sections": [
+        {"heading": "Llame al 911 o vaya a urgencias si", "list": ["Dolor abdominal intenso, especialmente con abdomen rígido", "Sangrado rectal abundante o mareo con sangrado", "Fiebre alta con empeoramiento del dolor", "Signos de deshidratación grave: poca orina, confusión, pulso rápido", "Vómitos persistentes e imposibilidad de retener líquidos"]},
+        {"heading": "Clínica el mismo día o urgencias leves", "paragraphs": ["Empeoramiento de urgencia, sangrado moderado o síntomas que coinciden con su plan de acción pueden requerir la línea de enfermería o urgencias si su equipo lo aprueba. Lleve lista de medicamentos y un registro breve de síntomas."]},
+        {"heading": "En urgencias, diga claramente", "paragraphs": ["Indique que tiene enfermedad de Crohn o colitis ulcerosa, liste biológicos y esteroides, y mencione cirugías previas u ostomía. Pida que contacten a su gastroenterólogo."]},
+        {"heading": "Recursos relacionados (inglés)", "paragraphs": ["Artículo completo en inglés: <a href=\"/blog/when-to-go-er-ibd\">When to go to the ER with IBD</a>. Hub de brotes: <a href=\"/es/brotes-eii\">Ayuda en brotes</a>."]}
       ]
     }
   ],

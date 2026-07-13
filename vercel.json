@@ -15,6 +15,62 @@
   ],
   "rewrites": [
     {
+      "source": "/es/cuando-ir-urgencias-eii",
+      "destination": "/es/cuando-ir-urgencias-eii.html"
+    },
+    {
+      "source": "/blog/when-to-call-gi-vs-er-ibd",
+      "destination": "/blogs/when-to-call-gi-vs-er-ibd.html"
+    },
+    {
+      "source": "/blog/chronic-diarrhea-ibd-causes",
+      "destination": "/blogs/chronic-diarrhea-ibd-causes.html"
+    },
+    {
+      "source": "/blog/blood-in-stool-ibd-when-to-worry",
+      "destination": "/blogs/blood-in-stool-ibd-when-to-worry.html"
+    },
+    {
+      "source": "/blog/newly-diagnosed-first-30-days",
+      "destination": "/blogs/newly-diagnosed-first-30-days.html"
+    },
+    {
+      "source": "/blog/vaccines-biologics-immunosuppressants-ibd",
+      "destination": "/blogs/vaccines-biologics-immunosuppressants-ibd.html"
+    },
+    {
+      "source": "/blog/prior-authorization-biologics-timeline",
+      "destination": "/blogs/prior-authorization-biologics-timeline.html"
+    },
+    {
+      "source": "/blog/starting-biologic-first-12-weeks",
+      "destination": "/blogs/starting-biologic-first-12-weeks.html"
+    },
+    {
+      "source": "/blog/entyvio-patient-guide-ibd",
+      "destination": "/blogs/entyvio-patient-guide-ibd.html"
+    },
+    {
+      "source": "/blog/complete-ibd-nutrition-guide",
+      "destination": "/blogs/complete-ibd-nutrition-guide.html"
+    },
+    {
+      "source": "/blog/ibd-unintentional-weight-changes",
+      "destination": "/blogs/ibd-unintentional-weight-changes.html"
+    },
+    {
+      "source": "/blog/ibd-care-outside-united-states",
+      "destination": "/blogs/ibd-care-outside-united-states.html"
+    },
+    {
+      "source": "/blog/ibd-at-work-talking-to-manager",
+      "destination": "/blogs/ibd-at-work-talking-to-manager.html"
+    },
+    {
+      "source": "/blog/dating-intimacy-ibd-adults",
+      "destination": "/blogs/dating-intimacy-ibd-adults.html"
+    },
+    {
       "source": "/blog/ibd-leg-knee-pain",
       "destination": "/blogs/ibd-leg-knee-pain.html"
     },
