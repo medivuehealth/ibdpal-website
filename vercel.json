@@ -10,6 +10,38 @@
   ],
   "rewrites": [
     {
+      "source": "/blog/constipation-ibd-causes",
+      "destination": "/blogs/constipation-ibd-causes.html"
+    },
+    {
+      "source": "/blog/steroid-taper-what-to-expect-ibd",
+      "destination": "/blogs/steroid-taper-what-to-expect-ibd.html"
+    },
+    {
+      "source": "/blog/swimming-pool-beach-ibd-ostomy",
+      "destination": "/blogs/swimming-pool-beach-ibd-ostomy.html"
+    },
+    {
+      "source": "/blog/uveitis-eye-inflammation-ibd",
+      "destination": "/blogs/uveitis-eye-inflammation-ibd.html"
+    },
+    {
+      "source": "/blog/humid-weather-ibd-symptoms",
+      "destination": "/blogs/humid-weather-ibd-symptoms.html"
+    },
+    {
+      "source": "/blog/anemia-iron-deficiency-ibd",
+      "destination": "/blogs/anemia-iron-deficiency-ibd.html"
+    },
+    {
+      "source": "/blog/reading-ibd-labs-calprotectin-crp",
+      "destination": "/blogs/reading-ibd-labs-calprotectin-crp.html"
+    },
+    {
+      "source": "/blog/pyoderma-erythema-nodosum-ibd",
+      "destination": "/blogs/pyoderma-erythema-nodosum-ibd.html"
+    },
+    {
       "source": "/privacy",
       "destination": "/privacy.html"
     },
