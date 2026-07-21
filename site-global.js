@@ -449,7 +449,8 @@
       maxInternationalMultiplier: (cfg && cfg.maxInternationalMultiplier) || 2.5,
       internationalCountriesStart: (cfg && cfg.internationalCountriesStart) || 9,
       internationalCountriesCap: (cfg && cfg.internationalCountriesCap) || 24,
-      internationalCountriesPace: (cfg && cfg.internationalCountriesPace) || 0.6
+      internationalCountriesPace: (cfg && cfg.internationalCountriesPace) || 0.6,
+      internationalCountriesVerified: (cfg && cfg.internationalCountriesVerified) || null
     };
   }
 
@@ -519,6 +520,10 @@
   }
 
   function countriesReached(days, cfg) {
+    var verified = Number(cfg.internationalCountriesVerified);
+    if (verified && verified > 0) {
+      return Math.round(verified);
+    }
     var start = Math.max(1, Number(cfg.internationalCountriesStart) || 9);
     var cap = Math.max(start, Number(cfg.internationalCountriesCap) || 24);
     var pace = Math.max(0, Number(cfg.internationalCountriesPace) || 0.6);

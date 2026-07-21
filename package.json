@@ -1,7 +1,8 @@
 {
   "private": true,
   "scripts": {
-    "migrate:web-analytics": "node scripts/run_web_analytics_migration.js"
+    "migrate:web-analytics": "node scripts/run_web_analytics_migration.js",
+    "indexnow": "node scripts/submit_indexnow.js --sitemap"
   },
   "dependencies": {
     "pg": "^8.11.3"

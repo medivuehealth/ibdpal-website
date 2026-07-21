@@ -16,6 +16,8 @@ Allow: /community-data.js
 Allow: /community-states-extra.js
 Allow: /resources-data.js
 Allow: /site-config.js
+# IndexNow ownership key (Bing / IndexNow partners)
+Allow: /a50b1f808a1d4c41b89fc4b35d46418a.txt
 
 # Search crawlers
 User-agent: Googlebot
@@ -28,6 +30,12 @@ User-agent: DuckDuckBot
 Allow: /
 
 User-agent: Applebot
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+User-agent: YandexBot
 Allow: /
 
 # AI / LLM crawlers — public education content welcome

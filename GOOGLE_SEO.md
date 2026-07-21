@@ -2,6 +2,8 @@
 
 Site technical SEO is implemented in HTML (meta tags, canonical URLs, Open Graph, JSON-LD) and `sitemap.xml`.
 
+**Also see:** [SEARCH_ENGINES.md](./SEARCH_ENGINES.md) for Bing Webmaster, IndexNow, Yandex, and sitemap submission outside Google.
+
 ## After each deploy
 
 1. **Google Search Console** | [search.google.com/search-console](https://search.google.com/search-console)
