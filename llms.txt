@@ -34,10 +34,12 @@
 - https://www.ibdpal.org/blog/alcohol-caffeine-ibd
 - https://www.ibdpal.org/blog/anemia-iron-deficiency-ibd
 - https://www.ibdpal.org/blog/anti-inflammatory-diet-ibd
+- https://www.ibdpal.org/blog/bathroom-urgency-anxiety-ibd
 - https://www.ibdpal.org/blog/best-foods-crohns-flare
 - https://www.ibdpal.org/blog/blood-in-stool-ibd-when-to-worry
 - https://www.ibdpal.org/blog/chronic-diarrhea-ibd-causes
 - https://www.ibdpal.org/blog/college-with-ibd
+- https://www.ibdpal.org/blog/colonoscopy-prep-ibd
 - https://www.ibdpal.org/blog/complete-ibd-nutrition-guide
 - https://www.ibdpal.org/blog/constipation-ibd-causes
 - https://www.ibdpal.org/blog/dairy-lactose-ibd
@@ -51,10 +53,12 @@
 - https://www.ibdpal.org/blog/fodmap-diet-crohns-colitis
 - https://www.ibdpal.org/blog/foods-that-may-trigger-uc-symptoms
 - https://www.ibdpal.org/blog/free-government-ibd-research-sources
+- https://www.ibdpal.org/blog/gas-bloating-ibd
 - https://www.ibdpal.org/blog/gluten-wheat-ibd
 - https://www.ibdpal.org/blog/high-school-ibd-survival-guide
 - https://www.ibdpal.org/blog/how-ibdpal-nutrition-targets-work
 - https://www.ibdpal.org/blog/how-nutrition-impacts-gut-health-ibd
+- https://www.ibdpal.org/blog/how-to-read-colonoscopy-report-ibd
 - https://www.ibdpal.org/blog/humid-weather-ibd-symptoms
 - https://www.ibdpal.org/blog/hydration-tips-ibd
 - https://www.ibdpal.org/blog/ibd-at-work-talking-to-manager
@@ -87,9 +91,12 @@
 - https://www.ibdpal.org/blog/low-residue-diet-flare
 - https://www.ibdpal.org/blog/mesalamine-5-asa-ibd
 - https://www.ibdpal.org/blog/micronutrients-ibd-deficiencies
+- https://www.ibdpal.org/blog/mucus-urgency-tenesmus-ibd
 - https://www.ibdpal.org/blog/newly-diagnosed-first-30-days
+- https://www.ibdpal.org/blog/nsaids-ibd-risk
 - https://www.ibdpal.org/blog/ostomy-basics-ibd
 - https://www.ibdpal.org/blog/partner-caregiver-ibd
+- https://www.ibdpal.org/blog/perianal-crohns-fistula-abscess
 - https://www.ibdpal.org/blog/prior-authorization-biologics-timeline
 - https://www.ibdpal.org/blog/probiotics-ibd-gut-health
 - https://www.ibdpal.org/blog/protein-meal-plan-ibd-remission
@@ -112,6 +119,7 @@
 - https://www.ibdpal.org/blog/understanding-biologics-ibd
 - https://www.ibdpal.org/blog/uveitis-eye-inflammation-ibd
 - https://www.ibdpal.org/blog/vaccines-biologics-immunosuppressants-ibd
+- https://www.ibdpal.org/blog/what-remission-means-ibd
 - https://www.ibdpal.org/blog/when-to-call-gi-vs-er-ibd
 - https://www.ibdpal.org/blog/when-to-call-ibd-help-center
 - https://www.ibdpal.org/blog/when-to-go-er-ibd

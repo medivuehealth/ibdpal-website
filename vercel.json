@@ -10,6 +10,38 @@
   ],
   "rewrites": [
     {
+      "source": "/blog/gas-bloating-ibd",
+      "destination": "/blogs/gas-bloating-ibd.html"
+    },
+    {
+      "source": "/blog/mucus-urgency-tenesmus-ibd",
+      "destination": "/blogs/mucus-urgency-tenesmus-ibd.html"
+    },
+    {
+      "source": "/blog/what-remission-means-ibd",
+      "destination": "/blogs/what-remission-means-ibd.html"
+    },
+    {
+      "source": "/blog/colonoscopy-prep-ibd",
+      "destination": "/blogs/colonoscopy-prep-ibd.html"
+    },
+    {
+      "source": "/blog/how-to-read-colonoscopy-report-ibd",
+      "destination": "/blogs/how-to-read-colonoscopy-report-ibd.html"
+    },
+    {
+      "source": "/blog/nsaids-ibd-risk",
+      "destination": "/blogs/nsaids-ibd-risk.html"
+    },
+    {
+      "source": "/blog/perianal-crohns-fistula-abscess",
+      "destination": "/blogs/perianal-crohns-fistula-abscess.html"
+    },
+    {
+      "source": "/blog/bathroom-urgency-anxiety-ibd",
+      "destination": "/blogs/bathroom-urgency-anxiety-ibd.html"
+    },
+    {
       "source": "/blog/constipation-ibd-causes",
       "destination": "/blogs/constipation-ibd-causes.html"
     },
