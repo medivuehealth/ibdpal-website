@@ -60,6 +60,7 @@ def load_topic_meta() -> dict[str, dict]:
     for path in (
         TOPIC_POSTS,
         ROOT / "data" / "seo-wellness-posts.json",
+        ROOT / "data" / "search-gap-posts.json",
     ):
         if not path.exists():
             continue

@@ -10,6 +10,10 @@
   ],
   "rewrites": [
     {
+      "source": "/blog/enteral-nutrition-ibd",
+      "destination": "/blogs/enteral-nutrition-ibd.html"
+    },
+    {
       "source": "/blog/gas-bloating-ibd",
       "destination": "/blogs/gas-bloating-ibd.html"
     },
