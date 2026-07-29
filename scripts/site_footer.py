@@ -7,6 +7,7 @@ SITE_FOOTER_STATIC = """
                     <a href="/#about" class="footer-link">About</a>
                     <a href="/#news" class="footer-link">News</a>
                     <a href="/#site-updates" class="footer-link">Site Updates</a>
+                    <a href="/insights" class="footer-link">Content Insights</a>
                     <a href="/contact" class="footer-link">Contact</a>
                     <a href="/library" class="footer-link">Content Library</a>
                     <a href="/impact" class="footer-link">Impact</a>
@@ -33,6 +34,7 @@ SITE_FOOTER_HOME = """
                     <a href="/#about" class="footer-link">About</a>
                     <a href="/#news" class="footer-link">News</a>
                     <a href="/#site-updates" class="footer-link">Site Updates</a>
+                    <a href="/insights" class="footer-link">Content Insights</a>
                     <a href="/contact" class="footer-link">Contact</a>
                     <a href="/library" class="footer-link">Content Library</a>
                     <a href="/impact" class="footer-link">Impact</a>
@@ -62,6 +64,7 @@ SITE_FOOTER_BLOG = """
                     <a href="/#about" class="footer-link">About</a>
                     <a href="/#news" class="footer-link">News</a>
                     <a href="/#site-updates" class="footer-link">Site Updates</a>
+                    <a href="/insights" class="footer-link">Content Insights</a>
                     <a href="/contact" class="footer-link">Contact</a>
                     <a href="/library" class="footer-link">Content Library</a>
                     <a href="/privacy" class="footer-link">Privacy Policy</a>

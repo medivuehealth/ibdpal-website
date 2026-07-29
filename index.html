@@ -91,15 +91,37 @@
                         <h2 id="top-searches-heading" data-top-searches-title>Readers are looking for</h2>
                         <p data-top-searches-note>Anonymous education searches from IBDPal readers.</p>
                         <div class="home-side-rail__links" data-top-searches-list></div>
+                        <div class="home-side-rail__section" data-continue-reading hidden>
+                            <p class="home-side-rail__eyebrow">On this device</p>
+                            <h2>Continue reading</h2>
+                            <p>Pages you opened recently on this browser.</p>
+                            <div class="home-side-rail__links" data-continue-list></div>
+                        </div>
+                        <div class="home-side-rail__section" data-seasonal-pack hidden>
+                            <p class="home-side-rail__eyebrow" data-seasonal-eyebrow>Seasonal</p>
+                            <h2 data-seasonal-title>Seasonal pack</h2>
+                            <p data-seasonal-note>Curated reads for this time of year.</p>
+                            <div class="home-side-rail__links" data-seasonal-list></div>
+                        </div>
                     </aside>
 
                     <div class="home-layout__main">
                         <section class="home-hero" aria-labelledby="start-here-heading">
                             <h1 id="start-here-heading" class="home-hero__title">What do you need today?</h1>
                             <p class="home-hero__lead">Free Crohn&rsquo;s &amp; colitis education &middot; not medical advice</p>
+                            <div class="home-search" data-home-search>
+                                <label class="home-search__label" for="homeTopicSearch">Search for a topic</label>
+                                <div class="home-search__row">
+                                    <svg class="home-search__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3-3"/></svg>
+                                    <input type="search" id="homeTopicSearch" class="home-search__input" placeholder="Try enteral, fatigue, biologics, flare…" autocomplete="off" aria-controls="homeSearchResults" aria-expanded="false">
+                                </div>
+                                <div class="home-search__suggestions search-suggestions" data-home-suggestions aria-label="Popular education searches" hidden></div>
+                                <div id="homeSearchResults" class="home-search__results" data-home-results hidden role="listbox" aria-label="Search results"></div>
+                                <p class="home-search__status" data-home-status hidden></p>
+                            </div>
                         </section>
                         <section class="start-route-card" aria-label="Choose a starting point">
-                            <p class="start-route-card__eyebrow">Start with one question</p>
+                            <p class="start-route-card__eyebrow">Or start with one question</p>
                             <h2>What are you dealing with today?</h2>
                             <div class="start-route-card__actions">
                                 <a href="/flare-help" data-start-route="flare">Flare symptoms</a>
@@ -181,6 +203,24 @@
                         <h2 id="top-content-heading" data-top-content-title>Most helpful this week</h2>
                         <p data-top-content-note>Articles and guides readers are opening most.</p>
                         <div class="home-side-rail__links" data-top-content-list></div>
+                        <div class="home-side-rail__section" data-new-week hidden>
+                            <p class="home-side-rail__eyebrow">Fresh</p>
+                            <h2>New this week</h2>
+                            <p>Articles published in the last 7 days.</p>
+                            <div class="home-side-rail__links" data-new-week-list></div>
+                        </div>
+                        <div class="home-side-rail__section" data-new-month hidden>
+                            <p class="home-side-rail__eyebrow">This month</p>
+                            <h2>New this month</h2>
+                            <p>Recently added education.</p>
+                            <div class="home-side-rail__links" data-new-month-list></div>
+                        </div>
+                        <div class="home-side-rail__section" data-gap-answers hidden>
+                            <p class="home-side-rail__eyebrow">From your searches</p>
+                            <h2>Just answered</h2>
+                            <p>New pages written for recent search gaps.</p>
+                            <div class="home-side-rail__links" data-gap-answers-list></div>
+                        </div>
                         <div class="home-side-rail__section" data-content-ideas hidden>
                             <p class="home-side-rail__eyebrow">From searches</p>
                             <h2>Topics we may cover next</h2>
@@ -1856,6 +1896,9 @@
     <script src="/community-map.js" defer></script>
     <script src="/site-config.js" defer></script>
     <script src="/resources-data.js" defer></script>
+    <script src="/home-engagement-data.js" defer></script>
+    <script src="/home-engagement.js" defer></script>
+    <script src="/home-search.js" defer></script>
     <script src="/resource-library.js" defer></script>
     <script src="/tools-lab.js" defer></script>
     <script src="/recipe-lab.js" defer></script>

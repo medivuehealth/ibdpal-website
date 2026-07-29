@@ -201,6 +201,13 @@ def main() -> None:
     OUT.write_text("\n".join(lines), encoding="utf-8")
     print(f"wrote {OUT.name} ({len(entries)} entries, {len(posts)} blogs)")
 
+    try:
+        from generate_home_engagement_data import main as gen_home_engagement
+
+        gen_home_engagement()
+    except Exception as exc:  # noqa: BLE001
+        print("WARN: home engagement data not refreshed:", exc)
+
 
 if __name__ == "__main__":
     main()

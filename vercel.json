@@ -426,6 +426,10 @@
       "destination": "/site-updates.html"
     },
     {
+      "source": "/insights",
+      "destination": "/insights.html"
+    },
+    {
       "source": "/ibd-crohns-support",
       "destination": "/ibd-crohns-support.html"
     },

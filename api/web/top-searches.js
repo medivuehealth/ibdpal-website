@@ -7,7 +7,7 @@ export default async function handler(req, res) {
 
   try {
     const days = Math.max(1, Math.min(parseInt(req.query.days, 10) || 7, 90));
-    const limit = Math.max(1, Math.min(parseInt(req.query.limit, 10) || 6, 12));
+    const limit = Math.max(1, Math.min(parseInt(req.query.limit, 10) || 6, 25));
     const minCount = Math.max(1, Math.min(parseInt(req.query.minCount, 10) || 3, 25));
     const fetchLimit = Math.min(Math.max(limit * 4, 12), 40);
 

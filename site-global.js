@@ -240,6 +240,13 @@
       eventType: 'view',
       referrerPath: document.referrer ? new URL(document.referrer, window.location.origin).pathname : ''
     });
+    if (window.IBDPAL_ENGAGEMENT && window.IBDPAL_ENGAGEMENT.rememberPage) {
+      var title =
+        document.querySelector('.blog-title') && document.querySelector('.blog-title').textContent ||
+        document.querySelector('h1') && document.querySelector('h1').textContent ||
+        document.title;
+      window.IBDPAL_ENGAGEMENT.rememberPage(pathname, String(title || pathname).trim());
+    }
   }
 
   function sourceFromLink(anchor) {
@@ -793,6 +800,42 @@
     }
   }
 
+  function injectInboundSearchNote() {
+    var path = window.location.pathname || '';
+    if (path.indexOf('/blog/') !== 0) return;
+    var slug = contentSlugFromPath(path);
+    if (!slug) return;
+    var related = document.querySelector('.seo-related-reading');
+    var blogContent = document.querySelector('.blog-content');
+    if (!related && !blogContent) return;
+
+    window.fetch(WEB_API_BASE + '/search-related?term=' + encodeURIComponent(slug.replace(/-/g, ' ')) + '&slug=' + encodeURIComponent(slug) + '&days=90&limit=5')
+      .then(function (response) {
+        if (!response.ok) throw new Error('inbound unavailable');
+        return response.json();
+      })
+      .then(function (payload) {
+        var terms = (payload && payload.inboundSearches) || [];
+        if (!terms.length) return;
+        var box = document.createElement('section');
+        box.className = 'seo-related-reading inbound-search-note';
+        box.setAttribute('aria-label', 'Searches that led here');
+        box.innerHTML =
+          '<h2>Readers found this after searching</h2>' +
+          '<ul class="seo-landing__list">' +
+          terms.map(function (item) {
+            return '<li><strong>' + escapeHtml(item.label || item.term) + '</strong></li>';
+          }).join('') +
+          '</ul>';
+        if (related && related.parentNode) {
+          related.parentNode.insertBefore(box, related);
+        } else if (blogContent) {
+          blogContent.appendChild(box);
+        }
+      })
+      .catch(function () {});
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
     injectCrisisStrip();
     injectSiteReachMetrics();
@@ -804,6 +847,7 @@
     ensureNutritionTargetsNav();
     seasonalNewsletterHint();
     injectAppNudge();
+    injectInboundSearchNote();
     loadTopSearches();
     loadTopContent();
     loadContentIdeas();

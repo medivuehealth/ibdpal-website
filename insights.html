@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#FFE5DC">
+    <script src="/canonical-host.js"></script>
+    <title>Content Insights | IBDPal</title>
+    <meta name="description" content="Anonymous on-site search and reading insights used to prioritize IBDPal patient education articles.">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="author" content="MediVue">
+    <link rel="canonical" href="https://www.ibdpal.org/insights">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ibdpal.org/insights">
+    <meta property="og:title" content="Content Insights | IBDPal">
+    <meta property="og:description" content="Anonymous on-site search and reading insights used to prioritize IBDPal patient education articles.">
+    <meta property="og:site_name" content="IBDPal">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/site-layout-icn.css">
+    <link rel="stylesheet" href="/site-polish.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" href="/IBDPal_Logo.png">
+    <link rel="apple-touch-icon" href="/IBDPal_Logo.png">
+</head>
+<body>
+    <div class="container">
+
+        <header class="header">
+            <div class="header__inner">
+                <div class="logo">
+                    <a href="/" class="logo-brand" aria-label="IBDPal home">
+                        <img src="/IBDPal_Logo.png" alt="" class="logo-img" width="52" height="52" decoding="async">
+                    </a>
+                    <div class="logo-text">
+                        <p class="logo-name"><a href="/">IBDPal</a></p>
+                        <p class="tagline">Empowering IBD Patients</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <nav class="tab-navigation" aria-label="Main">
+            <div class="tab-container">
+                <a href="https://www.ibdpal.org/" class="tab-button" data-tab="home">Home</a>
+                <a href="https://www.ibdpal.org/#guides" class="tab-button" data-tab="library">Patient Library</a>
+                <a href="https://www.ibdpal.org/#tools-lab" class="tab-button" data-tab="tools-lab">Tools Lab</a>
+                <a href="https://www.ibdpal.org/#recipe-ideas" class="tab-button" data-tab="recipe-ideas">Recipe Ideas</a>
+                <a href="https://www.ibdpal.org/#nutrition-targets" class="tab-button" data-tab="nutrition-targets">Nutrients</a>
+                <a href="https://www.ibdpal.org/#download" class="tab-button" data-tab="app">IBDPal App</a>
+                <a href="https://www.ibdpal.org/#community" class="tab-button" data-tab="community">Support</a>
+                <a href="https://www.ibdpal.org/#news" class="tab-button" data-tab="news">News</a>
+                <a href="https://www.ibdpal.org/#about" class="tab-button" data-tab="about">About</a>
+            </div>
+        </nav>
+
+        <main class="main-content" id="main-content">
+            <article class="support-section seo-landing tab-page-section tab-page-section--compact insights-page">
+                <header class="page-header-compact">
+                    <h1 class="page-header-compact__title">Content insights</h1>
+                    <p class="page-header-compact__lead">Live anonymous signals from Tools Lab and Patient Library searches, plus article and guide views. Use this to decide what to write next.</p>
+                </header>
+
+                <section class="seo-landing__block insights-toolbar" aria-label="Time range">
+                    <p class="insights-toolbar__note">Data is aggregate only. No names, emails, or patient health records.</p>
+                    <div class="insights-range" role="group" aria-label="Lookback window">
+                        <button type="button" class="insights-range__btn" data-days="7">7 days</button>
+                        <button type="button" class="insights-range__btn is-active" data-days="30">30 days</button>
+                        <button type="button" class="insights-range__btn" data-days="90">90 days</button>
+                        <button type="button" class="insights-range__btn insights-range__btn--refresh" data-insights-refresh>Refresh</button>
+                    </div>
+                    <p class="insights-status" data-insights-status>Loading live insights…</p>
+                </section>
+
+                <section class="seo-landing__block" aria-labelledby="insights-brief-heading">
+                    <h2 id="insights-brief-heading">Weekly content brief</h2>
+                    <p>Snapshot for publishing decisions: volume, hard gaps (0 results), and what people opened.</p>
+                    <div class="insights-brief-summary" data-insights-brief-summary></div>
+                    <div class="insights-grid">
+                        <div>
+                            <h3>Hard gaps (0 results)</h3>
+                            <div class="insights-table-wrap">
+                                <table class="insights-table" data-insights-hard-gaps>
+                                    <thead>
+                                        <tr><th scope="col">Term</th><th scope="col">Searches</th></tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div>
+                            <h3>Brief top searches</h3>
+                            <div class="insights-table-wrap">
+                                <table class="insights-table" data-insights-brief-searches>
+                                    <thead>
+                                        <tr><th scope="col">Term</th><th scope="col">Searches</th></tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="seo-landing__block" aria-labelledby="insights-gaps-heading">
+                    <h2 id="insights-gaps-heading">Write next (search gaps)</h2>
+                    <p>Terms readers searched where the library returned few matches. Highest priority for new articles or keyword coverage.</p>
+                    <div class="insights-table-wrap">
+                        <table class="insights-table" data-insights-gaps>
+                            <thead>
+                                <tr><th scope="col">Term</th><th scope="col">Searches</th><th scope="col">Avg results</th></tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section class="seo-landing__block" aria-labelledby="insights-searches-heading">
+                    <h2 id="insights-searches-heading">Top searches</h2>
+                    <p>Most frequent education searches in the selected window (after junk filters).</p>
+                    <div class="insights-table-wrap">
+                        <table class="insights-table" data-insights-searches>
+                            <thead>
+                                <tr><th scope="col">Term</th><th scope="col">Searches</th></tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section class="seo-landing__block" aria-labelledby="insights-ideas-heading">
+                    <h2 id="insights-ideas-heading">Content ideas</h2>
+                    <p>Suggested article angles ranked from search volume and thin results.</p>
+                    <ul class="seo-landing__list" data-insights-ideas></ul>
+                </section>
+
+                <div class="insights-grid">
+                    <section class="seo-landing__block" aria-labelledby="insights-views-heading">
+                        <h2 id="insights-views-heading">Most viewed</h2>
+                        <p>Pages readers opened most often.</p>
+                        <div class="insights-table-wrap">
+                            <table class="insights-table" data-insights-views>
+                                <thead>
+                                    <tr><th scope="col">Page</th><th scope="col">Views</th></tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                    </section>
+                    <section class="seo-landing__block" aria-labelledby="insights-clicks-heading">
+                        <h2 id="insights-clicks-heading">Most clicked</h2>
+                        <p>Links readers clicked from search and related lists.</p>
+                        <div class="insights-table-wrap">
+                            <table class="insights-table" data-insights-clicks>
+                                <thead>
+                                    <tr><th scope="col">Page</th><th scope="col">Clicks</th></tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                    </section>
+                </div>
+
+                <section class="seo-landing__block">
+                    <h2>How this feeds content</h2>
+                    <ul class="seo-landing__list">
+                        <li>Search events land in Postgres (<code>ibdpal_web_search_events</code>), not a local file cache.</li>
+                        <li>Page views and clicks land in <code>ibdpal_web_content_events</code>.</li>
+                        <li>Gap terms with low result counts should become articles or keyword aliases (example: Enteral / Entereal).</li>
+                        <li>Also useful: Vercel Web Analytics for traffic geography; this page is for <em>intent</em>.</li>
+                    </ul>
+                    <p><a href="/site-updates">Site updates</a> · <a href="/about">About</a> · <a href="/library">Content library</a></p>
+                </section>
+            </article>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="/#about" class="footer-link">About</a>
+                    <a href="/#news" class="footer-link">News</a>
+                    <a href="/#site-updates" class="footer-link">Site Updates</a>
+                    <a href="/insights" class="footer-link">Content Insights</a>
+                    <a href="/contact" class="footer-link">Contact</a>
+                    <a href="/library" class="footer-link">Content Library</a>
+                    <a href="/impact" class="footer-link">Impact</a>
+                    <a href="/privacy" class="footer-link">Privacy Policy</a>
+                    <a href="/terms" class="footer-link">Terms of Service</a>
+                </div>
+                <p><strong>IBDPal</strong> · MediVue nonprofit · Education only, not medical advice.</p>
+                <p>&copy; 2026 MediVue. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="/site-config.js"></script>
+    <script src="/site-global.js" defer></script>
+    <script src="/insights.js" defer></script>
+    <script src="/analytics-config.js"></script>
+    <script src="/analytics.js" defer></script>
+</body>
+</html>

@@ -6,6 +6,7 @@
 User-agent: *
 Allow: /
 Disallow: /api/
+Disallow: /insights
 Disallow: /_next/
 Disallow: /.vercel/
 Disallow: /scripts/

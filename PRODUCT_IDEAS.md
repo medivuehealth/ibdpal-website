@@ -4,6 +4,12 @@
 
 ## Database and Usage Analytics Notes
 
+### Content Insights dashboard
+- Live ops page: `/insights` (noindex; also disallowed in robots.txt).
+- Pulls anonymous aggregates from `/api/web/search-gaps`, `/top-searches`, `/content-ideas`, `/top-content`, and `/content-brief`.
+- Use **Hard gaps (0 results)** and **Write next** as the primary queues for new articles.
+- Homepage engagement loop: home search (`source=homepage`), new this week/month, seasonal packs, continue reading (localStorage), gap-answer badges, did-you-mean aliases, related-after-search.
+
 ### Website Tools Lab Search Analytics
 - Railway/Postgres table created and verified on June 22, 2026: `ibdpal_web_search_events`.
 - Search table verified indexes:

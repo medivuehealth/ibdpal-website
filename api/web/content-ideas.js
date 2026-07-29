@@ -13,7 +13,7 @@ export default async function handler(req, res) {
 
   try {
     const days = Math.max(1, Math.min(parseInt(req.query.days, 10) || 30, 90));
-    const limit = Math.max(1, Math.min(parseInt(req.query.limit, 10) || 5, 10));
+    const limit = Math.max(1, Math.min(parseInt(req.query.limit, 10) || 5, 25));
     // Over-fetch so junk filters still leave enough education-gap ideas.
     const fetchLimit = Math.min(Math.max(limit * 4, 12), 40);
 
