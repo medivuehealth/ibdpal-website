@@ -99,19 +99,26 @@
 
   function matchesQuery(hay, q) {
     if (!q) return true;
-    if (hay.indexOf(q) !== -1) return true;
-    var tokens = q.split(/\s+/).filter(function (t) {
-      return t.length > 0;
-    });
-    if (!tokens.length) return true;
-    var words = hay.split(/[^a-z0-9]+/).filter(Boolean);
-    return tokens.every(function (tok) {
-      if (hay.indexOf(tok) !== -1) return true;
-      for (var i = 0; i < words.length; i++) {
-        var w = words[i];
-        if (w.indexOf(tok) === 0 || tok.indexOf(w) === 0) return true;
-      }
-      return false;
+    var variants = [q];
+    if (window.IBDPAL_SEARCH_FUZZY && window.IBDPAL_SEARCH_FUZZY.expandQuery) {
+      variants = window.IBDPAL_SEARCH_FUZZY.expandQuery(q);
+    }
+    return variants.some(function (variant) {
+      if (!variant) return false;
+      if (hay.indexOf(variant) !== -1) return true;
+      var tokens = variant.split(/\s+/).filter(function (t) {
+        return t.length > 0;
+      });
+      if (!tokens.length) return true;
+      var words = hay.split(/[^a-z0-9]+/).filter(Boolean);
+      return tokens.every(function (tok) {
+        if (hay.indexOf(tok) !== -1) return true;
+        for (var i = 0; i < words.length; i++) {
+          var w = words[i];
+          if (w.indexOf(tok) === 0 || tok.indexOf(w) === 0) return true;
+        }
+        return false;
+      });
     });
   }
 

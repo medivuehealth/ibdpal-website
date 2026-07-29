@@ -113,8 +113,9 @@
                                 <label class="home-search__label" for="homeTopicSearch">Search for a topic</label>
                                 <div class="home-search__row">
                                     <svg class="home-search__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3-3"/></svg>
-                                    <input type="search" id="homeTopicSearch" class="home-search__input" placeholder="Try enteral, fatigue, biologics, flare…" autocomplete="off" aria-controls="homeSearchResults" aria-expanded="false">
+                                    <input type="search" id="homeTopicSearch" class="home-search__input" placeholder="Try enteral, fatigue, biologics, flare…" autocomplete="off" aria-controls="homeSearchAutocomplete homeSearchResults" aria-expanded="false" aria-autocomplete="list">
                                 </div>
+                                <div id="homeSearchAutocomplete" class="home-search__autocomplete" data-home-autocomplete hidden role="listbox" aria-label="Spelling and autocomplete suggestions"></div>
                                 <div class="home-search__suggestions search-suggestions" data-home-suggestions aria-label="Popular education searches" hidden></div>
                                 <div id="homeSearchResults" class="home-search__results" data-home-results hidden role="listbox" aria-label="Search results"></div>
                                 <p class="home-search__status" data-home-status hidden></p>
@@ -1898,6 +1899,7 @@
     <script src="/resources-data.js" defer></script>
     <script src="/home-engagement-data.js" defer></script>
     <script src="/home-engagement.js" defer></script>
+    <script src="/search-fuzzy.js" defer></script>
     <script src="/home-search.js" defer></script>
     <script src="/resource-library.js" defer></script>
     <script src="/tools-lab.js" defer></script>
