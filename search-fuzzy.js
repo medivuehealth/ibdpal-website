@@ -109,12 +109,13 @@
 
   function resolveAlias(query) {
     var q = normalize(query);
-    var eng = window.IBDPAL_HOME_ENGAGEMENT;
-    if (eng && typeof eng.suggestAlias === 'function') {
-      var viaFn = eng.suggestAlias(q);
-      if (viaFn && viaFn !== q) return viaFn;
+    var api = window.IBDPAL_ENGAGEMENT;
+    if (api && typeof api.suggestAlias === 'function') {
+      var viaFn = api.suggestAlias(q);
+      if (viaFn && normalize(viaFn) !== q) return normalize(viaFn);
     }
-    if (eng && eng.aliases && eng.aliases[q] && eng.aliases[q] !== q) {
+    var eng = window.IBDPAL_HOME_ENGAGEMENT;
+    if (eng && eng.aliases && eng.aliases[q] && normalize(eng.aliases[q]) !== q) {
       return normalize(eng.aliases[q]);
     }
     return null;
@@ -213,6 +214,7 @@
     completions: completions,
     bestCorrection: bestCorrection,
     expandQuery: expandQuery,
+    resolveAlias: resolveAlias,
     invalidate: invalidate,
     normalize: normalize
   };

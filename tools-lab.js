@@ -18,7 +18,11 @@
     'crohn\'s disease': ['crohn', 'crohn\'s disease', 'flare', 'nutrition', 'treatment'],
     crohn: ['crohn', 'crohn\'s disease', 'flare', 'nutrition', 'treatment'],
     'ulcerative colitis': ['ulcerative colitis', 'colitis', 'uc', 'flare', 'blood', 'urgency'],
-    colitis: ['ulcerative colitis', 'colitis', 'uc', 'flare', 'blood', 'urgency']
+    colitis: ['ulcerative colitis', 'colitis', 'uc', 'flare', 'blood', 'urgency'],
+    biologo: ['biologics', 'biologic', 'humira', 'remicade', 'entyvio', 'infusion'],
+    biologics: ['biologics', 'biologic', 'humira', 'remicade', 'entyvio', 'infusion', 'biosimilar'],
+    enteral: ['enteral', 'een', 'entereal', 'formula', 'tube feeding', 'nutrition'],
+    'flare symptoms': ['flare', 'flare symptoms', 'urgency', 'bleeding', 'diarrhea', 'abdominal pain']
   };
   var RELATED_FALLBACKS = {
     fatigue: [
@@ -126,6 +130,13 @@
   function recordSearchEvent(payload) {
     var term = String(payload.term || '').trim();
     var normalizedTerm = normalizeTerm(payload.normalizedTerm || term);
+    if (window.IBDPAL_SEARCH_FUZZY && window.IBDPAL_SEARCH_FUZZY.resolveAlias) {
+      var aliased = window.IBDPAL_SEARCH_FUZZY.resolveAlias(normalizedTerm);
+      if (aliased) normalizedTerm = aliased;
+    } else if (window.IBDPAL_ENGAGEMENT && window.IBDPAL_ENGAGEMENT.suggestAlias) {
+      var viaEng = window.IBDPAL_ENGAGEMENT.suggestAlias(normalizedTerm);
+      if (viaEng) normalizedTerm = normalizeTerm(viaEng);
+    }
     if (normalizedTerm.length < 2) return;
 
     window.fetch(WEB_API_BASE + '/search-events', {

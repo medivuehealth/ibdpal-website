@@ -33,6 +33,21 @@
     return String(value || '').toLowerCase().replace(/[^\w\s'-]/g, ' ').replace(/\s+/g, ' ').trim();
   }
 
+  /** Canonical keyword for analytics (typos → biologics / enteral / etc.). */
+  function canonicalTerm(term) {
+    var n = normalizeTerm(term);
+    if (!n) return n;
+    if (window.IBDPAL_SEARCH_FUZZY && window.IBDPAL_SEARCH_FUZZY.resolveAlias) {
+      var viaFuzzy = window.IBDPAL_SEARCH_FUZZY.resolveAlias(n);
+      if (viaFuzzy && viaFuzzy !== n) return viaFuzzy;
+    }
+    if (window.IBDPAL_ENGAGEMENT && window.IBDPAL_ENGAGEMENT.suggestAlias) {
+      var viaEng = window.IBDPAL_ENGAGEMENT.suggestAlias(n);
+      if (viaEng && normalizeTerm(viaEng) !== n) return normalizeTerm(viaEng);
+    }
+    return n;
+  }
+
   function debounce(fn, delay) {
     var timer = null;
     return function () {
@@ -63,6 +78,21 @@
     var score = 0;
     if (title.indexOf(q) !== -1) score += 12;
     if (hay.indexOf(q) !== -1) score += 6;
+    // Exact keyword / tag hits (e.g. "enteral") rank above loose contains.
+    var keywords = item.keywords || [];
+    var tags = item.tags || [];
+    for (var i = 0; i < keywords.length; i++) {
+      if (normalizeTerm(keywords[i]) === q) {
+        score += 14;
+        break;
+      }
+    }
+    for (var j = 0; j < tags.length; j++) {
+      if (normalizeTerm(tags[j]) === q) {
+        score += 10;
+        break;
+      }
+    }
     var tokens = q.split(/\s+/).filter(Boolean);
     tokens.forEach(function (tok) {
       if (title.indexOf(tok) !== -1) score += 4;
@@ -91,7 +121,7 @@
   }
 
   function recordSearchEvent(term, resultCount, clickedUrl) {
-    var normalizedTerm = normalizeTerm(term);
+    var normalizedTerm = canonicalTerm(term);
     if (normalizedTerm.length < 2) return;
     window.fetch(WEB_API_BASE + '/search-events', {
       method: 'POST',

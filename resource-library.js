@@ -74,8 +74,22 @@
     return String(value || '').toLowerCase().replace(/[^\w\s'-]/g, ' ').replace(/\s+/g, ' ').trim();
   }
 
+  function canonicalTerm(term) {
+    var n = normalizeTerm(term);
+    if (!n) return n;
+    if (window.IBDPAL_SEARCH_FUZZY && window.IBDPAL_SEARCH_FUZZY.resolveAlias) {
+      var viaFuzzy = window.IBDPAL_SEARCH_FUZZY.resolveAlias(n);
+      if (viaFuzzy && viaFuzzy !== n) return viaFuzzy;
+    }
+    if (window.IBDPAL_ENGAGEMENT && window.IBDPAL_ENGAGEMENT.suggestAlias) {
+      var viaEng = window.IBDPAL_ENGAGEMENT.suggestAlias(n);
+      if (viaEng && normalizeTerm(viaEng) !== n) return normalizeTerm(viaEng);
+    }
+    return n;
+  }
+
   function recordSearchEvent(term, resultCount) {
-    var normalizedTerm = normalizeTerm(term);
+    var normalizedTerm = canonicalTerm(term);
     if (normalizedTerm.length < 2) return;
 
     window.fetch(WEB_API_BASE + '/search-events', {

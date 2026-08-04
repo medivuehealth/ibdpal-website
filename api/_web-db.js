@@ -1,3 +1,6 @@
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
 import pg from 'pg';
 
 const { Pool } = pg;
@@ -36,6 +39,35 @@ export function normalizeTerm(value) {
     .replace(/\s+/g, ' ')
     .trim()
     .slice(0, 80);
+}
+
+/** Curated typo → canonical map (data/search-aliases.json). */
+let _searchAliases = null;
+
+export function loadSearchAliases() {
+  if (_searchAliases) return _searchAliases;
+  try {
+    const root = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
+    const raw = fs.readFileSync(path.join(root, 'data', 'search-aliases.json'), 'utf8');
+    _searchAliases = JSON.parse(raw) || {};
+  } catch {
+    _searchAliases = {};
+  }
+  return _searchAliases;
+}
+
+/**
+ * Resolve a typed/misspelled search term to its canonical education keyword
+ * BEFORE analytics insert, so gaps do not treat typos as missing content.
+ */
+export function resolveSearchAlias(term) {
+  const normalized = normalizeTerm(term);
+  if (!normalized) return normalized;
+  const aliases = loadSearchAliases();
+  if (aliases[normalized]) {
+    return normalizeTerm(aliases[normalized]);
+  }
+  return normalized;
 }
 
 /** Stems used to catch truncated typed queries like "self manageme". */

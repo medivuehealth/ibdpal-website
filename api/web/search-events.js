@@ -1,6 +1,6 @@
 import {
   cleanText, db, isPublicSearchTerm, json, methodNotAllowed,
-  normalizeTerm, parseBody, slugFromUrl
+  normalizeTerm, parseBody, resolveSearchAlias, slugFromUrl
 } from '../_web-db.js';
 
 const ALLOWED_SOURCES = new Set(['tools_lab', 'patient_library', 'homepage']);
@@ -13,13 +13,17 @@ export default async function handler(req, res) {
   try {
     const body = parseBody(req);
     const term = cleanText(body.term, 120);
-    const normalizedTerm = normalizeTerm(body.normalizedTerm || term);
+    // Canonicalize typos (biologo → biologics) before insert so hard-gap
+    // reports measure real content gaps, not spelling mistakes.
+    const rawNormalized = normalizeTerm(body.normalizedTerm || term);
+    const normalizedTerm = resolveSearchAlias(rawNormalized);
     const source = ALLOWED_SOURCES.has(body.source) ? body.source : 'tools_lab';
     const resultCount = Number.isFinite(Number(body.resultCount))
       ? Math.max(0, Math.min(Number(body.resultCount), 100))
       : 0;
     const clickedArticleUrl = cleanText(body.clickedArticleUrl, 240);
-    const clickedArticleSlug = cleanText(body.clickedArticleSlug, 120) || slugFromUrl(clickedArticleUrl);
+    const clickedArticleSlug = cleanText(body.clickedArticleSlug, 120)
+      || slugFromUrl(clickedArticleUrl);
 
     if (!term || normalizedTerm.length < 2) {
       return json(res, 400, {
@@ -45,7 +49,11 @@ export default async function handler(req, res) {
       [term, normalizedTerm, source, resultCount, clickedArticleSlug, clickedArticleUrl]
     );
 
-    return json(res, 201, { success: true });
+    return json(res, 201, {
+      success: true,
+      normalizedTerm,
+      aliased: normalizedTerm !== rawNormalized
+    });
   } catch (error) {
     console.error('search-events error', error);
     return json(res, 500, {

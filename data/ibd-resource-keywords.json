@@ -24,5 +24,39 @@
   "ibd-joint-pain-arthritis": ["joint pain", "arthritis", "joints", "knee", "ankle", "back pain", "sacroiliitis", "extraintestinal", "swelling"],
   "ibd-leg-knee-pain": ["leg pain", "knee pain", "leg", "knee", "leg ache", "thigh pain", "calf pain", "extraintestinal", "peripheral arthritis"],
   "ibd-night-sweats": ["night sweats", "sweating", "fever", "chills", "temperature", "flare", "infection"],
-  "enteral-nutrition-ibd": ["enteral", "entereal", "een", "exclusive enteral nutrition", "enteral nutrition", "formula feeding", "tube feeding", "PEN", "sip feeds", "nutrition"]
+  "enteral-nutrition-ibd": [
+    "enteral",
+    "entereal",
+    "een",
+    "exclusive enteral nutrition",
+    "enteral nutrition",
+    "formula feeding",
+    "tube feeding",
+    "nasogastric",
+    "NG tube",
+    "PEN",
+    "partial enteral",
+    "sip feeds",
+    "polymeric formula",
+    "elemental formula",
+    "Modulen",
+    "Peptamen",
+    "nutrition"
+  ],
+  "flare-symptoms-ibd": [
+    "flare symptoms",
+    "flare",
+    "IBD flare symptoms",
+    "Crohn flare symptoms",
+    "colitis flare symptoms",
+    "symptoms of a flare",
+    "flare signs",
+    "urgency",
+    "bleeding",
+    "diarrhea",
+    "abdominal pain",
+    "night stools",
+    "mucus",
+    "weight loss"
+  ]
 }

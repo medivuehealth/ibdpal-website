@@ -70,6 +70,7 @@ SLUG_TOPIC_WORDS = {
     "hydration": "IBD hydration, Crohn's fluids, colitis electrolytes",
     "fiber": "IBD fiber, Crohn's low residue, colitis diet",
     "enteral": "enteral nutrition, EEN, exclusive enteral nutrition, entereal, Crohn's formula feeding",
+    "symptoms": "IBD flare symptoms, Crohn's flare signs, colitis symptoms education",
 }
 
 
