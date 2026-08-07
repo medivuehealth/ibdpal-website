@@ -1,6 +1,6 @@
 import {
   db, filterPublicSearchRows, json, methodNotAllowed, normalizeTerm
-} from '../../lib/web-db.js';
+} from '../_lib/web-db.js';
 
 const ALLOWED_SOURCES = new Set(['tools_lab', 'patient_library', 'homepage']);
 

@@ -1,4 +1,4 @@
-import { cleanText, contentTypeFromUrl, db, json, methodNotAllowed, parseBody, pathFromUrl, slugFromUrl } from '../../lib/web-db.js';
+import { cleanText, contentTypeFromUrl, db, json, methodNotAllowed, parseBody, pathFromUrl, slugFromUrl } from '../_lib/web-db.js';
 
 const ALLOWED_SOURCES = new Set(['direct', 'tools_lab', 'patient_library', 'articles_tab', 'research_tab', 'homepage', 'site_nav']);
 const ALLOWED_EVENTS = new Set(['view', 'click']);

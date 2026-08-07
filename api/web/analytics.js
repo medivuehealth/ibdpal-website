@@ -1,4 +1,4 @@
-import { db, filterPublicSearchRows, json, methodNotAllowed } from '../../lib/web-db.js';
+import { db, filterPublicSearchRows, json, methodNotAllowed } from '../_lib/web-db.js';
 
 /**
  * Shared Hobby-plan function for read-only insights analytics.
