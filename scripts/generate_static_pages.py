@@ -305,13 +305,13 @@ PAGES = {
         """,
     ),
     "crohns-colitis-foundation-resources.html": (
-        "Crohn's & Colitis Foundation Resources | IBDPal",
-        "How IBD patients can use Crohn's & Colitis Foundation public resources: Help Center, chapters, education, support groups, and advocacy. Foundation content used under license; not an endorsement.",
+        "Crohn's & Colitis Foundation Resources Guide | IBDPal",
+        "Use Crohn's & Colitis Foundation resources with IBDPal: IBD Help Center (888-MY-GUT-PAIN), chapters, patient education, and support—selected Foundation content under license.",
         "/crohns-colitis-foundation-resources",
         """
             <article class="support-section seo-landing">
-                <h1>Crohn's &amp; Colitis Foundation Resources</h1>
-                <p class="support-intro">The Crohn's &amp; Colitis Foundation is a major public source for IBD education, support programs, advocacy, and local chapters. Selected Foundation content and Marks are used on IBDPal under license for patient education. The Foundation does not endorse IBDPal or MediVue products or services, and this page is not a partnership announcement.</p>
+                <h1>Crohn's &amp; Colitis Foundation Resources on IBDPal</h1>
+                <p class="support-intro">Selected Crohn&rsquo;s &amp; Colitis Foundation educational content and Marks are used on IBDPal under license. Use this guide to reach the IBD Help Center, chapters, and Foundation patient education&mdash;then track symptoms and visits with IBDPal.</p>
                 <section class="seo-landing__block">
                     <h2>What IBDPal may do under license</h2>
                     <ul class="seo-landing__list">

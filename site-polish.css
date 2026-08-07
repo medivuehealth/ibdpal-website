@@ -357,6 +357,35 @@ body {
     color: #6B7280;
 }
 
+.ccf-home-license__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem 0.85rem;
+    margin: 0.45rem 0 0;
+    font-size: 0.8125rem;
+    line-height: 1.4;
+}
+
+.ccf-home-license__actions a {
+    color: #334155;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.ccf-home-license__cta {
+    font-weight: 700;
+    color: #1F2937 !important;
+    text-decoration: none !important;
+    background: #fff;
+    border: 1px solid #CBD5E1;
+    border-radius: 999px;
+    padding: 0.28rem 0.7rem;
+}
+
+.ccf-home-license__cta:hover {
+    background: #F1F5F9;
+}
+
 .ccf-home-license__note a {
     color: #334155;
     text-decoration: underline;
