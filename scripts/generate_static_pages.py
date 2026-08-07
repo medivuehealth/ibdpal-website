@@ -543,12 +543,13 @@ PAGES = {
     ),
     "about.html": (
         "About IBDPal | Free IBD Patient Education | MediVue",
-        "IBDPal helps people with Crohn's and ulcerative colitis through free patient education, guides, and a nonprofit iOS tracking app built by MediVue.",
+        "IBDPal helps people with Crohn's and ulcerative colitis through free patient education, guides, licensed Foundation resources, and a nonprofit iOS tracking app built by MediVue.",
         "/about",
         f"""
             <article class="support-section seo-landing">
                 <h1>About IBDPal</h1>
                 <p class="support-intro mission-block"><strong>Our mission:</strong> IBDPal helps people with Crohn's disease and ulcerative colitis understand nutrition, flares, and daily management through free patient education and a tracking app from nonprofit MediVue.</p>
+                <p class="last-updated">Last updated: August 2026</p>
                 <section class="seo-landing__block">
                     <h2>Who we are</h2>
                     <p><strong>IBDPal</strong> is a program of <strong>MediVue</strong>, a North Carolina 501(c)(3) nonprofit focused on IBD community education and self-management tools. We combine a free iOS app for food and symptom tracking with a growing library of articles, guides, and state support resources on ibdpal.org.</p>
@@ -557,17 +558,25 @@ PAGES = {
                 </section>
                 <section class="seo-landing__block">
                     <h2>Crohn's &amp; Colitis Foundation</h2>
-                    <p>Where Foundation Marks appear on this site, they are unmodified and linked to the Foundation's website. We point patients to Foundation education, the IBD Help Center, chapters, and support programs. We do not republish the Foundation's full site, and we do not claim endorsement or partnership.</p>
-                    <p><a href="/crohns-colitis-foundation-resources">How to use Foundation resources →</a> · <a href="https://www.crohnscolitisfoundation.org/" rel="noopener noreferrer">crohnscolitisfoundation.org</a></p>
+                    <p>Selected Foundation educational content and Marks appear on IBDPal under license. The logo is shown unmodified and linked to the Foundation website. We guide patients to Foundation programs and education, then offer IBDPal tools for tracking between visits.</p>
+                    <ul class="seo-landing__list">
+                        <li><a href="/crohns-colitis-foundation-resources">Foundation resources hub on IBDPal</a> (Help Center, Camp Oasis, diet, prior authorization, chapters, advocacy)</li>
+                        <li>Attributed IBDPal guides: <a href="/guides/camp-oasis-kids-ibd">Camp Oasis</a>, <a href="/guides/ibd-prior-authorization-foundation">prior authorization</a>, <a href="/guides/foundation-diet-nutrition-ibd">diet and nutrition</a>, <a href="/guides/ibd-crohns-colitis-helpline">Help Center numbers</a></li>
+                        <li>Foundation links in the <a href="/resources">resource library</a> and sitewide footer attribution</li>
+                    </ul>
+                    <p>We do not republish the Foundation's full site, and we do not claim endorsement or partnership.</p>
+                    <p><a href="https://www.crohnscolitisfoundation.org/" rel="noopener noreferrer">crohnscolitisfoundation.org</a> · <a href="/blog/when-to-call-ibd-help-center">Help Center vs clinic</a></p>
                 </section>
                 <section class="seo-landing__block">
                     <h2>What you will find here</h2>
                     <ul class="seo-landing__list">
-                        <li><a href="/blog">63 in-depth articles</a> on nutrition, treatment, wellness, and daily life</li>
-                        <li><a href="/guides">27 step-by-step patient guides</a></li>
-                        <li><a href="/#community">50 state support pages</a></li>
-                        <li><a href="/library">185+ total education and resource pages</a></li>
+                        <li><a href="/blog">95 in-depth articles</a> on nutrition, treatment, wellness, and daily life</li>
+                        <li><a href="/guides">30 step-by-step patient guides</a></li>
+                        <li><a href="/resources">178+ searchable resource library entries</a> (site pages, articles, and trusted external links)</li>
+                        <li><a href="/#community">50 state support pages</a> (all 50 states + DC)</li>
+                        <li><a href="/library">220+ education and sitemap pages</a> across hubs, guides, articles, and Spanish resources</li>
                         <li>Free <a href="/#app">IBDPal iOS app</a> for logging meals, symptoms, and visit prep</li>
+                        <li>Homepage topic search, Tools Lab, recipe ideas, and nutrition targets</li>
                     </ul>
                 </section>
                 <section class="seo-landing__block">
@@ -579,11 +588,11 @@ PAGES = {
                 <section class="seo-landing__block">
                     <h2>ImproveCareNow resources</h2>
                     <p>We highlight select co-produced resources from <a href="https://www.improvecarenow.org/" rel="noopener noreferrer">ImproveCareNow (ICN)</a> under their Creative Commons policy, with attribution and links to originals. IBDPal is not an ICN partner or listed care center.</p>
-                    <p><a href="/blog/icn-accommodations-toolkit-ibd">Browse ICN resource highlights →</a></p>
+                    <p><a href="/blog/icn-accommodations-toolkit-ibd">Browse ICN resource highlights</a></p>
                 </section>
                 <section class="seo-landing__block">
                     <h2>Learn more</h2>
-                    <p><a href="/#site-updates">Site updates</a> · <a href="/impact">Impact</a> · <a href="/contact">Contact</a> · <a href="/clinical-partnerships">Clinical partnerships</a> · <a href="/research">Trusted sources</a></p>
+                    <p><a href="/#site-updates">Site updates</a> · <a href="/impact">Impact</a> · <a href="/contact">Contact</a> · <a href="/clinical-partnerships">Clinical partnerships</a> · <a href="/research">Trusted sources</a> · <a href="/trusted-ibd-resources">Trusted IBD resources</a></p>
                     <p>Organizational overview for funders: <a href="/executive-summary">Executive summary</a></p>
                 </section>
             </article>
@@ -656,19 +665,20 @@ PAGES = {
     ),
     "impact.html": (
         "IBDPal Impact | Patient Education & App Reach | MediVue",
-        "IBDPal impact: 185+ free education and resource pages, 63 articles, App Store reach, and nonprofit mission outcomes for the IBD community.",
+        "IBDPal impact: 220+ free education and resource pages, 95 articles, Foundation-licensed education, App Store reach, and nonprofit mission outcomes for the IBD community.",
         "/impact",
         """
             <article class="support-section seo-landing">
                 <h1>Our Impact</h1>
                 <p class="support-intro">IBDPal measures impact by useful education published, app availability, and community reach, not by replacing clinical care.</p>
                 <section class="seo-landing__block">
-                    <h2>Education library (June 2026)</h2>
+                    <h2>Education library (August 2026)</h2>
                     <ul class="seo-landing__list">
-                        <li><strong>63 articles</strong> including ImproveCareNow resource highlights</li>
-                        <li><strong>27 patient guides</strong> for diet, flares, travel, and clinic prep</li>
+                        <li><strong>95 articles</strong> including ImproveCareNow resource highlights</li>
+                        <li><strong>30 patient guides</strong> for diet, flares, travel, clinic prep, and Foundation-attributed topics</li>
                         <li><strong>50 state support pages</strong> with chapters and helplines</li>
-                        <li><strong>185+ total education and resource pages</strong> including hubs, FAQ, glossary, and Spanish resources</li>
+                        <li><strong>178+</strong> curated entries in the <a href="/resources">resource library</a>, including Crohn&rsquo;s &amp; Colitis Foundation Help Center links</li>
+                        <li><strong>220+ total education and resource pages</strong> including hubs, FAQ, glossary, Spanish resources, and the <a href="/crohns-colitis-foundation-resources">Foundation resources hub</a></li>
                     </ul>
                     <p><a href="/library">Browse the full content library →</a></p>
                 </section>
@@ -694,21 +704,22 @@ PAGES = {
         """,
     ),
     "library.html": (
-        "IBD Content Library | 185+ Free Education Pages | IBDPal",
-        "Full index of IBDPal education: articles, guides, state support, Spanish pages, ICN resources, and topic hubs for Crohn's and colitis.",
+        "IBD Content Library | 220+ Free Education Pages | IBDPal",
+        "Full index of IBDPal education: articles, guides, Foundation resources, state support, Spanish pages, ICN resources, and topic hubs for Crohn's and colitis.",
         "/library",
         """
             <article class="support-section seo-landing">
                 <h1>Content Library</h1>
                 <p class="support-intro">Every page below is free patient education from MediVue's IBDPal program. Nothing here replaces your gastroenterologist.</p>
                 <section class="seo-landing__block">
-                    <h2>By the numbers (June 2026)</h2>
+                    <h2>By the numbers (August 2026)</h2>
                     <div class="library-stats-grid">
-                        <div class="library-stat"><span class="library-stat__n">63</span><span class="library-stat__l">Articles</span></div>
-                        <div class="library-stat"><span class="library-stat__n">27</span><span class="library-stat__l">Patient guides</span></div>
+                        <div class="library-stat"><span class="library-stat__n">95</span><span class="library-stat__l">Articles</span></div>
+                        <div class="library-stat"><span class="library-stat__n">30</span><span class="library-stat__l">Patient guides</span></div>
                         <div class="library-stat"><span class="library-stat__n">50</span><span class="library-stat__l">State support pages</span></div>
                         <div class="library-stat"><span class="library-stat__n">8</span><span class="library-stat__l">Spanish pages</span></div>
-                        <div class="library-stat"><span class="library-stat__n">185+</span><span class="library-stat__l">Education and resource pages</span></div>
+                        <div class="library-stat"><span class="library-stat__n">178+</span><span class="library-stat__l">Resource library entries</span></div>
+                        <div class="library-stat"><span class="library-stat__n">220+</span><span class="library-stat__l">Education and resource pages</span></div>
                     </div>
                 </section>
                 <section class="seo-landing__block">
@@ -716,6 +727,7 @@ PAGES = {
                     <ul class="seo-landing__list">
                         <li><a href="/start-here">Start here roadmap</a></li>
                         <li><a href="/newly-diagnosed">Newly diagnosed</a></li>
+                        <li><a href="/crohns-colitis-foundation-resources">Crohn&rsquo;s &amp; Colitis Foundation resources</a></li>
                         <li><a href="/ibd-nutrition">Nutrition hub</a></li>
                         <li><a href="/flare-help">Flare help</a></li>
                         <li><a href="/ibd-red-flags-urgent-care">Red flags and urgent care</a></li>

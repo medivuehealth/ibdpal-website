@@ -65,6 +65,14 @@ BLOG_BACK_LINK_HTML = (
 
 UPDATES_MONTHLY_SECTIONS_HTML = """
                     <section class="seo-landing__block updates-month">
+                        <h2>August 2026</h2>
+                        <ul class="seo-landing__list">
+                            <li><strong>Crohn&rsquo;s &amp; Colitis Foundation:</strong> licensed-education homepage strip; expanded <a href="/crohns-colitis-foundation-resources">Foundation resources hub</a>; attributed guides for <a href="/guides/camp-oasis-kids-ibd">Camp Oasis</a>, <a href="/guides/ibd-prior-authorization-foundation">prior authorization</a>, and <a href="/guides/foundation-diet-nutrition-ibd">diet and nutrition</a>; Foundation links in the <a href="/resources">resource library</a></li>
+                            <li><strong>Homepage UX:</strong> brighter high-contrast type, bold black menu labels, compact Foundation strip so search stays visible</li>
+                            <li><strong>Library counts:</strong> <strong>95 articles</strong>, <strong>30 guides</strong>, <strong>178+</strong> resource entries, <strong>220+</strong> sitemap education pages</li>
+                        </ul>
+                    </section>
+                    <section class="seo-landing__block updates-month">
                         <h2>June 2026</h2>
                         <ul class="seo-landing__list">
                             <li><strong>Family, lifestyle, and research articles:</strong> 9 June posts, with expanded depth across <a href="/blog/ibd-summer-heat-hydration">summer heat</a>, <a href="/blog/ibd-flare-go-bag">flare go-bag</a>, <a href="/blog/siblings-when-child-has-ibd">siblings</a>, <a href="/blog/when-to-call-ibd-help-center">Help Center vs clinic</a>, <a href="/blog/dining-out-ibd-restaurants">dining out</a>, <a href="/blog/infusion-day-what-to-expect">infusion day</a>, <a href="/blog/summer-travel-ibd-restrooms-meds-food-heat">summer travel</a>, <a href="/blog/school-planning-ibd-before-august">school planning</a>, and <a href="/blog/free-government-ibd-research-sources">free government research sources</a></li>
