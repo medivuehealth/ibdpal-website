@@ -22,6 +22,38 @@
       "destination": "/partners/media-kit.html"
     },
     {
+      "source": "/api/web/student-research-interest",
+      "destination": "/api/web/student-research?action=interest"
+    },
+    {
+      "source": "/api/web/student-research/login",
+      "destination": "/api/web/student-research?action=login"
+    },
+    {
+      "source": "/api/web/student-research/register",
+      "destination": "/api/web/student-research?action=register"
+    },
+    {
+      "source": "/api/web/student-research/submissions",
+      "destination": "/api/web/student-research?action=submissions"
+    },
+    {
+      "source": "/api/web/student-research/published",
+      "destination": "/api/web/student-research?action=published"
+    },
+    {
+      "source": "/api/web/student-research/admin/pending",
+      "destination": "/api/web/student-research?action=admin-pending"
+    },
+    {
+      "source": "/api/web/student-research/admin/review",
+      "destination": "/api/web/student-research?action=admin-review"
+    },
+    {
+      "source": "/api/web/search-related",
+      "destination": "/api/web/search-suggestions?action=related"
+    },
+    {
       "source": "/blog/lupus-autoimmune-basics",
       "destination": "/blogs/lupus-autoimmune-basics.html"
     },
