@@ -13,6 +13,7 @@ var IBDPAL_DEFAULT_NUTRITION_SUBTAB = 'nutrition-dri';
 var IBDPAL_HASH_ALIASES = {
     overview: { main: 'home', sub: null },
     updates: { main: 'about', sub: 'site-updates' },
+    'about-overview': { main: 'about', sub: 'about-overview' },
     founder: { main: 'about', sub: 'about-founders' },
     founders: { main: 'about', sub: 'about-founders' },
     'medivue-founders': { main: 'about', sub: 'about-founders' },
@@ -274,6 +275,7 @@ function initializeTabNavigation() {
             } else if (mainTab === 'library') {
                 subTab = IBDPAL_DEFAULT_LIBRARY_SUBTAB;
             } else if (mainTab === 'about') {
+                // Always return to the About landing when the main About tab is clicked
                 subTab = IBDPAL_DEFAULT_ABOUT_SUBTAB;
             } else if (mainTab === 'nutrition-targets') {
                 subTab = IBDPAL_DEFAULT_NUTRITION_SUBTAB;
@@ -299,6 +301,10 @@ function initializeTabNavigation() {
     aboutSubButtons.forEach(function (button) {
         button.addEventListener('click', function () {
             var subTab = this.getAttribute('data-about-subtab');
+            // Re-clicking the active About sub-tab returns to the About landing
+            if (button.classList.contains('active') && subTab !== IBDPAL_DEFAULT_ABOUT_SUBTAB) {
+                subTab = IBDPAL_DEFAULT_ABOUT_SUBTAB;
+            }
             switchMainTab('about', subTab, true);
         });
     });

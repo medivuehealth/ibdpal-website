@@ -2819,7 +2819,7 @@ a.tab-button,
     display: block;
 }
 
-/* Shared segmented sub-tab bar (Nutrients, App, About) */
+/* Shared segmented sub-tab bar (Nutrients, App, About) - site peach/purple palette */
 .ibd-segmented-subtabs {
     display: grid;
     gap: 0.5rem;
@@ -2827,16 +2827,20 @@ a.tab-button,
     margin: 0 auto;
     max-width: 980px;
     padding: 0.45rem;
-    background: linear-gradient(180deg, #e8f5e9 0%, #f4faf4 100%);
-    border: 2px solid rgba(46, 125, 50, 0.35);
+    background: linear-gradient(180deg, #FFE5DC 0%, #FFF8F5 100%);
+    border: 1px solid var(--ibd-header-border, #FFAB94);
     border-bottom: none;
     border-radius: 16px 16px 0 0;
-    box-shadow: 0 4px 14px rgba(28, 78, 38, 0.08);
+    box-shadow: 0 4px 14px rgba(153, 51, 204, 0.06);
 }
 
 .ibd-segmented-subtabs--five {
     grid-template-columns: repeat(5, minmax(0, 1fr));
     max-width: none;
+}
+
+#about .ibd-segmented-subtabs {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 #app .ibd-segmented-subtabs {
@@ -2848,10 +2852,10 @@ a.tab-button,
 
 .ibd-segmented-subtab {
     appearance: none;
-    background: rgba(255, 255, 255, 0.72);
-    border: 2px solid rgba(46, 125, 50, 0.28);
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(255, 171, 148, 0.55);
     border-radius: 12px;
-    color: #355a3d;
+    color: #222222;
     cursor: pointer;
     font-family: var(--ibd-font-display);
     font-size: 0.92rem;
@@ -2865,15 +2869,15 @@ a.tab-button,
 
 .ibd-segmented-subtab:hover {
     background: #ffffff;
-    border-color: rgba(46, 125, 50, 0.5);
-    color: #1f4d2c;
+    border-color: var(--ibd-primary, #8B5CF6);
+    color: #222222;
 }
 
 .ibd-segmented-subtab.active {
     background: #ffffff;
-    border-color: #2d6a3e;
-    box-shadow: 0 4px 12px rgba(46, 125, 50, 0.18);
-    color: #1b5e20;
+    border-color: var(--ibd-primary, #8B5CF6);
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.16);
+    color: #222222;
 }
 
 .ibd-segmented-subtab.active::after {
@@ -2883,14 +2887,14 @@ a.tab-button,
     height: 3px;
     margin: 0.45rem auto 0;
     border-radius: 999px;
-    background: #2d6a3e;
+    background: var(--ibd-primary, #8B5CF6);
 }
 
 .ibd-segmented-panels {
     background: #ffffff;
-    border: 2px solid rgba(46, 125, 50, 0.35);
+    border: 1px solid var(--ibd-header-border, #FFAB94);
     border-radius: 0 0 18px 18px;
-    box-shadow: 0 10px 28px rgba(28, 78, 38, 0.08);
+    box-shadow: 0 10px 28px rgba(153, 51, 204, 0.06);
     margin: 0 auto 1rem;
     max-width: 980px;
     padding: clamp(0.85rem, 2.5vw, 1.15rem);

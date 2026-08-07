@@ -1098,6 +1098,7 @@
             <div class="tab-content" id="about">
                 <section class="about-tab-shell">
                 <div class="ibd-segmented-subtabs" id="about-subtab-bar" role="tablist" aria-label="About sections">
+                    <button type="button" class="ibd-segmented-subtab" role="tab" aria-selected="false" aria-controls="about-overview" id="about-subtab-overview" data-about-subtab="about-overview">Overview</button>
                     <button type="button" class="ibd-segmented-subtab" role="tab" aria-selected="false" aria-controls="about-founders" id="about-subtab-founders" data-about-subtab="about-founders">Founders</button>
                     <button type="button" class="ibd-segmented-subtab" role="tab" aria-selected="false" aria-controls="site-updates" id="about-subtab-site-updates" data-about-subtab="site-updates">Updates</button>
                     <button type="button" class="ibd-segmented-subtab" role="tab" aria-selected="false" aria-controls="metrics" id="about-subtab-metrics" data-about-subtab="metrics">Analytics</button>
@@ -1105,7 +1106,7 @@
 
                 <div class="ibd-segmented-panels">
 
-                <div class="about-subcontent active" id="about-overview" role="tabpanel">
+                <div class="about-subcontent active" id="about-overview" role="tabpanel" aria-labelledby="about-subtab-overview">
                 <article class="support-section seo-landing tab-page-section tab-page-section--compact">
                     <header class="page-header-compact">
                         <h1 class="page-header-compact__title">Free nonprofit IBD education from MediVue</h1>
@@ -1159,7 +1160,7 @@
                     <section class="seo-landing__block">
                         <h2>Building forward</h2>
                         <p>Today that mission continues through published articles and guides, the free IBDPal app, Foundation-licensed education where we are authorized to share it, and resources that keep education accessible. The goal has not changed: leave each visitor with one more useful next step.</p>
-                        <p><a href="/impact">Impact</a> · <a href="/contact">Contact</a></p>
+                        <p><a href="/#about" data-about-subtab-link="about-overview">About overview</a> · <a href="/impact">Impact</a> · <a href="/contact">Contact</a></p>
                     </section>
                 </article>
                 </div>
