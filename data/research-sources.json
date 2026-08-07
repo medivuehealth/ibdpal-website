@@ -15,6 +15,23 @@
   },
   "sources": [
     {
+      "id": "nhsjs-stem-cell-crohns-2025",
+      "title": "Stem Cell Therapeutics for Crohn's Disease",
+      "publisher": "National High School Journal of Science (NHSJS)",
+      "year": "2025",
+      "url": "https://nhsjs.com/2025/stem-cell-therapeutics-for-crohns-disease/",
+      "topics": [
+        "Crohn's disease",
+        "stem cells",
+        "regenerative medicine",
+        "IBD therapeutics",
+        "student research"
+      ],
+      "summary": "NHSJS review of stem cell therapeutics for Crohn's disease: immune modulation, tissue repair themes, clinical-trial context, limitations, and future directions. Linked for education; not medical advice.",
+      "license_note": "External journal article. Link and summarize; respect NHSJS copyright for full text.",
+      "shelf": "publications"
+    },
+    {
       "id": "aga-diet-2024",
       "title": "AGA Clinical Practice Update: Diet and Nutritional Therapies in IBD (2024)",
       "publisher": "American Gastroenterological Association",

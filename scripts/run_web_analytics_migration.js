@@ -11,6 +11,10 @@ const MIGRATIONS = [
   {
     file: path.join(ROOT, 'scripts', 'db', 'migration_add_ibdpal_web_content_events.sql'),
     tableName: 'ibdpal_web_content_events'
+  },
+  {
+    file: path.join(ROOT, 'scripts', 'db', 'migration_add_student_research.sql'),
+    tableName: 'ibdpal_student_research_interest'
   }
 ];
 
@@ -83,6 +87,11 @@ async function main() {
     for (const migration of MIGRATIONS) {
       await client.query(fs.readFileSync(migration.file, 'utf8'));
       await verifyTable(client, migration.tableName);
+      if (migration.tableName === 'ibdpal_student_research_interest') {
+        await verifyTable(client, 'ibdpal_student_researchers');
+        await verifyTable(client, 'ibdpal_student_submissions');
+        await verifyTable(client, 'ibdpal_student_submission_events');
+      }
     }
 
     console.log('Web analytics migrations completed successfully.');

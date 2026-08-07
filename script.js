@@ -1,14 +1,16 @@
 // IBDPal Website JavaScript
 
-var IBDPAL_MAIN_TABS = ['home', 'library', 'tools-lab', 'recipe-ideas', 'nutrition-targets', 'app', 'community', 'news', 'about', 'contact', 'privacy', 'support'];
+var IBDPAL_MAIN_TABS = ['home', 'library', 'tools-lab', 'recipe-ideas', 'nutrition-targets', 'app', 'community', 'news', 'student-research', 'about', 'contact', 'privacy', 'support'];
 var IBDPAL_APP_SUBTABS = ['download', 'features', 'how-it-works', 'screenshots', 'app-research'];
 var IBDPAL_LIBRARY_SUBTABS = ['guides', 'sources', 'research-publications', 'articles'];
 var IBDPAL_ABOUT_SUBTABS = ['about-overview', 'about-founders', 'site-updates', 'metrics'];
 var IBDPAL_NUTRITION_SUBTABS = ['nutrition-dri', 'nutrition-foods', 'nutrition-learn'];
+var IBDPAL_NEWS_SUBTABS = ['news-advocacy', 'news-partners'];
 var IBDPAL_DEFAULT_APP_SUBTAB = 'download';
 var IBDPAL_DEFAULT_LIBRARY_SUBTAB = 'guides';
 var IBDPAL_DEFAULT_ABOUT_SUBTAB = 'about-overview';
 var IBDPAL_DEFAULT_NUTRITION_SUBTAB = 'nutrition-dri';
+var IBDPAL_DEFAULT_NEWS_SUBTAB = 'news-advocacy';
 
 var IBDPAL_HASH_ALIASES = {
     overview: { main: 'home', sub: null },
@@ -39,7 +41,14 @@ var IBDPAL_HASH_ALIASES = {
     'nutrition-foods': { main: 'nutrition-targets', sub: 'nutrition-foods' },
     'food-sources': { main: 'nutrition-targets', sub: 'nutrition-foods' },
     foods: { main: 'nutrition-targets', sub: 'nutrition-foods' },
-    'nutrition-learn': { main: 'nutrition-targets', sub: 'nutrition-learn' }
+    'nutrition-learn': { main: 'nutrition-targets', sub: 'nutrition-learn' },
+    news: { main: 'news', sub: 'news-advocacy' },
+    advocacy: { main: 'news', sub: 'news-advocacy' },
+    'news-advocacy': { main: 'news', sub: 'news-advocacy' },
+    partners: { main: 'news', sub: 'news-partners' },
+    'news-partners': { main: 'news', sub: 'news-partners' },
+    'student-research': { main: 'student-research', sub: null },
+    'research-students': { main: 'student-research', sub: null }
 };
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -78,6 +87,9 @@ function resolveTabFromHash(hash) {
     if (IBDPAL_NUTRITION_SUBTABS.indexOf(hash) !== -1) {
         return { main: 'nutrition-targets', sub: hash };
     }
+    if (IBDPAL_NEWS_SUBTABS.indexOf(hash) !== -1) {
+        return { main: 'news', sub: hash };
+    }
     if (IBDPAL_MAIN_TABS.indexOf(hash) !== -1) {
         return {
             main: hash,
@@ -87,7 +99,9 @@ function resolveTabFromHash(hash) {
                     ? IBDPAL_DEFAULT_LIBRARY_SUBTAB
                     : (hash === 'about'
                         ? IBDPAL_DEFAULT_ABOUT_SUBTAB
-                        : (hash === 'nutrition-targets' ? IBDPAL_DEFAULT_NUTRITION_SUBTAB : null)))
+                        : (hash === 'nutrition-targets'
+                            ? IBDPAL_DEFAULT_NUTRITION_SUBTAB
+                            : (hash === 'news' ? IBDPAL_DEFAULT_NEWS_SUBTAB : null))))
         };
     }
     return { main: 'home', sub: null };
@@ -104,6 +118,8 @@ function initializeTabNavigation() {
     var aboutSubContents = document.querySelectorAll('.about-subcontent');
     var nutritionSubButtons = document.querySelectorAll('.ibd-segmented-subtab[data-nutrition-subtab]');
     var nutritionSubContents = document.querySelectorAll('.nutrition-subcontent');
+    var newsSubButtons = document.querySelectorAll('.ibd-segmented-subtab[data-news-subtab]');
+    var newsSubContents = document.querySelectorAll('.news-subcontent');
     var librarySubtabBar = document.getElementById('library-subtab-bar');
 
     function setLibrarySubtabBarVisible(visible) {
@@ -199,6 +215,29 @@ function initializeTabNavigation() {
         document.dispatchEvent(new CustomEvent('ibdpal:tab', { detail: { tab: 'nutrition-targets', subTab: subTab } }));
     }
 
+    function switchNewsSubTab(subTab, updateURL) {
+        if (IBDPAL_NEWS_SUBTABS.indexOf(subTab) === -1) {
+            subTab = IBDPAL_DEFAULT_NEWS_SUBTAB;
+        }
+
+        newsSubButtons.forEach(function (btn) {
+            var isActive = btn.getAttribute('data-news-subtab') === subTab;
+            btn.classList.toggle('active', isActive);
+            btn.setAttribute('aria-selected', isActive ? 'true' : 'false');
+        });
+        newsSubContents.forEach(function (panel) {
+            panel.classList.toggle('active', panel.id === subTab);
+        });
+
+        if (updateURL) {
+            var newsHash = subTab === IBDPAL_DEFAULT_NEWS_SUBTAB ? 'news' : subTab;
+            var newURL = window.location.pathname + '#' + newsHash;
+            window.history.pushState({ main: 'news', sub: subTab }, '', newURL);
+        }
+
+        document.dispatchEvent(new CustomEvent('ibdpal:tab', { detail: { tab: 'news', subTab: subTab } }));
+    }
+
     function switchMainTab(mainTab, subTab, updateURL) {
         if (IBDPAL_MAIN_TABS.indexOf(mainTab) === -1) {
             mainTab = 'home';
@@ -239,6 +278,13 @@ function initializeTabNavigation() {
             switchNutritionSubTab(nutritionSub, false);
         }
 
+        if (mainTab === 'news') {
+            var newsSub = subTab && IBDPAL_NEWS_SUBTABS.indexOf(subTab) !== -1
+                ? subTab
+                : IBDPAL_DEFAULT_NEWS_SUBTAB;
+            switchNewsSubTab(newsSub, false);
+        }
+
         setLibrarySubtabBarVisible(mainTab === 'library');
 
         if (updateURL) {
@@ -258,6 +304,11 @@ function initializeTabNavigation() {
                 hash = subTab && IBDPAL_NUTRITION_SUBTABS.indexOf(subTab) !== -1
                     ? subTab
                     : IBDPAL_DEFAULT_NUTRITION_SUBTAB;
+            } else if (mainTab === 'news') {
+                var resolvedNews = subTab && IBDPAL_NEWS_SUBTABS.indexOf(subTab) !== -1
+                    ? subTab
+                    : IBDPAL_DEFAULT_NEWS_SUBTAB;
+                hash = resolvedNews === IBDPAL_DEFAULT_NEWS_SUBTAB ? 'news' : resolvedNews;
             } else {
                 hash = mainTab;
             }
@@ -265,7 +316,7 @@ function initializeTabNavigation() {
             window.history.pushState({ main: mainTab, sub: subTab || null }, '', newURL);
         }
 
-        if (mainTab !== 'app' && mainTab !== 'library' && mainTab !== 'about' && mainTab !== 'nutrition-targets') {
+        if (mainTab !== 'app' && mainTab !== 'library' && mainTab !== 'about' && mainTab !== 'nutrition-targets' && mainTab !== 'news') {
             document.dispatchEvent(new CustomEvent('ibdpal:tab', { detail: { tab: mainTab } }));
         }
     }
@@ -283,6 +334,8 @@ function initializeTabNavigation() {
                 subTab = IBDPAL_DEFAULT_ABOUT_SUBTAB;
             } else if (mainTab === 'nutrition-targets') {
                 subTab = IBDPAL_DEFAULT_NUTRITION_SUBTAB;
+            } else if (mainTab === 'news') {
+                subTab = IBDPAL_DEFAULT_NEWS_SUBTAB;
             }
             switchMainTab(mainTab, subTab, true);
         });
@@ -317,6 +370,13 @@ function initializeTabNavigation() {
         button.addEventListener('click', function () {
             var subTab = this.getAttribute('data-nutrition-subtab');
             switchMainTab('nutrition-targets', subTab, true);
+        });
+    });
+
+    newsSubButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+            var subTab = this.getAttribute('data-news-subtab');
+            switchMainTab('news', subTab, true);
         });
     });
 
@@ -363,6 +423,15 @@ function initializeTabNavigation() {
             if (!sub) return;
             e.preventDefault();
             switchMainTab('nutrition-targets', sub, true);
+        });
+    });
+
+    document.querySelectorAll('[data-news-subtab-link]').forEach(function (link) {
+        link.addEventListener('click', function (e) {
+            var sub = link.getAttribute('data-news-subtab-link');
+            if (!sub) return;
+            e.preventDefault();
+            switchMainTab('news', sub, true);
         });
     });
 }

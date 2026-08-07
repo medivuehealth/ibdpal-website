@@ -1,0 +1,18 @@
+{
+  "description": "Featured student and early-career research publications highlighted on IBDPal Student Research.",
+  "updated": "2026-08-07",
+  "items": [
+    {
+      "id": "nhsjs-stem-cell-crohns-2025",
+      "title": "Stem Cell Therapeutics for Crohn's Disease",
+      "authors": "Aryan Shashi Kumar",
+      "venue": "National High School Journal of Science (NHSJS)",
+      "year": "2025",
+      "published_on": "2025-02-26",
+      "url": "https://nhsjs.com/2025/stem-cell-therapeutics-for-crohns-disease/",
+      "topics": ["Crohn's disease", "stem cells", "regenerative medicine", "IBD therapeutics"],
+      "abstract": "Current IBD treatments including biologics can reduce inflammation but often cannot achieve durable remission. This review summarizes regenerative and immune-modulating potential of stem cell approaches for Crohn's disease, including tissue repair themes, clinical-trial signals, limitations, and future directions. External journal content; IBDPal education only.",
+      "disclaimer": "External journal publication. IBDPal links for education only and does not provide medical advice."
+    }
+  ]
+}

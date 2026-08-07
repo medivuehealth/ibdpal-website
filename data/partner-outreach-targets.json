@@ -1,0 +1,58 @@
+{
+  "description": "Internal outreach tracker for manufacturer and promoter BD. Not published on the public site.",
+  "updated": "2026-08-07",
+  "media_kit_url": "https://www.ibdpal.org/partners/media-kit",
+  "partners_url": "https://www.ibdpal.org/partners",
+  "contact_email": "info@ibdpal.org",
+  "targets": [
+    {
+      "company": "Takeda",
+      "program": "EntyvioConnect",
+      "contact_hint": "Patient support / brand medical information contact forms on entyvio.com",
+      "status": "listed_seed",
+      "notes": "Seed listing live; send media-kit note to patient-support contacts"
+    },
+    {
+      "company": "Johnson & Johnson",
+      "program": "STELARA withMe / Janssen CarePath",
+      "contact_hint": "JNJwithMe and CarePath contact channels",
+      "status": "listed_seed",
+      "notes": "Seed listing live"
+    },
+    {
+      "company": "AbbVie",
+      "program": "HUMIRA Complete / Skyrizi Complete / RINVOQ Complete",
+      "contact_hint": "AbbVie patient access and Complete program contacts",
+      "status": "listed_seed",
+      "notes": "Three program hubs seeded"
+    },
+    {
+      "company": "Pfizer",
+      "program": "IBD / Xeljanz patient support (if applicable)",
+      "contact_hint": "Brand patient-support pages",
+      "status": "todo",
+      "notes": "Verify current UC/CD support hub before listing"
+    },
+    {
+      "company": "Bristol Myers Squibb",
+      "program": "Zeposia support (if IBD-indicated materials)",
+      "contact_hint": "Brand support program pages",
+      "status": "todo",
+      "notes": "Confirm public UC materials before outreach"
+    },
+    {
+      "company": "Eli Lilly",
+      "program": "Omvoh / mirikizumab support",
+      "contact_hint": "Omvoh patient support",
+      "status": "todo",
+      "notes": "Priority outreach after seed launch"
+    },
+    {
+      "company": "Crohn's & Colitis Foundation",
+      "program": "Industry / chapter relations",
+      "contact_hint": "Chapter staff and national partnerships",
+      "status": "listed_seed",
+      "notes": "Foundation hubs already linked; use for intros where appropriate"
+    }
+  ]
+}

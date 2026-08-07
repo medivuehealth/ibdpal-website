@@ -257,6 +257,8 @@ PAGES = {
                 <section class="seo-landing__block"><h2>Interested programs</h2>
                 <p>Academic IBD centers, pediatric ImproveCareNow sites, and community hospitals may pilot patient materials, export summaries, and waiting-room education.</p>
                 <p>Contact <a href="mailto:contactus@ibdpal.org">contactus@ibdpal.org</a> · <a href="/for-clinicians">Clinician tools overview</a></p></section>
+                <section class="seo-landing__block"><h2>Manufacturer &amp; program listings</h2>
+                <p>Public patient-support program hubs are curated under <a href="/partners">Partners &amp; programs</a>. Propose a labeled listing via the <a href="/partners/media-kit">partner media kit</a>.</p></section>
             </article>
         """,
     ),

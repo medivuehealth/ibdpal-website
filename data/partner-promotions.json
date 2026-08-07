@@ -1,0 +1,103 @@
+{
+  "description": "Curated manufacturer patient-support programs and IBD promoter education listings. Not endorsements.",
+  "updated": "2026-08-07",
+  "intro": "Public patient-support and education programs from biologic manufacturers and IBD organizations. Listings are curated by MediVue for education only. Not medical advice. Not an endorsement of any product, brand, or company.",
+  "items": [
+    {
+      "id": "entyvio-connect",
+      "title": "EntyvioConnect patient support",
+      "org": "Takeda (ENTYVIO)",
+      "org_type": "biologic_manufacturer",
+      "url": "https://www.entyvio.com/entyvioconnect",
+      "summary": "Manufacturer patient-support hub for people prescribed vedolizumab (ENTYVIO), including nurse educator resources and program information. Discuss treatment decisions only with your GI team.",
+      "topics": ["biologics", "vedolizumab", "patient support", "insurance navigation"],
+      "posted_on": "2026-08-07",
+      "label": "Manufacturer education",
+      "disclaimer": "Manufacturer program. IBDPal does not endorse ENTYVIO or Takeda."
+    },
+    {
+      "id": "stelara-withme",
+      "title": "STELARA withMe support",
+      "org": "Johnson & Johnson (STELARA)",
+      "org_type": "biologic_manufacturer",
+      "url": "https://www.jnjwithme.com/stelara",
+      "summary": "Patient support program for people prescribed ustekinumab (STELARA), including nurse navigator and savings/insurance education themes. Confirm eligibility and medical questions with your clinician.",
+      "topics": ["biologics", "ustekinumab", "patient support", "cost support"],
+      "posted_on": "2026-08-07",
+      "label": "Manufacturer education",
+      "disclaimer": "Manufacturer program. IBDPal does not endorse STELARA or Johnson & Johnson."
+    },
+    {
+      "id": "humira-complete",
+      "title": "HUMIRA Complete",
+      "org": "AbbVie (HUMIRA)",
+      "org_type": "biologic_manufacturer",
+      "url": "https://www.humira.com/humira-complete",
+      "summary": "AbbVie patient-support resources for adalimumab (HUMIRA), including cost and program education pages. Biosimilars and other options may also be discussed in clinic; this listing is informational only.",
+      "topics": ["biologics", "adalimumab", "patient support", "cost support"],
+      "posted_on": "2026-08-07",
+      "label": "Manufacturer education",
+      "disclaimer": "Manufacturer program. IBDPal does not endorse HUMIRA or AbbVie."
+    },
+    {
+      "id": "skyrizi-complete",
+      "title": "Skyrizi Complete",
+      "org": "AbbVie (SKYRIZI)",
+      "org_type": "biologic_manufacturer",
+      "url": "https://www.skyrizi.com/skyrizi-complete/about-skyrizi-complete",
+      "summary": "Patient-support program for risankizumab (SKYRIZI), including nurse ambassador and savings-card education for eligible patients. Always verify coverage and side effects with your care team.",
+      "topics": ["biologics", "risankizumab", "Crohn's", "ulcerative colitis", "patient support"],
+      "posted_on": "2026-08-07",
+      "label": "Manufacturer education",
+      "disclaimer": "Manufacturer program. IBDPal does not endorse SKYRIZI or AbbVie."
+    },
+    {
+      "id": "rinvoq-complete",
+      "title": "RINVOQ Complete",
+      "org": "AbbVie (RINVOQ)",
+      "org_type": "biologic_manufacturer",
+      "url": "https://www.rinvoq.com/rinvoq-complete",
+      "summary": "Support resources for upadacitinib (RINVOQ), a JAK inhibitor used in some IBD pathways. Educational listing of the public program hub only.",
+      "topics": ["JAK inhibitor", "upadacitinib", "patient support", "ulcerative colitis"],
+      "posted_on": "2026-08-07",
+      "label": "Manufacturer education",
+      "disclaimer": "Manufacturer program. IBDPal does not endorse RINVOQ or AbbVie."
+    },
+    {
+      "id": "janssen-carepath",
+      "title": "Janssen CarePath",
+      "org": "Johnson & Johnson",
+      "org_type": "program",
+      "url": "https://www.janssencarepath.com/",
+      "summary": "Access and support hub covering insurance investigation themes and patient resources for certain Janssen medicines used in IBD and related care.",
+      "topics": ["patient support", "insurance", "access", "biologics"],
+      "posted_on": "2026-08-07",
+      "label": "Partner program",
+      "disclaimer": "Manufacturer access program. IBDPal does not endorse Janssen products."
+    },
+    {
+      "id": "ccf-patients-caregivers-partner",
+      "title": "Crohn's & Colitis Foundation: Patients and Caregivers",
+      "org": "Crohn's & Colitis Foundation",
+      "org_type": "foundation",
+      "url": "https://www.crohnscolitisfoundation.org/patientsandcaregivers",
+      "summary": "National nonprofit education and support hub for people living with Crohn's and ulcerative colitis. Selected Foundation Marks and education appear on IBDPal under license; the Foundation does not endorse IBDPal.",
+      "topics": ["Foundation", "patient education", "support", "IBD"],
+      "posted_on": "2026-08-07",
+      "label": "Foundation",
+      "disclaimer": "Nonprofit education. Not a product advertisement."
+    },
+    {
+      "id": "ccf-ibd-help-center",
+      "title": "Crohn's & Colitis Foundation IBD Help Center",
+      "org": "Crohn's & Colitis Foundation",
+      "org_type": "foundation",
+      "url": "https://www.crohnscolitisfoundation.org/science-and-professionals/ibd-help-center",
+      "summary": "Foundation help-line and education referral point for questions about living with IBD. Use alongside - not instead of - your gastroenterology team.",
+      "topics": ["Foundation", "help center", "education", "referrals"],
+      "posted_on": "2026-08-07",
+      "label": "Foundation",
+      "disclaimer": "Nonprofit education. Not a product advertisement."
+    }
+  ]
+}

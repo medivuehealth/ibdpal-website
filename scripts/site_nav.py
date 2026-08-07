@@ -105,6 +105,7 @@ _TAB_LINKS = f"""
                 <a href="{_CANONICAL}/#download" class="tab-button" data-tab="app">IBDPal App</a>
                 <a href="{_CANONICAL}/#community" class="tab-button" data-tab="community">Support</a>
                 <a href="{_CANONICAL}/#news" class="tab-button" data-tab="news">News</a>
+                <a href="{_CANONICAL}/#student-research" class="tab-button" data-tab="student-research">Student Research</a>
                 <a href="{_CANONICAL}/#about" class="tab-button" data-tab="about">About</a>
 """
 
@@ -129,6 +130,7 @@ TAB_NAV_HOME_HTML = """
                 <button type="button" class="tab-button" data-tab="app">IBDPal App</button>
                 <button type="button" class="tab-button" data-tab="community">Support</button>
                 <button type="button" class="tab-button" data-tab="news">News</button>
+                <button type="button" class="tab-button" data-tab="student-research">Student Research</button>
                 <button type="button" class="tab-button" data-tab="about">About</button>
             </div>
         </nav>

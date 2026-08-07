@@ -161,6 +161,10 @@
 - https://www.ibdpal.org/es/recien-diagnosticado
 - https://www.ibdpal.org/es/recursos
 
+## Partners
+- https://www.ibdpal.org/partners
+- https://www.ibdpal.org/partners/media-kit
+
 ## Research sources
 - https://www.ibdpal.org/research
 

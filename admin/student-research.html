@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#FFE5DC">
+    <title>Student Research Admin | IBDPal</title>
+    <meta name="description" content="Internal student research review tools for IBDPal.">
+    <link rel="canonical" href="https://www.ibdpal.org/admin/student-research">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/site-layout-icn.css">
+    <link rel="stylesheet" href="/site-polish.css">
+    <link rel="icon" type="image/png" href="/IBDPal_Logo.png">
+</head>
+<body>
+    <div class="admin-research-shell">
+        <h1>Student Research desk</h1>
+        <p>Sign in as a student researcher to draft/submit papers, or use your admin token to review pending items. This page is noindex.</p>
+
+        <section class="seo-landing__block">
+            <h2>Researcher account</h2>
+            <form class="student-research-form" id="sr-register-form">
+                <label>Full name <input name="fullName" required maxlength="120"></label>
+                <label>Email <input type="email" name="email" required maxlength="160"></label>
+                <label>School <input name="school" maxlength="160"></label>
+                <label>Password (8+ chars) <input type="password" name="password" required minlength="8"></label>
+                <button type="submit">Create account</button>
+            </form>
+            <form class="student-research-form" id="sr-login-form" style="margin-top:1rem">
+                <label>Email <input type="email" name="email" required></label>
+                <label>Password <input type="password" name="password" required></label>
+                <button type="submit">Sign in</button>
+            </form>
+            <p class="student-research-status" id="sr-auth-status" role="status"></p>
+        </section>
+
+        <section class="seo-landing__block" id="sr-submit-section" hidden>
+            <h2>Your submissions</h2>
+            <form class="student-research-form" id="sr-submit-form">
+                <label>Title <input name="title" required maxlength="240"></label>
+                <label>Topics (comma-separated) <input name="topics" maxlength="240" placeholder="Crohn's, stem cells"></label>
+                <label>External URL <input type="url" name="externalUrl" maxlength="400"></label>
+                <label>Abstract <textarea name="abstract" required maxlength="4000"></textarea></label>
+                <div class="student-research-form__actions">
+                    <button type="submit" name="intent" value="draft">Save draft</button>
+                    <button type="submit" name="intent" value="submit">Submit for review</button>
+                </div>
+            </form>
+            <p class="student-research-status" id="sr-submit-status" role="status"></p>
+            <div id="sr-mine-list"></div>
+        </section>
+
+        <section class="seo-landing__block">
+            <h2>Admin review</h2>
+            <form class="student-research-form" id="sr-admin-form">
+                <label>Admin token <input type="password" name="adminToken" required autocomplete="off"></label>
+                <button type="submit">Load pending</button>
+            </form>
+            <p class="student-research-status" id="sr-admin-status" role="status"></p>
+            <div id="sr-admin-list"></div>
+        </section>
+
+        <p><a href="/#student-research">Back to Student Research</a> · <a href="/">Home</a></p>
+    </div>
+
+    <script src="/student-research.js" defer></script>
+    <script>
+(function () {
+  var adminToken = '';
+
+  function status(id, msg, ok) {
+    var el = document.getElementById(id);
+    if (!el) return;
+    el.textContent = msg || '';
+    el.style.color = ok ? '#1f6b3a' : '#8a2f1f';
+  }
+
+  function authHeaders() {
+    var token = window.IBDPAL_STUDENT_RESEARCH.getToken();
+    return token ? { Authorization: 'Bearer ' + token, 'Content-Type': 'application/json' } : { 'Content-Type': 'application/json' };
+  }
+
+  function escapeHtml(v) {
+    return String(v || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  function showSubmitSection(show) {
+    document.getElementById('sr-submit-section').hidden = !show;
+  }
+
+  function loadMine() {
+    fetch('/api/web/student-research/submissions', { headers: authHeaders() })
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        var host = document.getElementById('sr-mine-list');
+        if (!data.success) {
+          host.innerHTML = '<p>' + escapeHtml(data.error || 'Could not load') + '</p>';
+          return;
+        }
+        host.innerHTML = (data.items || []).map(function (item) {
+          return '<article class="admin-research-card"><strong>' + escapeHtml(item.title) + '</strong>' +
+            '<p>Status: ' + escapeHtml(item.status) + '</p>' +
+            '<p>' + escapeHtml(item.abstract) + '</p></article>';
+        }).join('') || '<p>No submissions yet.</p>';
+      });
+  }
+
+  document.getElementById('sr-register-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var fd = new FormData(e.target);
+    fetch('/api/web/student-research/register', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        fullName: fd.get('fullName'),
+        email: fd.get('email'),
+        school: fd.get('school'),
+        password: fd.get('password')
+      })
+    }).then(function (r) { return r.json().then(function (d) { return { ok: r.ok, d: d }; }); })
+      .then(function (res) {
+        if (!res.ok || !res.d.success) {
+          status('sr-auth-status', res.d.error || 'Register failed', false);
+          return;
+        }
+        window.IBDPAL_STUDENT_RESEARCH.setToken(res.d.sessionToken);
+        status('sr-auth-status', 'Account created and signed in.', true);
+        showSubmitSection(true);
+        loadMine();
+      });
+  });
+
+  document.getElementById('sr-login-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var fd = new FormData(e.target);
+    fetch('/api/web/student-research/login', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email: fd.get('email'), password: fd.get('password') })
+    }).then(function (r) { return r.json().then(function (d) { return { ok: r.ok, d: d }; }); })
+      .then(function (res) {
+        if (!res.ok || !res.d.success) {
+          status('sr-auth-status', res.d.error || 'Sign-in failed', false);
+          return;
+        }
+        window.IBDPAL_STUDENT_RESEARCH.setToken(res.d.sessionToken);
+        status('sr-auth-status', 'Signed in.', true);
+        showSubmitSection(true);
+        loadMine();
+      });
+  });
+
+  document.getElementById('sr-submit-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var fd = new FormData(e.target);
+    var intent = e.submitter && e.submitter.value === 'submit';
+    fetch('/api/web/student-research/submissions', {
+      method: 'POST',
+      headers: authHeaders(),
+      body: JSON.stringify({
+        title: fd.get('title'),
+        topics: String(fd.get('topics') || ''),
+        externalUrl: fd.get('externalUrl'),
+        abstract: fd.get('abstract'),
+        submit: !!intent
+      })
+    }).then(function (r) { return r.json().then(function (d) { return { ok: r.ok, d: d }; }); })
+      .then(function (res) {
+        if (!res.ok || !res.d.success) {
+          status('sr-submit-status', res.d.error || 'Save failed', false);
+          return;
+        }
+        status('sr-submit-status', intent ? 'Submitted for review.' : 'Draft saved.', true);
+        e.target.reset();
+        loadMine();
+      });
+  });
+
+  function renderAdmin(data) {
+    var host = document.getElementById('sr-admin-list');
+    var parts = [];
+    (data.submissions || []).forEach(function (item) {
+      parts.push(
+        '<article class="admin-research-card" data-sub="' + item.submission_id + '">' +
+        '<strong>' + escapeHtml(item.title) + '</strong>' +
+        '<p>' + escapeHtml(item.full_name) + ' · ' + escapeHtml(item.email) +
+        (item.school ? ' · ' + escapeHtml(item.school) : '') + '</p>' +
+        '<p>' + escapeHtml(item.abstract) + '</p>' +
+        (item.external_url ? '<p><a href="' + escapeHtml(item.external_url) + '" rel="noopener noreferrer">External link</a></p>' : '') +
+        '<div class="admin-research-card__actions">' +
+        '<button type="button" data-action="approve">Approve</button>' +
+        '<button type="button" data-action="reject">Reject</button>' +
+        '</div></article>'
+      );
+    });
+    (data.interest || []).forEach(function (item) {
+      parts.push(
+        '<article class="admin-research-card" data-interest="' + item.interest_id + '">' +
+        '<p class="ibd-news-card__tag">Interest form</p>' +
+        '<strong>' + escapeHtml(item.title) + '</strong>' +
+        '<p>' + escapeHtml(item.full_name) + ' · ' + escapeHtml(item.email) + '</p>' +
+        '<p>' + escapeHtml(item.abstract || '') + '</p>' +
+        '<div class="admin-research-card__actions">' +
+        '<button type="button" data-action="interest-approve-note">Mark reviewed</button>' +
+        '<button type="button" data-action="interest-dismiss">Dismiss</button>' +
+        '</div></article>'
+      );
+    });
+    host.innerHTML = parts.join('') || '<p>No pending items.</p>';
+  }
+
+  document.getElementById('sr-admin-list').addEventListener('click', function (e) {
+    var btn = e.target.closest('button[data-action]');
+    if (!btn) return;
+    var card = btn.closest('.admin-research-card');
+    var action = btn.getAttribute('data-action');
+    var payload = { action: action, adminToken: adminToken };
+    if (card.getAttribute('data-sub')) payload.submissionId = Number(card.getAttribute('data-sub'));
+    if (card.getAttribute('data-interest')) payload.interestId = Number(card.getAttribute('data-interest'));
+    fetch('/api/web/student-research/admin/review', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'x-admin-token': adminToken },
+      body: JSON.stringify(payload)
+    }).then(function (r) { return r.json(); })
+      .then(function (data) {
+        if (!data.success) {
+          status('sr-admin-status', data.error || 'Action failed', false);
+          return;
+        }
+        status('sr-admin-status', 'Updated.', true);
+        document.getElementById('sr-admin-form').requestSubmit();
+      });
+  });
+
+  document.getElementById('sr-admin-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    adminToken = new FormData(e.target).get('adminToken');
+    fetch('/api/web/student-research/admin/pending', {
+      headers: { 'x-admin-token': adminToken }
+    }).then(function (r) { return r.json().then(function (d) { return { ok: r.ok, d: d }; }); })
+      .then(function (res) {
+        if (!res.ok || !res.d.success) {
+          status('sr-admin-status', res.d.error || 'Could not load pending', false);
+          return;
+        }
+        status('sr-admin-status', 'Loaded pending queue.', true);
+        renderAdmin(res.d);
+      });
+  });
+
+  if (window.IBDPAL_STUDENT_RESEARCH.getToken()) {
+    showSubmitSection(true);
+    loadMine();
+  }
+})();
+    </script>
+</body>
+</html>
