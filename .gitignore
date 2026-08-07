@@ -3,3 +3,9 @@ node_modules/
 .env.local
 .env.*.local
 load-test-proxies.txt
+
+# Contract / legal reference — never publish on the site
+*Licensing Agmt*.pdf
+*Content Licensing*.pdf
+_license_*.png
+_license_extract.txt

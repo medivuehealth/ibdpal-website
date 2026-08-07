@@ -800,6 +800,45 @@
     }
   }
 
+  /**
+   * CCF content license: logo sitewide, attribution link, unmodified Marks,
+   * no endorsement implication. Agreement PDF is not a site asset.
+   */
+  function injectCcfPartnerAttribution() {
+    if (document.querySelector('.ccf-attribution-strip')) return;
+    var footer = document.querySelector('footer.footer .footer-content') ||
+      document.querySelector('footer .footer-content') ||
+      document.querySelector('footer');
+    if (!footer) return;
+
+    var wrap = document.createElement('div');
+    wrap.className = 'ccf-attribution-strip';
+    wrap.setAttribute('role', 'contentinfo');
+    wrap.setAttribute('aria-label', "Crohn's & Colitis Foundation attribution");
+    wrap.innerHTML =
+      '<a class="ccf-attribution-strip__logo-link" href="https://www.crohnscolitisfoundation.org/" ' +
+      'target="_blank" rel="noopener noreferrer" ' +
+      'aria-label="Crohn\'s &amp; Colitis Foundation (opens in new tab)">' +
+      '<img class="ccf-attribution-strip__logo" src="/assets/partners/ccf-logo.svg" ' +
+      'width="200" height="60" loading="lazy" decoding="async" ' +
+      'alt="Crohn\'s &amp; Colitis Foundation">' +
+      '</a>' +
+      '<p class="ccf-attribution-strip__text">' +
+      'Selected educational content and Marks used under license from the ' +
+      '<a href="https://www.crohnscolitisfoundation.org/" target="_blank" rel="noopener noreferrer">' +
+      'Crohn\'s &amp; Colitis Foundation</a>. ' +
+      'Visit the Foundation for original patient education resources. ' +
+      '<strong>The Foundation does not endorse IBDPal or MediVue products or services.</strong>' +
+      '</p>';
+
+    var firstP = footer.querySelector('p');
+    if (firstP) {
+      footer.insertBefore(wrap, firstP);
+    } else {
+      footer.appendChild(wrap);
+    }
+  }
+
   function injectInboundSearchNote() {
     var path = window.location.pathname || '';
     if (path.indexOf('/blog/') !== 0) return;
@@ -847,6 +886,7 @@
     ensureNutritionTargetsNav();
     seasonalNewsletterHint();
     injectAppNudge();
+    injectCcfPartnerAttribution();
     injectInboundSearchNote();
     loadTopSearches();
     loadTopContent();

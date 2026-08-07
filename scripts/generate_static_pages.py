@@ -158,7 +158,7 @@ PAGES = {
                 </section>
                 <section class="seo-landing__block">
                     <h2>5. Find support you can trust</h2>
-                    <p>Use national organizations and clinician-reviewed resources alongside your medical team. IBDPal is independent and links out because patients benefit from strong support networks.</p>
+                    <p>Use national organizations and clinician-reviewed resources alongside your medical team. IBDPal links out to trusted networks; Foundation Marks/content appear under license and do not imply endorsement.</p>
                     <p><a href="/crohns-colitis-foundation-resources">Crohn's &amp; Colitis Foundation resources</a> · <a href="/trusted-ibd-resources">Trusted IBD resources</a> · <a href="/#community">State support map</a></p>
                 </section>
             </article>
@@ -306,12 +306,21 @@ PAGES = {
     ),
     "crohns-colitis-foundation-resources.html": (
         "Crohn's & Colitis Foundation Resources | IBDPal",
-        "How IBD patients can use Crohn's & Colitis Foundation public resources: Help Center, chapters, education, support groups, and advocacy. IBDPal is independent.",
+        "How IBD patients can use Crohn's & Colitis Foundation public resources: Help Center, chapters, education, support groups, and advocacy. Foundation content used under license; not an endorsement.",
         "/crohns-colitis-foundation-resources",
         """
             <article class="support-section seo-landing">
                 <h1>Crohn's &amp; Colitis Foundation Resources</h1>
-                <p class="support-intro">The Crohn's &amp; Colitis Foundation is a major public source for IBD education, support programs, advocacy, and local chapters. IBDPal is independent and not affiliated with or endorsed by the Foundation.</p>
+                <p class="support-intro">The Crohn's &amp; Colitis Foundation is a major public source for IBD education, support programs, advocacy, and local chapters. Selected Foundation content and Marks are used on IBDPal under license for patient education. The Foundation does not endorse IBDPal or MediVue products or services, and this page is not a partnership announcement.</p>
+                <section class="seo-landing__block">
+                    <h2>What IBDPal may do under license</h2>
+                    <ul class="seo-landing__list">
+                        <li>Display the Foundation logo unmodified and link to the Foundation website</li>
+                        <li>Use selected Foundation educational content with attribution to the original Foundation page</li>
+                        <li>Help patients find Help Center, chapter, education, and advocacy resources</li>
+                    </ul>
+                    <p>We do not mirror every Foundation article or claim Foundation endorsement.</p>
+                </section>
                 <section class="seo-landing__block">
                     <h2>IBD Help Center</h2>
                     <p>The Foundation's IBD Help Center can help with education, support, and referrals to programs. It does not replace your gastroenterologist or emergency services.</p>
@@ -320,21 +329,26 @@ PAGES = {
                         <li>Use for general education, local resources, support groups, and program referrals.</li>
                         <li>For severe symptoms, call your GI team, urgent care, or emergency services.</li>
                     </ul>
-                    <p><a href="/blog/when-to-call-ibd-help-center">When to call the Help Center vs your clinic</a></p>
+                    <p><a href="/blog/when-to-call-ibd-help-center">When to call the Help Center vs your clinic</a> · <a href="https://www.crohnscolitisfoundation.org/patientsandcaregivers/ibdhelpcenter" rel="noopener noreferrer">Foundation Help Center</a></p>
                 </section>
                 <section class="seo-landing__block">
                     <h2>Education and disease basics</h2>
-                    <p>The Foundation publishes patient education on Crohn's disease, ulcerative colitis, medications, diet, tests, research, and living with IBD. Use those materials alongside guidance from your clinician.</p>
-                    <p><a href="https://www.crohnscolitisfoundation.org/" rel="noopener noreferrer">Visit crohnscolitisfoundation.org</a> · <a href="/research">IBDPal trusted sources</a></p>
+                    <p>Read Foundation patient education on the Foundation site (original source). Use those materials alongside guidance from your clinician.</p>
+                    <ul class="seo-landing__list">
+                        <li><a href="https://www.crohnscolitisfoundation.org/patientsandcaregivers" rel="noopener noreferrer">Patients &amp; caregivers hub</a></li>
+                        <li><a href="https://www.crohnscolitisfoundation.org/what-is-crohns-disease" rel="noopener noreferrer">What is Crohn's disease</a></li>
+                        <li><a href="https://www.crohnscolitisfoundation.org/what-is-ulcerative-colitis" rel="noopener noreferrer">What is ulcerative colitis</a></li>
+                    </ul>
+                    <p><a href="https://www.crohnscolitisfoundation.org/" rel="noopener noreferrer">crohnscolitisfoundation.org</a> · <a href="/research">IBDPal trusted sources</a></p>
                 </section>
                 <section class="seo-landing__block">
                     <h2>Chapters, events, and support groups</h2>
                     <p>Local chapters can help families find education events, community programs, and support groups. Availability varies by region.</p>
-                    <p><a href="/#community">Find support by state</a> · <a href="/guides/ibd-support-near-me">Support near me guide</a></p>
+                    <p><a href="https://www.crohnscolitisfoundation.org/chapters" rel="noopener noreferrer">Find a Foundation chapter</a> · <a href="/#community">IBDPal support by state</a> · <a href="/guides/ibd-support-near-me">Support near me guide</a></p>
                 </section>
                 <section class="seo-landing__block">
                     <h2>IBDPal's role</h2>
-                    <p>IBDPal curates links to reputable public resources and provides a free tracking app and education library. We do not speak for the Foundation, imply partnership, or provide medical advice.</p>
+                    <p>IBDPal curates links to reputable public resources and provides a free tracking app and education library. We do not speak for the Foundation, claim partnership or endorsement, or provide medical advice.</p>
                     <p><a href="/about">About IBDPal</a> · <a href="/trusted-ibd-resources">Trusted IBD resources comparison</a></p>
                 </section>
             </article>
@@ -455,6 +469,11 @@ PAGES = {
                     <p><strong>IBDPal</strong> is a program of <strong>MediVue</strong>, a North Carolina 501(c)(3) nonprofit focused on IBD community education and self-management tools. We combine a free iOS app for food and symptom tracking with a growing library of articles, guides, and state support resources on ibdpal.org.</p>
                     <p>We are not a hospital, drug company, or substitute for your gastroenterologist. Everything on this site is educational. Clinical decisions belong with your care team.</p>
                     {ccf_nonaffiliation_about_en()}
+                </section>
+                <section class="seo-landing__block">
+                    <h2>Crohn's &amp; Colitis Foundation</h2>
+                    <p>Where Foundation Marks appear on this site, they are unmodified and linked to the Foundation's website. We point patients to Foundation education, the IBD Help Center, chapters, and support programs. We do not republish the Foundation's full site, and we do not claim endorsement or partnership.</p>
+                    <p><a href="/crohns-colitis-foundation-resources">How to use Foundation resources →</a> · <a href="https://www.crohnscolitisfoundation.org/" rel="noopener noreferrer">crohnscolitisfoundation.org</a></p>
                 </section>
                 <section class="seo-landing__block">
                     <h2>What you will find here</h2>

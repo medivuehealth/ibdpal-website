@@ -24,7 +24,7 @@ def content_note_en() -> str:
         "Educational content aligned with publicly available patient materials from the "
         '<a href="https://www.crohnscolitisfoundation.org/" rel="noopener noreferrer">'
         "Crohn's &amp; Colitis Foundation</a> and other major IBD education sources. "
-        "IBDPal is not affiliated with or endorsed by the Foundation. "
+        "Content is used under license from the Foundation for patient education; the Foundation does not endorse IBDPal or MediVue products or services. "
         f"Last reviewed {REVIEW_DISPLAY}. Not individual medical advice.</p>\n"
     )
 
@@ -87,17 +87,22 @@ def content_note_es() -> str:
         '<p class="blog-medical-review"><strong>Nota de contenido:</strong> '
         "Contenido educativo alineado con materiales públicos para pacientes de la "
         "Crohn's &amp; Colitis Foundation y otras fuentes educativas sobre EII. "
-        "IBDPal no está afiliado ni respaldado por la Foundation. "
+        "Contenido seleccionado se usa bajo licencia de la Foundation con fines educativos; "
+        "la Foundation no respalda productos o servicios de IBDPal ni MediVue. "
         f"Última revisión: {REVIEW_DISPLAY}. No es consejo médico individual.</p>\n"
     )
 
 
 def ccf_nonaffiliation_about_en() -> str:
+    """License-accurate CCF notice: licensed use allowed; no endorsement/partnership claims."""
     return (
-        '<p><strong>Independent education.</strong> IBDPal is a MediVue nonprofit patient '
-        "education project. We are not affiliated with, endorsed by, or a partner of the "
-        '<a href="https://www.crohnscolitisfoundation.org/" rel="noopener noreferrer">'
-        "Crohn's &amp; Colitis Foundation</a>.</p>\n"
+        '<p><strong>Foundation education under license.</strong> Selected educational content and Marks '
+        'from the <a href="https://www.crohnscolitisfoundation.org/" rel="noopener noreferrer">'
+        "Crohn's &amp; Colitis Foundation</a> are used on IBDPal under license for patient education. "
+        "MediVue and the Foundation are independent organizations. "
+        "<strong>The Foundation does not endorse IBDPal or MediVue products or services</strong>, "
+        "and IBDPal is not a Foundation partner. "
+        '<a href="/crohns-colitis-foundation-resources">Foundation resources on IBDPal</a>.</p>\n'
     )
 
 
