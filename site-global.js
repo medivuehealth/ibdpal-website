@@ -827,8 +827,7 @@
       'Selected educational content and Marks used under license from the ' +
       '<a href="https://www.crohnscolitisfoundation.org/" target="_blank" rel="noopener noreferrer">' +
       'Crohn\'s &amp; Colitis Foundation</a>. ' +
-      'Visit the Foundation for original patient education resources. ' +
-      '<strong>The Foundation does not endorse IBDPal or MediVue products or services.</strong>' +
+      'Visit the Foundation for original patient education resources.' +
       '</p>';
 
     var firstP = footer.querySelector('p');
