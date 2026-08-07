@@ -405,6 +405,84 @@
       "faq": [
         {"q": "Are there safe restaurant foods for everyone with IBD?", "a": "No single menu works for all patients. Triggers and tolerance change with disease activity. Work with your IBD team on choices that fit you."}
       ]
+    },
+    {
+      "slug": "camp-oasis-kids-ibd",
+      "category": "family",
+      "keywords": ["Camp Oasis IBD", "Crohn's camp for kids", "colitis summer camp", "IBD camp children teens"],
+      "title": "Camp Oasis & Youth IBD Support | Crohn's & Colitis Foundation | IBDPal",
+      "description": "How Camp Oasis and Foundation youth resources support kids and teens with Crohn's or colitis. Attribution to the Crohn's & Colitis Foundation. Education only.",
+      "h1": "Camp Oasis and youth IBD support",
+      "intro": "Selected Crohn's & Colitis Foundation educational content and Marks are used on IBDPal under license. Camp Oasis is a Foundation program for children and teens with IBD. Confirm current sessions, eligibility, and medical requirements on the Foundation website. IBDPal does not run Camp Oasis and is not endorsed by the Foundation.",
+      "sections": [
+        {"heading": "What Camp Oasis is", "paragraphs": ["Camp Oasis is the Foundation's summer program for youth living with Crohn's disease or ulcerative colitis.", "Sessions are designed so medication routines, dietary needs, and bathroom access are part of normal camp life, with medical volunteers on site.", "Many families describe camp as the first place their child meets other kids who understand IBD."]},
+        {"heading": "Who it is for", "paragraphs": ["The Foundation typically serves children entering grades 2 through 12, with cabin groups by age.", "There may be in-person regional camps and virtual options such as CampOasis@Home. Availability changes by year and location.", "Always verify age ranges, health forms, and registration deadlines on the Foundation Camp Oasis pages."]},
+        {"heading": "How to use Foundation youth education", "paragraphs": ["Beyond camp, the Foundation publishes kids, parents, and teens education for school, friendships, and talking about IBD at home.", "Use Foundation pages as the original source, then bring questions to your pediatric GI or IBD team.", "IBDPal can help families track symptoms, meals, and school notes between visits."]}
+      ],
+      "tips": ["Start registration early; popular sessions fill up", "Ask your GI team about medical forms and medication plans for camp", "Pair Foundation youth pages with school accommodation planning"],
+      "related": [
+        {"label": "Foundation Camp Oasis (original source)", "url": "https://www.crohnscolitisfoundation.org/get-involved/camp-oasis"},
+        {"label": "Foundation youth and parent resources", "url": "https://www.crohnscolitisfoundation.org/patientandcaregivers/youth-parent-resources"},
+        {"label": "Foundation resources hub on IBDPal", "url": "/crohns-colitis-foundation-resources"},
+        {"label": "Pediatric Crohn's and colitis help", "url": "/guides/pediatric-crohns-colitis-help"},
+        {"label": "School planning article", "url": "/blog/school-planning-ibd-before-august"}
+      ],
+      "faq": [
+        {"q": "Does IBDPal operate Camp Oasis?", "a": "No. Camp Oasis is a Crohn's & Colitis Foundation program. IBDPal links to Foundation pages under license for education and does not claim partnership or endorsement."},
+        {"q": "Is Camp Oasis medical treatment?", "a": "No. Camp offers supported recreation and peer connection. Medication and disease decisions stay with your child's IBD care team."}
+      ]
+    },
+    {
+      "slug": "ibd-prior-authorization-foundation",
+      "category": "treatment",
+      "keywords": ["IBD prior authorization", "Crohn's insurance approval", "colitis step therapy", "biologic prior auth Foundation"],
+      "title": "IBD Prior Authorization Help | Crohn's & Colitis Foundation Guide | IBDPal",
+      "description": "How patients use Crohn's & Colitis Foundation prior authorization education with clinic support. Attribution to the Foundation. Not insurance or medical advice.",
+      "h1": "Prior authorization with Foundation resources",
+      "intro": "Selected Crohn's & Colitis Foundation educational content and Marks are used on IBDPal under license. Many IBD therapies require prior authorization. The Foundation publishes patient guidance on navigating approvals, denials, and appeals. Your clinic and insurer decide your case. The Foundation does not endorse IBDPal.",
+      "sections": [
+        {"heading": "Why prior authorization happens", "paragraphs": ["Insurers often require paperwork before covering specialty IBD medications, infusions, or certain tests.", "Step therapy rules may ask you to try another drug first. That can delay care if it does not match your clinician's plan.", "Foundation advocacy materials explain common patient rights and appeal pathways in plain language."]},
+        {"heading": "How to use Foundation materials", "paragraphs": ["Read the Foundation prior authorization guide on the Foundation website as the original source.", "Share denial letters and appeal letter templates with your clinic's prior auth or infusion coordinator.", "Track refill dates, infusion schedules, and portal messages so gaps are visible early."]},
+        {"heading": "What IBDPal can help with", "paragraphs": ["IBDPal helps you log symptoms and medications so your team has clearer visit notes while insurance reviews continue.", "We do not submit prior authorizations or negotiate with insurers on your behalf."]}
+      ],
+      "tips": ["Save denial letters and case numbers", "Ask who at the clinic owns prior auth follow-up", "Note refill and infusion dates in a calendar or IBDPal"],
+      "related": [
+        {"label": "Foundation prior authorization guide (original source)", "url": "https://www.crohnscolitisfoundation.org/your-guide-to-navigating-prior-authorization"},
+        {"label": "Foundation Action Center", "url": "https://www.crohnscolitisfoundation.org/get-involved/be-an-advocate/action-center"},
+        {"label": "Foundation resources hub on IBDPal", "url": "/crohns-colitis-foundation-resources"},
+        {"label": "Insurance and biologics article", "url": "/blog/insurance-biologics-ibd"},
+        {"label": "Prior authorization timeline article", "url": "/blog/prior-authorization-biologics-timeline"}
+      ],
+      "faq": [
+        {"q": "Can Foundation materials guarantee approval?", "a": "No. They educate patients and caregivers. Coverage decisions belong to your insurer and your clinical documentation."},
+        {"q": "Should I stop medication while waiting?", "a": "Do not stop prescribed therapy without instructions from your IBD clinician. Ask the clinic what to do if a refill or infusion is delayed."}
+      ]
+    },
+    {
+      "slug": "foundation-diet-nutrition-ibd",
+      "category": "nutrition",
+      "keywords": ["Crohn's Colitis Foundation diet", "IBD dietitian Foundation", "colitis nutrition resources", "Foundation IBD food education"],
+      "title": "Foundation Diet & Nutrition Resources | Crohn's & Colitis | IBDPal",
+      "description": "How to use Crohn's & Colitis Foundation diet and nutrition education with IBDPal tracking. Attribution to the Foundation. Education only, not a meal plan.",
+      "h1": "Foundation diet and nutrition resources",
+      "intro": "Selected Crohn's & Colitis Foundation educational content and Marks are used on IBDPal under license. Foundation patient education covers diet patterns, working with an IBD dietitian, and nutrition during flares and remission. Use Foundation pages as the original source. Individual plans belong with your clinician. The Foundation does not endorse IBDPal.",
+      "sections": [
+        {"heading": "What Foundation nutrition education covers", "paragraphs": ["Patient materials often explain that there is no single IBD diet, and that needs change with disease activity, surgery history, and age.", "Topics commonly include flare-friendly textures, nutrient gaps, and when to involve a registered dietitian experienced in IBD.", "Always confirm details on current Foundation pages, because recommendations and program links can update."]},
+        {"heading": "How IBDPal fits beside Foundation education", "paragraphs": ["Read Foundation nutrition education first for trusted patient framing.", "Use IBDPal or another log to capture meals, symptoms, and hydration so your GI or dietitian can review real patterns.", "Bring questions from Foundation reading to your next visit instead of making major diet changes alone."]},
+        {"heading": "Safety boundaries", "paragraphs": ["Diet does not replace medication for inflammation.", "Exclusive enteral nutrition and other therapeutic diets should only start under clinical supervision.", "Seek urgent care guidance for dehydration, inability to keep fluids down, or rapid weight loss."]}
+      ],
+      "tips": ["Note tolerated foods during quiet weeks vs flare weeks", "Ask about vitamin D, iron, B12, and protein goals", "Pair Foundation reading with an IBD dietitian referral when possible"],
+      "related": [
+        {"label": "Foundation patients and caregivers hub (original source)", "url": "https://www.crohnscolitisfoundation.org/patientsandcaregivers"},
+        {"label": "Foundation resources hub on IBDPal", "url": "/crohns-colitis-foundation-resources"},
+        {"label": "What should I eat with Crohn's or colitis?", "url": "/guides/what-should-i-eat-crohns-colitis"},
+        {"label": "Enteral nutrition article", "url": "/blog/enteral-nutrition-ibd"},
+        {"label": "IBDPal nutrition hub", "url": "/ibd-nutrition"}
+      ],
+      "faq": [
+        {"q": "Is Foundation diet advice personalized medical care?", "a": "No. It is patient education. Your gastroenterologist or IBD dietitian personalizes recommendations for you."},
+        {"q": "Can I republish Foundation diet handouts on IBDPal?", "a": "IBDPal uses selected Foundation Marks and education under license with attribution. We link to original Foundation pages rather than mirroring their full site."}
+      ]
     }
   ]
 }

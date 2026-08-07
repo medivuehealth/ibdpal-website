@@ -114,14 +114,15 @@ def shell(title: str, description: str, path: str, body: str, json_ld: dict, *, 
 def render_related(related: list[dict]) -> str:
     if not related:
         return ""
-    items = "".join(
-        f'<li><a href="{html.escape(r["url"])}">{html.escape(r["label"])}</a></li>'
-        for r in related
-    )
+    items = []
+    for r in related:
+        url = r["url"]
+        rel = ' rel="noopener noreferrer"' if url.startswith("http") else ""
+        items.append(f'<li><a href="{html.escape(url)}"{rel}>{html.escape(r["label"])}</a></li>')
     return f"""
                 <section class="seo-landing__block" aria-labelledby="related-heading">
-                    <h2 id="related-heading">Related IBDPal resources</h2>
-                    <ul class="seo-landing__list">{items}</ul>
+                    <h2 id="related-heading">Related resources</h2>
+                    <ul class="seo-landing__list">{''.join(items)}</ul>
                 </section>"""
 
 

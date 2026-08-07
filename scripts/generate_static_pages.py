@@ -306,18 +306,28 @@ PAGES = {
     ),
     "crohns-colitis-foundation-resources.html": (
         "Crohn's & Colitis Foundation Resources Guide | IBDPal",
-        "Use Crohn's & Colitis Foundation resources with IBDPal: IBD Help Center (888-MY-GUT-PAIN), chapters, patient education, and support - selected Foundation content under license.",
+        "Use Crohn's & Colitis Foundation resources with IBDPal: IBD Help Center (888-MY-GUT-PAIN), Camp Oasis, diet education, prior authorization help, chapters, and support - selected Foundation content under license.",
         "/crohns-colitis-foundation-resources",
         """
             <article class="support-section seo-landing">
                 <h1>Crohn's &amp; Colitis Foundation Resources on IBDPal</h1>
-                <p class="support-intro">Selected Crohn&rsquo;s &amp; Colitis Foundation educational content and Marks are used on IBDPal under license. Use this guide to reach the IBD Help Center, chapters, and Foundation patient education - then track symptoms and visits with IBDPal.</p>
+                <p class="support-intro">Selected Crohn&rsquo;s &amp; Colitis Foundation educational content and Marks are used on IBDPal under license. This hub points you to Foundation programs and education, then links to IBDPal guides that attribute the Foundation as the source.</p>
+                <section class="ccf-home-license ccf-home-license--hub" aria-label="Foundation attribution">
+                    <a class="ccf-home-license__logo-link" href="https://www.crohnscolitisfoundation.org/" rel="noopener noreferrer" aria-label="Crohn's and Colitis Foundation website">
+                        <img class="ccf-home-license__logo" src="/assets/partners/ccf-logo.svg" width="200" height="60" decoding="async" alt="Crohn's &amp; Colitis Foundation logo">
+                    </a>
+                    <div class="ccf-home-license__copy">
+                        <p class="ccf-home-license__eyebrow">Licensed education</p>
+                        <p class="ccf-home-license__headline">Selected education under license from the Crohn&rsquo;s &amp; Colitis Foundation</p>
+                        <p class="ccf-home-license__note">Logo and Marks appear unmodified. Foundation pages are the original source. The Foundation does not endorse IBDPal or MediVue.</p>
+                    </div>
+                </section>
                 <section class="seo-landing__block">
                     <h2>What IBDPal may do under license</h2>
                     <ul class="seo-landing__list">
                         <li>Display the Foundation logo unmodified and link to the Foundation website</li>
                         <li>Use selected Foundation educational content with attribution to the original Foundation page</li>
-                        <li>Help patients find Help Center, chapter, education, and advocacy resources</li>
+                        <li>Help patients find Help Center, chapter, diet, Camp Oasis, insurance, advocacy, and education resources</li>
                     </ul>
                     <p>We do not mirror every Foundation article or claim Foundation endorsement.</p>
                 </section>
@@ -329,7 +339,7 @@ PAGES = {
                         <li>Use for general education, local resources, support groups, and program referrals.</li>
                         <li>For severe symptoms, call your GI team, urgent care, or emergency services.</li>
                     </ul>
-                    <p><a href="/blog/when-to-call-ibd-help-center">When to call the Help Center vs your clinic</a> · <a href="https://www.crohnscolitisfoundation.org/patientsandcaregivers/ibdhelpcenter" rel="noopener noreferrer">Foundation Help Center</a></p>
+                    <p><a href="/blog/when-to-call-ibd-help-center">When to call the Help Center vs your clinic</a> · <a href="/guides/ibd-crohns-colitis-helpline">Helpline numbers guide</a> · <a href="https://www.crohnscolitisfoundation.org/patientsandcaregivers/ibdhelpcenter" rel="noopener noreferrer">Foundation Help Center</a></p>
                 </section>
                 <section class="seo-landing__block">
                     <h2>Education and disease basics</h2>
@@ -342,9 +352,84 @@ PAGES = {
                     <p><a href="https://www.crohnscolitisfoundation.org/" rel="noopener noreferrer">crohnscolitisfoundation.org</a> · <a href="/research">IBDPal trusted sources</a></p>
                 </section>
                 <section class="seo-landing__block">
+                    <h2>Diet and nutrition</h2>
+                    <p>Foundation patient education covers therapeutic diets, working with an IBD dietitian, and nutrition during flares and remission. IBDPal tracks meals and symptoms so you can bring clearer notes to clinic visits.</p>
+                    <ul class="seo-landing__list">
+                        <li><a href="https://www.crohnscolitisfoundation.org/patientsandcaregivers" rel="noopener noreferrer">Foundation patients &amp; caregivers hub</a> (diet and lifestyle education)</li>
+                        <li><a href="/guides/foundation-diet-nutrition-ibd">IBDPal guide: Foundation diet and nutrition resources</a></li>
+                        <li><a href="/guides/what-should-i-eat-crohns-colitis">What should I eat with Crohn's or colitis?</a></li>
+                        <li><a href="/ibd-nutrition">IBDPal nutrition hub</a></li>
+                    </ul>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>Kids, teens, and Camp Oasis</h2>
+                    <p>The Foundation offers youth and parent education plus Camp Oasis, a summer program for children and teens with IBD. Confirm eligibility, locations, and dates on the Foundation site.</p>
+                    <ul class="seo-landing__list">
+                        <li><a href="https://www.crohnscolitisfoundation.org/patientandcaregivers/youth-parent-resources" rel="noopener noreferrer">Kids, parents, and teens resources</a></li>
+                        <li><a href="https://www.crohnscolitisfoundation.org/get-involved/camp-oasis" rel="noopener noreferrer">Camp Oasis</a></li>
+                        <li><a href="/guides/camp-oasis-kids-ibd">IBDPal guide: Camp Oasis and youth IBD support</a></li>
+                        <li><a href="/guides/pediatric-crohns-colitis-help">Pediatric Crohn's and colitis help</a></li>
+                        <li><a href="/pediatric-caregivers">Pediatric caregivers hub</a></li>
+                    </ul>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>Insurance and prior authorization</h2>
+                    <p>Many IBD medications require prior authorization. The Foundation publishes patient-facing guidance on navigating denials, appeals, and step therapy. Your clinic and insurer remain the authorities for your case.</p>
+                    <ul class="seo-landing__list">
+                        <li><a href="https://www.crohnscolitisfoundation.org/your-guide-to-navigating-prior-authorization" rel="noopener noreferrer">Foundation prior authorization guide</a></li>
+                        <li><a href="/guides/ibd-prior-authorization-foundation">IBDPal guide: prior authorization with Foundation resources</a></li>
+                        <li><a href="/blog/insurance-biologics-ibd">Insurance and biologics article</a></li>
+                        <li><a href="/blog/prior-authorization-biologics-timeline">Prior authorization timeline article</a></li>
+                    </ul>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>Mental health and emotional wellness</h2>
+                    <p>Living with IBD often includes stress, anxiety, or depression. Use Foundation education and peer support alongside licensed mental health care when needed.</p>
+                    <ul class="seo-landing__list">
+                        <li><a href="https://www.crohnscolitisfoundation.org/patientsandcaregivers" rel="noopener noreferrer">Foundation patients &amp; caregivers hub</a></li>
+                        <li><a href="/guides/stress-anxiety-ibd">Stress and anxiety guide</a></li>
+                        <li><a href="/blog/stress-emotional-wellness-ibd">Emotional wellness article</a></li>
+                        <li><a href="/blog/depression-anxiety-ibd">Depression and anxiety article</a></li>
+                    </ul>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>Research and clinical trials</h2>
+                    <p>The Foundation funds research and helps patients learn about clinical trial participation. Trial eligibility is decided by study teams and your clinician, not by IBDPal.</p>
+                    <ul class="seo-landing__list">
+                        <li><a href="https://www.crohnscolitisfoundation.org/" rel="noopener noreferrer">Foundation home</a> (research and trial education)</li>
+                        <li><a href="/research">IBDPal trusted clinical sources</a></li>
+                        <li><a href="/blog/free-government-ibd-research-sources">Free government research sources</a></li>
+                    </ul>
+                </section>
+                <section class="seo-landing__block">
                     <h2>Chapters, events, and support groups</h2>
                     <p>Local chapters can help families find education events, community programs, and support groups. Availability varies by region.</p>
-                    <p><a href="https://www.crohnscolitisfoundation.org/chapters" rel="noopener noreferrer">Find a Foundation chapter</a> · <a href="/#community">IBDPal support by state</a> · <a href="/guides/ibd-support-near-me">Support near me guide</a></p>
+                    <ul class="seo-landing__list">
+                        <li><a href="https://www.crohnscolitisfoundation.org/chapters" rel="noopener noreferrer">Find a Foundation chapter</a></li>
+                        <li><a href="https://www.crohnscolitisfoundation.org/find-a-support-group" rel="noopener noreferrer">Find a support group</a></li>
+                        <li><a href="/#community">IBDPal support by state</a></li>
+                        <li><a href="/guides/ibd-support-near-me">Support near me guide</a></li>
+                        <li><a href="/guides/crohns-colitis-support-groups">Support groups guide</a></li>
+                    </ul>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>Advocacy</h2>
+                    <p>The Foundation Action Center helps patients contact lawmakers about IBD access issues such as step therapy. Advocacy is separate from medical advice.</p>
+                    <ul class="seo-landing__list">
+                        <li><a href="https://www.crohnscolitisfoundation.org/get-involved/be-an-advocate/action-center" rel="noopener noreferrer">Foundation Action Center</a></li>
+                        <li><a href="/#news">IBDPal policy news</a></li>
+                    </ul>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>IBDPal guides that attribute the Foundation</h2>
+                    <p>These IBDPal pages explain Foundation programs in plain language and link to the original Foundation sources.</p>
+                    <ul class="seo-landing__list">
+                        <li><a href="/guides/camp-oasis-kids-ibd">Camp Oasis and youth IBD support</a></li>
+                        <li><a href="/guides/ibd-prior-authorization-foundation">Prior authorization with Foundation resources</a></li>
+                        <li><a href="/guides/foundation-diet-nutrition-ibd">Foundation diet and nutrition resources</a></li>
+                        <li><a href="/guides/ibd-crohns-colitis-helpline">Help Center phone numbers</a></li>
+                        <li><a href="/blog/when-to-call-ibd-help-center">Help Center vs clinic</a></li>
+                    </ul>
                 </section>
                 <section class="seo-landing__block">
                     <h2>IBDPal's role</h2>

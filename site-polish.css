@@ -419,6 +419,10 @@ body {
     text-underline-offset: 2px;
 }
 
+.ccf-home-license--hub {
+    margin: 1rem 0 1.25rem;
+}
+
 @media (max-width: 640px) {
     .home-hero {
         padding: 1.1rem var(--ibd-content-pad) 0.9rem;
