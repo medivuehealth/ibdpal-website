@@ -2841,6 +2841,35 @@ a.tab-button,
 
 #about .ibd-segmented-subtabs {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.3rem;
+    padding: 0.28rem;
+    border-radius: 10px 10px 0 0;
+    box-shadow: none;
+}
+
+#about .ibd-segmented-subtab {
+    min-height: 0;
+    padding: 0.35rem 0.45rem;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+#about .ibd-segmented-subtab.active {
+    box-shadow: none;
+}
+
+#about .ibd-segmented-subtab.active::after {
+    width: 1.35rem;
+    height: 2px;
+    margin: 0.22rem auto 0;
+}
+
+#about .ibd-segmented-panels {
+    padding: 0.65rem 0.75rem;
+    border-radius: 0 0 12px 12px;
+    box-shadow: none;
 }
 
 #app .ibd-segmented-subtabs {
@@ -2913,7 +2942,7 @@ a.tab-button,
 .about-tab-shell {
     margin: 0 auto;
     max-width: 980px;
-    padding: clamp(1rem, 3vw, 1.5rem) var(--ibd-content-pad) 2rem;
+    padding: 0.65rem var(--ibd-content-pad) 1.25rem;
 }
 
 .about-tab-shell .ibd-segmented-subtabs,
@@ -2921,6 +2950,18 @@ a.tab-button,
     max-width: none;
     margin-left: 0;
     margin-right: 0;
+}
+
+#about-founders .seo-landing__block p {
+    margin: 0 0 1.15rem;
+}
+
+#about-founders .seo-landing__block p:last-child {
+    margin-bottom: 0;
+}
+
+#about-founders .seo-landing__block + .seo-landing__block {
+    margin-top: 1.25rem;
 }
 
 .nutrition-targets-layout {
@@ -3437,6 +3478,12 @@ a.tab-button,
         grid-template-columns: 1fr;
     }
 
+    #about .ibd-segmented-subtabs {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 0.25rem;
+        padding: 0.22rem;
+    }
+
     .ibd-segmented-subtabs--five {
         grid-template-columns: 1fr;
     }
@@ -3445,6 +3492,12 @@ a.tab-button,
     .nutrition-subtab-button {
         font-size: 0.95rem;
         min-height: 52px;
+    }
+
+    #about .ibd-segmented-subtab {
+        font-size: 0.72rem;
+        min-height: 0;
+        padding: 0.3rem 0.25rem;
     }
 
     .nutrition-targets-posts {
