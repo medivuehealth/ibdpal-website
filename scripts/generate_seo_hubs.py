@@ -217,7 +217,11 @@ def blog_chip_slug(category: str) -> str:
     c = category.lower()
     if "nutrition" in c or "diet" in c:
         return "nutrition"
-    if "treatment" in c or "clinical" in c:
+    if "association" in c or "extraintestinal" in c or "eim" in c:
+        return "associations"
+    if "autoimmune" in c:
+        return "autoimmune"
+    if "treatment" in c or "clinical" in c or "medication" in c:
         return "treatment"
     if "wellness" in c or "lifestyle" in c or "health" in c:
         return "wellness"
@@ -272,17 +276,30 @@ def patch_index_blogs_tab(posts: dict[str, dict]) -> None:
             1,
         )
     toolbar_marker = '                    <div class="blog-index-toolbar"'
-    if toolbar_marker not in text:
+    if toolbar_marker in text:
+        text = re.sub(
+            r'                    <div class="blog-index-toolbar".*?</div>\n',
+            BLOG_FILTER_PILLS_HTML.lstrip("\n") + "\n",
+            text,
+            count=1,
+            flags=re.S,
+        )
+    else:
         text = text.replace(
             '                    <div class="blog-index-grid">',
             BLOG_FILTER_PILLS_HTML + "\n                    <div class=\"blog-index-grid\">",
             1,
         )
     marker_start = '                    <div class="blog-index-grid">'
-    marker_end = '                    </div>\n                </div>\n            </div>\n\n            <!-- Community Tab -->'
+    marker_end = '                    </div>\n                </div>\n            </div>\n\n                <aside class="library-hub-footer"'
     if marker_start not in text or marker_end not in text:
-        print("WARN: blogs tab markers not found in index.html")
-        return
+        # Older marker fallback
+        marker_end_alt = '                    </div>\n                </div>\n            </div>\n\n            <!-- Community Tab -->'
+        if marker_start not in text or (marker_end not in text and marker_end_alt not in text):
+            print("WARN: blogs tab markers not found in index.html")
+            return
+        if marker_end not in text:
+            marker_end = marker_end_alt
     ordered = sorted(posts.values(), key=lambda p: p.get("date_iso", ""), reverse=True)
     cards = blog_cards(ordered, for_index_tab=True)
     block = f"{marker_start}\n{cards}\n{marker_end}"

@@ -76,6 +76,7 @@
                 <div class="library-subtab-container subtab-dock-container">
                     <button type="button" class="library-subtab-button subtab-dock-button active" data-library-subtab="guides">Guides &amp; tools</button>
                     <button type="button" class="library-subtab-button subtab-dock-button" data-library-subtab="sources">Sources</button>
+                    <button type="button" class="library-subtab-button subtab-dock-button" data-library-subtab="research-publications">Research Publications</button>
                     <button type="button" class="library-subtab-button subtab-dock-button" data-library-subtab="articles">Articles</button>
                 </div>
             </nav>
@@ -505,25 +506,74 @@
                 </div>
             </div>
 
-            <!-- Sources -->
+<!-- sources-panel -->
             <div class="library-subcontent" id="sources">
-                <div class="research-hub" data-track-impression="research_tab" data-track-label="Research sources tab">
-                <section class="seo-landing__block research-methodology">
-                    <h2>How IBDPal nutrition baselines work</h2>
-                    <ul class="seo-landing__list"><li>Baseline macronutrient and micronutrient targets follow U.S. Dietary Reference Intakes (DRI) from NIH, adjusted by age and sex.</li><li>Calorie, protein, and fluid estimates also consider basic profile inputs such as current weight. A single formula like 30 kcal per kg is not enough for every patient.</li><li>Higher calorie, protein, vitamin, or mineral needs during active disease, malabsorption, or deficiency are clinical decisions made with your gastroenterologist or IBD dietitian.</li><li>IBDPal tracks food and fluids against general reference levels. It does not prescribe supplements or replace medical nutrition therapy.</li><li>AGA guidance and IBD research explain when labs and dietitian visits matter. DRI tables define population reference ranges; your team personalizes targets.</li></ul>
-                    
-                </section>
+                <div class="research-hub" data-track-impression="sources_tab" data-track-label="Trusted sources tab">
+                    <h2 class="resources-hub__title">Trusted sources</h2>
+                    <p class="community-section__lead">Organizational education hubs used across IBDPal: Crohn&#x27;s &amp; Colitis Foundation (selected content under license), NIH/CDC/FDA, AGA/ACG, and MedlinePlus. Not medical advice.</p>
                     <div class="research-source-grid">
 <article class="research-source-card" id="aga-diet-2024"><h3><a href="https://gastro.org/clinical-guidance/diet-and-nutritional-therapies-in-patients-with-ibd/" rel="noopener noreferrer">AGA Clinical Practice Update: Diet and Nutritional Therapies in IBD (2024)</a></h3><p class="research-source-meta"><strong>American Gastroenterological Association</strong> · 2024 · <span class="research-source-topics">clinical guidance, nutrition therapy, Crohn&#x27;s, colitis</span></p><p>AGA guidance on how gastroenterologists may discuss diet and nutritional therapies with IBD patients. Covers enteral nutrition, exclusion diets, micronutrients, and when to involve a dietitian. Emphasizes that diet supports medical care and is not a standalone cure.</p></article>
-<article class="research-source-card" id="ccc-nutrition-2024"><h3><a href="https://www.nutritionaltherapyforibd.org/news/crohns-colitis-congress-2024-updates-on-ibd-diet-nutrition-research" rel="noopener noreferrer">Crohn&#x27;s &amp; Colitis Congress 2024: IBD Diet &amp; Nutrition Research Updates</a></h3><p class="research-source-meta"><strong>Nutritional Therapy for IBD / Crohn&#x27;s &amp; Colitis Congress</strong> · 2024 · <span class="research-source-topics">conference, diet research, nutrition science</span></p><p>Recap of nutrition-focused presentations from the 2024 Crohn&#x27;s &amp; Colitis Congress. Highlights emerging diet trials, patient-reported outcomes, and practical themes clinicians discussed for Crohn&#x27;s disease and ulcerative colitis.</p></article>
 <article class="research-source-card" id="webmd-micronutrients"><h3><a href="https://www.webmd.com/ibd-crohns-disease/crohns-disease/micronutrient-deficiency-crohns" rel="noopener noreferrer">Micronutrient Deficiency in Crohn&#x27;s Disease</a></h3><p class="research-source-meta"><strong>WebMD</strong> · 2024 · <span class="research-source-topics">vitamins, iron, B12, malabsorption</span></p><p>Overview of common vitamin and mineral shortfalls in Crohn&#x27;s disease, including iron, B12, vitamin D, and folate. Explains why inflammation, surgery, and diet restriction can raise deficiency risk and why labs matter.</p></article>
 <article class="research-source-card" id="nih-ods-dri"><h3><a href="https://ods.od.nih.gov/HealthInformation/Dietary_Reference_Intakes.aspx" rel="noopener noreferrer">NIH Office of Dietary Supplements: Dietary Reference Intakes (DRI)</a></h3><p class="research-source-meta"><strong>National Institutes of Health</strong> · Reference · <span class="research-source-topics">DRI, RDA, AI, age, sex, micronutrients</span></p><p>Official NIH hub for U.S. Dietary Reference Intakes. Reference amounts for energy, protein, vitamins, and minerals vary by age and sex. IBDPal uses these values as baseline daily tracking goals, not personalized prescriptions.</p></article>
 <article class="research-source-card" id="iom-dri"><h3><a href="https://www.nationalacademies.org/our-work/summary-report-of-the-dietary-reference-intakes" rel="noopener noreferrer">Dietary Reference Intakes (DRI): Summary Report</a></h3><p class="research-source-meta"><strong>National Academies of Sciences, Engineering, and Medicine</strong> · Reference · <span class="research-source-topics">DRI, RDAs, nutrition standards</span></p><p>Authoritative U.S. reference values for macronutrients, vitamins, and minerals. Complements the NIH ODS DRI tables. IBD teams adapt general DRIs when inflammation, malabsorption, or steroid use changes individual needs.</p></article>
+<article class="research-source-card" id="niddk-crohns"><h3><a href="https://www.niddk.nih.gov/health-information/digestive-diseases/crohns-disease" rel="noopener noreferrer">Crohn&#x27;s Disease</a></h3><p class="research-source-meta"><strong>NIDDK, National Institutes of Health</strong> · Last reviewed July 2024 · <span class="research-source-topics">Crohn&#x27;s, symptoms, diagnosis, treatment, diet</span></p><p>NIDDK&#x27;s Crohn&#x27;s disease hub covers definition and facts, symptoms and causes, diagnosis, treatment, eating and nutrition, and clinical trials. Useful as a public, government-backed starting point for patient education.</p></article>
+<article class="research-source-card" id="niddk-ulcerative-colitis"><h3><a href="https://www.niddk.nih.gov/health-information/digestive-diseases/ulcerative-colitis" rel="noopener noreferrer">Ulcerative Colitis</a></h3><p class="research-source-meta"><strong>NIDDK, National Institutes of Health</strong> · Last reviewed September 2020 · <span class="research-source-topics">ulcerative colitis, UC, symptoms, diagnosis, treatment, diet</span></p><p>NIDDK&#x27;s ulcerative colitis hub explains UC basics, symptoms, diagnosis, treatment options, diet and nutrition, and research links in patient-friendly language.</p></article>
+<article class="research-source-card" id="medlineplus-crohns"><h3><a href="https://medlineplus.gov/crohnsdisease.html" rel="noopener noreferrer">Crohn&#x27;s Disease</a></h3><p class="research-source-meta"><strong>MedlinePlus, National Library of Medicine</strong> · Health topic · <span class="research-source-topics">Crohn&#x27;s, summary, diagnosis, treatments, living with IBD</span></p><p>MedlinePlus brings together Crohn&#x27;s disease summaries, tests, treatments, living-with resources, clinical trials, journal article links, and patient handouts from NLM, NIH, and other trusted organizations.</p></article>
+<article class="research-source-card" id="medlineplus-uc"><h3><a href="https://medlineplus.gov/ulcerativecolitis.html" rel="noopener noreferrer">Ulcerative Colitis</a></h3><p class="research-source-meta"><strong>MedlinePlus, National Library of Medicine</strong> · Health topic · <span class="research-source-topics">ulcerative colitis, UC, diagnosis, treatments, clinical trials</span></p><p>MedlinePlus collects UC summaries, diagnosis and test resources, treatment links, clinical trial links, journal article references, and patient handouts in one government health topic page.</p></article>
+<article class="research-source-card" id="cdc-ibd-basics"><h3><a href="https://www.cdc.gov/inflammatory-bowel-disease/about/index.html" rel="noopener noreferrer">Inflammatory Bowel Disease (IBD) Basics</a></h3><p class="research-source-meta"><strong>Centers for Disease Control and Prevention</strong> · 2024 · <span class="research-source-topics">IBD basics, symptoms, complications, quality of life, public health</span></p><p>CDC overview of IBD as a lifelong group of diseases, including Crohn&#x27;s and ulcerative colitis, with symptoms, complications, medication categories, and quality-of-life context.</p></article>
+<article class="research-source-card" id="cdc-ibd-facts-stats"><h3><a href="https://www.cdc.gov/inflammatory-bowel-disease/php/facts-stats/index.html" rel="noopener noreferrer">IBD Facts and Stats</a></h3><p class="research-source-meta"><strong>Centers for Disease Control and Prevention</strong> · 2024 · <span class="research-source-topics">statistics, prevalence, costs, public health</span></p><p>CDC summarizes U.S. IBD prevalence estimates, differences across groups, health behaviors, comorbidities, and health care cost patterns, including estimates of 2.4 to 3.1 million people affected.</p></article>
+<article class="research-source-card" id="niddk-crohns-clinical-trials"><h3><a href="https://www.niddk.nih.gov/health-information/digestive-diseases/crohns-disease/clinical-trials" rel="noopener noreferrer">Clinical Trials for Crohn&#x27;s Disease</a></h3><p class="research-source-meta"><strong>NIDDK, National Institutes of Health</strong> · Last reviewed July 2024 · <span class="research-source-topics">clinical trials, research participation, microbiome, genetics</span></p><p>NIDDK explains what Crohn&#x27;s clinical trials are, how ClinicalTrials.gov lists studies, and examples of NIDDK-supported research such as IBD genetics and microbiome work.</p></article>
+<article class="research-source-card" id="niddk-uc-clinical-trials"><h3><a href="https://www.niddk.nih.gov/health-information/digestive-diseases/ulcerative-colitis/clinical-trials" rel="noopener noreferrer">Clinical Trials for Ulcerative Colitis</a></h3><p class="research-source-meta"><strong>NIDDK, National Institutes of Health</strong> · Research resource · <span class="research-source-topics">clinical trials, ulcerative colitis, research participation, pediatric colitis</span></p><p>NIDDK explains ulcerative colitis clinical studies, ClinicalTrials.gov search pathways, and NIDDK-supported work such as IBD genetics and pediatric colitis response research.</p></article>
+<article class="research-source-card" id="clinicaltrials-ibd"><h3><a href="https://clinicaltrials.gov/search?cond=%22Inflammatory%20Bowel%20Diseases%22" rel="noopener noreferrer">ClinicalTrials.gov: Inflammatory Bowel Diseases</a></h3><p class="research-source-meta"><strong>ClinicalTrials.gov, National Library of Medicine</strong> · Registry · <span class="research-source-topics">clinical trials, registry, research participation</span></p><p>Official U.S. registry for clinical studies. Patients can search IBD studies by condition, recruiting status, location, sponsor, and study type, then discuss possible participation with their care team.</p></article>
+<article class="research-source-card" id="nccih-probiotics"><h3><a href="https://www.nccih.nih.gov/health/probiotics-what-you-need-to-know" rel="noopener noreferrer">Probiotics: What You Need To Know</a></h3><p class="research-source-meta"><strong>National Center for Complementary and Integrative Health, NIH</strong> · NIH health information · <span class="research-source-topics">probiotics, supplements, safety, microbiome</span></p><p>NCCIH explains probiotics, research uncertainty, safety considerations, and why supplement use should be discussed with clinicians, especially for people with serious illness or immune concerns.</p></article>
+<article class="research-source-card" id="fda-biosimilars"><h3><a href="https://www.fda.gov/consumers/consumer-updates/biosimilar-and-interchangeable-biologics-more-treatment-choices" rel="noopener noreferrer">Biosimilar and Interchangeable Biologics: More Treatment Choices</a></h3><p class="research-source-meta"><strong>U.S. Food and Drug Administration</strong> · FDA consumer update · <span class="research-source-topics">biosimilars, biologics, FDA, treatment access</span></p><p>FDA consumer education explaining biosimilars and interchangeable biologics, how they compare with reference biologics, and why they may increase treatment options and access.</p></article>
+<article class="research-source-card" id="niddk-psc"><h3><a href="https://www.niddk.nih.gov/health-information/liver-disease/primary-sclerosing-cholangitis" rel="noopener noreferrer">Primary Sclerosing Cholangitis Overview</a></h3><p class="research-source-meta"><strong>NIDDK, National Institutes of Health</strong> · NIH health information · <span class="research-source-topics">PSC, liver disease, bile ducts, NIH</span></p><p>NIDDK patient-facing overview of PSC symptoms, diagnosis themes, and care concepts, including IBD association context on NIH pages.</p></article>
+<article class="research-source-card" id="medlineplus-ankylosing"><h3><a href="https://medlineplus.gov/ankylosingspondylitis.html" rel="noopener noreferrer">Ankylosing Spondylitis</a></h3><p class="research-source-meta"><strong>MedlinePlus, National Library of Medicine</strong> · Health topic · <span class="research-source-topics">ankylosing spondylitis, axial arthritis, genetics, treatments</span></p><p>MedlinePlus hub for AS definitions, treatments, and related genetics resources that patients can read beside IBD joint education.</p></article>
+<article class="research-source-card" id="medlineplus-psoriasis"><h3><a href="https://medlineplus.gov/psoriasis.html" rel="noopener noreferrer">Psoriasis</a></h3><p class="research-source-meta"><strong>MedlinePlus, National Library of Medicine</strong> · Health topic · <span class="research-source-topics">psoriasis, skin, immune disease, treatments</span></p><p>Government health topic page on psoriasis symptoms and treatments for readers exploring skin-gut immune overlap.</p></article>
+<article class="research-source-card" id="medlineplus-celiac"><h3><a href="https://medlineplus.gov/celiacdisease.html" rel="noopener noreferrer">Celiac Disease</a></h3><p class="research-source-meta"><strong>MedlinePlus, National Library of Medicine</strong> · Health topic · <span class="research-source-topics">celiac disease, gluten, nutrition, screening</span></p><p>MedlinePlus celiac overview covering testing and gluten-free diet basics useful before long elimination trials in IBD.</p></article>
+<article class="research-source-card" id="acg-ibd-guidelines"><h3><a href="https://gi.org/guidelines/" rel="noopener noreferrer">ACG IBD Clinical Guidelines Hub</a></h3><p class="research-source-meta"><strong>American College of Gastroenterology</strong> · Society guidance · <span class="research-source-topics">clinical guidelines, ACG, Crohn&#x27;s, ulcerative colitis</span></p><p>ACG publishes clinician guidelines for IBD and related GI conditions. Patients can skim titles and discuss relevant recommendations with their gastroenterologist.</p></article>
+<article class="research-source-card" id="ccf-patients-caregivers"><h3><a href="https://www.crohnscolitisfoundation.org/patientsandcaregivers" rel="noopener noreferrer">Crohn&#x27;s &amp; Colitis Foundation: Patients and Caregivers</a></h3><p class="research-source-meta"><strong>Crohn&#x27;s &amp; Colitis Foundation</strong> · Patient education · <span class="research-source-topics">Foundation, patient education, support, IBD</span></p><p>Foundation patient and caregiver education hub covering disease basics, diet, support programs, and navigating care. Selected Foundation Marks and education appear on IBDPal under license; the Foundation does not endorse IBDPal.</p></article>
+<article class="research-source-card" id="ccf-what-is-ibd"><h3><a href="https://www.crohnscolitisfoundation.org/what-is-ibd" rel="noopener noreferrer">Crohn&#x27;s &amp; Colitis Foundation: What is IBD?</a></h3><p class="research-source-meta"><strong>Crohn&#x27;s &amp; Colitis Foundation</strong> · Patient education · <span class="research-source-topics">IBD basics, Crohn&#x27;s, ulcerative colitis, Foundation</span></p><p>Foundation overview of inflammatory bowel disease for patients and families. Use as a trusted education starting point beside clinic advice.</p></article>
+<article class="research-source-card" id="ccf-diet-nutrition"><h3><a href="https://www.crohnscolitisfoundation.org/patientsandcaregivers/ibd-and-you/diet-and-nutrition" rel="noopener noreferrer">Crohn&#x27;s &amp; Colitis Foundation: Diet and Nutrition</a></h3><p class="research-source-meta"><strong>Crohn&#x27;s &amp; Colitis Foundation</strong> · Patient education · <span class="research-source-topics">diet, nutrition, Foundation, IBD</span></p><p>Foundation diet and nutrition education for IBD. Pair with dietitian care; diet does not replace medication for inflammation.</p></article>
+<article class="research-source-card" id="medlineplus-lupus"><h3><a href="https://medlineplus.gov/lupus.html" rel="noopener noreferrer">Lupus</a></h3><p class="research-source-meta"><strong>MedlinePlus, National Library of Medicine</strong> · Health topic · <span class="research-source-topics">lupus, autoimmune, MedlinePlus</span></p><p>Government health topic page on lupus symptoms, diagnosis themes, and treatments for patient-friendly reading.</p></article>
+<article class="research-source-card" id="medlineplus-ra"><h3><a href="https://medlineplus.gov/rheumatoidarthritis.html" rel="noopener noreferrer">Rheumatoid Arthritis</a></h3><p class="research-source-meta"><strong>MedlinePlus, National Library of Medicine</strong> · Health topic · <span class="research-source-topics">rheumatoid arthritis, joints, MedlinePlus</span></p><p>MedlinePlus RA hub for definitions, treatments, and related genetics resources.</p></article>
                     </div>
-                    <p class="resources-hub__more"><a href="/research">Open full research library page →</a> · <a href="/ibd-nutrition">Nutrition hub</a> · <a href="/blog/how-ibdpal-nutrition-targets-work">Nutrition targets article</a></p>
+                    <p class="resources-hub__more"><a href="/research">Full research page →</a> · <a href="/crohns-colitis-foundation-resources">Foundation resources</a> · <a href="/#research-publications" data-library-subtab-link="research-publications">Research publications</a></p>
                     <p class="community-edu-disclaimer"><strong>Educational only.</strong> External links open publisher sites. IBDPal does not control third-party content.</p>
                 </div>
             </div>
+            <!-- /sources-panel -->
+
+<!-- research-publications-panel -->
+            <div class="library-subcontent" id="research-publications">
+                <div class="research-hub" data-track-impression="research-publications_tab" data-track-label="Research publications tab">
+                    <h2 class="resources-hub__title">Research publications</h2>
+                    <p class="community-section__lead">Peer-reviewed publication gateways and conference research links (PubMed, PMC, Nature, Lancet, NEJM, and related searches). Link and summarize only; we do not host paywalled PDFs.</p>
+                    <div class="research-source-grid">
+<article class="research-source-card" id="ccc-nutrition-2024"><h3><a href="https://www.nutritionaltherapyforibd.org/news/crohns-colitis-congress-2024-updates-on-ibd-diet-nutrition-research" rel="noopener noreferrer">Crohn&#x27;s &amp; Colitis Congress 2024: IBD Diet &amp; Nutrition Research Updates</a></h3><p class="research-source-meta"><strong>Nutritional Therapy for IBD / Crohn&#x27;s &amp; Colitis Congress</strong> · 2024 · <span class="research-source-topics">conference, diet research, nutrition science</span></p><p>Recap of nutrition-focused presentations from the 2024 Crohn&#x27;s &amp; Colitis Congress. Highlights emerging diet trials, patient-reported outcomes, and practical themes clinicians discussed for Crohn&#x27;s disease and ulcerative colitis.</p></article>
+<article class="research-source-card" id="pubmed-eim-overview"><h3><a href="https://pubmed.ncbi.nlm.nih.gov/?term=extraintestinal+manifestations+inflammatory+bowel+disease" rel="noopener noreferrer">Extraintestinal Manifestations of Inflammatory Bowel Disease (PubMed)</a></h3><p class="research-source-meta"><strong>PubMed / National Library of Medicine</strong> · Review literature · <span class="research-source-topics">extraintestinal manifestations, joints, skin, eyes, autoimmune overlap</span></p><p>PubMed search gateway for peer-reviewed literature on IBD extraintestinal manifestations. Use with your clinician to interpret individual papers; IBDPal links rather than republishing full texts.</p></article>
+<article class="research-source-card" id="pubmed-psc-ibd"><h3><a href="https://pubmed.ncbi.nlm.nih.gov/?term=primary+sclerosing+cholangitis+inflammatory+bowel+disease" rel="noopener noreferrer">Primary Sclerosing Cholangitis and IBD (PubMed)</a></h3><p class="research-source-meta"><strong>PubMed / National Library of Medicine</strong> · Research literature · <span class="research-source-topics">PSC, liver, bile ducts, ulcerative colitis</span></p><p>Literature entry point for PSC-IBD association, surveillance themes, and hepatology research. Patient decisions require specialist care, not abstract reading alone.</p></article>
+<article class="research-source-card" id="pubmed-as-ibd"><h3><a href="https://pubmed.ncbi.nlm.nih.gov/?term=ankylosing+spondylitis+inflammatory+bowel+disease" rel="noopener noreferrer">Ankylosing Spondylitis / Spondyloarthritis and IBD (PubMed)</a></h3><p class="research-source-meta"><strong>PubMed / National Library of Medicine</strong> · Research literature · <span class="research-source-topics">ankylosing spondylitis, spondyloarthritis, axial joints, rheumatology</span></p><p>Peer-reviewed research on axial spondyloarthritis overlapping with Crohn&#x27;s and ulcerative colitis, including shared therapy discussions in the literature.</p></article>
+<article class="research-source-card" id="pubmed-psoriasis-ibd"><h3><a href="https://pubmed.ncbi.nlm.nih.gov/?term=psoriasis+inflammatory+bowel+disease" rel="noopener noreferrer">Psoriasis and Inflammatory Bowel Disease (PubMed)</a></h3><p class="research-source-meta"><strong>PubMed / National Library of Medicine</strong> · Research literature · <span class="research-source-topics">psoriasis, skin, immune overlap, dermatology</span></p><p>Research listings on psoriasis-IBD comorbidity and shared inflammatory pathways. Useful for readers preparing dermatology or GI questions.</p></article>
+<article class="research-source-card" id="pubmed-celiac-ibd"><h3><a href="https://pubmed.ncbi.nlm.nih.gov/?term=celiac+disease+inflammatory+bowel+disease" rel="noopener noreferrer">Celiac Disease and IBD Overlap (PubMed)</a></h3><p class="research-source-meta"><strong>PubMed / National Library of Medicine</strong> · Research literature · <span class="research-source-topics">celiac, gluten, screening, nutrition</span></p><p>Literature on celiac-IBD coexistence and diagnostic sequencing before long gluten-free trials.</p></article>
+<article class="research-source-card" id="pubmed-vte-ibd"><h3><a href="https://pubmed.ncbi.nlm.nih.gov/?term=venous+thromboembolism+inflammatory+bowel+disease" rel="noopener noreferrer">Venous Thromboembolism Risk in IBD (PubMed)</a></h3><p class="research-source-meta"><strong>PubMed / National Library of Medicine</strong> · Research literature · <span class="research-source-topics">thrombosis, clot risk, hospitalization, flare</span></p><p>Research on elevated clot risk during IBD flares and hospitalizations. Supports patient awareness articles; emergency symptoms still need urgent care.</p></article>
+<article class="research-source-card" id="pubmed-bone-ibd"><h3><a href="https://pubmed.ncbi.nlm.nih.gov/?term=osteoporosis+inflammatory+bowel+disease+vitamin+D" rel="noopener noreferrer">Osteoporosis and Bone Disease in IBD (PubMed)</a></h3><p class="research-source-meta"><strong>PubMed / National Library of Medicine</strong> · Research literature · <span class="research-source-topics">osteoporosis, vitamin D, steroids, bone health</span></p><p>Peer-reviewed work on bone density, vitamin D, and corticosteroid exposure in Crohn&#x27;s and colitis.</p></article>
+<article class="research-source-card" id="pubmed-diet-therapy-ibd"><h3><a href="https://pubmed.ncbi.nlm.nih.gov/?term=diet+therapy+inflammatory+bowel+disease+randomized" rel="noopener noreferrer">Diet Therapy and Nutrition Trials in IBD (PubMed)</a></h3><p class="research-source-meta"><strong>PubMed / National Library of Medicine</strong> · Research literature · <span class="research-source-topics">diet therapy, nutrition trials, enteral nutrition, Mediterranean diet</span></p><p>Entry point to diet and nutrition intervention studies in IBD, including enteral nutrition and patterned diets studied in trials.</p></article>
+<article class="research-source-card" id="pmc-eim-open"><h3><a href="https://www.ncbi.nlm.nih.gov/pmc/?term=extraintestinal+manifestations+IBD" rel="noopener noreferrer">PMC Open-Access IBD Extraintestinal Reviews</a></h3><p class="research-source-meta"><strong>PubMed Central (NIH)</strong> · Open-access corpus · <span class="research-source-topics">open access, EIM, patient education support</span></p><p>PubMed Central hosts open-access full texts when authors or journals deposit them. Prefer PMC when you need free full-text reading of EIM reviews.</p></article>
+<article class="research-source-card" id="aga-journals-ibd"><h3><a href="https://gastro.org/journals/" rel="noopener noreferrer">AGA Journals: IBD Research and Clinical Updates</a></h3><p class="research-source-meta"><strong>American Gastroenterological Association</strong> · Journal portfolio · <span class="research-source-topics">AGA journals, clinical research, nutrition, therapeutics</span></p><p>Gateway to AGA journal portfolios where clinicians publish IBD trials, nutrition updates, and practice guidance.</p></article>
+<article class="research-source-card" id="nature-ibd-search"><h3><a href="https://www.nature.com/search?q=inflammatory%20bowel%20disease" rel="noopener noreferrer">Nature Portfolio: Inflammatory Bowel Disease Research</a></h3><p class="research-source-meta"><strong>Nature Portfolio</strong> · Research journal search · <span class="research-source-topics">basic science, translational research, IBD mechanisms</span></p><p>Nature Portfolio search for IBD mechanistic and translational papers. Best used with clinician interpretation; many articles are paywalled.</p></article>
+<article class="research-source-card" id="lancet-gastro-ibd"><h3><a href="https://www.thelancet.com/journals/langas/home" rel="noopener noreferrer">The Lancet Gastroenterology &amp; Hepatology: IBD Topic Browse</a></h3><p class="research-source-meta"><strong>The Lancet</strong> · Journal topic · <span class="research-source-topics">clinical trials, gastroenterology, hepatology, IBD</span></p><p>Lancet specialty journal covering GI and liver clinical research, including IBD trials and reviews often discussed in academic clinics.</p></article>
+<article class="research-source-card" id="nejm-ibd-search"><h3><a href="https://www.nejm.org/search?q=inflammatory+bowel+disease" rel="noopener noreferrer">NEJM: Inflammatory Bowel Disease Articles</a></h3><p class="research-source-meta"><strong>New England Journal of Medicine</strong> · Journal search · <span class="research-source-topics">clinical medicine, therapeutics, landmark trials</span></p><p>NEJM search results for IBD clinical articles and reviews commonly cited in specialty care.</p></article>
+<article class="research-source-card" id="pubmed-lupus"><h3><a href="https://pubmed.ncbi.nlm.nih.gov/?term=systemic+lupus+erythematosus" rel="noopener noreferrer">Systemic Lupus Erythematosus Research (PubMed)</a></h3><p class="research-source-meta"><strong>PubMed / National Library of Medicine</strong> · Research literature · <span class="research-source-topics">lupus, SLE, autoimmune, research</span></p><p>PubMed gateway for peer-reviewed SLE research. Use with clinician interpretation; IBDPal summarizes themes only.</p></article>
+<article class="research-source-card" id="pubmed-rheumatoid-arthritis"><h3><a href="https://pubmed.ncbi.nlm.nih.gov/?term=rheumatoid+arthritis" rel="noopener noreferrer">Rheumatoid Arthritis Research (PubMed)</a></h3><p class="research-source-meta"><strong>PubMed / National Library of Medicine</strong> · Research literature · <span class="research-source-topics">rheumatoid arthritis, autoimmune, joints, research</span></p><p>Literature entry point for RA pathogenesis, therapeutics, and comorbidity research.</p></article>
+<article class="research-source-card" id="pubmed-hashimotos"><h3><a href="https://pubmed.ncbi.nlm.nih.gov/?term=hashimoto+thyroiditis" rel="noopener noreferrer">Hashimoto&#x27;s Thyroiditis Research (PubMed)</a></h3><p class="research-source-meta"><strong>PubMed / National Library of Medicine</strong> · Research literature · <span class="research-source-topics">Hashimoto&#x27;s, thyroid, autoimmune, research</span></p><p>PubMed listings on autoimmune thyroiditis diagnosis and management themes.</p></article>
+<article class="research-source-card" id="pubmed-autoimmune-diet"><h3><a href="https://pubmed.ncbi.nlm.nih.gov/?term=diet+autoimmune+disease" rel="noopener noreferrer">Diet and Autoimmune Disease Research (PubMed)</a></h3><p class="research-source-meta"><strong>PubMed / National Library of Medicine</strong> · Research literature · <span class="research-source-topics">diet, autoimmune, nutrition research, Mediterranean diet</span></p><p>Research gateway for diet interventions and observational nutrition studies across autoimmune conditions.</p></article>
+                    </div>
+                    <p class="resources-hub__more"><a href="/research">Full research page →</a> · <a href="/#sources" data-library-subtab-link="sources">Trusted sources</a> · <a href="/ibd-autoimmune-associations">Autoimmune associations</a></p>
+                    <p class="community-edu-disclaimer"><strong>Educational only.</strong> External links open publisher sites. IBDPal does not control third-party content.</p>
+                </div>
+            </div>
+            <!-- /research-publications-panel -->
 
             <!-- Articles -->
             <div class="library-subcontent" id="articles">
@@ -538,6 +588,8 @@
                     <div class="blog-index-toolbar" role="group" aria-label="Filter articles">
                         <button type="button" class="blog-pill is-active" data-blog-filter="">All topics</button>
                         <button type="button" class="blog-pill" data-blog-filter="nutrition">Nutrition</button>
+                        <button type="button" class="blog-pill" data-blog-filter="autoimmune">Autoimmune</button>
+                        <button type="button" class="blog-pill" data-blog-filter="associations">Associations</button>
                         <button type="button" class="blog-pill" data-blog-filter="treatment">Treatment</button>
                         <button type="button" class="blog-pill" data-blog-filter="wellness">Wellness</button>
                         <button type="button" class="blog-pill" data-blog-filter="family">Family</button>
@@ -545,8 +597,590 @@
                         <button type="button" class="blog-pill" data-blog-filter="flare">Flares</button>
                     </div>
 
+
+
                     <div class="blog-index-grid">
-                        <a href="/blog/ibd-night-sweats" class="blog-card blog-card--magazine blog-card--featured" data-blog-topic="wellness">
+                        <a href="/blog/stress-autoimmune-symptoms" class="blog-card blog-card--magazine blog-card--featured" data-blog-topic="wellness">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/stress-coping-ibd/stress-coping-ibd_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--wellness">Wellness</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Stress and Autoimmune Symptoms: Correlation Is Not Cause</h4>
+                            <p>How stress can amplify autoimmune symptom perception without being the root cause, plus coping links. Broader education.</p>
+                            </div>
+                        </a>
+                        <a href="/blog/gut-microbiome-autoimmune" class="blog-card blog-card--magazine" data-blog-topic="autoimmune">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/probiotics-ibd/probiotics-ibd_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--autoimmune">Autoimmune</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Gut Microbiome and Autoimmune Conditions: What We Know</h4>
+                            <p>Microbiome and autoimmune disease: research interest, probiotic caution, and questions for clinicians. Broader education</p>
+                            </div>
+                        </a>
+                        <a href="/blog/mediterranean-diet-autoimmune" class="blog-card blog-card--magazine" data-blog-topic="nutrition">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/micronutrients-ibd/micronutrients-ibd_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--nutrition">Nutrition</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Mediterranean-Style Eating for Autoimmune Health Goals</h4>
+                            <p>Mediterranean-style patterns for autoimmune audiences: plants, olive oil, fish, and realistic expectations. Education on</p>
+                            </div>
+                        </a>
+                        <a href="/blog/autoimmune-diet-myths" class="blog-card blog-card--magazine" data-blog-topic="nutrition">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/micronutrients-ibd/micronutrients-ibd_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--nutrition">Nutrition</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Autoimmune Diet Myths: What Marketing Gets Wrong</h4>
+                            <p>Autoimmune diet myths vs realistic nutrition: detoxes, extreme elimination, and when evidence is thin. Education for bro</p>
+                            </div>
+                        </a>
+                        <a href="/blog/multiple-sclerosis-autoimmune-basics" class="blog-card blog-card--magazine" data-blog-topic="autoimmune">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/joint-pain-ibd/joint-pain-ibd_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--autoimmune">Autoimmune</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Multiple Sclerosis Basics: Autoimmune Nervous System Overview</h4>
+                            <p>MS education basics: neurologic symptom themes and why specialist care matters. Broader autoimmune overview, not a self-</p>
+                            </div>
+                        </a>
+                        <a href="/blog/sjogren-autoimmune-overview" class="blog-card blog-card--magazine" data-blog-topic="autoimmune">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/fatigue-ibd/fatigue-ibd_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--autoimmune">Autoimmune</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Sjogren&#x27;s Syndrome: Dry Eyes, Dry Mouth, Autoimmune Overview</h4>
+                            <p>Sjogren&#x27;s basics: dryness themes, fatigue, and specialist questions. Broader autoimmune education with dental and eye ca</p>
+                            </div>
+                        </a>
+                        <a href="/blog/type1-diabetes-autoimmune-basics" class="blog-card blog-card--magazine" data-blog-topic="autoimmune">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/micronutrients-ibd/micronutrients-ibd_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--autoimmune">Autoimmune</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Type 1 Diabetes: Autoimmune Basics Patients Ask About</h4>
+                            <p>Type 1 diabetes as an autoimmune condition: glucose themes, ketone caution, and care-team questions. Broader education, </p>
+                            </div>
+                        </a>
+                        <a href="/blog/hashimotos-thyroid-autoimmune" class="blog-card blog-card--magazine" data-blog-topic="autoimmune">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/fatigue-ibd/fatigue-ibd_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--autoimmune">Autoimmune</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Hashimoto&#x27;s Thyroiditis: Autoimmune Thyroid Basics</h4>
+                            <p>Hashimoto&#x27;s overview: underactive thyroid themes, fatigue and labs, and questions for primary care or endocrinology. Edu</p>
+                            </div>
+                        </a>
+                        <a href="/blog/rheumatoid-arthritis-autoimmune-overview" class="blog-card blog-card--magazine" data-blog-topic="autoimmune">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/joint-pain-ibd/joint-pain-ibd_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--autoimmune">Autoimmune</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Rheumatoid Arthritis: Autoimmune Joint Inflammation Overview</h4>
+                            <p>RA basics: inflammatory joint patterns, morning stiffness themes, and clinic questions. Broader autoimmune education wit</p>
+                            </div>
+                        </a>
+                        <a href="/blog/lupus-autoimmune-basics" class="blog-card blog-card--magazine" data-blog-topic="autoimmune">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/fatigue-ibd/fatigue-ibd_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--autoimmune">Autoimmune</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Lupus Basics: An Autoimmune Overview for Curious Readers</h4>
+                            <p>What systemic lupus erythematosus is, common symptom themes, and when to seek care. Broader autoimmune education with a </p>
+                            </div>
+                        </a>
+                        <a href="/blog/vaccine-autoimmune-immunosuppression" class="blog-card blog-card--magazine" data-blog-topic="autoimmune">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/steroids-ibd/steroids-ibd_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--autoimmune">Autoimmune</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Vaccines with Autoimmune Disease and Immunosuppression</h4>
+                            <p>Vaccine planning when IBD or overlapping immune disease requires biologics or immunosuppressants: timing, live vaccines,</p>
+                            </div>
+                        </a>
+                        <a href="/blog/fatigue-autoimmune-ibd" class="blog-card blog-card--magazine" data-blog-topic="autoimmune">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/fatigue-ibd/fatigue-ibd_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--autoimmune">Autoimmune</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Fatigue Across Autoimmune and IBD Life</h4>
+                            <p>Why fatigue is common in Crohn&#x27;s, colitis, and overlapping immune conditions, what to track, and clinic questions beyond</p>
+                            </div>
+                        </a>
+                        <a href="/blog/oral-canker-sores-ibd" class="blog-card blog-card--magazine" data-blog-topic="associations">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/fatigue-ibd/fatigue-ibd_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--associations">Associations</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Mouth Sores and Canker Sores in IBD</h4>
+                            <p>Oral aphthous ulcers with Crohn&#x27;s or colitis: flare links, nutrition angles, and when to call dentistry or GI. Short edu</p>
+                            </div>
+                        </a>
+                        <a href="/blog/thrombosis-clot-risk-ibd" class="blog-card blog-card--magazine" data-blog-topic="associations">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/flare-48h/flare_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--associations">Associations</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Clot Risk and Thrombosis Awareness in IBD</h4>
+                            <p>Why Crohn&#x27;s and colitis raise venous clot risk during flares and hospitalization, warning signs, and questions for your </p>
+                            </div>
+                        </a>
+                        <a href="/blog/osteoporosis-bone-health-ibd" class="blog-card blog-card--magazine" data-blog-topic="associations">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/micronutrients-ibd/micronutrients-ibd_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--associations">Associations</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Osteoporosis and Bone Health in IBD</h4>
+                            <p>Bone loss risk in Crohn&#x27;s and colitis: steroids, inflammation, vitamin D, calcium, and screening questions. Patient educ</p>
+                            </div>
+                        </a>
+                        <a href="/blog/autoimmune-hepatitis-ibd" class="blog-card blog-card--magazine" data-blog-topic="associations">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/fatigue-ibd/fatigue-ibd_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--associations">Associations</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Autoimmune Hepatitis Themes in People with IBD</h4>
+                            <p>Autoimmune hepatitis concepts for Crohn&#x27;s and colitis readers: why liver labs matter and when hepatology joins the team.</p>
+                            </div>
+                        </a>
+                        <a href="/blog/ibd-extraintestinal-manifestations" class="blog-card blog-card--magazine" data-blog-topic="associations">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/joint-pain-ibd/joint-pain-ibd_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--associations">Associations</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Extraintestinal Manifestations of IBD: A Patient Map</h4>
+                            <p>Extraintestinal manifestations in Crohn&#x27;s and colitis: joints, eyes, skin, liver, mouth, and bones with links to deeper </p>
+                            </div>
+                        </a>
+                        <a href="/blog/celiac-ibd-screening" class="blog-card blog-card--magazine" data-blog-topic="autoimmune">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/micronutrients-ibd/micronutrients-ibd_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--autoimmune">Autoimmune</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Celiac Screening with IBD: Before You Go Gluten-Free</h4>
+                            <p>Celiac disease overlap with Crohn&#x27;s or colitis: why screen before long gluten-free trials, dietitian coordination, and c</p>
+                            </div>
+                        </a>
+                        <a href="/blog/psoriasis-ibd-connection" class="blog-card blog-card--magazine" data-blog-topic="associations">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/joint-pain-ibd/joint-pain-ibd_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--associations">Associations</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Psoriasis and IBD: Shared Inflammation, Shared Questions</h4>
+                            <p>Why psoriasis and psoriatic patterns appear with Crohn&#x27;s or colitis, skin flares vs medication rashes, and dermatology t</p>
+                            </div>
+                        </a>
+                        <a href="/blog/ankylosing-spondylitis-ibd" class="blog-card blog-card--magazine" data-blog-topic="associations">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/joint-pain-ibd/joint-pain-ibd_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--associations">Associations</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Ankylosing Spondylitis and IBD: Axial Joint Pain Explained</h4>
+                            <p>Ankylosing spondylitis and spondyloarthritis with Crohn&#x27;s or colitis: morning stiffness, back pain, and rheumatology coo</p>
+                            </div>
+                        </a>
+                        <a href="/blog/psc-ibd-liver" class="blog-card blog-card--magazine" data-blog-topic="associations">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/fatigue-ibd/fatigue-ibd_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--associations">Associations</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>PSC and IBD: Primary Sclerosing Cholangitis Explained</h4>
+                            <p>Primary sclerosing cholangitis with ulcerative colitis or Crohn&#x27;s: why liver tests matter, monitoring themes, and clinic</p>
+                            </div>
+                        </a>
+                        <a href="/blog/ibd-autoimmune-overlap" class="blog-card blog-card--magazine" data-blog-topic="autoimmune">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/joint-pain-ibd/joint-pain-ibd_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--autoimmune">Autoimmune</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>IBD and Autoimmune Overlap: What Patients Should Know</h4>
+                            <p>How Crohn&#x27;s and ulcerative colitis relate to other immune-mediated conditions, what overlap means, and questions for you</p>
+                            </div>
+                        </a>
+                        <a href="/blog/flare-symptoms-ibd" class="blog-card blog-card--magazine" data-blog-topic="flare">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/flare-48h/flare_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--flare">Flares</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>IBD Flare Symptoms: What Patients Notice, What to Track, and When to Call</h4>
+                            <p>Crohn&#x27;s and colitis flare symptoms explained: gut signs, fatigue, joints, fever, how to log a timeline, and when to cont</p>
+                            </div>
+                        </a>
+                        <a href="/blog/enteral-nutrition-ibd" class="blog-card blog-card--magazine" data-blog-topic="nutrition">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/enteral-nutrition-ibd/enteral_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--nutrition">Nutrition</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Enteral Nutrition for IBD: What It Means, EEN, and Common Questions</h4>
+                            <p>Enteral nutrition (often misspelled entereal) in Crohn&#x27;s and IBD: formula feeds, exclusive enteral nutrition (EEN), part</p>
+                            </div>
+                        </a>
+                        <a href="/blog/dating-intimacy-ibd-adults" class="blog-card blog-card--magazine" data-blog-topic="default">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/caregiver-partner/caregiver_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--default">Living with IBD</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Dating and Intimacy with IBD as an Adult: Honest, Practical Guidance</h4>
+                            <p>Adult dating and intimacy with Crohn&#x27;s or colitis: disclosure, fatigue, flares, and partner support. Education only.</p>
+                            </div>
+                        </a>
+                        <a href="/blog/ibd-at-work-talking-to-manager" class="blog-card blog-card--magazine" data-blog-topic="default">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/workplace-school/workplace_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--default">Living with IBD</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Talking to Your Manager About IBD at Work: A Practical Script</h4>
+                            <p>How to discuss Crohn&#x27;s or colitis with a manager: privacy, bathroom access, flexibility, and follow-up. Education only.</p>
+                            </div>
+                        </a>
+                        <a href="/blog/ibd-care-outside-united-states" class="blog-card blog-card--magazine" data-blog-topic="default">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/travel-ibd/travel-ibd_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--default">Living with IBD</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>IBD Care Outside the United States: Records, Travel, and Continuity</h4>
+                            <p>Practical tips for international readers and travelers with Crohn&#x27;s or colitis: records, medicines, and care continuity.</p>
+                            </div>
+                        </a>
+                        <a href="/blog/ibd-unintentional-weight-changes" class="blog-card blog-card--magazine" data-blog-topic="nutrition">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/protein-meals-ibd/protein_meals_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--nutrition">Nutrition</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Unintentional Weight Loss or Gain with IBD: What to Watch</h4>
+                            <p>Why Crohn&#x27;s or colitis can cause weight loss or gain, when to call your team, and nutrition next steps. Education only.</p>
+                            </div>
+                        </a>
+                        <a href="/blog/bathroom-urgency-anxiety-ibd" class="blog-card blog-card--magazine" data-blog-topic="wellness">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/stress-coping-ibd/stress-coping-ibd_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--wellness">Wellness</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Bathroom Urgency Anxiety with IBD: Practical Coping Steps</h4>
+                            <p>Urgency fear, mapping restrooms, and short coping scripts for Crohn&#x27;s or colitis in public. Supportive education, not th</p>
+                            </div>
+                        </a>
+                        <a href="/blog/perianal-crohns-fistula-abscess" class="blog-card blog-card--magazine" data-blog-topic="default">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/ostomy-basics/ostomy_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--default">Getting Started</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Perianal Crohn&#x27;s: Fistulas and Abscesses Explained Simply</h4>
+                            <p>Patient-level overview of perianal fistulas and abscesses in Crohn&#x27;s disease: symptoms to report and care-team roles. Ed</p>
+                            </div>
+                        </a>
+                        <a href="/blog/nsaids-ibd-risk" class="blog-card blog-card--magazine" data-blog-topic="treatment">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/steroids-ibd/steroids-ibd_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--treatment">Medications</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>NSAIDs and IBD: Why Ibuprofen Can Be a Problem</h4>
+                            <p>Why NSAIDs like ibuprofen may worsen Crohn&#x27;s or colitis symptoms, safer pain questions for your team, and flare caution.</p>
+                            </div>
+                        </a>
+                        <a href="/blog/how-to-read-colonoscopy-report-ibd" class="blog-card blog-card--magazine" data-blog-topic="default">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/ibd-help-center/helpcenter_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--default">Getting Started</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>How to Read a Colonoscopy Report with IBD</h4>
+                            <p>Plain-language guide to colonoscopy and pathology terms after Crohn&#x27;s or colitis scopes. For clinic conversations, not D</p>
+                            </div>
+                        </a>
+                        <a href="/blog/colonoscopy-prep-ibd" class="blog-card blog-card--magazine" data-blog-topic="default">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/ibd-help-center/helpcenter_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--default">Getting Started</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Colonoscopy Prep with IBD: A Practical Patient Checklist</h4>
+                            <p>Prep tips for Crohn&#x27;s or colitis scopes: timing medicines, hydration, what to tell the team, and recovery. Short educati</p>
+                            </div>
+                        </a>
+                        <a href="/blog/what-remission-means-ibd" class="blog-card blog-card--magazine" data-blog-topic="default">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/ibd-help-center/helpcenter_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--default">Getting Started</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>What Remission Means in IBD (Symptoms vs Healing)</h4>
+                            <p>Clinical remission, endoscopic healing, and how patients can talk about &quot;feeling better&quot; after Crohn&#x27;s or colitis treatm</p>
+                            </div>
+                        </a>
+                        <a href="/blog/mucus-urgency-tenesmus-ibd" class="blog-card blog-card--magazine" data-blog-topic="flare">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/er-ibd/er_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--flare">Flares</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Mucus, Urgency, and Tenesmus in IBD</h4>
+                            <p>Mucus in stool, sudden urgency, and tenesmus in ulcerative colitis or Crohn&#x27;s colitis. How to describe them and when to </p>
+                            </div>
+                        </a>
+                        <a href="/blog/complete-ibd-nutrition-guide" class="blog-card blog-card--magazine" data-blog-topic="nutrition">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/gut-nutrition/ulcerative-colitis-crohns-nutrition_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--nutrition">Nutrition</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Complete IBD Nutrition Guide: Flare Eating, Remission, and Key Patterns</h4>
+                            <p>Pillar overview of IBD nutrition: dairy, FODMAP, fiber, hydration, and low-residue patterns with links to deeper article</p>
+                            </div>
+                        </a>
+                        <a href="/blog/gas-bloating-ibd" class="blog-card blog-card--magazine" data-blog-topic="flare">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/flare-48h/flare_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--flare">Flares</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Gas and Bloating with IBD: What to Track and Ask</h4>
+                            <p>Gas and bloating in Crohn&#x27;s or colitis: flare vs diet vs obstruction risk. Short patient education for clinic conversati</p>
+                            </div>
+                        </a>
+                        <a href="/blog/entyvio-patient-guide-ibd" class="blog-card blog-card--magazine" data-blog-topic="treatment">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/infusion-day/infusion_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--treatment">Medications</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Entyvio (Vedolizumab) Patient Guide for IBD: Common Questions</h4>
+                            <p>Patient FAQ on vedolizumab for Crohn&#x27;s or colitis: infusions, questions for your team, and monitoring themes. Not prescr</p>
+                            </div>
+                        </a>
+                        <a href="/blog/starting-biologic-first-12-weeks" class="blog-card blog-card--magazine" data-blog-topic="treatment">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/biologics-basics/biologics_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--treatment">Medications</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Starting a Biologic for IBD: What the First 12 Weeks Often Look Like</h4>
+                            <p>Week-by-week expectations when starting an IBD biologic: induction, labs, side effects to report, and follow-up. Educati</p>
+                            </div>
+                        </a>
+                        <a href="/blog/prior-authorization-biologics-timeline" class="blog-card blog-card--magazine" data-blog-topic="treatment">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/insurance-basics/insurance_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--treatment">Medications</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Prior Authorization for IBD Biologics: A Patient Timeline</h4>
+                            <p>What patients can expect while insurers review biologic prior authorization, from prescription to first dose. Education </p>
+                            </div>
+                        </a>
+                        <a href="/blog/vaccines-biologics-immunosuppressants-ibd" class="blog-card blog-card--magazine" data-blog-topic="treatment">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/immunosuppressants-ibd/immunosuppressants-ibd_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--treatment">Medications</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Vaccines with Biologics and Immunosuppressants in IBD</h4>
+                            <p>Flu, COVID, pneumonia shots, and live vaccine cautions when you take IBD biologics or immunosuppressants. Education only</p>
+                            </div>
+                        </a>
+                        <a href="/blog/newly-diagnosed-first-30-days" class="blog-card blog-card--magazine" data-blog-topic="default">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/ibd-help-center/helpcenter_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--default">Getting Started</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Newly Diagnosed with IBD: A Practical First 30 Days</h4>
+                            <p>Week-by-week steps after a Crohn&#x27;s or colitis diagnosis: appointments, questions, tracking, and support. Education only.</p>
+                            </div>
+                        </a>
+                        <a href="/blog/blood-in-stool-ibd-when-to-worry" class="blog-card blog-card--magazine" data-blog-topic="flare">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/er-ibd/er_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--flare">Flares</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Blood in Stool with IBD: How to Track It and When It Is Urgent</h4>
+                            <p>Rectal bleeding in Crohn&#x27;s or colitis: how to describe amount, color, and urgency. Patient education, not triage advice.</p>
+                            </div>
+                        </a>
+                        <a href="/blog/chronic-diarrhea-ibd-causes" class="blog-card blog-card--magazine" data-blog-topic="flare">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/flare-48h/flare_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--flare">Flares</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Chronic Diarrhea in IBD: Flare, Infection, or Medication Effects</h4>
+                            <p>Why loose stools persist in Crohn&#x27;s or colitis: inflammation, infection, bile acids, diet, and meds. Education for clini</p>
+                            </div>
+                        </a>
+                        <a href="/blog/pyoderma-erythema-nodosum-ibd" class="blog-card blog-card--magazine" data-blog-topic="wellness">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/joint-pain-ibd/joint-pain-ibd_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--wellness">Wellness</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>IBD Skin Flares: Pyoderma Gangrenosum and Erythema Nodosum</h4>
+                            <p>Painful skin lesions linked to Crohn&#x27;s or colitis: how EN and PG differ, when to call, and clinic questions. Short educa</p>
+                            </div>
+                        </a>
+                        <a href="/blog/reading-ibd-labs-calprotectin-crp" class="blog-card blog-card--magazine" data-blog-topic="default">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/ibd-help-center/helpcenter_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--default">Getting Started</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Reading IBD Labs: Calprotectin, CRP, and What Numbers Mean</h4>
+                            <p>A plain-language intro to fecal calprotectin, CRP, CBC, and related IBD labs. Helps visits, not a replacement for clinic</p>
+                            </div>
+                        </a>
+                        <a href="/blog/anemia-iron-deficiency-ibd" class="blog-card blog-card--magazine" data-blog-topic="wellness">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/fatigue-ibd/fatigue-ibd_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--wellness">Wellness</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Anemia and Iron Deficiency in IBD</h4>
+                            <p>Why Crohn&#x27;s and colitis cause anemia, symptoms to watch, and iron therapy questions for your GI team. Short patient educ</p>
+                            </div>
+                        </a>
+                        <a href="/blog/humid-weather-ibd-symptoms" class="blog-card blog-card--magazine" data-blog-topic="wellness">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/summer-heat/summer_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--wellness">Wellness</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Humid Weather and IBD Symptoms: Heat, Fluids, and Flare Mimics</h4>
+                            <p>How humidity and heat can worsen IBD fatigue, dehydration, and urgency. Practical midsummer tips, education only.</p>
+                            </div>
+                        </a>
+                        <a href="/blog/uveitis-eye-inflammation-ibd" class="blog-card blog-card--magazine" data-blog-topic="wellness">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/joint-pain-ibd/joint-pain-ibd_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--wellness">Wellness</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Eye Inflammation and Uveitis in IBD</h4>
+                            <p>Red, painful, or light-sensitive eyes with Crohn&#x27;s or colitis: why uveitis matters and when to seek eye care. Short educ</p>
+                            </div>
+                        </a>
+                        <a href="/blog/swimming-pool-beach-ibd-ostomy" class="blog-card blog-card--magazine" data-blog-topic="wellness">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/summer-heat/summer_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--wellness">Wellness</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Swimming and Beach Days with IBD or an Ostomy</h4>
+                            <p>Pool and beach tips for Crohn&#x27;s, colitis, and ostomy: bags, waterproof covers, hydration, and privacy. Short summer educ</p>
+                            </div>
+                        </a>
+                        <a href="/blog/steroid-taper-what-to-expect-ibd" class="blog-card blog-card--magazine" data-blog-topic="treatment">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/steroids-ibd/steroids-ibd_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--treatment">Medications</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Steroid Taper in IBD: What to Expect Week by Week</h4>
+                            <p>Prednisone and budesonide tapers in Crohn&#x27;s or colitis: common side effects, warning signs, and clinic questions. Short </p>
+                            </div>
+                        </a>
+                        <a href="/blog/constipation-ibd-causes" class="blog-card blog-card--magazine" data-blog-topic="flare">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/flare-48h/flare_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--flare">Flares</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Constipation in IBD: Strictures, Meds, and When to Call</h4>
+                            <p>Why constipation happens in Crohn&#x27;s or colitis, what to track, and when hard stools need a same-day call. Short patient </p>
+                            </div>
+                        </a>
+                        <a href="/blog/when-to-call-gi-vs-er-ibd" class="blog-card blog-card--magazine" data-blog-topic="flare">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/er-ibd/er_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--flare">Flares</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>When to Call Your GI Nurse Line vs Urgent Care vs the ER for IBD</h4>
+                            <p>A practical decision tree for Crohn&#x27;s or colitis: GI nurse line, urgent care, or ER. Education only, not emergency advic</p>
+                            </div>
+                        </a>
+                        <a href="/blog/ibd-leg-knee-pain" class="blog-card blog-card--magazine" data-blog-topic="wellness">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/leg-knee-pain-ibd/leg-knee-pain-ibd_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--wellness">Wellness</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>IBD Leg Pain and Knee Pain: What Patients Search For and When to Ask for Help</h4>
+                            <p>Crohn&#x27;s and colitis leg pain and knee pain: extraintestinal symptoms, arthritis links, nerve issues, blood clots to rule</p>
+                            </div>
+                        </a>
+                        <a href="/blog/free-government-ibd-research-sources" class="blog-card blog-card--magazine" data-blog-topic="default">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/gov-ibd-research/gov-research_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--default">Research</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Free Government IBD Research Sources Patients Can Use</h4>
+                            <p>How to use NIH, NIDDK, MedlinePlus, CDC, FDA, and ClinicalTrials.gov sources for Crohn&#x27;s and ulcerative colitis educatio</p>
+                            </div>
+                        </a>
+                        <a href="/blog/icn-lifestyle-ibd-toolkit" class="blog-card blog-card--magazine" data-blog-topic="default">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/icn-lifestyle/icn-lifestyle_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--default">ICN Resources</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Lifestyle and IBD: ImproveCareNow Interactive Web Toolkit</h4>
+                            <p>Mental health, diet, exercise, social life, and treatment from a patient perspective. Guide to ICN&#x27;s web-based Lifestyle</p>
+                            </div>
+                        </a>
+                        <a href="/blog/icn-health-literacy-toolkit-ibd" class="blog-card blog-card--magazine" data-blog-topic="default">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/icn-health-literacy/icn-health-literacy_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--default">ICN Resources</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>IBD Health Literacy Toolkit: ImproveCareNow Patient Guide</h4>
+                            <p>Patient-written guide to IBD basics, tests, treatments, and medical terminology. Overview of the ICN Health Literacy Too</p>
+                            </div>
+                        </a>
+                        <a href="/blog/school-planning-ibd-before-august" class="blog-card blog-card--magazine" data-blog-topic="family">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/school-planning-ibd/school-planning_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--family">Family</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>School Planning for IBD: What Families Can Do Before August</h4>
+                            <p>Back-to-school planning for Crohn&#x27;s and colitis: 504 plans, nurses, bathroom access, go-bags, medications, siblings, and</p>
+                            </div>
+                        </a>
+                        <a href="/blog/ibd-night-sweats" class="blog-card blog-card--magazine" data-blog-topic="wellness">
                             <div class="blog-card__media">
                             <img src="/blogs/assets/night-sweats-ibd/night-sweats-ibd_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
                             <span class="blog-card-chip blog-card-chip--wellness">Wellness</span>
@@ -554,6 +1188,26 @@
                             <div class="blog-card__body">
                             <h4>Night Sweats With Crohn&#x27;s or Colitis: Flare Sign, Infection, or Something Else?</h4>
                             <p>IBD night sweats: fever patterns, active inflammation, medications, infections to rule out, and when to call your clinic</p>
+                            </div>
+                        </a>
+                        <a href="/blog/icn-self-management-handbook-ibd" class="blog-card blog-card--magazine" data-blog-topic="default">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/icn-self-mgmt/icn-self-mgmt_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--default">ICN Resources</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Living Well With IBD: ImproveCareNow Self-Management Handbook</h4>
+                            <p>Comprehensive handbook for young patients and families learning to participate actively in Crohn&#x27;s and colitis care. ICN</p>
+                            </div>
+                        </a>
+                        <a href="/blog/summer-travel-ibd-restrooms-meds-food-heat" class="blog-card blog-card--magazine" data-blog-topic="wellness">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/summer-travel-ibd/summer-travel_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--wellness">Lifestyle</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Summer Travel With IBD: Restrooms, Meds, Food, and Heat</h4>
+                            <p>A practical summer travel plan for Crohn&#x27;s and colitis: restrooms, medications, food choices, hydration, heat, and when </p>
                             </div>
                         </a>
                         <a href="/blog/when-to-go-er-ibd" class="blog-card blog-card--magazine" data-blog-topic="flare">
@@ -574,6 +1228,16 @@
                             <div class="blog-card__body">
                             <h4>IBD Joint Pain and Arthritis: Extraintestinal Symptoms Patients Ask About</h4>
                             <p>Crohn&#x27;s and colitis joint pain: peripheral arthritis, sacroiliitis, when flares affect joints, biologics, and rheumatolo</p>
+                            </div>
+                        </a>
+                        <a href="/blog/infusion-day-what-to-expect" class="blog-card blog-card--magazine" data-blog-topic="treatment">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/infusion-day/infusion_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--treatment">Clinical</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Infusion Day With IBD: What Many Patients Pack and Expect</h4>
+                            <p>Comfort items, timing, and emotional tips for biologic or iron infusion appointments. Always follow your infusion center</p>
                             </div>
                         </a>
                         <a href="/blog/j-pouch-basics-ibd" class="blog-card blog-card--magazine" data-blog-topic="treatment">
@@ -604,6 +1268,16 @@
                             <div class="blog-card__body">
                             <h4>College With Crohn&#x27;s or Colitis: Dorms, Dining Halls, and Disability Services</h4>
                             <p>Starting college with IBD: disability accommodations, dining strategies, infusions away from home, and when to use campu</p>
+                            </div>
+                        </a>
+                        <a href="/blog/dining-out-ibd-restaurants" class="blog-card blog-card--magazine" data-blog-topic="nutrition">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/dining-out/dining_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--nutrition">Nutrition</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Dining Out With IBD: Restaurant Strategies That Reduce Stress</h4>
+                            <p>Menus, portions, and social situations when eating out with Crohn&#x27;s or colitis. Emphasizes individual triggers and team </p>
                             </div>
                         </a>
                         <a href="/blog/ibd-fatigue-brain-fog" class="blog-card blog-card--magazine" data-blog-topic="wellness">
@@ -656,6 +1330,16 @@
                             <p>IBD stress management: mindfulness, CBT skills, breathing, pacing, gut-directed therapy, and building a flare-ready rout</p>
                             </div>
                         </a>
+                        <a href="/blog/when-to-call-ibd-help-center" class="blog-card blog-card--magazine" data-blog-topic="default">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/ibd-help-center/helpcenter_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--default">Support</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>When to Call the IBD Help Center vs Your Clinic</h4>
+                            <p>How the Crohn&#x27;s and Colitis Foundation IBD Help Center supports education and referrals, and when to contact your gastro</p>
+                            </div>
+                        </a>
                         <a href="/blog/exercise-physical-activity-ibd" class="blog-card blog-card--magazine" data-blog-topic="wellness">
                             <div class="blog-card__media">
                             <img src="/blogs/assets/exercise-ibd/exercise_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
@@ -676,6 +1360,16 @@
                             <p>IBD malabsorption and micronutrient gaps: zinc, folate, magnesium, selenium, calcium, labs to discuss, and links to iron</p>
                             </div>
                         </a>
+                        <a href="/blog/siblings-when-child-has-ibd" class="blog-card blog-card--magazine" data-blog-topic="family">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/siblings-ibd/siblings_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--family">Family</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>When a Sibling Has IBD: Support for Brothers and Sisters</h4>
+                            <p>How Crohn&#x27;s or colitis in one child can affect siblings, and gentle ways parents can keep everyone feeling seen. Family </p>
+                            </div>
+                        </a>
                         <a href="/blog/anti-inflammatory-diet-ibd" class="blog-card blog-card--magazine" data-blog-topic="nutrition">
                             <div class="blog-card__media">
                             <img src="/blogs/assets/anti-inflammatory-ibd/anti_inflammatory_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
@@ -684,6 +1378,16 @@
                             <div class="blog-card__body">
                             <h4>Anti-Inflammatory Diet and IBD: What Research Suggests (and What It Doesn&#x27;t)</h4>
                             <p>Anti-inflammatory eating with Crohn&#x27;s or colitis: Mediterranean patterns, omega-3s, ultra-processed foods, and limits of</p>
+                            </div>
+                        </a>
+                        <a href="/blog/ibd-flare-go-bag" class="blog-card blog-card--magazine" data-blog-topic="family">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/flare-go-bag/gobag_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--family">Family</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Building an IBD Flare Go-Bag for School, Work, and Travel</h4>
+                            <p>What many families pack for bathroom emergencies, comfort items, and clinic contacts during Crohn&#x27;s or colitis flares. E</p>
                             </div>
                         </a>
                         <a href="/blog/probiotics-ibd-gut-health" class="blog-card blog-card--magazine" data-blog-topic="nutrition">
@@ -706,6 +1410,16 @@
                             <p>IBD depression and anxiety are common. Gut-brain links, flare stress, when to seek help, therapy options, and questions </p>
                             </div>
                         </a>
+                        <a href="/blog/ibd-summer-heat-hydration" class="blog-card blog-card--magazine" data-blog-topic="wellness">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/summer-heat/summer_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--wellness">Wellness</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>IBD and Summer Heat: Hydration Tips for Hot Weather</h4>
+                            <p>Why heat and dehydration matter with Crohn&#x27;s or colitis, practical drink choices, and when to call your care team. Lifes</p>
+                            </div>
+                        </a>
                         <a href="/blog/teen-nutrition-ibd-growth" class="blog-card blog-card--magazine" data-blog-topic="nutrition">
                             <div class="blog-card__media">
                             <img src="/blogs/assets/teen-nutrition/teen_nutrition_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
@@ -724,6 +1438,16 @@
                             <div class="blog-card__body">
                             <h4>Crohn&#x27;s and Colitis in High School: Bathrooms, 504 Plans, and Missing Class</h4>
                             <p>Managing IBD in high school: bathroom access, 504 accommodations, explaining absences, and talking to teachers, educatio</p>
+                            </div>
+                        </a>
+                        <a href="/blog/icn-ibd-holidays-special-occasions" class="blog-card blog-card--magazine" data-blog-topic="default">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/icn-holidays/icn-holidays_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--default">ICN Resources</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>IBD During Holidays and Special Occasions: ICN Community Resources</h4>
+                            <p>Holiday stress, eating, and inclusion when friends or family have Crohn&#x27;s or colitis. ICN resources for special occasion</p>
                             </div>
                         </a>
                         <a href="/blog/mesalamine-5-asa-ibd" class="blog-card blog-card--magazine" data-blog-topic="treatment">
@@ -756,6 +1480,16 @@
                             <p>Low-FODMAP basics for IBD: what FODMAPs are, who may benefit, elimination phases, and working with a dietitian, not a DI</p>
                             </div>
                         </a>
+                        <a href="/blog/icn-ostomy-toolkit-pediatric" class="blog-card blog-card--magazine" data-blog-topic="default">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/icn-ostomy/icn-ostomy_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--default">ICN Resources</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Life With an Ostomy: ImproveCareNow Ostomy Toolkit for Youth</h4>
+                            <p>School, sports, travel, and telling friends about ostomy surgery. Overview of the ICN Ostomy Toolkit co-produced by pedi</p>
+                            </div>
+                        </a>
                         <a href="/blog/fiber-and-ibd-diet" class="blog-card blog-card--magazine" data-blog-topic="nutrition">
                             <div class="blog-card__media">
                             <img src="/blogs/assets/fiber-ibd/fiber-ibd_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
@@ -764,6 +1498,16 @@
                             <div class="blog-card__body">
                             <h4>Fiber and IBD: When to Add It and When to Pull Back</h4>
                             <p>Soluble vs insoluble fiber for Crohn&#x27;s and colitis, flares vs remission, and how to reintroduce fiber with your dietitia</p>
+                            </div>
+                        </a>
+                        <a href="/blog/icn-transfer-toolkit-adult-care" class="blog-card blog-card--magazine" data-blog-topic="default">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/icn-transfer/icn-transfer_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--default">ICN Resources</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Transitioning to Adult IBD Care: ImproveCareNow Transfer Toolkit</h4>
+                            <p>Pediatric to adult gastroenterology handoff, self-advocacy, and skills for young adults with Crohn&#x27;s or colitis. ICN Tra</p>
                             </div>
                         </a>
                         <a href="/blog/partner-caregiver-ibd" class="blog-card blog-card--magazine" data-blog-topic="family">
@@ -786,6 +1530,16 @@
                             <p>Hydration, rest, what to log, and when to call your clinician, general education, not emergency guidance.</p>
                             </div>
                         </a>
+                        <a href="/blog/icn-mental-health-provider-guide" class="blog-card blog-card--magazine" data-blog-topic="default">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/icn-mental-health/icn-mental-health_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--default">ICN Resources</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Finding a Mental Health Provider for Youth With IBD: ICN Guide</h4>
+                            <p>How to find therapy for children and teens with Crohn&#x27;s or colitis. Overview of ImproveCareNow&#x27;s four-page mental health</p>
+                            </div>
+                        </a>
                         <a href="/blog/steroids-prednisone-ibd" class="blog-card blog-card--magazine" data-blog-topic="treatment">
                             <div class="blog-card__media">
                             <img src="/blogs/assets/steroids-ibd/steroids-ibd_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
@@ -794,6 +1548,16 @@
                             <div class="blog-card__body">
                             <h4>Steroids (Prednisone) and IBD Flares: Short-Term Basics</h4>
                             <p>Prednisone and budesonide for Crohn&#x27;s and colitis flares: what steroids do, side effects to watch, and tapering only wit</p>
+                            </div>
+                        </a>
+                        <a href="/blog/icn-caregiver-coping-resource" class="blog-card blog-card--magazine" data-blog-topic="default">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/icn-caregiver/icn-caregiver_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--default">ICN Resources</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>Caregiver Coping With Pediatric IBD: ImproveCareNow Family Resource</h4>
+                            <p>Parent and caregiver mental health, sibling impact, and stress with pediatric Crohn&#x27;s or colitis. Guide to the ICN Careg</p>
                             </div>
                         </a>
                         <a href="/blog/immunosuppressants-ibd-basics" class="blog-card blog-card--magazine" data-blog-topic="treatment">
@@ -826,6 +1590,16 @@
                             <p>Gluten-free diets and IBD: celiac disease overlap, wheat as a trigger, and when testing matters before cutting gluten, e</p>
                             </div>
                         </a>
+                        <a href="/blog/icn-college-ibd-toolkit" class="blog-card blog-card--magazine" data-blog-topic="default">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/icn-college/icn-college_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--default">ICN Resources</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>College With IBD: ImproveCareNow College &amp; IBD Handbook</h4>
+                            <p>Choosing a school, dorms, dining halls, and disability services with IBD. Overview of the ImproveCareNow College &amp; IBD T</p>
+                            </div>
+                        </a>
                         <a href="/blog/insurance-biologics-ibd" class="blog-card blog-card--magazine" data-blog-topic="treatment">
                             <div class="blog-card__media">
                             <img src="/blogs/assets/insurance-basics/insurance_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
@@ -846,6 +1620,16 @@
                             <p>Can you eat dairy with IBD? Lactose intolerance vs inflammation, yogurt and cheese tips, and when to talk to your dietit</p>
                             </div>
                         </a>
+                        <a href="/blog/icn-accommodations-toolkit-ibd" class="blog-card blog-card--magazine" data-blog-topic="default">
+                            <div class="blog-card__media">
+                            <img src="/blogs/assets/icn-accommodations/icn-accommodations_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
+                            <span class="blog-card-chip blog-card-chip--default">ICN Resources</span>
+                            </div>
+                            <div class="blog-card__body">
+                            <h4>IBD School and Workplace Accommodations: ImproveCareNow Accommodations Toolkit</h4>
+                            <p>504 plans, college accommodations, and workplace flexibility for Crohn&#x27;s and colitis. Guide to the ImproveCareNow Accomm</p>
+                            </div>
+                        </a>
                         <a href="/blog/workplace-school-ibd-rights" class="blog-card blog-card--magazine" data-blog-topic="wellness">
                             <div class="blog-card__media">
                             <img src="/blogs/assets/workplace-school/workplace_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async">
@@ -863,7 +1647,7 @@
                             </div>
                             <div class="blog-card__body">
                             <h4>Sleep and Rest During IBD Flares: Why Slowing Down Helps</h4>
-                            <p>Sleep, naps, pacing activity, and bedroom habits that support recovery during Crohn’s and colitis flares, general wellne</p>
+                            <p>Sleep, naps, pacing activity, and bedroom habits that support recovery during Crohn&#x27;s and colitis flares, general wellne</p>
                             </div>
                         </a>
                         <a href="/blog/stress-emotional-wellness-ibd" class="blog-card blog-card--magazine" data-blog-topic="wellness">
@@ -883,7 +1667,7 @@
                             </div>
                             <div class="blog-card__body">
                             <h4>Living With IBD as a Family: Support for Kids and Parents</h4>
-                            <p>Helping children with IBD feel normal, building school plans, and caring for parents’ energy, family lifestyle education</p>
+                            <p>Helping children with IBD feel normal, building school plans, and caring for parents&#x27; energy, family lifestyle education</p>
                             </div>
                         </a>
                         <a href="/blog/how-ibdpal-nutrition-targets-work" class="blog-card blog-card--magazine" data-blog-topic="nutrition">
@@ -913,7 +1697,7 @@
                             </div>
                             <div class="blog-card__body">
                             <h4>Travel With IBD: Planning Trips Without Letting Fear Run the Show</h4>
-                            <p>Packing, airports, food on the road, and confidence-building habits for traveling with Crohn’s or colitis, general educa</p>
+                            <p>Packing, airports, food on the road, and confidence-building habits for traveling with Crohn&#x27;s or colitis, general educa</p>
                             </div>
                         </a>
                         <a href="/blog/low-residue-diet-flare" class="blog-card blog-card--magazine" data-blog-topic="nutrition">
@@ -932,7 +1716,7 @@
                             <span class="blog-card-chip blog-card-chip--wellness">Wellness &amp;amp; IBD</span>
                             </div>
                             <div class="blog-card__body">
-                            <h4>Hydration Tips for Crohn’s Disease and Ulcerative Colitis</h4>
+                            <h4>Hydration Tips for Crohn&#x27;s Disease and Ulcerative Colitis</h4>
                             <p>Why hydration matters in IBD, signs of dehydration, and practical strategies, general education, not medical advice.</p>
                             </div>
                         </a>
@@ -943,7 +1727,7 @@
                             </div>
                             <div class="blog-card__body">
                             <h4>How Nutrition Impacts Gut Health in IBD</h4>
-                            <p>Gut microbiome, nutrition patterns, and personalized approaches in Crohn’s and ulcerative colitis, general education, no</p>
+                            <p>Gut microbiome, nutrition patterns, and personalized approaches in Crohn&#x27;s and ulcerative colitis, general education, no</p>
                             </div>
                         </a>
                         <a href="/blog/foods-that-may-trigger-uc-symptoms" class="blog-card blog-card--magazine" data-blog-topic="nutrition">
@@ -962,8 +1746,8 @@
                             <span class="blog-card-chip blog-card-chip--nutrition">Nutrition &amp;amp; IBD</span>
                             </div>
                             <div class="blog-card__body">
-                            <h4>Best Foods to Eat During a Crohn’s Disease Flare</h4>
-                            <p>Gentler food choices, hydration ideas, and common triggers during a Crohn’s disease flare, general education, not medica</p>
+                            <h4>Best Foods to Eat During a Crohn&#x27;s Disease Flare</h4>
+                            <p>Gentler food choices, hydration ideas, and common triggers during a Crohn&#x27;s disease flare, general education, not medica</p>
                             </div>
                         </a>
                         <a href="/blog/tracking-food-symptoms-ibdpal" class="blog-card blog-card--magazine" data-blog-topic="product">
@@ -1110,7 +1894,7 @@
                 <article class="support-section seo-landing tab-page-section tab-page-section--compact">
                     <header class="page-header-compact">
                         <h1 class="page-header-compact__title">Free nonprofit IBD education from MediVue</h1>
-                        <p class="page-header-compact__lead">240+ free pages &amp; iOS app &middot; not medical advice</p>
+                        <p class="page-header-compact__lead">250+ free pages &amp; iOS app &middot; not medical advice</p>
                     </header>
                     <section class="seo-landing__block">
                         <h2>Who we are</h2>
@@ -1120,11 +1904,11 @@
                     <section class="seo-landing__block">
                         <h2>What you will find here</h2>
                         <ul class="seo-landing__list">
-                            <li><a href="/#articles">107 in-depth articles</a> on nutrition, treatment, wellness, autoimmune associations, and daily life</li>
-                            <li><a href="/guides">35 step-by-step patient guides</a></li>
-                            <li><a href="/resources">200+ searchable resource library entries</a></li>
+                            <li><a href="/#articles">117 in-depth articles</a> on nutrition, treatment, wellness, autoimmune topics, associations, and daily life</li>
+                            <li><a href="/guides">37 step-by-step patient guides</a></li>
+                            <li><a href="/resources">210+ searchable resource library entries</a></li>
                             <li><a href="/#community">50+ state support pages</a> (all 50 states + DC)</li>
-                            <li><a href="/library">240+ total education and resource pages</a></li>
+                            <li><a href="/library">250+ total education and resource pages</a></li>
                             <li>Free <a href="/#app">IBDPal iOS app</a></li>
                         </ul>
                     </section>
@@ -1173,10 +1957,11 @@
                     <section class="seo-landing__block updates-month">
                         <h2>August 2026</h2>
                         <ul class="seo-landing__list">
-                            <li><strong>Traffic expansion wave 1:</strong> 12 autoimmune and association articles (PSC, AS, psoriasis, celiac screening, EIMs, bone health, clot awareness, and more); hub at <a href="/ibd-autoimmune-associations">/ibd-autoimmune-associations</a>; 5 nutrition guides; 18 PubMed/society research cards on <a href="/research">/research</a></li>
+                            <li><strong>Traffic expansion wave 2:</strong> broader autoimmune articles (lupus, RA, Hashimoto's, type 1 diabetes, Sjogren's, MS, microbiome, diet myths); Patient Library <a href="/#research-publications">Research Publications</a> tab; Articles filters for Autoimmune and Associations; Sources refreshed with Crohn's &amp; Colitis Foundation hubs</li>
+                            <li><strong>Traffic expansion wave 1:</strong> 12 autoimmune and association articles (PSC, AS, psoriasis, celiac screening, EIMs, bone health, clot awareness, and more); hub at <a href="/ibd-autoimmune-associations">/ibd-autoimmune-associations</a>; 5 nutrition guides; PubMed/society research cards on <a href="/research">/research</a></li>
                             <li><strong>Crohn&rsquo;s &amp; Colitis Foundation:</strong> licensed-education homepage strip (logo + attribution, no endorsement claims); expanded <a href="/crohns-colitis-foundation-resources">Foundation resources hub</a>; attributed guides for <a href="/guides/camp-oasis-kids-ibd">Camp Oasis</a>, <a href="/guides/ibd-prior-authorization-foundation">prior authorization</a>, and <a href="/guides/foundation-diet-nutrition-ibd">diet and nutrition</a>; Foundation links added to the <a href="/resources">resource library</a></li>
                             <li><strong>Homepage UX:</strong> brighter high-contrast type, bold black menu labels, compact Foundation strip so search stays visible</li>
-                            <li><strong>Library counts:</strong> <strong>107 articles</strong>, <strong>35 guides</strong>, <strong>200+</strong> resource entries, <strong>240+</strong> sitemap education pages</li>
+                            <li><strong>Library counts:</strong> <strong>117 articles</strong>, <strong>37 guides</strong>, <strong>210+</strong> resource entries, <strong>250+</strong> sitemap education pages</li>
                         </ul>
                     </section>
                     <section class="seo-landing__block updates-month">

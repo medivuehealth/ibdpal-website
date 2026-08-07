@@ -1,8 +1,8 @@
 {
-  "title": "IBD Research Sources | NIH, PubMed, AGA & Autoimmune Associations | IBDPal",
-  "description": "Trusted IBD research links: NIH/CDC, PubMed literature on extraintestinal and autoimmune associations, AGA/ACG guidance, and nutrition trial gateways. Education only.",
-  "h1": "IBD research and autoimmune association sources",
-  "intro": "Government public health pages, society guidance, and publication gateways (PubMed, PMC, AGA, ACG, and major journals) for Crohn's disease, ulcerative colitis, extraintestinal manifestations, and related nutrition research. IBDPal links to originals and summarizes in patient-friendly language. Not medical advice.",
+  "title": "IBD & Autoimmune Research Sources | Foundation, NIH, PubMed | IBDPal",
+  "description": "Trusted organizational sources (including Crohn's & Colitis Foundation, NIH, AGA) and research publication gateways (PubMed, journals) for IBD and autoimmune education.",
+  "h1": "Research sources and publications",
+  "intro": "Organizational education sources and peer-reviewed publication gateways for Crohn's disease, ulcerative colitis, extraintestinal associations, and broader autoimmune topics. IBDPal links to originals and summarizes in patient-friendly language. Not medical advice.",
   "methodology": {
     "heading": "How IBDPal nutrition baselines work",
     "items": [
@@ -27,7 +27,8 @@
         "colitis"
       ],
       "summary": "AGA guidance on how gastroenterologists may discuss diet and nutritional therapies with IBD patients. Covers enteral nutrition, exclusion diets, micronutrients, and when to involve a dietitian. Emphasizes that diet supports medical care and is not a standalone cure.",
-      "license_note": "Professional society guidance. Link and summarize; do not assume open reuse of full text or graphics."
+      "license_note": "Professional society guidance. Link and summarize; do not assume open reuse of full text or graphics.",
+      "shelf": "sources"
     },
     {
       "id": "ccc-nutrition-2024",
@@ -41,7 +42,8 @@
         "nutrition science"
       ],
       "summary": "Recap of nutrition-focused presentations from the 2024 Crohn's & Colitis Congress. Highlights emerging diet trials, patient-reported outcomes, and practical themes clinicians discussed for Crohn's disease and ulcerative colitis.",
-      "license_note": "Third-party recap. Link and summarize; verify permissions before reusing substantial text or media."
+      "license_note": "Third-party recap. Link and summarize; verify permissions before reusing substantial text or media.",
+      "shelf": "publications"
     },
     {
       "id": "webmd-micronutrients",
@@ -56,7 +58,8 @@
         "malabsorption"
       ],
       "summary": "Overview of common vitamin and mineral shortfalls in Crohn's disease, including iron, B12, vitamin D, and folate. Explains why inflammation, surgery, and diet restriction can raise deficiency risk and why labs matter.",
-      "license_note": "Commercial health publisher. Link only unless permission is granted."
+      "license_note": "Commercial health publisher. Link only unless permission is granted.",
+      "shelf": "sources"
     },
     {
       "id": "nih-ods-dri",
@@ -73,7 +76,8 @@
         "micronutrients"
       ],
       "summary": "Official NIH hub for U.S. Dietary Reference Intakes. Reference amounts for energy, protein, vitamins, and minerals vary by age and sex. IBDPal uses these values as baseline daily tracking goals, not personalized prescriptions.",
-      "license_note": "NIH public information; verify page notices before reusing charts, tables, or third-party material."
+      "license_note": "NIH public information; verify page notices before reusing charts, tables, or third-party material.",
+      "shelf": "sources"
     },
     {
       "id": "iom-dri",
@@ -87,7 +91,8 @@
         "nutrition standards"
       ],
       "summary": "Authoritative U.S. reference values for macronutrients, vitamins, and minerals. Complements the NIH ODS DRI tables. IBD teams adapt general DRIs when inflammation, malabsorption, or steroid use changes individual needs.",
-      "license_note": "National Academies source. Link and summarize; verify reuse terms before copying report text or tables."
+      "license_note": "National Academies source. Link and summarize; verify reuse terms before copying report text or tables.",
+      "shelf": "sources"
     },
     {
       "id": "niddk-crohns",
@@ -103,7 +108,8 @@
         "diet"
       ],
       "summary": "NIDDK's Crohn's disease hub covers definition and facts, symptoms and causes, diagnosis, treatment, eating and nutrition, and clinical trials. Useful as a public, government-backed starting point for patient education.",
-      "license_note": "U.S. government public health information; verify page-specific notices before reusing images or third-party content."
+      "license_note": "U.S. government public health information; verify page-specific notices before reusing images or third-party content.",
+      "shelf": "sources"
     },
     {
       "id": "niddk-ulcerative-colitis",
@@ -120,7 +126,8 @@
         "diet"
       ],
       "summary": "NIDDK's ulcerative colitis hub explains UC basics, symptoms, diagnosis, treatment options, diet and nutrition, and research links in patient-friendly language.",
-      "license_note": "U.S. government public health information; verify page-specific notices before reusing images or third-party content."
+      "license_note": "U.S. government public health information; verify page-specific notices before reusing images or third-party content.",
+      "shelf": "sources"
     },
     {
       "id": "medlineplus-crohns",
@@ -136,7 +143,8 @@
         "living with IBD"
       ],
       "summary": "MedlinePlus brings together Crohn's disease summaries, tests, treatments, living-with resources, clinical trials, journal article links, and patient handouts from NLM, NIH, and other trusted organizations.",
-      "license_note": "MedlinePlus summaries are public domain, but some linked encyclopedia, drug, image, and partner content is copyrighted. Link and acknowledge MedlinePlus/NLM."
+      "license_note": "MedlinePlus summaries are public domain, but some linked encyclopedia, drug, image, and partner content is copyrighted. Link and acknowledge MedlinePlus/NLM.",
+      "shelf": "sources"
     },
     {
       "id": "medlineplus-uc",
@@ -152,7 +160,8 @@
         "clinical trials"
       ],
       "summary": "MedlinePlus collects UC summaries, diagnosis and test resources, treatment links, clinical trial links, journal article references, and patient handouts in one government health topic page.",
-      "license_note": "MedlinePlus summaries are public domain, but some linked encyclopedia, drug, image, and partner content is copyrighted. Link and acknowledge MedlinePlus/NLM."
+      "license_note": "MedlinePlus summaries are public domain, but some linked encyclopedia, drug, image, and partner content is copyrighted. Link and acknowledge MedlinePlus/NLM.",
+      "shelf": "sources"
     },
     {
       "id": "cdc-ibd-basics",
@@ -168,7 +177,8 @@
         "public health"
       ],
       "summary": "CDC overview of IBD as a lifelong group of diseases, including Crohn's and ulcerative colitis, with symptoms, complications, medication categories, and quality-of-life context.",
-      "license_note": "CDC public health information; verify page notices before reusing graphics, tables, or third-party material."
+      "license_note": "CDC public health information; verify page notices before reusing graphics, tables, or third-party material.",
+      "shelf": "sources"
     },
     {
       "id": "cdc-ibd-facts-stats",
@@ -183,7 +193,8 @@
         "public health"
       ],
       "summary": "CDC summarizes U.S. IBD prevalence estimates, differences across groups, health behaviors, comorbidities, and health care cost patterns, including estimates of 2.4 to 3.1 million people affected.",
-      "license_note": "CDC public health information; verify page notices and cite CDC when reusing statistics."
+      "license_note": "CDC public health information; verify page notices and cite CDC when reusing statistics.",
+      "shelf": "sources"
     },
     {
       "id": "niddk-crohns-clinical-trials",
@@ -198,7 +209,8 @@
         "genetics"
       ],
       "summary": "NIDDK explains what Crohn's clinical trials are, how ClinicalTrials.gov lists studies, and examples of NIDDK-supported research such as IBD genetics and microbiome work.",
-      "license_note": "U.S. government public health information. Clinical trial participation requires discussion with a qualified clinician."
+      "license_note": "U.S. government public health information. Clinical trial participation requires discussion with a qualified clinician.",
+      "shelf": "sources"
     },
     {
       "id": "niddk-uc-clinical-trials",
@@ -213,7 +225,8 @@
         "pediatric colitis"
       ],
       "summary": "NIDDK explains ulcerative colitis clinical studies, ClinicalTrials.gov search pathways, and NIDDK-supported work such as IBD genetics and pediatric colitis response research.",
-      "license_note": "U.S. government public health information. NIH does not review every non-federal study listed on ClinicalTrials.gov."
+      "license_note": "U.S. government public health information. NIH does not review every non-federal study listed on ClinicalTrials.gov.",
+      "shelf": "sources"
     },
     {
       "id": "clinicaltrials-ibd",
@@ -227,7 +240,8 @@
         "research participation"
       ],
       "summary": "Official U.S. registry for clinical studies. Patients can search IBD studies by condition, recruiting status, location, sponsor, and study type, then discuss possible participation with their care team.",
-      "license_note": "Public registry. Study records can change; verify details on ClinicalTrials.gov and with study contacts."
+      "license_note": "Public registry. Study records can change; verify details on ClinicalTrials.gov and with study contacts.",
+      "shelf": "sources"
     },
     {
       "id": "nccih-probiotics",
@@ -242,7 +256,8 @@
         "microbiome"
       ],
       "summary": "NCCIH explains probiotics, research uncertainty, safety considerations, and why supplement use should be discussed with clinicians, especially for people with serious illness or immune concerns.",
-      "license_note": "NIH public health information; verify page notices before reusing images, graphics, or third-party content."
+      "license_note": "NIH public health information; verify page notices before reusing images, graphics, or third-party content.",
+      "shelf": "sources"
     },
     {
       "id": "fda-biosimilars",
@@ -257,7 +272,8 @@
         "treatment access"
       ],
       "summary": "FDA consumer education explaining biosimilars and interchangeable biologics, how they compare with reference biologics, and why they may increase treatment options and access.",
-      "license_note": "FDA public information; verify page notices before reusing graphics, videos, or downloaded PDFs."
+      "license_note": "FDA public information; verify page notices before reusing graphics, videos, or downloaded PDFs.",
+      "shelf": "sources"
     },
     {
       "id": "pubmed-eim-overview",
@@ -273,7 +289,8 @@
         "autoimmune overlap"
       ],
       "summary": "PubMed search gateway for peer-reviewed literature on IBD extraintestinal manifestations. Use with your clinician to interpret individual papers; IBDPal links rather than republishing full texts.",
-      "license_note": "PubMed records and linked publisher full texts have mixed copyright. Link and summarize; do not scrape paywalled PDFs."
+      "license_note": "PubMed records and linked publisher full texts have mixed copyright. Link and summarize; do not scrape paywalled PDFs.",
+      "shelf": "publications"
     },
     {
       "id": "pubmed-psc-ibd",
@@ -288,7 +305,8 @@
         "ulcerative colitis"
       ],
       "summary": "Literature entry point for PSC-IBD association, surveillance themes, and hepatology research. Patient decisions require specialist care, not abstract reading alone.",
-      "license_note": "Link to PubMed records; respect publisher copyright for full articles."
+      "license_note": "Link to PubMed records; respect publisher copyright for full articles.",
+      "shelf": "publications"
     },
     {
       "id": "pubmed-as-ibd",
@@ -303,7 +321,8 @@
         "rheumatology"
       ],
       "summary": "Peer-reviewed research on axial spondyloarthritis overlapping with Crohn's and ulcerative colitis, including shared therapy discussions in the literature.",
-      "license_note": "Link and summarize; do not republish full journal PDFs."
+      "license_note": "Link and summarize; do not republish full journal PDFs.",
+      "shelf": "publications"
     },
     {
       "id": "pubmed-psoriasis-ibd",
@@ -318,7 +337,8 @@
         "dermatology"
       ],
       "summary": "Research listings on psoriasis-IBD comorbidity and shared inflammatory pathways. Useful for readers preparing dermatology or GI questions.",
-      "license_note": "PubMed/publisher copyrights vary; link out only."
+      "license_note": "PubMed/publisher copyrights vary; link out only.",
+      "shelf": "publications"
     },
     {
       "id": "pubmed-celiac-ibd",
@@ -333,7 +353,8 @@
         "nutrition"
       ],
       "summary": "Literature on celiac-IBD coexistence and diagnostic sequencing before long gluten-free trials.",
-      "license_note": "Link and summarize abstracts; full texts follow publisher licenses."
+      "license_note": "Link and summarize abstracts; full texts follow publisher licenses.",
+      "shelf": "publications"
     },
     {
       "id": "pubmed-vte-ibd",
@@ -348,7 +369,8 @@
         "flare"
       ],
       "summary": "Research on elevated clot risk during IBD flares and hospitalizations. Supports patient awareness articles; emergency symptoms still need urgent care.",
-      "license_note": "Link to PubMed; do not copy full papers."
+      "license_note": "Link to PubMed; do not copy full papers.",
+      "shelf": "publications"
     },
     {
       "id": "pubmed-bone-ibd",
@@ -363,7 +385,8 @@
         "bone health"
       ],
       "summary": "Peer-reviewed work on bone density, vitamin D, and corticosteroid exposure in Crohn's and colitis.",
-      "license_note": "Link and summarize; respect journal copyright."
+      "license_note": "Link and summarize; respect journal copyright.",
+      "shelf": "publications"
     },
     {
       "id": "pubmed-diet-therapy-ibd",
@@ -378,7 +401,8 @@
         "Mediterranean diet"
       ],
       "summary": "Entry point to diet and nutrition intervention studies in IBD, including enteral nutrition and patterned diets studied in trials.",
-      "license_note": "Link to PubMed records; no full-text scraping."
+      "license_note": "Link to PubMed records; no full-text scraping.",
+      "shelf": "publications"
     },
     {
       "id": "pmc-eim-open",
@@ -392,7 +416,8 @@
         "patient education support"
       ],
       "summary": "PubMed Central hosts open-access full texts when authors or journals deposit them. Prefer PMC when you need free full-text reading of EIM reviews.",
-      "license_note": "Each PMC article has its own license (often CC). Check the article license before reuse beyond linking and short quotation."
+      "license_note": "Each PMC article has its own license (often CC). Check the article license before reuse beyond linking and short quotation.",
+      "shelf": "publications"
     },
     {
       "id": "niddk-psc",
@@ -407,7 +432,8 @@
         "NIH"
       ],
       "summary": "NIDDK patient-facing overview of PSC symptoms, diagnosis themes, and care concepts, including IBD association context on NIH pages.",
-      "license_note": "U.S. government public health information; verify notices before reusing graphics."
+      "license_note": "U.S. government public health information; verify notices before reusing graphics.",
+      "shelf": "sources"
     },
     {
       "id": "medlineplus-ankylosing",
@@ -422,7 +448,8 @@
         "treatments"
       ],
       "summary": "MedlinePlus hub for AS definitions, treatments, and related genetics resources that patients can read beside IBD joint education.",
-      "license_note": "MedlinePlus summaries are public domain; some linked content is copyrighted."
+      "license_note": "MedlinePlus summaries are public domain; some linked content is copyrighted.",
+      "shelf": "sources"
     },
     {
       "id": "medlineplus-psoriasis",
@@ -437,7 +464,8 @@
         "treatments"
       ],
       "summary": "Government health topic page on psoriasis symptoms and treatments for readers exploring skin-gut immune overlap.",
-      "license_note": "MedlinePlus summaries are public domain; linked partner content may be copyrighted."
+      "license_note": "MedlinePlus summaries are public domain; linked partner content may be copyrighted.",
+      "shelf": "sources"
     },
     {
       "id": "medlineplus-celiac",
@@ -452,7 +480,8 @@
         "screening"
       ],
       "summary": "MedlinePlus celiac overview covering testing and gluten-free diet basics useful before long elimination trials in IBD.",
-      "license_note": "MedlinePlus summaries are public domain; verify linked encyclopedia licenses."
+      "license_note": "MedlinePlus summaries are public domain; verify linked encyclopedia licenses.",
+      "shelf": "sources"
     },
     {
       "id": "acg-ibd-guidelines",
@@ -467,7 +496,8 @@
         "ulcerative colitis"
       ],
       "summary": "ACG publishes clinician guidelines for IBD and related GI conditions. Patients can skim titles and discuss relevant recommendations with their gastroenterologist.",
-      "license_note": "Professional society materials. Link and summarize; do not assume free republication rights."
+      "license_note": "Professional society materials. Link and summarize; do not assume free republication rights.",
+      "shelf": "sources"
     },
     {
       "id": "aga-journals-ibd",
@@ -482,7 +512,8 @@
         "therapeutics"
       ],
       "summary": "Gateway to AGA journal portfolios where clinicians publish IBD trials, nutrition updates, and practice guidance.",
-      "license_note": "Journal copyright applies. Link to AGA; do not host PDFs."
+      "license_note": "Journal copyright applies. Link to AGA; do not host PDFs.",
+      "shelf": "publications"
     },
     {
       "id": "nature-ibd-search",
@@ -496,7 +527,8 @@
         "IBD mechanisms"
       ],
       "summary": "Nature Portfolio search for IBD mechanistic and translational papers. Best used with clinician interpretation; many articles are paywalled.",
-      "license_note": "Paywalled and open-access mix. Link only; no PDF hosting."
+      "license_note": "Paywalled and open-access mix. Link only; no PDF hosting.",
+      "shelf": "publications"
     },
     {
       "id": "lancet-gastro-ibd",
@@ -511,7 +543,8 @@
         "IBD"
       ],
       "summary": "Lancet specialty journal covering GI and liver clinical research, including IBD trials and reviews often discussed in academic clinics.",
-      "license_note": "Publisher copyright. Link and short summary only."
+      "license_note": "Publisher copyright. Link and short summary only.",
+      "shelf": "publications"
     },
     {
       "id": "nejm-ibd-search",
@@ -525,7 +558,150 @@
         "landmark trials"
       ],
       "summary": "NEJM search results for IBD clinical articles and reviews commonly cited in specialty care.",
-      "license_note": "NEJM copyright. Link only; do not republish figures or full text."
+      "license_note": "NEJM copyright. Link only; do not republish figures or full text.",
+      "shelf": "publications"
+    },
+    {
+      "id": "ccf-patients-caregivers",
+      "title": "Crohn's & Colitis Foundation: Patients and Caregivers",
+      "publisher": "Crohn's & Colitis Foundation",
+      "year": "Patient education",
+      "url": "https://www.crohnscolitisfoundation.org/patientsandcaregivers",
+      "topics": [
+        "Foundation",
+        "patient education",
+        "support",
+        "IBD"
+      ],
+      "summary": "Foundation patient and caregiver education hub covering disease basics, diet, support programs, and navigating care. Selected Foundation Marks and education appear on IBDPal under license; the Foundation does not endorse IBDPal.",
+      "license_note": "Selected Foundation content and Marks used on IBDPal under license. Link to originals; logo unmodified. No endorsement claim.",
+      "shelf": "sources"
+    },
+    {
+      "id": "ccf-what-is-ibd",
+      "title": "Crohn's & Colitis Foundation: What is IBD?",
+      "publisher": "Crohn's & Colitis Foundation",
+      "year": "Patient education",
+      "url": "https://www.crohnscolitisfoundation.org/what-is-ibd",
+      "topics": [
+        "IBD basics",
+        "Crohn's",
+        "ulcerative colitis",
+        "Foundation"
+      ],
+      "summary": "Foundation overview of inflammatory bowel disease for patients and families. Use as a trusted education starting point beside clinic advice.",
+      "license_note": "Foundation education under license on IBDPal where selected; always prefer current Foundation pages as originals.",
+      "shelf": "sources"
+    },
+    {
+      "id": "ccf-diet-nutrition",
+      "title": "Crohn's & Colitis Foundation: Diet and Nutrition",
+      "publisher": "Crohn's & Colitis Foundation",
+      "year": "Patient education",
+      "url": "https://www.crohnscolitisfoundation.org/patientsandcaregivers/ibd-and-you/diet-and-nutrition",
+      "topics": [
+        "diet",
+        "nutrition",
+        "Foundation",
+        "IBD"
+      ],
+      "summary": "Foundation diet and nutrition education for IBD. Pair with dietitian care; diet does not replace medication for inflammation.",
+      "license_note": "Link and attribute Foundation pages. Do not mirror full Foundation site content.",
+      "shelf": "sources"
+    },
+    {
+      "id": "pubmed-lupus",
+      "title": "Systemic Lupus Erythematosus Research (PubMed)",
+      "publisher": "PubMed / National Library of Medicine",
+      "year": "Research literature",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/?term=systemic+lupus+erythematosus",
+      "topics": [
+        "lupus",
+        "SLE",
+        "autoimmune",
+        "research"
+      ],
+      "summary": "PubMed gateway for peer-reviewed SLE research. Use with clinician interpretation; IBDPal summarizes themes only.",
+      "license_note": "Link to PubMed; do not scrape paywalled PDFs.",
+      "shelf": "publications"
+    },
+    {
+      "id": "pubmed-rheumatoid-arthritis",
+      "title": "Rheumatoid Arthritis Research (PubMed)",
+      "publisher": "PubMed / National Library of Medicine",
+      "year": "Research literature",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/?term=rheumatoid+arthritis",
+      "topics": [
+        "rheumatoid arthritis",
+        "autoimmune",
+        "joints",
+        "research"
+      ],
+      "summary": "Literature entry point for RA pathogenesis, therapeutics, and comorbidity research.",
+      "license_note": "Link and summarize; respect journal copyright.",
+      "shelf": "publications"
+    },
+    {
+      "id": "pubmed-hashimotos",
+      "title": "Hashimoto's Thyroiditis Research (PubMed)",
+      "publisher": "PubMed / National Library of Medicine",
+      "year": "Research literature",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/?term=hashimoto+thyroiditis",
+      "topics": [
+        "Hashimoto's",
+        "thyroid",
+        "autoimmune",
+        "research"
+      ],
+      "summary": "PubMed listings on autoimmune thyroiditis diagnosis and management themes.",
+      "license_note": "Link only; no full-text hosting.",
+      "shelf": "publications"
+    },
+    {
+      "id": "pubmed-autoimmune-diet",
+      "title": "Diet and Autoimmune Disease Research (PubMed)",
+      "publisher": "PubMed / National Library of Medicine",
+      "year": "Research literature",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/?term=diet+autoimmune+disease",
+      "topics": [
+        "diet",
+        "autoimmune",
+        "nutrition research",
+        "Mediterranean diet"
+      ],
+      "summary": "Research gateway for diet interventions and observational nutrition studies across autoimmune conditions.",
+      "license_note": "Link to PubMed records; verify publisher licenses for reuse.",
+      "shelf": "publications"
+    },
+    {
+      "id": "medlineplus-lupus",
+      "title": "Lupus",
+      "publisher": "MedlinePlus, National Library of Medicine",
+      "year": "Health topic",
+      "url": "https://medlineplus.gov/lupus.html",
+      "topics": [
+        "lupus",
+        "autoimmune",
+        "MedlinePlus"
+      ],
+      "summary": "Government health topic page on lupus symptoms, diagnosis themes, and treatments for patient-friendly reading.",
+      "license_note": "MedlinePlus summaries are public domain; linked partner content may be copyrighted.",
+      "shelf": "sources"
+    },
+    {
+      "id": "medlineplus-ra",
+      "title": "Rheumatoid Arthritis",
+      "publisher": "MedlinePlus, National Library of Medicine",
+      "year": "Health topic",
+      "url": "https://medlineplus.gov/rheumatoidarthritis.html",
+      "topics": [
+        "rheumatoid arthritis",
+        "joints",
+        "MedlinePlus"
+      ],
+      "summary": "MedlinePlus RA hub for definitions, treatments, and related genetics resources.",
+      "license_note": "MedlinePlus summaries are public domain; verify linked encyclopedia licenses.",
+      "shelf": "sources"
     }
   ]
 }

@@ -94,21 +94,132 @@ def methodology_block(data: dict, *, compact: bool = False) -> str:
                 </section>"""
 
 
-def tab_section(data: dict) -> str:
-    return f"""            <!-- research-tab -->
-            <div class="tab-content" id="research">
-                <div class="research-hub" data-track-impression="research_tab" data-track-label="Research sources tab">
-                    <h2 class="resources-hub__title">Trusted sources</h2>
-                    <p class="community-section__lead">{html.escape(data['intro'])}</p>
-{methodology_block(data, compact=True)}
+def split_shelves(sources: list[dict]) -> tuple[list[dict], list[dict]]:
+    orgs: list[dict] = []
+    pubs: list[dict] = []
+    for s in sources:
+        shelf = s.get("shelf") or "sources"
+        if shelf == "publications":
+            pubs.append(s)
+        else:
+            orgs.append(s)
+    return orgs, pubs
+
+
+def library_panel(
+    panel_id: str,
+    title: str,
+    lead: str,
+    sources: list[dict],
+    *,
+    extra_links: str,
+) -> str:
+    return f"""            <!-- {panel_id}-panel -->
+            <div class="library-subcontent" id="{panel_id}">
+                <div class="research-hub" data-track-impression="{panel_id}_tab" data-track-label="{html.escape(title)} tab">
+                    <h2 class="resources-hub__title">{html.escape(title)}</h2>
+                    <p class="community-section__lead">{html.escape(lead)}</p>
                     <div class="research-source-grid">
-{source_cards(data['sources'], compact=True)}
+{source_cards(sources, compact=True)}
                     </div>
-                    <p class="resources-hub__more"><a href="/research">Open full research library page →</a> · <a href="/ibd-nutrition">Nutrition hub</a> · <a href="/blog/how-ibdpal-nutrition-targets-work">Nutrition targets article</a></p>
+                    <p class="resources-hub__more">{extra_links}</p>
                     <p class="community-edu-disclaimer"><strong>Educational only.</strong> External links open publisher sites. IBDPal does not control third-party content.</p>
                 </div>
             </div>
-            <!-- /research-tab -->"""
+            <!-- /{panel_id}-panel -->"""
+
+
+def tab_section(data: dict) -> str:
+    # Kept for backward compatibility with older index markers.
+    return library_panel(
+        "research",
+        "Trusted sources",
+        data["intro"],
+        data["sources"],
+        extra_links='<a href="/research">Open full research library page →</a> · <a href="/ibd-nutrition">Nutrition hub</a>',
+    )
+
+
+def patch_library_panels(data: dict) -> None:
+    text = INDEX.read_text(encoding="utf-8")
+    orgs, pubs = split_shelves(data["sources"])
+    sources_html = library_panel(
+        "sources",
+        "Trusted sources",
+        "Organizational education hubs used across IBDPal: Crohn's & Colitis Foundation (selected content under license), NIH/CDC/FDA, AGA/ACG, and MedlinePlus. Not medical advice.",
+        orgs,
+        extra_links=(
+            '<a href="/research">Full research page →</a> · '
+            '<a href="/crohns-colitis-foundation-resources">Foundation resources</a> · '
+            '<a href="/#research-publications" data-library-subtab-link="research-publications">Research publications</a>'
+        ),
+    )
+    pubs_html = library_panel(
+        "research-publications",
+        "Research publications",
+        "Peer-reviewed publication gateways and conference research links (PubMed, PMC, Nature, Lancet, NEJM, and related searches). Link and summarize only; we do not host paywalled PDFs.",
+        pubs,
+        extra_links=(
+            '<a href="/research">Full research page →</a> · '
+            '<a href="/#sources" data-library-subtab-link="sources">Trusted sources</a> · '
+            '<a href="/ibd-autoimmune-associations">Autoimmune associations</a>'
+        ),
+    )
+
+    def replace_panel(html_text: str, panel_id: str, replacement: str) -> str:
+        marked = f"<!-- {panel_id}-panel -->"
+        if marked in html_text:
+            return re.sub(
+                rf"<!-- {panel_id}-panel -->.*?<!-- /{panel_id}-panel -->",
+                replacement.strip(),
+                html_text,
+                flags=re.S,
+            )
+        # Legacy unmarked Sources panel
+        if panel_id == "sources":
+            pattern = r'            <!-- Sources -->\s*<div class="library-subcontent" id="sources">.*?(?=            <!-- Articles -->|            <!-- research-publications-panel -->)'
+            if re.search(pattern, html_text, flags=re.S):
+                return re.sub(pattern, replacement.strip() + "\n\n", html_text, count=1, flags=re.S)
+            pattern2 = r'<div class="library-subcontent" id="sources">.*?(?=            <!-- Articles -->|            <div class="library-subcontent" id="articles">)'
+            if re.search(pattern2, html_text, flags=re.S):
+                return re.sub(pattern2, replacement.strip() + "\n\n", html_text, count=1, flags=re.S)
+        if panel_id == "research-publications":
+            # Insert before Articles if missing
+            if 'id="research-publications"' not in html_text:
+                return html_text.replace(
+                    "            <!-- Articles -->",
+                    replacement.strip() + "\n\n            <!-- Articles -->",
+                    1,
+                )
+        return html_text
+
+    text = replace_panel(text, "sources", sources_html)
+    text = replace_panel(text, "research-publications", pubs_html)
+
+    # Ensure library dock button exists
+    if 'data-library-subtab="research-publications"' not in text:
+        text = text.replace(
+            '<button type="button" class="library-subtab-button subtab-dock-button" data-library-subtab="articles">Articles</button>',
+            '<button type="button" class="library-subtab-button subtab-dock-button" data-library-subtab="research-publications">Research Publications</button>\n'
+            '                    <button type="button" class="library-subtab-button subtab-dock-button" data-library-subtab="articles">Articles</button>',
+            1,
+        )
+
+    INDEX.write_text(text, encoding="utf-8")
+    print(f"patched library Sources ({len(orgs)}) and Research Publications ({len(pubs)})")
+
+
+def patch_index(tab_html: str) -> None:
+    # Legacy path retained; library panels are the live UI.
+    text = INDEX.read_text(encoding="utf-8")
+    if "<!-- research-tab -->" in text:
+        text = re.sub(
+            r"<!-- research-tab -->.*?<!-- /research-tab -->",
+            tab_html.strip(),
+            text,
+            flags=re.S,
+        )
+        INDEX.write_text(text, encoding="utf-8")
 
 
 def render_page(data: dict) -> str:
@@ -129,10 +240,11 @@ def render_page(data: dict) -> str:
                 <section class="seo-landing__block">
                     <h2>Related on IBDPal</h2>
                     <ul class="seo-landing__list">
+                        <li><a href="/#sources">Trusted sources in Patient Library</a></li>
+                        <li><a href="/#research-publications">Research publications in Patient Library</a></li>
                         <li><a href="/ibd-nutrition">IBD nutrition hub</a></li>
-                        <li><a href="/blog/how-ibdpal-nutrition-targets-work">How IBDPal sets nutrition targets</a></li>
-                        <li><a href="/blog/fodmap-diet-crohns-colitis">FODMAP diet article</a></li>
-                        <li><a href="/blog/iron-b12-vitamin-d-ibd">Iron, B12, and vitamin D</a></li>
+                        <li><a href="/ibd-autoimmune-associations">Autoimmune associations hub</a></li>
+                        <li><a href="/crohns-colitis-foundation-resources">Foundation resources</a></li>
                         <li><a href="/glossary">IBD glossary</a></li>
                     </ul>
                 </section>
@@ -143,7 +255,7 @@ def render_page(data: dict) -> str:
         {**web_page_json(path, data["h1"], data["description"]), **page_review_props()},
         {
             "@type": "ItemList",
-            "name": "IBD nutrition research sources",
+            "name": "IBD and autoimmune research sources",
             "numberOfItems": len(data["sources"]),
             "itemListElement": [
                 {
@@ -188,23 +300,6 @@ def render_page(data: dict) -> str:
 </body>
 </html>
 """
-
-
-def patch_index(tab_html: str) -> None:
-    text = INDEX.read_text(encoding="utf-8")
-    if "<!-- research-tab -->" in text:
-        text = re.sub(
-            r"<!-- research-tab -->.*?<!-- /research-tab -->",
-            tab_html.strip(),
-            text,
-            flags=re.S,
-        )
-    else:
-        text = text.replace(
-            "            <!-- Blogs Tab -->",
-            tab_html + "\n\n            <!-- Blogs Tab -->",
-        )
-    INDEX.write_text(text, encoding="utf-8")
 
 
 def patch_vercel() -> None:
@@ -285,8 +380,9 @@ def main() -> None:
     data = json.loads(DATA.read_text(encoding="utf-8"))
     OUT.write_text(render_page(data), encoding="utf-8")
     print("wrote research.html")
+    patch_library_panels(data)
     patch_index(tab_section(data))
-    print("patched index.html Research tab")
+    print("patched index.html library research panels")
     patch_vercel()
     patch_sitemap()
     patch_resources(data["sources"])

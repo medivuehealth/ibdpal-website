@@ -2,7 +2,7 @@
 
 var IBDPAL_MAIN_TABS = ['home', 'library', 'tools-lab', 'recipe-ideas', 'nutrition-targets', 'app', 'community', 'news', 'about', 'contact', 'privacy', 'support'];
 var IBDPAL_APP_SUBTABS = ['download', 'features', 'how-it-works', 'screenshots', 'app-research'];
-var IBDPAL_LIBRARY_SUBTABS = ['guides', 'sources', 'articles'];
+var IBDPAL_LIBRARY_SUBTABS = ['guides', 'sources', 'research-publications', 'articles'];
 var IBDPAL_ABOUT_SUBTABS = ['about-overview', 'about-founders', 'site-updates', 'metrics'];
 var IBDPAL_NUTRITION_SUBTABS = ['nutrition-dri', 'nutrition-foods', 'nutrition-learn'];
 var IBDPAL_DEFAULT_APP_SUBTAB = 'download';
@@ -17,6 +17,10 @@ var IBDPAL_HASH_ALIASES = {
     founder: { main: 'about', sub: 'about-founders' },
     founders: { main: 'about', sub: 'about-founders' },
     'medivue-founders': { main: 'about', sub: 'about-founders' },
+    research: { main: 'library', sub: 'research-publications' },
+    publications: { main: 'library', sub: 'research-publications' },
+    'research-publications': { main: 'library', sub: 'research-publications' },
+    sources: { main: 'library', sub: 'sources' },
     resources: { main: 'library', sub: 'guides' },
     research: { main: 'library', sub: 'sources' },
     blogs: { main: 'library', sub: 'articles' },

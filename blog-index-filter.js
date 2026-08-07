@@ -21,13 +21,19 @@
       return m.indexOf('nutrition') !== -1 || m.indexOf('diet') !== -1;
     }
     if (filter === 'treatment') {
-      return m.indexOf('treatment') !== -1 || m.indexOf('clinical') !== -1;
+      return m.indexOf('treatment') !== -1 || m.indexOf('clinical') !== -1 || m.indexOf('medication') !== -1;
     }
     if (filter === 'wellness') {
-      return m.indexOf('wellness') !== -1 || m.indexOf('lifestyle') !== -1 || m.indexOf('health') !== -1;
+      return m.indexOf('wellness') !== -1 || m.indexOf('lifestyle') !== -1;
     }
     if (filter === 'family') {
       return m.indexOf('family') !== -1;
+    }
+    if (filter === 'autoimmune') {
+      return m.indexOf('autoimmune') !== -1;
+    }
+    if (filter === 'associations') {
+      return m.indexOf('association') !== -1 || m.indexOf('extraintestinal') !== -1 || m.indexOf('eim') !== -1;
     }
     return m.indexOf(filter) !== -1;
   }

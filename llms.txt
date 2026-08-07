@@ -35,6 +35,7 @@
 - https://www.ibdpal.org/blog/anemia-iron-deficiency-ibd
 - https://www.ibdpal.org/blog/ankylosing-spondylitis-ibd
 - https://www.ibdpal.org/blog/anti-inflammatory-diet-ibd
+- https://www.ibdpal.org/blog/autoimmune-diet-myths
 - https://www.ibdpal.org/blog/autoimmune-hepatitis-ibd
 - https://www.ibdpal.org/blog/bathroom-urgency-anxiety-ibd
 - https://www.ibdpal.org/blog/best-foods-crohns-flare
@@ -61,6 +62,8 @@
 - https://www.ibdpal.org/blog/free-government-ibd-research-sources
 - https://www.ibdpal.org/blog/gas-bloating-ibd
 - https://www.ibdpal.org/blog/gluten-wheat-ibd
+- https://www.ibdpal.org/blog/gut-microbiome-autoimmune
+- https://www.ibdpal.org/blog/hashimotos-thyroid-autoimmune
 - https://www.ibdpal.org/blog/high-school-ibd-survival-guide
 - https://www.ibdpal.org/blog/how-ibdpal-nutrition-targets-work
 - https://www.ibdpal.org/blog/how-nutrition-impacts-gut-health-ibd
@@ -97,9 +100,12 @@
 - https://www.ibdpal.org/blog/j-pouch-basics-ibd
 - https://www.ibdpal.org/blog/living-with-ibd-kids
 - https://www.ibdpal.org/blog/low-residue-diet-flare
+- https://www.ibdpal.org/blog/lupus-autoimmune-basics
+- https://www.ibdpal.org/blog/mediterranean-diet-autoimmune
 - https://www.ibdpal.org/blog/mesalamine-5-asa-ibd
 - https://www.ibdpal.org/blog/micronutrients-ibd-deficiencies
 - https://www.ibdpal.org/blog/mucus-urgency-tenesmus-ibd
+- https://www.ibdpal.org/blog/multiple-sclerosis-autoimmune-basics
 - https://www.ibdpal.org/blog/newly-diagnosed-first-30-days
 - https://www.ibdpal.org/blog/nsaids-ibd-risk
 - https://www.ibdpal.org/blog/oral-canker-sores-ibd
@@ -114,13 +120,16 @@
 - https://www.ibdpal.org/blog/psoriasis-ibd-connection
 - https://www.ibdpal.org/blog/pyoderma-erythema-nodosum-ibd
 - https://www.ibdpal.org/blog/reading-ibd-labs-calprotectin-crp
+- https://www.ibdpal.org/blog/rheumatoid-arthritis-autoimmune-overview
 - https://www.ibdpal.org/blog/school-planning-ibd-before-august
 - https://www.ibdpal.org/blog/siblings-when-child-has-ibd
+- https://www.ibdpal.org/blog/sjogren-autoimmune-overview
 - https://www.ibdpal.org/blog/sleep-rest-ibd-flares
 - https://www.ibdpal.org/blog/social-life-dating-teens-ibd
 - https://www.ibdpal.org/blog/starting-biologic-first-12-weeks
 - https://www.ibdpal.org/blog/steroid-taper-what-to-expect-ibd
 - https://www.ibdpal.org/blog/steroids-prednisone-ibd
+- https://www.ibdpal.org/blog/stress-autoimmune-symptoms
 - https://www.ibdpal.org/blog/stress-coping-strategies-ibd
 - https://www.ibdpal.org/blog/stress-emotional-wellness-ibd
 - https://www.ibdpal.org/blog/summer-travel-ibd-restrooms-meds-food-heat
@@ -129,6 +138,7 @@
 - https://www.ibdpal.org/blog/thrombosis-clot-risk-ibd
 - https://www.ibdpal.org/blog/tracking-food-symptoms-ibdpal
 - https://www.ibdpal.org/blog/travel-with-ibd
+- https://www.ibdpal.org/blog/type1-diabetes-autoimmune-basics
 - https://www.ibdpal.org/blog/understanding-biologics-ibd
 - https://www.ibdpal.org/blog/uveitis-eye-inflammation-ibd
 - https://www.ibdpal.org/blog/vaccine-autoimmune-immunosuppression
@@ -172,6 +182,7 @@
 ## Patient guides (search topics)
 - https://www.ibdpal.org/guides
 - https://www.ibdpal.org/guides/anti-inflammatory-diet-ibd
+- https://www.ibdpal.org/guides/autoimmune-nutrition-basics
 - https://www.ibdpal.org/guides/biologics-crohns-colitis
 - https://www.ibdpal.org/guides/camp-oasis-kids-ibd
 - https://www.ibdpal.org/guides/crohns-colitis-support-groups
@@ -184,6 +195,7 @@
 - https://www.ibdpal.org/guides/first-gastroenterology-appointment-ibd
 - https://www.ibdpal.org/guides/foods-to-eat-crohns-flare
 - https://www.ibdpal.org/guides/foundation-diet-nutrition-ibd
+- https://www.ibdpal.org/guides/gluten-free-autoimmune-when
 - https://www.ibdpal.org/guides/ibd-crohns-colitis-helpline
 - https://www.ibdpal.org/guides/ibd-flare-emergency-supplies
 - https://www.ibdpal.org/guides/ibd-hydration-fluids

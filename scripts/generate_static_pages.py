@@ -630,11 +630,11 @@ PAGES = {
                 <section class="seo-landing__block">
                     <h2>What you will find here</h2>
                     <ul class="seo-landing__list">
-                        <li><a href="/blog">107 in-depth articles</a> on nutrition, treatment, wellness, autoimmune associations, and daily life</li>
-                        <li><a href="/guides">35 step-by-step patient guides</a></li>
-                        <li><a href="/resources">200+ searchable resource library entries</a> (site pages, articles, and trusted external links)</li>
+                        <li><a href="/blog">117 in-depth articles</a> on nutrition, treatment, wellness, autoimmune topics, associations, and daily life</li>
+                        <li><a href="/guides">37 step-by-step patient guides</a></li>
+                        <li><a href="/resources">210+ searchable resource library entries</a> (site pages, articles, and trusted external links)</li>
                         <li><a href="/#community">50 state support pages</a> (all 50 states + DC)</li>
-                        <li><a href="/library">240+ education and sitemap pages</a> across hubs, guides, articles, and Spanish resources</li>
+                        <li><a href="/library">250+ education and sitemap pages</a> across hubs, guides, articles, and Spanish resources</li>
                         <li>Free <a href="/#app">IBDPal iOS app</a> for logging meals, symptoms, and visit prep</li>
                         <li>Homepage topic search, Tools Lab, recipe ideas, and nutrition targets</li>
                     </ul>

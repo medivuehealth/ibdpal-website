@@ -262,6 +262,12 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://www.ibdpal.org/blog/autoimmune-diet-myths</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://www.ibdpal.org/blog/autoimmune-hepatitis-ibd</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
@@ -413,6 +419,18 @@
   </url>
   <url>
     <loc>https://www.ibdpal.org/blog/gluten-wheat-ibd</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.ibdpal.org/blog/gut-microbiome-autoimmune</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.ibdpal.org/blog/hashimotos-thyroid-autoimmune</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -634,6 +652,18 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://www.ibdpal.org/blog/lupus-autoimmune-basics</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.ibdpal.org/blog/mediterranean-diet-autoimmune</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://www.ibdpal.org/blog/mesalamine-5-asa-ibd</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
@@ -647,6 +677,12 @@
   </url>
   <url>
     <loc>https://www.ibdpal.org/blog/mucus-urgency-tenesmus-ibd</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.ibdpal.org/blog/multiple-sclerosis-autoimmune-basics</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -736,6 +772,12 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://www.ibdpal.org/blog/rheumatoid-arthritis-autoimmune-overview</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://www.ibdpal.org/blog/school-planning-ibd-before-august</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
@@ -743,6 +785,12 @@
   </url>
   <url>
     <loc>https://www.ibdpal.org/blog/siblings-when-child-has-ibd</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.ibdpal.org/blog/sjogren-autoimmune-overview</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -773,6 +821,12 @@
   </url>
   <url>
     <loc>https://www.ibdpal.org/blog/steroids-prednisone-ibd</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.ibdpal.org/blog/stress-autoimmune-symptoms</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -821,6 +875,12 @@
   </url>
   <url>
     <loc>https://www.ibdpal.org/blog/travel-with-ibd</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.ibdpal.org/blog/type1-diabetes-autoimmune-basics</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -961,6 +1021,12 @@
     <priority>0.84</priority>
   </url>
   <url>
+    <loc>https://www.ibdpal.org/guides/autoimmune-nutrition-basics</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
     <loc>https://www.ibdpal.org/guides/biologics-crohns-colitis</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
@@ -1028,6 +1094,12 @@
   </url>
   <url>
     <loc>https://www.ibdpal.org/guides/foundation-diet-nutrition-ibd</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.ibdpal.org/guides/gluten-free-autoimmune-when</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.84</priority>

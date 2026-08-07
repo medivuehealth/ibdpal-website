@@ -136,7 +136,10 @@ def discover_blogs(blogs_dir: Path) -> dict[str, dict]:
             continue
         text = path.read_text(encoding="utf-8")
         thumb_m = re.search(r'class="blog-header-thumb"\s+src="([^"]+)"', text)
-        cat_m = re.search(r'class="blog-date">[^·]*·\s*([^<]+)</p>', text)
+        cat_m = re.search(
+            r'class="blog-date">(?:Posted on )?.*?(?:·|&middot;)\s*([^<]+)</p>',
+            text,
+        )
         iso_m = re.search(r'property="article:published_time" content="([^"]*)"', text)
         posts[parsed["slug"]] = {
             **parsed,

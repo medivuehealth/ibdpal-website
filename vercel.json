@@ -10,6 +10,46 @@
   ],
   "rewrites": [
     {
+      "source": "/blog/lupus-autoimmune-basics",
+      "destination": "/blogs/lupus-autoimmune-basics.html"
+    },
+    {
+      "source": "/blog/rheumatoid-arthritis-autoimmune-overview",
+      "destination": "/blogs/rheumatoid-arthritis-autoimmune-overview.html"
+    },
+    {
+      "source": "/blog/hashimotos-thyroid-autoimmune",
+      "destination": "/blogs/hashimotos-thyroid-autoimmune.html"
+    },
+    {
+      "source": "/blog/type1-diabetes-autoimmune-basics",
+      "destination": "/blogs/type1-diabetes-autoimmune-basics.html"
+    },
+    {
+      "source": "/blog/sjogren-autoimmune-overview",
+      "destination": "/blogs/sjogren-autoimmune-overview.html"
+    },
+    {
+      "source": "/blog/multiple-sclerosis-autoimmune-basics",
+      "destination": "/blogs/multiple-sclerosis-autoimmune-basics.html"
+    },
+    {
+      "source": "/blog/autoimmune-diet-myths",
+      "destination": "/blogs/autoimmune-diet-myths.html"
+    },
+    {
+      "source": "/blog/mediterranean-diet-autoimmune",
+      "destination": "/blogs/mediterranean-diet-autoimmune.html"
+    },
+    {
+      "source": "/blog/gut-microbiome-autoimmune",
+      "destination": "/blogs/gut-microbiome-autoimmune.html"
+    },
+    {
+      "source": "/blog/stress-autoimmune-symptoms",
+      "destination": "/blogs/stress-autoimmune-symptoms.html"
+    },
+    {
       "source": "/ibd-autoimmune-associations",
       "destination": "/ibd-autoimmune-associations.html"
     },

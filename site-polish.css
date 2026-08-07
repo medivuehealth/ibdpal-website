@@ -1181,6 +1181,8 @@ body {
 
 .blog-card-chip--nutrition { color: #2e7d32; background: rgba(232, 245, 233, 0.95); }
 .blog-card-chip--treatment { color: #1565c0; background: rgba(227, 242, 253, 0.95); }
+.blog-card-chip--autoimmune { color: #6a1b9a; background: rgba(243, 229, 245, 0.95); }
+.blog-card-chip--associations { color: #ad1457; background: rgba(252, 228, 236, 0.95); }
 .blog-card-chip--wellness { color: #6a1b9a; background: rgba(243, 229, 245, 0.95); }
 .blog-card-chip--family { color: #e65100; background: rgba(255, 243, 224, 0.95); }
 .blog-card-chip--teen { color: #00838f; background: rgba(224, 247, 250, 0.95); }
