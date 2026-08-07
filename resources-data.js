@@ -53,7 +53,7 @@ window.IBDPAL_RESOURCES = [
  { title: "UOAA Ostomy Support", category: "community", type: "external", url: "https://ostomy.org/", tags: ["ostomy", "stoma"] },
  { title: "Recursos en español", category: "community", type: "site", url: "/es/recursos", tags: ["spanish", "español"] },
  { title: "About IBDPal", category: "community", type: "site", url: "/about", tags: ["about", "mission", "nonprofit"] },
- { title: "MediVue Founders", category: "community", type: "site", url: "/founder", tags: ["founders", "mission", "nonprofit"] },
+ { title: "The Founder", category: "community", type: "site", url: "/founder", tags: ["founder", "mission", "nonprofit"] },
  { title: "Content Library", category: "community", type: "site", url: "/library", tags: ["library", "education", "articles"] },
  { title: "ICN Accommodations Toolkit (highlight)", category: "community", type: "site", url: "/blog/icn-accommodations-toolkit-ibd", tags: ["ICN", "ImproveCareNow", "accommodations", "504", "school"] },
  { title: "ICN College & IBD Toolkit (highlight)", category: "community", type: "site", url: "/blog/icn-college-ibd-toolkit", tags: ["ICN", "college", "young adult"] },

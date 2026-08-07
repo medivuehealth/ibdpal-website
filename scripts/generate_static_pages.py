@@ -580,10 +580,9 @@ PAGES = {
                     </ul>
                 </section>
                 <section class="seo-landing__block">
-                    <h2>MediVue Founders</h2>
-                    <p>IBDPal began after identifying a gap between clinic visits: hard-to-track meals, unpredictable symptoms, and scattered education online.</p>
-                    <p>The MediVue Founders team set out to build a calm place to log food and symptoms between appointments, plus honest, readable education that does not require a medical degree to understand.</p>
-                    <p><a href="/founder">Read the full founders page</a> · <a href="/#about">View on homepage</a></p>
+                    <h2>The Founder</h2>
+                    <p>IBDPal grew from a belief that people navigating Crohn&rsquo;s and ulcerative colitis deserve clear education and calm tools between clinic visits. The founder built MediVue as a nonprofit home for that work.</p>
+                    <p><a href="/founder">Read the full founders page</a> · <a href="/#about-founders">View on homepage</a></p>
                 </section>
                 <section class="seo-landing__block">
                     <h2>ImproveCareNow resources</h2>
@@ -599,22 +598,28 @@ PAGES = {
         """,
     ),
     "founder.html": (
-        "MediVue Founders | IBD Education Nonprofit | IBDPal",
-        "Meet the MediVue Founders behind IBDPal: a nonprofit building free IBD education and an iOS tracking app for Crohn's and colitis.",
+        "The Founder | MediVue & IBDPal | Nonprofit IBD Education",
+        "Why MediVue and IBDPal exist: a nonprofit vision for clear IBD education, calm tracking tools, and useful next steps for the Crohn's and colitis community.",
         "/founder",
         """
             <article class="support-section seo-landing">
-                <h1>MediVue Founders</h1>
-                <p class="support-intro">IBDPal began after identifying a gap between clinic visits: hard-to-track meals, unpredictable symptoms, and scattered education online.</p>
+                <h1>The Founder</h1>
+                <p class="support-intro mission-block">Every lasting program begins with a simple standard: make tomorrow a little clearer than today.</p>
                 <section class="seo-landing__block">
-                    <h2>Why we built IBDPal</h2>
-                    <p>The MediVue Founders team set out to build two things: a calm place to log food and symptoms between appointments, and honest, readable education that does not require a medical degree to understand.</p>
-                    <p>We built the <strong>IBDPal iOS app</strong> for daily tracking, micronutrient awareness, and visit summaries. We built <strong>ibdpal.org</strong> as a free library of articles, guides, and state support links so no one starts from zero after diagnosis.</p>
+                    <h2>Why IBDPal exists</h2>
+                    <p>IBDPal grew from a belief that people navigating Crohn's disease and ulcerative colitis deserve education and tools that respect their time, their intelligence, and the complexity of life between clinic visits. Not flashy promises. Not jargon for its own sake. Clear guidance, calm tracking, and a place to return when the next question appears.</p>
+                    <p>The founder built <strong>MediVue</strong> as a nonprofit home for that work, and <strong>IBDPal</strong> as its flagship program. The vision is straightforward: honest, readable education that stays free; an iOS app that helps turn scattered notes into patterns a care team can discuss; and a website that keeps expanding so useful answers are never hard to find.</p>
                 </section>
                 <section class="seo-landing__block">
-                    <h2>What the team does today</h2>
+                    <h2>What the work stands for</h2>
+                    <p>Progress here is measured in usefulness. A guide someone can finish in one sitting. A state page that points to real support. A visit summary that makes the next appointment feel less rushed. A nutrition note that helps someone prepare questions, not replace a clinician.</p>
+                    <p>That standard shapes every choice: write with care, cite trusted sources, keep the experience calm, and improve what readers actually need. The founder's commitment is to keep showing up for the IBD community with clarity, dignity, and practical help.</p>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>Building forward</h2>
+                    <p>Today that mission continues through published articles and guides, the free IBDPal app, Foundation-licensed education where we are authorized to share it, and partnerships that keep patient education accessible. The goal has not changed: leave each visitor with one more useful next step.</p>
                     <ul class="seo-landing__list">
-                        <li>Write and review patient education articles and guides</li>
+                        <li>Write and review education that is honest and readable</li>
                         <li>Maintain the IBDPal app and website as a MediVue nonprofit program</li>
                         <li>Curate trusted external resources (AGA, CCF, ImproveCareNow, NIH)</li>
                         <li>Share ICN Creative Commons materials with proper attribution</li>
@@ -623,13 +628,12 @@ PAGES = {
                 </section>
                 <section class="seo-landing__block">
                     <h2>Nonprofit structure</h2>
-                    <p>MediVue is a 501(c)(3) nonprofit registered in North Carolina. IBDPal is a trademark of MediVue. We pursue grants and community partnerships to keep patient education free.</p>
-                    <p>We are growing participation in the IBD patient community, including ImproveCareNow's Patient Advisory Council pathway, while continuing to publish resources our readers find useful.</p>
+                    <p>MediVue is a 501(c)(3) nonprofit registered in North Carolina. IBDPal is a trademark of MediVue. We pursue grants and community partnerships to keep education free.</p>
                 </section>
                 <section class="seo-landing__block">
                     <h2>Try IBDPal</h2>
                     <p><a href="https://apps.apple.com/app/ibdpal" class="app-store-badge" rel="noopener noreferrer">Download on the App Store</a></p>
-                    <p><a href="/#about">About IBDPal</a> · <a href="/impact">Our impact</a> · <a href="/contact">Contact us</a></p>
+                    <p><a href="/#about-founders">Founders on homepage</a> · <a href="/about">About IBDPal</a> · <a href="/impact">Our impact</a> · <a href="/contact">Contact us</a></p>
                 </section>
             </article>
         """,
