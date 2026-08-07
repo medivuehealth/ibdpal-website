@@ -311,7 +311,9 @@ body {
     gap: 0.85rem 1.1rem;
     margin: 0.85rem 0 0;
     padding: 0.75rem 0.9rem;
-    max-width: 40rem;
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
     background: #F8FAFC;
     border: 1px solid #E2E8F0;
     border-radius: 10px;
