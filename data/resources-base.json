@@ -359,11 +359,11 @@
     "tags": ["about", "mission", "nonprofit"]
   },
   {
-    "title": "MediVue Founders",
+    "title": "The Founder",
     "category": "community",
     "type": "site",
     "url": "/founder",
-    "tags": ["founders", "mission", "nonprofit"]
+    "tags": ["founder", "mission", "nonprofit"]
   },
   {
     "title": "Content Library",
