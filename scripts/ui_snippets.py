@@ -68,7 +68,7 @@ UPDATES_MONTHLY_SECTIONS_HTML = """
                         <h2>June 2026</h2>
                         <ul class="seo-landing__list">
                             <li><strong>Family, lifestyle, and research articles:</strong> 9 June posts, with expanded depth across <a href="/blog/ibd-summer-heat-hydration">summer heat</a>, <a href="/blog/ibd-flare-go-bag">flare go-bag</a>, <a href="/blog/siblings-when-child-has-ibd">siblings</a>, <a href="/blog/when-to-call-ibd-help-center">Help Center vs clinic</a>, <a href="/blog/dining-out-ibd-restaurants">dining out</a>, <a href="/blog/infusion-day-what-to-expect">infusion day</a>, <a href="/blog/summer-travel-ibd-restrooms-meds-food-heat">summer travel</a>, <a href="/blog/school-planning-ibd-before-august">school planning</a>, and <a href="/blog/free-government-ibd-research-sources">free government research sources</a></li>
-                            <li><strong>Patient guides:</strong> 3 new guides &mdash; <a href="/guides/first-gastroenterology-appointment-ibd">first GI appointment</a>, <a href="/guides/ibd-flare-emergency-supplies">flare supplies</a>, <a href="/guides/dining-out-with-ibd">dining out</a></li>
+                            <li><strong>Patient guides:</strong> 3 new guides - <a href="/guides/first-gastroenterology-appointment-ibd">first GI appointment</a>, <a href="/guides/ibd-flare-emergency-supplies">flare supplies</a>, <a href="/guides/dining-out-with-ibd">dining out</a></li>
                             <li><strong>Start-here and safety pages:</strong> Added <a href="/start-here">newly diagnosed roadmap</a>, <a href="/ibd-red-flags-urgent-care">red flags guide</a>, <a href="/crohns-colitis-foundation-resources">Foundation resources</a>, and <a href="/trusted-ibd-resources">trusted resource comparison</a></li>
                             <li><strong>Caregiver refresh:</strong> Expanded <a href="/pediatric-caregivers">pediatric caregiver resources</a> for parents, siblings, school nurses, and teens</li>
                             <li><strong>ImproveCareNow (ICN):</strong> <strong>10 resource highlights</strong> total (+3: <a href="/blog/icn-self-management-handbook-ibd">self-management handbook</a>, <a href="/blog/icn-health-literacy-toolkit-ibd">health literacy</a>, <a href="/blog/icn-lifestyle-ibd-toolkit">lifestyle toolkit</a>)</li>
@@ -269,7 +269,7 @@ IBD_NEWS_TAB_HTML = """
                     <section class="seo-landing__block">
                         <h2>Take action</h2>
                         <ul class="seo-landing__list">
-                            <li><a href="https://www.crohnscolitisfoundation.org/get-involved/be-an-advocate/action-center" rel="noopener noreferrer">CCF Action Center</a> &mdash; contact lawmakers in two clicks</li>
+                            <li><a href="https://www.crohnscolitisfoundation.org/get-involved/be-an-advocate/action-center" rel="noopener noreferrer">CCF Action Center</a> - contact lawmakers in two clicks</li>
                             <li><a href="https://action.crohnscolitisfoundation.org/a/ssa-webpage" rel="noopener noreferrer">Support the Safe Step Act</a></li>
                             <li><a href="https://www.crohnscolitisfoundation.org/science-and-professionals/program-materials/appeal-letters" rel="noopener noreferrer">Appeal letter templates</a> for denied biologics and treatments</li>
                             <li><a href="https://www.crohnscolitisfoundation.org/get-involved/be-an-advocate/advocacy-priorities/step-therapy/state-legislation" rel="noopener noreferrer">Step therapy state legislation</a></li>
@@ -286,7 +286,7 @@ IBD_NEWS_TAB_HTML = """
 
 def blog_vote_widget(slug: str) -> str:
     """Thumbs up/down feedback block for blog articles (SVG icons, encoding-safe)."""
-    return f"""                    <div class="blog-vote" data-blog-slug="{slug}">
+    return f""" <div class="blog-vote" data-blog-slug="{slug}">
                         <p class="blog-vote-prompt">Was this article helpful?</p>
                         <div class="blog-vote-actions">
                             <button type="button" class="blog-vote-btn blog-vote-btn--up" data-vote="up" aria-label="Thumbs up, helpful">

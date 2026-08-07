@@ -10,7 +10,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
-from generate_blog_posts import render_post  # noqa: E402
+from generate_blog_posts import render_post # noqa: E402
 
 BLOGS = ROOT / "blogs"
 
@@ -29,7 +29,7 @@ POSTS = [
         "body": """
 <p>Search traffic around <strong>FODMAP diet Crohn's disease</strong> and <strong>low FODMAP ulcerative colitis</strong> is high, and confusing. FODMAPs are fermentable carbohydrates (fructans, lactose, polyols, and others) that can draw water into the gut and produce gas in some people. A low-FODMAP approach is <em>not</em> an IBD treatment; it may reduce <strong>functional symptoms</strong> like bloating and urgency when used with clinician guidance.</p>
 <h2>Who Might Consider Low FODMAP?</h2>
-<p>Patients with active inflammation still need medical therapy first. Some people in remission, or with overlapping irritable bowel–type symptoms, explore FODMAPs with an IBD dietitian to see if certain carbs worsen discomfort. Crohn's disease and colitis triggers remain individual.</p>
+<p>Patients with active inflammation still need medical therapy first. Some people in remission, or with overlapping irritable bowel-type symptoms, explore FODMAPs with an IBD dietitian to see if certain carbs worsen discomfort. Crohn's disease and colitis triggers remain individual.</p>
 <h2>The Three Phases (Simplified)</h2>
 <ul class="blog-list">
 <li><strong>Restriction:</strong> Short-term lowering of high-FODMAP foods under supervision, usually weeks, not months alone.</li>
@@ -222,7 +222,7 @@ POSTS = [
         "body": """
 <p><strong>High protein diet Crohn's disease</strong>, <strong>IBD meal plan</strong>, and <strong>ulcerative colitis protein</strong> are among the most common nutrition searches. Protein supports healing, muscle, and energy when inflammation is controlled.</p>
 <h2>How Much Protein?</h2>
-<p>Needs vary by age, surgery history, and activity. Many adults discuss roughly 1–1.2 g per kg body weight with dietitians during recovery, your clinic may personalize higher or lower.</p>
+<p>Needs vary by age, surgery history, and activity. Many adults discuss roughly 1-1.2 g per kg body weight with dietitians during recovery, your clinic may personalize higher or lower.</p>
 <h2>Remission Day Sample (Modify to Tolerance)</h2>
 <ul class="blog-list">
 <li><strong>Breakfast:</strong> Greek yogurt, banana, peanut butter oatmeal.</li>

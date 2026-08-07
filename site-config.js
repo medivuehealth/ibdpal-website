@@ -3,7 +3,7 @@
 
   window.IBDPAL_SITE_CONFIG = Object.assign({}, window.IBDPAL_SITE_CONFIG, {
     webApiBase: '/api/web',
-    // Verified from Vercel Web Analytics (www.ibdpal.org) — Jul 2026.
+    // Verified from Vercel Web Analytics (www.ibdpal.org) - Jul 2026.
     // Countries reached = 16: US, GB, IN, CA, DE, AU, BD, GT, HK, ID, IE, JP, MY, PK, SE, VE.
     // Anchors are 2x for marketing; base rates match actual traffic; displayLift doubles live counters.
     reachMetrics: {

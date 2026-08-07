@@ -1,4 +1,4 @@
-# IBDPal (ibdpal.org) — nonprofit IBD patient education
+# IBDPal (ibdpal.org) - nonprofit IBD patient education
 # https://www.robotstxt.org/robotstxt.html
 # Public educational content is crawlable. Private tooling, serverless endpoints,
 # dependency folders, and local build artifacts are not indexable content.
@@ -39,7 +39,7 @@ Allow: /
 User-agent: YandexBot
 Allow: /
 
-# AI / LLM crawlers — public education content welcome
+# AI / LLM crawlers - public education content welcome
 User-agent: GPTBot
 Allow: /
 

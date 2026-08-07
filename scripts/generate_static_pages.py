@@ -6,12 +6,12 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
-from eeat_blocks import content_note_en, ccf_nonaffiliation_about_en, edu_disclaimer_en, hub_disclaimer_en, page_review_props  # noqa: E402
-from es_mirrors import es_url_for_en_path  # noqa: E402
-from seo_head import breadcrumb_json, howto_json, render_seo_head, web_page_json, THEME_COLOR_META, VIEWPORT_META  # noqa: E402
-from site_nav import PAGE_SCRIPTS, TAB_NAV_HTML, site_header_html  # noqa: E402
-from site_footer import SITE_FOOTER_STATIC  # noqa: E402
-from ui_snippets import (  # noqa: E402
+from eeat_blocks import content_note_en, ccf_nonaffiliation_about_en, edu_disclaimer_en, hub_disclaimer_en, page_review_props # noqa: E402
+from es_mirrors import es_url_for_en_path # noqa: E402
+from seo_head import breadcrumb_json, howto_json, render_seo_head, web_page_json, THEME_COLOR_META, VIEWPORT_META # noqa: E402
+from site_nav import PAGE_SCRIPTS, TAB_NAV_HTML, site_header_html # noqa: E402
+from site_footer import SITE_FOOTER_STATIC # noqa: E402
+from ui_snippets import ( # noqa: E402
     IBD_NEWS_TAB_HTML,
     RESOURCE_TOOLBAR_HTML,
     SITE_UPDATES_SUBTAB_HTML,
@@ -36,7 +36,7 @@ FOOTER = SITE_FOOTER_STATIC
 
 SCRIPTS = PAGE_SCRIPTS
 
-HEAD_ASSETS = """    <link rel="preconnect" href="https://fonts.googleapis.com">
+HEAD_ASSETS = """ <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="/site-layout-icn.css">
@@ -85,7 +85,7 @@ def shell(
         )
     crumb_name = title.split("|")[0].strip()
     if path in EEAT_PATHS:
-        body = content_note_en() + edu_disclaimer_en() + body + f"\n                {hub_disclaimer_en()}"
+        body = content_note_en() + edu_disclaimer_en() + body + f"\n {hub_disclaimer_en()}"
     graph = [
         breadcrumb_json(path, crumb_name),
         {**web_page_json(path, crumb_name, description), **(page_review_props() if path in EEAT_PATHS else {})},
@@ -209,7 +209,7 @@ PAGES = {
                 <p class="support-intro">Bring this checklist to gastroenterology visits. Export logs from IBDPal when available.</p>
                 <div class="visit-prep-sheet" id="visit-prep-print">
                     <h2>Before you go</h2>
-                    <ul class="visit-checklist"><li>☐ Symptom summary (pain 0–10, stools/day, blood, fever)</li>
+                    <ul class="visit-checklist"><li>☐ Symptom summary (pain 0-10, stools/day, blood, fever)</li>
                     <li>☐ Medication list with doses and last refill dates</li>
                     <li>☐ Weight change or appetite notes</li>
                     <li>☐ Top 3 questions written down</li>
@@ -306,12 +306,12 @@ PAGES = {
     ),
     "crohns-colitis-foundation-resources.html": (
         "Crohn's & Colitis Foundation Resources Guide | IBDPal",
-        "Use Crohn's & Colitis Foundation resources with IBDPal: IBD Help Center (888-MY-GUT-PAIN), chapters, patient education, and support—selected Foundation content under license.",
+        "Use Crohn's & Colitis Foundation resources with IBDPal: IBD Help Center (888-MY-GUT-PAIN), chapters, patient education, and support - selected Foundation content under license.",
         "/crohns-colitis-foundation-resources",
         """
             <article class="support-section seo-landing">
                 <h1>Crohn's &amp; Colitis Foundation Resources on IBDPal</h1>
-                <p class="support-intro">Selected Crohn&rsquo;s &amp; Colitis Foundation educational content and Marks are used on IBDPal under license. Use this guide to reach the IBD Help Center, chapters, and Foundation patient education&mdash;then track symptoms and visits with IBDPal.</p>
+                <p class="support-intro">Selected Crohn&rsquo;s &amp; Colitis Foundation educational content and Marks are used on IBDPal under license. Use this guide to reach the IBD Help Center, chapters, and Foundation patient education - then track symptoms and visits with IBDPal.</p>
                 <section class="seo-landing__block">
                     <h2>What IBDPal may do under license</h2>
                     <ul class="seo-landing__list">
@@ -711,7 +711,7 @@ def main():
         html_out = shell(spec[0], spec[1], spec[2], spec[3], active, extra_graph=extra)
         (ROOT / name).write_text(html_out, encoding="utf-8")
         print("wrote", name)
-    from generate_es_pages import main as generate_es_pages  # noqa: E402
+    from generate_es_pages import main as generate_es_pages # noqa: E402
 
     generate_es_pages()
 

@@ -14,12 +14,12 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 BLOGS = ROOT / "blogs"
 sys.path.insert(0, str(ROOT / "scripts"))
-from ui_snippets import BLOG_BACK_LINK_HTML, blog_vote_widget  # noqa: E402
-from amp_utils import discover_blogs  # noqa: E402
-from blog_related import related_reading_html  # noqa: E402
-from seo_keywords import keywords_for_path  # noqa: E402
-from seo_head import organization_json, website_json  # noqa: E402
-from eeat_blocks import (  # noqa: E402
+from ui_snippets import BLOG_BACK_LINK_HTML, blog_vote_widget # noqa: E402
+from amp_utils import discover_blogs # noqa: E402
+from blog_related import related_reading_html # noqa: E402
+from seo_keywords import keywords_for_path # noqa: E402
+from seo_head import organization_json, website_json # noqa: E402
+from eeat_blocks import ( # noqa: E402
     blog_medical_footer_en,
     content_note_en,
     edu_disclaimer_en,
@@ -27,8 +27,8 @@ from eeat_blocks import (  # noqa: E402
     page_review_props,
     reviewed_by_org,
 )
-from site_nav import PAGE_SCRIPTS, SITE_HEADER_HTML, TAB_NAV_HTML  # noqa: E402
-from site_footer import SITE_FOOTER_BLOG  # noqa: E402
+from site_nav import PAGE_SCRIPTS, SITE_HEADER_HTML, TAB_NAV_HTML # noqa: E402
+from site_footer import SITE_FOOTER_BLOG # noqa: E402
 
 SEO_DATA = ROOT / "data" / "seo-expansion.json"
 
@@ -266,7 +266,7 @@ Your team chooses based on the specific drug, your preference, insurance, and mo
         "body": """
 <p>Living with Crohn’s disease or ulcerative colitis means living with uncertainty. That alone can keep nerves on high alert. Stress does not <em>cause</em> IBD, but it can amplify how symptoms feel and how quickly you bounce back after setbacks.</p>
 
-<h2>The Gut–Brain Connection in Plain Language</h2>
+<h2>The Gut-Brain Connection in Plain Language</h2>
 <p>Your digestive tract and nervous system chat constantly. When stress hormones rise, some people notice urgency, cramps, or fatigue flaring alongside loose stools. Others feel tension in their shoulders long before their gut speaks up. Neither experience is “in your head”, it is biology plus context.</p>
 
 <h2>Micro-Habits That Add Up</h2>
@@ -347,16 +347,16 @@ def figure_grid(asset_dir: str, images: list[str], alts: list[str]) -> str:
     for img, alt in zip(images, alts):
         src = f"/blogs/assets/{asset_dir}/{img}"
         figs.append(
-            f'                            <figure>\n'
-            f'                                <img src="{src}" alt="{html.escape(alt)}" width="800" height="600" loading="lazy">\n'
-            f'                            </figure>'
+            f' <figure>\n'
+            f' <img src="{src}" alt="{html.escape(alt)}" width="800" height="600" loading="lazy">\n'
+            f' </figure>'
         )
     inner = "\n".join(figs)
     return (
-        '                        <div class="blog-figure-grid blog-figure-grid--three" aria-label="Photos for this article">\n'
+        ' <div class="blog-figure-grid blog-figure-grid--three" aria-label="Photos for this article">\n'
         f"{inner}\n"
-        "                        </div>\n"
-        '                        <p class="blog-photo-credit"><em>Photos: <a href="https://unsplash.com/license" rel="noopener noreferrer">Unsplash License</a> (free use).</em></p>\n'
+        " </div>\n"
+        ' <p class="blog-photo-credit"><em>Photos: <a href="https://unsplash.com/license" rel="noopener noreferrer">Unsplash License</a> (free use).</em></p>\n'
     )
 
 

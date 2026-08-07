@@ -1,13 +1,13 @@
 /**
- * IndexNow — notify Bing (and IndexNow partners) of URL updates.
+ * IndexNow - notify Bing (and IndexNow partners) of URL updates.
  *
  * POST /api/indexnow
  * Body: { "url": "https://www.ibdpal.org/path" }
- *    or { "urls": ["https://www.ibdpal.org/a", "..."] }  (max 100)
- *    or { "sitemap": true }  to submit homepage + sitemap URL
+ * or { "urls": ["https://www.ibdpal.org/a", "..."] } (max 100)
+ * or { "sitemap": true } to submit homepage + sitemap URL
  *
  * Auth: set INDEXNOW_SUBMIT_TOKEN in Vercel env, then send header
- *   x-indexnow-token: <same value>
+ * x-indexnow-token: <same value>
  * Or omit the env var to allow unauthenticated submits only from
  * Vercel cron / same-deployment tooling (still rate-limit carefully).
  *

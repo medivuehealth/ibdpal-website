@@ -11,11 +11,11 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
-from generate_blog_posts import render_post  # noqa: E402
+from generate_blog_posts import render_post # noqa: E402
 
 BLOGS = ROOT / "blogs"
 MEDICAL_REVIEW = (
-    '                        <p class="blog-medical-review"><strong>Content note:</strong> '
+    ' <p class="blog-medical-review"><strong>Content note:</strong> '
     "Based on publicly available guidance from the Crohn's &amp; Colitis Foundation and "
     "general IBD patient-education sources. Last reviewed June 2026. Not individual medical advice.</p>\n"
 )
@@ -99,9 +99,9 @@ POSTS = [
         "share": "First 48 hours of an IBD flare, calm checklist; not medical advice.",
         "body": """
 <p>Flares feel urgent even when they are not emergencies. A short plan lowers chaos.</p>
-<h2>Hour 0–12</h2>
+<h2>Hour 0-12</h2>
 <ul class="blog-list"><li>Contact your IBD team per their after-hours instructions if fever, heavy bleeding, or severe pain</li><li>Sip electrolyte fluids; avoid alcohol</li><li>Eat gentle foods your clinician has previously OK'd</li><li>Log symptoms in IBDPal</li></ul>
-<h2>Hour 12–48</h2>
+<h2>Hour 12-48</h2>
 <p>Rest, cancel nonessential obligations, refill medications if low, and gather data for a triage call: stool frequency, pain level, temperature, weight change.</p>
 <h2>Call Promptly If</h2>
 <p>Significant blood, dehydration signs, rigid abdomen, or fever over clinician thresholds. When in doubt, use your clinic's on-call line.</p>

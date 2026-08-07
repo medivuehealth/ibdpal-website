@@ -120,7 +120,7 @@
         return [
           '<strong>' + escapeHtml(row.label || row.term) + '</strong>',
           String(row.count || 0),
-          (row.averageResults == null ? '—' : Number(row.averageResults).toFixed(1))
+          (row.averageResults == null ? '-' : Number(row.averageResults).toFixed(1))
         ];
       }), 3);
 

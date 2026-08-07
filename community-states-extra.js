@@ -48,7 +48,7 @@
       center('Mount Sinai IBD Center', 'Academic IBD center', 'https://www.mountsinai.org/locations/center-inflammatory-bowel', '212-241-8100', 'Adult IBD specialists; verify appointment line on website.')
     ].concat(nationalLinks)),
     TX: stateEntry('Texas', "Crohn's & Colitis Foundation | North & Central Texas / Southern Texas", 'https://www.crohnscolitisfoundation.org/chapters', '972-458-3259', [
-      ccf("Crohn's & Colitis Foundation | North and Central Texas Chapter", 'https://www.crohnscolitisfoundation.org/chapters/northcentraltexas', '972-458-3259', 'Dallas–Fort Worth area programs and support.'),
+      ccf("Crohn's & Colitis Foundation | North and Central Texas Chapter", 'https://www.crohnscolitisfoundation.org/chapters/northcentraltexas', '972-458-3259', 'Dallas-Fort Worth area programs and support.'),
       ccf("Crohn's & Colitis Foundation | Southern Texas Chapter", 'https://www.crohnscolitisfoundation.org/chapters/southerntexas', '713-572-2233', 'Houston-area chapter resources.'),
       center('UT Southwestern IBD Program', 'Academic IBD center', 'https://www.utsouthwestern.edu/departments/internal-medicine/divisions/digestive-liver-diseases/', '214-645-8300', 'Crohn\'s and colitis care; confirm division contact on site.')
     ].concat(nationalLinks)),

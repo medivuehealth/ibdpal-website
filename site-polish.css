@@ -1,5 +1,5 @@
 /**
- * IBDPal visual polish — glossy cards, glass surfaces, refined depth.
+ * IBDPal visual polish - glossy cards, glass surfaces, refined depth.
  * Loads after styles.css and site-layout-icn.css.
  */
 
@@ -32,7 +32,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* Header — coral tint (logo bar only); page stays bright white */
+/* Header - coral tint (logo bar only); page stays bright white */
 .header {
     background: var(--ibd-header-bg, #FFE5DC);
     border-bottom: 1px solid var(--ibd-header-border, #FFAB94);
@@ -60,7 +60,7 @@ body {
     color: var(--ibd-primary);
 }
 
-/* Header reach counters — community foot-traffic snapshot */
+/* Header reach counters - community foot-traffic snapshot */
 .header-reach {
     display: flex;
     align-items: center;
@@ -190,7 +190,7 @@ body {
     transform: translateY(-1px);
 }
 
-/* Sticky nav — bright white dock */
+/* Sticky nav - bright white dock */
 .main-tab-dock {
     background: #FFFFFF;
     backdrop-filter: none;
@@ -249,7 +249,7 @@ body {
     background: var(--ibd-primary);
 }
 
-/* Main panels — bright white throughout; coral is header-only */
+/* Main panels - bright white throughout; coral is header-only */
 .main-content,
 .tab-content {
     background: #FFFFFF;
@@ -276,7 +276,7 @@ body {
     }
 }
 
-/* Homepage hero — calm bright white; clear hierarchy without flash */
+/* Homepage hero - calm bright white; clear hierarchy without flash */
 .home-hero {
     padding: 1.35rem var(--ibd-content-pad) 1rem;
     background: #FFFFFF;
@@ -313,7 +313,7 @@ body {
     color: #222222;
 }
 
-/* Homepage CCF license strip — soft white card; logo separate (not a brand lockup) */
+/* Homepage CCF license strip - soft white card; logo separate (not a brand lockup) */
 .ccf-home-license {
     display: flex;
     flex-wrap: wrap;
@@ -612,7 +612,7 @@ body {
     color: #7A2E18;
 }
 
-/* Start-here hub — white page, elevated cards */
+/* Start-here hub - white page, elevated cards */
 .start-here-hub {
     position: relative;
     margin: 0;
@@ -724,7 +724,7 @@ body {
     font-weight: 500;
 }
 
-/* Discovery metrics — premium stat panel */
+/* Discovery metrics - premium stat panel */
 .discovery-dashboard__panel {
     border-radius: var(--ibd-radius-lg);
     box-shadow: var(--ibd-shadow-lg);
@@ -837,7 +837,7 @@ body {
     border: 1px solid rgba(153, 51, 204, 0.1);
 }
 
-/* Email signup — glossy CTA band */
+/* Email signup - glossy CTA band */
 .signup-section {
     position: relative;
     border-radius: var(--ibd-radius-lg);
@@ -2058,7 +2058,7 @@ a {
     font-size: var(--ibd-text-sm);
 }
 
-/* Bright white page chrome — beats legacy off-whites in styles.css */
+/* Bright white page chrome - beats legacy off-whites in styles.css */
 body,
 .app-container,
 .main-content,

@@ -31,7 +31,7 @@
         { "food": "Firm tofu", "serving": "1/2 cup (126 g)", "amount": "3.4 mg", "perOz": "0.4 mg/oz", "type": "protein" },
         { "food": "Lentils, cooked", "serving": "1/2 cup (99 g)", "amount": "3.3 mg", "perOz": "0.5 mg/oz", "type": "legume" },
         { "food": "Pumpkin seeds (pepitas)", "serving": "1 oz (28 g)", "amount": "2.5 mg", "perOz": "2.5 mg/oz", "type": "seed" },
-        { "food": "Fortified breakfast cereal", "serving": "1 cup (40 g, varies by brand)", "amount": "8–18 mg", "perOz": "varies", "type": "grain" },
+        { "food": "Fortified breakfast cereal", "serving": "1 cup (40 g, varies by brand)", "amount": "8-18 mg", "perOz": "varies", "type": "grain" },
         { "food": "Spinach, boiled and drained", "serving": "1/2 cup (90 g)", "amount": "3.2 mg", "perOz": "0.6 mg/oz", "type": "vegetable" }
       ],
       "produce": [
@@ -123,7 +123,7 @@
       "foods": [
         { "food": "Beef liver, pan-fried", "serving": "3 oz (85 g)", "amount": "215 mcg", "perOz": "72 mcg/oz", "type": "protein" },
         { "food": "Black-eyed peas, cooked", "serving": "1/2 cup (86 g)", "amount": "105 mcg", "perOz": "12 mcg/oz", "type": "legume" },
-        { "food": "Fortified breakfast cereal", "serving": "1 cup (40 g)", "amount": "100–400 mcg", "perOz": "varies", "type": "fortified" },
+        { "food": "Fortified breakfast cereal", "serving": "1 cup (40 g)", "amount": "100-400 mcg", "perOz": "varies", "type": "fortified" },
         { "food": "Asparagus, boiled", "serving": "4 spears (60 g)", "amount": "89 mcg", "perOz": "15 mcg/oz", "type": "vegetable" },
         { "food": "Spinach, raw", "serving": "1 cup (30 g)", "amount": "58 mcg", "perOz": "19 mcg/oz", "type": "vegetable" },
         { "food": "Avocado", "serving": "1/2 fruit (68 g)", "amount": "59 mcg", "perOz": "25 mcg/oz", "type": "fruit" },
@@ -167,8 +167,8 @@
       "id": "magnesium",
       "name": "Magnesium",
       "unit": "mg",
-      "driAdultFemale": "310–320 mg/day (RDA)",
-      "driAdultMale": "400–420 mg/day (RDA)",
+      "driAdultFemale": "310-320 mg/day (RDA)",
+      "driAdultMale": "400-420 mg/day (RDA)",
       "ibdNote": "Diarrhea depletes magnesium and can worsen cramps or fatigue. Replete only with labs and clinician guidance.",
       "foods": [
         { "food": "Pumpkin seeds", "serving": "1 oz (28 g)", "amount": "156 mg", "perOz": "156 mg/oz", "type": "seed" },
@@ -265,7 +265,7 @@
       "driAdultMale": "55 mcg/day (RDA)",
       "ibdNote": "Brazil nuts are extremely concentrated; one nut may exceed a daily need. Prefer varied sources unless directed.",
       "foods": [
-        { "food": "Brazil nuts", "serving": "1 nut (5 g)", "amount": "68–91 mcg", "perOz": "380+ mcg/oz", "type": "nut" },
+        { "food": "Brazil nuts", "serving": "1 nut (5 g)", "amount": "68-91 mcg", "perOz": "380+ mcg/oz", "type": "nut" },
         { "food": "Yellowfin tuna, cooked", "serving": "3 oz (85 g)", "amount": "92 mcg", "perOz": "31 mcg/oz", "type": "fish" },
         { "food": "Sardines, canned", "serving": "3 oz (85 g)", "amount": "45 mcg", "perOz": "15 mcg/oz", "type": "fish" },
         { "food": "Ham, roasted", "serving": "3 oz (85 g)", "amount": "25 mcg", "perOz": "8 mcg/oz", "type": "protein" },

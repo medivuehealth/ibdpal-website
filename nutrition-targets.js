@@ -52,7 +52,7 @@
           '<th scope="row">' + escapeHtml(row.food) + '</th>' +
           '<td>' + escapeHtml(row.serving) + '</td>' +
           '<td>' + escapeHtml(row.amount) + '</td>' +
-          '<td>' + escapeHtml(row.perOz || '—') + '</td>' +
+          '<td>' + escapeHtml(row.perOz || '-') + '</td>' +
           '</tr>';
       }).join('') +
       '</tbody></table></div>'

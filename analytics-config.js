@@ -15,6 +15,6 @@ window.IBDPAL_ANALYTICS = {
     /** Log section visibility (impressions) for elements with data-track-impression. */
     trackSectionImpressions: true,
 
-    /** Fraction of element visible before counting as an impression (0–1). */
+    /** Fraction of element visible before counting as an impression (0-1). */
     impressionThreshold: 0.35
 };
