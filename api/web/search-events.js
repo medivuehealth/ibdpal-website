@@ -1,7 +1,7 @@
 import {
   cleanText, db, isPublicSearchTerm, json, methodNotAllowed,
   normalizeTerm, parseBody, resolveSearchAlias, slugFromUrl
-} from '../_lib/web-db.js';
+} from '../_web-db.js';
 
 const ALLOWED_SOURCES = new Set(['tools_lab', 'patient_library', 'homepage']);
 

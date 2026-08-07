@@ -1,4 +1,4 @@
-import { cleanText, db, json, methodNotAllowed, parseBody } from '../_lib/web-db.js';
+import { cleanText, db, json, methodNotAllowed, parseBody } from '../_web-db.js';
 import {
   hashPassword,
   newSessionToken,
@@ -8,7 +8,7 @@ import {
   requireResearcher,
   sessionExpiry,
   verifyPassword
-} from '../_lib/student-research-auth.js';
+} from '../_student-research-auth.js';
 
 /**
  * Single Hobby-plan function for all Student Research routes.

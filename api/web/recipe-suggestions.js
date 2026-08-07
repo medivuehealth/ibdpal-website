@@ -1,4 +1,4 @@
-import { cleanText, json, methodNotAllowed, parseBody } from '../_lib/web-db.js';
+import { cleanText, json, methodNotAllowed, parseBody } from '../_web-db.js';
 
 const RECIPE_MODELS = [
   ['gem', 'ini-2.5-flash'].join(''),
