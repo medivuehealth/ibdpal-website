@@ -581,8 +581,8 @@ PAGES = {
                 </section>
                 <section class="seo-landing__block">
                     <h2>The Founder</h2>
-                    <p>IBDPal grew from a belief that people navigating Crohn&rsquo;s and ulcerative colitis deserve clear education and calm tools between clinic visits. The founder built MediVue as a nonprofit home for that work.</p>
-                    <p><a href="/founder">Read the full founders page</a> · <a href="/#about-founders">View on homepage</a></p>
+                    <p>IBDPal grew from a belief that people navigating Crohn&rsquo;s and ulcerative colitis deserve clear education and calm tools between clinic visits. The founder built IBDPal around that standard.</p>
+                    <p><a href="/#about-founders">Read the Founders story</a></p>
                 </section>
                 <section class="seo-landing__block">
                     <h2>ImproveCareNow resources</h2>
@@ -598,8 +598,8 @@ PAGES = {
         """,
     ),
     "founder.html": (
-        "The Founder | MediVue & IBDPal | Nonprofit IBD Education",
-        "Why MediVue and IBDPal exist: a nonprofit vision for clear IBD education, calm tracking tools, and useful next steps for the Crohn's and colitis community.",
+        "The Founder | IBDPal",
+        "Why IBDPal exists: a vision for clear IBD education, calm tracking tools, and useful next steps for the Crohn's and colitis community.",
         "/founder",
         """
             <article class="support-section seo-landing">
@@ -608,7 +608,7 @@ PAGES = {
                 <section class="seo-landing__block">
                     <h2>Why IBDPal exists</h2>
                     <p>IBDPal grew from a belief that people navigating Crohn's disease and ulcerative colitis deserve education and tools that respect their time, their intelligence, and the complexity of life between clinic visits. Not flashy promises. Not jargon for its own sake. Clear guidance, calm tracking, and a place to return when the next question appears.</p>
-                    <p>The founder built <strong>MediVue</strong> as a nonprofit home for that work, and <strong>IBDPal</strong> as its flagship program. The vision is straightforward: honest, readable education that stays free; an iOS app that helps turn scattered notes into patterns a care team can discuss; and a website that keeps expanding so useful answers are never hard to find.</p>
+                    <p>The founder built <strong>IBDPal</strong> around that standard. The vision is straightforward: honest, readable education that stays free; an iOS app that helps turn scattered notes into patterns a care team can discuss; and a website that keeps expanding so useful answers are never hard to find.</p>
                 </section>
                 <section class="seo-landing__block">
                     <h2>What the work stands for</h2>
@@ -617,18 +617,14 @@ PAGES = {
                 </section>
                 <section class="seo-landing__block">
                     <h2>Building forward</h2>
-                    <p>Today that mission continues through published articles and guides, the free IBDPal app, Foundation-licensed education where we are authorized to share it, and partnerships that keep patient education accessible. The goal has not changed: leave each visitor with one more useful next step.</p>
+                    <p>Today that mission continues through published articles and guides, the free IBDPal app, Foundation-licensed education where we are authorized to share it, and resources that keep education accessible. The goal has not changed: leave each visitor with one more useful next step.</p>
                     <ul class="seo-landing__list">
                         <li>Write and review education that is honest and readable</li>
-                        <li>Maintain the IBDPal app and website as a MediVue nonprofit program</li>
+                        <li>Maintain the IBDPal app and website</li>
                         <li>Curate trusted external resources (AGA, CCF, ImproveCareNow, NIH)</li>
                         <li>Share ICN Creative Commons materials with proper attribution</li>
                         <li>Listen to community feedback through support channels and outreach</li>
                     </ul>
-                </section>
-                <section class="seo-landing__block">
-                    <h2>Nonprofit structure</h2>
-                    <p>MediVue is a 501(c)(3) nonprofit registered in North Carolina. IBDPal is a trademark of MediVue. We pursue grants and community partnerships to keep education free.</p>
                 </section>
                 <section class="seo-landing__block">
                     <h2>Try IBDPal</h2>

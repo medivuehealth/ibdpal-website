@@ -53,7 +53,7 @@ PATH_KEYWORDS: dict[str, str] = {
     ),
     "/glossary": "IBD glossary, Crohn's terms, colitis definitions, biologics IBD",
     "/impact": "IBDPal impact, IBD education nonprofit, MediVue mission, patient outcomes",
-    "/founder": "IBDPal founder, MediVue IBD, nonprofit leadership, IBD education mission",
+    "/founder": "IBDPal founder, IBDPal mission, IBD education, Crohn's colitis education",
     "/contact": "contact IBDPal, MediVue IBD, patient education feedback",
     "/for-clinicians": "IBD clinicians, gastroenterology education, patient engagement tools",
     "/clinical-partnerships": "IBD clinical partnerships, GI education, nonprofit collaboration",
