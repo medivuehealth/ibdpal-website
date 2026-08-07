@@ -1,4 +1,4 @@
-import { db, filterPublicSearchRows, json, methodNotAllowed } from '../_web-db.js';
+import { db, filterPublicSearchRows, json, methodNotAllowed, normalizeTerm } from '../_web-db.js';
 
 /**
  * Shared Hobby-plan function for read-only insights analytics.
@@ -11,6 +11,7 @@ function resolveAction(req) {
   if (url.includes('content-brief')) return 'brief';
   if (url.includes('content-ideas')) return 'ideas';
   if (url.includes('search-gaps')) return 'gaps';
+  if (url.includes('search-related')) return 'related';
   if (url.includes('top-searches')) return 'top-searches';
   if (url.includes('top-content')) return 'top-content';
   return '';
@@ -247,6 +248,73 @@ async function handleTopSearches(req, res) {
   });
 }
 
+async function handleRelated(req, res) {
+  const term = normalizeTerm(req.query.term || '');
+  const days = Math.max(1, Math.min(parseInt(req.query.days, 10) || 90, 180));
+  const limit = Math.max(1, Math.min(parseInt(req.query.limit, 10) || 5, 12));
+
+  if (term.length < 2) {
+    return json(res, 400, { success: false, error: 'term is required' });
+  }
+
+  const byTerm = await db().query(
+    `SELECT
+      clicked_article_url AS url,
+      clicked_article_slug AS slug,
+      COUNT(*)::int AS click_count
+    FROM ibdpal_web_search_events
+    WHERE created_at >= NOW() - ($1::int * INTERVAL '1 day')
+      AND clicked_article_slug IS NOT NULL
+      AND clicked_article_url IS NOT NULL
+      AND (
+        normalized_term = $2
+        OR normalized_term LIKE $2 || ' %'
+        OR normalized_term LIKE '% ' || $2
+        OR normalized_term LIKE '% ' || $2 || ' %'
+      )
+    GROUP BY clicked_article_url, clicked_article_slug
+    ORDER BY click_count DESC
+    LIMIT $3`,
+    [days, term, limit]
+  );
+
+  const slug = String(req.query.slug || '').trim().slice(0, 120);
+  let inboundSearches = [];
+  if (slug) {
+    const inbound = await db().query(
+      `SELECT
+        normalized_term,
+        INITCAP(MIN(term)) AS label,
+        COUNT(*)::int AS search_count
+      FROM ibdpal_web_search_events
+      WHERE created_at >= NOW() - ($1::int * INTERVAL '1 day')
+        AND clicked_article_slug = $2
+        AND normalized_term <> ''
+      GROUP BY normalized_term
+      ORDER BY search_count DESC
+      LIMIT $3`,
+      [days, slug, limit]
+    );
+    inboundSearches = filterPublicSearchRows(inbound.rows).map((row) => ({
+      term: row.normalized_term,
+      label: row.label,
+      count: row.search_count
+    }));
+  }
+
+  return json(res, 200, {
+    success: true,
+    term,
+    days,
+    related: byTerm.rows.map((row) => ({
+      url: row.url,
+      slug: row.slug,
+      count: row.click_count
+    })),
+    inboundSearches
+  });
+}
+
 async function handleTopContent(req, res) {
   const ALLOWED_EVENTS = new Set(['view', 'click']);
   const days = Math.max(1, Math.min(parseInt(req.query.days, 10) || 7, 90));
@@ -300,6 +368,8 @@ export default async function handler(req, res) {
         return await handleIdeas(req, res);
       case 'gaps':
         return await handleGaps(req, res);
+      case 'related':
+        return await handleRelated(req, res);
       case 'top-searches':
         return await handleTopSearches(req, res);
       case 'top-content':

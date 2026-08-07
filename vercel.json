@@ -51,7 +51,7 @@
     },
     {
       "source": "/api/web/search-related",
-      "destination": "/api/web/search-suggestions?action=related"
+      "destination": "/api/web/analytics?action=related"
     },
     {
       "source": "/api/web/content-brief",
