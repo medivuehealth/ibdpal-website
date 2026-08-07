@@ -10,6 +10,58 @@
   ],
   "rewrites": [
     {
+      "source": "/ibd-autoimmune-associations",
+      "destination": "/ibd-autoimmune-associations.html"
+    },
+    {
+      "source": "/blog/ibd-autoimmune-overlap",
+      "destination": "/blogs/ibd-autoimmune-overlap.html"
+    },
+    {
+      "source": "/blog/psc-ibd-liver",
+      "destination": "/blogs/psc-ibd-liver.html"
+    },
+    {
+      "source": "/blog/ankylosing-spondylitis-ibd",
+      "destination": "/blogs/ankylosing-spondylitis-ibd.html"
+    },
+    {
+      "source": "/blog/psoriasis-ibd-connection",
+      "destination": "/blogs/psoriasis-ibd-connection.html"
+    },
+    {
+      "source": "/blog/celiac-ibd-screening",
+      "destination": "/blogs/celiac-ibd-screening.html"
+    },
+    {
+      "source": "/blog/ibd-extraintestinal-manifestations",
+      "destination": "/blogs/ibd-extraintestinal-manifestations.html"
+    },
+    {
+      "source": "/blog/autoimmune-hepatitis-ibd",
+      "destination": "/blogs/autoimmune-hepatitis-ibd.html"
+    },
+    {
+      "source": "/blog/osteoporosis-bone-health-ibd",
+      "destination": "/blogs/osteoporosis-bone-health-ibd.html"
+    },
+    {
+      "source": "/blog/thrombosis-clot-risk-ibd",
+      "destination": "/blogs/thrombosis-clot-risk-ibd.html"
+    },
+    {
+      "source": "/blog/oral-canker-sores-ibd",
+      "destination": "/blogs/oral-canker-sores-ibd.html"
+    },
+    {
+      "source": "/blog/fatigue-autoimmune-ibd",
+      "destination": "/blogs/fatigue-autoimmune-ibd.html"
+    },
+    {
+      "source": "/blog/vaccine-autoimmune-immunosuppression",
+      "destination": "/blogs/vaccine-autoimmune-immunosuppression.html"
+    },
+    {
       "source": "/blog/flare-symptoms-ibd",
       "destination": "/blogs/flare-symptoms-ibd.html"
     },

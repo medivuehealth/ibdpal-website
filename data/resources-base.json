@@ -427,5 +427,82 @@
     "type": "external",
     "url": "https://www.improvecarenow.org/tools_for_managing_ibd",
     "tags": ["ICN", "ImproveCareNow", "toolkit", "creative commons"]
+  },
+  {
+    "title": "IBD Autoimmune Associations Hub",
+    "category": "clinical",
+    "type": "site",
+    "url": "/ibd-autoimmune-associations",
+    "tags": ["autoimmune", "extraintestinal", "EIM", "PSC", "psoriasis"]
+  },
+  {
+    "title": "PubMed: Extraintestinal Manifestations of IBD",
+    "category": "clinical",
+    "type": "external",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=extraintestinal+manifestations+inflammatory+bowel+disease",
+    "tags": ["PubMed", "research", "EIM", "autoimmune"]
+  },
+  {
+    "title": "PubMed: PSC and IBD",
+    "category": "clinical",
+    "type": "external",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=primary+sclerosing+cholangitis+inflammatory+bowel+disease",
+    "tags": ["PubMed", "PSC", "liver", "research"]
+  },
+  {
+    "title": "NIDDK: Primary Sclerosing Cholangitis",
+    "category": "clinical",
+    "type": "external",
+    "url": "https://www.niddk.nih.gov/health-information/liver-disease/primary-sclerosing-cholangitis",
+    "tags": ["NIH", "NIDDK", "PSC", "liver"]
+  },
+  {
+    "title": "PubMed: Diet Therapy Trials in IBD",
+    "category": "nutrition",
+    "type": "external",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=diet+therapy+inflammatory+bowel+disease+randomized",
+    "tags": ["PubMed", "diet", "nutrition research", "trials"]
+  },
+  {
+    "title": "ACG Clinical Guidelines Hub",
+    "category": "clinical",
+    "type": "external",
+    "url": "https://gi.org/guidelines/",
+    "tags": ["ACG", "guidelines", "clinical"]
+  },
+  {
+    "title": "AGA Journals",
+    "category": "clinical",
+    "type": "external",
+    "url": "https://gastro.org/journals/",
+    "tags": ["AGA", "journals", "research"]
+  },
+  {
+    "title": "MedlinePlus: Celiac Disease",
+    "category": "nutrition",
+    "type": "external",
+    "url": "https://medlineplus.gov/celiacdisease.html",
+    "tags": ["celiac", "gluten", "MedlinePlus", "NIH"]
+  },
+  {
+    "title": "MedlinePlus: Ankylosing Spondylitis",
+    "category": "clinical",
+    "type": "external",
+    "url": "https://medlineplus.gov/ankylosingspondylitis.html",
+    "tags": ["ankylosing spondylitis", "joints", "MedlinePlus"]
+  },
+  {
+    "title": "Nature Portfolio: IBD Research Search",
+    "category": "clinical",
+    "type": "external",
+    "url": "https://www.nature.com/search?q=inflammatory%20bowel%20disease",
+    "tags": ["Nature", "research", "journals"]
+  },
+  {
+    "title": "The Lancet Gastroenterology & Hepatology",
+    "category": "clinical",
+    "type": "external",
+    "url": "https://www.thelancet.com/journals/langas/home",
+    "tags": ["Lancet", "research", "journals"]
   }
 ]

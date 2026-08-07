@@ -36,8 +36,30 @@ PATH_KEYWORDS: dict[str, str] = {
     "/flare-help": "IBD flare, Crohn's flare diet, colitis flare help, urgent IBD symptoms",
     "/pediatric-caregivers": "pediatric IBD, Crohn's caregiver, child colitis, parent IBD resources",
     "/patient-stories": "IBD patient stories, Crohn's experience, colitis journey, peer support",
-    "/research": "IBD research sources, Crohn's clinical trials, colitis evidence, trusted IBD sites",
+    "/research": (
+        "IBD research sources, PubMed IBD, Crohn's clinical trials, colitis evidence, "
+        "extraintestinal research, autoimmune IBD associations, AGA ACG guidance"
+    ),
     "/resources": "IBD resource library, Crohn's links, colitis education, Crohn's & Colitis Foundation, Camp Oasis, prior authorization, patient tools",
+    "/ibd-autoimmune-associations": (
+        "IBD autoimmune associations, extraintestinal manifestations, PSC IBD, "
+        "psoriasis Crohn's, celiac colitis overlap, ankylosing spondylitis IBD"
+    ),
+    "/guides/anti-inflammatory-diet-ibd": (
+        "anti-inflammatory diet IBD, Mediterranean diet Crohn's, colitis nutrition pattern"
+    ),
+    "/guides/iron-deficiency-nutrition-ibd": (
+        "iron deficiency IBD diet, anemia Crohn's food, colitis iron nutrition"
+    ),
+    "/guides/vitamin-d-bone-nutrition-ibd": (
+        "vitamin D IBD, bone health Crohn's, calcium colitis nutrition"
+    ),
+    "/guides/protein-healing-ibd-flare": (
+        "protein IBD flare, healing protein Crohn's, colitis muscle nutrition"
+    ),
+    "/guides/elimination-diet-when-to-stop-ibd": (
+        "elimination diet IBD, when to stop elimination diet, food reintroduction Crohn's"
+    ),
     "/crohns-colitis-foundation-resources": (
         "Crohn's & Colitis Foundation resources, IBD Help Center, Camp Oasis, "
         "Foundation diet education, prior authorization IBD, CCF chapters, licensed Foundation education"
@@ -84,6 +106,18 @@ SLUG_TOPIC_WORDS = {
     "fiber": "IBD fiber, Crohn's low residue, colitis diet",
     "enteral": "enteral nutrition, EEN, exclusive enteral nutrition, entereal, Crohn's formula feeding",
     "symptoms": "IBD flare symptoms, Crohn's flare signs, colitis symptoms education",
+    "autoimmune": "IBD autoimmune, autoimmune overlap Crohn's, immune-mediated IBD",
+    "extraintestinal": "extraintestinal manifestations IBD, EIM Crohn's, colitis outside the gut",
+    "psc": "PSC IBD, primary sclerosing cholangitis colitis, bile duct IBD",
+    "psoriasis": "psoriasis IBD, Crohn's psoriasis, colitis skin inflammation",
+    "celiac": "celiac IBD, celiac screening Crohn's, gluten ulcerative colitis",
+    "spondylitis": "ankylosing spondylitis IBD, axial spondyloarthritis Crohn's",
+    "osteoporosis": "osteoporosis IBD, bone health Crohn's, steroid bone loss colitis",
+    "thrombosis": "IBD clot risk, thrombosis Crohn's, VTE ulcerative colitis",
+    "vitamin": "vitamin D IBD, micronutrients Crohn's, colitis vitamins",
+    "elimination": "elimination diet IBD, food reintroduction Crohn's, colitis trigger diet",
+    "iron": "iron deficiency IBD, anemia Crohn's diet, colitis iron",
+    "protein": "protein IBD flare, protein Crohn's healing, colitis nutrition protein",
 }
 
 

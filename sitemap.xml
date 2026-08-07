@@ -41,7 +41,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ibdpal.org/crohns-disease" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.ibdpal.org/es/enfermedad-crohn" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ibdpal.org/crohns-disease" />
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.88</priority>
   </url>
@@ -65,7 +65,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ibdpal.org/flare-help" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.ibdpal.org/es/brotes-eii" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ibdpal.org/flare-help" />
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.88</priority>
   </url>
@@ -94,6 +94,12 @@
     <priority>0.92</priority>
   </url>
   <url>
+    <loc>https://www.ibdpal.org/ibd-autoimmune-associations</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://www.ibdpal.org/ibd-crohns-support</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
@@ -104,7 +110,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ibdpal.org/ibd-nutrition" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.ibdpal.org/es/nutricion-eii" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ibdpal.org/ibd-nutrition" />
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.88</priority>
   </url>
@@ -122,7 +128,7 @@
   </url>
   <url>
     <loc>https://www.ibdpal.org/insights</loc>
-    <lastmod>2026-07-28</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -191,7 +197,7 @@
   </url>
   <url>
     <loc>https://www.ibdpal.org/support</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.92</priority>
   </url>
@@ -200,7 +206,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ibdpal.org/teens-and-school" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.ibdpal.org/es/adolescentes-escuela" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ibdpal.org/teens-and-school" />
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.88</priority>
   </url>
@@ -221,7 +227,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ibdpal.org/ulcerative-colitis" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.ibdpal.org/es/colitis-ulcerosa" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ibdpal.org/ulcerative-colitis" />
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.88</priority>
   </url>
@@ -244,7 +250,19 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://www.ibdpal.org/blog/ankylosing-spondylitis-ibd</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://www.ibdpal.org/blog/anti-inflammatory-diet-ibd</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.ibdpal.org/blog/autoimmune-hepatitis-ibd</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -263,6 +281,12 @@
   </url>
   <url>
     <loc>https://www.ibdpal.org/blog/blood-in-stool-ibd-when-to-worry</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.ibdpal.org/blog/celiac-ibd-screening</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -335,6 +359,12 @@
   </url>
   <url>
     <loc>https://www.ibdpal.org/blog/exercise-physical-activity-ibd</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.ibdpal.org/blog/fatigue-autoimmune-ibd</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -430,7 +460,19 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://www.ibdpal.org/blog/ibd-autoimmune-overlap</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://www.ibdpal.org/blog/ibd-care-outside-united-states</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.ibdpal.org/blog/ibd-extraintestinal-manifestations</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -622,6 +664,18 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://www.ibdpal.org/blog/oral-canker-sores-ibd</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.ibdpal.org/blog/osteoporosis-bone-health-ibd</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://www.ibdpal.org/blog/ostomy-basics-ibd</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
@@ -653,6 +707,18 @@
   </url>
   <url>
     <loc>https://www.ibdpal.org/blog/protein-meal-plan-ibd-remission</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.ibdpal.org/blog/psc-ibd-liver</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.ibdpal.org/blog/psoriasis-ibd-connection</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -742,6 +808,12 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://www.ibdpal.org/blog/thrombosis-clot-risk-ibd</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://www.ibdpal.org/blog/tracking-food-symptoms-ibdpal</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
@@ -761,6 +833,12 @@
   </url>
   <url>
     <loc>https://www.ibdpal.org/blog/uveitis-eye-inflammation-ibd</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.ibdpal.org/blog/vaccine-autoimmune-immunosuppression</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -877,6 +955,12 @@
     <priority>0.78</priority>
   </url>
   <url>
+    <loc>https://www.ibdpal.org/guides/anti-inflammatory-diet-ibd</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
     <loc>https://www.ibdpal.org/guides/biologics-crohns-colitis</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
@@ -920,6 +1004,12 @@
   </url>
   <url>
     <loc>https://www.ibdpal.org/guides/dining-out-with-ibd</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.ibdpal.org/guides/elimination-diet-when-to-stop-ibd</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.84</priority>
@@ -991,6 +1081,12 @@
     <priority>0.84</priority>
   </url>
   <url>
+    <loc>https://www.ibdpal.org/guides/iron-deficiency-nutrition-ibd</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
     <loc>https://www.ibdpal.org/guides/living-with-ostomy-ibd</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
@@ -1021,6 +1117,12 @@
     <priority>0.84</priority>
   </url>
   <url>
+    <loc>https://www.ibdpal.org/guides/protein-healing-ibd-flare</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
     <loc>https://www.ibdpal.org/guides/sleep-ibd-flares</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
@@ -1046,6 +1148,12 @@
   </url>
   <url>
     <loc>https://www.ibdpal.org/guides/ulcerative-colitis-flare-management</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://www.ibdpal.org/guides/vitamin-d-bone-nutrition-ibd</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.84</priority>
@@ -1082,363 +1190,308 @@
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/alabama</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/alaska</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/arizona</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/arkansas</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/california</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/colorado</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/connecticut</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/delaware</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/district-of-columbia</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/florida</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/georgia</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/hawaii</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/idaho</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/illinois</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/indiana</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/iowa</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/kansas</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/kentucky</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/louisiana</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/maine</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/maryland</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/massachusetts</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/michigan</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/minnesota</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/mississippi</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/missouri</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/montana</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/nebraska</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/nevada</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/new-hampshire</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/new-jersey</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/new-mexico</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/new-york</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/north-carolina</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/north-dakota</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/ohio</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/oklahoma</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/oregon</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/pennsylvania</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/rhode-island</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/south-carolina</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/south-dakota</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/tennessee</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/texas</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/utah</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/vermont</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/virginia</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/washington</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/west-virginia</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/wisconsin</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/support/wyoming</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
-  </url>
-  <!-- es-pages -->
-  <url>
-    <loc>https://www.ibdpal.org/es/recursos</loc>
-    <lastmod>2026-08-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.86</priority>
-  </url>
-  <url>
-    <loc>https://www.ibdpal.org/es/recien-diagnosticado</loc>
-    <lastmod>2026-08-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.86</priority>
-  </url>
-  <url>
-    <loc>https://www.ibdpal.org/es/nutricion-eii</loc>
-    <lastmod>2026-08-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.86</priority>
-  </url>
-  <url>
-    <loc>https://www.ibdpal.org/es/enfermedad-crohn</loc>
-    <lastmod>2026-08-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.86</priority>
-  </url>
-  <url>
-    <loc>https://www.ibdpal.org/es/colitis-ulcerosa</loc>
-    <lastmod>2026-08-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.86</priority>
-  </url>
-  <url>
-    <loc>https://www.ibdpal.org/es/adolescentes-escuela</loc>
-    <lastmod>2026-08-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.86</priority>
-  </url>
-  <url>
-    <loc>https://www.ibdpal.org/es/brotes-eii</loc>
-    <lastmod>2026-08-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.86</priority>
-  </url>
-  <url>
-    <loc>https://www.ibdpal.org/es/cuando-ir-urgencias-eii</loc>
-    <lastmod>2026-08-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.86</priority>
-  </url>
-  <url>
-    <loc>https://www.ibdpal.org/es/preguntas-frecuentes</loc>
-    <lastmod>2026-08-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.86</priority>
   </url>
 </urlset>

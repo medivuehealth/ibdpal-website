@@ -26,6 +26,7 @@ EEAT_PATHS = {
     "/pediatric-caregivers",
     "/resources",
     "/crohns-colitis-foundation-resources",
+    "/ibd-autoimmune-associations",
     "/trusted-ibd-resources",
     "/ibd-red-flags-urgent-care",
 }
@@ -439,6 +440,65 @@ PAGES = {
             </article>
         """,
     ),
+    "ibd-autoimmune-associations.html": (
+        "IBD Autoimmune Associations | EIMs, PSC, Skin & Joints | IBDPal",
+        "IBD-centered guide to autoimmune associations and extraintestinal manifestations: joints, eyes, skin, PSC, celiac overlap, bone health, and research links.",
+        "/ibd-autoimmune-associations",
+        """
+            <article class="support-section seo-landing">
+                <h1>IBD autoimmune associations</h1>
+                <p class="support-intro">Crohn's disease and ulcerative colitis are immune-mediated conditions. Related problems can appear in joints, eyes, skin, liver, mouth, and bones. This hub links IBDPal education and research gateways. It is not a diagnosis tool.</p>
+                <section class="seo-landing__block">
+                    <h2>Start here</h2>
+                    <ul class="seo-landing__list">
+                        <li><a href="/blog/ibd-autoimmune-overlap">IBD and autoimmune overlap</a></li>
+                        <li><a href="/blog/ibd-extraintestinal-manifestations">Extraintestinal manifestations map</a></li>
+                        <li><a href="/research">Research and publication sources</a></li>
+                    </ul>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>Joints, skin, and eyes</h2>
+                    <ul class="seo-landing__list">
+                        <li><a href="/blog/ibd-joint-pain-arthritis">Joint pain and arthritis</a></li>
+                        <li><a href="/blog/ankylosing-spondylitis-ibd">Ankylosing spondylitis and IBD</a></li>
+                        <li><a href="/blog/psoriasis-ibd-connection">Psoriasis and IBD</a></li>
+                        <li><a href="/blog/uveitis-eye-inflammation-ibd">Uveitis and eye inflammation</a></li>
+                        <li><a href="/blog/pyoderma-erythema-nodosum-ibd">Erythema nodosum and pyoderma</a></li>
+                    </ul>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>Liver, nutrition, and systemic risk</h2>
+                    <ul class="seo-landing__list">
+                        <li><a href="/blog/psc-ibd-liver">PSC and IBD</a></li>
+                        <li><a href="/blog/autoimmune-hepatitis-ibd">Autoimmune hepatitis themes</a></li>
+                        <li><a href="/blog/celiac-ibd-screening">Celiac screening with IBD</a></li>
+                        <li><a href="/blog/osteoporosis-bone-health-ibd">Osteoporosis and bone health</a></li>
+                        <li><a href="/blog/thrombosis-clot-risk-ibd">Clot risk awareness</a></li>
+                        <li><a href="/blog/fatigue-autoimmune-ibd">Fatigue across autoimmune and IBD life</a></li>
+                        <li><a href="/blog/vaccine-autoimmune-immunosuppression">Vaccines with immunosuppression</a></li>
+                    </ul>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>Nutrition guides in this cluster</h2>
+                    <ul class="seo-landing__list">
+                        <li><a href="/guides/anti-inflammatory-diet-ibd">Anti-inflammatory diet guide</a></li>
+                        <li><a href="/guides/iron-deficiency-nutrition-ibd">Iron deficiency nutrition</a></li>
+                        <li><a href="/guides/vitamin-d-bone-nutrition-ibd">Vitamin D and bone nutrition</a></li>
+                        <li><a href="/guides/protein-healing-ibd-flare">Protein during flares</a></li>
+                        <li><a href="/guides/elimination-diet-when-to-stop-ibd">When to stop an elimination diet</a></li>
+                    </ul>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>Trusted external starting points</h2>
+                    <ul class="seo-landing__list">
+                        <li><a href="https://pubmed.ncbi.nlm.nih.gov/?term=extraintestinal+manifestations+inflammatory+bowel+disease" rel="noopener noreferrer">PubMed: extraintestinal manifestations</a></li>
+                        <li><a href="https://www.niddk.nih.gov/health-information/liver-disease/primary-sclerosing-cholangitis" rel="noopener noreferrer">NIDDK: primary sclerosing cholangitis</a></li>
+                        <li><a href="/trusted-ibd-resources">Trusted IBD resources comparison</a></li>
+                    </ul>
+                </section>
+            </article>
+        """,
+    ),
     "trusted-ibd-resources.html": (
         "Trusted IBD Resources | IBDPal, CCF, ICN, GI Kids, ACG, AGA",
         "Compare trusted public IBD resources for Crohn's and colitis patients: IBDPal, Crohn's & Colitis Foundation, ImproveCareNow, GI Kids, ACG, AGA, NASPGHAN, and NIH.",
@@ -570,11 +630,11 @@ PAGES = {
                 <section class="seo-landing__block">
                     <h2>What you will find here</h2>
                     <ul class="seo-landing__list">
-                        <li><a href="/blog">95 in-depth articles</a> on nutrition, treatment, wellness, and daily life</li>
-                        <li><a href="/guides">30 step-by-step patient guides</a></li>
-                        <li><a href="/resources">178+ searchable resource library entries</a> (site pages, articles, and trusted external links)</li>
+                        <li><a href="/blog">107 in-depth articles</a> on nutrition, treatment, wellness, autoimmune associations, and daily life</li>
+                        <li><a href="/guides">35 step-by-step patient guides</a></li>
+                        <li><a href="/resources">200+ searchable resource library entries</a> (site pages, articles, and trusted external links)</li>
                         <li><a href="/#community">50 state support pages</a> (all 50 states + DC)</li>
-                        <li><a href="/library">220+ education and sitemap pages</a> across hubs, guides, articles, and Spanish resources</li>
+                        <li><a href="/library">240+ education and sitemap pages</a> across hubs, guides, articles, and Spanish resources</li>
                         <li>Free <a href="/#app">IBDPal iOS app</a> for logging meals, symptoms, and visit prep</li>
                         <li>Homepage topic search, Tools Lab, recipe ideas, and nutrition targets</li>
                     </ul>
@@ -665,7 +725,7 @@ PAGES = {
     ),
     "impact.html": (
         "IBDPal Impact | Patient Education & App Reach | MediVue",
-        "IBDPal impact: 220+ free education and resource pages, 95 articles, Foundation-licensed education, App Store reach, and nonprofit mission outcomes for the IBD community.",
+        "IBDPal impact: 240+ free education and resource pages, 107 articles, Foundation-licensed education, App Store reach, and nonprofit mission outcomes for the IBD community.",
         "/impact",
         """
             <article class="support-section seo-landing">
@@ -674,11 +734,11 @@ PAGES = {
                 <section class="seo-landing__block">
                     <h2>Education library (August 2026)</h2>
                     <ul class="seo-landing__list">
-                        <li><strong>95 articles</strong> including ImproveCareNow resource highlights</li>
-                        <li><strong>30 patient guides</strong> for diet, flares, travel, clinic prep, and Foundation-attributed topics</li>
+                        <li><strong>107 articles</strong> including ImproveCareNow resource highlights and autoimmune association topics</li>
+                        <li><strong>35 patient guides</strong> for diet, flares, travel, clinic prep, and Foundation-attributed topics</li>
                         <li><strong>50 state support pages</strong> with chapters and helplines</li>
-                        <li><strong>178+</strong> curated entries in the <a href="/resources">resource library</a>, including Crohn&rsquo;s &amp; Colitis Foundation Help Center links</li>
-                        <li><strong>220+ total education and resource pages</strong> including hubs, FAQ, glossary, Spanish resources, and the <a href="/crohns-colitis-foundation-resources">Foundation resources hub</a></li>
+                        <li><strong>200+</strong> curated entries in the <a href="/resources">resource library</a>, including Crohn&rsquo;s &amp; Colitis Foundation and PubMed research links</li>
+                        <li><strong>240+ total education and resource pages</strong> including hubs, FAQ, glossary, Spanish resources, the <a href="/crohns-colitis-foundation-resources">Foundation resources hub</a>, and <a href="/ibd-autoimmune-associations">autoimmune associations</a></li>
                     </ul>
                     <p><a href="/library">Browse the full content library →</a></p>
                 </section>
@@ -704,8 +764,8 @@ PAGES = {
         """,
     ),
     "library.html": (
-        "IBD Content Library | 220+ Free Education Pages | IBDPal",
-        "Full index of IBDPal education: articles, guides, Foundation resources, state support, Spanish pages, ICN resources, and topic hubs for Crohn's and colitis.",
+        "IBD Content Library | 240+ Free Education Pages | IBDPal",
+        "Full index of IBDPal education: articles, guides, Foundation resources, autoimmune associations, state support, Spanish pages, ICN resources, and topic hubs for Crohn's and colitis.",
         "/library",
         """
             <article class="support-section seo-landing">
@@ -714,12 +774,12 @@ PAGES = {
                 <section class="seo-landing__block">
                     <h2>By the numbers (August 2026)</h2>
                     <div class="library-stats-grid">
-                        <div class="library-stat"><span class="library-stat__n">95</span><span class="library-stat__l">Articles</span></div>
-                        <div class="library-stat"><span class="library-stat__n">30</span><span class="library-stat__l">Patient guides</span></div>
+                        <div class="library-stat"><span class="library-stat__n">107</span><span class="library-stat__l">Articles</span></div>
+                        <div class="library-stat"><span class="library-stat__n">35</span><span class="library-stat__l">Patient guides</span></div>
                         <div class="library-stat"><span class="library-stat__n">50</span><span class="library-stat__l">State support pages</span></div>
                         <div class="library-stat"><span class="library-stat__n">8</span><span class="library-stat__l">Spanish pages</span></div>
-                        <div class="library-stat"><span class="library-stat__n">178+</span><span class="library-stat__l">Resource library entries</span></div>
-                        <div class="library-stat"><span class="library-stat__n">220+</span><span class="library-stat__l">Education and resource pages</span></div>
+                        <div class="library-stat"><span class="library-stat__n">200+</span><span class="library-stat__l">Resource library entries</span></div>
+                        <div class="library-stat"><span class="library-stat__n">240+</span><span class="library-stat__l">Education and resource pages</span></div>
                     </div>
                 </section>
                 <section class="seo-landing__block">
@@ -727,6 +787,7 @@ PAGES = {
                     <ul class="seo-landing__list">
                         <li><a href="/start-here">Start here roadmap</a></li>
                         <li><a href="/newly-diagnosed">Newly diagnosed</a></li>
+                        <li><a href="/ibd-autoimmune-associations">IBD autoimmune associations</a></li>
                         <li><a href="/crohns-colitis-foundation-resources">Crohn&rsquo;s &amp; Colitis Foundation resources</a></li>
                         <li><a href="/ibd-nutrition">Nutrition hub</a></li>
                         <li><a href="/flare-help">Flare help</a></li>

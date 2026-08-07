@@ -67,9 +67,10 @@ UPDATES_MONTHLY_SECTIONS_HTML = """
                     <section class="seo-landing__block updates-month">
                         <h2>August 2026</h2>
                         <ul class="seo-landing__list">
+                            <li><strong>Traffic expansion wave 1:</strong> autoimmune association articles and <a href="/ibd-autoimmune-associations">associations hub</a>; nutrition guides for anti-inflammatory eating, iron, vitamin D, protein, and elimination diets; PubMed and society links on <a href="/research">research</a></li>
                             <li><strong>Crohn&rsquo;s &amp; Colitis Foundation:</strong> licensed-education homepage strip; expanded <a href="/crohns-colitis-foundation-resources">Foundation resources hub</a>; attributed guides for <a href="/guides/camp-oasis-kids-ibd">Camp Oasis</a>, <a href="/guides/ibd-prior-authorization-foundation">prior authorization</a>, and <a href="/guides/foundation-diet-nutrition-ibd">diet and nutrition</a>; Foundation links in the <a href="/resources">resource library</a></li>
                             <li><strong>Homepage UX:</strong> brighter high-contrast type, bold black menu labels, compact Foundation strip so search stays visible</li>
-                            <li><strong>Library counts:</strong> <strong>95 articles</strong>, <strong>30 guides</strong>, <strong>178+</strong> resource entries, <strong>220+</strong> sitemap education pages</li>
+                            <li><strong>Library counts:</strong> <strong>107 articles</strong>, <strong>35 guides</strong>, <strong>200+</strong> resource entries, <strong>240+</strong> sitemap education pages</li>
                         </ul>
                     </section>
                     <section class="seo-landing__block updates-month">

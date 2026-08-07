@@ -91,5 +91,22 @@
     "helpline",
     "Foundation",
     "CCF"
-  ]
+  ],
+  "ibd-autoimmune-overlap": ["autoimmune", "immune", "overlap", "extraintestinal", "EIM"],
+  "psc-ibd-liver": ["PSC", "primary sclerosing cholangitis", "liver", "bile", "hepatology"],
+  "ankylosing-spondylitis-ibd": ["ankylosing spondylitis", "AS", "spondyloarthritis", "spine", "back pain", "axial"],
+  "psoriasis-ibd-connection": ["psoriasis", "skin", "plaque", "dermatology"],
+  "celiac-ibd-screening": ["celiac", "gluten", "screening", "gluten-free", "wheat"],
+  "ibd-extraintestinal-manifestations": ["extraintestinal", "EIM", "joints", "eyes", "skin", "liver"],
+  "autoimmune-hepatitis-ibd": ["autoimmune hepatitis", "liver", "hepatitis", "enzymes"],
+  "osteoporosis-bone-health-ibd": ["osteoporosis", "bone", "DEXA", "fracture", "steroid", "vitamin D"],
+  "thrombosis-clot-risk-ibd": ["thrombosis", "clot", "VTE", "DVT", "PE", "blood clot"],
+  "oral-canker-sores-ibd": ["canker", "mouth sore", "aphthous", "oral ulcer"],
+  "fatigue-autoimmune-ibd": ["fatigue", "tired", "autoimmune", "energy", "brain fog"],
+  "vaccine-autoimmune-immunosuppression": ["vaccine", "vaccination", "immunosuppression", "live vaccine", "flu shot"],
+  "guides/anti-inflammatory-diet-ibd": ["anti-inflammatory", "Mediterranean", "inflammation diet"],
+  "guides/iron-deficiency-nutrition-ibd": ["iron", "anemia", "ferritin", "IV iron"],
+  "guides/vitamin-d-bone-nutrition-ibd": ["vitamin D", "calcium", "bone", "osteoporosis"],
+  "guides/protein-healing-ibd-flare": ["protein", "flare nutrition", "muscle", "healing"],
+  "guides/elimination-diet-when-to-stop-ibd": ["elimination diet", "reintroduction", "food trial", "restriction"]
 }
