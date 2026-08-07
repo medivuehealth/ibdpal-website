@@ -310,7 +310,7 @@ body {
     font-size: var(--ibd-text-sm);
     font-weight: 500;
     line-height: 1.5;
-    color: #6B7280;
+    color: #222222;
 }
 
 /* Homepage CCF license strip — soft white card; logo separate (not a brand lockup) */
@@ -378,7 +378,7 @@ body {
     margin: 0;
     font-size: 0.875rem;
     line-height: 1.45;
-    color: #6B7280;
+    color: #222222;
 }
 
 .ccf-home-license__actions {
@@ -392,7 +392,7 @@ body {
 }
 
 .ccf-home-license__actions a {
-    color: #374151;
+    color: #222222;
     font-weight: 600;
     text-decoration: underline;
     text-underline-offset: 2px;
@@ -414,7 +414,7 @@ body {
 }
 
 .ccf-home-license__note a {
-    color: #374151;
+    color: #222222;
     text-decoration: underline;
     text-underline-offset: 2px;
 }
@@ -451,7 +451,7 @@ body {
     font-weight: 700;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #6B7280;
+    color: #222222;
 }
 
 .home-search__row {
@@ -465,7 +465,7 @@ body {
     left: 0.85rem;
     width: 1.1rem;
     height: 1.1rem;
-    color: #9CA3AF;
+    color: #222222;
     pointer-events: none;
 }
 
@@ -544,21 +544,21 @@ body {
 .home-search__hit-desc {
     grid-column: 2;
     font-size: 0.86rem;
-    color: #6B7280;
+    color: #222222;
     line-height: 1.35;
 }
 
 .home-search__empty {
     margin: 0;
     padding: 0.85rem;
-    color: #6B7280;
+    color: #222222;
     font-size: 0.92rem;
 }
 
 .home-search__status {
     margin: 0.35rem 0 0;
     font-size: 0.8rem;
-    color: #6B7280;
+    color: #222222;
 }
 
 .start-route-card {
@@ -644,7 +644,7 @@ body {
 
 .start-here-hub__lead {
     font-family: var(--ibd-font-body);
-    color: #6B7280;
+    color: #222222;
     font-size: var(--ibd-text-md);
     font-weight: 500;
     line-height: var(--ibd-line);
@@ -704,7 +704,7 @@ body {
 
 .start-here-hub__desc {
     font-family: var(--ibd-font-body);
-    color: #6B7280;
+    color: #222222;
     font-size: var(--ibd-text-md);
     font-weight: 400;
     line-height: var(--ibd-line);
@@ -715,7 +715,7 @@ body {
     text-align: left;
     font-family: var(--ibd-font-body);
     font-size: var(--ibd-text-sm);
-    color: #6B7280;
+    color: #222222;
     line-height: var(--ibd-line);
 }
 
@@ -1099,7 +1099,7 @@ body {
 .blog-pill {
     border: 1px solid rgba(153, 51, 204, 0.18);
     background: #fff;
-    color: #5c5c68;
+    color: #222222;
     font-family: var(--ibd-font-body);
     font-size: var(--ibd-text-base);
     font-weight: 600;
@@ -1188,7 +1188,7 @@ body {
 .blog-card--magazine p {
     font-family: var(--ibd-font-body);
     font-size: var(--ibd-text-base);
-    color: #5c5c68;
+    color: #222222;
     line-height: var(--ibd-line);
     margin: 0;
 }
@@ -1341,14 +1341,14 @@ body {
 .resource-library__empty-hint {
     font-family: var(--ibd-font-body);
     margin: 0;
-    color: #666;
+    color: #222222;
     font-size: var(--ibd-text-md);
 }
 
 .resource-card__desc {
     font-family: var(--ibd-font-body);
     font-size: var(--ibd-text-sm);
-    color: #666;
+    color: #222222;
     line-height: var(--ibd-line);
     margin: 0.35rem 0 0;
 }
@@ -1478,7 +1478,7 @@ body {
     margin: 0;
     font-family: var(--ibd-font-body);
     line-height: var(--ibd-line);
-    color: #6B7280;
+    color: #222222;
     font-weight: 400;
     font-size: var(--ibd-text-base);
 }
@@ -1502,7 +1502,7 @@ body {
     font-family: var(--ibd-font-body);
     font-size: var(--ibd-text-sm);
     line-height: var(--ibd-line);
-    color: #6B7280;
+    color: #222222;
 }
 
 #library .library-subcontent {
@@ -1517,7 +1517,7 @@ body {
     margin: 0 0 0.75rem;
     font-family: var(--ibd-font-body);
     font-size: var(--ibd-text-sm);
-    color: #6B7280;
+    color: #222222;
 }
 
 .library-panel-links a {
@@ -1596,14 +1596,14 @@ body {
     display: block;
     font-family: var(--ibd-font-body);
     font-size: var(--ibd-text-sm);
-    color: #6b7280;
+    color: #222222;
     margin-top: 0.25rem;
 }
 
 .icn-attribution {
     font-family: var(--ibd-font-body);
     font-size: var(--ibd-text-base);
-    color: #5c6570;
+    color: #222222;
     margin: 0.25rem 0 1.75rem;
 }
 
@@ -1651,7 +1651,7 @@ a {
 .community-section__lead,
 .last-updated {
     font-family: var(--ibd-font-body);
-    color: #6B7280;
+    color: #222222;
     font-weight: 400;
     line-height: var(--ibd-line);
     font-size: var(--ibd-text-sm);
@@ -1765,7 +1765,7 @@ a {
 .community-edu-disclaimer {
     font-family: var(--ibd-font-body);
     font-size: var(--ibd-text-sm);
-    color: #6B7280;
+    color: #222222;
     background: #FFFFFF;
     border: 1px solid var(--ibd-border);
     border-left: 3px solid var(--ibd-primary);
@@ -1813,7 +1813,7 @@ a {
 .blog-pill {
     border: 1px solid var(--ibd-border);
     background: #FFFFFF;
-    color: #6B7280;
+    color: #222222;
     border-radius: 999px;
 }
 
@@ -1858,7 +1858,7 @@ a {
     font-size: var(--ibd-text-sm);
     font-weight: 500;
     line-height: var(--ibd-line);
-    color: #6B7280;
+    color: #222222;
 }
 
 .tab-page-section--compact > .seo-landing__block:first-of-type,
@@ -1993,14 +1993,14 @@ a {
 }
 
 .hero-tagline {
-    color: #6B7280;
+    color: #222222;
     font-weight: 500;
     border-left-color: var(--ibd-primary);
     border-right-color: var(--ibd-primary);
 }
 
 .hero-description {
-    color: #6B7280;
+    color: #222222;
     line-height: 1.65;
 }
 
@@ -2044,12 +2044,12 @@ a {
     line-height: var(--ibd-line);
     text-align: left;
     margin: 0 0 0.35rem;
-    color: #6B7280;
+    color: #222222;
 }
 
 .hub-header-footnote {
     margin: 0 0 1rem;
-    color: #9CA3AF;
+    color: #222222;
     line-height: var(--ibd-line);
 }
 
@@ -2303,7 +2303,7 @@ a.tab-button,
 }
 
 .home-side-rail p {
-    color: #66546f;
+    color: #222222;
     font-size: var(--ibd-text-sm);
     line-height: var(--ibd-line);
     margin: 0;
@@ -2348,7 +2348,7 @@ a.tab-button,
 }
 
 .search-suggestions span {
-    color: #66546f;
+    color: #222222;
     font-size: var(--ibd-text-sm);
     font-weight: 800;
 }
@@ -2473,7 +2473,7 @@ a.tab-button,
 .recipe-ideas-note,
 .recipe-ideas-empty,
 .recipe-ideas-disclaimer {
-    color: #66546f;
+    color: #222222;
     font-size: 0.92rem;
     line-height: var(--ibd-line);
 }
@@ -2612,7 +2612,7 @@ a.tab-button,
 }
 
 .tools-lab-steps li {
-    color: #66546f;
+    color: #222222;
     font-size: 0.93rem;
     line-height: 1.5;
 }
@@ -2743,7 +2743,7 @@ a.tab-button,
 }
 
 .gut-weather-history__list li span {
-    color: #66546f;
+    color: #222222;
     font-size: 0.92rem;
 }
 
@@ -3016,7 +3016,7 @@ a.tab-button,
 }
 
 .nutrition-targets-sources span {
-    color: #66546f;
+    color: #222222;
     display: block;
     font-size: 0.92rem;
     margin-top: 0.25rem;
@@ -3077,7 +3077,7 @@ a.tab-button,
 }
 
 .nutrition-targets-empty {
-    color: #66546f;
+    color: #222222;
 }
 
 .nutrition-targets-card--wide-slot {
@@ -3175,7 +3175,7 @@ a.tab-button,
 
 .clinical-lookup__status,
 .tools-lab-note {
-    color: #66546f;
+    color: #222222;
     font-size: 0.92rem;
     margin: 0.55rem 0 0;
 }
@@ -3229,7 +3229,7 @@ a.tab-button,
     background: rgba(255, 255, 255, 0.75);
     border: 1px dashed rgba(153, 51, 204, 0.24);
     border-radius: 14px;
-    color: #66546f;
+    color: #222222;
     padding: 0.85rem;
 }
 
@@ -3247,7 +3247,7 @@ a.tab-button,
 }
 
 .clinical-related p {
-    color: #66546f;
+    color: #222222;
     font-size: 0.93rem;
     margin: 0 0 0.8rem;
 }
@@ -3284,7 +3284,7 @@ a.tab-button,
 }
 
 .clinical-related-card span {
-    color: #66546f;
+    color: #222222;
     font-size: 0.9rem;
     line-height: 1.45;
 }
@@ -3367,7 +3367,7 @@ a.tab-button,
 
 .food-detective-suspects p,
 .food-detective-suspects small {
-    color: #66546f;
+    color: #222222;
     display: block;
     margin: 0.35rem 0 0;
 }
@@ -3569,7 +3569,7 @@ a.tab-button,
 /* Content insights (ops) */
 .insights-page .insights-toolbar__note {
     margin-bottom: 0.75rem;
-    color: #5c534c;
+    color: #222222;
 }
 .insights-range {
     display: flex;
@@ -3597,7 +3597,7 @@ a.tab-button,
 }
 .insights-status {
     font-size: 0.92rem;
-    color: #6a5f57;
+    color: #222222;
 }
 .insights-status.is-error {
     color: #9b2c2c;
@@ -3632,7 +3632,7 @@ a.tab-button,
     text-align: right;
 }
 .insights-idea-reason {
-    color: #6a5f57;
+    color: #222222;
     font-size: 0.9em;
 }
 .insights-grid {
@@ -3659,7 +3659,7 @@ a.tab-button,
 .home-rail-empty {
     margin: 0;
     font-size: 0.88rem;
-    color: #6B7280;
+    color: #222222;
 }
 .home-search__empty-wrap {
     padding: 0.85rem;
@@ -3680,7 +3680,7 @@ a.tab-button,
 }
 .home-search__gap-note {
     margin: 0.4rem 0 0.65rem;
-    color: #6B7280;
+    color: #222222;
     font-size: 0.9rem;
 }
 .home-search__zero-links {
@@ -3707,7 +3707,7 @@ a.tab-button,
     margin: 0 0 0.4rem;
     font-size: 0.82rem;
     font-weight: 800;
-    color: #6B7280;
+    color: #222222;
 }
 .home-search__related-list {
     display: grid;
@@ -3744,7 +3744,7 @@ a.tab-button,
     font-weight: 800;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    color: #6B7280;
+    color: #222222;
 }
 .home-search__ac-item {
     display: flex;
@@ -3778,5 +3778,5 @@ a.tab-button,
     background: #fff4ee;
     border-bottom: 1px solid #f0e7df;
     font-size: 0.88rem;
-    color: #5c534c;
+    color: #222222;
 }
