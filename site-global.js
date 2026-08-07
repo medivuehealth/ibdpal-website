@@ -28,11 +28,6 @@
     { url: '/guides/sleep-ibd-flares', title: 'Sleep and rest during flares' },
     { url: '/research', title: 'IBD research sources' }
   ];
-  var FALLBACK_CONTENT_IDEAS = [
-    { title: 'Fatigue: questions to ask and what to track', term: 'fatigue' },
-    { title: 'Flare foods: gentle options and red flags', term: 'flare foods' },
-    { title: 'Biologics: visit questions for new starts', term: 'biologics' }
-  ];
   var COMPLETION_STEMS = [
     'management', 'symptoms', 'diarrhea', 'abdominal', 'inflammation',
     'nutrition', 'medication', 'medications', 'biologics', 'remission',
@@ -375,44 +370,6 @@
       })
       .catch(function () {
         renderTopContent(FALLBACK_CONTENT, true);
-      });
-  }
-
-  function renderContentIdeas(items, isFallback) {
-    var section = document.querySelector('[data-content-ideas]');
-    if (!section) return;
-
-    var list = section.querySelector('[data-content-ideas-list]');
-    if (!list) return;
-
-    var cleaned = (items || []).filter(function (item) {
-      return isPublicSearchTerm(item.term || item.label || item.title || '');
-    });
-    var ideas = (cleaned.length ? cleaned : FALLBACK_CONTENT_IDEAS).slice(0, 3);
-    var usingFallback = isFallback || !cleaned.length;
-    list.innerHTML = ideas.map(function (item) {
-      var term = item.term || item.label || item.title || '';
-      var title = item.title || ((item.label || term) + ': questions to ask and what to track');
-      return '<a href="' + topSearchHref(term) + '">' + escapeHtml(title) + '</a>';
-    }).join('');
-    section.hidden = false;
-    section.setAttribute('data-ideas-source', usingFallback ? 'fallback' : 'live');
-  }
-
-  function loadContentIdeas() {
-    var section = document.querySelector('[data-content-ideas]');
-    if (!section) return;
-
-    window.fetch(WEB_API_BASE + '/content-ideas?days=30&limit=10')
-      .then(function (response) {
-        if (!response.ok) throw new Error('Content ideas unavailable');
-        return response.json();
-      })
-      .then(function (payload) {
-        renderContentIdeas(payload && payload.ideas, false);
-      })
-      .catch(function () {
-        renderContentIdeas(FALLBACK_CONTENT_IDEAS, true);
       });
   }
 
@@ -889,7 +846,6 @@
     injectInboundSearchNote();
     loadTopSearches();
     loadTopContent();
-    loadContentIdeas();
     trackCurrentContentView();
     trackContentClicks();
     trackStartRoutes();

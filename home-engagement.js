@@ -61,16 +61,24 @@
     var week = (eng.recent && eng.recent.week) || [];
     var month = (eng.recent && eng.recent.month) || [];
     if (weekSection) {
-      fillLinks(weekSection.querySelector('[data-new-week-list]'), week, 'No new articles this week yet.');
-      revealRail(weekSection);
+      if (week.length) {
+        fillLinks(weekSection.querySelector('[data-new-week-list]'), week, '');
+        revealRail(weekSection);
+      } else {
+        weekSection.hidden = true;
+      }
     }
     if (monthSection) {
       var weekUrls = {};
       week.forEach(function (item) { weekUrls[item.url] = true; });
       var monthOnly = month.filter(function (item) { return !weekUrls[item.url]; });
       var monthItems = monthOnly.length ? monthOnly : month;
-      fillLinks(monthSection.querySelector('[data-new-month-list]'), monthItems.slice(0, 6), 'No new articles this month yet.');
-      revealRail(monthSection);
+      if (monthItems.length) {
+        fillLinks(monthSection.querySelector('[data-new-month-list]'), monthItems.slice(0, 6), '');
+        revealRail(monthSection);
+      } else {
+        monthSection.hidden = true;
+      }
     }
   }
 
