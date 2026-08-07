@@ -39,6 +39,16 @@ GUIDE_CATEGORY = {
     "foods-to-eat-crohns-flare": "nutrition",
     "crohns-food-triggers": "nutrition",
     "what-should-i-eat-crohns-colitis": "nutrition",
+    "foundation-diet-nutrition-ibd": "nutrition",
+    "dining-out-with-ibd": "nutrition",
+    "ibd-hydration-fluids": "nutrition",
+    "camp-oasis-kids-ibd": "family",
+    "pediatric-crohns-colitis-help": "family",
+    "partner-caregiver-ibd": "family",
+    "ibd-prior-authorization-foundation": "treatment",
+    "ibd-crohns-colitis-helpline": "community",
+    "crohns-colitis-support-groups": "community",
+    "ibd-support-near-me": "community",
 }
 
 
@@ -166,12 +176,8 @@ def main() -> None:
             }
         )
 
-    guide_slugs_in_kw = {k for k in kw_map if k.startswith("guides/")}
-    for slug_path in sorted(guide_slugs_in_kw):
-        slug = slug_path.replace("guides/", "")
-        path = GUIDES / f"{slug}.html"
-        if not path.exists():
-            continue
+    # Include every patient guide (keyword map is optional enrichment).
+    for path in sorted(GUIDES.glob("*.html")):
         parsed = parse_guide(path)
         if not parsed:
             continue
@@ -179,11 +185,15 @@ def main() -> None:
         if url in seen_urls:
             continue
         seen_urls.add(url)
-        extra = kw_map[slug_path]
+        slug = path.stem
+        extra = kw_map.get(f"guides/{slug}", []) or kw_map.get(slug, [])
+        foundation_tags = []
+        if "foundation" in slug or "camp-oasis" in slug or "helpline" in slug:
+            foundation_tags = ["Foundation", "CCF", "licensed education"]
         entries.append(
             {
                 **parsed,
-                "tags": merge_tags(parsed.get("tags", []), extra),
+                "tags": merge_tags(parsed.get("tags", []), foundation_tags, extra),
                 "keywords": extra,
             }
         )

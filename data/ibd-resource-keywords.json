@@ -58,5 +58,38 @@
     "night stools",
     "mucus",
     "weight loss"
+  ],
+  "guides/camp-oasis-kids-ibd": [
+    "Camp Oasis",
+    "IBD camp",
+    "Crohn's camp",
+    "colitis camp",
+    "kids IBD",
+    "teens IBD",
+    "Foundation youth",
+    "CCF"
+  ],
+  "guides/ibd-prior-authorization-foundation": [
+    "prior authorization",
+    "prior auth",
+    "insurance",
+    "step therapy",
+    "biologic approval",
+    "Foundation",
+    "CCF"
+  ],
+  "guides/foundation-diet-nutrition-ibd": [
+    "Foundation diet",
+    "CCF nutrition",
+    "IBD dietitian",
+    "Crohn's diet education",
+    "colitis nutrition"
+  ],
+  "guides/ibd-crohns-colitis-helpline": [
+    "IBD Help Center",
+    "888-MY-GUT-PAIN",
+    "helpline",
+    "Foundation",
+    "CCF"
   ]
 }

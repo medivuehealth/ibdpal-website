@@ -37,7 +37,20 @@ PATH_KEYWORDS: dict[str, str] = {
     "/pediatric-caregivers": "pediatric IBD, Crohn's caregiver, child colitis, parent IBD resources",
     "/patient-stories": "IBD patient stories, Crohn's experience, colitis journey, peer support",
     "/research": "IBD research sources, Crohn's clinical trials, colitis evidence, trusted IBD sites",
-    "/resources": "IBD resource library, Crohn's links, colitis education, patient tools",
+    "/resources": "IBD resource library, Crohn's links, colitis education, Crohn's & Colitis Foundation, Camp Oasis, prior authorization, patient tools",
+    "/crohns-colitis-foundation-resources": (
+        "Crohn's & Colitis Foundation resources, IBD Help Center, Camp Oasis, "
+        "Foundation diet education, prior authorization IBD, CCF chapters, licensed Foundation education"
+    ),
+    "/guides/camp-oasis-kids-ibd": (
+        "Camp Oasis IBD, Crohn's camp for kids, colitis summer camp, Foundation youth resources"
+    ),
+    "/guides/ibd-prior-authorization-foundation": (
+        "IBD prior authorization, Crohn's insurance approval, colitis step therapy, Foundation prior auth guide"
+    ),
+    "/guides/foundation-diet-nutrition-ibd": (
+        "Foundation diet nutrition IBD, Crohn's Colitis Foundation diet, IBD dietitian resources"
+    ),
     "/glossary": "IBD glossary, Crohn's terms, colitis definitions, biologics IBD",
     "/impact": "IBDPal impact, IBD education nonprofit, MediVue mission, patient outcomes",
     "/founder": "IBDPal founder, MediVue IBD, nonprofit leadership, patient advocacy",

@@ -248,15 +248,80 @@
     "title": "CCF IBD Help Center",
     "category": "community",
     "type": "external",
-    "url": "https://www.crohnscolitisfoundation.org/live-full/live-full-ibd-help-center",
-    "tags": ["helpline", "national"]
+    "url": "https://www.crohnscolitisfoundation.org/patientsandcaregivers/ibdhelpcenter",
+    "tags": ["helpline", "national", "Foundation", "CCF"],
+    "description": "Crohn's & Colitis Foundation IBD Help Center for education and program referrals."
   },
   {
     "title": "CCF Find a Support Group",
     "category": "community",
     "type": "external",
     "url": "https://www.crohnscolitisfoundation.org/find-a-support-group",
-    "tags": ["peer", "support group"]
+    "tags": ["peer", "support group", "Foundation", "CCF"]
+  },
+  {
+    "title": "CCF Find a Chapter",
+    "category": "community",
+    "type": "external",
+    "url": "https://www.crohnscolitisfoundation.org/chapters",
+    "tags": ["chapter", "local", "Foundation", "CCF"]
+  },
+  {
+    "title": "CCF Camp Oasis",
+    "category": "family",
+    "type": "external",
+    "url": "https://www.crohnscolitisfoundation.org/get-involved/camp-oasis",
+    "tags": ["Camp Oasis", "kids", "teens", "Foundation", "CCF"]
+  },
+  {
+    "title": "CCF Kids, Parents & Teens Resources",
+    "category": "family",
+    "type": "external",
+    "url": "https://www.crohnscolitisfoundation.org/patientandcaregivers/youth-parent-resources",
+    "tags": ["pediatric", "parents", "teens", "Foundation", "CCF"]
+  },
+  {
+    "title": "CCF Prior Authorization Guide",
+    "category": "treatment",
+    "type": "external",
+    "url": "https://www.crohnscolitisfoundation.org/your-guide-to-navigating-prior-authorization",
+    "tags": ["insurance", "prior authorization", "Foundation", "CCF"]
+  },
+  {
+    "title": "CCF Action Center",
+    "category": "community",
+    "type": "external",
+    "url": "https://www.crohnscolitisfoundation.org/get-involved/be-an-advocate/action-center",
+    "tags": ["advocacy", "policy", "Foundation", "CCF"]
+  },
+  {
+    "title": "CCF Patients & Caregivers Hub",
+    "category": "getting-started",
+    "type": "external",
+    "url": "https://www.crohnscolitisfoundation.org/patientsandcaregivers",
+    "tags": ["education", "Foundation", "CCF", "diet", "lifestyle"]
+  },
+  {
+    "title": "CCF What is Crohn's Disease",
+    "category": "getting-started",
+    "type": "external",
+    "url": "https://www.crohnscolitisfoundation.org/what-is-crohns-disease",
+    "tags": ["Crohn's", "basics", "Foundation", "CCF"]
+  },
+  {
+    "title": "CCF What is Ulcerative Colitis",
+    "category": "getting-started",
+    "type": "external",
+    "url": "https://www.crohnscolitisfoundation.org/what-is-ulcerative-colitis",
+    "tags": ["ulcerative colitis", "UC", "basics", "Foundation", "CCF"]
+  },
+  {
+    "title": "Crohn's & Colitis Foundation Resources on IBDPal",
+    "category": "getting-started",
+    "type": "site",
+    "url": "/crohns-colitis-foundation-resources",
+    "tags": ["Foundation", "CCF", "licensed education", "Help Center", "Camp Oasis"],
+    "description": "IBDPal hub for selected Foundation education under license: Help Center, Camp Oasis, diet, prior auth, chapters, and advocacy links."
   },
   {
     "title": "ImproveCareNow Families",
