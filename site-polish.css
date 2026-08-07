@@ -345,8 +345,8 @@ body {
 .ccf-home-license__logo {
     display: block;
     width: auto;
-    height: 28px;
-    max-width: 140px;
+    height: 40px;
+    max-width: 180px;
 }
 
 .ccf-home-license__copy {
@@ -443,7 +443,7 @@ body {
     }
 
     .ccf-home-license__logo {
-        height: 30px;
+        height: 36px;
     }
 }
 
