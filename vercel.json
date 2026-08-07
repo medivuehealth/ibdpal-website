@@ -54,6 +54,26 @@
       "destination": "/api/web/search-suggestions?action=related"
     },
     {
+      "source": "/api/web/content-brief",
+      "destination": "/api/web/analytics?action=brief"
+    },
+    {
+      "source": "/api/web/content-ideas",
+      "destination": "/api/web/analytics?action=ideas"
+    },
+    {
+      "source": "/api/web/search-gaps",
+      "destination": "/api/web/analytics?action=gaps"
+    },
+    {
+      "source": "/api/web/top-searches",
+      "destination": "/api/web/analytics?action=top-searches"
+    },
+    {
+      "source": "/api/web/top-content",
+      "destination": "/api/web/analytics?action=top-content"
+    },
+    {
       "source": "/blog/lupus-autoimmune-basics",
       "destination": "/blogs/lupus-autoimmune-basics.html"
     },
