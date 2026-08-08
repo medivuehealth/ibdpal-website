@@ -38,6 +38,19 @@ function databaseUrl() {
   return readConfigEnv(localServerEnv).DATABASE_URL || '';
 }
 
+function sslOption(connectionString) {
+  const lower = String(connectionString || '').toLowerCase();
+  if (
+    lower.includes('sslmode=disable') ||
+    lower.includes('localhost') ||
+    lower.includes('127.0.0.1')
+  ) {
+    return false;
+  }
+  // Hosted Postgres (Neon, etc.) typically requires TLS.
+  return { rejectUnauthorized: false };
+}
+
 async function verifyTable(client, tableName) {
   const tableResult = await client.query(
     `SELECT table_name
@@ -72,35 +85,47 @@ async function main() {
     process.exit(1);
   }
 
-  const client = new Client({
-    connectionString,
-    ssl: {
-      rejectUnauthorized: false
+  async function runWithSsl(ssl) {
+    const client = new Client({ connectionString, ssl });
+    try {
+      console.log('Connecting to hosted database...', ssl ? '(ssl)' : '(no ssl)');
+      await client.connect();
+      console.log('Connected. Running ibdpal_web analytics migrations...');
+
+      for (const migration of MIGRATIONS) {
+        await client.query(fs.readFileSync(migration.file, 'utf8'));
+        await verifyTable(client, migration.tableName);
+        if (migration.tableName === 'ibdpal_student_research_interest') {
+          await verifyTable(client, 'ibdpal_student_researchers');
+          await verifyTable(client, 'ibdpal_student_submissions');
+          await verifyTable(client, 'ibdpal_student_submission_events');
+        }
+      }
+
+      console.log('Web analytics migrations completed successfully.');
+      return true;
+    } finally {
+      await client.end().catch(() => {});
+      console.log('Database connection closed.');
     }
-  });
+  }
 
   try {
-    console.log('Connecting to hosted database...');
-    await client.connect();
-    console.log('Connected. Running ibdpal_web analytics migrations...');
-
-    for (const migration of MIGRATIONS) {
-      await client.query(fs.readFileSync(migration.file, 'utf8'));
-      await verifyTable(client, migration.tableName);
-      if (migration.tableName === 'ibdpal_student_research_interest') {
-        await verifyTable(client, 'ibdpal_student_researchers');
-        await verifyTable(client, 'ibdpal_student_submissions');
-        await verifyTable(client, 'ibdpal_student_submission_events');
+    const preferredSsl = sslOption(connectionString);
+    try {
+      await runWithSsl(preferredSsl);
+    } catch (error) {
+      const msg = String(error.message || '');
+      if (preferredSsl && /does not support ssl/i.test(msg)) {
+        console.warn('Retrying migration without SSL...');
+        await runWithSsl(false);
+      } else {
+        throw error;
       }
     }
-
-    console.log('Web analytics migrations completed successfully.');
   } catch (error) {
     console.error('Web analytics migration failed:', error.message);
     process.exitCode = 1;
-  } finally {
-    await client.end();
-    console.log('Database connection closed.');
   }
 }
 
