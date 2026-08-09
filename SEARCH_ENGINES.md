@@ -85,7 +85,7 @@ Only if you want CIS/RU coverage:
 - [ ] Bing Webmaster: add + verify site
 - [ ] Bing: submit sitemap
 - [ ] Run `node scripts/submit_indexnow.js --sitemap` once
-- [ ] Confirm header shows **16 countries** (Vercel Analytics verified: US GB IN CA DE AU BD GT HK ID IE JP MY PK SE VE)
+- [ ] Confirm header shows **35 countries** (Vercel Analytics verified Aug 2026: US GB IN CA IE SE AU CN DE DK ES JP AE BD BR CH FI FR GI GT ID IL LV MX NL NZ PH PK PL RS SG TW UG VN ZA)
 
 ## Security note
 
