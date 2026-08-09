@@ -10,6 +10,30 @@
   ],
   "rewrites": [
     {
+      "source": "/blog/fever-ibd-flare-or-infection",
+      "destination": "/blogs/fever-ibd-flare-or-infection.html"
+    },
+    {
+      "source": "/blog/dehydration-ibd-warning-signs",
+      "destination": "/blogs/dehydration-ibd-warning-signs.html"
+    },
+    {
+      "source": "/blog/vomiting-obstruction-ibd-warning-signs",
+      "destination": "/blogs/vomiting-obstruction-ibd-warning-signs.html"
+    },
+    {
+      "source": "/blog/after-er-visit-ibd-follow-up",
+      "destination": "/blogs/after-er-visit-ibd-follow-up.html"
+    },
+    {
+      "source": "/blog/ibd-back-pain-sacroiliitis",
+      "destination": "/blogs/ibd-back-pain-sacroiliitis.html"
+    },
+    {
+      "source": "/blog/electrolytes-flare-ibd",
+      "destination": "/blogs/electrolytes-flare-ibd.html"
+    },
+    {
       "source": "/admin/student-research",
       "destination": "/admin/student-research.html"
     },

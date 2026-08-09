@@ -108,5 +108,65 @@
   "guides/iron-deficiency-nutrition-ibd": ["iron", "anemia", "ferritin", "IV iron"],
   "guides/vitamin-d-bone-nutrition-ibd": ["vitamin D", "calcium", "bone", "osteoporosis"],
   "guides/protein-healing-ibd-flare": ["protein", "flare nutrition", "muscle", "healing"],
-  "guides/elimination-diet-when-to-stop-ibd": ["elimination diet", "reintroduction", "food trial", "restriction"]
+  "guides/elimination-diet-when-to-stop-ibd": ["elimination diet", "reintroduction", "food trial", "restriction"],
+  "fever-ibd-flare-or-infection": [
+    "fever",
+    "temperature",
+    "chills",
+    "infection",
+    "flare",
+    "biologics",
+    "immunosuppressed",
+    "night sweats"
+  ],
+  "dehydration-ibd-warning-signs": [
+    "dehydration",
+    "fluids",
+    "dizziness",
+    "urine",
+    "oral rehydration",
+    "flare",
+    "diarrhea",
+    "thirst"
+  ],
+  "vomiting-obstruction-ibd-warning-signs": [
+    "vomiting",
+    "obstruction",
+    "stricture",
+    "nausea",
+    "bloating",
+    "ER",
+    "Crohn's",
+    "blockage"
+  ],
+  "after-er-visit-ibd-follow-up": [
+    "ER",
+    "emergency",
+    "follow-up",
+    "discharge",
+    "urgent care",
+    "after ER",
+    "flare",
+    "visit prep"
+  ],
+  "ibd-back-pain-sacroiliitis": [
+    "back pain",
+    "sacroiliitis",
+    "spine",
+    "axial",
+    "buttock pain",
+    "morning stiffness",
+    "rheumatology",
+    "joint pain"
+  ],
+  "electrolytes-flare-ibd": [
+    "electrolytes",
+    "sodium",
+    "potassium",
+    "magnesium",
+    "oral rehydration",
+    "flare",
+    "cramps",
+    "hydration"
+  ]
 }
