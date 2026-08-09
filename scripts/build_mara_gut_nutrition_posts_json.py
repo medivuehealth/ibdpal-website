@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # Prose style: do not use em dash.
-"""Build expanded enteral + Mara-lab-informed gut/nutrition blog JSON (~10 min each)."""
+"""Build expanded enteral + gut/nutrition blog JSON (~10 min each). General education only."""
 from __future__ import annotations
 
 import json
@@ -9,10 +9,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "mara-gut-nutrition-posts.json"
 
-# Public references (cite; do not overclaim ICU findings as IBD therapy).
+# Public references (cite trials anonymously; do not overclaim ICU findings as IBD therapy).
 PUBMED_FIBER = "https://pubmed.ncbi.nlm.nih.gov/41462238/"
-LAB = "https://anesthesiology.duke.edu/research/serbanescu-lab"
-PROFILE = "https://medschool.duke.edu/profile/mara-serbanescu"
 AGA = "https://gastro.org/clinical-guidance/diet-and-nutritional-therapies-in-patients-with-ibd/"
 CCF = "https://www.crohnscolitisfoundation.org/patientsandcaregivers"
 
@@ -68,8 +66,8 @@ def posts() -> list[dict]:
             "Call for dizziness, inability to keep fluids, or obstruction-like pain. Keep a simple table "
             "on the fridge so night and day caregivers log the same way.",
             "Q: Where can I read more without getting lost?",
-            f'Start with the <a href="{PUBMED_FIBER}" rel="noopener noreferrer">PubMed abstract</a>, '
-            f'the <a href="{LAB}" rel="noopener noreferrer">AMP Lab page</a>, and IBDPal\'s '
+            f'Start with the <a href="{PUBMED_FIBER}" rel="noopener noreferrer">PubMed abstract</a> '
+            "for the fiber-containing enteral nutrition pilot, plus IBDPal's "
             '<a href="/blog/enteral-nutrition-ibd">enteral overview</a>. Then write three questions '
             "for clinic instead of ten new Amazon supplements.",
         ]
@@ -275,11 +273,10 @@ def posts() -> list[dict]:
         + h2("Research context: why formula composition is studied carefully")
         + p(
             "Beyond IBD clinics, nutrition science teams study how enteral formulas interact with the gut "
-            "microbiome during severe stress, antibiotics, and critical illness. The "
-            f'<a href="{LAB}" rel="noopener noreferrer">Duke Anesthesiology Microbiome Profiling (AMP) Laboratory</a> '
-            "led by Dr. Mara Serbanescu investigates how microbes and nutrition relate to immune responses "
-            "and outcomes in perioperative and critically ill patients. Public lab pages and "
-            f'<a href="{PROFILE}" rel="noopener noreferrer">Dr. Serbanescu\'s Duke profile</a> summarize that focus.',
+            "microbiome during severe stress, antibiotics, and critical illness. Critical care and "
+            "perioperative research groups look at how microbes and nutrition relate to immune responses "
+            "and recovery. That work helps explain why formula composition is studied carefully, even when "
+            "your personal care is outpatient IBD.",
             "A 2025 pilot randomized trial in critically ill trauma patients compared fiber-containing "
             "enteral nutrition with a fiber-free formula and tracked stool microbial communities over time "
             f'(<a href="{PUBMED_FIBER}" rel="noopener noreferrer">PubMed 41462238</a>). In that ICU setting, '
@@ -358,18 +355,12 @@ def posts() -> list[dict]:
             "<a href=\"/blog/when-to-go-er-ibd\">when to go to the ER</a>, and "
             "<a href=\"/flare-help\">flare help</a>."
         )
-        + h2("Putting the Mara lab references in context for readers")
+        + h2("Keeping ICU research in context")
         + p(
-            "If you follow academic nutrition and microbiome work, you may already know Dr. Mara "
-            f'Serbanescu\'s <a href="{PROFILE}" rel="noopener noreferrer">Duke profile</a> and the '
-            f'<a href="{LAB}" rel="noopener noreferrer">Anesthesiology Microbiome Profiling Laboratory</a>. '
-            "Those pages describe translational research on microbes, immune responses, and outcomes in "
-            "perioperative and critically ill patients, including nutrition-related projects. They are "
-            "valuable public windows into why formula composition, fiber, and antibiotics are studied so "
-            "carefully.",
-            "IBDPal cites them so curious patients can read primary sources and lab overviews without "
-            "pretending ICU protocols are home Crohn's protocols. Your actionable path remains: ask your "
-            "IBD dietitian how formula type, fiber content, and duration serve your goals this month."
+            "Critical care nutrition studies can be useful background for curious readers, but they are "
+            "not home Crohn's protocols. If you read a PubMed abstract about fiber in tube feeds, ask your "
+            "IBD dietitian how formula type, fiber content, and duration serve your goals this month rather "
+            "than copying an ICU pathway on your own."
         )
         + h2("Related IBDPal reading")
         + p(
@@ -410,21 +401,16 @@ def posts() -> list[dict]:
             "Critical illness, broad-spectrum antibiotics, and delayed feeding can flatten microbial "
             "diversity and allow expansion of potential pathogens sometimes called pathobionts. Nutrition "
             "researchers ask whether adding prebiotic fiber to tube feeds can steer communities toward "
-            "more helpful patterns, or whether a dysbiotic, antibiotic-exposed gut responds unpredictably.",
-            "The "
-            f'<a href="{LAB}" rel="noopener noreferrer">Duke AMP Laboratory</a> studies how the microbiome '
-            "influences immune responses and clinical outcomes in perioperative and critically ill patients, "
-            "including nutrition-related projects. That public lab description is a good orientation to the "
-            "science questions behind formula design, even when your personal care is outpatient IBD."
+            "more helpful patterns, or whether a dysbiotic, antibiotic-exposed gut responds unpredictably. "
+            "Those science questions sit behind formula design even when your personal care is outpatient IBD."
         )
         + h2("What the 2025 trauma ICU pilot trial reported")
         + p(
-            "A pilot randomized trial led by Mara A. Serbanescu and colleagues compared enteral nutrition "
-            "supplemented with short-chain fructooligosaccharides (scFOS-EN) versus a similar fiber-free "
-            "formula (NF-EN) in mechanically ventilated trauma ICU patients. Stool communities were "
-            "profiled with 16S rRNA sequencing across a 10-day window after formula initiation. The "
-            f'PubMed record is <a href="{PUBMED_FIBER}" rel="noopener noreferrer">PMID 41462238</a> '
-            "(BMC Medicine, 2025).",
+            "A pilot randomized trial compared enteral nutrition supplemented with short-chain "
+            "fructooligosaccharides (scFOS-EN) versus a similar fiber-free formula (NF-EN) in mechanically "
+            "ventilated trauma ICU patients. Stool communities were profiled with 16S rRNA sequencing "
+            "across a 10-day window after formula initiation. The PubMed record is "
+            f'<a href="{PUBMED_FIBER}" rel="noopener noreferrer">PMID 41462238</a> (BMC Medicine, 2025).',
             "Participants had profound baseline dysbiosis and received broad-spectrum antibiotics. Compared "
             "with fiber-free formula, scFOS-EN was associated with faster declines in Bifidobacterium and "
             "Firmicutes signals and with expansion patterns that included Enterobacteriaceae in that study "
@@ -560,9 +546,7 @@ def posts() -> list[dict]:
         )
         + h2("Related reading and sources")
         + p(
-            f'<a href="{PUBMED_FIBER}" rel="noopener noreferrer">Serbanescu et al., BMC Med 2025 (PubMed)</a>, '
-            f'<a href="{LAB}" rel="noopener noreferrer">Duke AMP Lab</a>, '
-            f'<a href="{PROFILE}" rel="noopener noreferrer">Mara Serbanescu profile</a>, '
+            f'<a href="{PUBMED_FIBER}" rel="noopener noreferrer">Fiber-containing EN microbiome pilot (PubMed)</a>, '
             f'<a href="{AGA}" rel="noopener noreferrer">AGA diet therapies update</a>, '
             '<a href="/ibd-nutrition">IBDPal nutrition hub</a>.'
         )
@@ -796,9 +780,8 @@ def posts() -> list[dict]:
             "\"Leaky gut,\" dysbiosis, and microbiome are words that travel faster on social media than "
             "in clinic notes. This article translates gut barrier and microbial imbalance ideas into "
             "careful patient language for Crohn's and ulcerative colitis. It draws on publicly described "
-            "research themes about how microbes, barrier function, and inflammation interact under stress, "
-            "including work highlighted by microbiome-focused labs. Educational only. It is not a diagnosis "
-            "of leaky gut syndrome and not a detox plan."
+            "research themes about how microbes, barrier function, and inflammation interact under stress. "
+            "Educational only. It is not a diagnosis of leaky gut syndrome and not a detox plan."
         )
         + h2("What the gut barrier is trying to do")
         + p(
@@ -807,10 +790,8 @@ def posts() -> list[dict]:
             "cells, and the microbiome all participate. When illness, inflammation, poor blood flow, "
             "or severe physiologic stress disrupt that balance, researchers study whether microbial "
             "components and metabolites contribute to wider immune activation.",
-            "Public descriptions of the "
-            f'<a href="{LAB}" rel="noopener noreferrer">Duke AMP Laboratory</a> explain a related clinical '
-            "research focus: how microbes may influence immune responses and complications in perioperative "
-            "and critically ill patients, including pathways that involve barrier stress and inflammation. "
+            "Critical care and perioperative research also explores how microbes may influence immune "
+            "responses and complications, including pathways that involve barrier stress and inflammation. "
             "IBD is a different disease setting, but the vocabulary (barrier, dysbiosis, microbial products, "
             "immune signaling) overlaps enough to help patients read science news more calmly."
         )
@@ -875,10 +856,8 @@ def posts() -> list[dict]:
             ]
         )
         + p(
-            "Dr. Serbanescu's "
-            f'<a href="{PROFILE}" rel="noopener noreferrer">Duke School of Medicine profile</a> and lab '
-            "pages are examples of how academic groups describe ongoing programs. They are starting points "
-            "for curiosity, not patient protocols."
+            "Academic program pages and PubMed abstracts are starting points for curiosity, not patient "
+            "protocols. Use them to sharpen clinic questions rather than to invent a home regimen."
         )
         + h2("When barrier worries should become a clinic call")
         + p(
@@ -891,7 +870,7 @@ def posts() -> list[dict]:
         + p(
             "In research settings, scientists study whether microbial components cross a stressed barrier "
             "and influence immune cells elsewhere in the body. Public lab descriptions of microbiome "
-            "profiling work in anesthesiology and critical care often mention complications such as organ "
+            "profiling work in critical care research often mention complications such as organ "
             "dysfunction or secondary infection as outcomes of interest. That is a research agenda about "
             "mechanisms under extreme physiologic stress.",
             "For someone managing outpatient ulcerative colitis, hearing \"bacteria leaking into your blood\" "
@@ -973,16 +952,14 @@ def posts() -> list[dict]:
             "If brain fog or mood changes are prominent, ask about anemia, B12, sleep apnea, steroid "
             "effects, and mental health referral rather than only microbiome explanations."
         )
-        + h2("What to save from academic lab pages")
+        + h2("What to save from research reading")
         + p(
-            "When you visit a lab site, save the research questions, not the implied DIY protocol. For "
-            f'example, the <a href="{LAB}" rel="noopener noreferrer">AMP Lab description</a> emphasizes '
-            "microbiome influences on immune responses and outcomes in perioperative and critically ill "
-            "patients, plus goals around mechanisms, biomarkers, and therapeutic targets. Those are "
-            "scientific aims. Your therapeutic targets remain the ones on your after-visit summary.",
-            f'Similarly, <a href="{PROFILE}" rel="noopener noreferrer">faculty profiles</a> help you '
-            "see who leads a program. They are not appointment booking for IBD second opinions unless "
-            "your care team makes a formal referral."
+            "When you read research summaries, save the scientific questions, not an implied DIY protocol. "
+            "Many programs study microbiome influences on immune responses and outcomes in perioperative "
+            "and critically ill patients, plus mechanisms, biomarkers, and therapeutic targets. Those are "
+            "research aims. Your therapeutic targets remain the ones on your after-visit summary.",
+            "Faculty and lab websites are not appointment booking for IBD second opinions unless your care "
+            "team makes a formal referral."
         )
         + h2("Bottom line for barrier and dysbiosis curiosity")
         + p(
@@ -1005,12 +982,10 @@ def posts() -> list[dict]:
         + p(
             "When the bowel can safely receive nutrition, enteral feeding (oral diet, oral formula, or "
             "tube) is generally preferred over intravenous nutrition because it supports the gut lining "
-            "and avoids some central-line risks. Critical care and surgical nutrition research programs, "
-            "including microbiome-oriented labs such as the "
-            f'<a href="{LAB}" rel="noopener noreferrer">Duke AMP Lab</a>, study how feeding strategies '
-            "interact with microbes and inflammation during severe stress. The bedside translation for "
-            "patients is practical: ask each day whether the plan is still NPO, and what the next step "
-            "toward gut feeding is."
+            "and avoids some central-line risks. Critical care and surgical nutrition research programs "
+            "study how feeding strategies interact with microbes and inflammation during severe stress. "
+            "The bedside translation for patients is practical: ask each day whether the plan is still "
+            "NPO, and what the next step toward gut feeding is."
         )
         + h2("Common hospital nutrition stages")
         + ul(
@@ -1089,11 +1064,9 @@ def posts() -> list[dict]:
                 "Who do I message if home formula shipment will not arrive before discharge?",
             ]
         )
-        + h2("Related reading and public research context")
+        + h2("Related reading")
         + p(
-            f'<a href="{LAB}" rel="noopener noreferrer">Duke AMP Lab overview</a>, '
-            f'<a href="{PROFILE}" rel="noopener noreferrer">Mara Serbanescu profile</a>, '
-            f'<a href="{PUBMED_FIBER}" rel="noopener noreferrer">Fiber-containing EN microbiome trial</a>, '
+            f'<a href="{PUBMED_FIBER}" rel="noopener noreferrer">Fiber-containing EN microbiome trial (PubMed)</a>, '
             '<a href="/blog/gut-barrier-dysbiosis-inflammation-ibd">Gut barrier and dysbiosis</a>, '
             '<a href="/flare-help">Flare help</a>, '
             '<a href="/ibd-nutrition">Nutrition hub</a>.'
@@ -1148,9 +1121,9 @@ def posts() -> list[dict]:
         + p(
             "Some patients cope by reading science. That can be healthy if it reduces fear and improves "
             "questions. It becomes unhelpful when every abstract becomes a new self-protocol. Bookmark "
-            f'<a href="{PUBMED_FIBER}" rel="noopener noreferrer">the fiber-EN microbiome pilot</a> and '
-            f'the <a href="{LAB}" rel="noopener noreferrer">AMP Lab page</a> for later discussion, then '
-            "return to sleep, meds, and the discharge checklist in front of you."
+            f'<a href="{PUBMED_FIBER}" rel="noopener noreferrer">the fiber-EN microbiome pilot</a> for '
+            "later discussion with your team, then return to sleep, meds, and the discharge checklist in "
+            "front of you."
         )
         + hospital_faq
         + h2("More detail for careful readers")
