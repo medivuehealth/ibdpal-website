@@ -55,7 +55,12 @@ async function submit(urlList) {
 async function main() {
   const args = process.argv.slice(2);
   let urls = [];
-  if (args.includes('--sitemap') || args.length === 0) {
+  const fileFlag = args.findIndex((a) => a === '--file');
+  if (fileFlag !== -1 && args[fileFlag + 1]) {
+    const raw = JSON.parse(fs.readFileSync(args[fileFlag + 1], 'utf8'));
+    urls = Array.isArray(raw) ? raw : raw.urls || [];
+    console.log(`Loaded ${urls.length} URLs from ${args[fileFlag + 1]}`);
+  } else if (args.includes('--sitemap') || args.length === 0) {
     urls = urlsFromSitemap();
     console.log(`Loaded ${urls.length} URLs from sitemap.xml`);
   } else {
