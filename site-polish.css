@@ -102,6 +102,89 @@ body {
     white-space: nowrap;
 }
 
+/* Compact EN | ES language control */
+.site-lang {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin-left: 0.75rem;
+    flex-shrink: 0;
+    font-family: var(--ibd-font-body);
+    font-size: 0.78rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.site-lang--footer {
+    display: flex;
+    margin: 0 0 0.85rem;
+    margin-left: 0;
+}
+
+.site-lang__sep {
+    color: var(--ibd-muted);
+    opacity: 0.7;
+    user-select: none;
+}
+
+.site-lang__link {
+    color: var(--ibd-muted);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+
+.site-lang__link:hover,
+.site-lang__link:focus-visible {
+    color: var(--ibd-primary);
+    border-bottom-color: rgba(139, 92, 246, 0.35);
+}
+
+.site-lang__link--active {
+    color: var(--ibd-text);
+    border-bottom-color: rgba(15, 23, 42, 0.28);
+}
+
+.locale-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 0.65rem 1rem;
+    background: linear-gradient(90deg, rgba(255, 229, 220, 0.95), rgba(255, 244, 238, 0.95));
+    border-bottom: 1px solid rgba(255, 171, 148, 0.55);
+    color: var(--ibd-text);
+    font-family: var(--ibd-font-body);
+    font-size: 0.92rem;
+}
+
+.locale-banner__text {
+    margin: 0;
+    flex: 1;
+}
+
+.locale-banner__link {
+    font-weight: 700;
+    color: var(--ibd-primary);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.locale-banner__dismiss {
+    appearance: none;
+    border: 0;
+    background: transparent;
+    color: var(--ibd-muted);
+    font-size: 1.35rem;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0.15rem 0.35rem;
+}
+
+.locale-banner__dismiss:hover,
+.locale-banner__dismiss:focus-visible {
+    color: var(--ibd-text);
+}
+
 /* Soft contextual app download nudge (hubs + articles) */
 .app-nudge {
     margin: 1.5rem 0 0.5rem;
@@ -3594,6 +3677,16 @@ a.tab-button,
         flex-wrap: wrap;
         justify-content: flex-end;
         max-width: 58%;
+    }
+
+    .site-lang {
+        margin-left: 0.35rem;
+        font-size: 0.72rem;
+    }
+
+    .locale-banner {
+        font-size: 0.85rem;
+        padding: 0.55rem 0.75rem;
     }
 
     .header-reach__stat {

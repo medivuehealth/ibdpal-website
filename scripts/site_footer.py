@@ -1,6 +1,14 @@
 """Shared footer HTML for ibdpal.org static pages and generators."""
 
-SITE_FOOTER_STATIC = """
+_LANG_FOOTER = (
+    '<nav class="site-lang site-lang--footer" aria-label="Language">'
+    '<a href="/" class="site-lang__link site-lang__link--active" data-lang="en" hreflang="en" lang="en">English</a>'
+    '<span class="site-lang__sep" aria-hidden="true">|</span>'
+    '<a href="/es/recursos" class="site-lang__link" data-lang="es" hreflang="es" lang="es">Español</a>'
+    "</nav>"
+)
+
+SITE_FOOTER_STATIC = f"""
         <footer class="footer">
             <div class="footer-content">
                 <div class="footer-links">
@@ -19,15 +27,15 @@ SITE_FOOTER_STATIC = """
                     <a href="/privacy" class="footer-link">Privacy Policy</a>
                     <a href="/support" class="footer-link">App Support</a>
                     <a href="/terms" class="footer-link">Terms of Service</a>
-                    <a href="/es/recursos" class="footer-link">Español</a>
                 </div>
+                {_LANG_FOOTER}
                 <p><strong>IBDPal</strong> · MediVue nonprofit · Education only, not medical advice.</p>
                 <p>&copy; 2026 MediVue. All rights reserved.</p>
             </div>
         </footer>
 """
 
-SITE_FOOTER_HOME = """
+SITE_FOOTER_HOME = f"""
         <footer class="footer">
             <div class="footer-content">
                 <div class="footer-links">
@@ -49,6 +57,7 @@ SITE_FOOTER_HOME = """
                     <a href="/support" class="footer-link">App Support</a>
                     <a href="/terms" class="footer-link">Terms of Service</a>
                 </div>
+                {_LANG_FOOTER}
                 <p><strong>IBDPal iOS App</strong> and <strong>IBDPal.org</strong> are trademarks of MediVue, a nonprofit organization registered in the State of North Carolina.</p>
                 <p>&copy; 2026 MediVue. All rights reserved. All content, software, algorithms, user interface designs, and intellectual property associated with IBDPal are proprietary to MediVue and protected by copyright, patent, and other intellectual property laws. No portion of this application or website may be reproduced, distributed, or transmitted without the express written permission of MediVue.</p>
                 <p>IBDPal is designed to assist patients in managing their IBD condition but should not replace professional medical advice. Always consult with healthcare providers for medical decisions.</p>
@@ -57,7 +66,7 @@ SITE_FOOTER_HOME = """
         </footer>
 """
 
-SITE_FOOTER_BLOG = """
+SITE_FOOTER_BLOG = f"""
         <footer class="footer">
             <div class="footer-content">
                 <div class="footer-links">
@@ -71,6 +80,7 @@ SITE_FOOTER_BLOG = """
                     <a href="/support" class="footer-link">Support</a>
                     <a href="/terms" class="footer-link">Terms of Service</a>
                 </div>
+                {_LANG_FOOTER}
                 <p><strong>IBDPal iOS App</strong> and <strong>IBDPal.org</strong> are trademarks of MediVue, a nonprofit organization registered in the State of North Carolina.</p>
                 <p>&copy; 2026 MediVue. All rights reserved. All content, software, algorithms, user interface designs, and intellectual property associated with IBDPal are proprietary to MediVue and protected by copyright, patent, and other intellectual property laws. No portion of this application or website may be reproduced, distributed, or transmitted without the express written permission of MediVue.</p>
                 <p>IBDPal is designed to assist patients in managing their IBD condition but should not replace professional medical advice. Always consult with healthcare providers for medical decisions.</p>

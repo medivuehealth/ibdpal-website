@@ -1,13 +1,16 @@
 {
   "mirrors": {
+    "/": "/es/recursos",
     "/newly-diagnosed": "/es/recien-diagnosticado",
     "/ibd-nutrition": "/es/nutricion-eii",
     "/crohns-disease": "/es/enfermedad-crohn",
     "/ulcerative-colitis": "/es/colitis-ulcerosa",
     "/teens-and-school": "/es/adolescentes-escuela",
     "/flare-help": "/es/brotes-eii",
-    "/faq": "/es/preguntas-frecuentes"
+    "/faq": "/es/preguntas-frecuentes",
+    "/blog/when-to-go-er-ibd": "/es/cuando-ir-urgencias-eii"
   },
+
   "recursos": {
     "title": "Recursos IBD y Crohn en Español | IBDPal",
     "description": "Recursos educativos en español para enfermedad inflamatoria intestinal (EII), Crohn y colitis ulcerosa. Solo educación, no consejo médico.",

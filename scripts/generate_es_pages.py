@@ -23,7 +23,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from amp_utils import discover_blogs  # noqa: E402
 from eeat_blocks import content_note_es, edu_disclaimer_es, hub_disclaimer_es  # noqa: E402
 from seo_head import breadcrumb_json, render_seo_head, web_page_json  # noqa: E402
-from site_nav import PAGE_SCRIPTS, site_header_html  # noqa: E402
+from site_nav import PAGE_SCRIPTS, site_header_html, site_lang_control_html  # noqa: E402
 
 HEAD_ASSETS = """    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,23 +36,46 @@ HEAD_ASSETS = """    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="apple-touch-icon" href="/IBDPal_Logo.png">
 """
 
-ES_NAV = """
+
+def _en_path_from_hreflang(hreflang_en: str) -> str:
+    if hreflang_en.startswith(SITE):
+        path = hreflang_en[len(SITE) :] or "/"
+        return path if path.startswith("/") else f"/{path}"
+    if hreflang_en.startswith("/"):
+        return hreflang_en
+    return "/"
+
+
+def es_nav_html(*, en_href: str, active: str = "recursos") -> str:
+    nav = f"""
         <nav class="tab-navigation" aria-label="Principal">
             <div class="tab-container">
                 <a href="/es/recursos" class="tab-button active">Recursos</a>
                 <a href="/es/nutricion-eii" class="tab-button">Nutrición</a>
                 <a href="/es/preguntas-frecuentes" class="tab-button">FAQ</a>
                 <a href="/#app" class="tab-button">App IBDPal</a>
-                <a href="/" class="tab-button">English</a>
+                <a href="{html.escape(en_href)}" class="tab-button" data-lang="en" hreflang="en">English</a>
             </div>
         </nav>
 """
+    nav = nav.replace('class="tab-button active"', 'class="tab-button"')
+    if active:
+        nav = nav.replace(
+            f'href="/es/{active}" class="tab-button"',
+            f'href="/es/{active}" class="tab-button active"',
+            1,
+        )
+    return nav
 
-ES_FOOTER = """
+
+def es_footer_html(*, en_href: str, es_href: str) -> str:
+    lang = site_lang_control_html(lang="es", en_href=en_href, es_href=es_href)
+    return f"""
         <footer class="footer">
             <div class="footer-content">
+                {lang}
                 <p><strong>IBDPal</strong> · MediVue · Solo educación, no consejo médico.</p>
-                <p>&copy; 2026 MediVue. <a href="/">ibdpal.org (English)</a></p>
+                <p>&copy; 2026 MediVue. <a href="{html.escape(en_href)}" data-lang="en" hreflang="en">ibdpal.org (English)</a></p>
             </div>
         </footer>
 """
@@ -88,13 +111,9 @@ def es_shell(
     hreflang_en: str,
     active: str = "recursos",
 ) -> str:
-    nav = ES_NAV.replace('class="tab-button active"', 'class="tab-button"')
-    if active:
-        nav = nav.replace(
-            f'href="/es/{active}" class="tab-button"',
-            f'href="/es/{active}" class="tab-button active"',
-            1,
-        )
+    en_href = _en_path_from_hreflang(hreflang_en)
+    nav = es_nav_html(en_href=en_href, active=active)
+    footer = es_footer_html(en_href=en_href, es_href=path)
     seo = render_seo_head(
         title=title,
         description=description,
@@ -112,12 +131,12 @@ def es_shell(
 {seo}{HEAD_ASSETS}</head>
 <body>
     <div class="container">
-{site_header_html(tagline="Apoyo a pacientes con EII")}
+{site_header_html(tagline="Apoyo a pacientes con EII", lang="es", en_href=en_href, es_href=path)}
 {nav}
         <main class="main-content" id="main-content">
 {body}
         </main>
-{ES_FOOTER}
+{footer}
     </div>
 {PAGE_SCRIPTS}
 </body>
@@ -201,7 +220,16 @@ def render_newly_diagnosed(page: dict) -> str:
     )
 
 
-def render_hub(hub: dict, en_hub: dict, posts: dict[str, dict]) -> str:
+def en_path_for_es(path: str, en_slug: str, mirrors: dict[str, str]) -> str:
+    for en_path, es_path in mirrors.items():
+        if es_path == path:
+            return en_path
+    if en_slug.startswith("blog/") or "/" in en_slug:
+        return f"/{en_slug.lstrip('/')}"
+    return f"/{en_slug}"
+
+
+def render_hub(hub: dict, en_hub: dict, posts: dict[str, dict], mirrors: dict[str, str]) -> str:
     path = f"/es/{hub['slug']}"
     guide_links = [
         {"url": g["url"], "label": g["label"] + " (inglés)"}
@@ -210,13 +238,30 @@ def render_hub(hub: dict, en_hub: dict, posts: dict[str, dict]) -> str:
     blog_items = [posts[s] for s in en_hub.get("blog_slugs", []) if s in posts]
     sections = ""
     for sec in hub.get("sections", []):
-        paras = "".join(f"<p>{html.escape(p)}</p>" for p in sec.get("paragraphs", []))
-        sections += f"<section class=\"seo-landing__block\"><h2>{html.escape(sec['heading'])}</h2>{paras}</section>"
+        paras = "".join(
+            f"<p>{p if '<a ' in p else html.escape(p)}</p>" for p in sec.get("paragraphs", [])
+        )
+        lst = ""
+        if sec.get("list"):
+            lst = "<ul class=\"seo-landing__list\">" + "".join(
+                f"<li>{html.escape(item)}</li>" for item in sec["list"]
+            ) + "</ul>"
+        sections += f"<section class=\"seo-landing__block\"><h2>{html.escape(sec['heading'])}</h2>{paras}{lst}</section>"
     blog_cards = ""
     for p in blog_items[:6]:
         blog_cards += (
             f'<li><a href="/blog/{html.escape(p["slug"])}">{html.escape(p["title"])}</a> (inglés)</li>'
         )
+    guides_block = (
+        f'<section class="seo-landing__block"><h2>Guías para pacientes</h2>{link_list(guide_links)}</section>'
+        if guide_links
+        else ""
+    )
+    blogs_block = (
+        f'<section class="seo-landing__block"><h2>Artículos relacionados</h2><ul class="seo-landing__list">{blog_cards}</ul></section>'
+        if blog_cards
+        else ""
+    )
     body = f"""
             <article class="support-section seo-landing">
 {content_note_es()}{edu_disclaimer_es()}
@@ -225,12 +270,12 @@ def render_hub(hub: dict, en_hub: dict, posts: dict[str, dict]) -> str:
                 <p class="support-intro">{html.escape(hub['intro'])}</p>
                 <p class="seo-guide-keywords"><small>Temas: {html.escape(', '.join(hub.get('keywords', [])))}</small></p>
 {sections}
-                <section class="seo-landing__block"><h2>Guías para pacientes</h2>{link_list(guide_links)}</section>
-                <section class="seo-landing__block"><h2>Artículos relacionados</h2><ul class="seo-landing__list">{blog_cards}</ul></section>
+{guides_block}
+{blogs_block}
                 <p><a href="/es/preguntas-frecuentes" class="seo-landing__cta">Preguntas frecuentes →</a></p>
                 {hub_disclaimer_es()}
             </article>"""
-    en_path = f"/{hub['en_slug']}"
+    en_path = en_path_for_es(path, hub.get("en_slug", ""), mirrors)
     ld = {
         "@context": "https://schema.org",
         "@graph": [
@@ -356,11 +401,12 @@ def main() -> None:
     es_paths.append("/es/recien-diagnosticado")
     print("wrote es/recien-diagnosticado.html")
 
+    mirrors = data.get("mirrors") or {}
     slugs = ["recursos", "recien-diagnosticado"]
     for hub in data["hubs"]:
         en_hub = en_hubs.get(hub["en_slug"], {})
         out = ES_DIR / f"{hub['slug']}.html"
-        out.write_text(render_hub(hub, en_hub, posts), encoding="utf-8")
+        out.write_text(render_hub(hub, en_hub, posts, mirrors), encoding="utf-8")
         es_paths.append(f"/es/{hub['slug']}")
         slugs.append(hub["slug"])
         print("wrote", out.name)

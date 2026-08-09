@@ -831,9 +831,234 @@
       .catch(function () {});
   }
 
+  var LANG_STORAGE_KEY = 'ibdpal_lang';
+  var LANG_COOKIE = 'ibdpal_lang';
+  var FALLBACK_LOCALE_MIRRORS = {
+    defaultEs: '/es/recursos',
+    defaultEn: '/',
+    mirrors: {
+      '/': '/es/recursos',
+      '/newly-diagnosed': '/es/recien-diagnosticado',
+      '/ibd-nutrition': '/es/nutricion-eii',
+      '/crohns-disease': '/es/enfermedad-crohn',
+      '/ulcerative-colitis': '/es/colitis-ulcerosa',
+      '/teens-and-school': '/es/adolescentes-escuela',
+      '/flare-help': '/es/brotes-eii',
+      '/faq': '/es/preguntas-frecuentes',
+      '/blog/when-to-go-er-ibd': '/es/cuando-ir-urgencias-eii'
+    }
+  };
+
+  function normalizePathname(pathname) {
+    var path = String(pathname || '/').split('?')[0].split('#')[0] || '/';
+    if (path.length > 1 && path.charAt(path.length - 1) === '/') {
+      path = path.slice(0, -1);
+    }
+    if (path.slice(-5) === '.html') {
+      path = path.slice(0, -5);
+    }
+    return path || '/';
+  }
+
+  function localeConfig() {
+    var cfg = (window.IBDPAL_SITE_CONFIG && window.IBDPAL_SITE_CONFIG.localeMirrors) || FALLBACK_LOCALE_MIRRORS;
+    return {
+      defaultEs: cfg.defaultEs || FALLBACK_LOCALE_MIRRORS.defaultEs,
+      defaultEn: cfg.defaultEn || FALLBACK_LOCALE_MIRRORS.defaultEn,
+      mirrors: cfg.mirrors || FALLBACK_LOCALE_MIRRORS.mirrors
+    };
+  }
+
+  function reverseMirrors(mirrors) {
+    var out = {};
+    Object.keys(mirrors || {}).forEach(function (en) {
+      out[mirrors[en]] = en;
+    });
+    return out;
+  }
+
+  function pageLangFromPath(pathname) {
+    return normalizePathname(pathname).indexOf('/es/') === 0 || normalizePathname(pathname) === '/es'
+      ? 'es'
+      : 'en';
+  }
+
+  function esUrlForPath(pathname) {
+    var cfg = localeConfig();
+    var path = normalizePathname(pathname);
+    if (path.indexOf('/es/') === 0 || path === '/es') return path === '/es' ? cfg.defaultEs : path;
+    return cfg.mirrors[path] || cfg.defaultEs;
+  }
+
+  function enUrlForPath(pathname) {
+    var cfg = localeConfig();
+    var path = normalizePathname(pathname);
+    var rev = reverseMirrors(cfg.mirrors);
+    if (path.indexOf('/es/') === 0 || path === '/es') {
+      return rev[path === '/es' ? cfg.defaultEs : path] || cfg.defaultEn;
+    }
+    return path || cfg.defaultEn;
+  }
+
+  function getLangPreference() {
+    try {
+      var stored = window.localStorage.getItem(LANG_STORAGE_KEY);
+      if (stored === 'en' || stored === 'es') return stored;
+    } catch (e) {}
+    var match = document.cookie.match(/(?:^|;\s*)ibdpal_lang=(en|es)(?:;|$)/);
+    return match ? match[1] : null;
+  }
+
+  function setLangPreference(lang) {
+    if (lang !== 'en' && lang !== 'es') return;
+    try {
+      window.localStorage.setItem(LANG_STORAGE_KEY, lang);
+    } catch (e) {}
+    document.cookie = LANG_COOKIE + '=' + lang + '; path=/; max-age=31536000; SameSite=Lax';
+  }
+
+  function browserPrefersSpanish() {
+    var langs = [];
+    if (navigator.languages && navigator.languages.length) {
+      for (var i = 0; i < navigator.languages.length; i++) langs.push(navigator.languages[i]);
+    }
+    if (navigator.language) langs.push(navigator.language);
+    for (var j = 0; j < langs.length; j++) {
+      if (String(langs[j] || '').toLowerCase().indexOf('es') === 0) return true;
+    }
+    return false;
+  }
+
+  function langControlHtml(currentLang, enHref, esHref) {
+    var enActive = currentLang === 'en' ? ' site-lang__link--active' : '';
+    var esActive = currentLang === 'es' ? ' site-lang__link--active' : '';
+    var aria = currentLang === 'es' ? 'Idioma' : 'Language';
+    return (
+      '<nav class="site-lang" aria-label="' + aria + '">' +
+      '<a href="' + escapeHtml(enHref) + '" class="site-lang__link' + enActive + '" data-lang="en" hreflang="en" lang="en">English</a>' +
+      '<span class="site-lang__sep" aria-hidden="true">|</span>' +
+      '<a href="' + escapeHtml(esHref) + '" class="site-lang__link' + esActive + '" data-lang="es" hreflang="es" lang="es">Español</a>' +
+      '</nav>'
+    );
+  }
+
+  function wireLangLinks(root, enHref, esHref) {
+    var scope = root || document;
+    scope.querySelectorAll('a[data-lang="en"]').forEach(function (a) {
+      a.setAttribute('href', enHref);
+      a.addEventListener('click', function () {
+        setLangPreference('en');
+      });
+    });
+    scope.querySelectorAll('a[data-lang="es"]').forEach(function (a) {
+      a.setAttribute('href', esHref);
+      a.addEventListener('click', function () {
+        setLangPreference('es');
+      });
+    });
+  }
+
+  function injectLanguageControls() {
+    var path = window.location.pathname || '/';
+    var currentLang = pageLangFromPath(path);
+    var enHref = enUrlForPath(path);
+    var esHref = esUrlForPath(path);
+
+    var headerInner = document.querySelector('.header__inner');
+    if (headerInner && !headerInner.querySelector('.site-lang')) {
+      var wrap = document.createElement('div');
+      wrap.innerHTML = langControlHtml(currentLang, enHref, esHref);
+      var control = wrap.firstChild;
+      var reach = headerInner.querySelector('.header-reach');
+      if (reach) {
+        headerInner.insertBefore(control, reach);
+      } else {
+        headerInner.appendChild(control);
+      }
+    }
+
+    var footerContent = document.querySelector('.footer .footer-content');
+    if (footerContent && !footerContent.querySelector('.site-lang')) {
+      var foot = document.createElement('div');
+      foot.innerHTML = langControlHtml(currentLang, enHref, esHref).replace(
+        'class="site-lang"',
+        'class="site-lang site-lang--footer"'
+      );
+      var firstP = footerContent.querySelector('p');
+      if (firstP) {
+        footerContent.insertBefore(foot.firstChild, firstP);
+      } else {
+        footerContent.appendChild(foot.firstChild);
+      }
+    }
+
+    document.querySelectorAll('.site-lang').forEach(function (nav) {
+      nav.querySelectorAll('.site-lang__link').forEach(function (a) {
+        a.classList.toggle('site-lang__link--active', a.getAttribute('data-lang') === currentLang);
+      });
+    });
+
+    // Legacy footer "Español" text link → paired mirror
+    document.querySelectorAll('.footer-link[href="/es/recursos"], a.footer-link[href*="/es/recursos"]').forEach(function (a) {
+      if ((a.textContent || '').trim().toLowerCase().indexOf('español') !== -1 ||
+          (a.textContent || '').trim().toLowerCase().indexOf('espanol') !== -1) {
+        a.setAttribute('href', esHref);
+        a.setAttribute('data-lang', 'es');
+        a.setAttribute('hreflang', 'es');
+      }
+    });
+
+    wireLangLinks(document, enHref, esHref);
+  }
+
+  function maybeShowSpanishBanner() {
+    var path = window.location.pathname || '/';
+    if (pageLangFromPath(path) === 'es') return;
+    if (getLangPreference()) return;
+    if (!browserPrefersSpanish()) return;
+    if (document.querySelector('.locale-banner')) return;
+
+    var esHref = esUrlForPath(path);
+    var banner = document.createElement('aside');
+    banner.className = 'locale-banner';
+    banner.setAttribute('role', 'region');
+    banner.setAttribute('aria-label', 'Idioma');
+    banner.innerHTML =
+      '<p class="locale-banner__text">¿Prefiere leer en español? ' +
+      '<a class="locale-banner__link" href="' + escapeHtml(esHref) + '" data-lang="es" hreflang="es">Ver recursos en español</a></p>' +
+      '<button type="button" class="locale-banner__dismiss" aria-label="Cerrar">×</button>';
+
+    var host = document.querySelector('.container') || document.body;
+    var crisis = host.querySelector('.crisis-strip');
+    if (crisis && crisis.parentNode === host) {
+      host.insertBefore(banner, crisis.nextSibling);
+    } else {
+      host.insertBefore(banner, host.firstChild);
+    }
+
+    banner.querySelector('.locale-banner__link').addEventListener('click', function () {
+      setLangPreference('es');
+    });
+    banner.querySelector('.locale-banner__dismiss').addEventListener('click', function () {
+      setLangPreference('en');
+      banner.remove();
+    });
+  }
+
+  window.IBDPAL_LOCALE = {
+    getPreference: getLangPreference,
+    setPreference: setLangPreference,
+    detectBrowserSpanish: browserPrefersSpanish,
+    esUrlForPath: esUrlForPath,
+    enUrlForPath: enUrlForPath,
+    pageLangFromPath: pageLangFromPath
+  };
+
   document.addEventListener('DOMContentLoaded', function () {
     injectCrisisStrip();
     injectSiteReachMetrics();
+    injectLanguageControls();
+    maybeShowSpanishBanner();
     initReachCounters(document);
     scheduleReachCounterRefresh();
     markMainId();

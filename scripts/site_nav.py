@@ -70,9 +70,26 @@ def build_social_list_html() -> str:
     return f'<ul class="site-social__list" aria-label="Social media">{"".join(items)}</ul>'
 
 
-def site_header_html(*, tagline: str = TAGLINE, lang: str = "en") -> str:
+def site_lang_control_html(*, lang: str = "en", en_href: str = "/", es_href: str = "/es/recursos") -> str:
+    """Compact English | Español control for header/footer (hrefs refined client-side)."""
+    en_active = " site-lang__link--active" if lang == "en" else ""
+    es_active = " site-lang__link--active" if lang == "es" else ""
+    aria = "Language" if lang == "en" else "Idioma"
+    return (
+        f'<nav class="site-lang" aria-label="{html.escape(aria)}">'
+        f'<a href="{html.escape(en_href)}" class="site-lang__link{en_active}" '
+        f'data-lang="en" hreflang="en" lang="en">English</a>'
+        f'<span class="site-lang__sep" aria-hidden="true">|</span>'
+        f'<a href="{html.escape(es_href)}" class="site-lang__link{es_active}" '
+        f'data-lang="es" hreflang="es" lang="es">Español</a>'
+        f"</nav>"
+    )
+
+
+def site_header_html(*, tagline: str = TAGLINE, lang: str = "en", en_href: str = "/", es_href: str = "/es/recursos") -> str:
     name = "IBDPal"
     social = build_social_list_html()
+    lang_ctrl = site_lang_control_html(lang=lang, en_href=en_href, es_href=es_href)
     return f"""
         <header class="header">
             <div class="header__inner">
@@ -86,6 +103,7 @@ def site_header_html(*, tagline: str = TAGLINE, lang: str = "en") -> str:
                     </div>
                 </div>
                 {social}
+                {lang_ctrl}
             </div>
         </header>
 """
@@ -137,6 +155,7 @@ TAB_NAV_HOME_HTML = """
 """
 
 PAGE_SCRIPTS = """
+    <script src="/site-config.js" defer></script>
     <script src="/site-global.js" defer></script>
     <script src="/analytics-config.js"></script>
     <script src="/analytics.js" defer></script>

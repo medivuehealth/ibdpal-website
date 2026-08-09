@@ -63,6 +63,9 @@ def patch_file(path: Path) -> bool:
 
 def main():
     for path in sorted(ROOT.rglob("*.html")):
+        # Spanish pages use a separate nav from generate_es_pages.py — do not overwrite tabs.
+        if path.parent.name == "es":
+            continue
         if patch_file(path):
             print("patched", path.relative_to(ROOT))
 

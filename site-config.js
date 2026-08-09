@@ -23,6 +23,22 @@
       internationalCountriesStart: 35,
       internationalCountriesCap: 50,
       internationalCountriesPace: 0
+    },
+    // EN↔ES content pairs (see data/locale-mirrors.json). Unmirrored EN pages fall back to /es/recursos.
+    localeMirrors: {
+      defaultEs: '/es/recursos',
+      defaultEn: '/',
+      mirrors: {
+        '/': '/es/recursos',
+        '/newly-diagnosed': '/es/recien-diagnosticado',
+        '/ibd-nutrition': '/es/nutricion-eii',
+        '/crohns-disease': '/es/enfermedad-crohn',
+        '/ulcerative-colitis': '/es/colitis-ulcerosa',
+        '/teens-and-school': '/es/adolescentes-escuela',
+        '/flare-help': '/es/brotes-eii',
+        '/faq': '/es/preguntas-frecuentes',
+        '/blog/when-to-go-er-ibd': '/es/cuando-ir-urgencias-eii'
+      }
     }
   });
 })();
