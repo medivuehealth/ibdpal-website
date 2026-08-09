@@ -10,9 +10,11 @@
  * After deploy, key must be live at:
  *   https://www.ibdpal.org/a50b1f808a1d4c41b89fc4b35d46418a.txt
  */
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const INDEXNOW_KEY = 'a50b1f808a1d4c41b89fc4b35d46418a';
 const HOST = 'www.ibdpal.org';
 const KEY_LOCATION = `https://${HOST}/${INDEXNOW_KEY}.txt`;

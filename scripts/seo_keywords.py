@@ -29,7 +29,10 @@ PATH_KEYWORDS: dict[str, str] = {
     "/newly-diagnosed": "newly diagnosed IBD, Crohn's diagnosis, ulcerative colitis first steps, GI questions",
     "/visit-prep": "IBD doctor visit, Crohn's appointment checklist, colitis visit prep, gastroenterologist",
     "/ibd-crohns-support": "IBD support, Crohn's helpline, colitis foundation, IBD peer support",
-    "/ibd-nutrition": "IBD nutrition, Crohn's diet, colitis food triggers, IBD meal planning",
+    "/ibd-nutrition": (
+        "IBD nutrition, Crohn's diet, colitis food triggers, IBD meal planning, "
+        "enteral nutrition, EEN, exclusive enteral nutrition, tube feeding IBD"
+    ),
     "/crohns-disease": "Crohn's disease, Crohn's symptoms, Crohn's diet, Crohn's treatment education",
     "/ulcerative-colitis": "ulcerative colitis, UC diet, colitis flare, colitis symptoms education",
     "/teens-and-school": "teen IBD, Crohn's school 504, colitis accommodations, pediatric IBD",
@@ -105,6 +108,12 @@ SLUG_TOPIC_WORDS = {
     "hydration": "IBD hydration, Crohn's fluids, colitis electrolytes",
     "fiber": "IBD fiber, Crohn's low residue, colitis diet",
     "enteral": "enteral nutrition, EEN, exclusive enteral nutrition, entereal, Crohn's formula feeding",
+    "prebiotic": "prebiotic formula, scFOS, formula fiber, enteral prebiotics, IBD microbiome nutrition",
+    "dysbiosis": "gut dysbiosis, leaky gut education, gut barrier IBD, microbiome imbalance Crohn's",
+    "barrier": "gut barrier IBD, intestinal barrier, microbiome inflammation, dysbiosis education",
+    "parenteral": "parenteral nutrition, TPN IBD, hospital feeding, IV nutrition Crohn's",
+    "hospital": "hospital feeding IBD, NPO IBD, post surgery nutrition Crohn's, tube feeds hospital",
+    "partial": "partial enteral nutrition, PEN Crohn's, exclusive vs partial EEN",
     "symptoms": "IBD flare symptoms, Crohn's flare signs, colitis symptoms education",
     "autoimmune": "IBD autoimmune, autoimmune overlap Crohn's, immune-mediated IBD",
     "extraintestinal": "extraintestinal manifestations IBD, EIM Crohn's, colitis outside the gut",

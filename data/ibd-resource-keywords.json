@@ -1,29 +1,215 @@
 {
-  "fodmap-diet-crohns-colitis": ["gluten", "glutten", "wheat", "dairy", "lactose", "garlic", "onion", "fodmap"],
-  "anti-inflammatory-diet-ibd": ["dairy", "gluten", "glutten", "inflammatory", "mediterranean"],
-  "understanding-biologics-ibd": ["biologics", "immune", "immunity", "immunosuppressant", "infliximab", "adalimumab", "humira", "remicade"],
-  "insurance-biologics-ibd": ["biologics", "immune", "insurance", "prior authorization"],
-  "how-ibdpal-nutrition-targets-work": ["nutrition", "calories", "protein", "DRI", "micronutrients"],
-  "iron-b12-vitamin-d-ibd": ["iron", "anemia", "B12", "vitamin D", "supplements"],
-  "best-foods-crohns-flare": ["food", "flare", "diet", "fiber"],
-  "low-residue-diet-flare": ["fiber", "low fiber", "residue", "flare"],
-  "foods-that-may-trigger-uc-symptoms": ["trigger", "food", "dairy", "spicy"],
-  "guides/biologics-crohns-colitis": ["biologics", "immune", "immunosuppressant", "medication"],
-  "dairy-lactose-ibd": ["dairy", "lactose", "milk", "cheese", "yogurt", "lactose-free"],
-  "gluten-wheat-ibd": ["gluten", "glutten", "wheat", "celiac", "gluten-free", "bread"],
-  "immunosuppressants-ibd-basics": ["immunosuppressant", "immunosuppressants", "immune", "immunity", "azathioprine", "methotrexate", "6-MP"],
-  "steroids-prednisone-ibd": ["steroid", "steroids", "prednisone", "budesonide", "immune", "cortisol"],
-  "fiber-and-ibd-diet": ["fiber", "fibre", "soluble", "insoluble", "roughage"],
-  "alcohol-caffeine-ibd": ["alcohol", "beer", "wine", "caffeine", "coffee"],
-  "mesalamine-5-asa-ibd": ["mesalamine", "5-ASA", "5 ASA", "Asacol", "Lialda", "aminosalicylate"],
-  "depression-anxiety-ibd": ["depression", "anxiety", "mental health", "mood", "gut-brain", "therapy", "psychiatrist", "counseling"],
-  "probiotics-ibd-gut-health": ["probiotics", "probiotic", "microbiome", "VSL#3", "Saccharomyces", "prebiotics", "synbiotics", "gut bacteria"],
-  "micronutrients-ibd-deficiencies": ["micronutrients", "vitamins", "minerals", "zinc", "folate", "magnesium", "selenium", "calcium", "malabsorption", "deficiency"],
-  "stress-coping-strategies-ibd": ["stress", "coping", "mindfulness", "CBT", "meditation", "breathing", "relaxation", "anxiety", "stress management"],
-  "ibd-fatigue-brain-fog": ["fatigue", "tired", "exhaustion", "brain fog", "energy", "anemia", "sleep", "lethargy", "cognitive"],
-  "ibd-joint-pain-arthritis": ["joint pain", "arthritis", "joints", "knee", "ankle", "back pain", "sacroiliitis", "extraintestinal", "swelling"],
-  "ibd-leg-knee-pain": ["leg pain", "knee pain", "leg", "knee", "leg ache", "thigh pain", "calf pain", "extraintestinal", "peripheral arthritis"],
-  "ibd-night-sweats": ["night sweats", "sweating", "fever", "chills", "temperature", "flare", "infection"],
+  "fodmap-diet-crohns-colitis": [
+    "gluten",
+    "glutten",
+    "wheat",
+    "dairy",
+    "lactose",
+    "garlic",
+    "onion",
+    "fodmap"
+  ],
+  "anti-inflammatory-diet-ibd": [
+    "dairy",
+    "gluten",
+    "glutten",
+    "inflammatory",
+    "mediterranean"
+  ],
+  "understanding-biologics-ibd": [
+    "biologics",
+    "immune",
+    "immunity",
+    "immunosuppressant",
+    "infliximab",
+    "adalimumab",
+    "humira",
+    "remicade"
+  ],
+  "insurance-biologics-ibd": [
+    "biologics",
+    "immune",
+    "insurance",
+    "prior authorization"
+  ],
+  "how-ibdpal-nutrition-targets-work": [
+    "nutrition",
+    "calories",
+    "protein",
+    "DRI",
+    "micronutrients"
+  ],
+  "iron-b12-vitamin-d-ibd": [
+    "iron",
+    "anemia",
+    "B12",
+    "vitamin D",
+    "supplements"
+  ],
+  "best-foods-crohns-flare": [
+    "food",
+    "flare",
+    "diet",
+    "fiber"
+  ],
+  "low-residue-diet-flare": [
+    "fiber",
+    "low fiber",
+    "residue",
+    "flare"
+  ],
+  "foods-that-may-trigger-uc-symptoms": [
+    "trigger",
+    "food",
+    "dairy",
+    "spicy"
+  ],
+  "guides/biologics-crohns-colitis": [
+    "biologics",
+    "immune",
+    "immunosuppressant",
+    "medication"
+  ],
+  "dairy-lactose-ibd": [
+    "dairy",
+    "lactose",
+    "milk",
+    "cheese",
+    "yogurt",
+    "lactose-free"
+  ],
+  "gluten-wheat-ibd": [
+    "gluten",
+    "glutten",
+    "wheat",
+    "celiac",
+    "gluten-free",
+    "bread"
+  ],
+  "immunosuppressants-ibd-basics": [
+    "immunosuppressant",
+    "immunosuppressants",
+    "immune",
+    "immunity",
+    "azathioprine",
+    "methotrexate",
+    "6-MP"
+  ],
+  "steroids-prednisone-ibd": [
+    "steroid",
+    "steroids",
+    "prednisone",
+    "budesonide",
+    "immune",
+    "cortisol"
+  ],
+  "fiber-and-ibd-diet": [
+    "fiber",
+    "fibre",
+    "soluble",
+    "insoluble",
+    "roughage"
+  ],
+  "alcohol-caffeine-ibd": [
+    "alcohol",
+    "beer",
+    "wine",
+    "caffeine",
+    "coffee"
+  ],
+  "mesalamine-5-asa-ibd": [
+    "mesalamine",
+    "5-ASA",
+    "5 ASA",
+    "Asacol",
+    "Lialda",
+    "aminosalicylate"
+  ],
+  "depression-anxiety-ibd": [
+    "depression",
+    "anxiety",
+    "mental health",
+    "mood",
+    "gut-brain",
+    "therapy",
+    "psychiatrist",
+    "counseling"
+  ],
+  "probiotics-ibd-gut-health": [
+    "probiotics",
+    "probiotic",
+    "microbiome",
+    "VSL#3",
+    "Saccharomyces",
+    "prebiotics",
+    "synbiotics",
+    "gut bacteria"
+  ],
+  "micronutrients-ibd-deficiencies": [
+    "micronutrients",
+    "vitamins",
+    "minerals",
+    "zinc",
+    "folate",
+    "magnesium",
+    "selenium",
+    "calcium",
+    "malabsorption",
+    "deficiency"
+  ],
+  "stress-coping-strategies-ibd": [
+    "stress",
+    "coping",
+    "mindfulness",
+    "CBT",
+    "meditation",
+    "breathing",
+    "relaxation",
+    "anxiety",
+    "stress management"
+  ],
+  "ibd-fatigue-brain-fog": [
+    "fatigue",
+    "tired",
+    "exhaustion",
+    "brain fog",
+    "energy",
+    "anemia",
+    "sleep",
+    "lethargy",
+    "cognitive"
+  ],
+  "ibd-joint-pain-arthritis": [
+    "joint pain",
+    "arthritis",
+    "joints",
+    "knee",
+    "ankle",
+    "back pain",
+    "sacroiliitis",
+    "extraintestinal",
+    "swelling"
+  ],
+  "ibd-leg-knee-pain": [
+    "leg pain",
+    "knee pain",
+    "leg",
+    "knee",
+    "leg ache",
+    "thigh pain",
+    "calf pain",
+    "extraintestinal",
+    "peripheral arthritis"
+  ],
+  "ibd-night-sweats": [
+    "night sweats",
+    "sweating",
+    "fever",
+    "chills",
+    "temperature",
+    "flare",
+    "infection"
+  ],
   "enteral-nutrition-ibd": [
     "enteral",
     "entereal",
@@ -32,16 +218,19 @@
     "enteral nutrition",
     "formula feeding",
     "tube feeding",
+    "tube feed",
     "nasogastric",
     "NG tube",
     "PEN",
     "partial enteral",
+    "partial enteral nutrition",
     "sip feeds",
     "polymeric formula",
     "elemental formula",
     "Modulen",
     "Peptamen",
-    "nutrition"
+    "nutrition",
+    "formula feeds"
   ],
   "flare-symptoms-ibd": [
     "flare symptoms",
@@ -92,23 +281,120 @@
     "Foundation",
     "CCF"
   ],
-  "ibd-autoimmune-overlap": ["autoimmune", "immune", "overlap", "extraintestinal", "EIM"],
-  "psc-ibd-liver": ["PSC", "primary sclerosing cholangitis", "liver", "bile", "hepatology"],
-  "ankylosing-spondylitis-ibd": ["ankylosing spondylitis", "AS", "spondyloarthritis", "spine", "back pain", "axial"],
-  "psoriasis-ibd-connection": ["psoriasis", "skin", "plaque", "dermatology"],
-  "celiac-ibd-screening": ["celiac", "gluten", "screening", "gluten-free", "wheat"],
-  "ibd-extraintestinal-manifestations": ["extraintestinal", "EIM", "joints", "eyes", "skin", "liver"],
-  "autoimmune-hepatitis-ibd": ["autoimmune hepatitis", "liver", "hepatitis", "enzymes"],
-  "osteoporosis-bone-health-ibd": ["osteoporosis", "bone", "DEXA", "fracture", "steroid", "vitamin D"],
-  "thrombosis-clot-risk-ibd": ["thrombosis", "clot", "VTE", "DVT", "PE", "blood clot"],
-  "oral-canker-sores-ibd": ["canker", "mouth sore", "aphthous", "oral ulcer"],
-  "fatigue-autoimmune-ibd": ["fatigue", "tired", "autoimmune", "energy", "brain fog"],
-  "vaccine-autoimmune-immunosuppression": ["vaccine", "vaccination", "immunosuppression", "live vaccine", "flu shot"],
-  "guides/anti-inflammatory-diet-ibd": ["anti-inflammatory", "Mediterranean", "inflammation diet"],
-  "guides/iron-deficiency-nutrition-ibd": ["iron", "anemia", "ferritin", "IV iron"],
-  "guides/vitamin-d-bone-nutrition-ibd": ["vitamin D", "calcium", "bone", "osteoporosis"],
-  "guides/protein-healing-ibd-flare": ["protein", "flare nutrition", "muscle", "healing"],
-  "guides/elimination-diet-when-to-stop-ibd": ["elimination diet", "reintroduction", "food trial", "restriction"],
+  "ibd-autoimmune-overlap": [
+    "autoimmune",
+    "immune",
+    "overlap",
+    "extraintestinal",
+    "EIM"
+  ],
+  "psc-ibd-liver": [
+    "PSC",
+    "primary sclerosing cholangitis",
+    "liver",
+    "bile",
+    "hepatology"
+  ],
+  "ankylosing-spondylitis-ibd": [
+    "ankylosing spondylitis",
+    "AS",
+    "spondyloarthritis",
+    "spine",
+    "back pain",
+    "axial"
+  ],
+  "psoriasis-ibd-connection": [
+    "psoriasis",
+    "skin",
+    "plaque",
+    "dermatology"
+  ],
+  "celiac-ibd-screening": [
+    "celiac",
+    "gluten",
+    "screening",
+    "gluten-free",
+    "wheat"
+  ],
+  "ibd-extraintestinal-manifestations": [
+    "extraintestinal",
+    "EIM",
+    "joints",
+    "eyes",
+    "skin",
+    "liver"
+  ],
+  "autoimmune-hepatitis-ibd": [
+    "autoimmune hepatitis",
+    "liver",
+    "hepatitis",
+    "enzymes"
+  ],
+  "osteoporosis-bone-health-ibd": [
+    "osteoporosis",
+    "bone",
+    "DEXA",
+    "fracture",
+    "steroid",
+    "vitamin D"
+  ],
+  "thrombosis-clot-risk-ibd": [
+    "thrombosis",
+    "clot",
+    "VTE",
+    "DVT",
+    "PE",
+    "blood clot"
+  ],
+  "oral-canker-sores-ibd": [
+    "canker",
+    "mouth sore",
+    "aphthous",
+    "oral ulcer"
+  ],
+  "fatigue-autoimmune-ibd": [
+    "fatigue",
+    "tired",
+    "autoimmune",
+    "energy",
+    "brain fog"
+  ],
+  "vaccine-autoimmune-immunosuppression": [
+    "vaccine",
+    "vaccination",
+    "immunosuppression",
+    "live vaccine",
+    "flu shot"
+  ],
+  "guides/anti-inflammatory-diet-ibd": [
+    "anti-inflammatory",
+    "Mediterranean",
+    "inflammation diet"
+  ],
+  "guides/iron-deficiency-nutrition-ibd": [
+    "iron",
+    "anemia",
+    "ferritin",
+    "IV iron"
+  ],
+  "guides/vitamin-d-bone-nutrition-ibd": [
+    "vitamin D",
+    "calcium",
+    "bone",
+    "osteoporosis"
+  ],
+  "guides/protein-healing-ibd-flare": [
+    "protein",
+    "flare nutrition",
+    "muscle",
+    "healing"
+  ],
+  "guides/elimination-diet-when-to-stop-ibd": [
+    "elimination diet",
+    "reintroduction",
+    "food trial",
+    "restriction"
+  ],
   "fever-ibd-flare-or-infection": [
     "fever",
     "temperature",
@@ -168,5 +454,60 @@
     "flare",
     "cramps",
     "hydration"
+  ],
+  "fiber-prebiotics-enteral-feeds-microbiome": [
+    "prebiotic",
+    "prebiotics",
+    "scFOS",
+    "fructooligosaccharides",
+    "formula fiber",
+    "fiber formula",
+    "enteral fiber",
+    "tube feed fiber",
+    "dysbiosis",
+    "microbiome formula",
+    "prebiotic formula",
+    "enteral",
+    "nutrition"
+  ],
+  "exclusive-vs-partial-enteral-nutrition-crohns": [
+    "EEN",
+    "PEN",
+    "exclusive enteral",
+    "partial enteral",
+    "partial enteral nutrition",
+    "exclusive vs partial",
+    "Crohn formula",
+    "Crohn's EEN",
+    "enteral",
+    "entereal",
+    "tube feeding",
+    "nutrition"
+  ],
+  "gut-barrier-dysbiosis-inflammation-ibd": [
+    "dysbiosis",
+    "leaky gut",
+    "gut barrier",
+    "intestinal barrier",
+    "microbiome",
+    "gut microbiome",
+    "inflammation",
+    "barrier function",
+    "microbial imbalance",
+    "nutrition"
+  ],
+  "hospital-feeding-ibd-enteral-parenteral": [
+    "hospital feeding",
+    "parenteral",
+    "TPN",
+    "PN",
+    "IV nutrition",
+    "NPO",
+    "tube feeds",
+    "enteral",
+    "post surgery nutrition",
+    "after surgery diet",
+    "hospital diet IBD",
+    "nutrition"
   ]
 }
