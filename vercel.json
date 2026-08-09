@@ -10,6 +10,22 @@
   ],
   "rewrites": [
     {
+      "source": "/blog/fiber-prebiotics-enteral-feeds-microbiome",
+      "destination": "/blogs/fiber-prebiotics-enteral-feeds-microbiome.html"
+    },
+    {
+      "source": "/blog/exclusive-vs-partial-enteral-nutrition-crohns",
+      "destination": "/blogs/exclusive-vs-partial-enteral-nutrition-crohns.html"
+    },
+    {
+      "source": "/blog/gut-barrier-dysbiosis-inflammation-ibd",
+      "destination": "/blogs/gut-barrier-dysbiosis-inflammation-ibd.html"
+    },
+    {
+      "source": "/blog/hospital-feeding-ibd-enteral-parenteral",
+      "destination": "/blogs/hospital-feeding-ibd-enteral-parenteral.html"
+    },
+    {
       "source": "/blog/fever-ibd-flare-or-infection",
       "destination": "/blogs/fever-ibd-flare-or-infection.html"
     },

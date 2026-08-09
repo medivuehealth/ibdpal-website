@@ -31,6 +31,7 @@
 
 
 ## Blog (education, not medical advice)
+- https://www.ibdpal.org/blog/after-er-visit-ibd-follow-up
 - https://www.ibdpal.org/blog/alcohol-caffeine-ibd
 - https://www.ibdpal.org/blog/anemia-iron-deficiency-ibd
 - https://www.ibdpal.org/blog/ankylosing-spondylitis-ibd
@@ -48,13 +49,18 @@
 - https://www.ibdpal.org/blog/constipation-ibd-causes
 - https://www.ibdpal.org/blog/dairy-lactose-ibd
 - https://www.ibdpal.org/blog/dating-intimacy-ibd-adults
+- https://www.ibdpal.org/blog/dehydration-ibd-warning-signs
 - https://www.ibdpal.org/blog/depression-anxiety-ibd
 - https://www.ibdpal.org/blog/dining-out-ibd-restaurants
+- https://www.ibdpal.org/blog/electrolytes-flare-ibd
 - https://www.ibdpal.org/blog/enteral-nutrition-ibd
 - https://www.ibdpal.org/blog/entyvio-patient-guide-ibd
+- https://www.ibdpal.org/blog/exclusive-vs-partial-enteral-nutrition-crohns
 - https://www.ibdpal.org/blog/exercise-physical-activity-ibd
 - https://www.ibdpal.org/blog/fatigue-autoimmune-ibd
+- https://www.ibdpal.org/blog/fever-ibd-flare-or-infection
 - https://www.ibdpal.org/blog/fiber-and-ibd-diet
+- https://www.ibdpal.org/blog/fiber-prebiotics-enteral-feeds-microbiome
 - https://www.ibdpal.org/blog/flare-first-48-hours
 - https://www.ibdpal.org/blog/flare-symptoms-ibd
 - https://www.ibdpal.org/blog/fodmap-diet-crohns-colitis
@@ -62,9 +68,11 @@
 - https://www.ibdpal.org/blog/free-government-ibd-research-sources
 - https://www.ibdpal.org/blog/gas-bloating-ibd
 - https://www.ibdpal.org/blog/gluten-wheat-ibd
+- https://www.ibdpal.org/blog/gut-barrier-dysbiosis-inflammation-ibd
 - https://www.ibdpal.org/blog/gut-microbiome-autoimmune
 - https://www.ibdpal.org/blog/hashimotos-thyroid-autoimmune
 - https://www.ibdpal.org/blog/high-school-ibd-survival-guide
+- https://www.ibdpal.org/blog/hospital-feeding-ibd-enteral-parenteral
 - https://www.ibdpal.org/blog/how-ibdpal-nutrition-targets-work
 - https://www.ibdpal.org/blog/how-nutrition-impacts-gut-health-ibd
 - https://www.ibdpal.org/blog/how-to-read-colonoscopy-report-ibd
@@ -72,6 +80,7 @@
 - https://www.ibdpal.org/blog/hydration-tips-ibd
 - https://www.ibdpal.org/blog/ibd-at-work-talking-to-manager
 - https://www.ibdpal.org/blog/ibd-autoimmune-overlap
+- https://www.ibdpal.org/blog/ibd-back-pain-sacroiliitis
 - https://www.ibdpal.org/blog/ibd-care-outside-united-states
 - https://www.ibdpal.org/blog/ibd-extraintestinal-manifestations
 - https://www.ibdpal.org/blog/ibd-fatigue-brain-fog
@@ -143,6 +152,7 @@
 - https://www.ibdpal.org/blog/uveitis-eye-inflammation-ibd
 - https://www.ibdpal.org/blog/vaccine-autoimmune-immunosuppression
 - https://www.ibdpal.org/blog/vaccines-biologics-immunosuppressants-ibd
+- https://www.ibdpal.org/blog/vomiting-obstruction-ibd-warning-signs
 - https://www.ibdpal.org/blog/what-remission-means-ibd
 - https://www.ibdpal.org/blog/when-to-call-gi-vs-er-ibd
 - https://www.ibdpal.org/blog/when-to-call-ibd-help-center
