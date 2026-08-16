@@ -202,16 +202,16 @@ METRICS_SUBTAB_HTML = """
                             </header>
                             <div class="discovery-metrics-rows" role="group" aria-label="App discovery snapshot">
                                 <div class="discovery-metrics-row">
-                                    <span class="discovery-metrics-row__label">Search visibility</span>
-                                    <span class="discovery-metrics-row__value">1.5K+</span>
+                                    <span class="discovery-metrics-row__label">App Store Search Visibility</span>
+                                    <span class="discovery-metrics-row__value">2.0K+</span>
                                 </div>
                                 <div class="discovery-metrics-row">
-                                    <span class="discovery-metrics-row__label">Total reach</span>
-                                    <span class="discovery-metrics-row__value">1.6K+</span>
+                                    <span class="discovery-metrics-row__label">Total App Store Reach</span>
+                                    <span class="discovery-metrics-row__value">2.1K+</span>
                                 </div>
                                 <div class="discovery-metrics-row">
-                                    <span class="discovery-metrics-row__label">Organic discovery</span>
-                                    <span class="discovery-metrics-row__value">87%</span>
+                                    <span class="discovery-metrics-row__label">Search-driven discovery</span>
+                                    <span class="discovery-metrics-row__value">~94%</span>
                                 </div>
                             </div>
                         </div>

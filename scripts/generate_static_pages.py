@@ -748,7 +748,7 @@ PAGES = {
                     <h2>IBDPal iOS app</h2>
                     <ul class="seo-landing__list">
                         <li>Free nutrition and symptom tracking for Crohn's and colitis</li>
-                        <li>App Store search visibility: 1.5K+ impressions (organic)</li>
+                        <li>App Store search visibility: 2.0K+ impressions (organic)</li>
                         <li>Visit summary exports for gastroenterology appointments</li>
                     </ul>
                     <p><a href="https://apps.apple.com/app/ibdpal" rel="noopener noreferrer">Download on the App Store</a></p>
