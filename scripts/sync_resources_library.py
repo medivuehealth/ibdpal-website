@@ -72,6 +72,7 @@ def load_topic_meta() -> dict[str, dict]:
         ROOT / "data" / "seo-wellness-posts.json",
         ROOT / "data" / "search-gap-posts.json",
         ROOT / "data" / "wave1-food-nutrition-posts.json",
+        ROOT / "data" / "wave2-food-nutrition-posts.json",
     ):
         if not path.exists():
             continue

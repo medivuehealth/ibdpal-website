@@ -112,6 +112,36 @@ PATH_KEYWORDS: dict[str, str] = {
     "/blog/turkey-protein-ibd": (
         "turkey Crohn's disease, turkey colitis protein, lean poultry IBD"
     ),
+    "/blog/carrots-ibd": (
+        "carrots Crohn's disease, cooked carrots colitis, carrot puree IBD"
+    ),
+    "/blog/potato-ibd-white": (
+        "potato Crohn's disease, mashed potatoes colitis flare, white potato IBD"
+    ),
+    "/blog/sweet-potato-ibd": (
+        "sweet potato Crohn's, sweet potato ulcerative colitis, vitamin A IBD"
+    ),
+    "/blog/spinach-leafy-greens-ibd": (
+        "spinach Crohn's disease, leafy greens colitis, spinach iron IBD"
+    ),
+    "/blog/broccoli-ibd": (
+        "broccoli Crohn's disease, broccoli ulcerative colitis gas, cruciferous IBD"
+    ),
+    "/blog/zucchini-ibd": (
+        "zucchini Crohn's disease, zucchini colitis diet, summer squash IBD"
+    ),
+    "/blog/cucumber-ibd": (
+        "cucumber Crohn's disease, cucumber ulcerative colitis, peeled cucumber IBD"
+    ),
+    "/blog/tomatoes-ibd": (
+        "tomatoes Crohn's disease, tomato sauce colitis, tomato acidity IBD"
+    ),
+    "/blog/onion-garlic-ibd-fodmap": (
+        "onion garlic Crohn's, garlic FODMAP colitis, onion IBD bloating"
+    ),
+    "/blog/corn-ibd": (
+        "corn Crohn's disease, corn ulcerative colitis, corn kernels stricture IBD"
+    ),
     "/glossary": "IBD glossary, Crohn's terms, colitis definitions, biologics IBD",
     "/impact": "IBDPal impact, IBD education nonprofit, MediVue mission, patient outcomes",
     "/founder": "IBDPal founder, IBDPal mission, IBD education, Crohn's colitis education",
@@ -192,6 +222,16 @@ SLUG_TOPIC_WORDS = {
     "egg": "eggs IBD, eggs Crohn's, eggs colitis protein, choline nutrition",
     "rice": "white rice IBD, rice Crohn's flare, white rice colitis diet",
     "turkey": "turkey IBD, turkey Crohn's protein, poultry colitis nutrition",
+    "carrot": "carrots IBD, cooked carrots Crohn's, carrot puree colitis",
+    "potato": "potato IBD, mashed potato Crohn's flare, white potato colitis",
+    "spinach": "spinach IBD, leafy greens Crohn's, spinach iron colitis",
+    "broccoli": "broccoli IBD, broccoli Crohn's gas, cruciferous colitis",
+    "zucchini": "zucchini IBD, zucchini Crohn's, summer squash colitis",
+    "cucumber": "cucumber IBD, cucumber Crohn's, peeled cucumber colitis",
+    "tomato": "tomatoes IBD, tomato sauce Crohn's, tomato acidity colitis",
+    "onion": "onion IBD, onion FODMAP Crohn's, onion garlic colitis",
+    "garlic": "garlic IBD, garlic FODMAP Crohn's, garlic colitis bloating",
+    "corn": "corn IBD, corn Crohn's stricture, corn kernels colitis",
 }
 
 

@@ -10,6 +10,46 @@
   ],
   "rewrites": [
     {
+      "source": "/blog/carrots-ibd",
+      "destination": "/blogs/carrots-ibd.html"
+    },
+    {
+      "source": "/blog/potato-ibd-white",
+      "destination": "/blogs/potato-ibd-white.html"
+    },
+    {
+      "source": "/blog/sweet-potato-ibd",
+      "destination": "/blogs/sweet-potato-ibd.html"
+    },
+    {
+      "source": "/blog/spinach-leafy-greens-ibd",
+      "destination": "/blogs/spinach-leafy-greens-ibd.html"
+    },
+    {
+      "source": "/blog/broccoli-ibd",
+      "destination": "/blogs/broccoli-ibd.html"
+    },
+    {
+      "source": "/blog/zucchini-ibd",
+      "destination": "/blogs/zucchini-ibd.html"
+    },
+    {
+      "source": "/blog/cucumber-ibd",
+      "destination": "/blogs/cucumber-ibd.html"
+    },
+    {
+      "source": "/blog/tomatoes-ibd",
+      "destination": "/blogs/tomatoes-ibd.html"
+    },
+    {
+      "source": "/blog/onion-garlic-ibd-fodmap",
+      "destination": "/blogs/onion-garlic-ibd-fodmap.html"
+    },
+    {
+      "source": "/blog/corn-ibd",
+      "destination": "/blogs/corn-ibd.html"
+    },
+    {
       "source": "/blog/banana-ibd-crohns-colitis",
       "destination": "/blogs/banana-ibd-crohns-colitis.html"
     },
