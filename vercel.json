@@ -10,6 +10,54 @@
   ],
   "rewrites": [
     {
+      "source": "/blog/oatmeal-ibd",
+      "destination": "/blogs/oatmeal-ibd.html"
+    },
+    {
+      "source": "/blog/peanut-butter-ibd",
+      "destination": "/blogs/peanut-butter-ibd.html"
+    },
+    {
+      "source": "/blog/coffee-ibd",
+      "destination": "/blogs/coffee-ibd.html"
+    },
+    {
+      "source": "/blog/salmon-fish-ibd",
+      "destination": "/blogs/salmon-fish-ibd.html"
+    },
+    {
+      "source": "/blog/tofu-soy-ibd",
+      "destination": "/blogs/tofu-soy-ibd.html"
+    },
+    {
+      "source": "/blog/lean-beef-ibd",
+      "destination": "/blogs/lean-beef-ibd.html"
+    },
+    {
+      "source": "/blog/greek-yogurt-ibd",
+      "destination": "/blogs/greek-yogurt-ibd.html"
+    },
+    {
+      "source": "/blog/tuna-ibd",
+      "destination": "/blogs/tuna-ibd.html"
+    },
+    {
+      "source": "/blog/tea-ibd",
+      "destination": "/blogs/tea-ibd.html"
+    },
+    {
+      "source": "/blog/white-bread-ibd",
+      "destination": "/blogs/white-bread-ibd.html"
+    },
+    {
+      "source": "/blog/chocolate-ibd",
+      "destination": "/blogs/chocolate-ibd.html"
+    },
+    {
+      "source": "/blog/protein-shakes-ons-ibd",
+      "destination": "/blogs/protein-shakes-ons-ibd.html"
+    },
+    {
       "source": "/blog/calcium-ibd",
       "destination": "/blogs/calcium-ibd.html"
     },

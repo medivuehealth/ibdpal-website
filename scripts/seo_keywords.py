@@ -166,6 +166,42 @@ PATH_KEYWORDS: dict[str, str] = {
     "/blog/omega-3-ibd": (
         "omega-3 Crohn's disease, fish oil ulcerative colitis, EPA DHA IBD"
     ),
+    "/blog/oatmeal-ibd": (
+        "oatmeal Crohn's disease, oats ulcerative colitis, oatmeal IBD fiber"
+    ),
+    "/blog/peanut-butter-ibd": (
+        "peanut butter Crohn's, peanut butter ulcerative colitis, smooth PB IBD"
+    ),
+    "/blog/coffee-ibd": (
+        "coffee Crohn's disease, coffee ulcerative colitis caffeine, coffee IBD urgency"
+    ),
+    "/blog/salmon-fish-ibd": (
+        "salmon Crohn's disease, fish ulcerative colitis diet, salmon omega-3 IBD"
+    ),
+    "/blog/tofu-soy-ibd": (
+        "tofu Crohn's disease, soy ulcerative colitis protein, tofu IBD calcium"
+    ),
+    "/blog/lean-beef-ibd": (
+        "beef Crohn's disease diet, lean beef colitis, red meat iron IBD"
+    ),
+    "/blog/greek-yogurt-ibd": (
+        "greek yogurt Crohn's, yogurt ulcerative colitis, lactose yogurt IBD"
+    ),
+    "/blog/tuna-ibd": (
+        "tuna Crohn's disease, canned tuna colitis, tuna protein IBD"
+    ),
+    "/blog/tea-ibd": (
+        "tea Crohn's disease, green tea ulcerative colitis, herbal tea IBD"
+    ),
+    "/blog/white-bread-ibd": (
+        "white bread Crohn's flare, white bread ulcerative colitis, low residue bread"
+    ),
+    "/blog/chocolate-ibd": (
+        "chocolate Crohn's disease, chocolate ulcerative colitis, cocoa IBD"
+    ),
+    "/blog/protein-shakes-ons-ibd": (
+        "protein shake Crohn's, oral nutrition supplement colitis, ONS IBD calories"
+    ),
     "/glossary": "IBD glossary, Crohn's terms, colitis definitions, biologics IBD",
     "/impact": "IBDPal impact, IBD education nonprofit, MediVue mission, patient outcomes",
     "/founder": "IBDPal founder, IBDPal mission, IBD education, Crohn's colitis education",
@@ -262,6 +298,18 @@ SLUG_TOPIC_WORDS = {
     "potassium": "potassium IBD, potassium Crohn's diarrhea, potassium colitis",
     "folate": "folate IBD, folic acid Crohn's methotrexate, folate colitis",
     "omega": "omega-3 IBD, fish oil Crohn's, omega-3 colitis",
+    "oatmeal": "oatmeal IBD, oats Crohn's, oatmeal colitis fiber",
+    "peanut": "peanut butter IBD, peanut butter Crohn's, PB colitis",
+    "coffee": "coffee IBD, coffee Crohn's caffeine, coffee colitis urgency",
+    "salmon": "salmon IBD, salmon Crohn's, fatty fish colitis",
+    "tofu": "tofu IBD, soy Crohn's protein, tofu colitis",
+    "beef": "beef IBD, lean beef Crohn's iron, red meat colitis",
+    "yogurt": "greek yogurt IBD, yogurt Crohn's, lactose yogurt colitis",
+    "tuna": "tuna IBD, canned tuna Crohn's, tuna colitis protein",
+    "tea": "tea IBD, green tea Crohn's, herbal tea colitis",
+    "bread": "white bread IBD, white bread Crohn's flare, bread colitis",
+    "chocolate": "chocolate IBD, chocolate Crohn's, cocoa colitis",
+    "shake": "protein shake IBD, ONS Crohn's, oral nutrition supplement colitis",
 }
 
 
