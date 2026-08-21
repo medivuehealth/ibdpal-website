@@ -46,6 +46,7 @@
 - https://www.ibdpal.org/blog/blood-in-stool-ibd-when-to-worry
 - https://www.ibdpal.org/blog/blueberries-ibd
 - https://www.ibdpal.org/blog/broccoli-ibd
+- https://www.ibdpal.org/blog/calcium-ibd
 - https://www.ibdpal.org/blog/carrots-ibd
 - https://www.ibdpal.org/blog/celiac-ibd-screening
 - https://www.ibdpal.org/blog/chicken-protein-ibd
@@ -74,6 +75,7 @@
 - https://www.ibdpal.org/blog/flare-first-48-hours
 - https://www.ibdpal.org/blog/flare-symptoms-ibd
 - https://www.ibdpal.org/blog/fodmap-diet-crohns-colitis
+- https://www.ibdpal.org/blog/folate-ibd
 - https://www.ibdpal.org/blog/foods-that-may-trigger-uc-symptoms
 - https://www.ibdpal.org/blog/free-government-ibd-research-sources
 - https://www.ibdpal.org/blog/gas-bloating-ibd
@@ -121,6 +123,7 @@
 - https://www.ibdpal.org/blog/living-with-ibd-kids
 - https://www.ibdpal.org/blog/low-residue-diet-flare
 - https://www.ibdpal.org/blog/lupus-autoimmune-basics
+- https://www.ibdpal.org/blog/magnesium-ibd
 - https://www.ibdpal.org/blog/mediterranean-diet-autoimmune
 - https://www.ibdpal.org/blog/melon-ibd
 - https://www.ibdpal.org/blog/mesalamine-5-asa-ibd
@@ -129,6 +132,7 @@
 - https://www.ibdpal.org/blog/multiple-sclerosis-autoimmune-basics
 - https://www.ibdpal.org/blog/newly-diagnosed-first-30-days
 - https://www.ibdpal.org/blog/nsaids-ibd-risk
+- https://www.ibdpal.org/blog/omega-3-ibd
 - https://www.ibdpal.org/blog/onion-garlic-ibd-fodmap
 - https://www.ibdpal.org/blog/oral-canker-sores-ibd
 - https://www.ibdpal.org/blog/oranges-citrus-ibd
@@ -136,6 +140,7 @@
 - https://www.ibdpal.org/blog/ostomy-basics-ibd
 - https://www.ibdpal.org/blog/partner-caregiver-ibd
 - https://www.ibdpal.org/blog/perianal-crohns-fistula-abscess
+- https://www.ibdpal.org/blog/potassium-ibd
 - https://www.ibdpal.org/blog/potato-ibd-white
 - https://www.ibdpal.org/blog/prior-authorization-biologics-timeline
 - https://www.ibdpal.org/blog/probiotics-ibd-gut-health
@@ -172,6 +177,8 @@
 - https://www.ibdpal.org/blog/uveitis-eye-inflammation-ibd
 - https://www.ibdpal.org/blog/vaccine-autoimmune-immunosuppression
 - https://www.ibdpal.org/blog/vaccines-biologics-immunosuppressants-ibd
+- https://www.ibdpal.org/blog/vitamin-a-ibd
+- https://www.ibdpal.org/blog/vitamin-c-ibd
 - https://www.ibdpal.org/blog/vomiting-obstruction-ibd-warning-signs
 - https://www.ibdpal.org/blog/what-remission-means-ibd
 - https://www.ibdpal.org/blog/when-to-call-gi-vs-er-ibd
@@ -179,6 +186,7 @@
 - https://www.ibdpal.org/blog/when-to-go-er-ibd
 - https://www.ibdpal.org/blog/white-rice-ibd-flare
 - https://www.ibdpal.org/blog/workplace-school-ibd-rights
+- https://www.ibdpal.org/blog/zinc-ibd
 - https://www.ibdpal.org/blog/zucchini-ibd
 
 

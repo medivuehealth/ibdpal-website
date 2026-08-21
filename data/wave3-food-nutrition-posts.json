@@ -1,0 +1,235 @@
+{
+  "wave": 3,
+  "theme": "micronutrients",
+  "posts": [
+    {
+      "slug": "calcium-ibd",
+      "title": "Calcium and IBD: Bones, Dairy Alternatives, and Steroid Questions",
+      "description": "Calcium with Crohn's or colitis: bone health, dairy and alternatives, steroid risk, labs, and dietitian questions. Education only.",
+      "category": "Nutrition · August 2026",
+      "date_display": "August 26, 2026",
+      "date_iso": "2026-08-26T16:00:00Z",
+      "asset_dir": "calcium-ibd",
+      "resource_category": "nutrition",
+      "tags": [
+        "calcium",
+        "bones",
+        "dairy",
+        "osteoporosis",
+        "steroids",
+        "micronutrients",
+        "Crohn's",
+        "colitis",
+        "nutrition"
+      ],
+      "share": "Calcium and IBD: bones, foods, and steroid questions. Education only.",
+      "images": [
+        "calcium-ibd_1.jpg"
+      ],
+      "alts": [
+        "Calcium nutrition education for IBD"
+      ],
+      "body": "<p>Searches like <strong>calcium Crohn's disease</strong>, <strong>calcium ulcerative colitis bones</strong>, and <strong>calcium ulcerative colitis</strong> spike when labs come back low or fatigue will not quit. This page explains what calcium does, why IBD raises risk, gentler food sources, and questions for your GI or dietitian. It is education only, not a dose or supplement prescription.</p>\n\n<h2>What Calcium does in the body</h2>\n<p>Calcium is the main mineral stored in bone and teeth. It also supports muscle and nerve signaling. People with IBD often ask about calcium because steroids, low dairy intake, and vitamin D deficiency raise long-term fracture concerns.</p>\n<ul class=\"blog-list\"><li>Builds and maintains bone mineral density over time</li><li>Supports normal muscle contraction and nerve signaling</li><li>Works closely with vitamin D for absorption and bone health</li></ul>\n\n<h2>Why calcium gaps are common in Crohn's and colitis</h2>\n<ul class=\"blog-list\"><li>Repeated corticosteroid courses increase bone loss risk</li><li>Lactose intolerance or dairy avoidance reduces easy calcium sources</li><li>Inflammation, surgery, and limited menus can shrink intake</li><li>Low vitamin D common in IBD worsens calcium handling</li></ul>\n<p>Bone health is a long game. Short flare menus matter, but so do years of steroid exposure and underfueling. Pair this topic with vitamin D and DEXA discussions when your team recommends them.</p>\n\n<h2>Food sources that often fit IBD eating</h2>\n<p>Aim for food sources your gut tolerates before high-dose supplements. Fortified options help when dairy is limited.</p>\n<h3>Gentler options many people use during flares</h3>\n<ul class=\"blog-list\"><li>Lactose-free milk or fortified lactose-free yogurt if dairy protein sits well</li><li>Fortified plant milks (check calcium on the label) in smooth textures</li><li>Canned soft fish with soft bones mashed finely if tolerated (for example soft salmon)</li><li>Tofu set with calcium sulfate when soy is tolerated, served soft</li></ul>\n<h3>Wider options when remission allows more variety</h3>\n<ul class=\"blog-list\"><li>Yogurt, cheese, or kefir if lactose is managed</li><li>Fortified orange juice in small amounts if acidity is okay</li><li>Leafy greens that you tolerate cooked (absorption varies; still useful in a varied plate)</li><li>Sesame tahini or almonds if nuts/seeds are cleared</li></ul>\n<p>Food first is the usual starting point. Supplements belong under clinician guidance, especially if you have kidney disease, take interacting medicines, or already use a multivitamin.</p>\n\n<h2>Supplements and safety notes</h2>\n<p>Calcium carbonate and citrate differ in absorption with meals and acid-reducing medicines. Too much supplemental calcium is not automatically better and can cause constipation or interact with other minerals. Dosing belongs with your clinician, especially after steroid courses.</p>\n\n<h2>Labs and monitoring people ask about</h2>\n<ul class=\"blog-list\"><li>Serum calcium is often normal even when bone risk is high; it is not a full bone status test</li><li>Vitamin D (25-OH) commonly checked alongside bone planning</li><li>DEXA bone density when steroids, fractures, or other risk factors apply</li></ul>\n<p>Log meals and symptoms in IBDPal so your team can connect intake patterns with labs. See <a href=\"/blog/how-ibdpal-nutrition-targets-work\">how IBDPal sets nutrition targets</a> and <a href=\"/blog/tracking-food-symptoms-ibdpal\">food symptom tracking</a>.</p>\n\n<h2>Common myths about calcium and IBD</h2>\n<ul class=\"blog-list\"><li><strong>If my blood calcium is normal, my bones are fine.</strong> Blood calcium is tightly regulated; bone density needs other assessment.</li><li><strong>Dairy is banned in all IBD.</strong> Many people tolerate lactose-free dairy; alternatives can be fortified.</li><li><strong>Calcium supplements replace medical IBD care.</strong> They support nutrition goals; they do not treat gut inflammation.</li></ul>\n\n<h2>Questions for your gastroenterologist or dietitian</h2>\n<ul class=\"blog-list\"><li>Do my steroid history and labs mean I need a DEXA scan?</li><li>What daily calcium target fits my age, sex, and kidney status?</li><li>Which form of calcium supplement, if any, fits my acid-reducing meds?</li></ul>\n\n<h2>When to call sooner</h2>\n<p>Seek prompt care for severe weakness, irregular heartbeat symptoms, fainting, inability to keep fluids down, heavy bleeding, or fever with rapid decline. Nutrient articles cannot diagnose emergencies. See <a href=\"/flare-help\">flare help</a> and <a href=\"/blog/when-to-go-er-ibd\">when to go to the ER</a>.</p>\n\n<p>Related reading: <a href=\"/guides/vitamin-d-bone-nutrition-ibd\">vitamin D and bone nutrition</a> · <a href=\"/blog/osteoporosis-bone-health-ibd\">osteoporosis and IBD</a> · <a href=\"/blog/dairy-lactose-ibd\">dairy and lactose</a>. Overview: <a href=\"/blog/micronutrients-ibd-deficiencies\">micronutrient deficiencies in IBD</a>. Hub: <a href=\"/ibd-nutrition\">IBD nutrition</a>.</p>"
+    },
+    {
+      "slug": "zinc-ibd",
+      "title": "Zinc and IBD: Immunity, Wound Healing, and Food Sources",
+      "description": "Zinc with Crohn's or colitis: diarrhea losses, immunity, food sources, supplement cautions, and clinic questions. Education only.",
+      "category": "Nutrition · August 2026",
+      "date_display": "August 26, 2026",
+      "date_iso": "2026-08-26T18:00:00Z",
+      "asset_dir": "zinc-ibd",
+      "resource_category": "nutrition",
+      "tags": [
+        "zinc",
+        "immunity",
+        "wound healing",
+        "diarrhea",
+        "micronutrients",
+        "Crohn's",
+        "colitis",
+        "nutrition"
+      ],
+      "share": "Zinc and IBD: deficiency risk and food sources. Education only.",
+      "images": [
+        "zinc-ibd_1.jpg"
+      ],
+      "alts": [
+        "Zinc nutrition education for IBD"
+      ],
+      "body": "<p>Searches like <strong>zinc deficiency Crohn's</strong>, <strong>zinc ulcerative colitis</strong>, and <strong>zinc ulcerative colitis</strong> spike when labs come back low or fatigue will not quit. This page explains what zinc does, why IBD raises risk, gentler food sources, and questions for your GI or dietitian. It is education only, not a dose or supplement prescription.</p>\n\n<h2>What Zinc does in the body</h2>\n<p>Zinc is a trace mineral used in hundreds of enzymes. Patients search it after hair changes, poor wound healing, taste changes, or when diarrhea has been relentless.</p>\n<ul class=\"blog-list\"><li>Supports immune function and skin/mucosal repair</li><li>Helps with taste and smell in everyday nutrition</li><li>Participates in protein synthesis and cell division</li></ul>\n\n<h2>Why zinc gaps are common in Crohn's and colitis</h2>\n<ul class=\"blog-list\"><li>Chronic diarrhea increases zinc losses in stool</li><li>Small bowel Crohn's disease and resections can reduce absorption</li><li>Low meat intake or strict plant-only patterns without planning can lower intake</li><li>High-dose iron or calcium supplements can compete with zinc absorption when timed poorly</li></ul>\n<p>Zinc deficiency can look like ongoing fatigue, skin issues, or slow healing, but those symptoms have many causes. Labs and clinical context matter more than buying the largest zinc bottle online.</p>\n\n<h2>Food sources that often fit IBD eating</h2>\n<p>Animal proteins are efficient zinc sources. Plant sources help when portions and preparation are planned.</p>\n<h3>Gentler options many people use during flares</h3>\n<ul class=\"blog-list\"><li>Tender chicken, turkey, or eggs</li><li>Soft fish if tolerated</li><li>Smooth nut butters in small amounts if approved</li><li>Fortified cereals that are low residue if your plan allows</li></ul>\n<h3>Wider options when remission allows more variety</h3>\n<ul class=\"blog-list\"><li>Beef or other meats if tolerated and desired</li><li>Pumpkin seeds or legumes when fiber is okay</li><li>Dairy foods if lactose is managed</li><li>Shellfish for some people when food safety and tolerance allow</li></ul>\n<p>Food first is the usual starting point. Supplements belong under clinician guidance, especially if you have kidney disease, take interacting medicines, or already use a multivitamin.</p>\n\n<h2>Supplements and safety notes</h2>\n<p>High-dose zinc for weeks can lower copper and upset the stomach. Lozenge and mega-dose trends are not IBD treatment protocols. Use team-directed doses based on labs when deficiency is confirmed or strongly suspected.</p>\n\n<h2>Labs and monitoring people ask about</h2>\n<ul class=\"blog-list\"><li>Plasma zinc can be influenced by inflammation and albumin; interpret with your clinician</li><li>Watch copper if you take prolonged high-dose zinc</li><li>Reassess after diarrhea improves or diet expands</li></ul>\n<p>Log meals and symptoms in IBDPal so your team can connect intake patterns with labs. See <a href=\"/blog/how-ibdpal-nutrition-targets-work\">how IBDPal sets nutrition targets</a> and <a href=\"/blog/tracking-food-symptoms-ibdpal\">food symptom tracking</a>.</p>\n\n<h2>Common myths about zinc and IBD</h2>\n<ul class=\"blog-list\"><li><strong>Zinc supplements stop Crohn's flares.</strong> Zinc supports nutrition; it does not replace anti-inflammatory therapy.</li><li><strong>More zinc is always better.</strong> Excess can cause nausea and copper deficiency.</li><li><strong>Plant foods never provide zinc.</strong> They can, but absorption is often lower than from meat.</li></ul>\n\n<h2>Questions for your gastroenterologist or dietitian</h2>\n<ul class=\"blog-list\"><li>Should we check zinc after prolonged diarrhea or resection?</li><li>How should I time zinc apart from iron pills if both are prescribed?</li><li>What food-first plan raises zinc without upsetting my gut?</li></ul>\n\n<h2>When to call sooner</h2>\n<p>Seek prompt care for severe weakness, irregular heartbeat symptoms, fainting, inability to keep fluids down, heavy bleeding, or fever with rapid decline. Nutrient articles cannot diagnose emergencies. See <a href=\"/flare-help\">flare help</a> and <a href=\"/blog/when-to-go-er-ibd\">when to go to the ER</a>.</p>\n\n<p>Related reading: <a href=\"/blog/micronutrients-ibd-deficiencies\">micronutrient overview</a> · <a href=\"/blog/chicken-protein-ibd\">chicken protein</a> · <a href=\"/blog/eggs-ibd-nutrition\">eggs and IBD</a>. Overview: <a href=\"/blog/micronutrients-ibd-deficiencies\">micronutrient deficiencies in IBD</a>. Hub: <a href=\"/ibd-nutrition\">IBD nutrition</a>.</p>"
+    },
+    {
+      "slug": "magnesium-ibd",
+      "title": "Magnesium and IBD: Cramps, Diarrhea Losses, and Repletion Tips",
+      "description": "Magnesium with Crohn's or colitis: stool losses, muscle cramps, food sources, laxative forms to avoid, and clinic questions. Education only.",
+      "category": "Nutrition · August 2026",
+      "date_display": "August 27, 2026",
+      "date_iso": "2026-08-27T12:00:00Z",
+      "asset_dir": "magnesium-ibd",
+      "resource_category": "nutrition",
+      "tags": [
+        "magnesium",
+        "cramps",
+        "electrolytes",
+        "diarrhea",
+        "micronutrients",
+        "Crohn's",
+        "colitis",
+        "nutrition"
+      ],
+      "share": "Magnesium and IBD: losses, foods, and supplement cautions. Education only.",
+      "images": [
+        "magnesium-ibd_1.jpg"
+      ],
+      "alts": [
+        "Magnesium nutrition education for IBD"
+      ],
+      "body": "<p>Searches like <strong>magnesium Crohn's disease</strong>, <strong>magnesium deficiency colitis</strong>, and <strong>magnesium ulcerative colitis</strong> spike when labs come back low or fatigue will not quit. This page explains what magnesium does, why IBD raises risk, gentler food sources, and questions for your GI or dietitian. It is education only, not a dose or supplement prescription.</p>\n\n<h2>What Magnesium does in the body</h2>\n<p>Magnesium supports muscles, nerves, and energy metabolism. IBD patients often search it for cramps, fatigue, or after learning diarrhea wastes magnesium.</p>\n<ul class=\"blog-list\"><li>Helps normal muscle and nerve function</li><li>Supports enzyme reactions for energy production</li><li>Contributes to bone mineral structure with calcium and vitamin D</li></ul>\n\n<h2>Why magnesium gaps are common in Crohn's and colitis</h2>\n<ul class=\"blog-list\"><li>Diarrhea and high-output stomas increase magnesium losses</li><li>Malabsorption after small bowel disease or surgery</li><li>Some medications and low intake from restricted diets</li><li>Refeeding or IV fluids contexts in hospital care may need monitored repletion</li></ul>\n<p>Low magnesium can be serious. Self-supplementing with strong laxative forms (oxide in large doses, citrate meant as prep) can worsen diarrhea. Kidney disease changes what is safe.</p>\n\n<h2>Food sources that often fit IBD eating</h2>\n<p>Food sources are often gentler than high-dose laxative magnesium salts when the gut is sensitive.</p>\n<h3>Gentler options many people use during flares</h3>\n<ul class=\"blog-list\"><li>Smooth peanut or almond butter in small amounts if tolerated</li><li>Fortified cereals that fit your residue plan</li><li>Banana and potato for combined potassium and some magnesium support</li><li>Soft fish or poultry as part of balanced plates (not the richest sources, but easier textures)</li></ul>\n<h3>Wider options when remission allows more variety</h3>\n<ul class=\"blog-list\"><li>Nuts, seeds, and legumes if fiber is cleared</li><li>Leafy greens cooked soft</li><li>Whole grains when you have moved past low-residue phases</li><li>Dark chocolate in modest amounts if tolerated</li></ul>\n<p>Food first is the usual starting point. Supplements belong under clinician guidance, especially if you have kidney disease, take interacting medicines, or already use a multivitamin.</p>\n\n<h2>Supplements and safety notes</h2>\n<p>Forms differ: some are more laxative, some better absorbed with fewer stools for certain patients. Never start high-dose magnesium for heart rhythm symptoms without urgent medical evaluation. People with reduced kidney function need clinician dosing only.</p>\n\n<h2>Labs and monitoring people ask about</h2>\n<ul class=\"blog-list\"><li>Serum magnesium may be ordered with electrolytes during flares or cramps</li><li>Low potassium and low magnesium often travel together</li><li>Repeat after repletion and when diarrhea slows</li></ul>\n<p>Log meals and symptoms in IBDPal so your team can connect intake patterns with labs. See <a href=\"/blog/how-ibdpal-nutrition-targets-work\">how IBDPal sets nutrition targets</a> and <a href=\"/blog/tracking-food-symptoms-ibdpal\">food symptom tracking</a>.</p>\n\n<h2>Common myths about magnesium and IBD</h2>\n<ul class=\"blog-list\"><li><strong>Any magnesium powder labeled calm is safe in IBD.</strong> Many are laxative and can worsen urgency.</li><li><strong>Normal sodium means electrolytes are fine.</strong> Magnesium and potassium need their own checks when indicated.</li><li><strong>Food cannot help magnesium.</strong> Food helps many people; severe losses still need medical repletion.</li></ul>\n\n<h2>Questions for your gastroenterologist or dietitian</h2>\n<ul class=\"blog-list\"><li>Should we check magnesium with my electrolyte panel?</li><li>Which supplement form is least likely to worsen diarrhea for me?</li><li>Do my kidney labs limit magnesium supplements?</li></ul>\n\n<h2>When to call sooner</h2>\n<p>Seek prompt care for severe weakness, irregular heartbeat symptoms, fainting, inability to keep fluids down, heavy bleeding, or fever with rapid decline. Nutrient articles cannot diagnose emergencies. See <a href=\"/flare-help\">flare help</a> and <a href=\"/blog/when-to-go-er-ibd\">when to go to the ER</a>.</p>\n\n<p>Related reading: <a href=\"/blog/electrolytes-flare-ibd\">electrolytes during flares</a> · <a href=\"/blog/potassium-ibd\">potassium and IBD</a> · <a href=\"/blog/dehydration-ibd-warning-signs\">dehydration warning signs</a>. Overview: <a href=\"/blog/micronutrients-ibd-deficiencies\">micronutrient deficiencies in IBD</a>. Hub: <a href=\"/ibd-nutrition\">IBD nutrition</a>.</p>"
+    },
+    {
+      "slug": "potassium-ibd",
+      "title": "Potassium and IBD: Diarrhea Losses, Foods, and Safety Limits",
+      "description": "Potassium with Crohn's or colitis: stool and urine losses, banana and potato sources, medication cautions, and clinic questions. Education only.",
+      "category": "Nutrition · August 2026",
+      "date_display": "August 27, 2026",
+      "date_iso": "2026-08-27T14:00:00Z",
+      "asset_dir": "potassium-ibd",
+      "resource_category": "nutrition",
+      "tags": [
+        "potassium",
+        "electrolytes",
+        "banana",
+        "potato",
+        "diarrhea",
+        "micronutrients",
+        "Crohn's",
+        "colitis",
+        "nutrition"
+      ],
+      "share": "Potassium and IBD: losses, foods, and safety. Education only.",
+      "images": [
+        "potassium-ibd_1.jpg"
+      ],
+      "alts": [
+        "Potassium nutrition education for IBD"
+      ],
+      "body": "<p>Searches like <strong>potassium Crohn's diarrhea</strong>, <strong>low potassium ulcerative colitis</strong>, and <strong>potassium ulcerative colitis</strong> spike when labs come back low or fatigue will not quit. This page explains what potassium does, why IBD raises risk, gentler food sources, and questions for your GI or dietitian. It is education only, not a dose or supplement prescription.</p>\n\n<h2>What Potassium does in the body</h2>\n<p>Potassium is a key electrolyte for heart rhythm and muscle function. Diarrhea, vomiting, and some medicines can drop levels, which is why flares and potassium searches overlap.</p>\n<ul class=\"blog-list\"><li>Helps maintain normal heart rhythm and muscle contraction</li><li>Supports fluid and electrolyte balance with sodium</li><li>Participates in nerve signaling</li></ul>\n\n<h2>Why potassium gaps are common in Crohn's and colitis</h2>\n<ul class=\"blog-list\"><li>Diarrhea increases fecal potassium losses</li><li>Poor intake during nausea or liquid diets</li><li>Some diuretics or other medicines affect potassium (review your full list)</li><li>Rehydration with water only, without electrolytes, may not restore losses</li></ul>\n<p>Both low and high potassium can be dangerous. Kidney disease, ACE inhibitors, ARBs, and potassium-sparing drugs change what is safe. Do not mega-dose potassium supplements without labs and a clinician.</p>\n\n<h2>Food sources that often fit IBD eating</h2>\n<p>Many gentle IBD foods are naturally helpful potassium sources.</p>\n<h3>Gentler options many people use during flares</h3>\n<ul class=\"blog-list\"><li>Ripe banana</li><li>Peeled mashed white potato or sweet potato</li><li>Melon if tolerated</li><li>Oral rehydration solutions your clinic recommends (not random sports drinks only)</li></ul>\n<h3>Wider options when remission allows more variety</h3>\n<ul class=\"blog-list\"><li>Yogurt or milk alternatives if tolerated</li><li>Cooked tomatoes or tomato products if acidity is okay</li><li>Beans and avocado when fiber and fat allow</li><li>Orange fruit or diluted juice if citrus sits well</li></ul>\n<p>Food first is the usual starting point. Supplements belong under clinician guidance, especially if you have kidney disease, take interacting medicines, or already use a multivitamin.</p>\n\n<h2>Supplements and safety notes</h2>\n<p>Over-the-counter potassium pills are not harmless candy. Prescription repletion and monitored IV therapy belong in clinical care when levels are significantly low. Salt substitutes labeled potassium chloride can be risky for some patients.</p>\n\n<h2>Labs and monitoring people ask about</h2>\n<ul class=\"blog-list\"><li>Basic metabolic panel or electrolytes during flares, dehydration, or new weakness</li><li>Recheck after vomiting, high-output stoma days, or medication changes</li><li>Interpret with kidney function and full medication list</li></ul>\n<p>Log meals and symptoms in IBDPal so your team can connect intake patterns with labs. See <a href=\"/blog/how-ibdpal-nutrition-targets-work\">how IBDPal sets nutrition targets</a> and <a href=\"/blog/tracking-food-symptoms-ibdpal\">food symptom tracking</a>.</p>\n\n<h2>Common myths about potassium and IBD</h2>\n<ul class=\"blog-list\"><li><strong>Bananas alone fix any potassium problem.</strong> Helpful food, not a substitute for labs when symptoms are severe.</li><li><strong>All sports drinks are ideal rehydration.</strong> Formulas differ; ask what your team prefers.</li><li><strong>High potassium foods are banned if I have IBD.</strong> Many patients need potassium; restrictions are individualized.</li></ul>\n\n<h2>Questions for your gastroenterologist or dietitian</h2>\n<ul class=\"blog-list\"><li>Should we check potassium during this flare?</li><li>Which fluids and foods best replace my losses?</li><li>Do any of my medicines raise or lower potassium too much?</li></ul>\n\n<h2>When to call sooner</h2>\n<p>Seek prompt care for severe weakness, irregular heartbeat symptoms, fainting, inability to keep fluids down, heavy bleeding, or fever with rapid decline. Nutrient articles cannot diagnose emergencies. See <a href=\"/flare-help\">flare help</a> and <a href=\"/blog/when-to-go-er-ibd\">when to go to the ER</a>.</p>\n\n<p>Related reading: <a href=\"/blog/banana-ibd-crohns-colitis\">bananas and IBD</a> · <a href=\"/blog/potato-ibd-white\">white potatoes</a> · <a href=\"/blog/electrolytes-flare-ibd\">electrolytes and flares</a>. Overview: <a href=\"/blog/micronutrients-ibd-deficiencies\">micronutrient deficiencies in IBD</a>. Hub: <a href=\"/ibd-nutrition\">IBD nutrition</a>.</p>"
+    },
+    {
+      "slug": "vitamin-c-ibd",
+      "title": "Vitamin C and IBD: Immunity Myths, Food Sources, and Acidity Tips",
+      "description": "Vitamin C with Crohn's or colitis: food sources, citrus acidity, iron absorption helper, mega-dose myths, and clinic questions. Education only.",
+      "category": "Nutrition · August 2026",
+      "date_display": "August 27, 2026",
+      "date_iso": "2026-08-27T16:00:00Z",
+      "asset_dir": "vitamin-c-ibd",
+      "resource_category": "nutrition",
+      "tags": [
+        "vitamin C",
+        "ascorbic acid",
+        "citrus",
+        "iron absorption",
+        "micronutrients",
+        "Crohn's",
+        "colitis",
+        "nutrition"
+      ],
+      "share": "Vitamin C and IBD: foods, acidity, and myths. Education only.",
+      "images": [
+        "vitamin-c-ibd_1.jpg"
+      ],
+      "alts": [
+        "Vitamin C nutrition education for IBD"
+      ],
+      "body": "<p>Searches like <strong>vitamin C Crohn's disease</strong>, <strong>vitamin C ulcerative colitis</strong>, and <strong>vitamin c ulcerative colitis</strong> spike when labs come back low or fatigue will not quit. This page explains what vitamin c does, why IBD raises risk, gentler food sources, and questions for your GI or dietitian. It is education only, not a dose or supplement prescription.</p>\n\n<h2>What Vitamin C does in the body</h2>\n<p>Vitamin C (ascorbic acid) supports collagen, immune cell function, and non-heme iron absorption. People with IBD often worry about citrus burning symptoms while still needing vitamin C from somewhere.</p>\n<ul class=\"blog-list\"><li>Helps collagen formation for tissues and wound healing support</li><li>Acts as an antioxidant in normal physiology</li><li>Improves absorption of plant (non-heme) iron when eaten together</li></ul>\n\n<h2>Why vitamin c gaps are common in Crohn's and colitis</h2>\n<ul class=\"blog-list\"><li>Avoiding acidic fruits and juices can lower intake</li><li>Limited menus during flares reduce produce variety</li><li>Smoking (if present) raises vitamin C needs</li><li>Iron therapy plans sometimes intentionally pair vitamin C with iron under guidance</li></ul>\n<p>Mega-dose vitamin C is not an IBD flare treatment and can cause GI upset or kidney stone risk in susceptible people. Food-range intake is usually the goal unless your clinician recommends more.</p>\n\n<h2>Food sources that often fit IBD eating</h2>\n<p>You can meet vitamin C needs without forcing large glasses of orange juice.</p>\n<h3>Gentler options many people use during flares</h3>\n<ul class=\"blog-list\"><li>Soft strawberries or melon if tolerated</li><li>Peeled cooked potato (surprising but real vitamin C source when not overcooked for hours)</li><li>Fortified juices diluted with water if acidity is an issue</li><li>Smoothies with tolerated fruit and no large seed loads</li></ul>\n<h3>Wider options when remission allows more variety</h3>\n<ul class=\"blog-list\"><li>Oranges, kiwi, peppers, broccoli if those textures sit well</li><li>Tomato products if acidity is okay</li><li>Berries with yogurt or eggs</li><li>Fresh fruit over candy-like gummies marketed as immunity shields</li></ul>\n<p>Food first is the usual starting point. Supplements belong under clinician guidance, especially if you have kidney disease, take interacting medicines, or already use a multivitamin.</p>\n\n<h2>Supplements and safety notes</h2>\n<p>If citrus triggers symptoms, a clinician may suggest a non-acidic vitamin C source or a modest supplement. Chewables and fizzy high-dose packets can irritate some guts. Timing with iron pills should follow your iron protocol.</p>\n\n<h2>Labs and monitoring people ask about</h2>\n<ul class=\"blog-list\"><li>Vitamin C blood tests are not routine for every IBD visit</li><li>Focus on dietary history, wound healing, and iron therapy plans</li><li>Discuss kidney stone history before high-dose ascorbic acid</li></ul>\n<p>Log meals and symptoms in IBDPal so your team can connect intake patterns with labs. See <a href=\"/blog/how-ibdpal-nutrition-targets-work\">how IBDPal sets nutrition targets</a> and <a href=\"/blog/tracking-food-symptoms-ibdpal\">food symptom tracking</a>.</p>\n\n<h2>Common myths about vitamin c and IBD</h2>\n<ul class=\"blog-list\"><li><strong>Vitamin C cures colds and Crohn's flares.</strong> It supports nutrition; it does not replace IBD medicines.</li><li><strong>If citrus burns, I cannot get vitamin C.</strong> Other fruits, potato, and guided supplements exist.</li><li><strong>IV vitamin C is required for colitis.</strong> Not a standard IBD therapy; beware clinics selling unproven infusions.</li></ul>\n\n<h2>Questions for your gastroenterologist or dietitian</h2>\n<ul class=\"blog-list\"><li>How should I get vitamin C if tomatoes and citrus bother me?</li><li>Should I take vitamin C with my iron pills?</li><li>Is a multivitamin enough for my needs?</li></ul>\n\n<h2>When to call sooner</h2>\n<p>Seek prompt care for severe weakness, irregular heartbeat symptoms, fainting, inability to keep fluids down, heavy bleeding, or fever with rapid decline. Nutrient articles cannot diagnose emergencies. See <a href=\"/flare-help\">flare help</a> and <a href=\"/blog/when-to-go-er-ibd\">when to go to the ER</a>.</p>\n\n<p>Related reading: <a href=\"/blog/oranges-citrus-ibd\">oranges and citrus</a> · <a href=\"/blog/strawberries-ibd\">strawberries</a> · <a href=\"/guides/iron-deficiency-nutrition-ibd\">iron deficiency nutrition</a>. Overview: <a href=\"/blog/micronutrients-ibd-deficiencies\">micronutrient deficiencies in IBD</a>. Hub: <a href=\"/ibd-nutrition\">IBD nutrition</a>.</p>"
+    },
+    {
+      "slug": "folate-ibd",
+      "title": "Folate and IBD: Methotrexate, Pregnancy Planning, and Food Sources",
+      "description": "Folate (folic acid) with Crohn's or colitis: methotrexate, pregnancy, food sources, labs, and dietitian questions. Education only.",
+      "category": "Nutrition · August 2026",
+      "date_display": "August 27, 2026",
+      "date_iso": "2026-08-27T18:00:00Z",
+      "asset_dir": "folate-ibd",
+      "resource_category": "nutrition",
+      "tags": [
+        "folate",
+        "folic acid",
+        "methotrexate",
+        "pregnancy",
+        "B vitamins",
+        "micronutrients",
+        "Crohn's",
+        "colitis",
+        "nutrition"
+      ],
+      "share": "Folate and IBD: methotrexate, pregnancy, and foods. Education only.",
+      "images": [
+        "folate-ibd_1.jpg"
+      ],
+      "alts": [
+        "Folate nutrition education for IBD"
+      ],
+      "body": "<p>Searches like <strong>folate Crohn's methotrexate</strong>, <strong>folic acid ulcerative colitis</strong>, and <strong>folate ulcerative colitis</strong> spike when labs come back low or fatigue will not quit. This page explains what folate does, why IBD raises risk, gentler food sources, and questions for your GI or dietitian. It is education only, not a dose or supplement prescription.</p>\n\n<h2>What Folate does in the body</h2>\n<p>Folate (vitamin B9) helps make DNA and blood cells. In IBD care it comes up with methotrexate, sulfasalazine, pregnancy planning, and limited green vegetable intake.</p>\n<ul class=\"blog-list\"><li>Supports red blood cell production with B12 and iron</li><li>Critical for early pregnancy neural tube development</li><li>Participates in methylation pathways used throughout the body</li></ul>\n\n<h2>Why folate gaps are common in Crohn's and colitis</h2>\n<ul class=\"blog-list\"><li>Methotrexate interferes with folate pathways; prescribed folic acid is common</li><li>Sulfasalazine can affect folate handling</li><li>Low intake of leafy greens and legumes during flares</li><li>Increased needs with pregnancy or planning pregnancy</li></ul>\n<p>Do not stop methotrexate folic acid schedules on your own. Also do not assume folate fixes B12 deficiency; both can cause anemia and need proper labs.</p>\n\n<h2>Food sources that often fit IBD eating</h2>\n<p>Food folate plus fortified grains help; medicine-related needs often still require prescribed folic acid.</p>\n<h3>Gentler options many people use during flares</h3>\n<ul class=\"blog-list\"><li>Enriched white bread, pasta, or cereals if they fit your plan</li><li>Cooked spinach pureed into eggs or soup if greens are allowed</li><li>Orange fruit or diluted juice if tolerated</li><li>Liver is rich but not a flare staple for most people; discuss if relevant</li></ul>\n<h3>Wider options when remission allows more variety</h3>\n<ul class=\"blog-list\"><li>Cooked leafy greens, asparagus, Brussels sprouts if tolerated</li><li>Beans and lentils when fiber is okay</li><li>Avocado in measured portions</li><li>Fortified grains as easy daily contributors</li></ul>\n<p>Food first is the usual starting point. Supplements belong under clinician guidance, especially if you have kidney disease, take interacting medicines, or already use a multivitamin.</p>\n\n<h2>Supplements and safety notes</h2>\n<p>Folic acid dosing with methotrexate is prescription-directed (often weekly timing that avoids the methotrexate day). Pregnancy dosing may differ. High-dose folate without a plan can mask B12 deficiency on some blood tests, so teams check both.</p>\n\n<h2>Labs and monitoring people ask about</h2>\n<ul class=\"blog-list\"><li>Folate level when anemia, methotrexate use, or poor intake is present</li><li>Always interpret with B12, iron studies, and CBC</li><li>Pregnancy planning labs and prenatal vitamin review</li></ul>\n<p>Log meals and symptoms in IBDPal so your team can connect intake patterns with labs. See <a href=\"/blog/how-ibdpal-nutrition-targets-work\">how IBDPal sets nutrition targets</a> and <a href=\"/blog/tracking-food-symptoms-ibdpal\">food symptom tracking</a>.</p>\n\n<h2>Common myths about folate and IBD</h2>\n<ul class=\"blog-list\"><li><strong>I take methotrexate so I should avoid all folate foods.</strong> Usually false; prescribed folic acid and food are part of safe plans.</li><li><strong>Folate and B12 are interchangeable.</strong> They are different vitamins with different absorption issues in IBD.</li><li><strong>A green juice cleanses folate status.</strong> Food and prescribed supplements beat detox marketing.</li></ul>\n\n<h2>Questions for your gastroenterologist or dietitian</h2>\n<ul class=\"blog-list\"><li>What folic acid schedule should I use with methotrexate?</li><li>Do I need extra folate before pregnancy?</li><li>Should we recheck folate and B12 with my next CBC?</li></ul>\n\n<h2>When to call sooner</h2>\n<p>Seek prompt care for severe weakness, irregular heartbeat symptoms, fainting, inability to keep fluids down, heavy bleeding, or fever with rapid decline. Nutrient articles cannot diagnose emergencies. See <a href=\"/flare-help\">flare help</a> and <a href=\"/blog/when-to-go-er-ibd\">when to go to the ER</a>.</p>\n\n<p>Related reading: <a href=\"/blog/iron-b12-vitamin-d-ibd\">iron, B12, and vitamin D</a> · <a href=\"/blog/ibd-pregnancy-planning\">pregnancy planning</a> · <a href=\"/blog/spinach-leafy-greens-ibd\">spinach and greens</a>. Overview: <a href=\"/blog/micronutrients-ibd-deficiencies\">micronutrient deficiencies in IBD</a>. Hub: <a href=\"/ibd-nutrition\">IBD nutrition</a>.</p>"
+    },
+    {
+      "slug": "vitamin-a-ibd",
+      "title": "Vitamin A and IBD: Vision, Night Blindness Concerns, and Food Sources",
+      "description": "Vitamin A with Crohn's or colitis: fat malabsorption, beta-carotene foods, supplement toxicity cautions, and clinic questions. Education only.",
+      "category": "Nutrition · August 2026",
+      "date_display": "August 28, 2026",
+      "date_iso": "2026-08-28T12:00:00Z",
+      "asset_dir": "vitamin-a-ibd",
+      "resource_category": "nutrition",
+      "tags": [
+        "vitamin A",
+        "beta-carotene",
+        "vision",
+        "fat malabsorption",
+        "micronutrients",
+        "Crohn's",
+        "colitis",
+        "nutrition"
+      ],
+      "share": "Vitamin A and IBD: foods and toxicity cautions. Education only.",
+      "images": [
+        "vitamin-a-ibd_1.jpg"
+      ],
+      "alts": [
+        "Vitamin A nutrition education for IBD"
+      ],
+      "body": "<p>Searches like <strong>vitamin A Crohn's disease</strong>, <strong>vitamin A deficiency colitis</strong>, and <strong>vitamin a ulcerative colitis</strong> spike when labs come back low or fatigue will not quit. This page explains what vitamin a does, why IBD raises risk, gentler food sources, and questions for your GI or dietitian. It is education only, not a dose or supplement prescription.</p>\n\n<h2>What Vitamin A does in the body</h2>\n<p>Vitamin A supports vision, immune barriers, and epithelial health. It is fat-soluble, so fat malabsorption, short bowel, or very low-fat diets can raise deficiency risk, while mega-dose supplements raise toxicity risk.</p>\n<ul class=\"blog-list\"><li>Supports night vision and corneal health</li><li>Helps maintain mucosal barriers</li><li>Participates in immune cell function</li></ul>\n\n<h2>Why vitamin a gaps are common in Crohn's and colitis</h2>\n<ul class=\"blog-list\"><li>Fat malabsorption after ileal disease, resection, or cholestyramine use</li><li>Very restricted diets lacking orange vegetables and fortified foods</li><li>Zinc deficiency can impair vitamin A use (they interact)</li><li>Hospital or exclusive liquid diets without complete micronutrient coverage in rare cases</li></ul>\n<p>Preformed vitamin A (retinol) in high supplemental doses can be toxic and is especially concerning in pregnancy. Beta-carotene from food is a safer everyday route for many people, but still discuss prenatal needs with obstetrics and GI.</p>\n\n<h2>Food sources that often fit IBD eating</h2>\n<p>Beta-carotene foods (orange and dark green produce) convert to vitamin A as needed for many patients.</p>\n<h3>Gentler options many people use during flares</h3>\n<ul class=\"blog-list\"><li>Peeled cooked carrots or carrot puree</li><li>Mashed sweet potato</li><li>Fortified milk alternatives if used</li><li>Eggs (contain preformed vitamin A) when tolerated</li></ul>\n<h3>Wider options when remission allows more variety</h3>\n<ul class=\"blog-list\"><li>Cooked spinach and other leafy greens</li><li>Cantaloupe if tolerated</li><li>Tomato products</li><li>Fortified cereals</li></ul>\n<p>Food first is the usual starting point. Supplements belong under clinician guidance, especially if you have kidney disease, take interacting medicines, or already use a multivitamin.</p>\n\n<h2>Supplements and safety notes</h2>\n<p>Do not stack multiple high-vitamin-A supplements, cod liver oil mega-doses, and fortified products without adding up retinol activity equivalents. Deficiency treatment doses are medical, not DIY.</p>\n\n<h2>Labs and monitoring people ask about</h2>\n<ul class=\"blog-list\"><li>Vitamin A testing is not routine for every patient; ordered when risk or symptoms suggest need</li><li>Review fat-soluble vitamins (A, D, E, K) together after major resections when indicated</li><li>Night vision changes deserve a clinic call, not only a supplement aisle visit</li></ul>\n<p>Log meals and symptoms in IBDPal so your team can connect intake patterns with labs. See <a href=\"/blog/how-ibdpal-nutrition-targets-work\">how IBDPal sets nutrition targets</a> and <a href=\"/blog/tracking-food-symptoms-ibdpal\">food symptom tracking</a>.</p>\n\n<h2>Common myths about vitamin a and IBD</h2>\n<ul class=\"blog-list\"><li><strong>I can take as much vitamin A as I want because it is natural.</strong> Retinol toxicity is real.</li><li><strong>Carrots alone prove my vitamin A status is perfect.</strong> Intake helps; malabsorption still needs clinical judgment.</li><li><strong>Vitamin A cures leaky gut in IBD.</strong> Marketing phrase, not a substitute for IBD therapy.</li></ul>\n\n<h2>Questions for your gastroenterologist or dietitian</h2>\n<ul class=\"blog-list\"><li>Do my surgery history and fat absorption suggest fat-soluble vitamin monitoring?</li><li>Is my multivitamin already high in retinol?</li><li>What food plan raises vitamin A safely in pregnancy planning?</li></ul>\n\n<h2>When to call sooner</h2>\n<p>Seek prompt care for severe weakness, irregular heartbeat symptoms, fainting, inability to keep fluids down, heavy bleeding, or fever with rapid decline. Nutrient articles cannot diagnose emergencies. See <a href=\"/flare-help\">flare help</a> and <a href=\"/blog/when-to-go-er-ibd\">when to go to the ER</a>.</p>\n\n<p>Related reading: <a href=\"/blog/carrots-ibd\">carrots</a> · <a href=\"/blog/sweet-potato-ibd\">sweet potatoes</a> · <a href=\"/blog/micronutrients-ibd-deficiencies\">micronutrient overview</a>. Overview: <a href=\"/blog/micronutrients-ibd-deficiencies\">micronutrient deficiencies in IBD</a>. Hub: <a href=\"/ibd-nutrition\">IBD nutrition</a>.</p>"
+    },
+    {
+      "slug": "omega-3-ibd",
+      "title": "Omega-3 and IBD: Fish, Supplements, and What Evidence Suggests",
+      "description": "Omega-3 fats with Crohn's or colitis: fish sources, fish oil evidence limits, flare fat tolerance, and clinic questions. Education only.",
+      "category": "Nutrition · August 2026",
+      "date_display": "August 28, 2026",
+      "date_iso": "2026-08-28T14:00:00Z",
+      "asset_dir": "omega3-ibd",
+      "resource_category": "nutrition",
+      "tags": [
+        "omega-3",
+        "fish oil",
+        "EPA",
+        "DHA",
+        "salmon",
+        "heart",
+        "micronutrients",
+        "Crohn's",
+        "colitis",
+        "nutrition"
+      ],
+      "share": "Omega-3 and IBD: fish, oils, and evidence limits. Education only.",
+      "images": [
+        "omega3-ibd_1.jpg"
+      ],
+      "alts": [
+        "Omega-3 fats nutrition education for IBD"
+      ],
+      "body": "<p>Searches like <strong>omega-3 Crohn's disease</strong>, <strong>fish oil ulcerative colitis</strong>, and <strong>omega-3 fats ulcerative colitis</strong> spike when labs come back low or fatigue will not quit. This page explains what omega-3 fats does, why IBD raises risk, gentler food sources, and questions for your GI or dietitian. It is education only, not a dose or supplement prescription.</p>\n\n<h2>What Omega-3 fats does in the body</h2>\n<p>Omega-3 fatty acids (EPA and DHA from fish, ALA from some plants) are popular in anti-inflammatory diet searches. They support heart and general nutrition goals, but fish oil is not a proven stand-alone Crohn's or colitis therapy for everyone.</p>\n<ul class=\"blog-list\"><li>Structural fats in cell membranes</li><li>Precursors for signaling molecules involved in inflammation resolution pathways</li><li>Support heart and triglyceride health in broader medical nutrition</li></ul>\n\n<h2>Why omega-3 fats gaps are common in Crohn's and colitis</h2>\n<ul class=\"blog-list\"><li>Patients seek anti-inflammatory eating patterns (Mediterranean-style plates often include fish)</li><li>Low fish intake is common on limited menus</li><li>Fat tolerance varies; oily fish or concentrated oils can worsen urgency for some during flares</li><li>Supplement quality and dose vary widely on store shelves</li></ul>\n<p>Evidence that fish oil induces IBD remission is mixed and not a reason to skip prescribed medicines. High-dose oils can affect bleeding risk with some medicines and may cause burps or looser stools.</p>\n\n<h2>Food sources that often fit IBD eating</h2>\n<p>Food-first omega-3 from fish is usually preferred over mystery megadose capsules when fish is tolerated.</p>\n<h3>Gentler options many people use during flares</h3>\n<ul class=\"blog-list\"><li>Small portions of tender white fish if oily fish feels too heavy</li><li>Smooth nut butters providing ALA if tolerated (conversion to EPA/DHA is limited)</li><li>Hold concentrated fish oil during bad fat-intolerance weeks unless your clinician says otherwise</li><li>Focus on overall calories and protein first when underweight in a flare</li></ul>\n<h3>Wider options when remission allows more variety</h3>\n<ul class=\"blog-list\"><li>Salmon, sardines, trout, or other fatty fish a few times per week if desired and tolerated</li><li>Mediterranean-style plates with fish, olive oil, and produce you tolerate</li><li>Walnuts or ground flax if seeds/nuts are cleared (ALA source)</li><li>Discuss algae-based DHA if you avoid fish</li></ul>\n<p>Food first is the usual starting point. Supplements belong under clinician guidance, especially if you have kidney disease, take interacting medicines, or already use a multivitamin.</p>\n\n<h2>Supplements and safety notes</h2>\n<p>If a clinician recommends an omega-3 supplement, ask about EPA/DHA dose, brand quality, and timing with anticoagulants or surgery. More milligrams is not automatically more remission.</p>\n\n<h2>Labs and monitoring people ask about</h2>\n<ul class=\"blog-list\"><li>Routine omega-3 blood indexes are not required for most IBD visits</li><li>Triglycerides and heart risk panels may motivate fish intake for other reasons</li><li>Bring supplement bottles to visits so doses are visible</li></ul>\n<p>Log meals and symptoms in IBDPal so your team can connect intake patterns with labs. See <a href=\"/blog/how-ibdpal-nutrition-targets-work\">how IBDPal sets nutrition targets</a> and <a href=\"/blog/tracking-food-symptoms-ibdpal\">food symptom tracking</a>.</p>\n\n<h2>Common myths about omega-3 fats and IBD</h2>\n<ul class=\"blog-list\"><li><strong>Fish oil replaces biologics.</strong> False. Stay on prescribed IBD therapy.</li><li><strong>Plant omega-3 fully equals fish EPA/DHA for everyone.</strong> Conversion is limited; needs vary.</li><li><strong>Any supermarket oil labeled omega-3 is proven for colitis.</strong> Marketing outruns evidence for many products.</li></ul>\n\n<h2>Questions for your gastroenterologist or dietitian</h2>\n<ul class=\"blog-list\"><li>Does fish oil make sense for me given my medicines and stool pattern?</li><li>How can I add fish without triggering urgency?</li><li>Should I follow a Mediterranean-style pattern with an IBD dietitian?</li></ul>\n\n<h2>When to call sooner</h2>\n<p>Seek prompt care for severe weakness, irregular heartbeat symptoms, fainting, inability to keep fluids down, heavy bleeding, or fever with rapid decline. Nutrient articles cannot diagnose emergencies. See <a href=\"/flare-help\">flare help</a> and <a href=\"/blog/when-to-go-er-ibd\">when to go to the ER</a>.</p>\n\n<p>Related reading: <a href=\"/blog/anti-inflammatory-diet-ibd\">anti-inflammatory diet</a> · <a href=\"/blog/mediterranean-diet-autoimmune\">Mediterranean-style eating</a> · <a href=\"/blog/chicken-protein-ibd\">poultry protein alternatives</a>. Overview: <a href=\"/blog/micronutrients-ibd-deficiencies\">micronutrient deficiencies in IBD</a>. Hub: <a href=\"/ibd-nutrition\">IBD nutrition</a>.</p>"
+    }
+  ]
+}

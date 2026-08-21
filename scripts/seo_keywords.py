@@ -142,6 +142,30 @@ PATH_KEYWORDS: dict[str, str] = {
     "/blog/corn-ibd": (
         "corn Crohn's disease, corn ulcerative colitis, corn kernels stricture IBD"
     ),
+    "/blog/calcium-ibd": (
+        "calcium Crohn's disease, calcium ulcerative colitis bones, calcium IBD steroids"
+    ),
+    "/blog/zinc-ibd": (
+        "zinc deficiency Crohn's, zinc ulcerative colitis, zinc IBD diarrhea"
+    ),
+    "/blog/magnesium-ibd": (
+        "magnesium Crohn's disease, magnesium deficiency colitis, magnesium IBD cramps"
+    ),
+    "/blog/potassium-ibd": (
+        "potassium Crohn's diarrhea, low potassium colitis, potassium IBD electrolytes"
+    ),
+    "/blog/vitamin-c-ibd": (
+        "vitamin C Crohn's disease, vitamin C ulcerative colitis, ascorbic acid IBD"
+    ),
+    "/blog/folate-ibd": (
+        "folate Crohn's methotrexate, folic acid ulcerative colitis, folate IBD pregnancy"
+    ),
+    "/blog/vitamin-a-ibd": (
+        "vitamin A Crohn's disease, vitamin A deficiency colitis, beta-carotene IBD"
+    ),
+    "/blog/omega-3-ibd": (
+        "omega-3 Crohn's disease, fish oil ulcerative colitis, EPA DHA IBD"
+    ),
     "/glossary": "IBD glossary, Crohn's terms, colitis definitions, biologics IBD",
     "/impact": "IBDPal impact, IBD education nonprofit, MediVue mission, patient outcomes",
     "/founder": "IBDPal founder, IBDPal mission, IBD education, Crohn's colitis education",
@@ -232,6 +256,12 @@ SLUG_TOPIC_WORDS = {
     "onion": "onion IBD, onion FODMAP Crohn's, onion garlic colitis",
     "garlic": "garlic IBD, garlic FODMAP Crohn's, garlic colitis bloating",
     "corn": "corn IBD, corn Crohn's stricture, corn kernels colitis",
+    "calcium": "calcium IBD, calcium Crohn's bones, calcium colitis steroids",
+    "zinc": "zinc IBD, zinc deficiency Crohn's, zinc colitis",
+    "magnesium": "magnesium IBD, magnesium Crohn's, magnesium colitis cramps",
+    "potassium": "potassium IBD, potassium Crohn's diarrhea, potassium colitis",
+    "folate": "folate IBD, folic acid Crohn's methotrexate, folate colitis",
+    "omega": "omega-3 IBD, fish oil Crohn's, omega-3 colitis",
 }
 
 

@@ -10,6 +10,38 @@
   ],
   "rewrites": [
     {
+      "source": "/blog/calcium-ibd",
+      "destination": "/blogs/calcium-ibd.html"
+    },
+    {
+      "source": "/blog/zinc-ibd",
+      "destination": "/blogs/zinc-ibd.html"
+    },
+    {
+      "source": "/blog/magnesium-ibd",
+      "destination": "/blogs/magnesium-ibd.html"
+    },
+    {
+      "source": "/blog/potassium-ibd",
+      "destination": "/blogs/potassium-ibd.html"
+    },
+    {
+      "source": "/blog/vitamin-c-ibd",
+      "destination": "/blogs/vitamin-c-ibd.html"
+    },
+    {
+      "source": "/blog/folate-ibd",
+      "destination": "/blogs/folate-ibd.html"
+    },
+    {
+      "source": "/blog/vitamin-a-ibd",
+      "destination": "/blogs/vitamin-a-ibd.html"
+    },
+    {
+      "source": "/blog/omega-3-ibd",
+      "destination": "/blogs/omega-3-ibd.html"
+    },
+    {
       "source": "/blog/carrots-ibd",
       "destination": "/blogs/carrots-ibd.html"
     },
