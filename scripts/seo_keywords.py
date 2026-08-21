@@ -202,6 +202,12 @@ PATH_KEYWORDS: dict[str, str] = {
     "/blog/protein-shakes-ons-ibd": (
         "protein shake Crohn's, oral nutrition supplement colitis, ONS IBD calories"
     ),
+    "/stool-labs-decoder": (
+        "stool color IBD, Bristol stool chart, calprotectin high, black stool melena, floating stool Crohn's"
+    ),
+    "/tools/bristol-flare-checker": (
+        "Bristol stool chart interactive, flare checker IBD, stool type Crohn's colitis"
+    ),
     "/glossary": "IBD glossary, Crohn's terms, colitis definitions, biologics IBD",
     "/impact": "IBDPal impact, IBD education nonprofit, MediVue mission, patient outcomes",
     "/founder": "IBDPal founder, IBDPal mission, IBD education, Crohn's colitis education",

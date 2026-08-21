@@ -10,6 +10,150 @@
   ],
   "rewrites": [
     {
+      "source": "/stool-labs-decoder",
+      "destination": "/stool-labs-decoder.html"
+    },
+    {
+      "source": "/tools/bristol-flare-checker",
+      "destination": "/tools/bristol-flare-checker.html"
+    },
+    {
+      "source": "/blog/yellow-stool-ibd",
+      "destination": "/blogs/yellow-stool-ibd.html"
+    },
+    {
+      "source": "/blog/green-stool-ibd",
+      "destination": "/blogs/green-stool-ibd.html"
+    },
+    {
+      "source": "/blog/black-stool-ibd",
+      "destination": "/blogs/black-stool-ibd.html"
+    },
+    {
+      "source": "/blog/floating-stool-ibd",
+      "destination": "/blogs/floating-stool-ibd.html"
+    },
+    {
+      "source": "/blog/pencil-thin-stool-ibd",
+      "destination": "/blogs/pencil-thin-stool-ibd.html"
+    },
+    {
+      "source": "/blog/bristol-stool-chart-ibd",
+      "destination": "/blogs/bristol-stool-chart-ibd.html"
+    },
+    {
+      "source": "/blog/mucus-in-stool-ibd",
+      "destination": "/blogs/mucus-in-stool-ibd.html"
+    },
+    {
+      "source": "/blog/high-calprotectin-what-next",
+      "destination": "/blogs/high-calprotectin-what-next.html"
+    },
+    {
+      "source": "/blog/crp-normal-still-symptoms-ibd",
+      "destination": "/blogs/crp-normal-still-symptoms-ibd.html"
+    },
+    {
+      "source": "/blog/pale-clay-stool-ibd",
+      "destination": "/blogs/pale-clay-stool-ibd.html"
+    },
+    {
+      "source": "/blog/humira-fatigue-ibd",
+      "destination": "/blogs/humira-fatigue-ibd.html"
+    },
+    {
+      "source": "/blog/stelara-diet-ibd",
+      "destination": "/blogs/stelara-diet-ibd.html"
+    },
+    {
+      "source": "/blog/skyrizi-patient-questions-ibd",
+      "destination": "/blogs/skyrizi-patient-questions-ibd.html"
+    },
+    {
+      "source": "/blog/rinvoq-patient-questions-ibd",
+      "destination": "/blogs/rinvoq-patient-questions-ibd.html"
+    },
+    {
+      "source": "/blog/remicade-infusion-day-tips-ibd",
+      "destination": "/blogs/remicade-infusion-day-tips-ibd.html"
+    },
+    {
+      "source": "/blog/prednisone-diet-hunger-ibd",
+      "destination": "/blogs/prednisone-diet-hunger-ibd.html"
+    },
+    {
+      "source": "/blog/methotrexate-alcohol-folate-ibd",
+      "destination": "/blogs/methotrexate-alcohol-folate-ibd.html"
+    },
+    {
+      "source": "/blog/biologics-flying-travel-ibd",
+      "destination": "/blogs/biologics-flying-travel-ibd.html"
+    },
+    {
+      "source": "/blog/carnivore-diet-ibd-myths",
+      "destination": "/blogs/carnivore-diet-ibd-myths.html"
+    },
+    {
+      "source": "/blog/bone-broth-gut-healing-ibd",
+      "destination": "/blogs/bone-broth-gut-healing-ibd.html"
+    },
+    {
+      "source": "/blog/juice-cleanse-detox-ibd",
+      "destination": "/blogs/juice-cleanse-detox-ibd.html"
+    },
+    {
+      "source": "/blog/intermittent-fasting-ibd",
+      "destination": "/blogs/intermittent-fasting-ibd.html"
+    },
+    {
+      "source": "/blog/collagen-supplements-ibd",
+      "destination": "/blogs/collagen-supplements-ibd.html"
+    },
+    {
+      "source": "/blog/leaky-gut-protocol-ibd",
+      "destination": "/blogs/leaky-gut-protocol-ibd.html"
+    },
+    {
+      "source": "/blog/chapati-roti-ibd",
+      "destination": "/blogs/chapati-roti-ibd.html"
+    },
+    {
+      "source": "/blog/dal-lentils-ibd",
+      "destination": "/blogs/dal-lentils-ibd.html"
+    },
+    {
+      "source": "/blog/congee-rice-porridge-ibd",
+      "destination": "/blogs/congee-rice-porridge-ibd.html"
+    },
+    {
+      "source": "/blog/miso-soup-ibd",
+      "destination": "/blogs/miso-soup-ibd.html"
+    },
+    {
+      "source": "/blog/kimchi-fermented-ibd",
+      "destination": "/blogs/kimchi-fermented-ibd.html"
+    },
+    {
+      "source": "/blog/plantain-ibd",
+      "destination": "/blogs/plantain-ibd.html"
+    },
+    {
+      "source": "/blog/tortillas-ibd",
+      "destination": "/blogs/tortillas-ibd.html"
+    },
+    {
+      "source": "/blog/couscous-ibd",
+      "destination": "/blogs/couscous-ibd.html"
+    },
+    {
+      "source": "/blog/dates-ramadan-ibd",
+      "destination": "/blogs/dates-ramadan-ibd.html"
+    },
+    {
+      "source": "/blog/paneer-ibd",
+      "destination": "/blogs/paneer-ibd.html"
+    },
+    {
       "source": "/blog/oatmeal-ibd",
       "destination": "/blogs/oatmeal-ibd.html"
     },

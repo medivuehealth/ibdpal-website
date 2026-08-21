@@ -89,6 +89,67 @@
       ]
     },
     {
+      "slug": "stool-labs-decoder",
+      "h1": "Stool and labs decoder for IBD",
+      "title": "Stool Color, Bristol Chart & Labs Decoder | IBDPal",
+      "description": "Decode yellow, green, black, floating, or thin stools and high calprotectin or normal CRP with Crohn's or colitis education. Not medical advice.",
+      "intro": "Bathroom and lab searches are some of the most common IBD questions worldwide. Use these educational articles to prepare for clinic visits. They do not diagnose you.",
+      "keywords": [
+        "yellow stool IBD",
+        "Bristol stool chart",
+        "calprotectin high",
+        "black stool melena",
+        "floating stool",
+        "normal CRP still sick",
+        "mucus in stool",
+        "pencil thin stool"
+      ],
+      "sections": [
+        {
+          "heading": "Start with the interactive tool",
+          "paragraphs": [
+            "Practice describing stool form with our Bristol and flare checker in Tools Lab, then read the matching color or lab articles below."
+          ]
+        },
+        {
+          "heading": "How to use this hub",
+          "paragraphs": [
+            "Match what you saw (color, float, mucus, caliber) or what your lab PDF says (calprotectin, CRP). Bring a one-week log to your gastroenterologist. Seek urgent care for tarry black stools, heavy bleeding, fainting, or obstruction symptoms."
+          ]
+        }
+      ],
+      "guides": [
+        {
+          "url": "/tools/bristol-flare-checker",
+          "label": "Bristol stool and flare checker (interactive)"
+        },
+        {
+          "url": "/flare-help",
+          "label": "Flare help hub"
+        },
+        {
+          "url": "/guides/first-gastroenterology-appointment-ibd",
+          "label": "First GI appointment prep"
+        }
+      ],
+      "blog_slugs": [
+        "bristol-stool-chart-ibd",
+        "yellow-stool-ibd",
+        "green-stool-ibd",
+        "black-stool-ibd",
+        "floating-stool-ibd",
+        "pencil-thin-stool-ibd",
+        "mucus-in-stool-ibd",
+        "pale-clay-stool-ibd",
+        "high-calprotectin-what-next",
+        "crp-normal-still-symptoms-ibd",
+        "blood-in-stool-ibd-when-to-worry",
+        "reading-ibd-labs-calprotectin-crp",
+        "chronic-diarrhea-ibd-causes",
+        "constipation-ibd-causes"
+      ]
+    },
+    {
       "slug": "crohns-disease",
       "h1": "Crohn's disease resources",
       "title": "Crohn's Disease Hub | Symptoms, Diet & Support | IBDPal",

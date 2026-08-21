@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#FFE5DC">
+    <title>Bristol Stool Chart &amp; Flare Checker | IBDPal Tools</title>
+    <meta name="description" content="Interactive Bristol stool chart and flare symptom checklist for Crohn's and colitis. Education only. Not a diagnosis tool.">
+    <meta name="keywords" content="Bristol stool chart, Bristol scale IBD, flare checker, stool type Crohn's, colitis diarrhea scale">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.ibdpal.org/tools/bristol-flare-checker">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/site-layout-icn.css">
+    <link rel="stylesheet" href="/site-polish.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/IBDPal_Logo.png">
+    <meta property="og:title" content="Bristol Stool Chart &amp; Flare Checker | IBDPal">
+    <meta property="og:description" content="Practice describing stool form and flare clues before your GI visit. Education only.">
+    <meta property="og:url" content="https://www.ibdpal.org/tools/bristol-flare-checker">
+    <meta property="og:type" content="website">
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.ibdpal.org/#organization","name":"MediVue","url":"https://www.ibdpal.org/","logo":{"@type":"ImageObject","url":"https://www.ibdpal.org/IBDPal_Logo.png"},"sameAs":["https://apps.apple.com/app/ibdpal"]},{"@type":"WebSite","@id":"https://www.ibdpal.org/#website","name":"IBDPal","url":"https://www.ibdpal.org/","publisher":{"@id":"https://www.ibdpal.org/#organization"},"inLanguage":"en-US","about":[{"@type":"MedicalCondition","name":"Crohn's disease"},{"@type":"MedicalCondition","name":"Ulcerative colitis"},{"@type":"MedicalCondition","name":"Inflammatory bowel disease"}],"audience":{"@type":"PatientAudience","healthCondition":"Inflammatory bowel disease"}},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"IBDPal","item":"https://www.ibdpal.org/"},{"@type":"ListItem","position":2,"name":"Bristol and flare checker","item":"https://www.ibdpal.org/tools/bristol-flare-checker"}]},{"@type":"WebApplication","name":"Bristol stool and flare checker","url":"https://www.ibdpal.org/tools/bristol-flare-checker","applicationCategory":"HealthApplication","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Educational Bristol stool scale selector and flare symptom checklist for IBD patients."}]}</script>
+    <style>
+      .bristol-tool { max-width: 880px; margin: 0 auto; padding: 1.25rem 1rem 3rem; }
+      .bristol-grid { display: grid; gap: .75rem; grid-template-columns: 1fr; }
+      @media (min-width: 640px) { .bristol-grid { grid-template-columns: 1fr 1fr; } }
+      .bristol-pick { text-align: left; border: 1px solid #e7d2c8; background: #fffaf7; border-radius: 12px; padding: .85rem 1rem; cursor: pointer; }
+      .bristol-pick[aria-pressed="true"] { border-color: #c45c3e; background: #ffe8e0; box-shadow: 0 0 0 2px rgba(196,92,62,.15); }
+      .bristol-pick__n { display: inline-block; font-weight: 800; font-family: "Plus Jakarta Sans", sans-serif; margin-right: .5rem; color: #c45c3e; }
+      .bristol-pick__label { font-weight: 600; }
+      .bristol-pick__hint { display: block; margin-top: .25rem; color: #6b5b55; font-size: .92rem; }
+      .bristol-flags { display: grid; gap: .5rem; margin: 1rem 0; }
+      .bristol-flags label { display: flex; gap: .6rem; align-items: flex-start; background: #fff; border: 1px solid #eee; border-radius: 10px; padding: .65rem .8rem; }
+      .bristol-result { margin-top: 1.25rem; padding: 1rem 1.1rem; border-radius: 12px; background: #f4f7fb; border: 1px solid #d7e3f0; }
+      .bristol-result--urgent { background: #fff1f0; border-color: #f0b4ae; }
+      .bristol-links { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: .85rem; }
+      .bristol-links a { display: inline-block; padding: .45rem .75rem; border-radius: 999px; background: #fff; border: 1px solid #e7d2c8; text-decoration: none; color: #3b2f2a; font-size: .92rem; }
+    </style>
+</head>
+<body>
+<div class="app-container">
+
+        <header class="header">
+            <div class="header__inner">
+                <div class="logo">
+                    <a href="/" class="logo-brand" aria-label="IBDPal home">
+                        <img src="/IBDPal_Logo.png" alt="" class="logo-img" width="52" height="52" decoding="async">
+                    </a>
+                    <div class="logo-text">
+                        <p class="logo-name"><a href="/">IBDPal</a></p>
+                        <p class="tagline">Empowering IBD Patients</p>
+                    </div>
+                </div>
+                
+                <nav class="site-lang" aria-label="Language"><a href="/" class="site-lang__link site-lang__link--active" data-lang="en" hreflang="en" lang="en">English</a><span class="site-lang__sep" aria-hidden="true">|</span><a href="/es/recursos" class="site-lang__link" data-lang="es" hreflang="es" lang="es">Español</a></nav>
+            </div>
+        </header>
+
+
+        <nav class="tab-navigation" aria-label="Main">
+            <div class="tab-container">
+
+                <a href="https://www.ibdpal.org/" class="tab-button" data-tab="home">Home</a>
+                <a href="https://www.ibdpal.org/#guides" class="tab-button" data-tab="library">Patient Library</a>
+                <a href="https://www.ibdpal.org/#tools-lab" class="tab-button" data-tab="tools-lab">Tools Lab</a>
+                <a href="https://www.ibdpal.org/#recipe-ideas" class="tab-button" data-tab="recipe-ideas">Recipe Ideas</a>
+                <a href="https://www.ibdpal.org/#nutrition-targets" class="tab-button" data-tab="nutrition-targets">Nutrients</a>
+                <a href="https://www.ibdpal.org/#download" class="tab-button" data-tab="app">IBDPal App</a>
+                <a href="https://www.ibdpal.org/#community" class="tab-button" data-tab="community">Support</a>
+                <a href="https://www.ibdpal.org/#news" class="tab-button" data-tab="news">News</a>
+                <a href="https://www.ibdpal.org/#student-research" class="tab-button" data-tab="student-research">Student Research</a>
+                <a href="https://www.ibdpal.org/#about" class="tab-button" data-tab="about">About</a>
+
+            </div>
+        </nav>
+
+<main class="main-content">
+  <article class="bristol-tool support-section" data-bristol-flare-tool>
+    <p class="blog-back"><a href="/#tools-lab" class="blog-back-link">&larr; Tools Lab</a> · <a href="/stool-labs-decoder">Stool &amp; labs decoder</a></p>
+    <h1>Bristol stool chart &amp; flare checker</h1>
+    <p class="support-intro">Pick the Bristol type that best matches today, then check any warning symptoms. This tool helps you describe patterns for your care team. It does not diagnose Crohn's disease, ulcerative colitis, infection, or obstruction.</p>
+    <div class="tools-lab-guardrail" role="note"><strong>Education only.</strong> If you have heavy bleeding, black tarry stools, fainting, high fever on immunosuppression, or vomiting with severe bloating, seek urgent care now.</div>
+
+    <h2>1. Bristol stool type</h2>
+    <div class="bristol-grid" role="group" aria-label="Bristol stool types"><button type="button" class="bristol-pick" data-type="1" aria-pressed="false"><span class="bristol-pick__n">1</span><span class="bristol-pick__label">Separate hard lumps</span><span class="bristol-pick__hint">Often constipation range</span></button><button type="button" class="bristol-pick" data-type="2" aria-pressed="false"><span class="bristol-pick__n">2</span><span class="bristol-pick__label">Lumpy sausage</span><span class="bristol-pick__hint">Often constipation range</span></button><button type="button" class="bristol-pick" data-type="3" aria-pressed="false"><span class="bristol-pick__n">3</span><span class="bristol-pick__label">Sausage with cracks</span><span class="bristol-pick__hint">Toward formed</span></button><button type="button" class="bristol-pick" data-type="4" aria-pressed="false"><span class="bristol-pick__n">4</span><span class="bristol-pick__label">Smooth soft sausage</span><span class="bristol-pick__hint">Common quiet-goal form for many people</span></button><button type="button" class="bristol-pick" data-type="5" aria-pressed="false"><span class="bristol-pick__n">5</span><span class="bristol-pick__label">Soft blobs with clear edges</span><span class="bristol-pick__hint">Looser</span></button><button type="button" class="bristol-pick" data-type="6" aria-pressed="false"><span class="bristol-pick__n">6</span><span class="bristol-pick__label">Fluffy mushy pieces</span><span class="bristol-pick__hint">Diarrhea range; common in flares</span></button><button type="button" class="bristol-pick" data-type="7" aria-pressed="false"><span class="bristol-pick__n">7</span><span class="bristol-pick__label">Entirely liquid</span><span class="bristol-pick__hint">Diarrhea range; hydrate and call if severe</span></button></div>
+
+    <h2>2. Extra clues (optional)</h2>
+    <div class="bristol-flags">
+      <label><input type="checkbox" data-flag="blood"> Visible blood in stool</label>
+      <label><input type="checkbox" data-flag="black"> Black or tarry stool</label>
+      <label><input type="checkbox" data-flag="night"> Nighttime stools waking you</label>
+      <label><input type="checkbox" data-flag="fever"> Fever</label>
+      <label><input type="checkbox" data-flag="vomit"> Vomiting or cannot keep fluids down</label>
+      <label><input type="checkbox" data-flag="faint"> Dizziness or fainting</label>
+      <label><input type="checkbox" data-flag="obstruct"> Severe bloating with little or no gas or stool</label>
+    </div>
+
+    <div class="bristol-result" data-bristol-result aria-live="polite">
+      <p><strong>Select a Bristol type</strong> to see suggested wording and reading links.</p>
+    </div>
+
+    <h2>Learn more</h2>
+    <div class="bristol-links">
+      <a href="/blog/bristol-stool-chart-ibd">Bristol chart article</a>
+      <a href="/stool-labs-decoder">Stool &amp; labs decoder hub</a>
+      <a href="/blog/high-calprotectin-what-next">High calprotectin</a>
+      <a href="/blog/blood-in-stool-ibd-when-to-worry">Blood in stool</a>
+      <a href="/flare-help">Flare help</a>
+      <a href="/#download">IBDPal app</a>
+    </div>
+  </article>
+</main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="/#about" class="footer-link">About</a>
+                    <a href="/#news" class="footer-link">News</a>
+                    <a href="/#site-updates" class="footer-link">Site Updates</a>
+                    <a href="/insights" class="footer-link">Content Insights</a>
+                    <a href="/contact" class="footer-link">Contact</a>
+                    <a href="/library" class="footer-link">Content Library</a>
+                    <a href="/impact" class="footer-link">Impact</a>
+                    <a href="/newly-diagnosed" class="footer-link">Newly Diagnosed</a>
+                    <a href="/ibd-crohns-support" class="footer-link">IBD Crohn's Support</a>
+                    <a href="/resources" class="footer-link">Resource Library</a>
+                    <a href="/blog" class="footer-link">Articles</a>
+                    <a href="/guides" class="footer-link">Patient Guides</a>
+                    <a href="/privacy" class="footer-link">Privacy Policy</a>
+                    <a href="/support" class="footer-link">App Support</a>
+                    <a href="/terms" class="footer-link">Terms of Service</a>
+                </div>
+                <nav class="site-lang site-lang--footer" aria-label="Language"><a href="/" class="site-lang__link site-lang__link--active" data-lang="en" hreflang="en" lang="en">English</a><span class="site-lang__sep" aria-hidden="true">|</span><a href="/es/recursos" class="site-lang__link" data-lang="es" hreflang="es" lang="es">Español</a></nav>
+                <p><strong>IBDPal</strong> · MediVue nonprofit · Education only, not medical advice.</p>
+                <p>&copy; 2026 MediVue. All rights reserved.</p>
+            </div>
+        </footer>
+
+</div>
+
+    <script src="/site-config.js" defer></script>
+    <script src="/site-global.js" defer></script>
+    <script src="/analytics-config.js"></script>
+    <script src="/analytics.js" defer></script>
+
+<script>
+(function () {
+  var root = document.querySelector('[data-bristol-flare-tool]');
+  if (!root) return;
+  var result = root.querySelector('[data-bristol-result]');
+  var selected = null;
+  var copy = {
+    1: 'Type 1 (hard lumps) often sits in the constipation range. Note pain, straining, and whether opioids or dehydration play a role.',
+    2: 'Type 2 (lumpy) often sits in the constipation range. Track fluids and ask before adding bulky fiber if you have strictures.',
+    3: 'Type 3 is formed with cracks. Many people are moving toward a quieter pattern here.',
+    4: 'Type 4 (smooth sausage) is a common quiet-goal form, but remission is more than stool shape alone.',
+    5: 'Type 5 is softer. Note urgency, meals, and whether this is new for you.',
+    6: 'Type 6 (mushy) is diarrhea-range and common in flares or infections. Prioritize hydration and clinic contact if it persists.',
+    7: 'Type 7 (liquid) is diarrhea-range. Use oral rehydration guidance from your team and call for red-flag symptoms.'
+  };
+  function flags() {
+    return Array.prototype.slice.call(root.querySelectorAll('[data-flag]:checked')).map(function (el) { return el.getAttribute('data-flag'); });
+  }
+  function render() {
+    if (!selected) {
+      result.className = 'bristol-result';
+      result.innerHTML = '<p><strong>Select a Bristol type</strong> to see suggested wording and reading links.</p>';
+      return;
+    }
+    var f = flags();
+    var urgent = f.indexOf('black') >= 0 || f.indexOf('faint') >= 0 || f.indexOf('obstruct') >= 0 || (f.indexOf('blood') >= 0 && f.indexOf('fever') >= 0) || f.indexOf('vomit') >= 0;
+    result.className = 'bristol-result' + (urgent ? ' bristol-result--urgent' : '');
+    var lines = [];
+    lines.push('<p><strong>Suggested visit note:</strong> Bristol type ' + selected + '. ' + copy[selected] + '</p>');
+    if (f.length) {
+      lines.push('<p><strong>Checked clues:</strong> ' + f.join(', ') + '.</p>');
+    }
+    if (urgent) {
+      lines.push('<p><strong>Urgent pattern selected.</strong> This tool cannot triage emergencies. Contact your GI on-call line, urgent care, or emergency services now if you feel unsafe. Read <a href="/blog/when-to-go-er-ibd">when to go to the ER</a>.</p>');
+    } else if (selected >= 6) {
+      lines.push('<p>Consider reading <a href="/blog/electrolytes-flare-ibd">electrolytes during flares</a> and <a href="/flare-help">flare help</a>. Log today in IBDPal before your visit.</p>');
+    } else {
+      lines.push('<p>Compare with <a href="/stool-labs-decoder">stool and labs decoder</a> articles if color or labs also changed.</p>');
+    }
+    result.innerHTML = lines.join('');
+  }
+  root.querySelectorAll('.bristol-pick').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      selected = Number(btn.getAttribute('data-type'));
+      root.querySelectorAll('.bristol-pick').forEach(function (b) { b.setAttribute('aria-pressed', b === btn ? 'true' : 'false'); });
+      render();
+    });
+  });
+  root.querySelectorAll('[data-flag]').forEach(function (el) {
+    el.addEventListener('change', render);
+  });
+})();
+</script>
+</body>
+</html>
