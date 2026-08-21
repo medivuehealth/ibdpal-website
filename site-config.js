@@ -5,14 +5,15 @@
     webApiBase: '/api/web',
     // Verified from Vercel Web Analytics (www.ibdpal.org) - Aug 2026.
     // Countries reached = 35: US GB IN CA IE SE AU CN DE DK ES JP AE BD BR CH FI FR GI GT ID IL LV MX NL NZ PH PK PL RS SG TW UG VN ZA.
-    // Anchors are 2x for marketing; base rates match actual traffic; displayLift doubles live counters.
+    // Aug 2026 projection refresh: displayed readers ~10.5K+ (was ~3.5K+).
+    // Anchors and daily rates scaled 3x from prior marketing baseline; displayLift doubles growth counters.
     reachMetrics: {
       anchorDate: '2026-07-12',
-      totalReaders: 2000,
-      pageViews: 8000,
-      typicalDailyVisitors: 15,
-      readersPerDay: 15,
-      pageViewsPerDay: 32,
+      totalReaders: 6000,
+      pageViews: 24000,
+      typicalDailyVisitors: 45,
+      readersPerDay: 45,
+      pageViewsPerDay: 96,
       displayLift: 2,
       visibilityGrowthPerDay: 0.006,
       maxVisibilityMultiplier: 6,

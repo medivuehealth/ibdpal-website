@@ -401,11 +401,11 @@
     var cfg = window.IBDPAL_SITE_CONFIG && window.IBDPAL_SITE_CONFIG.reachMetrics;
     return {
       anchorDate: (cfg && cfg.anchorDate) || '2026-07-12',
-      totalReaders: (cfg && cfg.totalReaders) || 2000,
-      pageViews: (cfg && cfg.pageViews) || 8000,
-      typicalDailyVisitors: (cfg && cfg.typicalDailyVisitors) || 15,
-      readersPerDay: (cfg && cfg.readersPerDay) || 15,
-      pageViewsPerDay: (cfg && cfg.pageViewsPerDay) || 32,
+      totalReaders: (cfg && cfg.totalReaders) || 6000,
+      pageViews: (cfg && cfg.pageViews) || 24000,
+      typicalDailyVisitors: (cfg && cfg.typicalDailyVisitors) || 45,
+      readersPerDay: (cfg && cfg.readersPerDay) || 45,
+      pageViewsPerDay: (cfg && cfg.pageViewsPerDay) || 96,
       displayLift: (cfg && cfg.displayLift) || 2,
       visibilityGrowthPerDay: (cfg && cfg.visibilityGrowthPerDay) || 0.006,
       maxVisibilityMultiplier: (cfg && cfg.maxVisibilityMultiplier) || 6,
