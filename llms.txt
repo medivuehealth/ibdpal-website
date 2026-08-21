@@ -370,4 +370,5 @@
 - https://www.ibdpal.org/support/wisconsin
 - https://www.ibdpal.org/support/wyoming
 - https://www.ibdpal.org/teens-and-school
+- https://www.ibdpal.org/tools/bristol-flare-checker
 - https://www.ibdpal.org/ulcerative-colitis

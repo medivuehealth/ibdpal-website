@@ -17,13 +17,28 @@ from seo_keywords import keywords_for_path
 
 def organization_json() -> dict:
     return {
-        "@type": "Organization",
+        "@type": ["Organization", "NGO"],
         "@id": f"{SITE}/#organization",
         "name": "MediVue",
+        "alternateName": "IBDPal",
         "url": f"{SITE}/",
+        "email": "info@ibdpal.org",
         "logo": {
             "@type": "ImageObject",
             "url": f"{SITE}/IBDPal_Logo.png",
+        },
+        "description": (
+            "MediVue is a North Carolina nonprofit that builds free IBD patient education "
+            "and the IBDPal app for people living with Crohn's disease and ulcerative colitis."
+        ),
+        "nonprofitStatus": "Nonprofit501c3",
+        "foundingLocation": {
+            "@type": "Place",
+            "address": {
+                "@type": "PostalAddress",
+                "addressRegion": "NC",
+                "addressCountry": "US",
+            },
         },
         "sameAs": [
             "https://apps.apple.com/app/ibdpal",
@@ -45,6 +60,14 @@ def website_json() -> dict:
             {"@type": "MedicalCondition", "name": "Inflammatory bowel disease"},
         ],
         "audience": {"@type": "PatientAudience", "healthCondition": "Inflammatory bowel disease"},
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": f"{SITE}/resources?q={{search_term_string}}",
+            },
+            "query-input": "required name=search_term_string",
+        },
     }
 
 

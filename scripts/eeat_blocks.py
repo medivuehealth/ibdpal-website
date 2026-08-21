@@ -2,8 +2,8 @@
 from __future__ import annotations
 
 SITE = "https://www.ibdpal.org"
-REVIEW_ISO = "2026-06-16"
-REVIEW_DISPLAY = "June 2026"
+REVIEW_ISO = "2026-08-21"
+REVIEW_DISPLAY = "August 2026"
 
 
 def reviewed_by_org() -> dict:

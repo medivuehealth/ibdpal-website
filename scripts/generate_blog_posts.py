@@ -382,7 +382,7 @@ def render_post(p: dict) -> str:
                 "@type": "BreadcrumbList",
                 "itemListElement": [
                     {"@type": "ListItem", "position": 1, "name": "IBDPal", "item": "https://www.ibdpal.org/"},
-                    {"@type": "ListItem", "position": 2, "name": "Patient Library", "item": "https://www.ibdpal.org/#articles"},
+                    {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.ibdpal.org/blog"},
                     {"@type": "ListItem", "position": 3, "name": p["title"], "item": canonical},
                 ],
             },
@@ -391,7 +391,7 @@ def render_post(p: dict) -> str:
                 "headline": p["title"],
                 "description": p["description"],
                 "datePublished": p["date_iso"],
-                "dateModified": p["date_iso"],
+                "dateModified": p.get("date_modified") or p["date_iso"],
                 "author": {"@type": "Organization", "name": "MediVue", "url": "https://www.ibdpal.org/"},
                 "reviewedBy": reviewed_by_org(),
                 **page_review_props(),
@@ -399,7 +399,7 @@ def render_post(p: dict) -> str:
                     "@type": "Organization",
                     "name": "MediVue",
                     "url": "https://www.ibdpal.org/",
-                    "logo": {"@type": "ImageObject", "url": "https://www.ibdpal.org/favicon.ico"},
+                    "logo": {"@type": "ImageObject", "url": "https://www.ibdpal.org/IBDPal_Logo.png"},
                 },
                 "image": [f"https://www.ibdpal.org{thumb}"],
                 "mainEntityOfPage": {"@type": "WebPage", "@id": canonical},
@@ -434,6 +434,11 @@ def render_post(p: dict) -> str:
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <link rel="canonical" href="{canonical}">
     <link rel="amphtml" href="{amp_html}">
+    <link rel="alternate" hreflang="en" href="{canonical}">
+    <link rel="alternate" hreflang="x-default" href="{canonical}">
+    <link rel="alternate" type="text/plain" href="https://www.ibdpal.org/llms.txt" title="llms.txt">
+    <link rel="sitemap" type="application/xml" href="https://www.ibdpal.org/sitemap.xml">
+    <script src="/canonical-host.js"></script>
     <meta property="og:type" content="article">
     <meta property="og:url" content="{canonical}">
     <meta property="og:title" content="{html.escape(p["title"])} | IBDPal Blog">
@@ -445,6 +450,7 @@ def render_post(p: dict) -> str:
     <meta name="twitter:title" content="{html.escape(p["title"])} | IBDPal Blog">
     <meta name="twitter:description" content="{html.escape(p["description"])}">
     <meta property="article:published_time" content="{p["date_iso"]}">
+    <meta property="article:modified_time" content="{p.get("date_modified") or p["date_iso"]}">
     <script type="application/ld+json">{ld_json}</script>
 </head>
 <body data-blog-share-text="{html.escape(p["share"])}">

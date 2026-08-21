@@ -62,7 +62,7 @@ BLOG_VOTE_THUMB_DOWN_SVG = (
 
 BLOG_BACK_LINK_HTML = (
     '<p class="blog-back">'
-    '<a href="/#articles" class="blog-back-link">&larr; All posts</a></p>'
+    '<a href="/blog" class="blog-back-link">&larr; All posts</a></p>'
 )
 
 UPDATES_MONTHLY_SECTIONS_HTML = """

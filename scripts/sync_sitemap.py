@@ -23,6 +23,7 @@ SKIP_URL_PATHS = {
 
 HUB_SLUGS = {
     "ibd-nutrition",
+    "stool-labs-decoder",
     "crohns-disease",
     "ulcerative-colitis",
     "teens-and-school",
@@ -65,6 +66,9 @@ def path_to_url(rel: Path) -> str | None:
     if len(parts) == 2 and parts[0] == "blogs" and name.endswith(".html"):
         return f"/blog/{name[:-5]}"
 
+    if len(parts) == 2 and parts[0] == "tools" and name.endswith(".html"):
+        return f"/tools/{name[:-5]}"
+
     if len(parts) == 3 and parts[0] == "blogs" and parts[1] == "amp" and name.endswith(".html"):
         return None
 
@@ -104,6 +108,8 @@ def priority_for(path: str) -> float:
         return 0.92
     if path in {f"/{s}" for s in HUB_SLUGS} or path == "/faq":
         return 0.88
+    if path.startswith("/tools/"):
+        return 0.9
     if path.startswith("/blog/") and path.endswith("/amp"):
         return 0.6
     if path.startswith("/guides/") and path.endswith("/amp"):

@@ -21,6 +21,7 @@ sys.path.insert(0, sys_path)
 from site_nav import PAGE_SCRIPTS, TAB_NAV_HTML, site_header_html  # noqa: E402
 from site_footer import SITE_FOOTER_STATIC  # noqa: E402
 from seo_head import breadcrumb_json, organization_json, website_json  # noqa: E402
+from eeat_blocks import edu_disclaimer_en, hub_header_footnote_en  # noqa: E402
 
 BRISTOL = [
     (1, "Separate hard lumps", "Often constipation range"),
@@ -68,6 +69,9 @@ def page_html() -> str:
     <meta name="keywords" content="Bristol stool chart, Bristol scale IBD, flare checker, stool type Crohn's, colitis diarrhea scale">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="{SITE}/tools/bristol-flare-checker">
+    <link rel="alternate" hreflang="en" href="{SITE}/tools/bristol-flare-checker">
+    <link rel="alternate" hreflang="x-default" href="{SITE}/tools/bristol-flare-checker">
+    <script src="/canonical-host.js"></script>
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="/site-layout-icn.css">
     <link rel="stylesheet" href="/site-polish.css">
@@ -104,6 +108,8 @@ def page_html() -> str:
     <p class="blog-back"><a href="/#tools-lab" class="blog-back-link">&larr; Tools Lab</a> · <a href="/stool-labs-decoder">Stool &amp; labs decoder</a></p>
     <h1>Bristol stool chart &amp; flare checker</h1>
     <p class="support-intro">Pick the Bristol type that best matches today, then check any warning symptoms. This tool helps you describe patterns for your care team. It does not diagnose Crohn's disease, ulcerative colitis, infection, or obstruction.</p>
+    {edu_disclaimer_en()}
+    <p class="hub-review-footnote">{hub_header_footnote_en()}</p>
     <div class="tools-lab-guardrail" role="note"><strong>Education only.</strong> If you have heavy bleeding, black tarry stools, fainting, high fever on immunosuppression, or vomiting with severe bloating, seek urgent care now.</div>
 
     <h2>1. Bristol stool type</h2>

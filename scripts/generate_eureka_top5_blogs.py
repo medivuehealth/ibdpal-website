@@ -128,7 +128,7 @@ DECODER = [
     dict(
         slug="yellow-stool-ibd", title="Yellow Stool With IBD: Fat Malabsorption and Other Causes",
         description="Yellow stool with Crohn's or colitis: bile, fat malabsorption, diet, infection clues, and when to call your GI. Education only.",
-        category="Wellness · August 2026", date_display="August 31, 2026", date_iso="2026-08-31T16:00:00Z",
+        category="Wellness · August 2026", date_display="August 14, 2026", date_iso="2026-08-14T12:00:00Z",
         asset_dir="yellow-stool", resource_category="wellness",
         tags=["yellow stool", "steatorrhea", "bile", "malabsorption", "Crohn's", "colitis"],
         lead="Yellow stool searches spike after one startling bathroom trip. Color alone does not diagnose Crohn's or colitis, but it can hint at diet, bile flow, infection, or fat malabsorption worth discussing with your team.",
@@ -147,7 +147,7 @@ DECODER = [
     dict(
         slug="green-stool-ibd", title="Green Stool With IBD: Transit Time, Diet, and When to Worry",
         description="Green stool with Crohn's or colitis: bile, leafy greens, transit time, infections, and clinic questions. Education only.",
-        category="Wellness · August 2026", date_display="August 31, 2026", date_iso="2026-08-31T17:00:00Z",
+        category="Wellness · August 2026", date_display="August 14, 2026", date_iso="2026-08-14T13:00:00Z",
         asset_dir="green-stool", resource_category="wellness",
         tags=["green stool", "bile", "transit", "diarrhea", "Crohn's", "colitis"],
         lead="Green stool looks alarming in photos online. Often it reflects bile that moved too quickly to turn brown, or green foods and dyes. With IBD, pair color notes with urgency and blood.",
@@ -166,7 +166,7 @@ DECODER = [
     dict(
         slug="black-stool-ibd", title="Black Stool With IBD: Melena, Iron, Pepto, and Red Flags",
         description="Black stool with Crohn's or colitis: melena vs iron or bismuth, when it is an emergency, and clinic questions. Education only.",
-        category="Wellness · August 2026", date_display="August 31, 2026", date_iso="2026-08-31T18:00:00Z",
+        category="Wellness · August 2026", date_display="August 14, 2026", date_iso="2026-08-14T14:00:00Z",
         asset_dir="black-stool", resource_category="wellness",
         tags=["black stool", "melena", "iron", "bismuth", "bleeding", "Crohn's", "colitis"],
         lead="Black, tarry, foul-smelling stool (melena) can signal digested upper GI bleeding and needs urgent medical attention. Black stool can also come from iron pills or bismuth (Pepto-Bismol). Knowing the difference matters.",
@@ -185,7 +185,7 @@ DECODER = [
     dict(
         slug="floating-stool-ibd", title="Floating Stool With IBD: Gas, Fat, and Malabsorption Clues",
         description="Floating stools with Crohn's or colitis: gas vs fat malabsorption, odor and oiliness, and when to ask your GI. Education only.",
-        category="Wellness · August 2026", date_display="September 1, 2026", date_iso="2026-09-01T12:00:00Z",
+        category="Wellness · August 2026", date_display="August 14, 2026", date_iso="2026-08-14T15:00:00Z",
         asset_dir="floating-stool", resource_category="wellness",
         tags=["floating stool", "steatorrhea", "gas", "malabsorption", "Crohn's", "colitis"],
         lead="Floating stools are a classic internet worry. Often they reflect gas content. Persistent floating plus greasy film, weight loss, or foul odor can hint at fat malabsorption worth clinic review.",
@@ -204,7 +204,7 @@ DECODER = [
     dict(
         slug="pencil-thin-stool-ibd", title="Pencil-Thin Stool With IBD: Strictures, Constipation, and Red Flags",
         description="Pencil-thin stools with Crohn's or colitis: stricture concerns, constipation, when imaging is discussed, and clinic questions. Education only.",
-        category="Wellness · August 2026", date_display="September 1, 2026", date_iso="2026-09-01T14:00:00Z",
+        category="Wellness · August 2026", date_display="August 14, 2026", date_iso="2026-08-14T16:00:00Z",
         asset_dir="pencil-stool", resource_category="wellness",
         tags=["pencil thin stool", "stricture", "narrow stool", "obstruction", "Crohn's", "colitis"],
         lead="Pencil-thin or ribbon stools worry people because online lists mention obstruction. Occasional thin stools happen with constipation. Persistent change, especially with pain, vomiting, or known stricturing Crohn's, needs prompt clinical advice.",
@@ -223,7 +223,7 @@ DECODER = [
     dict(
         slug="bristol-stool-chart-ibd", title="Bristol Stool Chart for IBD: How to Describe Stools to Your GI",
         description="Bristol stool scale for Crohn's and colitis: types 1 to 7, how to log flares, and how the chart helps clinic visits. Education only.",
-        category="Wellness · August 2026", date_display="September 1, 2026", date_iso="2026-09-01T16:00:00Z",
+        category="Wellness · August 2026", date_display="August 14, 2026", date_iso="2026-08-14T17:00:00Z",
         asset_dir="bristol-ibd", resource_category="wellness",
         tags=["Bristol stool chart", "Bristol scale", "stool type", "diarrhea", "constipation", "Crohn's", "colitis"],
         lead="The Bristol Stool Chart turns awkward bathroom descriptions into numbers clinicians understand. For IBD, types 6 to 7 often track flares, while type 1 to 2 may appear with pain meds, dehydration, or distal disease patterns.",
@@ -242,7 +242,7 @@ DECODER = [
     dict(
         slug="mucus-in-stool-ibd", title="Mucus in Stool With IBD: Inflammation, IBS Overlap, and Tracking",
         description="Mucus in stool with Crohn's or colitis: inflammation clues, IBS overlap, infection, and when to call your clinic. Education only.",
-        category="Wellness · August 2026", date_display="September 1, 2026", date_iso="2026-09-01T18:00:00Z",
+        category="Wellness · August 2026", date_display="August 14, 2026", date_iso="2026-08-14T18:00:00Z",
         asset_dir="mucus-stool", resource_category="wellness",
         tags=["mucus in stool", "mucus", "urgency", "inflammation", "Crohn's", "colitis"],
         lead="Mucus can look like clear jelly or white strings in the toilet. Small amounts can be normal. Larger amounts with blood, urgency, or tenesmus often travel with active colitis or rectal inflammation.",
@@ -261,7 +261,7 @@ DECODER = [
     dict(
         slug="high-calprotectin-what-next", title="High Calprotectin: What It Means and What Happens Next",
         description="High fecal calprotectin with IBD: inflammation signal, false positives, scopes, and questions for your GI. Education only.",
-        category="Wellness · August 2026", date_display="September 2, 2026", date_iso="2026-09-02T12:00:00Z",
+        category="Wellness · August 2026", date_display="August 14, 2026", date_iso="2026-08-14T19:00:00Z",
         asset_dir="calprotectin-high", resource_category="wellness",
         tags=["calprotectin", "fecal calprotectin", "labs", "inflammation", "Crohn's", "colitis"],
         lead="A high fecal calprotectin result usually points toward intestinal inflammation, but it is not a complete diagnosis by itself. NSAIDs, infections, and sampling issues can raise values too.",
@@ -280,7 +280,7 @@ DECODER = [
     dict(
         slug="crp-normal-still-symptoms-ibd", title="Normal CRP but Still Sick With IBD: Why Labs Can Lag Symptoms",
         description="Normal CRP with ongoing IBD symptoms: limitations of blood tests, calprotectin, scopes, and advocacy tips. Education only.",
-        category="Wellness · August 2026", date_display="September 2, 2026", date_iso="2026-09-02T14:00:00Z",
+        category="Wellness · August 2026", date_display="August 14, 2026", date_iso="2026-08-14T20:00:00Z",
         asset_dir="crp-normal", resource_category="wellness",
         tags=["CRP", "normal CRP", "labs", "symptoms", "inflammation", "Crohn's", "colitis"],
         lead="Few results feel more invalidating than 'your CRP is normal' when you still have urgency, pain, or fatigue. CRP is useful, not omniscient. Some people with active IBD have modest blood marker changes.",
@@ -299,7 +299,7 @@ DECODER = [
     dict(
         slug="pale-clay-stool-ibd", title="Pale or Clay-Colored Stool: Bile Flow Questions With IBD",
         description="Pale or clay-colored stools: bile obstruction clues, meds, when jaundice matters, and IBD-related questions. Education only.",
-        category="Wellness · August 2026", date_display="September 2, 2026", date_iso="2026-09-02T16:00:00Z",
+        category="Wellness · August 2026", date_display="August 14, 2026", date_iso="2026-08-14T21:00:00Z",
         asset_dir="pale-stool", resource_category="wellness",
         tags=["pale stool", "clay colored stool", "bile", "jaundice", "PSC", "Crohn's", "colitis"],
         lead="Pale, clay, or putty-colored stools can mean less bile reaching the intestine. That pattern with dark urine or yellow eyes needs prompt medical evaluation. UC patients also hear about PSC risk in education materials.",

@@ -28,7 +28,7 @@ def guide_urls() -> list[str]:
 
 def hub_urls() -> list[str]:
     data = json.loads(DATA.read_text(encoding="utf-8"))
-    urls = [f"{SITE}/blog", f"{SITE}/faq", f"{SITE}/support"]
+    urls = [f"{SITE}/blog", f"{SITE}/faq", f"{SITE}/support", f"{SITE}/tools/bristol-flare-checker"]
     for hub in data.get("hubs", []):
         urls.append(f"{SITE}/{hub['slug']}")
     for p in SUPPORT.glob("*.html"):

@@ -63,6 +63,7 @@ python scripts/patch_blog_jsonld.py
 | `/` (hub) | `/es/recursos` |
 | `/newly-diagnosed` | `/es/recien-diagnosticado` |
 | `/ibd-nutrition` | `/es/nutricion-eii` |
+| `/stool-labs-decoder` | (EN hub; tool: `/tools/bristol-flare-checker`) |
 | `/crohns-disease` | `/es/enfermedad-crohn` |
 | `/ulcerative-colitis` | `/es/colitis-ulcerosa` |
 | `/teens-and-school` | `/es/adolescentes-escuela` |
@@ -131,6 +132,8 @@ Crawlable hub pages (not hash tabs):
 |-----|---------|
 | `/blog` | Full blog index by category |
 | `/ibd-nutrition` | Nutrition & diet cluster |
+| `/stool-labs-decoder` | Stool color, Bristol chart & labs cluster |
+| `/tools/bristol-flare-checker` | Interactive Bristol + flare checker |
 | `/crohns-disease` | Crohn's resources cluster |
 | `/ulcerative-colitis` | UC resources cluster |
 | `/teens-and-school` | Teen & high school cluster |

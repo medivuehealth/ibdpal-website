@@ -3,7 +3,7 @@ MYTHS = [
     dict(
         slug="carnivore-diet-ibd-myths", title="Carnivore Diet and IBD: Myths, Risks, and What Evidence Says",
         description="Carnivore diet myths with Crohn's or colitis: protein claims, fiber absence, nutrient gaps, and clinic questions. Education only.",
-        category="Nutrition · September 2026", date_display="September 4, 2026", date_iso="2026-09-04T18:00:00Z",
+        category="Nutrition · August 2026", date_display="August 15, 2026", date_iso="2026-08-15T06:00:00Z",
         asset_dir="carnivore-myth", resource_category="nutrition",
         tags=["carnivore diet", "meat only", "myths", "Crohn's", "colitis", "nutrition"],
         lead="Carnivore diet content often promises to heal IBD by cutting every plant food. Inflammation control still belongs with your gastroenterology plan. This page separates marketing slogans from practical nutrition questions.",
@@ -22,7 +22,7 @@ MYTHS = [
     dict(
         slug="bone-broth-gut-healing-ibd", title="Bone Broth and IBD: Gut Healing Claims Versus Reality",
         description="Bone broth for Crohn's or colitis: collagen marketing, hydration value, sodium caveats, and dietitian questions. Education only.",
-        category="Nutrition · September 2026", date_display="September 5, 2026", date_iso="2026-09-05T12:00:00Z",
+        category="Nutrition · August 2026", date_display="August 15, 2026", date_iso="2026-08-15T07:00:00Z",
         asset_dir="bone-broth", resource_category="nutrition",
         tags=["bone broth", "collagen", "gut healing", "myths", "Crohn's", "colitis", "nutrition"],
         lead="Bone broth is marketed as a gut sealant for IBD. Warm broth can be soothing and hydrating for some people. It is not a biologic, steroid, or endoscopy-proven healing protocol.",
@@ -41,7 +41,7 @@ MYTHS = [
     dict(
         slug="juice-cleanse-detox-ibd", title="Juice Cleanses and Detox Diets With IBD: Why They Backfire",
         description="Juice cleanses and detox myths with Crohn's or colitis: sugar load, fiber loss, malnutrition risk, and safer hydration. Education only.",
-        category="Nutrition · September 2026", date_display="September 5, 2026", date_iso="2026-09-05T14:00:00Z",
+        category="Nutrition · August 2026", date_display="August 15, 2026", date_iso="2026-08-15T08:00:00Z",
         asset_dir="juice-detox", resource_category="nutrition",
         tags=["juice cleanse", "detox", "myths", "Crohn's", "colitis", "nutrition"],
         lead="Detox juice searches spike whenever IBD symptoms feel out of control. Your liver and kidneys already handle detoxification. Multi-day juice-only plans can worsen energy, diarrhea, and nutrient gaps.",
@@ -60,7 +60,7 @@ MYTHS = [
     dict(
         slug="intermittent-fasting-ibd", title="Intermittent Fasting and IBD: Hype, Hunger, and Flare Timing",
         description="Intermittent fasting with Crohn's or colitis: meal windows, underweight risks, medication timing, and clinic questions. Education only.",
-        category="Nutrition · September 2026", date_display="September 5, 2026", date_iso="2026-09-05T16:00:00Z",
+        category="Nutrition · August 2026", date_display="August 15, 2026", date_iso="2026-08-15T09:00:00Z",
         asset_dir="if-fasting", resource_category="nutrition",
         tags=["intermittent fasting", "IF", "meal timing", "myths", "Crohn's", "colitis", "nutrition"],
         lead="Intermittent fasting is popular for metabolic health headlines. With IBD, long fasting windows can clash with underweight status, steroid hunger, and medicine schedules. Timing food is not the same as treating inflammation.",
@@ -79,7 +79,7 @@ MYTHS = [
     dict(
         slug="collagen-supplements-ibd", title="Collagen Supplements and IBD: What Marketing Omits",
         description="Collagen peptides for Crohn's or colitis: joint and skin claims, gut healing ads, protein context, and clinic questions. Education only.",
-        category="Nutrition · September 2026", date_display="September 6, 2026", date_iso="2026-09-06T12:00:00Z",
+        category="Nutrition · August 2026", date_display="August 15, 2026", date_iso="2026-08-15T10:00:00Z",
         asset_dir="collagen-ibd", resource_category="nutrition",
         tags=["collagen", "supplements", "peptides", "myths", "Crohn's", "colitis", "nutrition"],
         lead="Collagen powders are sold as gut lining repair for IBD. Collagen is a protein source some people tolerate in shakes. Ads that promise to reverse Crohn's or UC overstate what a supplement can do.",
@@ -98,7 +98,7 @@ MYTHS = [
     dict(
         slug="leaky-gut-protocol-ibd", title="Leaky Gut Protocols and IBD: Separating Science From Sales Pages",
         description="Leaky gut protocols with Crohn's or colitis: permeability science, supplement stacks, elimination extremes, and GI questions. Education only.",
-        category="Nutrition · September 2026", date_display="September 6, 2026", date_iso="2026-09-06T14:00:00Z",
+        category="Nutrition · August 2026", date_display="August 15, 2026", date_iso="2026-08-15T11:00:00Z",
         asset_dir="leaky-gut", resource_category="nutrition",
         tags=["leaky gut", "intestinal permeability", "protocol", "myths", "Crohn's", "colitis", "nutrition"],
         lead="Leaky gut is a popular label for intestinal permeability. Crohn's and ulcerative colitis involve real barrier and immune problems that specialists already treat. Multi-step online protocols with long supplement lists are not a substitute for IBD guidelines.",

@@ -254,6 +254,12 @@
       apply();
       trackSearch();
     });
+    try {
+      var initialQ = new URLSearchParams(window.location.search).get('q');
+      if (initialQ && search) {
+        search.value = initialQ;
+      }
+    } catch (e) {}
     loadSuggestions();
     apply();
   }

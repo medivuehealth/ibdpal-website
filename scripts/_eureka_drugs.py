@@ -3,7 +3,7 @@ DRUGS = [
     dict(
         slug="humira-fatigue-ibd", title="Humira (Adalimumab) and Fatigue: What Patients Ask",
         description="Humira and fatigue with Crohn's or colitis: injection timing, anemia, infection signs, and clinic questions. Education only.",
-        category="Treatment · September 2026", date_display="September 2, 2026", date_iso="2026-09-02T18:00:00Z",
+        category="Treatment · August 2026", date_display="August 14, 2026", date_iso="2026-08-14T22:00:00Z",
         asset_dir="humira-fatigue", resource_category="treatment",
         tags=["Humira", "adalimumab", "fatigue", "biologic", "Crohn's", "colitis"],
         lead="Searches for Humira fatigue are extremely common. Tiredness can come from active IBD, anemia, sleep loss, infection, or adjustment periods after starting a biologic. This page helps you prepare questions, not change doses on your own.",
@@ -22,7 +22,7 @@ DRUGS = [
     dict(
         slug="stelara-diet-ibd", title="Stelara (Ustekinumab) and Diet: Eating While on Therapy",
         description="Stelara and diet with IBD: what to eat during induction, alcohol questions, nutrition goals, and clinic tips. Education only.",
-        category="Treatment · September 2026", date_display="September 3, 2026", date_iso="2026-09-03T12:00:00Z",
+        category="Treatment · August 2026", date_display="August 14, 2026", date_iso="2026-08-14T23:00:00Z",
         asset_dir="stelara-diet", resource_category="treatment",
         tags=["Stelara", "ustekinumab", "diet", "biologic", "nutrition", "Crohn's", "colitis"],
         lead="People starting Stelara often ask what they can eat. No universal Stelara diet exists. Food still follows flare versus remission rules while the medicine works on inflammation.",
@@ -41,7 +41,7 @@ DRUGS = [
     dict(
         slug="skyrizi-patient-questions-ibd", title="Skyrizi (Risankizumab) for IBD: Patient Questions Beyond the Ad",
         description="Skyrizi for Crohn's: what patients ask about dosing schedule, fatigue, infections, labs, and clinic follow-up. Education only.",
-        category="Treatment · September 2026", date_display="September 3, 2026", date_iso="2026-09-03T14:00:00Z",
+        category="Treatment · August 2026", date_display="August 15, 2026", date_iso="2026-08-15T00:00:00Z",
         asset_dir="skyrizi-ibd", resource_category="treatment",
         tags=["Skyrizi", "risankizumab", "biologic", "IL-23", "Crohn's"],
         lead="Skyrizi searches rose as IL-23 medicines expanded in IBD care. Ads do not answer bathroom logistics, fatigue, or infection rules. Use this as a question list for your gastroenterologist.",
@@ -60,7 +60,7 @@ DRUGS = [
     dict(
         slug="rinvoq-patient-questions-ibd", title="Rinvoq (Upadacitinib) and IBD: Patient Questions on JAK Therapy",
         description="Rinvoq for ulcerative colitis or Crohn's contexts: pills vs biologics, infection and lab monitoring questions, education only.",
-        category="Treatment · September 2026", date_display="September 3, 2026", date_iso="2026-09-03T16:00:00Z",
+        category="Treatment · August 2026", date_display="August 15, 2026", date_iso="2026-08-15T01:00:00Z",
         asset_dir="rinvoq-ibd", resource_category="treatment",
         tags=["Rinvoq", "upadacitinib", "JAK inhibitor", "ulcerative colitis", "Crohn's"],
         lead="Rinvoq is an oral JAK inhibitor discussed in IBD clinics. Patients search side effects, labs, and whether pills are safer than infusions. Safety monitoring is part of the therapy, not optional fine print.",
@@ -79,7 +79,7 @@ DRUGS = [
     dict(
         slug="remicade-infusion-day-tips-ibd", title="Remicade (Infliximab) Infusion Day: Patient Tips That Actually Help",
         description="Remicade infusion day tips for IBD: timing, packing, premed questions, afterward fatigue, and clinic logistics. Education only.",
-        category="Treatment · September 2026", date_display="September 3, 2026", date_iso="2026-09-03T18:00:00Z",
+        category="Treatment · August 2026", date_display="August 15, 2026", date_iso="2026-08-15T02:00:00Z",
         asset_dir="remicade-tips", resource_category="treatment",
         tags=["Remicade", "infliximab", "infusion", "biologic", "Crohn's", "colitis"],
         lead="Remicade infusion days are a logistics puzzle: parking, IV time, work notes, and post-infusion fatigue. Pair this with our general infusion-day guide for packing lists.",
@@ -98,7 +98,7 @@ DRUGS = [
     dict(
         slug="prednisone-diet-hunger-ibd", title="Prednisone Hunger and Diet With IBD: Surviving Steroid Appetite",
         description="Prednisone hunger with Crohn's or colitis: why appetite surges, gentler food swaps, blood sugar notes, and taper questions. Education only.",
-        category="Treatment · September 2026", date_display="September 4, 2026", date_iso="2026-09-04T12:00:00Z",
+        category="Treatment · August 2026", date_display="August 15, 2026", date_iso="2026-08-15T03:00:00Z",
         asset_dir="prednisone-diet", resource_category="treatment",
         tags=["prednisone", "steroids", "hunger", "diet", "weight", "Crohn's", "colitis"],
         lead="Prednisone can turn appetite into a freight train while your gut is still healing. The goal is enough protein and gentler carbs without living on pure sugar, plus a clear taper plan from your clinician.",
@@ -117,7 +117,7 @@ DRUGS = [
     dict(
         slug="methotrexate-alcohol-folate-ibd", title="Methotrexate, Alcohol, and Folate in IBD: Patient Safety Basics",
         description="Methotrexate with IBD: alcohol questions, folic acid schedules, liver labs, and pregnancy warnings. Education only.",
-        category="Treatment · September 2026", date_display="September 4, 2026", date_iso="2026-09-04T14:00:00Z",
+        category="Treatment · August 2026", date_display="August 15, 2026", date_iso="2026-08-15T04:00:00Z",
         asset_dir="mtx-alcohol", resource_category="treatment",
         tags=["methotrexate", "alcohol", "folate", "folic acid", "liver", "Crohn's", "colitis"],
         lead="Methotrexate searches often pair with alcohol and folate. Liver monitoring, infection rules, and pregnancy prevention are core safety topics your rheumatology or GI team will personalize.",
@@ -136,7 +136,7 @@ DRUGS = [
     dict(
         slug="biologics-flying-travel-ibd", title="Flying With Biologics: Coolers, Letters, and Airport Tips for IBD",
         description="Traveling by air with IBD biologics: cooler packs, TSA letters, time zones, and infusion timing. Education only.",
-        category="Treatment · September 2026", date_display="September 4, 2026", date_iso="2026-09-04T16:00:00Z",
+        category="Treatment · August 2026", date_display="August 15, 2026", date_iso="2026-08-15T05:00:00Z",
         asset_dir="biologics-travel", resource_category="treatment",
         tags=["biologics", "travel", "flying", "airport", "cooler", "Crohn's", "colitis"],
         lead="Flying with injectables or planning infusions around trips is a top global search for IBD travelers. A little paperwork prevents a lot of panic at security.",
