@@ -10,6 +10,54 @@
   ],
   "rewrites": [
     {
+      "source": "/blog/banana-ibd-crohns-colitis",
+      "destination": "/blogs/banana-ibd-crohns-colitis.html"
+    },
+    {
+      "source": "/blog/apple-ibd-cooked-vs-raw",
+      "destination": "/blogs/apple-ibd-cooked-vs-raw.html"
+    },
+    {
+      "source": "/blog/blueberries-ibd",
+      "destination": "/blogs/blueberries-ibd.html"
+    },
+    {
+      "source": "/blog/strawberries-ibd",
+      "destination": "/blogs/strawberries-ibd.html"
+    },
+    {
+      "source": "/blog/melon-ibd",
+      "destination": "/blogs/melon-ibd.html"
+    },
+    {
+      "source": "/blog/avocado-ibd",
+      "destination": "/blogs/avocado-ibd.html"
+    },
+    {
+      "source": "/blog/oranges-citrus-ibd",
+      "destination": "/blogs/oranges-citrus-ibd.html"
+    },
+    {
+      "source": "/blog/grapes-ibd",
+      "destination": "/blogs/grapes-ibd.html"
+    },
+    {
+      "source": "/blog/chicken-protein-ibd",
+      "destination": "/blogs/chicken-protein-ibd.html"
+    },
+    {
+      "source": "/blog/eggs-ibd-nutrition",
+      "destination": "/blogs/eggs-ibd-nutrition.html"
+    },
+    {
+      "source": "/blog/white-rice-ibd-flare",
+      "destination": "/blogs/white-rice-ibd-flare.html"
+    },
+    {
+      "source": "/blog/turkey-protein-ibd",
+      "destination": "/blogs/turkey-protein-ibd.html"
+    },
+    {
       "source": "/blog/fiber-prebiotics-enteral-feeds-microbiome",
       "destination": "/blogs/fiber-prebiotics-enteral-feeds-microbiome.html"
     },

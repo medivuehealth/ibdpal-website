@@ -36,12 +36,17 @@
 - https://www.ibdpal.org/blog/anemia-iron-deficiency-ibd
 - https://www.ibdpal.org/blog/ankylosing-spondylitis-ibd
 - https://www.ibdpal.org/blog/anti-inflammatory-diet-ibd
+- https://www.ibdpal.org/blog/apple-ibd-cooked-vs-raw
 - https://www.ibdpal.org/blog/autoimmune-diet-myths
 - https://www.ibdpal.org/blog/autoimmune-hepatitis-ibd
+- https://www.ibdpal.org/blog/avocado-ibd
+- https://www.ibdpal.org/blog/banana-ibd-crohns-colitis
 - https://www.ibdpal.org/blog/bathroom-urgency-anxiety-ibd
 - https://www.ibdpal.org/blog/best-foods-crohns-flare
 - https://www.ibdpal.org/blog/blood-in-stool-ibd-when-to-worry
+- https://www.ibdpal.org/blog/blueberries-ibd
 - https://www.ibdpal.org/blog/celiac-ibd-screening
+- https://www.ibdpal.org/blog/chicken-protein-ibd
 - https://www.ibdpal.org/blog/chronic-diarrhea-ibd-causes
 - https://www.ibdpal.org/blog/college-with-ibd
 - https://www.ibdpal.org/blog/colonoscopy-prep-ibd
@@ -52,6 +57,7 @@
 - https://www.ibdpal.org/blog/dehydration-ibd-warning-signs
 - https://www.ibdpal.org/blog/depression-anxiety-ibd
 - https://www.ibdpal.org/blog/dining-out-ibd-restaurants
+- https://www.ibdpal.org/blog/eggs-ibd-nutrition
 - https://www.ibdpal.org/blog/electrolytes-flare-ibd
 - https://www.ibdpal.org/blog/enteral-nutrition-ibd
 - https://www.ibdpal.org/blog/entyvio-patient-guide-ibd
@@ -68,6 +74,7 @@
 - https://www.ibdpal.org/blog/free-government-ibd-research-sources
 - https://www.ibdpal.org/blog/gas-bloating-ibd
 - https://www.ibdpal.org/blog/gluten-wheat-ibd
+- https://www.ibdpal.org/blog/grapes-ibd
 - https://www.ibdpal.org/blog/gut-barrier-dysbiosis-inflammation-ibd
 - https://www.ibdpal.org/blog/gut-microbiome-autoimmune
 - https://www.ibdpal.org/blog/hashimotos-thyroid-autoimmune
@@ -111,6 +118,7 @@
 - https://www.ibdpal.org/blog/low-residue-diet-flare
 - https://www.ibdpal.org/blog/lupus-autoimmune-basics
 - https://www.ibdpal.org/blog/mediterranean-diet-autoimmune
+- https://www.ibdpal.org/blog/melon-ibd
 - https://www.ibdpal.org/blog/mesalamine-5-asa-ibd
 - https://www.ibdpal.org/blog/micronutrients-ibd-deficiencies
 - https://www.ibdpal.org/blog/mucus-urgency-tenesmus-ibd
@@ -118,6 +126,7 @@
 - https://www.ibdpal.org/blog/newly-diagnosed-first-30-days
 - https://www.ibdpal.org/blog/nsaids-ibd-risk
 - https://www.ibdpal.org/blog/oral-canker-sores-ibd
+- https://www.ibdpal.org/blog/oranges-citrus-ibd
 - https://www.ibdpal.org/blog/osteoporosis-bone-health-ibd
 - https://www.ibdpal.org/blog/ostomy-basics-ibd
 - https://www.ibdpal.org/blog/partner-caregiver-ibd
@@ -138,6 +147,7 @@
 - https://www.ibdpal.org/blog/starting-biologic-first-12-weeks
 - https://www.ibdpal.org/blog/steroid-taper-what-to-expect-ibd
 - https://www.ibdpal.org/blog/steroids-prednisone-ibd
+- https://www.ibdpal.org/blog/strawberries-ibd
 - https://www.ibdpal.org/blog/stress-autoimmune-symptoms
 - https://www.ibdpal.org/blog/stress-coping-strategies-ibd
 - https://www.ibdpal.org/blog/stress-emotional-wellness-ibd
@@ -147,6 +157,7 @@
 - https://www.ibdpal.org/blog/thrombosis-clot-risk-ibd
 - https://www.ibdpal.org/blog/tracking-food-symptoms-ibdpal
 - https://www.ibdpal.org/blog/travel-with-ibd
+- https://www.ibdpal.org/blog/turkey-protein-ibd
 - https://www.ibdpal.org/blog/type1-diabetes-autoimmune-basics
 - https://www.ibdpal.org/blog/understanding-biologics-ibd
 - https://www.ibdpal.org/blog/uveitis-eye-inflammation-ibd
@@ -157,6 +168,7 @@
 - https://www.ibdpal.org/blog/when-to-call-gi-vs-er-ibd
 - https://www.ibdpal.org/blog/when-to-call-ibd-help-center
 - https://www.ibdpal.org/blog/when-to-go-er-ibd
+- https://www.ibdpal.org/blog/white-rice-ibd-flare
 - https://www.ibdpal.org/blog/workplace-school-ibd-rights
 
 

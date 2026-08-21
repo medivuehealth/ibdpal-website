@@ -76,6 +76,42 @@ PATH_KEYWORDS: dict[str, str] = {
     "/guides/foundation-diet-nutrition-ibd": (
         "Foundation diet nutrition IBD, Crohn's Colitis Foundation diet, IBD dietitian resources"
     ),
+    "/blog/banana-ibd-crohns-colitis": (
+        "banana Crohn's disease, bananas colitis, banana IBD diet, potassium flare food"
+    ),
+    "/blog/apple-ibd-cooked-vs-raw": (
+        "apples Crohn's, applesauce colitis flare, cooked vs raw apple IBD, pectin fiber"
+    ),
+    "/blog/blueberries-ibd": (
+        "blueberries Crohn's disease, blueberries ulcerative colitis, berries IBD diet"
+    ),
+    "/blog/strawberries-ibd": (
+        "strawberries Crohn's, strawberries colitis, vitamin C IBD fruit"
+    ),
+    "/blog/melon-ibd": (
+        "watermelon Crohn's, cantaloupe colitis, melon IBD hydration, potassium fruit"
+    ),
+    "/blog/avocado-ibd": (
+        "avocado Crohn's disease, avocado ulcerative colitis, avocado FODMAP IBD"
+    ),
+    "/blog/oranges-citrus-ibd": (
+        "oranges Crohn's, orange juice colitis, citrus IBD, vitamin C acidity"
+    ),
+    "/blog/grapes-ibd": (
+        "grapes Crohn's disease, grapes ulcerative colitis, grape skins IBD diet"
+    ),
+    "/blog/chicken-protein-ibd": (
+        "chicken Crohn's diet, chicken ulcerative colitis, lean protein IBD poultry"
+    ),
+    "/blog/eggs-ibd-nutrition": (
+        "eggs Crohn's disease, eggs ulcerative colitis, egg protein IBD breakfast"
+    ),
+    "/blog/white-rice-ibd-flare": (
+        "white rice Crohn's flare, rice ulcerative colitis diet, low residue rice IBD"
+    ),
+    "/blog/turkey-protein-ibd": (
+        "turkey Crohn's disease, turkey colitis protein, lean poultry IBD"
+    ),
     "/glossary": "IBD glossary, Crohn's terms, colitis definitions, biologics IBD",
     "/impact": "IBDPal impact, IBD education nonprofit, MediVue mission, patient outcomes",
     "/founder": "IBDPal founder, IBDPal mission, IBD education, Crohn's colitis education",
@@ -143,6 +179,19 @@ SLUG_TOPIC_WORDS = {
     "elimination": "elimination diet IBD, food reintroduction Crohn's, colitis trigger diet",
     "iron": "iron deficiency IBD, anemia Crohn's diet, colitis iron",
     "protein": "protein IBD flare, protein Crohn's healing, colitis nutrition protein",
+    "banana": "banana IBD, banana Crohn's, bananas colitis, potassium flare food",
+    "apple": "apple IBD, applesauce Crohn's, cooked apple colitis, apple fiber",
+    "blueberry": "blueberries IBD, blueberries Crohn's, berries colitis diet",
+    "strawberry": "strawberries IBD, strawberries Crohn's, vitamin C colitis",
+    "melon": "melon IBD, watermelon Crohn's, cantaloupe colitis, hydrating fruit",
+    "avocado": "avocado IBD, avocado Crohn's, avocado colitis, healthy fats FODMAP",
+    "orange": "oranges IBD, citrus Crohn's, orange juice colitis, vitamin C",
+    "citrus": "citrus IBD, oranges Crohn's, citrus colitis acidity",
+    "grape": "grapes IBD, grapes Crohn's, grape skins colitis diet",
+    "chicken": "chicken IBD, chicken Crohn's diet, poultry colitis protein",
+    "egg": "eggs IBD, eggs Crohn's, eggs colitis protein, choline nutrition",
+    "rice": "white rice IBD, rice Crohn's flare, white rice colitis diet",
+    "turkey": "turkey IBD, turkey Crohn's protein, poultry colitis nutrition",
 }
 
 
