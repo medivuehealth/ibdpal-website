@@ -9,3 +9,6 @@ load-test-proxies.txt
 *Content Licensing*.pdf
 _license_*.png
 _license_extract.txt
+
+scripts/__pycache__/
+
