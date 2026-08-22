@@ -850,7 +850,7 @@ PAGES = {
         f"""
             <article class="support-section seo-landing tab-page-section tab-page-section--compact">
                 <header class="page-header-compact">
-                    <h1 class="page-header-compact__title">Site Updates</h1>
+                    <h2 class="page-header-compact__title">Site Updates</h2>
                     <p class="page-header-compact__lead">Month-by-month changelog &middot; <a href="/#site-updates">View on homepage About tab</a></p>
                 </header>
 {UPDATES_MONTHLY_SECTIONS_HTML}
