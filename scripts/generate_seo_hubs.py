@@ -250,7 +250,7 @@ def blog_cards(posts: list[dict], *, for_index_tab: bool = False) -> str:
         cards.append(
             f'                        <a href="{url}" class="blog-card{extra}" data-blog-topic="{chip}">\n'
             f'                            <div class="blog-card__media">\n'
-            f'                            <img src="{html.escape(p["thumb"])}" alt="" class="{thumb_class}" width="800" height="600" decoding="async">\n'
+            f'                            <img src="{html.escape(p["thumb"])}" alt="{html.escape(p["title"])}" class="{thumb_class}" width="800" height="600" decoding="async">\n'
             f'                            <span class="blog-card-chip blog-card-chip--{chip}">{html.escape(p["category"])}</span>\n'
             f"                            </div>\n"
             f'                            <div class="blog-card__body">\n'

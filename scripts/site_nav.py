@@ -95,7 +95,7 @@ def site_header_html(*, tagline: str = TAGLINE, lang: str = "en", en_href: str =
             <div class="header__inner">
                 <div class="logo">
                     <a href="/" class="logo-brand" aria-label="{html.escape(name)} home">
-                        <img src="{LOGO_SRC}" alt="" class="logo-img" width="52" height="52" decoding="async">
+                        <img src="{LOGO_SRC}" alt="IBDPal" class="logo-img" width="52" height="52" decoding="async">
                     </a>
                     <div class="logo-text">
                         <p class="logo-name"><a href="/">{html.escape(name)}</a></p>
