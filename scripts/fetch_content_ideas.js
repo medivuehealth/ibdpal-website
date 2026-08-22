@@ -18,10 +18,23 @@ function readConfigEnv(filePath) {
   }, {});
 }
 
+function normalizeDatabaseUrl(url) {
+  const value = String(url || '').trim();
+  if (!value) return value;
+  if (/[?&]uselibpqcompat=/i.test(value)) return value;
+  if (/[?&]sslmode=(prefer|require|verify-ca)\b/i.test(value)) {
+    return value.replace(
+      /([?&]sslmode=)(prefer|require|verify-ca)\b/i,
+      '$1verify-full'
+    );
+  }
+  return value;
+}
+
 function databaseUrl() {
-  if (process.env.DATABASE_URL) return process.env.DATABASE_URL;
+  if (process.env.DATABASE_URL) return normalizeDatabaseUrl(process.env.DATABASE_URL);
   const localServerEnv = path.resolve(ROOT, '..', 'ibdpal-server', 'config.env');
-  return readConfigEnv(localServerEnv).DATABASE_URL || '';
+  return normalizeDatabaseUrl(readConfigEnv(localServerEnv).DATABASE_URL || '');
 }
 
 const NOISE = /deployment|verification|test|embolism|^\d+$/i;

@@ -7,6 +7,25 @@ const { Pool } = pg;
 
 let pool;
 
+/**
+ * pg-connection-string currently treats prefer/require/verify-ca like verify-full
+ * and warns that pg v9 / pg-connection-string v3 will use weaker libpq semantics.
+ * Keep today's stronger parse behavior without changing Neon Pool ssl overrides.
+ * @see https://www.postgresql.org/docs/current/libpq-ssl.html
+ */
+export function normalizeDatabaseUrl(url) {
+  const value = String(url || '').trim();
+  if (!value) return value;
+  if (/[?&]uselibpqcompat=/i.test(value)) return value;
+  if (/[?&]sslmode=(prefer|require|verify-ca)\b/i.test(value)) {
+    return value.replace(
+      /([?&]sslmode=)(prefer|require|verify-ca)\b/i,
+      '$1verify-full'
+    );
+  }
+  return value;
+}
+
 export function json(res, status, body) {
   res.status(status).setHeader('Content-Type', 'application/json');
   res.end(JSON.stringify(body));
@@ -19,7 +38,7 @@ export function db() {
 
   if (!pool) {
     pool = new Pool({
-      connectionString: process.env.DATABASE_URL,
+      connectionString: normalizeDatabaseUrl(process.env.DATABASE_URL),
       ssl: {
         rejectUnauthorized: false
       },
