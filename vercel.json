@@ -10,6 +10,30 @@
   ],
   "rewrites": [
     {
+      "source": "/blog/elemental-vs-polymeric-formula-ibd",
+      "destination": "/blogs/elemental-vs-polymeric-formula-ibd.html"
+    },
+    {
+      "source": "/blog/food-reintroduction-after-een-ibd",
+      "destination": "/blogs/food-reintroduction-after-een-ibd.html"
+    },
+    {
+      "source": "/blog/taste-fatigue-enteral-formula-ibd",
+      "destination": "/blogs/taste-fatigue-enteral-formula-ibd.html"
+    },
+    {
+      "source": "/blog/nasogastric-tube-feeds-ibd-practical",
+      "destination": "/blogs/nasogastric-tube-feeds-ibd-practical.html"
+    },
+    {
+      "source": "/blog/adult-een-crohns-what-to-expect",
+      "destination": "/blogs/adult-een-crohns-what-to-expect.html"
+    },
+    {
+      "source": "/blog/enteral-nutrition-after-ibd-surgery",
+      "destination": "/blogs/enteral-nutrition-after-ibd-surgery.html"
+    },
+    {
       "source": "/stool-labs-decoder",
       "destination": "/stool-labs-decoder.html"
     },

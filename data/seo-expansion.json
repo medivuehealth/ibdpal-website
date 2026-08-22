@@ -15,16 +15,16 @@
       "keywords": [
         "enteral nutrition",
         "EEN",
-        "flare diet",
-        "autoimmune diet myths",
-        "IBD electrolytes",
-        "dehydration IBD",
         "exclusive enteral nutrition",
         "tube feeding IBD",
         "IBD diet",
         "crohn's nutrition",
         "ulcerative colitis diet",
-        "what to eat IBD"
+        "what to eat IBD",
+        "flare diet",
+        "autoimmune diet myths",
+        "IBD electrolytes",
+        "dehydration IBD"
       ],
       "sections": [
         {
@@ -58,6 +58,17 @@
         }
       ],
       "blog_slugs": [
+        "enteral-nutrition-ibd",
+        "exclusive-vs-partial-enteral-nutrition-crohns",
+        "fiber-prebiotics-enteral-feeds-microbiome",
+        "elemental-vs-polymeric-formula-ibd",
+        "food-reintroduction-after-een-ibd",
+        "taste-fatigue-enteral-formula-ibd",
+        "nasogastric-tube-feeds-ibd-practical",
+        "adult-een-crohns-what-to-expect",
+        "enteral-nutrition-after-ibd-surgery",
+        "gut-barrier-dysbiosis-inflammation-ibd",
+        "hospital-feeding-ibd-enteral-parenteral",
         "anemia-iron-deficiency-ibd",
         "humid-weather-ibd-symptoms",
         "pyoderma-erythema-nodosum-ibd",
@@ -77,7 +88,6 @@
         "what-remission-means-ibd",
         "ibd-unintentional-weight-changes",
         "ibd-care-outside-united-states",
-        "enteral-nutrition-ibd",
         "ankylosing-spondylitis-ibd",
         "autoimmune-diet-myths",
         "autoimmune-hepatitis-ibd",
@@ -212,6 +222,11 @@
         }
       ],
       "blog_slugs": [
+        "enteral-nutrition-ibd",
+        "exclusive-vs-partial-enteral-nutrition-crohns",
+        "adult-een-crohns-what-to-expect",
+        "elemental-vs-polymeric-formula-ibd",
+        "food-reintroduction-after-een-ibd",
         "pyoderma-erythema-nodosum-ibd",
         "swimming-pool-beach-ibd-ostomy",
         "uveitis-eye-inflammation-ibd",
@@ -237,8 +252,6 @@
         "thrombosis-clot-risk-ibd",
         "type1-diabetes-autoimmune-basics",
         "vaccine-autoimmune-immunosuppression",
-        "exclusive-vs-partial-enteral-nutrition-crohns",
-        "enteral-nutrition-ibd",
         "when-to-go-er-ibd",
         "humira-fatigue-ibd",
         "stelara-diet-ibd",
@@ -408,6 +421,9 @@
         }
       ],
       "blog_slugs": [
+        "hospital-feeding-ibd-enteral-parenteral",
+        "enteral-nutrition-ibd",
+        "enteral-nutrition-after-ibd-surgery",
         "constipation-ibd-causes",
         "when-to-call-gi-vs-er-ibd",
         "chronic-diarrhea-ibd-causes",
@@ -420,8 +436,6 @@
         "electrolytes-flare-ibd",
         "fever-ibd-flare-or-infection",
         "vomiting-obstruction-ibd-warning-signs",
-        "hospital-feeding-ibd-enteral-parenteral",
-        "enteral-nutrition-ibd",
         "when-to-go-er-ibd",
         "flare-first-48-hours",
         "steroids-prednisone-ibd",
