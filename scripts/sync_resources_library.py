@@ -193,7 +193,7 @@ def main() -> None:
         slug = path.stem
         extra = kw_map.get(f"guides/{slug}", []) or kw_map.get(slug, [])
         foundation_tags = []
-        if "foundation" in slug or "camp-oasis" in slug or "helpline" in slug:
+        if "foundation" in slug or "camp-oasis" in slug or "helpline" in slug or "ccf" in slug or slug.startswith("step-therapy"):
             foundation_tags = ["Foundation", "CCF", "licensed education"]
         entries.append(
             {
