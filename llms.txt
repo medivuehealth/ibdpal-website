@@ -282,9 +282,12 @@
 - https://www.ibdpal.org/guides/crohns-food-triggers
 - https://www.ibdpal.org/guides/dining-out-with-ibd
 - https://www.ibdpal.org/guides/elimination-diet-when-to-stop-ibd
+- https://www.ibdpal.org/guides/find-ccf-chapter-support-group
 - https://www.ibdpal.org/guides/first-gastroenterology-appointment-ibd
 - https://www.ibdpal.org/guides/foods-to-eat-crohns-flare
 - https://www.ibdpal.org/guides/foundation-diet-nutrition-ibd
+- https://www.ibdpal.org/guides/foundation-emotional-wellness-ibd
+- https://www.ibdpal.org/guides/foundation-ibd-appeal-letters
 - https://www.ibdpal.org/guides/gluten-free-autoimmune-when
 - https://www.ibdpal.org/guides/ibd-crohns-colitis-helpline
 - https://www.ibdpal.org/guides/ibd-flare-emergency-supplies
@@ -298,16 +301,23 @@
 - https://www.ibdpal.org/guides/living-with-ostomy-ibd
 - https://www.ibdpal.org/guides/low-residue-diet-ibd
 - https://www.ibdpal.org/guides/newly-diagnosed-crohns-colitis
+- https://www.ibdpal.org/guides/newly-diagnosed-foundation-first-week
 - https://www.ibdpal.org/guides/partner-caregiver-ibd
 - https://www.ibdpal.org/guides/pediatric-crohns-colitis-help
+- https://www.ibdpal.org/guides/pregnancy-ibd-foundation-resources
 - https://www.ibdpal.org/guides/protein-healing-ibd-flare
 - https://www.ibdpal.org/guides/sleep-ibd-flares
+- https://www.ibdpal.org/guides/step-therapy-safe-step-act-ibd
 - https://www.ibdpal.org/guides/stress-anxiety-ibd
 - https://www.ibdpal.org/guides/track-ibd-symptoms-food
 - https://www.ibdpal.org/guides/ulcerative-colitis-diet-foods
 - https://www.ibdpal.org/guides/ulcerative-colitis-flare-management
 - https://www.ibdpal.org/guides/vitamin-d-bone-nutrition-ibd
+- https://www.ibdpal.org/guides/what-is-crohns-disease-foundation
+- https://www.ibdpal.org/guides/what-is-ibd-foundation
+- https://www.ibdpal.org/guides/what-is-ulcerative-colitis-foundation
 - https://www.ibdpal.org/guides/what-should-i-eat-crohns-colitis
+- https://www.ibdpal.org/guides/youth-school-foundation-resources
 
 
 ## SEO hubs & directories
