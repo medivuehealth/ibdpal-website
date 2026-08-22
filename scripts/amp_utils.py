@@ -6,6 +6,8 @@ import json
 import re
 from pathlib import Path
 
+from seo_head import format_document_title
+
 SITE = "https://www.ibdpal.org"
 
 AMP_BOILERPLATE = """body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}"""
@@ -204,7 +206,7 @@ def render_amp_blog(post: dict) -> str:
         ],
     }
     return amp_shell(
-        title=f"{post['title']} | IBDPal Blog",
+        title=format_document_title(post["title"]),
         description=post["description"],
         canonical_path=path,
         body_html=body_html,

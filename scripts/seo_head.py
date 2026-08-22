@@ -14,6 +14,27 @@ THEME_COLOR_META = '    <meta name="theme-color" content="#FFE5DC">'
 
 from seo_keywords import keywords_for_path
 
+# Bing flags titles over 70 characters; keep a safety margin under that.
+MAX_DOCUMENT_TITLE_LEN = 68
+
+
+def format_document_title(headline: str, *, brand: str = "IBDPal", limit: int = MAX_DOCUMENT_TITLE_LEN) -> str:
+    """Build a unique <title> under Bing's ~70 character limit."""
+    head = " ".join((headline or "").split()).strip()
+    for junk in (" | IBDPal Blog", " | IBDPal Guides", " | IBDPal Tools", " | IBDPal", " | ibdpal.org"):
+        if head.endswith(junk):
+            head = head[: -len(junk)].rstrip()
+    suffix = f" | {brand}"
+    if not head:
+        return brand[:limit]
+    if len(head) + len(suffix) <= limit:
+        return head + suffix
+    budget = max(24, limit - len(suffix) - 1)
+    cut = head[:budget].rsplit(" ", 1)[0].rstrip(" ,;:|-")
+    if len(cut) < 20:
+        cut = head[:budget].rstrip(" ,;:|-")
+    return f"{cut}{suffix}"
+
 
 def organization_json() -> dict:
     return {

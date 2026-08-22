@@ -18,7 +18,7 @@ from ui_snippets import BLOG_BACK_LINK_HTML, blog_vote_widget # noqa: E402
 from amp_utils import discover_blogs # noqa: E402
 from blog_related import related_reading_html # noqa: E402
 from seo_keywords import keywords_for_path # noqa: E402
-from seo_head import organization_json, website_json # noqa: E402
+from seo_head import format_document_title, organization_json, website_json # noqa: E402
 from eeat_blocks import ( # noqa: E402
     blog_medical_footer_en,
     content_note_en,
@@ -419,7 +419,7 @@ def render_post(p: dict) -> str:
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="theme-color" content="#FFE5DC">
-    <title>{html.escape(p["title"])} | IBDPal Blog</title>
+    <title>{html.escape(format_document_title(p["title"]))}</title>
     <meta name="description" content="{html.escape(p["description"])}">
     <meta name="keywords" content="{html.escape(keywords_for_path(f'/blog/{p["slug"]}'))}">
     <meta name="author" content="MediVue">
@@ -441,13 +441,13 @@ def render_post(p: dict) -> str:
     <script src="/canonical-host.js"></script>
     <meta property="og:type" content="article">
     <meta property="og:url" content="{canonical}">
-    <meta property="og:title" content="{html.escape(p["title"])} | IBDPal Blog">
+    <meta property="og:title" content="{html.escape(format_document_title(p["title"]))}">
     <meta property="og:description" content="{html.escape(p["description"])}">
     <meta property="og:site_name" content="IBDPal">
     <meta property="og:locale" content="en_US">
     <meta property="og:image" content="https://www.ibdpal.org{thumb}">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{html.escape(p["title"])} | IBDPal Blog">
+    <meta name="twitter:title" content="{html.escape(format_document_title(p["title"]))}">
     <meta name="twitter:description" content="{html.escape(p["description"])}">
     <meta property="article:published_time" content="{p["date_iso"]}">
     <meta property="article:modified_time" content="{p.get("date_modified") or p["date_iso"]}">
