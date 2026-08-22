@@ -389,6 +389,17 @@ PAGES = {
                     </ul>
                 </section>
                 <section class="seo-landing__block">
+                    <h2>Medications and treatment education</h2>
+                    <p>The Foundation IBD Medication Guide helps patients learn drug classes and prepare questions. Therapy choices belong with your gastroenterologist.</p>
+                    <ul class="seo-landing__list">
+                        <li><a href="https://www.crohnscolitisfoundation.org/patientsandcaregivers/ibd-medication-guide" rel="noopener noreferrer">Foundation IBD Medication Guide</a></li>
+                        <li><a href="/guides/foundation-ibd-medication-guide">IBDPal guide: Foundation Medication Guide bridge</a></li>
+                        <li><a href="/guides/foundation-ibd-vaccines-infection">IBDPal guide: vaccines and infection risk</a></li>
+                        <li><a href="/guides/foundation-complementary-medicine-ibd">IBDPal guide: complementary medicine</a></li>
+                        <li><a href="/blog/understanding-biologics-ibd">Understanding biologics article</a></li>
+                    </ul>
+                </section>
+                <section class="seo-landing__block">
                     <h2>Insurance and prior authorization</h2>
                     <p>Many IBD medications require prior authorization. The Foundation publishes patient-facing guidance on navigating denials, appeals, and step therapy. Your clinic and insurer remain the authorities for your case.</p>
                     <ul class="seo-landing__list">
@@ -398,6 +409,17 @@ PAGES = {
                         <li><a href="/guides/step-therapy-safe-step-act-ibd">IBDPal guide: step therapy and Safe Step Act</a></li>
                         <li><a href="/blog/insurance-biologics-ibd">Insurance and biologics article</a></li>
                         <li><a href="/blog/prior-authorization-biologics-timeline">Prior authorization timeline article</a></li>
+                    </ul>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>Pain, fatigue, and symptoms beyond the gut</h2>
+                    <p>Foundation education covers pain, fatigue, and extraintestinal issues such as joints, skin, and eyes. Track patterns and bring them to your care team.</p>
+                    <ul class="seo-landing__list">
+                        <li><a href="https://www.crohnscolitisfoundation.org/patientsandcaregivers/pain-and-fatigue/pain-management" rel="noopener noreferrer">Foundation pain management</a></li>
+                        <li><a href="https://www.crohnscolitisfoundation.org/patientsandcaregivers/pain-and-fatigue/managing-fatigue" rel="noopener noreferrer">Foundation managing fatigue</a></li>
+                        <li><a href="/guides/foundation-ibd-pain-fatigue">IBDPal guide: pain and fatigue</a></li>
+                        <li><a href="/guides/foundation-ibd-extraintestinal-manifestations">IBDPal guide: extraintestinal manifestations</a></li>
+                        <li><a href="/ibd-autoimmune-associations">IBD autoimmune associations hub</a></li>
                     </ul>
                 </section>
                 <section class="seo-landing__block">
@@ -442,6 +464,25 @@ PAGES = {
                     </ul>
                 </section>
                 <section class="seo-landing__block">
+                    <h2>Travel, restroom access, and daily living</h2>
+                    <p>Foundation We Can't Wait and patient education help with bathroom urgency, travel planning, and intimacy topics. Education only; not legal or sexual-health prescribing advice.</p>
+                    <ul class="seo-landing__list">
+                        <li><a href="https://www.crohnscolitisfoundation.org/patientsandcaregivers/wecantwait" rel="noopener noreferrer">Foundation We Can't Wait / restroom access</a></li>
+                        <li><a href="/guides/foundation-ibd-travel-restroom-access">IBDPal guide: travel and restroom access</a></li>
+                        <li><a href="/guides/foundation-ibd-intimacy-sexual-health">IBDPal guide: intimacy and sexual health</a></li>
+                        <li><a href="/blog/travel-with-ibd">Travel with IBD article</a></li>
+                    </ul>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>Colonoscopy and cancer surveillance</h2>
+                    <p>Long-standing colitis often raises surveillance colonoscopy questions. Use Foundation patient education for vocabulary, then follow intervals set by your gastroenterologist.</p>
+                    <ul class="seo-landing__list">
+                        <li><a href="https://www.crohnscolitisfoundation.org/patientsandcaregivers" rel="noopener noreferrer">Foundation patients &amp; caregivers hub</a></li>
+                        <li><a href="/guides/foundation-ibd-colonoscopy-cancer-surveillance">IBDPal guide: colonoscopy and cancer surveillance</a></li>
+                        <li><a href="/guides/what-is-ulcerative-colitis-foundation">What is ulcerative colitis (Foundation basics)</a></li>
+                    </ul>
+                </section>
+                <section class="seo-landing__block">
                     <h2>Chapters, events, and support groups</h2>
                     <p>Local chapters can help families find education events, community programs, and support groups. Availability varies by region.</p>
                     <ul class="seo-landing__list">
@@ -482,6 +523,14 @@ PAGES = {
                         <li><a href="/guides/foundation-ibd-clinical-trials">Clinical trials and Foundation research education</a></li>
                         <li><a href="/guides/foundation-ibd-surgery-ostomy">Surgery and ostomy Foundation bridge</a></li>
                         <li><a href="/guides/foundation-workplace-school-rights-ibd">Workplace and school rights deep dive</a></li>
+                        <li><a href="/guides/foundation-ibd-medication-guide">Medication Guide bridge</a></li>
+                        <li><a href="/guides/foundation-ibd-pain-fatigue">Pain and fatigue</a></li>
+                        <li><a href="/guides/foundation-ibd-extraintestinal-manifestations">Extraintestinal manifestations</a></li>
+                        <li><a href="/guides/foundation-complementary-medicine-ibd">Complementary medicine</a></li>
+                        <li><a href="/guides/foundation-ibd-travel-restroom-access">Travel and restroom access</a></li>
+                        <li><a href="/guides/foundation-ibd-intimacy-sexual-health">Intimacy and sexual health</a></li>
+                        <li><a href="/guides/foundation-ibd-vaccines-infection">Vaccines and infection risk</a></li>
+                        <li><a href="/guides/foundation-ibd-colonoscopy-cancer-surveillance">Colonoscopy and cancer surveillance</a></li>
                         <li><a href="/guides/ibd-crohns-colitis-helpline">Help Center phone numbers</a></li>
                         <li><a href="/blog/when-to-call-ibd-help-center">Help Center vs clinic</a></li>
                     </ul>
