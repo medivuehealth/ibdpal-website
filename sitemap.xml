@@ -5,7 +5,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ibdpal.org/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.ibdpal.org/es/recursos" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ibdpal.org/" />
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.00</priority>
   </url>
@@ -2271,6 +2271,12 @@
   <url>
     <loc>https://www.ibdpal.org/tools/bristol-flare-checker</loc>
     <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.ibdpal.org/tools/food-pain-tracker</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>

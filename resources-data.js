@@ -33,6 +33,7 @@ window.IBDPAL_RESOURCES = [
  { title: "IBD Crohn's Support Guide", category: "community", type: "site", url: "/ibd-crohns-support", tags: ["support", "national"] },
  { title: "Newly Diagnosed with IBD", category: "getting-started", type: "site", url: "/newly-diagnosed", tags: ["crohn", "colitis", "beginner", "diagnosis"] },
  { title: "Doctor Visit Prep Checklist", category: "getting-started", type: "site", url: "/visit-prep", tags: ["clinic", "printable", "doctor"] },
+ { title: "Food & Pain Tracking Sheet", category: "getting-started", type: "site", url: "/tools/food-pain-tracker", tags: ["food diary", "pain tracker", "symptom log", "printable", "cramps", "meal log", "IBD tracker", "tracking sheet"], description: "Free daily food and pain sheet: date, meal, hours, severity, pain level, and symptoms like cramps. Print or export CSV. Browser-local; education only.", keywords: ["food diary", "pain tracker", "symptom log", "cramps", "meal log", "IBD tracking sheet"] },
  { title: "Pediatric & Caregiver Hub", category: "family", type: "site", url: "/pediatric-caregivers", tags: ["kids", "parents", "pediatric"] },
  { title: "Patient Stories", category: "community", type: "site", url: "/patient-stories", tags: ["peer", "stories"] },
  { title: "For Clinicians | Visit Summaries", category: "clinical", type: "site", url: "/for-clinicians", tags: ["export", "doctor", "clinic"] },

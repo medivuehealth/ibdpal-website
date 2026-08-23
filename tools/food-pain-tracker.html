@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#FFE5DC">
+    <title>Food &amp; Pain Tracking Sheet | IBDPal Tools</title>
+    <meta name="description" content="Free IBD food and pain tracking sheet: date, meal, hours, severity, pain level, and symptoms like cramps. Print or export CSV. Education only.">
+    <meta name="keywords" content="IBD food diary, Crohn pain tracker, colitis meal log, abdominal pain sheet, printable IBD symptom tracker">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.ibdpal.org/tools/food-pain-tracker">
+    <link rel="alternate" hreflang="en" href="https://www.ibdpal.org/tools/food-pain-tracker">
+    <link rel="alternate" hreflang="x-default" href="https://www.ibdpal.org/tools/food-pain-tracker">
+    <script src="/canonical-host.js"></script>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/site-layout-icn.css">
+    <link rel="stylesheet" href="/site-polish.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/IBDPal_Logo.png">
+    <meta property="og:title" content="Food &amp; Pain Tracking Sheet | IBDPal">
+    <meta property="og:description" content="Log meals, hours, severity, pain level, and symptoms like cramps. Print or CSV export. Stays on your device.">
+    <meta property="og:url" content="https://www.ibdpal.org/tools/food-pain-tracker">
+    <meta property="og:type" content="website">
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":["Organization","NGO"],"@id":"https://www.ibdpal.org/#organization","name":"MediVue","alternateName":"IBDPal","url":"https://www.ibdpal.org/","email":"info@ibdpal.org","logo":{"@type":"ImageObject","url":"https://www.ibdpal.org/IBDPal_Logo.png"},"nonprofitStatus":"Nonprofit501c3"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"IBDPal","item":"https://www.ibdpal.org/"},{"@type":"ListItem","position":2,"name":"Food and pain tracking sheet","item":"https://www.ibdpal.org/tools/food-pain-tracker"}]},{"@type":"WebApplication","name":"IBD food and pain tracking sheet","url":"https://www.ibdpal.org/tools/food-pain-tracker","applicationCategory":"HealthApplication","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Educational meal and abdominal pain log for Crohn's and colitis patients."}]}</script>
+    <style>
+      .fps { max-width: 960px; margin: 0 auto; padding: 1.25rem 1rem 3rem; }
+      .fps-panel { background: #fffaf7; border: 1px solid #e7d2c8; border-radius: 14px; padding: 1rem 1.1rem 1.15rem; margin: 1rem 0 1.25rem; }
+      .fps-grid { display: grid; gap: .85rem; grid-template-columns: 1fr 1fr; }
+      @media (min-width: 720px) { .fps-grid { grid-template-columns: repeat(4, 1fr); } }
+      .fps-field { display: flex; flex-direction: column; gap: .35rem; }
+      .fps-field--wide, .fps-grid .fps-field--wide { grid-column: 1 / -1; }
+      .fps-field label { font-weight: 600; font-size: .92rem; color: #3b2f2a; }
+      .fps-field input, .fps-field select, .fps-field textarea {
+        border: 1px solid #e0cfc6; border-radius: 10px; padding: .55rem .7rem; font: inherit; background: #fff;
+      }
+      .fps-checks { display: flex; flex-wrap: wrap; gap: .45rem .75rem; }
+      .fps-check { display: inline-flex; align-items: center; gap: .35rem; background: #fff; border: 1px solid #eee; border-radius: 999px; padding: .35rem .7rem; font-size: .9rem; }
+      .fps-toolbar { display: flex; flex-wrap: wrap; gap: .55rem; margin: .85rem 0 1.25rem; }
+      .fps-btn {
+        appearance: none; border: 1px solid #c45c3e; background: #c45c3e; color: #fff;
+        border-radius: 999px; padding: .55rem 1rem; font: inherit; font-weight: 600; cursor: pointer;
+      }
+      .fps-btn--ghost { background: #fff; color: #3b2f2a; border-color: #e0cfc6; }
+      .fps-btn--secondary { background: #fff; color: #c45c3e; }
+      .fps-meta { color: #6b5b55; font-size: .92rem; margin: 0 0 .5rem; }
+      .fps-table-wrap { overflow-x: auto; border: 1px solid #eadad2; border-radius: 12px; background: #fff; }
+      .fps-table { width: 100%; border-collapse: collapse; font-size: .9rem; }
+      .fps-table th, .fps-table td { padding: .55rem .65rem; border-bottom: 1px solid #f0e4dd; text-align: left; vertical-align: top; }
+      .fps-table th { background: #fff4ef; font-family: "Plus Jakarta Sans", sans-serif; font-size: .82rem; text-transform: uppercase; letter-spacing: .02em; }
+      .fps-empty { color: #6b5b55; text-align: center; padding: 1.25rem !important; }
+      .fps-print-blank { margin-top: 2rem; }
+      .fps-print-blank table { width: 100%; border-collapse: collapse; }
+      .fps-print-blank th, .fps-print-blank td { border: 1px solid #ccc; padding: .55rem; height: 2rem; }
+      @media print {
+        .header, .tab-navigation, .footer, .blog-back, .fps-toolbar, .fps-panel, .tools-lab-guardrail, .blog-edu-disclaimer, .hub-header-footnote { display: none !important; }
+        .fps-print-blank { display: block !important; }
+        .fps-table-wrap { border: none; }
+        body { background: #fff; }
+      }
+      @media screen { .fps-print-blank { display: none; } }
+    </style>
+</head>
+<body>
+<div class="app-container">
+
+        <header class="header">
+            <div class="header__inner">
+                <div class="logo">
+                    <a href="/" class="logo-brand" aria-label="IBDPal home">
+                        <img src="/IBDPal_Logo.png" alt="IBDPal" class="logo-img" width="52" height="52" decoding="async">
+                    </a>
+                    <div class="logo-text">
+                        <p class="logo-name"><a href="/">IBDPal</a></p>
+                        <p class="tagline">Empowering IBD Patients</p>
+                    </div>
+                </div>
+                <nav class="site-lang" aria-label="Language"><a href="/" class="site-lang__link site-lang__link--active" data-lang="en" hreflang="en" lang="en">English</a><span class="site-lang__sep" aria-hidden="true">|</span><a href="/es/recursos" class="site-lang__link" data-lang="es" hreflang="es" lang="es">Español</a></nav>
+            </div>
+        </header>
+
+        <nav class="tab-navigation" aria-label="Main">
+            <div class="tab-container">
+                <a href="https://www.ibdpal.org/" class="tab-button" data-tab="home">Home</a>
+                <a href="https://www.ibdpal.org/#guides" class="tab-button" data-tab="library">Patient Library</a>
+                <a href="https://www.ibdpal.org/#tools-lab" class="tab-button" data-tab="tools-lab">Tools Lab</a>
+                <a href="https://www.ibdpal.org/#recipe-ideas" class="tab-button" data-tab="recipe-ideas">Recipe Ideas</a>
+                <a href="https://www.ibdpal.org/#nutrition-targets" class="tab-button" data-tab="nutrition-targets">Nutrients</a>
+                <a href="https://www.ibdpal.org/#download" class="tab-button" data-tab="app">IBDPal App</a>
+                <a href="https://www.ibdpal.org/#community" class="tab-button" data-tab="community">Support</a>
+                <a href="https://www.ibdpal.org/#news" class="tab-button" data-tab="news">News</a>
+                <a href="https://www.ibdpal.org/#student-research" class="tab-button" data-tab="student-research">Student Research</a>
+                <a href="https://www.ibdpal.org/#about" class="tab-button" data-tab="about">About</a>
+            </div>
+        </nav>
+
+<main class="main-content">
+  <article class="fps support-section" data-food-pain-sheet>
+    <p class="blog-back"><a href="/#tools-lab" class="blog-back-link">&larr; Tools Lab</a> · <a href="/">Home</a> · <a href="/visit-prep">Visit prep</a></p>
+    <h1>Food &amp; pain tracking sheet</h1>
+    <p class="support-intro">A simple daily log for meals and abdominal pain: date, meal, hours after eating, severity, pain level, and symptoms such as cramps. Entries stay in this browser. Print or export a CSV for your GI visit.</p>
+    <p class="blog-edu-disclaimer"><strong>Educational use only.</strong> IBDPal does not provide medical advice, diagnosis, or treatment. Always consult your gastroenterologist or IBD care team for personal decisions.</p>
+    <p class="hub-header-footnote"><small>Educational only · Reviewed August 2026 · Not medical advice</small></p>
+    <div class="tools-lab-guardrail" role="note"><strong>Privacy note.</strong> This sheet saves on your device only. It is not synced to IBDPal servers. Clear browser data removes it. For ongoing tracking, also use the <a href="/#download">free IBDPal iOS app</a>.</div>
+
+    <form class="fps-panel" data-fps-form>
+      <div class="fps-grid">
+        <div class="fps-field">
+          <label for="fpsDate">Date</label>
+          <input id="fpsDate" name="date" type="date" required>
+        </div>
+        <div class="fps-field">
+          <label for="fpsTime">Time</label>
+          <input id="fpsTime" name="time" type="time" required>
+        </div>
+        <div class="fps-field">
+          <label for="fpsMeal">Meal</label>
+          <select id="fpsMeal" name="meal">
+            <option>Breakfast</option>
+            <option>Lunch</option>
+            <option>Dinner</option>
+            <option>Snack</option>
+            <option>Drink / formula</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="fps-field">
+          <label for="fpsHours">Hours after meal</label>
+          <input id="fpsHours" name="hours" type="text" inputmode="decimal" placeholder="e.g. 1.5" autocomplete="off">
+        </div>
+        <div class="fps-field fps-field--wide">
+          <label for="fpsFood">What you ate or drank</label>
+          <input id="fpsFood" name="food" type="text" required placeholder="Example: oatmeal, banana, coffee" autocomplete="off">
+        </div>
+        <div class="fps-field">
+          <label for="fpsSeverity">Overall severity (1–10)</label>
+          <select id="fpsSeverity" name="severity">
+            <option value="">Select</option>
+            <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+            <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+          </select>
+        </div>
+        <div class="fps-field">
+          <label for="fpsPain">Pain level (0–10)</label>
+          <select id="fpsPain" name="pain">
+            <option value="">Select</option>
+            <option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+            <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+          </select>
+        </div>
+        <div class="fps-field fps-field--wide">
+          <span id="fpsSymptomsLabel">Pain symptoms</span>
+          <div class="fps-checks" data-fps-symptoms role="group" aria-labelledby="fpsSymptomsLabel"></div>
+        </div>
+        <div class="fps-field fps-field--wide">
+          <label for="fpsNotes">Notes (optional)</label>
+          <textarea id="fpsNotes" name="notes" rows="2" placeholder="Location of pain, stool changes, stress, meds timing…"></textarea>
+        </div>
+      </div>
+      <div class="fps-toolbar">
+        <button type="submit" class="fps-btn">Add to sheet</button>
+        <button type="button" class="fps-btn fps-btn--secondary" data-fps-export>Export CSV</button>
+        <button type="button" class="fps-btn fps-btn--secondary" data-fps-print>Print sheet</button>
+        <button type="button" class="fps-btn fps-btn--ghost" data-fps-clear>Clear all</button>
+      </div>
+    </form>
+
+    <p class="fps-meta"><strong data-fps-count>0</strong> saved entries on this device</p>
+    <div class="fps-table-wrap" id="fps-print-area">
+      <table class="fps-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Meal</th>
+            <th>Food</th>
+            <th>Hours</th>
+            <th>Severity</th>
+            <th>Pain</th>
+            <th>Symptoms</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody data-fps-body></tbody>
+      </table>
+    </div>
+
+    <section class="fps-print-blank" aria-hidden="true">
+      <h2>Blank weekly sheet</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th><th>Meal</th><th>Hours</th><th>Severity</th><th>Pain</th><th>Symptoms (cramp, etc.)</th><th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <h2>Related tools</h2>
+    <p><a href="/tools/bristol-flare-checker">Bristol stool &amp; flare checker</a> · <a href="/visit-prep">Visit prep checklist</a> · <a href="/flare-help">Flare help</a> · <a href="/#download">IBDPal app</a></p>
+  </article>
+</main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="/#about" class="footer-link">About</a>
+                    <a href="/#news" class="footer-link">News</a>
+                    <a href="/contact" class="footer-link">Contact</a>
+                    <a href="/resources" class="footer-link">Resource Library</a>
+                    <a href="/blog" class="footer-link">Articles</a>
+                    <a href="/guides" class="footer-link">Patient Guides</a>
+                    <a href="/privacy" class="footer-link">Privacy Policy</a>
+                    <a href="/terms" class="footer-link">Terms of Service</a>
+                </div>
+                <p><strong>IBDPal</strong> · MediVue nonprofit · Education only, not medical advice.</p>
+                <p>&copy; 2026 MediVue. All rights reserved.</p>
+            </div>
+        </footer>
+</div>
+
+    <script src="/site-config.js" defer></script>
+    <script src="/site-global.js" defer></script>
+    <script src="/analytics-config.js"></script>
+    <script src="/analytics.js" defer></script>
+    <script src="/tools/food-pain-tracker.js" defer></script>
+</body>
+</html>

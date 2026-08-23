@@ -42,6 +42,10 @@
       "destination": "/tools/bristol-flare-checker.html"
     },
     {
+      "source": "/tools/food-pain-tracker",
+      "destination": "/tools/food-pain-tracker.html"
+    },
+    {
       "source": "/blog/yellow-stool-ibd",
       "destination": "/blogs/yellow-stool-ibd.html"
     },
