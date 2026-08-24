@@ -3049,6 +3049,21 @@ a.tab-button,
     margin-top: 1.25rem;
 }
 
+/* Founder name shown as image (not HTML text) for privacy */
+.founder-name-mark {
+    margin: 0.85rem 0 0;
+    max-width: 22rem;
+}
+
+.founder-name-mark img {
+    display: block;
+    width: min(100%, 22rem);
+    height: auto;
+    user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: none;
+}
+
 .nutrition-targets-layout {
     display: grid;
     gap: 1rem;
