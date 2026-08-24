@@ -733,11 +733,11 @@ PAGES = {
                 <section class="seo-landing__block">
                     <h2>What you will find here</h2>
                     <ul class="seo-landing__list">
-                        <li><a href="/blog">117 in-depth articles</a> on nutrition, treatment, wellness, autoimmune topics, associations, and daily life</li>
-                        <li><a href="/guides">37 step-by-step patient guides</a></li>
-                        <li><a href="/resources">210+ searchable resource library entries</a> (site pages, articles, and trusted external links)</li>
+                        <li><a href="/blog">213 in-depth articles</a> on nutrition, treatment, wellness, autoimmune topics, associations, and daily life</li>
+                        <li><a href="/guides">58 step-by-step patient guides</a></li>
+                        <li><a href="/resources">335+ searchable resource library entries</a> (site pages, articles, and trusted external links)</li>
                         <li><a href="/#community">50 state support pages</a> (all 50 states + DC)</li>
-                        <li><a href="/library">250+ education and sitemap pages</a> across hubs, guides, articles, and Spanish resources</li>
+                        <li><a href="/library">375+ education and sitemap pages</a> across hubs, guides, articles, and Spanish resources</li>
                         <li>Free <a href="/#app">IBDPal iOS app</a> for logging meals, symptoms, and visit prep</li>
                         <li>Homepage topic search, Tools Lab, recipe ideas, and nutrition targets</li>
                     </ul>
@@ -828,7 +828,7 @@ PAGES = {
     ),
     "impact.html": (
         "IBDPal Impact | Patient Education & App Reach | MediVue",
-        "IBDPal impact: 240+ free education and resource pages, 107 articles, Foundation-licensed education, App Store reach, and nonprofit mission outcomes for the IBD community.",
+        "IBDPal impact: 375+ free education and resource pages, 213 articles, Foundation-licensed education, App Store reach, and nonprofit mission outcomes for the IBD community.",
         "/impact",
         """
             <article class="support-section seo-landing">
@@ -837,11 +837,11 @@ PAGES = {
                 <section class="seo-landing__block">
                     <h2>Education library (August 2026)</h2>
                     <ul class="seo-landing__list">
-                        <li><strong>107 articles</strong> including ImproveCareNow resource highlights and autoimmune association topics</li>
-                        <li><strong>35 patient guides</strong> for diet, flares, travel, clinic prep, and Foundation-attributed topics</li>
+                        <li><strong>213 articles</strong> including ImproveCareNow resource highlights and autoimmune association topics</li>
+                        <li><strong>58 patient guides</strong> for diet, flares, travel, clinic prep, and Foundation-attributed topics</li>
                         <li><strong>50 state support pages</strong> with chapters and helplines</li>
-                        <li><strong>200+</strong> curated entries in the <a href="/resources">resource library</a>, including Crohn&rsquo;s &amp; Colitis Foundation and PubMed research links</li>
-                        <li><strong>240+ total education and resource pages</strong> including hubs, FAQ, glossary, Spanish resources, the <a href="/crohns-colitis-foundation-resources">Foundation resources hub</a>, and <a href="/ibd-autoimmune-associations">autoimmune associations</a></li>
+                        <li><strong>335+</strong> curated entries in the <a href="/resources">resource library</a>, including Crohn&rsquo;s &amp; Colitis Foundation and PubMed research links</li>
+                        <li><strong>375+ total education and resource pages</strong> including hubs, FAQ, glossary, Spanish resources, the <a href="/crohns-colitis-foundation-resources">Foundation resources hub</a>, and <a href="/ibd-autoimmune-associations">autoimmune associations</a></li>
                     </ul>
                     <p><a href="/library">Browse the full content library →</a></p>
                 </section>
@@ -867,7 +867,7 @@ PAGES = {
         """,
     ),
     "library.html": (
-        "IBD Content Library | 240+ Free Education Pages | IBDPal",
+        "IBD Content Library | 375+ Free Education Pages | IBDPal",
         "Full index of IBDPal education: articles, guides, Foundation resources, autoimmune associations, state support, Spanish pages, ICN resources, and topic hubs for Crohn's and colitis.",
         "/library",
         """
@@ -877,12 +877,12 @@ PAGES = {
                 <section class="seo-landing__block">
                     <h2>By the numbers (August 2026)</h2>
                     <div class="library-stats-grid">
-                        <div class="library-stat"><span class="library-stat__n">107</span><span class="library-stat__l">Articles</span></div>
-                        <div class="library-stat"><span class="library-stat__n">35</span><span class="library-stat__l">Patient guides</span></div>
+                        <div class="library-stat"><span class="library-stat__n">213</span><span class="library-stat__l">Articles</span></div>
+                        <div class="library-stat"><span class="library-stat__n">58</span><span class="library-stat__l">Patient guides</span></div>
                         <div class="library-stat"><span class="library-stat__n">50</span><span class="library-stat__l">State support pages</span></div>
-                        <div class="library-stat"><span class="library-stat__n">8</span><span class="library-stat__l">Spanish pages</span></div>
-                        <div class="library-stat"><span class="library-stat__n">200+</span><span class="library-stat__l">Resource library entries</span></div>
-                        <div class="library-stat"><span class="library-stat__n">240+</span><span class="library-stat__l">Education and resource pages</span></div>
+                        <div class="library-stat"><span class="library-stat__n">9</span><span class="library-stat__l">Spanish pages</span></div>
+                        <div class="library-stat"><span class="library-stat__n">335+</span><span class="library-stat__l">Resource library entries</span></div>
+                        <div class="library-stat"><span class="library-stat__n">375+</span><span class="library-stat__l">Education and resource pages</span></div>
                     </div>
                 </section>
                 <section class="seo-landing__block">
