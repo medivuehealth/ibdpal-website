@@ -13,6 +13,10 @@
       "description": "Nutrition and diet resources for Crohn's disease and ulcerative colitis: enteral nutrition and EEN, flare foods, FODMAP, hydration, protein, and patient guides.",
       "intro": "Guides and articles on Crohn's and colitis nutrition, including formula feeds and enteral nutrition, to explore with your care team.",
       "keywords": [
+        "gut microbiome",
+        "microbiome testing",
+        "probiotics",
+        "Visbiome",
         "enteral nutrition",
         "EEN",
         "exclusive enteral nutrition",
@@ -58,6 +62,10 @@
         }
       ],
       "blog_slugs": [
+        "microbiome-lab-testing-ibd",
+        "visbiome-probiotics-ibd",
+        "probiotics-ibd-practical-guide",
+        "microbiome-research-labs-ibd",
         "enteral-nutrition-ibd",
         "exclusive-vs-partial-enteral-nutrition-crohns",
         "fiber-prebiotics-enteral-feeds-microbiome",
@@ -81,37 +89,7 @@
         "starting-biologic-first-12-weeks",
         "entyvio-patient-guide-ibd",
         "colonoscopy-prep-ibd",
-        "complete-ibd-nutrition-guide",
-        "gas-bloating-ibd",
-        "how-to-read-colonoscopy-report-ibd",
-        "nsaids-ibd-risk",
-        "what-remission-means-ibd",
-        "ibd-unintentional-weight-changes",
-        "ibd-care-outside-united-states",
-        "ankylosing-spondylitis-ibd",
-        "autoimmune-diet-myths",
-        "autoimmune-hepatitis-ibd",
-        "celiac-ibd-screening",
-        "fatigue-autoimmune-ibd",
-        "gut-microbiome-autoimmune",
-        "hashimotos-thyroid-autoimmune",
-        "ibd-autoimmune-overlap",
-        "carnivore-diet-ibd-myths",
-        "bone-broth-gut-healing-ibd",
-        "juice-cleanse-detox-ibd",
-        "intermittent-fasting-ibd",
-        "collagen-supplements-ibd",
-        "leaky-gut-protocol-ibd",
-        "chapati-roti-ibd",
-        "dal-lentils-ibd",
-        "congee-rice-porridge-ibd",
-        "miso-soup-ibd",
-        "kimchi-fermented-ibd",
-        "plantain-ibd",
-        "tortillas-ibd",
-        "couscous-ibd",
-        "dates-ramadan-ibd",
-        "paneer-ibd"
+        "complete-ibd-nutrition-guide"
       ]
     },
     {
@@ -182,6 +160,10 @@
       "description": "Crohn's disease patient education: diet during flares, treatment basics, support groups, and free tracking tools from IBDPal.",
       "intro": "Crohn's disease can affect any part of the digestive tract. Use these guides and articles to prepare for clinic visits and daily life questions.",
       "keywords": [
+        "gut microbiome",
+        "microbiome testing",
+        "probiotics",
+        "Visbiome",
         "EEN Crohn's",
         "perianal Crohn's",
         "Crohn's biologics",
@@ -222,6 +204,10 @@
         }
       ],
       "blog_slugs": [
+        "microbiome-lab-testing-ibd",
+        "visbiome-probiotics-ibd",
+        "probiotics-ibd-practical-guide",
+        "microbiome-research-labs-ibd",
         "enteral-nutrition-ibd",
         "exclusive-vs-partial-enteral-nutrition-crohns",
         "adult-een-crohns-what-to-expect",
@@ -245,22 +231,7 @@
         "multiple-sclerosis-autoimmune-basics",
         "osteoporosis-bone-health-ibd",
         "psc-ibd-liver",
-        "psoriasis-ibd-connection",
-        "rheumatoid-arthritis-autoimmune-overview",
-        "sjogren-autoimmune-overview",
-        "stress-autoimmune-symptoms",
-        "thrombosis-clot-risk-ibd",
-        "type1-diabetes-autoimmune-basics",
-        "vaccine-autoimmune-immunosuppression",
-        "when-to-go-er-ibd",
-        "humira-fatigue-ibd",
-        "stelara-diet-ibd",
-        "skyrizi-patient-questions-ibd",
-        "rinvoq-patient-questions-ibd",
-        "remicade-infusion-day-tips-ibd",
-        "prednisone-diet-hunger-ibd",
-        "methotrexate-alcohol-folate-ibd",
-        "biologics-flying-travel-ibd"
+        "psoriasis-ibd-connection"
       ]
     },
     {
@@ -270,6 +241,10 @@
       "description": "Ulcerative colitis education: UC diet, flare management, triggers, support near you, and symptom tracking with IBDPal.",
       "intro": "Ulcerative colitis primarily involves the colon. These resources focus on nutrition, flares, and finding peer support.",
       "keywords": [
+        "gut microbiome",
+        "microbiome testing",
+        "probiotics",
+        "Visbiome",
         "ulcerative colitis",
         "UC diet",
         "colitis flare",
@@ -302,6 +277,10 @@
         }
       ],
       "blog_slugs": [
+        "microbiome-lab-testing-ibd",
+        "visbiome-probiotics-ibd",
+        "probiotics-ibd-practical-guide",
+        "microbiome-research-labs-ibd",
         "when-to-go-er-ibd",
         "j-pouch-basics-ibd",
         "ibd-pregnancy-planning",

@@ -10,6 +10,22 @@
   ],
   "rewrites": [
     {
+      "source": "/blog/microbiome-lab-testing-ibd",
+      "destination": "/blogs/microbiome-lab-testing-ibd.html"
+    },
+    {
+      "source": "/blog/visbiome-probiotics-ibd",
+      "destination": "/blogs/visbiome-probiotics-ibd.html"
+    },
+    {
+      "source": "/blog/probiotics-ibd-practical-guide",
+      "destination": "/blogs/probiotics-ibd-practical-guide.html"
+    },
+    {
+      "source": "/blog/microbiome-research-labs-ibd",
+      "destination": "/blogs/microbiome-research-labs-ibd.html"
+    },
+    {
       "source": "/blog/elemental-vs-polymeric-formula-ibd",
       "destination": "/blogs/elemental-vs-polymeric-formula-ibd.html"
     },

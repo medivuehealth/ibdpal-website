@@ -82,5 +82,15 @@
   "primary sclerosing cholangitis": "psc",
   "erythema nodosum": "pyoderma",
   "pyoderma": "pyoderma",
-  "uveitis": "uveitis"
+  "uveitis": "uveitis",
+  "visbiome": "probiotics",
+  "vsl": "probiotics",
+  "vsl3": "probiotics",
+  "vsl#3": "probiotics",
+  "de simone": "probiotics",
+  "microbiome test": "microbiome",
+  "stool sequencing": "microbiome",
+  "gut bacteria test": "microbiome",
+  "16s": "microbiome",
+  "probiotic supplement": "probiotics"
 }

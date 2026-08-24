@@ -156,6 +156,8 @@
 - https://www.ibdpal.org/blog/melon-ibd
 - https://www.ibdpal.org/blog/mesalamine-5-asa-ibd
 - https://www.ibdpal.org/blog/methotrexate-alcohol-folate-ibd
+- https://www.ibdpal.org/blog/microbiome-lab-testing-ibd
+- https://www.ibdpal.org/blog/microbiome-research-labs-ibd
 - https://www.ibdpal.org/blog/micronutrients-ibd-deficiencies
 - https://www.ibdpal.org/blog/miso-soup-ibd
 - https://www.ibdpal.org/blog/mucus-in-stool-ibd
@@ -183,6 +185,7 @@
 - https://www.ibdpal.org/blog/prednisone-diet-hunger-ibd
 - https://www.ibdpal.org/blog/prior-authorization-biologics-timeline
 - https://www.ibdpal.org/blog/probiotics-ibd-gut-health
+- https://www.ibdpal.org/blog/probiotics-ibd-practical-guide
 - https://www.ibdpal.org/blog/protein-meal-plan-ibd-remission
 - https://www.ibdpal.org/blog/protein-shakes-ons-ibd
 - https://www.ibdpal.org/blog/psc-ibd-liver
@@ -227,6 +230,7 @@
 - https://www.ibdpal.org/blog/uveitis-eye-inflammation-ibd
 - https://www.ibdpal.org/blog/vaccine-autoimmune-immunosuppression
 - https://www.ibdpal.org/blog/vaccines-biologics-immunosuppressants-ibd
+- https://www.ibdpal.org/blog/visbiome-probiotics-ibd
 - https://www.ibdpal.org/blog/vitamin-a-ibd
 - https://www.ibdpal.org/blog/vitamin-c-ibd
 - https://www.ibdpal.org/blog/vomiting-obstruction-ibd-warning-signs
@@ -398,5 +402,4 @@
 - https://www.ibdpal.org/support/wyoming
 - https://www.ibdpal.org/teens-and-school
 - https://www.ibdpal.org/tools/bristol-flare-checker
-- https://www.ibdpal.org/tools/food-pain-tracker
 - https://www.ibdpal.org/ulcerative-colitis
