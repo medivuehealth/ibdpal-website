@@ -272,6 +272,14 @@
           "label": "Crohn's diet & nutrition"
         },
         {
+          "url": "/guides/ibd-biologic-access-outside-us",
+          "label": "Biologic access outside the U.S."
+        },
+        {
+          "url": "/guides/biologics-questions-for-your-doctor",
+          "label": "Biologic questions for your doctor"
+        },
+        {
           "url": "/guides/foods-to-eat-crohns-flare",
           "label": "Foods during a Crohn's flare"
         },
@@ -323,7 +331,8 @@
         "rheumatoid-arthritis-autoimmune-overview",
         "sjogren-autoimmune-overview",
         "thrombosis-clot-risk-ibd",
-        "type1-diabetes-autoimmune-basics"
+        "type1-diabetes-autoimmune-basics",
+        "ibd-care-outside-united-states"
       ]
     },
     {
