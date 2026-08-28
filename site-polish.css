@@ -401,10 +401,10 @@ body {
     width: 100%;
     max-width: none;
     box-sizing: border-box;
-    background: #FFFFFF;
-    border: 1px solid #E5E7EB;
+    background: linear-gradient(135deg, #FFF7F4 0%, #FFEDE6 100%);
+    border: 1px solid #FFD5C8;
     border-radius: 12px;
-    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+    box-shadow: 0 2px 8px rgba(154, 52, 18, 0.06);
     animation: polishFadeUp 0.45s ease-out 0.08s both;
 }
 
