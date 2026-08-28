@@ -361,13 +361,7 @@ body {
 
 /* Homepage hero - compact intro band + full-width search */
 .home-hero {
-    padding: 0  var(--ibd-content-pad) 0.65rem;
-    background: #FFFFFF;
-    text-align: left;
-}
-
-.home-layout__intro {
-    padding: 0.75rem var(--ibd-content-pad) 0.35rem;
+    padding: 0.75rem var(--ibd-content-pad) 0.65rem;
     background: #FFFFFF;
     text-align: left;
 }
@@ -2388,10 +2382,6 @@ a.tab-button,
     min-width: 0;
 }
 
-.home-layout__intro {
-    min-width: 0;
-}
-
 .home-side-rail {
     background: linear-gradient(180deg, rgba(245, 232, 255, 0.72), rgba(255, 255, 255, 0.96));
     border: 1px solid rgba(153, 51, 204, 0.13);
@@ -3551,58 +3541,27 @@ a.tab-button,
 
 @media (min-width: 1180px) {
     .home-layout {
-        grid-template-columns: minmax(240px, 1fr) minmax(680px, 920px) minmax(240px, 1fr);
-        grid-template-areas:
-            "home-left home-intro home-right"
-            "home-left home-main home-right";
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        gap: clamp(0.75rem, 1.5vw, 1.25rem);
     }
 
-    .home-side-rail--left {
-        grid-area: home-left;
-    }
-
-    .home-layout__intro {
-        grid-area: home-intro;
-    }
-
-    .home-layout__main {
-        grid-area: home-main;
-    }
-
+    .home-side-rail--left,
     .home-side-rail--right {
-        grid-area: home-right;
-    }
-
-    .home-side-rail {
+        flex: 0 1 260px;
+        width: 260px;
+        max-width: 28vw;
         position: sticky;
         top: 5.5rem;
         margin-top: 0;
-        align-self: start;
-    }
-
-    .home-layout__intro {
-        padding-top: 0.75rem;
-        padding-bottom: 0;
-    }
-
-    .home-hero {
-        padding-top: 0;
-    }
-}
-
-@media (max-width: 1179px) {
-    .home-layout {
-        grid-template-areas:
-            "home-intro"
-            "home-main";
-    }
-
-    .home-layout__intro {
-        grid-area: home-intro;
     }
 
     .home-layout__main {
-        grid-area: home-main;
+        flex: 1 1 680px;
+        max-width: 920px;
+        min-width: 0;
     }
 }
 
