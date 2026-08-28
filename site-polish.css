@@ -3541,32 +3541,44 @@ a.tab-button,
 
 @media (min-width: 1180px) {
     .home-layout {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
+        display: grid;
+        grid-template-columns: minmax(220px, 280px) minmax(0, 920px) minmax(220px, 280px);
+        grid-template-areas: "home-left home-main home-right";
+        align-items: start;
         justify-content: center;
         gap: clamp(0.75rem, 1.5vw, 1.25rem);
     }
 
-    .home-side-rail--left,
-    .home-side-rail--right {
-        flex: 0 1 260px;
-        width: 260px;
-        max-width: 28vw;
+    .home-layout__main {
+        grid-area: home-main;
+    }
+
+    .home-side-rail-slot--left {
+        grid-area: home-left;
+        align-self: start;
+        justify-self: center;
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .home-side-rail-slot--right {
+        grid-area: home-right;
+        align-self: start;
+        justify-self: center;
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .home-side-rail {
         position: sticky;
         top: 5.5rem;
         margin-top: 0;
-    }
-
-    .home-layout__main {
-        flex: 1 1 680px;
-        max-width: 920px;
-        min-width: 0;
+        width: 100%;
     }
 }
 
 @media (max-width: 1179px) {
-    .home-side-rail {
+    .home-side-rail-slot {
         display: none;
     }
 }

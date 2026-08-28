@@ -89,25 +89,6 @@
             <!-- Home Tab -->
             <div class="tab-content active" id="home">
                 <div class="home-layout">
-                    <aside class="home-side-rail home-side-rail--left" data-top-searches aria-labelledby="top-searches-heading">
-                        <p class="home-side-rail__eyebrow">Today</p>
-                        <h2 id="top-searches-heading" data-top-searches-title>Readers are looking for</h2>
-                        <p data-top-searches-note>Anonymous education searches from IBDPal readers.</p>
-                        <div class="home-side-rail__links" data-top-searches-list></div>
-                        <div class="home-side-rail__section" data-continue-reading hidden>
-                            <p class="home-side-rail__eyebrow">On this device</p>
-                            <h2>Continue reading</h2>
-                            <p>Pages you opened recently on this browser.</p>
-                            <div class="home-side-rail__links" data-continue-list></div>
-                        </div>
-                        <div class="home-side-rail__section" data-seasonal-pack hidden>
-                            <p class="home-side-rail__eyebrow" data-seasonal-eyebrow>Seasonal</p>
-                            <h2 data-seasonal-title>Seasonal pack</h2>
-                            <p data-seasonal-note>Curated reads for this time of year.</p>
-                            <div class="home-side-rail__links" data-seasonal-list></div>
-                        </div>
-                    </aside>
-
                     <div class="home-layout__main">
                         <section class="home-hero" aria-labelledby="start-here-heading">
                             <div class="home-hero__intro">
@@ -233,6 +214,28 @@
                         </section>
                     </div>
 
+                    <div class="home-side-rail-slot home-side-rail-slot--left">
+                    <aside class="home-side-rail home-side-rail--left" data-top-searches aria-labelledby="top-searches-heading">
+                        <p class="home-side-rail__eyebrow">Today</p>
+                        <h2 id="top-searches-heading" data-top-searches-title>Readers are looking for</h2>
+                        <p data-top-searches-note>Anonymous education searches from IBDPal readers.</p>
+                        <div class="home-side-rail__links" data-top-searches-list></div>
+                        <div class="home-side-rail__section" data-continue-reading hidden>
+                            <p class="home-side-rail__eyebrow">On this device</p>
+                            <h2>Continue reading</h2>
+                            <p>Pages you opened recently on this browser.</p>
+                            <div class="home-side-rail__links" data-continue-list></div>
+                        </div>
+                        <div class="home-side-rail__section" data-seasonal-pack hidden>
+                            <p class="home-side-rail__eyebrow" data-seasonal-eyebrow>Seasonal</p>
+                            <h2 data-seasonal-title>Seasonal pack</h2>
+                            <p data-seasonal-note>Curated reads for this time of year.</p>
+                            <div class="home-side-rail__links" data-seasonal-list></div>
+                        </div>
+                    </aside>
+                    </div>
+
+                    <div class="home-side-rail-slot home-side-rail-slot--right">
                     <aside class="home-side-rail home-side-rail--right" data-top-content aria-labelledby="top-content-heading">
                         <p class="home-side-rail__eyebrow" data-top-content-window>This week</p>
                         <h2 id="top-content-heading" data-top-content-title>Most helpful this week</h2>
@@ -257,6 +260,7 @@
                             <div class="home-side-rail__links" data-gap-answers-list></div>
                         </div>
                     </aside>
+                    </div>
                 </div>
             </div>
 
