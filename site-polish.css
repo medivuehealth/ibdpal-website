@@ -2400,9 +2400,9 @@ a.tab-button,
     border: 1px solid rgba(153, 51, 204, 0.13);
     border-radius: 18px;
     box-shadow: 0 12px 28px rgba(55, 28, 78, 0.07);
-    padding: 0.85rem;
+    padding: 0.75rem 0.85rem 0.85rem;
     align-self: start;
-    margin-top: clamp(5.4rem, 7vw, 7rem);
+    margin-top: 0;
     overflow-wrap: anywhere;
 }
 
