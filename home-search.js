@@ -48,17 +48,6 @@
     return n;
   }
 
-  function debounce(fn, delay) {
-    var timer = null;
-    return function () {
-      var args = arguments;
-      window.clearTimeout(timer);
-      timer = window.setTimeout(function () {
-        fn.apply(null, args);
-      }, delay);
-    };
-  }
-
   function buildHaystack(item) {
     return (
       item.title +
@@ -226,6 +215,14 @@
       autocomplete.hidden = false;
     }
 
+    function commitSearch() {
+      var q = input.value.trim();
+      var normalized = normalizeTerm(q);
+      if (normalized.length < 2 || normalized === lastTracked) return;
+      lastTracked = normalized;
+      recordSearchEvent(q, runSearch());
+    }
+
     function applyTerm(term) {
       input.value = term;
       clearAutocomplete();
@@ -373,14 +370,6 @@
         .map(function (row) { return row.item; });
     }
 
-    var trackSearch = debounce(function () {
-      var q = input.value.trim();
-      var normalized = normalizeTerm(q);
-      if (normalized.length < 2 || normalized === lastTracked) return;
-      lastTracked = normalized;
-      recordSearchEvent(q, runSearch());
-    }, 650);
-
     function renderSuggestions(items, isFallback) {
       if (!suggestions) return;
       var source = (items && items.length ? items : FALLBACK_SUGGESTIONS).slice(0, 5);
@@ -441,7 +430,6 @@
 
     input.addEventListener('input', function () {
       runSearch();
-      trackSearch();
     });
 
     input.addEventListener('keydown', function (event) {
@@ -464,9 +452,13 @@
         });
         return;
       }
-      if (event.key === 'Enter' && activeIndex >= 0 && items[activeIndex]) {
+      if (event.key === 'Enter') {
         event.preventDefault();
-        applyTerm(items[activeIndex].getAttribute('data-home-ac') || '');
+        if (activeIndex >= 0 && items[activeIndex]) {
+          applyTerm(items[activeIndex].getAttribute('data-home-ac') || '');
+          return;
+        }
+        commitSearch();
         return;
       }
       if (event.key === 'Tab' && items.length && !event.shiftKey) {

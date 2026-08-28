@@ -59,17 +59,6 @@
     ).toLowerCase();
   }
 
-  function debounce(fn, delay) {
-    var timer = null;
-    return function () {
-      var args = arguments;
-      window.clearTimeout(timer);
-      timer = window.setTimeout(function () {
-        fn.apply(null, args);
-      }, delay);
-    };
-  }
-
   function normalizeTerm(value) {
     return String(value || '').toLowerCase().replace(/[^\w\s'-]/g, ' ').replace(/\s+/g, ' ').trim();
   }
@@ -187,15 +176,6 @@
       return visible;
     }
 
-    var trackSearch = debounce(function () {
-      if (!search) return;
-      var q = search.value.trim();
-      var normalized = normalizeTerm(q);
-      if (normalized.length < 2 || normalized === lastTrackedSearch) return;
-      lastTrackedSearch = normalized;
-      recordSearchEvent(q, apply());
-    }, 700);
-
     function renderSuggestions(items, isFallback) {
       if (!suggestions) return;
       var source = (items && items.length ? items : FALLBACK_SUGGESTIONS).slice(0, 5);
@@ -250,10 +230,20 @@
       syncPills(root, filter.value);
       apply();
     });
-    if (search) search.addEventListener('input', function () {
-      apply();
-      trackSearch();
-    });
+    if (search) {
+      search.addEventListener('input', function () {
+        apply();
+      });
+      search.addEventListener('keydown', function (event) {
+        if (event.key !== 'Enter') return;
+        event.preventDefault();
+        var q = search.value.trim();
+        var normalized = normalizeTerm(q);
+        if (normalized.length < 2 || normalized === lastTrackedSearch) return;
+        lastTrackedSearch = normalized;
+        recordSearchEvent(q, apply());
+      });
+    }
     try {
       var initialQ = new URLSearchParams(window.location.search).get('q');
       if (initialQ && search) {
