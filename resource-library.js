@@ -171,6 +171,13 @@
       });
       if (empty) {
         empty.hidden = visible > 0;
+        var askLink = empty.querySelector('[data-ask-with-search]');
+        if (askLink && search) {
+          var term = search.value.trim();
+          askLink.href = term
+            ? '/ask?q=' + encodeURIComponent(term) + '&from=resource_library'
+            : '/ask?from=resource_library';
+        }
       }
       list.hidden = visible === 0 && !!empty;
       return visible;

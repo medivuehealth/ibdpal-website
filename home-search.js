@@ -276,7 +276,7 @@
         '<div class="home-search__empty-wrap">' +
         '<p class="home-search__empty">No matches yet for "' + escapeHtml(q) + '".</p>' +
         aliasBtn +
-        '<p class="home-search__gap-note">We noted this topic for future education. Try a start question below, or browse <a href="/#guides">Guides &amp; tools</a>.</p>' +
+        '<p class="home-search__gap-note">We noted this topic for future education. <a href="/ask?q=' + encodeURIComponent(q) + '&amp;from=home_search">Ask your question</a> or browse <a href="/#guides">Guides &amp; tools</a>.</p>' +
         '<div class="home-search__zero-links">' +
         '<a href="/flare-help">Flare help</a>' +
         '<a href="/ibd-nutrition">Nutrition hub</a>' +

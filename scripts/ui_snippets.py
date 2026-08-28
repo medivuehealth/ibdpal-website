@@ -30,7 +30,7 @@ RESOURCE_TOOLBAR_HTML = """
                     <div class="resource-library__empty" hidden>
                         <svg class="resource-library__empty-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 21l-4.3-4.3M10.5 18a7.5 7.5 0 1 0 0-15 7.5 7.5 0 0 0 0 15z"/><path d="M8 10h5M8 13h3"/></svg>
                         <p class="resource-library__empty-title">No matches yet</p>
-                        <p class="resource-library__empty-hint">Try <strong>dairy</strong>, <strong>gluten</strong>, <strong>immune</strong>, or clear your filters.</p>
+                        <p class="resource-library__empty-hint">Try <strong>dairy</strong>, <strong>gluten</strong>, <strong>immune</strong>, or clear your filters. Still stuck? <a href="/ask?from=resource_library" data-ask-with-search>Ask a question</a>.</p>
                     </div>
 """
 

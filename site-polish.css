@@ -4077,3 +4077,110 @@ a.tab-button,
     gap: 0.5rem;
     margin-top: 0.75rem;
 }
+
+/* Ask a question form (/ask) */
+.ask-question-page .ask-question__form-block {
+    max-width: 40rem;
+}
+
+.ask-question__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.ask-question__field label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.35rem;
+}
+
+.ask-question__required {
+    font-weight: 500;
+    color: #8b4513;
+}
+
+.ask-question__optional {
+    font-weight: 400;
+    color: rgba(40, 24, 16, 0.65);
+    font-size: 0.92em;
+}
+
+.ask-question__field textarea,
+.ask-question__field input[type="text"],
+.ask-question__field input[type="email"] {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0.65rem 0.75rem;
+    border: 1px solid rgba(40, 24, 16, 0.22);
+    border-radius: 8px;
+    font: inherit;
+    background: #fff;
+}
+
+.ask-question__field textarea {
+    min-height: 9rem;
+    resize: vertical;
+}
+
+.ask-question__hint,
+.ask-question__note {
+    margin: 0.35rem 0 0;
+    font-size: 0.9rem;
+    color: rgba(40, 24, 16, 0.72);
+}
+
+.ask-question__field--hp {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.ask-question__submit {
+    align-self: flex-start;
+    padding: 0.65rem 1.25rem;
+    border: none;
+    border-radius: 8px;
+    background: #c45c26;
+    color: #fff;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.ask-question__submit:hover:not(:disabled) {
+    background: #a84d1f;
+}
+
+.ask-question__submit:disabled {
+    opacity: 0.65;
+    cursor: wait;
+}
+
+.ask-question__status {
+    margin: 0;
+    padding: 0.65rem 0.85rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+}
+
+.ask-question__status--error {
+    background: #fdecea;
+    color: #8b1a1a;
+    border: 1px solid rgba(139, 26, 26, 0.2);
+}
+
+.ask-question__status--success {
+    background: #e8f5e9;
+    color: #1b5e20;
+    border: 1px solid rgba(27, 94, 32, 0.2);
+}
+
+.ask-question__status--pending {
+    background: #fff8e1;
+    color: #6d4c00;
+    border: 1px solid rgba(109, 76, 0, 0.15);
+}

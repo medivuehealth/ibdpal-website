@@ -470,6 +470,10 @@
       "destination": "/api/web/analytics?action=top-content"
     },
     {
+      "source": "/api/web/reader-questions/admin",
+      "destination": "/api/web/reader-questions?action=admin-list"
+    },
+    {
       "source": "/blog/lupus-autoimmune-basics",
       "destination": "/blogs/lupus-autoimmune-basics.html"
     },
@@ -976,6 +980,10 @@
     {
       "source": "/contact",
       "destination": "/contact.html"
+    },
+    {
+      "source": "/ask",
+      "destination": "/ask.html"
     },
     {
       "source": "/impact",
