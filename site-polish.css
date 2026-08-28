@@ -367,16 +367,11 @@ body {
 }
 
 .home-hero__intro {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 0.25rem 1.5rem;
+    display: block;
 }
 
 .home-hero__title {
     margin: 0;
-    flex: 0 1 auto;
     font-family: var(--ibd-font-display);
     font-size: clamp(1.35rem, 2.6vw, 1.65rem);
     font-weight: 700;
@@ -386,21 +381,13 @@ body {
 }
 
 .home-hero__subtitle {
-    margin: 0;
-    flex: 1 1 14rem;
-    min-width: 0;
+    margin: 0.3rem 0 0;
     max-width: none;
     font-family: var(--ibd-font-body);
     font-size: var(--ibd-text-sm);
     font-weight: 500;
     line-height: 1.45;
     color: #222222;
-}
-
-@media (min-width: 720px) {
-    .home-hero__subtitle {
-        text-align: right;
-    }
 }
 
 /* Homepage CCF license strip - soft white card; logo separate (not a brand lockup) */
@@ -3560,20 +3547,24 @@ a.tab-button,
 
     .home-side-rail--left {
         grid-area: home-left;
+        grid-row: 1;
     }
 
     .home-layout__main {
         grid-area: home-main;
+        grid-row: 1;
     }
 
     .home-side-rail--right {
         grid-area: home-right;
+        grid-row: 1;
     }
 
     .home-side-rail {
         position: sticky;
         top: 5.5rem;
         margin-top: 0;
+        align-self: start;
     }
 }
 

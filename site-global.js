@@ -307,6 +307,8 @@
     var section = document.querySelector('[data-top-searches]');
     if (!section) return;
 
+    renderTopSearches(FALLBACK_SEARCHES, true);
+
     window.fetch(WEB_API_BASE + '/top-searches?days=1&limit=5&minCount=2')
       .then(function (response) {
         if (!response.ok) throw new Error('Top searches unavailable');
@@ -348,6 +350,8 @@
   function loadTopContent() {
     var section = document.querySelector('[data-top-content]');
     if (!section) return;
+
+    renderTopContent(FALLBACK_CONTENT, true);
 
     window.fetch(WEB_API_BASE + '/top-content?days=7&limit=5&minCount=1&eventType=view')
       .then(function (response) {
