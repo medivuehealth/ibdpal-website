@@ -98,7 +98,7 @@ def parse_guide(path: Path) -> dict | None:
     return {
         "title": title,
         "category": GUIDE_CATEGORY.get(slug, "getting-started"),
-        "type": "site",
+        "type": "guide",
         "url": f"/guides/{slug}",
         "description": desc_m.group(1) if desc_m else "",
         "tags": [],

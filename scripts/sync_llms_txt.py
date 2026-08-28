@@ -28,7 +28,7 @@ def guide_urls() -> list[str]:
 
 def hub_urls() -> list[str]:
     data = json.loads(DATA.read_text(encoding="utf-8"))
-    urls = [f"{SITE}/blog", f"{SITE}/faq", f"{SITE}/support", f"{SITE}/tools/bristol-flare-checker"]
+    urls = [f"{SITE}/blog", f"{SITE}/faq", f"{SITE}/support", f"{SITE}/tools/bristol-flare-checker", f"{SITE}/what-is-ibd", f"{SITE}/crohns-and-colitis", f"{SITE}/start-here", f"{SITE}/newly-diagnosed"]
     for hub in data.get("hubs", []):
         urls.append(f"{SITE}/{hub['slug']}")
     for p in SUPPORT.glob("*.html"):
@@ -54,6 +54,8 @@ def site_block() -> str:
         f"{SITE}/site-updates",
         f"{SITE}/executive-summary",
         f"{SITE}/start-here",
+        f"{SITE}/what-is-ibd",
+        f"{SITE}/crohns-and-colitis",
         f"{SITE}/ibd-crohns-support",
         f"{SITE}/newly-diagnosed",
         f"{SITE}/crohns-colitis-foundation-resources",

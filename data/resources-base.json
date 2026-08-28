@@ -35,6 +35,22 @@
     "tags": ["clinical guidance", "nutrition therapy", "Crohn's", "colitis"]
   },
   {
+    "title": "What Is IBD? Inflammatory Bowel Disease Explained",
+    "category": "getting-started",
+    "type": "site",
+    "url": "/what-is-ibd",
+    "tags": ["IBD", "inflammatory bowel disease", "Crohn's", "ulcerative colitis", "diagnosis"],
+    "description": "Patient education overview of inflammatory bowel disease, Crohn's vs colitis, and when to see your GI team."
+  },
+  {
+    "title": "Crohn's and Colitis: What's the Difference?",
+    "category": "getting-started",
+    "type": "site",
+    "url": "/crohns-and-colitis",
+    "tags": ["Crohn's disease", "ulcerative colitis", "IBD comparison", "colitis vs Crohn's"],
+    "description": "Side-by-side patient guide comparing Crohn's disease and ulcerative colitis symptoms, location, and care topics."
+  },
+  {
     "title": "NIDDK: Crohn's Disease",
     "category": "getting-started",
     "type": "external",

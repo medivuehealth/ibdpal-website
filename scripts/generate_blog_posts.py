@@ -29,7 +29,9 @@ from eeat_blocks import ( # noqa: E402
 )
 from site_nav import PAGE_SCRIPTS, SITE_HEADER_HTML, TAB_NAV_HTML # noqa: E402
 from site_footer import SITE_FOOTER_BLOG # noqa: E402
-from blog_expansion_utils import merge_blog_body # noqa: E402
+from blog_expansion_utils import merge_blog_body, load_expansions # noqa: E402
+
+CONTENT_REFRESH_ISO = "2026-08-28T12:00:00Z"
 
 SEO_DATA = ROOT / "data" / "seo-expansion.json"
 
@@ -369,6 +371,7 @@ def _related_section(slug: str) -> str:
 
 def render_post(p: dict) -> str:
     slug = p["slug"]
+    date_modified = CONTENT_REFRESH_ISO if slug in load_expansions() else (p.get("date_modified") or p["date_iso"])
     related = _related_section(slug)
     asset = p["asset_dir"]
     thumb = f"/blogs/assets/{asset}/{p['images'][0]}"
@@ -392,7 +395,7 @@ def render_post(p: dict) -> str:
                 "headline": p["title"],
                 "description": p["description"],
                 "datePublished": p["date_iso"],
-                "dateModified": p.get("date_modified") or p["date_iso"],
+                "dateModified": date_modified,
                 "author": {"@type": "Organization", "name": "MediVue", "url": "https://www.ibdpal.org/"},
                 "reviewedBy": reviewed_by_org(),
                 **page_review_props(),
@@ -452,7 +455,7 @@ def render_post(p: dict) -> str:
     <meta name="twitter:title" content="{html.escape(format_document_title(p["title"]))}">
     <meta name="twitter:description" content="{html.escape(p["description"])}">
     <meta property="article:published_time" content="{p["date_iso"]}">
-    <meta property="article:modified_time" content="{p.get("date_modified") or p["date_iso"]}">
+    <meta property="article:modified_time" content="{date_modified}">
     <script type="application/ld+json">{ld_json}</script>
 </head>
 <body data-blog-share-text="{html.escape(p["share"])}">

@@ -208,10 +208,11 @@ def howto_json(
     }
 
 
-def web_page_json(path: str, title: str, description: str) -> dict:
+def web_page_json(path: str, title: str, description: str, *, medical: bool = False) -> dict:
+    page_type: str | list[str] = ["WebPage", "MedicalWebPage"] if medical else "WebPage"
     return {
         "@context": "https://schema.org",
-        "@type": "WebPage",
+        "@type": page_type,
         "url": SITE + path,
         "name": title,
         "description": description,

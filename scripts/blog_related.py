@@ -25,9 +25,10 @@ def build_related_links(
             if len([u for u, _ in links if u.startswith("/blog/")]) >= 2:
                 break
     else:
-        links.append(("/blog", "All blog posts"))
+        links.append(("/what-is-ibd", "What is inflammatory bowel disease (IBD)?"))
+        links.append(("/crohns-and-colitis", "Crohn's and colitis compared"))
         links.append(("/guides", "Patient guides by topic"))
-        for fallback in ("flare-first-48-hours", "best-foods-crohns-flare", "tracking-food-symptoms-ibdpal"):
+        for fallback in ("flare-first-48-hours", "best-foods-crohns-flare", "tracking-food-symptoms-ibdpal", "newly-diagnosed-first-30-days"):
             if fallback == slug or fallback not in posts:
                 continue
             links.append((f"/blog/{fallback}", posts[fallback]["title"]))

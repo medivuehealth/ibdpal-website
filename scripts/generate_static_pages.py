@@ -149,7 +149,7 @@ def shell(
         body = content_note_en() + edu_disclaimer_en() + body + f"\n {hub_disclaimer_en()}"
     graph = [
         breadcrumb_json(path, crumb_name),
-        {**web_page_json(path, crumb_name, description), **(page_review_props() if path in EEAT_PATHS else {})},
+        {**web_page_json(path, crumb_name, description, medical=True), **(page_review_props() if path in EEAT_PATHS else {})},
     ]
     if extra_graph:
         graph.extend(extra_graph)

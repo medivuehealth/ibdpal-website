@@ -19,6 +19,20 @@ from amp_utils import discover_blogs  # noqa: E402
 
 SEASONAL_PACKS = [
     {
+        "id": "getting-started-ibd",
+        "months": list(range(1, 13)),
+        "eyebrow": "Start here",
+        "title": "New to IBD? Read these first",
+        "note": "Pillar overviews, guides, and first-step articles.",
+        "links": [
+            {"url": "/what-is-ibd", "title": "What is IBD?"},
+            {"url": "/crohns-and-colitis", "title": "Crohn's and colitis compared"},
+            {"url": "/start-here", "title": "Start here roadmap"},
+            {"url": "/guides/newly-diagnosed-crohns-colitis", "title": "Newly diagnosed guide"},
+            {"url": "/blog/newly-diagnosed-first-30-days", "title": "First 30 days article"},
+        ],
+    },
+    {
         "id": "back-to-school",
         "months": [7, 8],
         "eyebrow": "Seasonal",

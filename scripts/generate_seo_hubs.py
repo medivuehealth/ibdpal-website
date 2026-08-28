@@ -333,6 +333,10 @@ def render_blog_index(meta: dict, posts: dict[str, dict]) -> str:
                 <section class="seo-landing__block">
                     <h2>Browse by topic</h2>
                     <ul class="seo-landing__list">
+                        <li><a href="/what-is-ibd">What is IBD?</a></li>
+                        <li><a href="/crohns-and-colitis">Crohn's &amp; colitis compared</a></li>
+                        <li><a href="/start-here">Start here roadmap</a></li>
+                        <li><a href="/stool-labs-decoder">Stool &amp; labs decoder</a></li>
                         <li><a href="/ibd-nutrition">Nutrition &amp; diet</a></li>
                         <li><a href="/crohns-disease">Crohn's disease</a></li>
                         <li><a href="/ulcerative-colitis">Ulcerative colitis</a></li>

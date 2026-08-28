@@ -178,8 +178,9 @@ def render_page(page: dict) -> str:
     graph = [
         guide_breadcrumb(path, page["h1"]),
         {
-            **web_page_json(path, page["h1"], page["description"]),
+            **web_page_json(path, page["h1"], page["description"], medical=True),
             **page_review_props(),
+            "dateModified": "2026-08-28",
             "keywords": keywords_meta,
             "about": {"@type": "MedicalCondition", "name": "Inflammatory bowel disease"},
         },
