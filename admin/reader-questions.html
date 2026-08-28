@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Reader Questions Admin | IBDPal</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/site-layout-icn.css">
+    <link rel="stylesheet" href="/site-polish.css">
+</head>
+<body>
+    <div class="admin-research-shell">
+        <h1>Reader questions desk</h1>
+        <p>Review submitted questions and publish answers. Public page: <a href="/ask">/ask</a>. This page is noindex.</p>
+
+        <section class="seo-landing__block">
+            <h2>Admin access</h2>
+            <form class="student-research-form" id="rq-admin-form">
+                <label>Admin token <input type="password" name="adminToken" required autocomplete="off"></label>
+                <button type="submit">Load questions</button>
+            </form>
+            <p class="student-research-status" id="rq-admin-status" role="status"></p>
+        </section>
+
+        <section class="seo-landing__block" id="rq-list-section" hidden>
+            <h2>Queue</h2>
+            <p>
+                <button type="button" id="rq-filter-new" class="ask-question__submit">New only</button>
+                <button type="button" id="rq-filter-all" class="ask-question__submit">All</button>
+            </p>
+            <div id="rq-admin-list"></div>
+        </section>
+
+        <p><a href="/ask">Public Ask page</a> · <a href="/">Home</a></p>
+    </div>
+    <script src="/reader-questions-admin.js" defer></script>
+</body>
+</html>

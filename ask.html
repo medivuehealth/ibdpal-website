@@ -6,25 +6,16 @@
     <meta name="theme-color" content="#FFE5DC">
     <meta name="ask-source" content="ask_page">
     <script src="/canonical-host.js"></script>
-    <title>Ask a Question | IBDPal Patient Education</title>
-    <meta name="description" content="Could not find an answer on IBDPal? Submit a Crohn's or colitis question for our education team. Not medical advice or personal replies.">
-    <meta name="keywords" content="ask IBD question, Crohn's colitis help, patient education gap">
+    <title>Ask IBDPal | Reader Questions &amp; Answers</title>
+    <meta name="description" content="Ask a Crohn's or colitis question IBDPal has not covered yet. Read answered reader questions as they are published. Education only, not medical advice.">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <meta name="author" content="MediVue">
     <link rel="canonical" href="https://www.ibdpal.org/ask">
-    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.ibdpal.org/sitemap.xml">
-    <link rel="alternate" hreflang="en" href="https://www.ibdpal.org/ask">
-    <link rel="alternate" hreflang="x-default" href="https://www.ibdpal.org/ask">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.ibdpal.org/ask">
-    <meta property="og:title" content="Ask a Question | IBDPal">
-    <meta property="og:description" content="Submit a question when our guides and articles do not cover what you need. Education only.">
+    <meta property="og:title" content="Ask IBDPal | Reader Questions &amp; Answers">
+    <meta property="og:description" content="Submit a question or browse answered reader questions on Crohn's and colitis.">
     <meta property="og:site_name" content="IBDPal">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:image" content="https://www.ibdpal.org/IBDPal_Logo.png">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Ask a Question | IBDPal">
-    <meta name="twitter:description" content="Submit a question when our guides and articles do not cover what you need.">
+    <meta property="og:image" content="https://www.ibdpal.org/blogs/assets/ibd-help-center/helpcenter_1.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="/styles.css">
@@ -34,11 +25,9 @@
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="icon" type="image/png" href="/IBDPal_Logo.png">
     <link rel="apple-touch-icon" href="/IBDPal_Logo.png">
-    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"IBDPal","item":"https://www.ibdpal.org/"},{"@type":"ListItem","position":2,"name":"Ask a question","item":"https://www.ibdpal.org/ask"}]},{"@type":"WebPage","url":"https://www.ibdpal.org/ask","name":"Ask a question","description":"Submit a patient education question when IBDPal does not yet cover your topic.","isPartOf":{"@type":"WebSite","name":"IBDPal","url":"https://www.ibdpal.org/"}}]}</script>
 </head>
-<body>
-    <div class="container">
-
+<body data-ask-page="index">
+    <div class="app-container">
         <header class="header">
             <div class="header__inner">
                 <div class="logo">
@@ -57,7 +46,7 @@
         <nav class="tab-navigation" aria-label="Main">
             <div class="tab-container">
                 <a href="https://www.ibdpal.org/" class="tab-button" data-tab="home">Home</a>
-                <a href="https://www.ibdpal.org/#guides" class="tab-button" data-tab="library">Patient Library</a>
+                <a href="https://www.ibdpal.org/#guides" class="tab-button active" data-tab="library">Patient Library</a>
                 <a href="https://www.ibdpal.org/#tools-lab" class="tab-button" data-tab="tools-lab">Tools Lab</a>
                 <a href="https://www.ibdpal.org/#recipe-ideas" class="tab-button" data-tab="recipe-ideas">Recipe Ideas</a>
                 <a href="https://www.ibdpal.org/#nutrition-targets" class="tab-button" data-tab="nutrition-targets">Nutrients</a>
@@ -70,13 +59,21 @@
         </nav>
 
         <main class="main-content" id="main-content">
-            <article class="support-section seo-landing ask-question-page">
-                <p class="blog-back"><a href="/resources" class="blog-back-link">&larr; Resource library</a></p>
-                <h1>Ask a question</h1>
-                <p class="support-intro">Could not find what you need in our <a href="/guides">guides</a> or <a href="/blog">articles</a>? Tell us what you were looking for. Submissions help us prioritize new patient education. We cannot reply to every question personally, and this form is <strong>not</strong> for medical advice or emergencies.</p>
+            <div class="blogs-section reader-qa-hub">
+                <p class="blog-back"><a href="/blog" class="blog-back-link">&larr; All articles</a></p>
 
-                <section class="seo-landing__block ask-question__form-block">
-                    <h2>Your question</h2>
+                <header class="reader-qa-hub__header">
+                    <h1 class="blog-title">Ask IBDPal</h1>
+                    <p class="blog-date">Reader questions &amp; answers &middot; Updated as we publish</p>
+                </header>
+
+                <p class="blog-medical-review"><strong>Content note:</strong> Educational content only. Answered questions are general patient education, not personal medical advice for your situation.</p>
+                <p class="blog-edu-disclaimer"><strong>Educational use only.</strong> IBDPal does not provide medical advice, diagnosis, or treatment. Always consult your gastroenterologist or IBD care team for personal decisions.</p>
+
+                <p class="support-intro">Could not find what you need in our <a href="/guides">guides</a> or <a href="/blog">articles</a>? Ask below. We collect questions and publish answers here when we can. Not every submission gets a personal reply or a published answer.</p>
+
+                <section class="reader-qa-hub__submit seo-landing__block" id="ask-form">
+                    <h2>Ask a question</h2>
                     <p class="ask-question__note">Use respectful language. Vulgar, profane, or obscene text is blocked automatically.</p>
                     <form id="ask-question-form" class="ask-question__form" novalidate>
                         <div class="ask-question__field ask-question__field--hp" aria-hidden="true">
@@ -84,38 +81,33 @@
                             <input type="text" id="ask-question-website" name="website" tabindex="-1" autocomplete="off">
                         </div>
                         <div class="ask-question__field">
-                            <label for="ask-question-text">Question <span class="ask-question__required">(required)</span></label>
-                            <textarea id="ask-question-text" name="question" rows="6" required minlength="15" maxlength="2000" placeholder="Example: Does my calprotectin number mean I am getting worse if I only have one test so far?"></textarea>
-                            <p class="ask-question__hint">At least 15 characters. Do not include passwords or full medical record numbers.</p>
+                            <label for="ask-question-text">Your question <span class="ask-question__required">(required)</span></label>
+                            <textarea id="ask-question-text" name="question" rows="5" required minlength="15" maxlength="2000" placeholder="Example: Does my calprotectin number mean I am getting worse if I only have one test so far?"></textarea>
+                            <p class="ask-question__hint">At least 15 characters. No passwords or full medical record numbers.</p>
                         </div>
-                        <div class="ask-question__field">
-                            <label for="ask-question-name">First name or nickname <span class="ask-question__optional">(optional)</span></label>
-                            <input type="text" id="ask-question-name" name="name" maxlength="120" autocomplete="name">
-                        </div>
-                        <div class="ask-question__field">
-                            <label for="ask-question-email">Email <span class="ask-question__optional">(optional)</span></label>
-                            <input type="email" id="ask-question-email" name="email" maxlength="160" autocomplete="email" inputmode="email">
-                            <p class="ask-question__hint">We rarely email back. Optional if you want us to reach you about a future article.</p>
+                        <div class="ask-question__field-row">
+                            <div class="ask-question__field">
+                                <label for="ask-question-name">Name <span class="ask-question__optional">(optional)</span></label>
+                                <input type="text" id="ask-question-name" name="name" maxlength="120" autocomplete="name">
+                            </div>
+                            <div class="ask-question__field">
+                                <label for="ask-question-email">Email <span class="ask-question__optional">(optional)</span></label>
+                                <input type="email" id="ask-question-email" name="email" maxlength="160" autocomplete="email" inputmode="email">
+                            </div>
                         </div>
                         <p id="ask-question-status" class="ask-question__status" role="status" hidden></p>
                         <button type="submit" class="ask-question__submit" id="ask-question-submit">Submit question</button>
                     </form>
                 </section>
 
-                <section class="seo-landing__block">
-                    <h2>Before you submit</h2>
-                    <ul class="seo-landing__list">
-                        <li><strong>Urgent symptoms:</strong> contact your gastroenterologist or emergency services, not this form.</li>
-                        <li><strong>Personal medical advice:</strong> we publish general education, not individual treatment plans.</li>
-                        <li><strong>Try search first:</strong> <a href="/resources">Resource library</a>, <a href="/newly-diagnosed">newly diagnosed hub</a>, <a href="/flare-help">flare help</a>.</li>
-                    </ul>
+                <section class="reader-qa-hub__answered seo-landing__block" aria-labelledby="answered-heading">
+                    <h2 id="answered-heading">Answered questions</h2>
+                    <p class="reader-qa-hub__lede">Published answers appear below, newest first. We add more as our education team can.</p>
+                    <div id="reader-qa-list" class="blog-grid blog-grid--magazine reader-qa-list" aria-live="polite">
+                        <p class="reader-qa-list__loading">Loading answered questions…</p>
+                    </div>
                 </section>
-
-                <section class="seo-landing__block">
-                    <h2>Other ways to reach us</h2>
-                    <p>App issues: <a href="/support">App support</a>. General email: <a href="mailto:info@ibdpal.org">info@ibdpal.org</a>. See <a href="/contact">Contact</a>.</p>
-                </section>
-            </article>
+            </div>
         </main>
 
         <footer class="footer">
@@ -123,12 +115,10 @@
                 <div class="footer-links">
                     <a href="/#about" class="footer-link">About</a>
                     <a href="/ask" class="footer-link">Ask a Question</a>
-                    <a href="/contact" class="footer-link">Contact</a>
-                    <a href="/resources" class="footer-link">Resource Library</a>
-                    <a href="/guides" class="footer-link">Patient Guides</a>
                     <a href="/blog" class="footer-link">Articles</a>
+                    <a href="/guides" class="footer-link">Patient Guides</a>
+                    <a href="/contact" class="footer-link">Contact</a>
                     <a href="/privacy" class="footer-link">Privacy Policy</a>
-                    <a href="/support" class="footer-link">App Support</a>
                 </div>
                 <nav class="site-lang site-lang--footer" aria-label="Language"><a href="/" class="site-lang__link site-lang__link--active" data-lang="en" hreflang="en" lang="en">English</a><span class="site-lang__sep" aria-hidden="true">|</span><a href="/es/recursos" class="site-lang__link" data-lang="es" hreflang="es" lang="es">Español</a></nav>
                 <p><strong>IBDPal</strong> · MediVue nonprofit · Education only, not medical advice.</p>

@@ -474,6 +474,22 @@
       "destination": "/api/web/reader-questions?action=admin-list"
     },
     {
+      "source": "/api/web/reader-questions/published",
+      "destination": "/api/web/reader-questions?action=published"
+    },
+    {
+      "source": "/api/web/reader-questions/admin/publish",
+      "destination": "/api/web/reader-questions?action=admin-publish"
+    },
+    {
+      "source": "/admin/reader-questions",
+      "destination": "/admin/reader-questions.html"
+    },
+    {
+      "source": "/ask/:slug",
+      "destination": "/ask-answer.html"
+    },
+    {
       "source": "/blog/lupus-autoimmune-basics",
       "destination": "/blogs/lupus-autoimmune-basics.html"
     },
