@@ -3555,11 +3555,25 @@ a.tab-button,
 @media (min-width: 1180px) {
     .home-layout {
         grid-template-columns: minmax(240px, 1fr) minmax(680px, 920px) minmax(240px, 1fr);
+        grid-template-areas: "home-left home-main home-right";
+    }
+
+    .home-side-rail--left {
+        grid-area: home-left;
+    }
+
+    .home-layout__main {
+        grid-area: home-main;
+    }
+
+    .home-side-rail--right {
+        grid-area: home-right;
     }
 
     .home-side-rail {
         position: sticky;
-        top: 7rem;
+        top: 5.5rem;
+        margin-top: 0;
     }
 }
 
