@@ -136,6 +136,26 @@
     anchor.parentNode.insertBefore(link, anchor.nextSibling);
   }
 
+  function ensureReaderQaNav() {
+    if (document.querySelector('.tab-navigation [data-tab="reader-qa"]')) return;
+    var aboutTab = document.querySelector('.tab-navigation [data-tab="about"]');
+    if (!aboutTab || !aboutTab.parentNode) return;
+
+    var link = document.createElement('a');
+    link.href = '/ask';
+    link.className = 'tab-button';
+    link.setAttribute('data-tab', 'reader-qa');
+    link.textContent = 'Reader Q&A';
+    aboutTab.parentNode.insertBefore(link, aboutTab);
+
+    if (/^\/ask(\/|$)/.test(window.location.pathname)) {
+      document.querySelectorAll('.tab-navigation .tab-button.active').forEach(function (btn) {
+        btn.classList.remove('active');
+      });
+      link.classList.add('active');
+    }
+  }
+
   function seasonalNewsletterHint() {
     var form = document.getElementById('emailForm');
     if (!form) return;
@@ -1069,6 +1089,7 @@
     ensureToolsLabNav();
     ensureRecipeIdeasNav();
     ensureNutritionTargetsNav();
+    ensureReaderQaNav();
     seasonalNewsletterHint();
     injectAppNudge();
     injectCcfPartnerAttribution();

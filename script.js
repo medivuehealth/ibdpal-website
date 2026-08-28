@@ -326,6 +326,20 @@ function initializeTabNavigation() {
     mainTabButtons.forEach(function (button) {
         button.addEventListener('click', function () {
             var mainTab = this.getAttribute('data-tab');
+            if (mainTab === 'reader-qa') {
+                return;
+            }
+            var href = button.getAttribute('href');
+            if (href) {
+                var path = href.split('#')[0];
+                if (path && path.charAt(0) === '/' && path.indexOf('://') === -1) {
+                    var current = window.location.pathname.replace(/\/index\.html$/i, '/').replace(/\/$/, '') || '/';
+                    var target = path.replace(/\/$/, '') || '/';
+                    if (target !== current) {
+                        return;
+                    }
+                }
+            }
             var subTab = null;
             if (mainTab === 'app') {
                 subTab = IBDPAL_DEFAULT_APP_SUBTAB;
