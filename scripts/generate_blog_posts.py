@@ -29,6 +29,7 @@ from eeat_blocks import ( # noqa: E402
 )
 from site_nav import PAGE_SCRIPTS, SITE_HEADER_HTML, TAB_NAV_HTML # noqa: E402
 from site_footer import SITE_FOOTER_BLOG # noqa: E402
+from blog_expansion_utils import merge_blog_body # noqa: E402
 
 SEO_DATA = ROOT / "data" / "seo-expansion.json"
 
@@ -413,6 +414,7 @@ def render_post(p: dict) -> str:
     icn_attr = ""
     if p.get("icn_source_url") and p.get("icn_source_title"):
         icn_attr = icn_attribution_block(p["icn_source_title"], p["icn_source_url"])
+    body = merge_blog_body(p["body"], slug)
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -474,7 +476,7 @@ def render_post(p: dict) -> str:
 
                     <div class="blog-content">
 {disclaimer}
-{p["body"].strip()}
+{body.strip()}
 {figure_grid(asset, p["images"], p["alts"])}
 {icn_attr}{medical}
                     </div>
