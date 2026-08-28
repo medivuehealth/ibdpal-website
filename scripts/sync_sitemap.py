@@ -24,6 +24,8 @@ SKIP_URL_PATHS = {
 HUB_SLUGS = {
     "ibd-nutrition",
     "stool-labs-decoder",
+    "what-is-ibd",
+    "crohns-and-colitis",
     "crohns-disease",
     "ulcerative-colitis",
     "teens-and-school",

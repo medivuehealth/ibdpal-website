@@ -1070,6 +1070,32 @@ a.tab-button {
     margin-bottom: 0.85rem;
 }
 
+.seo-landing__table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0 1.25rem;
+    font-size: 0.95rem;
+    line-height: 1.55;
+}
+
+.seo-landing__table th,
+.seo-landing__table td {
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    padding: 0.65rem 0.75rem;
+    text-align: left;
+    vertical-align: top;
+}
+
+.seo-landing__table thead th {
+    background: rgba(153, 51, 204, 0.08);
+    font-weight: 600;
+}
+
+.seo-landing__table tbody th[scope="row"] {
+    font-weight: 600;
+    background: rgba(0, 0, 0, 0.03);
+}
+
 .seo-landing__cta {
     display: inline-block;
     font-weight: 600;

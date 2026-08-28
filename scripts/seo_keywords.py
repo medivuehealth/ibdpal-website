@@ -27,6 +27,15 @@ PATH_KEYWORDS: dict[str, str] = {
     "/support": "IBD support groups, Crohn's chapter, colitis foundation, state IBD resources",
     "/faq": "IBD FAQ, Crohn's questions, ulcerative colitis diet, IBD flare, Crohn's vs colitis",
     "/newly-diagnosed": "newly diagnosed IBD, Crohn's diagnosis, ulcerative colitis first steps, GI questions",
+    "/what-is-ibd": (
+        "what is IBD, inflammatory bowel disease, Crohn's disease, ulcerative colitis, "
+        "IBD vs IBS, IBD symptoms, IBD diagnosis"
+    ),
+    "/crohns-and-colitis": (
+        "Crohn's and colitis, Crohn's vs ulcerative colitis, difference Crohn's colitis, "
+        "inflammatory bowel disease comparison, Crohn's disease colitis symptoms"
+    ),
+    "/start-here": "start here IBD, newly diagnosed roadmap, Crohn's colitis first steps, IBD education",
     "/visit-prep": "IBD doctor visit, Crohn's appointment checklist, colitis visit prep, gastroenterologist",
     "/ibd-crohns-support": "IBD support, Crohn's helpline, colitis foundation, IBD peer support",
     "/ibd-nutrition": (

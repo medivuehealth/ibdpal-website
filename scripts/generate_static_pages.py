@@ -22,6 +22,8 @@ SITE = "https://www.ibdpal.org"
 EEAT_PATHS = {
     "/start-here",
     "/newly-diagnosed",
+    "/what-is-ibd",
+    "/crohns-and-colitis",
     "/visit-prep",
     "/pediatric-caregivers",
     "/resources",
@@ -67,6 +69,64 @@ VISIT_PREP_HOWTO = howto_json(
         {"name": "Update your health log", "text": "Log plan changes in IBDPal or your symptom tracker."},
     ],
 )
+
+
+def faq_json_ld(faq: list[dict], path: str) -> dict:
+    return {
+        "@type": "FAQPage",
+        "@id": f"{SITE}{path}#faq",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": item["q"],
+                "acceptedAnswer": {"@type": "Answer", "text": item["a"]},
+            }
+            for item in faq
+        ],
+    }
+
+
+WHAT_IS_IBD_FAQ = faq_json_ld(
+    [
+        {
+            "q": "What is inflammatory bowel disease (IBD)?",
+            "a": "IBD is a group of chronic conditions that cause inflammation in the digestive tract. The two main types are Crohn's disease and ulcerative colitis. A gastroenterologist diagnoses IBD after history, exam, labs, imaging, and often endoscopy.",
+        },
+        {
+            "q": "Is IBD the same as irritable bowel syndrome (IBS)?",
+            "a": "No. IBD involves inflammation that can damage the bowel over time. IBS is a functional syndrome without the same inflammatory injury pattern. Only your clinician can tell which you have.",
+        },
+        {
+            "q": "Can diet alone cure Crohn's or colitis?",
+            "a": "No. Diet supports medical care but does not replace prescribed treatment. Many patients work with a GI doctor and sometimes a dietitian on nutrition plans alongside medication or other therapies.",
+        },
+    ],
+    "/what-is-ibd",
+)
+
+CROHNS_COLITIS_FAQ = faq_json_ld(
+    [
+        {
+            "q": "What is the difference between Crohn's disease and ulcerative colitis?",
+            "a": "Crohn's can affect any part of the digestive tract from mouth to anus and often skips areas. Ulcerative colitis involves the colon and rectum in a continuous pattern. Your GI team names your type after testing.",
+        },
+        {
+            "q": "Are Crohn's and colitis autoimmune diseases?",
+            "a": "IBD involves immune dysregulation and inflammation in the gut. Patients often hear 'autoimmune' in education materials, but your clinician can explain how this applies to your case and treatment plan.",
+        },
+        {
+            "q": "When should I call my clinic for Crohn's or colitis symptoms?",
+            "a": "Follow your team's plan. Many clinics want a call for worsening pain, frequent bloody stools, fever, dehydration, or symptoms that feel like your usual flare pattern. See our red flags guide for urgent symptoms.",
+        },
+    ],
+    "/crohns-and-colitis",
+)
+
+
+PILLAR_EXTRA_GRAPH: dict[str, list[dict]] = {
+    "what-is-ibd.html": [WHAT_IS_IBD_FAQ],
+    "crohns-and-colitis.html": [CROHNS_COLITIS_FAQ],
+}
 
 
 def shell(
@@ -136,7 +196,7 @@ PAGES = {
                 <section class="seo-landing__block">
                     <h2>1. Understand the diagnosis</h2>
                     <p>IBD is a chronic inflammatory condition. Crohn's disease can affect any part of the digestive tract; ulcerative colitis affects the colon. Your GI team will explain your disease location, severity, and treatment goals.</p>
-                    <p><a href="/newly-diagnosed">Newly diagnosed hub</a> · <a href="/crohns-disease">Crohn's overview</a> · <a href="/ulcerative-colitis">Ulcerative colitis overview</a></p>
+                    <p><a href="/newly-diagnosed">Newly diagnosed hub</a> · <a href="/what-is-ibd">What is IBD?</a> · <a href="/crohns-and-colitis">Crohn's and colitis guide</a> · <a href="/crohns-disease">Crohn's hub</a> · <a href="/ulcerative-colitis">Ulcerative colitis hub</a></p>
                 </section>
                 <section class="seo-landing__block">
                     <h2>2. Prepare for the first GI visit</h2>
@@ -176,6 +236,7 @@ PAGES = {
                 <section class="seo-landing__block">
                     <h2>Crohn's vs. ulcerative colitis (briefly)</h2>
                     <p>Both are inflammatory bowel diseases. Crohn's can affect any part of the digestive tract; colitis primarily involves the colon. Your team will name your type, severity, and treatment goals.</p>
+                    <p><a href="/what-is-ibd">What is IBD?</a> · <a href="/crohns-and-colitis">Crohn's and colitis compared</a></p>
                 </section>
                 <section class="seo-landing__block">
                     <h2>Questions for your first GI visits</h2>
@@ -196,6 +257,130 @@ PAGES = {
                 <section class="seo-landing__block">
                     <h2>Peer and national support</h2>
                     <p><a href="/ibd-crohns-support">IBD Crohn's support guide</a> · <a href="/#community">State community map</a> · CCF Help Center <a href="tel:8886948872">888-694-8872</a></p>
+                </section>
+            </article>
+        """,
+    ),
+    "what-is-ibd.html": (
+        "What Is IBD? Inflammatory Bowel Disease Explained | IBDPal",
+        "What is inflammatory bowel disease (IBD)? Learn how Crohn's disease and ulcerative colitis differ from IBS, common symptoms, diagnosis steps, and trusted next resources.",
+        "/what-is-ibd",
+        """
+            <article class="support-section seo-landing">
+                <h1>What Is Inflammatory Bowel Disease (IBD)?</h1>
+                <p class="support-intro">Inflammatory bowel disease (IBD) is a group of chronic conditions that cause inflammation in the digestive tract. The two main types are Crohn's disease and ulcerative colitis. This page explains the basics in plain language. It does not replace your gastroenterologist.</p>
+                <section class="seo-landing__block">
+                    <h2>Crohn's disease and ulcerative colitis</h2>
+                    <p>Both are forms of IBD. Crohn's disease can affect any part of the digestive tract from mouth to anus and often has skip areas. Ulcerative colitis involves the colon and rectum in a continuous pattern. Some patients have features that do not fit neatly into one category; your GI team names your type after history, exam, labs, imaging, and often endoscopy.</p>
+                    <p><a href="/crohns-and-colitis">Crohn's and colitis compared</a> · <a href="/crohns-disease">Crohn's disease hub</a> · <a href="/ulcerative-colitis">Ulcerative colitis hub</a></p>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>IBD is not the same as IBS</h2>
+                    <p>Irritable bowel syndrome (IBS) is a functional bowel disorder. IBD involves inflammation that can damage the bowel over time and usually needs specialist monitoring and treatment. Only your clinician can tell which condition you have.</p>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>Common symptoms (not a diagnosis)</h2>
+                    <ul class="seo-landing__list">
+                        <li>Abdominal pain or cramping</li>
+                        <li>Diarrhea, sometimes with blood or mucus</li>
+                        <li>Urgency, fatigue, or unintended weight loss</li>
+                        <li>Symptoms outside the gut, such as joint pain or skin changes (extraintestinal manifestations)</li>
+                    </ul>
+                    <p>Symptoms vary widely. Some people have mild disease; others have frequent flares. Track patterns and bring them to clinic visits.</p>
+                    <p><a href="/flare-help">Flare help hub</a> · <a href="/ibd-red-flags-urgent-care">Red flags and urgent care</a></p>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>How IBD is usually diagnosed</h2>
+                    <p>Diagnosis typically combines your story, physical exam, blood and stool tests, imaging, and endoscopy (colonoscopy or upper endoscopy). Pathology from biopsies helps confirm inflammation and rule out other causes.</p>
+                    <p><a href="/newly-diagnosed">Newly diagnosed hub</a> · <a href="/visit-prep">Visit prep checklist</a> · <a href="/stool-labs-decoder">Stool and labs decoder</a></p>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>Treatment and day-to-day management</h2>
+                    <p>Goals often include controlling inflammation, healing the bowel when possible, and improving quality of life. Plans may include medications, nutrition support, surgery in some cases, and mental health care. Diet supports medical care but does not replace prescribed treatment.</p>
+                    <p><a href="/ibd-nutrition">Nutrition hub</a> · <a href="/guides/foundation-ibd-medication-guide">Medication guide bridge</a> · <a href="/start-here">Start here roadmap</a></p>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>Trusted Foundation education</h2>
+                    <p>Selected IBDPal guides attribute patient education from the Crohn's &amp; Colitis Foundation and link to the original pages.</p>
+                    <ul class="seo-landing__list">
+                        <li><a href="https://www.crohnscolitisfoundation.org/what-is-ibd" rel="noopener noreferrer">Foundation: What is IBD</a></li>
+                        <li><a href="/guides/what-is-ibd-foundation">IBDPal guide: What is IBD (Foundation basics)</a></li>
+                        <li><a href="/crohns-colitis-foundation-resources">Foundation resources hub</a></li>
+                    </ul>
+                </section>
+                <section class="seo-landing__block" id="faq">
+                    <h2>Common questions</h2>
+                    <h3>What is inflammatory bowel disease (IBD)?</h3>
+                    <p>IBD is a group of chronic conditions that cause inflammation in the digestive tract. The two main types are Crohn's disease and ulcerative colitis. A gastroenterologist diagnoses IBD after history, exam, labs, imaging, and often endoscopy.</p>
+                    <h3>Is IBD the same as irritable bowel syndrome (IBS)?</h3>
+                    <p>No. IBD involves inflammation that can damage the bowel over time. IBS is a functional syndrome without the same inflammatory injury pattern. Only your clinician can tell which you have.</p>
+                    <h3>Can diet alone cure Crohn's or colitis?</h3>
+                    <p>No. Diet supports medical care but does not replace prescribed treatment. Many patients work with a GI doctor and sometimes a dietitian on nutrition plans alongside medication or other therapies.</p>
+                    <p><a href="/faq">More IBD FAQ</a></p>
+                </section>
+            </article>
+        """,
+    ),
+    "crohns-and-colitis.html": (
+        "Crohn's and Colitis: What's the Difference? | IBDPal",
+        "Crohn's disease vs ulcerative colitis: location in the gut, symptoms, diagnosis, treatment education, and when to call your clinic. Patient-friendly IBD comparison guide.",
+        "/crohns-and-colitis",
+        """
+            <article class="support-section seo-landing">
+                <h1>Crohn's and Colitis: What's the Difference?</h1>
+                <p class="support-intro">People often search for Crohn's and colitis together because both are inflammatory bowel diseases (IBD). They share some symptoms but differ in where inflammation occurs and how disease behaves. Your gastroenterologist confirms your type and plan.</p>
+                <section class="seo-landing__block">
+                    <h2>Side-by-side overview</h2>
+                    <table class="seo-landing__table">
+                        <thead><tr><th scope="col">Topic</th><th scope="col">Crohn's disease</th><th scope="col">Ulcerative colitis</th></tr></thead>
+                        <tbody>
+                            <tr><th scope="row">Where it occurs</th><td>Any part of the digestive tract (mouth to anus); may skip segments</td><td>Colon and rectum; continuous pattern</td></tr>
+                            <tr><th scope="row">Common symptoms</th><td>Abdominal pain, diarrhea, weight loss, fatigue; perianal disease in some patients</td><td>Bloody diarrhea, urgency, abdominal pain, fatigue</td></tr>
+                            <tr><th scope="row">Depth of inflammation</th><td>Can affect full thickness of the bowel wall</td><td>Typically inner lining (mucosa) of the colon</td></tr>
+                            <tr><th scope="row">Surgery</th><td>May be needed for strictures, fistulas, or refractory disease; not usually curative</td><td>Colectomy can be curative for colitis in some cases</td></tr>
+                        </tbody>
+                    </table>
+                    <p>This table is educational only. Your endoscopy and pathology reports define your disease.</p>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>Shared features of Crohn's and colitis</h2>
+                    <ul class="seo-landing__list">
+                        <li>Chronic immune-mediated inflammation in the gut</li>
+                        <li>Flares and remission periods for many patients</li>
+                        <li>Need for gastroenterology follow-up and monitoring</li>
+                        <li>Possible extraintestinal symptoms (joints, skin, eyes)</li>
+                        <li>Nutrition, mental health, and family planning topics that overlap both conditions</li>
+                    </ul>
+                    <p><a href="/what-is-ibd">What is IBD?</a> · <a href="/ibd-autoimmune-associations">Autoimmune associations hub</a></p>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>When to call your clinic</h2>
+                    <p>Follow your team's plan. Many clinics want a call for worsening pain, frequent bloody stools, fever, signs of dehydration, or symptoms that match your usual flare pattern.</p>
+                    <p><a href="/ibd-red-flags-urgent-care">Red flags guide</a> · <a href="/flare-help">Flare help hub</a> · CCF Help Center <a href="tel:8886948872">888-694-8872</a> (education, not emergency care)</p>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>Go deeper by condition</h2>
+                    <ul class="seo-landing__list">
+                        <li><a href="/crohns-disease">Crohn's disease hub</a> (symptoms, diet, surgery topics)</li>
+                        <li><a href="/ulcerative-colitis">Ulcerative colitis hub</a> (flare diet, j-pouch basics)</li>
+                        <li><a href="/guides/what-is-crohns-disease-foundation">Foundation guide: Crohn's basics</a></li>
+                        <li><a href="/guides/what-is-ulcerative-colitis-foundation">Foundation guide: Colitis basics</a></li>
+                        <li><a href="/newly-diagnosed">Newly diagnosed first steps</a></li>
+                    </ul>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>Track patterns between visits</h2>
+                    <p>Logging meals, stools, pain, and medications helps you and your clinician spot trends. <a href="/#app">Explore the IBDPal app</a> · <a href="/visit-prep">Printable visit prep</a></p>
+                </section>
+                <section class="seo-landing__block" id="faq">
+                    <h2>Common questions</h2>
+                    <h3>What is the difference between Crohn's disease and ulcerative colitis?</h3>
+                    <p>Crohn's can affect any part of the digestive tract from mouth to anus and often skips areas. Ulcerative colitis involves the colon and rectum in a continuous pattern. Your GI team names your type after testing.</p>
+                    <h3>Are Crohn's and colitis autoimmune diseases?</h3>
+                    <p>IBD involves immune dysregulation and inflammation in the gut. Patients often hear "autoimmune" in education materials, but your clinician can explain how this applies to your case and treatment plan.</p>
+                    <h3>When should I call my clinic for Crohn's or colitis symptoms?</h3>
+                    <p>Follow your team's plan. Many clinics want a call for worsening pain, frequent bloody stools, fever, dehydration, or symptoms that feel like your usual flare pattern. See our red flags guide for urgent symptoms.</p>
+                    <p><a href="/faq">More IBD FAQ</a></p>
                 </section>
             </article>
         """,
@@ -892,6 +1077,8 @@ PAGES = {
                     <h2>Start here</h2>
                     <ul class="seo-landing__list">
                         <li><a href="/start-here">Start here roadmap</a></li>
+                        <li><a href="/what-is-ibd">What is IBD?</a></li>
+                        <li><a href="/crohns-and-colitis">Crohn's and colitis guide</a></li>
                         <li><a href="/newly-diagnosed">Newly diagnosed</a></li>
                         <li><a href="/ibd-autoimmune-associations">IBD autoimmune associations</a></li>
                         <li><a href="/crohns-colitis-foundation-resources">Crohn&rsquo;s &amp; Colitis Foundation resources</a></li>
@@ -971,7 +1158,7 @@ PAGES = {
 def main():
     for name, spec in PAGES.items():
         active = spec[4] if len(spec) > 4 else ""
-        extra = [VISIT_PREP_HOWTO] if name == "visit-prep.html" else None
+        extra = [VISIT_PREP_HOWTO] if name == "visit-prep.html" else PILLAR_EXTRA_GRAPH.get(name)
         html_out = shell(spec[0], spec[1], spec[2], spec[3], active, extra_graph=extra)
         (ROOT / name).write_text(html_out, encoding="utf-8")
         print("wrote", name)

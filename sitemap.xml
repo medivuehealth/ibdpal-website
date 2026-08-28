@@ -5,13 +5,13 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ibdpal.org/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.ibdpal.org/es/recursos" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ibdpal.org/" />
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.00</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/about</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -23,19 +23,25 @@
   </url>
   <url>
     <loc>https://www.ibdpal.org/clinical-partnerships</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/contact</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.55</priority>
   </url>
   <url>
+    <loc>https://www.ibdpal.org/crohns-and-colitis</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
     <loc>https://www.ibdpal.org/crohns-colitis-foundation-resources</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.92</priority>
   </url>
@@ -74,13 +80,13 @@
   </url>
   <url>
     <loc>https://www.ibdpal.org/for-clinicians</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/founder</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.55</priority>
   </url>
@@ -98,7 +104,7 @@
   </url>
   <url>
     <loc>https://www.ibdpal.org/ibd-autoimmune-associations</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -119,13 +125,13 @@
   </url>
   <url>
     <loc>https://www.ibdpal.org/ibd-red-flags-urgent-care</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.92</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/impact</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -137,7 +143,7 @@
   </url>
   <url>
     <loc>https://www.ibdpal.org/library</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.94</priority>
   </url>
@@ -146,13 +152,13 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ibdpal.org/newly-diagnosed" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.ibdpal.org/es/recien-diagnosticado" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ibdpal.org/newly-diagnosed" />
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.92</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/news</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -170,7 +176,7 @@
   </url>
   <url>
     <loc>https://www.ibdpal.org/pediatric-caregivers</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -188,19 +194,19 @@
   </url>
   <url>
     <loc>https://www.ibdpal.org/resources</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.94</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/site-updates</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/start-here</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.94</priority>
   </url>
@@ -233,7 +239,7 @@
   </url>
   <url>
     <loc>https://www.ibdpal.org/trusted-ibd-resources</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.92</priority>
   </url>
@@ -248,9 +254,15 @@
   </url>
   <url>
     <loc>https://www.ibdpal.org/visit-prep</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.ibdpal.org/what-is-ibd</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/blog/adult-een-crohns-what-to-expect</loc>
@@ -1538,7 +1550,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ibdpal.org/teens-and-school" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.ibdpal.org/es/adolescentes-escuela" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ibdpal.org/teens-and-school" />
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
@@ -1547,7 +1559,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ibdpal.org/flare-help" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.ibdpal.org/es/brotes-eii" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ibdpal.org/flare-help" />
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
@@ -1556,7 +1568,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ibdpal.org/ulcerative-colitis" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.ibdpal.org/es/colitis-ulcerosa" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ibdpal.org/ulcerative-colitis" />
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
@@ -1565,7 +1577,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ibdpal.org/blog/when-to-go-er-ibd" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.ibdpal.org/es/cuando-ir-urgencias-eii" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ibdpal.org/blog/when-to-go-er-ibd" />
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
@@ -1574,7 +1586,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ibdpal.org/crohns-disease" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.ibdpal.org/es/enfermedad-crohn" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ibdpal.org/crohns-disease" />
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
@@ -1583,7 +1595,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ibdpal.org/ibd-nutrition" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.ibdpal.org/es/nutricion-eii" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ibdpal.org/ibd-nutrition" />
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
@@ -1592,7 +1604,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ibdpal.org/faq" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.ibdpal.org/es/preguntas-frecuentes" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ibdpal.org/faq" />
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
@@ -1601,7 +1613,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ibdpal.org/newly-diagnosed" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.ibdpal.org/es/recien-diagnosticado" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ibdpal.org/newly-diagnosed" />
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
@@ -1610,7 +1622,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ibdpal.org/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.ibdpal.org/es/recursos" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ibdpal.org/" />
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>

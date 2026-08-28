@@ -910,6 +910,14 @@
       "destination": "/crohns-disease.html"
     },
     {
+      "source": "/what-is-ibd",
+      "destination": "/what-is-ibd.html"
+    },
+    {
+      "source": "/crohns-and-colitis",
+      "destination": "/crohns-and-colitis.html"
+    },
+    {
       "source": "/ulcerative-colitis",
       "destination": "/ulcerative-colitis.html"
     },
