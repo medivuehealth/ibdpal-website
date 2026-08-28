@@ -5,12 +5,12 @@ var IBDPAL_APP_SUBTABS = ['download', 'features', 'how-it-works', 'screenshots',
 var IBDPAL_LIBRARY_SUBTABS = ['guides', 'sources', 'research-publications', 'articles'];
 var IBDPAL_ABOUT_SUBTABS = ['about-overview', 'about-founders', 'site-updates', 'metrics'];
 var IBDPAL_NUTRITION_SUBTABS = ['nutrition-dri', 'nutrition-foods', 'nutrition-learn'];
-var IBDPAL_NEWS_SUBTABS = ['news-advocacy', 'news-partners'];
+var IBDPAL_NEWS_SUBTABS = ['news-latest', 'news-advocacy', 'news-partners'];
 var IBDPAL_DEFAULT_APP_SUBTAB = 'download';
 var IBDPAL_DEFAULT_LIBRARY_SUBTAB = 'guides';
 var IBDPAL_DEFAULT_ABOUT_SUBTAB = 'about-overview';
 var IBDPAL_DEFAULT_NUTRITION_SUBTAB = 'nutrition-dri';
-var IBDPAL_DEFAULT_NEWS_SUBTAB = 'news-advocacy';
+var IBDPAL_DEFAULT_NEWS_SUBTAB = 'news-latest';
 
 var IBDPAL_HASH_ALIASES = {
     overview: { main: 'home', sub: null },
@@ -42,7 +42,9 @@ var IBDPAL_HASH_ALIASES = {
     'food-sources': { main: 'nutrition-targets', sub: 'nutrition-foods' },
     foods: { main: 'nutrition-targets', sub: 'nutrition-foods' },
     'nutrition-learn': { main: 'nutrition-targets', sub: 'nutrition-learn' },
-    news: { main: 'news', sub: 'news-advocacy' },
+    news: { main: 'news', sub: 'news-latest' },
+    'news-latest': { main: 'news', sub: 'news-latest' },
+    latest: { main: 'news', sub: 'news-latest' },
     advocacy: { main: 'news', sub: 'news-advocacy' },
     'news-advocacy': { main: 'news', sub: 'news-advocacy' },
     partners: { main: 'news', sub: 'news-partners' },
