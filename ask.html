@@ -102,10 +102,16 @@
 
                 <section class="reader-qa-hub__answered seo-landing__block" aria-labelledby="answered-heading">
                     <h2 id="answered-heading">Answered questions</h2>
-                    <p class="reader-qa-hub__lede">Published answers appear below, newest first. We add more as our education team can.</p>
+                    <p class="reader-qa-hub__lede">Search or browse published answers. Tap + to open the link to the full post.</p>
+                    <div class="reader-qa-toolbar">
+                        <label class="reader-qa-search__label" for="reader-qa-search">Search answered questions</label>
+                        <input type="search" id="reader-qa-search" class="reader-qa-search__input" placeholder="Try calprotectin, SIBO, biologics…" autocomplete="off" aria-controls="reader-qa-list">
+                    </div>
+                    <p id="reader-qa-count" class="reader-qa-count" hidden></p>
                     <div id="reader-qa-list" class="reader-qa-list reader-qa-accordion" aria-live="polite">
                         <p class="reader-qa-list__loading">Loading answered questions…</p>
                     </div>
+                    <nav id="reader-qa-pagination" class="reader-qa-pagination" aria-label="Answered questions pages" hidden></nav>
                 </section>
             </div>
         </main>

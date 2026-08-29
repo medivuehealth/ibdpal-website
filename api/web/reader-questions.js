@@ -164,20 +164,49 @@ async function handleSubmit(req, res) {
 async function handlePublished(req, res) {
   if (req.method !== 'GET') return methodNotAllowed(res, ['GET']);
   try {
-    const limit = Math.max(1, Math.min(parseInt(req.query.limit, 10) || 50, 100));
+    const limit = Math.max(1, Math.min(parseInt(req.query.limit, 10) || 20, 50));
+    const offset = Math.max(0, parseInt(req.query.offset, 10) || 0);
+    const q = cleanText(req.query.q, 120);
+
+    const baseWhere = `
+      published_at IS NOT NULL
+      AND answer_text IS NOT NULL
+      AND TRIM(answer_text) <> ''
+      AND slug IS NOT NULL`;
+
+    const params = [];
+    let searchClause = '';
+    if (q) {
+      const term = q.replace(/[%_\\]/g, '').trim();
+      if (term) {
+        params.push('%' + term + '%');
+        searchClause = ` AND (question_text ILIKE $1 OR COALESCE(title, '') ILIKE $1 OR slug ILIKE $1)`;
+      }
+    }
+
+    const countResult = await db().query(
+      `SELECT COUNT(*)::int AS total FROM ibdpal_reader_questions WHERE ${baseWhere}${searchClause}`,
+      params
+    );
+    const total = countResult.rows[0]?.total || 0;
+
+    const listParams = [...params, limit, offset];
+    const limitIdx = params.length + 1;
+    const offsetIdx = params.length + 2;
     const result = await db().query(
       `SELECT question_id, question_text, title, answer_text, slug, display_name, published_at
        FROM ibdpal_reader_questions
-       WHERE published_at IS NOT NULL
-         AND answer_text IS NOT NULL
-         AND TRIM(answer_text) <> ''
-         AND slug IS NOT NULL
+       WHERE ${baseWhere}${searchClause}
        ORDER BY published_at DESC
-       LIMIT $1`,
-      [limit]
+       LIMIT $${limitIdx} OFFSET $${offsetIdx}`,
+      listParams
     );
+
     return json(res, 200, {
       success: true,
+      total,
+      limit,
+      offset,
       items: result.rows.map((row) => ({
         ...publicItem(row),
         excerpt: excerpt(row.answer_text, 180)

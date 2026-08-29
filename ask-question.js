@@ -151,7 +151,8 @@
   }
 
   function renderListCard(item, index) {
-    var question = item.question || item.title || '';
+    var label = item.title || item.question || '';
+    var fullText = item.question || item.title || '';
     var panelId = 'reader-qa-panel-' + index;
     var slug = encodeURIComponent(item.slug);
     return (
@@ -159,8 +160,10 @@
       '<button type="button" class="reader-qa-accordion__toggle" aria-expanded="false" aria-controls="' +
       panelId +
       '">' +
-      '<span class="reader-qa-accordion__question">' +
-      escapeHtml(question) +
+      '<span class="reader-qa-accordion__question" title="' +
+      escapeHtml(fullText) +
+      '">' +
+      escapeHtml(label) +
       '</span>' +
       '<span class="reader-qa-accordion__icon" aria-hidden="true">+</span>' +
       '</button>' +
@@ -193,25 +196,136 @@
 
   function initList() {
     var list = document.getElementById('reader-qa-list');
+    var searchEl = document.getElementById('reader-qa-search');
+    var countEl = document.getElementById('reader-qa-count');
+    var paginationEl = document.getElementById('reader-qa-pagination');
     if (!list) return;
 
-    fetch(apiBase() + '/reader-questions?action=published&limit=50')
-      .then(function (res) {
-        return res.json();
-      })
-      .then(function (data) {
-        if (!data.success || !data.items || !data.items.length) {
-          list.innerHTML =
-            '<p class="reader-qa-list__empty">No published answers yet. Be the first to <a href="#ask-form">ask a question</a>.</p>';
-          return;
-        }
-        list.innerHTML = data.items.map(renderListCard).join('');
-        bindAccordion(list);
-      })
-      .catch(function () {
-        list.innerHTML =
-          '<p class="reader-qa-list__empty">Could not load answered questions. <a href="/ask">Refresh</a> or try again later.</p>';
+    var PAGE_SIZE = 20;
+    var state = { q: '', offset: 0, total: 0, searchTimer: null };
+
+    function setLoading() {
+      list.innerHTML = '<p class="reader-qa-list__loading">Loading answered questions…</p>';
+      if (paginationEl) paginationEl.hidden = true;
+    }
+
+    function renderPagination() {
+      if (!paginationEl) return;
+      var total = state.total;
+      if (total <= PAGE_SIZE) {
+        paginationEl.hidden = true;
+        paginationEl.innerHTML = '';
+        return;
+      }
+
+      var page = Math.floor(state.offset / PAGE_SIZE) + 1;
+      var pageCount = Math.ceil(total / PAGE_SIZE);
+      var prevDisabled = state.offset <= 0;
+      var nextDisabled = state.offset + PAGE_SIZE >= total;
+
+      paginationEl.hidden = false;
+      paginationEl.innerHTML =
+        '<button type="button" class="reader-qa-pagination__btn" data-page="prev"' +
+        (prevDisabled ? ' disabled' : '') +
+        '>Previous</button>' +
+        '<span class="reader-qa-pagination__status">Page ' +
+        page +
+        ' of ' +
+        pageCount +
+        '</span>' +
+        '<button type="button" class="reader-qa-pagination__btn" data-page="next"' +
+        (nextDisabled ? ' disabled' : '') +
+        '>Next</button>';
+
+      paginationEl.querySelector('[data-page="prev"]').addEventListener('click', function () {
+        if (state.offset <= 0) return;
+        state.offset = Math.max(0, state.offset - PAGE_SIZE);
+        loadList();
       });
+      paginationEl.querySelector('[data-page="next"]').addEventListener('click', function () {
+        if (state.offset + PAGE_SIZE >= state.total) return;
+        state.offset += PAGE_SIZE;
+        loadList();
+      });
+    }
+
+    function renderCount() {
+      if (!countEl) return;
+      if (!state.total) {
+        countEl.hidden = true;
+        countEl.textContent = '';
+        return;
+      }
+      var start = state.total ? state.offset + 1 : 0;
+      var end = Math.min(state.offset + PAGE_SIZE, state.total);
+      var suffix = state.q ? ' matching “' + state.q + '”' : '';
+      countEl.hidden = false;
+      countEl.textContent =
+        state.total === 1
+          ? '1 answered question' + suffix
+          : 'Showing ' + start + '–' + end + ' of ' + state.total + suffix;
+    }
+
+    function loadList() {
+      setLoading();
+      var url =
+        apiBase() +
+        '/reader-questions?action=published&limit=' +
+        PAGE_SIZE +
+        '&offset=' +
+        state.offset;
+      if (state.q) url += '&q=' + encodeURIComponent(state.q);
+
+      fetch(url)
+        .then(function (res) {
+          return res.json();
+        })
+        .then(function (data) {
+          if (!data.success) {
+            list.innerHTML =
+              '<p class="reader-qa-list__empty">Could not load answered questions. <a href="/ask">Refresh</a> or try again later.</p>';
+            return;
+          }
+
+          state.total = data.total || 0;
+          if (state.offset > 0 && state.offset >= state.total) {
+            state.offset = 0;
+            loadList();
+            return;
+          }
+
+          renderCount();
+
+          if (!data.items || !data.items.length) {
+            list.innerHTML = state.q
+              ? '<p class="reader-qa-list__empty">No matches for that search. <a href="#ask-form">Ask a new question</a> or clear the search box.</p>'
+              : '<p class="reader-qa-list__empty">No published answers yet. Be the first to <a href="#ask-form">ask a question</a>.</p>';
+            if (paginationEl) paginationEl.hidden = true;
+            return;
+          }
+
+          list.innerHTML = data.items.map(renderListCard).join('');
+          bindAccordion(list);
+          renderPagination();
+        })
+        .catch(function () {
+          list.innerHTML =
+            '<p class="reader-qa-list__empty">Could not load answered questions. <a href="/ask">Refresh</a> or try again later.</p>';
+        });
+    }
+
+    if (searchEl) {
+      searchEl.addEventListener('input', function () {
+        clearTimeout(state.searchTimer);
+        state.searchTimer = setTimeout(function () {
+          state.q = searchEl.value.trim();
+          state.offset = 0;
+          loadList();
+        }, 300);
+      });
+    }
+
+    loadList();
   }
 
   function initDetail() {
