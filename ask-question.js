@@ -150,19 +150,45 @@
     });
   }
 
-  function renderListCard(item) {
+  function renderListCard(item, index) {
+    var question = item.question || item.title || '';
+    var panelId = 'reader-qa-panel-' + index;
+    var slug = encodeURIComponent(item.slug);
     return (
+      '<div class="reader-qa-accordion__item">' +
+      '<button type="button" class="reader-qa-accordion__toggle" aria-expanded="false" aria-controls="' +
+      panelId +
+      '">' +
+      '<span class="reader-qa-accordion__question">' +
+      escapeHtml(question) +
+      '</span>' +
+      '<span class="reader-qa-accordion__icon" aria-hidden="true">+</span>' +
+      '</button>' +
+      '<div class="reader-qa-accordion__panel" id="' +
+      panelId +
+      '" hidden>' +
       '<a href="/ask/' +
-      encodeURIComponent(item.slug) +
-      '" class="reader-qa-item">' +
-      '<h3 class="reader-qa-item__title">' +
-      escapeHtml(item.title) +
-      '</h3>' +
-      '<p class="reader-qa-item__excerpt">' +
-      escapeHtml(item.excerpt || '') +
-      '</p>' +
-      '</a>'
+      slug +
+      '" class="reader-qa-accordion__link">Read our answer</a>' +
+      '</div>' +
+      '</div>'
     );
+  }
+
+  function bindAccordion(list) {
+    list.querySelectorAll('.reader-qa-accordion__toggle').forEach(function (toggle) {
+      toggle.addEventListener('click', function () {
+        var expanded = toggle.getAttribute('aria-expanded') === 'true';
+        var panel = document.getElementById(toggle.getAttribute('aria-controls'));
+        var icon = toggle.querySelector('.reader-qa-accordion__icon');
+        if (!panel) return;
+
+        toggle.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+        panel.hidden = expanded;
+        if (icon) icon.textContent = expanded ? '+' : '−';
+        toggle.classList.toggle('is-open', !expanded);
+      });
+    });
   }
 
   function initList() {
@@ -180,6 +206,7 @@
           return;
         }
         list.innerHTML = data.items.map(renderListCard).join('');
+        bindAccordion(list);
       })
       .catch(function () {
         list.innerHTML =
