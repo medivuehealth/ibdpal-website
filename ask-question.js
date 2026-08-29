@@ -168,22 +168,16 @@
     return (
       '<a href="/ask/' +
       encodeURIComponent(item.slug) +
-      '" class="blog-card blog-card--magazine reader-qa-card">' +
-      '<div class="blog-card__media">' +
-      '<img src="/blogs/assets/ibd-help-center/helpcenter_1.jpg" alt="" class="blog-card-thumb" width="800" height="600" decoding="async" loading="lazy">' +
-      '<span class="blog-card-chip reader-qa-card__chip">Reader Q&amp;A</span>' +
-      '</div>' +
-      '<div class="blog-card__body">' +
-      '<h3 class="blog-card__title">' +
+      '" class="reader-qa-item">' +
+      '<h3 class="reader-qa-item__title">' +
       escapeHtml(item.title) +
       '</h3>' +
-      '<p class="blog-card__meta">' +
+      '<p class="reader-qa-item__meta">' +
       (date ? 'Answered ' + escapeHtml(date) : 'Answered') +
       '</p>' +
-      '<p class="blog-card__excerpt">' +
+      '<p class="reader-qa-item__excerpt">' +
       escapeHtml(item.excerpt || '') +
       '</p>' +
-      '</div>' +
       '</a>'
     );
   }
