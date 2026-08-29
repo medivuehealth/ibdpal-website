@@ -21,19 +21,6 @@
       .replace(/"/g, '&quot;');
   }
 
-  function formatDate(iso) {
-    if (!iso) return '';
-    try {
-      return new Date(iso).toLocaleDateString(undefined, {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric'
-      });
-    } catch (e) {
-      return '';
-    }
-  }
-
   function renderAnswerHtml(text) {
     var parts = String(text || '')
       .split(/\n\s*\n/)
