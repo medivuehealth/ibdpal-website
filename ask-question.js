@@ -164,7 +164,6 @@
   }
 
   function renderListCard(item) {
-    var date = formatDate(item.publishedAt);
     return (
       '<a href="/ask/' +
       encodeURIComponent(item.slug) +
@@ -172,9 +171,6 @@
       '<h3 class="reader-qa-item__title">' +
       escapeHtml(item.title) +
       '</h3>' +
-      '<p class="reader-qa-item__meta">' +
-      (date ? 'Answered ' + escapeHtml(date) : 'Answered') +
-      '</p>' +
       '<p class="reader-qa-item__excerpt">' +
       escapeHtml(item.excerpt || '') +
       '</p>' +
@@ -238,9 +234,7 @@
         var item = result.body.item;
         if (titleEl) titleEl.textContent = item.title;
         if (dateEl) {
-          dateEl.innerHTML =
-            'Ask IBDPal &middot; Reader Q&amp;A' +
-            (item.publishedAt ? ' &middot; Answered ' + escapeHtml(formatDate(item.publishedAt)) : '');
+          dateEl.innerHTML = 'Ask IBDPal &middot; Reader Q&amp;A';
         }
         if (questionEl) questionEl.textContent = item.question;
         if (answerEl) answerEl.innerHTML = renderAnswerHtml(item.answer);
