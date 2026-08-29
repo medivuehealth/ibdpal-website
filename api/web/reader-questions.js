@@ -97,8 +97,6 @@ async function handleSubmit(req, res) {
     }
 
     const question = cleanText(body.question || body.text, MAX_QUESTION_LEN);
-    const email = cleanText(body.email, 160);
-    const displayName = cleanText(body.displayName || body.name, 120);
     const source = cleanText(body.source, 40) || 'ask_page';
     const pageUrl = cleanText(body.pageUrl || body.page_url, 400);
     const searchTerm = cleanText(body.searchTerm || body.search_term, 120);
@@ -111,15 +109,11 @@ async function handleSubmit(req, res) {
       });
     }
 
-    if (containsProfanity(question) || containsProfanity(displayName || '')) {
+    if (containsProfanity(question)) {
       return json(res, 400, {
         success: false,
         error: profanityErrorMessage()
       });
-    }
-
-    if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-      return json(res, 400, { success: false, error: 'Enter a valid email address or leave it blank.' });
     }
 
     if (hash && (await isRateLimited(hash))) {
@@ -136,8 +130,8 @@ async function handleSubmit(req, res) {
       RETURNING question_id, created_at`,
       [
         question,
-        email ? email.toLowerCase() : null,
-        displayName,
+        null,
+        null,
         source.slice(0, 40),
         pageUrl,
         searchTerm,

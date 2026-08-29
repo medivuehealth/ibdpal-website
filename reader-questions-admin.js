@@ -49,7 +49,7 @@
       '<p><em>' +
       escapeHtml(q.question) +
       '</em></p>' +
-      (q.email ? '<p>Email: ' + escapeHtml(q.email) + '</p>' : '') +
+      (q.email ? '<p>Email on file (legacy): ' + escapeHtml(q.email) + '</p>' : '') +
       published +
       '<label>Title <input class="rq-title" value="' +
       escapeHtml(q.title || '') +

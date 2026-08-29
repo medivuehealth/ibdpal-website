@@ -52,8 +52,6 @@
     if (!form) return;
 
     var questionEl = document.getElementById('ask-question-text');
-    var emailEl = document.getElementById('ask-question-email');
-    var nameEl = document.getElementById('ask-question-name');
     var statusEl = document.getElementById('ask-question-status');
     var submitBtn = document.getElementById('ask-question-submit');
     var honeypot = document.getElementById('ask-question-website');
@@ -112,8 +110,6 @@
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           question: question,
-          email: emailEl ? emailEl.value.trim() : '',
-          displayName: nameEl ? nameEl.value.trim() : '',
           source: form.dataset.source || readMeta('ask-source') || 'ask_page',
           pageUrl: document.referrer || window.location.href,
           searchTerm: q || '',

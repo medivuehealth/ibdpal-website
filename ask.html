@@ -83,18 +83,9 @@
                         <div class="ask-question__field">
                             <label for="ask-question-text">Your question <span class="ask-question__required">(required)</span></label>
                             <textarea id="ask-question-text" name="question" rows="5" required minlength="15" maxlength="2000" placeholder="Example: Does my calprotectin number mean I am getting worse if I only have one test so far?"></textarea>
-                            <p class="ask-question__hint">At least 15 characters. No passwords or full medical record numbers.</p>
+                            <p class="ask-question__hint">General questions only. Do not include your name, email, phone, address, medical record number, or other information that could identify you.</p>
                         </div>
-                        <div class="ask-question__field-row">
-                            <div class="ask-question__field">
-                                <label for="ask-question-name">Name <span class="ask-question__optional">(optional)</span></label>
-                                <input type="text" id="ask-question-name" name="name" maxlength="120" autocomplete="name">
-                            </div>
-                            <div class="ask-question__field">
-                                <label for="ask-question-email">Email <span class="ask-question__optional">(optional)</span></label>
-                                <input type="email" id="ask-question-email" name="email" maxlength="160" autocomplete="email" inputmode="email">
-                            </div>
-                        </div>
+                        <p class="ask-question__note">We do not ask for contact details here. Published answers appear on this page for everyone. For a private message, use <a href="/contact">Contact</a>.</p>
                         <p id="ask-question-status" class="ask-question__status" role="status" hidden></p>
                         <button type="submit" class="ask-question__submit" id="ask-question-submit">Submit question</button>
                     </form>
