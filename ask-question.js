@@ -21,6 +21,25 @@
       .replace(/"/g, '&quot;');
   }
 
+  function formatInline(text) {
+    var re = /\[([^\]]+)\]\((\/[^\s)]+|https?:\/\/[^\s)]+)\)/g;
+    var html = '';
+    var last = 0;
+    var match;
+    while ((match = re.exec(text))) {
+      html += escapeHtml(text.slice(last, match.index));
+      html +=
+        '<a href="' +
+        escapeHtml(match[2]) +
+        '">' +
+        escapeHtml(match[1]) +
+        '</a>';
+      last = match.index + match[0].length;
+    }
+    html += escapeHtml(text.slice(last));
+    return html;
+  }
+
   function renderAnswerHtml(text) {
     var parts = String(text || '')
       .split(/\n\s*\n/)
@@ -32,9 +51,9 @@
     return parts
       .map(function (p) {
         if (/^Related education:/i.test(p)) {
-          return '<p class="reader-qa-related"><em>' + escapeHtml(p) + '</em></p>';
+          return '<p class="reader-qa-related"><em>' + formatInline(p) + '</em></p>';
         }
-        return '<p>' + escapeHtml(p) + '</p>';
+        return '<p>' + formatInline(p) + '</p>';
       })
       .join('\n');
   }
