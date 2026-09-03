@@ -40,7 +40,7 @@ const ITEMS = [
     title: 'How do I know if this is a flare or just a bad few days?',
     question:
       'How do I know if this is a flare or just a bad few days? I want a threshold, not a definition.',
-    answer: `There is no lab number that labels a single night as “flare” vs “bad day.” A useful threshold many clinics teach is time plus red flags: if symptoms settle in about 24–48 hours after a known trigger (a meal, travel, menses, a missed dose, a virus), it is often a rough patch. If they last beyond 48 hours, keep worsening, or come with blood, night stools, fever, or weight drop, treat it as possible flare activity and contact your IBD team.
+    answer: `There is no lab number that labels a single night as “flare” vs “bad day.” A useful threshold many clinics teach is time plus red flags: if symptoms settle in about 24 to 48 hours after a known trigger (a meal, travel, menses, a missed dose, a virus), it is often a rough patch. If they last beyond 48 hours, keep worsening, or come with blood, night stools, fever, or weight drop, treat it as possible flare activity and contact your IBD team.
 
 A practical checkpoint: write down stool count, blood, urgency, pain, fever, and what you ate or skipped. Compare today with your usual baseline, not with a perfect week. One extra bathroom trip after spicy food is different from three nights of waking to stool plus new blood.
 
@@ -66,7 +66,7 @@ Related education: [Normal CRP but still sick](/blog/crp-normal-still-symptoms-i
     title: 'What can I actually eat during a flare?',
     question:
       'What can I actually eat during a flare? Please give me a list.',
-    answer: `There is no universal “eat this, never that” list that fits every Crohn’s or colitis flare. Triggers are individual. What we can say honestly: many people do better for a short stretch on simpler, lower-residue textures—white rice, peeled cooked vegetables, eggs, yogurt if tolerated, smooth nut butters, oral nutrition drinks if appetite is low—while inflammation is loud. Fiber, skins, seeds, raw salads, and greasy takeout often feel worse during those days. That is a pattern, not a forever identity.
+    answer: `There is no universal “eat this, never that” list that fits every Crohn’s or colitis flare. Triggers are individual. What we can say honestly: many people do better for a short stretch on simpler, lower-residue textures (white rice, peeled cooked vegetables, eggs, yogurt if tolerated, smooth nut butters, oral nutrition drinks if appetite is low) while inflammation is loud. Fiber, skins, seeds, raw salads, and greasy takeout often feel worse during those days. That is a pattern, not a forever identity.
 
 A list without your disease location, strictures, and current meds can miss the point. Someone with a narrowing may need a different texture than someone with ulcerative colitis. Exclusive enteral nutrition is a medical protocol for some Crohn’s patients, not a DIY juice cleanse.
 
@@ -79,7 +79,7 @@ Related education: [Low-residue diet during a flare](/blog/low-residue-diet-flar
     title: 'Can diet alone put me in remission so I can stop my medication?',
     question:
       'Can diet alone put me in remission so I can stop my medication? I keep seeing carnivore, leaky gut, and juice cleanse claims.',
-    answer: `Diet can support how you feel and how well you nourish yourself. It is not a substitute for prescribed IBD therapy for most people with Crohn’s or ulcerative colitis. AGA 2024 nutrition guidance frames diet and nutrition therapies as part of medical care—enteral nutrition, selected exclusion diets, micronutrients, dietitian involvement—not as a standalone cure that lets you abandon medicine on your own.
+    answer: `Diet can support how you feel and how well you nourish yourself. It is not a substitute for prescribed IBD therapy for most people with Crohn’s or ulcerative colitis. AGA 2024 nutrition guidance frames diet and nutrition therapies as part of medical care (enteral nutrition, selected exclusion diets, micronutrients, dietitian involvement), not as a standalone cure that lets you abandon medicine on your own.
 
 Carnivore, “leaky gut” protocols, and juice cleanses often sell a story: if you eat perfectly, you will not need a biologic. Uncontrolled inflammation is what leads to strictures, hospitalizations, and surgery. Stopping medication without your gastroenterologist is one of the highest-risk decisions patients make after reading online forums.
 
@@ -104,10 +104,10 @@ Related education: [When to call GI vs go to the ER](/blog/when-to-call-gi-vs-er
     slug: 'biologic-how-long-until-it-works',
     title: 'How long until my biologic starts working, and is it normal to feel worse first?',
     question:
-      'How long until my biologic starts working, and is it normal to feel worse first? I am in weeks 2–6 of induction and anxious.',
-    answer: `Induction is slow on purpose. Many teams look for meaningful change over weeks, not overnight. Some people notice less night stool or less urgency in the first month; others need the full loading schedule (often around 8–12 weeks) plus a maintenance dose before anyone judges “this drug failed.” Feeling tired after early infusions or injections is common. Feeling dramatically worse with fever, spreading rash, trouble breathing, chest pain, or a rigid belly is not “normal induction”—that needs same-day contact.
+      'How long until my biologic starts working, and is it normal to feel worse first? I am in weeks 2 to 6 of induction and anxious.',
+    answer: `Induction is slow on purpose. Many teams look for meaningful change over weeks, not overnight. Some people notice less night stool or less urgency in the first month; others need the full loading schedule (often around 8 to 12 weeks) plus a maintenance dose before anyone judges “this drug failed.” Feeling tired after early infusions or injections is common. Feeling dramatically worse with fever, spreading rash, trouble breathing, chest pain, or a rigid belly is not “normal induction.” That needs same-day contact.
 
-Do not stop steroids on your own because you started a biologic. Tapers run in parallel under your clinician. Keep a simple log so small wins are visible when anxiety is loud in weeks 2–6.
+Do not stop steroids on your own because you started a biologic. Tapers run in parallel under your clinician. Keep a simple log so small wins are visible when anxiety is loud in weeks 2 to 6.
 
 Around 12 weeks many teams reassess: continue, adjust dose or interval, or switch class if there is little response. Ask when they will check calprotectin or a scope, not only how you feel on a Tuesday.
 
@@ -115,7 +115,7 @@ Related education: [First 12 weeks on a biologic](/blog/starting-biologic-first-
   },
   {
     slug: 'insurance-denied-biologic',
-    title: 'My insurance denied my biologic — what do I do now?',
+    title: 'My insurance denied my biologic. What do I do now?',
     question:
       'My insurance denied my biologic. What do I do now?',
     answer: `A denial is a paperwork decision, not a medical one. Ask for the denial in writing, the exact reason, and the appeal deadline. Call your GI office the same day: they often own the prior authorization packet, peer-to-peer review, and expedited appeal if your clinician documents urgency.
@@ -131,7 +131,7 @@ Related education: [Prior authorization timeline](/blog/prior-authorization-biol
     title: 'Do I need to take iron, B12, or vitamin D, and how do I know?',
     question:
       'Do I need to take iron, B12, or vitamin D, and how do I know?',
-    answer: `You know from labs and symptoms interpreted with your clinician—not from a supplement aisle protocol. Iron, B12, and vitamin D deficiencies are common in IBD because of blood loss, small-bowel inflammation, restricted diets, and reduced sun or intake. Fatigue, dizziness, mouth sores, bone aches, or neuropathy can be clues. They are not a shopping list.
+    answer: `You know from labs and symptoms interpreted with your clinician, not from a supplement aisle protocol. Iron, B12, and vitamin D deficiencies are common in IBD because of blood loss, small-bowel inflammation, restricted diets, and reduced sun or intake. Fatigue, dizziness, mouth sores, bone aches, or neuropathy can be clues. They are not a shopping list.
 
 Ask which labs are already on file (CBC, ferritin, iron studies, B12, 25-OH vitamin D) and whether they need repeating. Dose, route (oral vs IV iron, B12 injections), and timing around inflammation are clinical decisions. Taking high-dose iron during an active flare can be poorly tolerated; taking vitamin D without a level can miss both deficiency and excess.
 
@@ -141,12 +141,12 @@ Related education: [Iron, B12, and vitamin D in IBD](/blog/iron-b12-vitamin-d-ib
   },
   {
     slug: 'child-just-diagnosed-first-month-school',
-    title: 'My child was just diagnosed — what do I do in the first month, and what about school?',
+    title: 'My child was just diagnosed. What do I do in the first month, and what about school?',
     question:
       'My child was just diagnosed. What do I do in the first month, and what about school?',
     answer: `First month: you do not have to become an IBD expert overnight. Focus on the care team (pediatric GI, nurse, often a dietitian), the medication plan, a simple symptom and stool log, and red flags for when to call. Learn the names of drugs and the next appointment. Nutrition is “enough calories and protein while they feel awful,” not a perfect diet. Siblings need a short, honest explanation so the house is not only about the diagnosis.
 
-School: in the U.S., a Section 504 plan can document bathroom access, water bottles, extra time, nurse storage for meds, and flare absences. Start the paperwork early with the school nurse and counselor. You do not have to share the entire chart—functional needs are enough. Meet before a long absence becomes a crisis.
+School: in the U.S., a Section 504 plan can document bathroom access, water bottles, extra time, nurse storage for meds, and flare absences. Start the paperwork early with the school nurse and counselor. You do not have to share the entire chart. Functional needs are enough. Meet before a long absence becomes a crisis.
 
 Give yourself permission to be scared and still make one next call. The first 30 days are about safety and a plan, not mastering every article.
 
@@ -159,7 +159,7 @@ Related education: [Newly diagnosed, first 30 days](/blog/newly-diagnosed-first-
       'Is it safe to get pregnant, and is it safe to stay on my medication during pregnancy?',
     answer: `Many people with Crohn’s or ulcerative colitis have healthy pregnancies. The higher-stakes risk is often uncontrolled inflammation, not “being on a medicine.” Plan with your gastroenterologist and obstetric team before you try to conceive when you can. Active disease, poor nutrition, and sudden drug stops are what clinics work to avoid.
 
-Do not stop a biologic or other IBD therapy because a forum said it was unsafe. Many therapies are continued in pregnancy under specialist oversight. A few drugs (for example methotrexate, and some others) need a planned washout—your team will name those. Partners’ medications can matter too.
+Do not stop a biologic or other IBD therapy because a forum said it was unsafe. Many therapies are continued in pregnancy under specialist oversight. A few drugs (for example methotrexate, and some others) need a planned washout. Your team will name those. Partners’ medications can matter too.
 
 Ask for a preconception visit: medication list, recent labs, flare history, folate and iron status, and who to call if a flare starts while pregnant. This is shared decision-making with specialists, not a yes/no from a search result.
 
@@ -185,7 +185,7 @@ Related education: [January 2026 congress notes on GLP-1s in IBD](/news) and the
       'Are these joint aches / eye pain / skin lesions related to my IBD? I did not realize they could be connected.',
     answer: `They can be. Crohn’s and ulcerative colitis are not only bowel diseases. Joints, eyes, and skin are among the most common extraintestinal manifestations. Peripheral joint pain, back stiffness, uveitis (red painful eye, light sensitivity, vision change), erythema nodosum, and pyoderma gangrenosum show up in clinic more often than patients expect.
 
-That does not mean every ache is IBD. Viral illness, overuse, and other autoimmune overlap happen too. Eye pain with vision change is urgent—same-day ophthalmology, not a wait-for-GI-Friday plan. Rapidly worsening ulcers or spreading skin lesions also need prompt care.
+That does not mean every ache is IBD. Viral illness, overuse, and other autoimmune overlap happen too. Eye pain with vision change is urgent: same-day ophthalmology, not a wait-for-GI-Friday plan. Rapidly worsening ulcers or spreading skin lesions also need prompt care.
 
 Tell your gastroenterologist about joints, eyes, and skin even if the colonoscopy looks improved. Sometimes bowel and joints flare together; sometimes they do not. A photo of a rash and a one-line timeline help more than “I have been sore.”
 
@@ -208,19 +208,25 @@ Related education: [Extraintestinal manifestations](/blog/ibd-extraintestinal-ma
   await client.connect();
 
   let inserted = 0;
-  let skipped = 0;
+  let updated = 0;
   for (const item of ITEMS) {
+    if (item.answer.length < 40 || item.answer.length > 12000) {
+      throw new Error(`Answer length out of range for ${item.slug}: ${item.answer.length}`);
+    }
     const exists = await client.query(
       'SELECT question_id FROM ibdpal_reader_questions WHERE slug = $1 LIMIT 1',
       [item.slug]
     );
     if (exists.rows.length) {
-      skipped += 1;
-      console.log('skip (exists):', item.slug);
+      await client.query(
+        `UPDATE ibdpal_reader_questions
+         SET question_text = $1, title = $2, answer_text = $3, updated_at = NOW()
+         WHERE slug = $4`,
+        [item.question, item.title, item.answer, item.slug]
+      );
+      updated += 1;
+      console.log('updated:', item.slug);
       continue;
-    }
-    if (item.answer.length < 40 || item.answer.length > 12000) {
-      throw new Error(`Answer length out of range for ${item.slug}: ${item.answer.length}`);
     }
     await client.query(
       `INSERT INTO ibdpal_reader_questions (
@@ -236,7 +242,7 @@ Related education: [Extraintestinal manifestations](/blog/ibd-extraintestinal-ma
   const counts = await client.query(
     `SELECT status, COUNT(*)::int AS n FROM ibdpal_reader_questions GROUP BY status ORDER BY n DESC`
   );
-  console.log('inserted', inserted, 'skipped', skipped);
+  console.log('inserted', inserted, 'updated', updated);
   console.log('counts', JSON.stringify(counts.rows));
   await client.end();
 })().catch((err) => {
