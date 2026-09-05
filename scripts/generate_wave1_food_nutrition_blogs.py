@@ -34,7 +34,7 @@ IMAGE_URLS = {
     "chicken-ibd": "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?auto=format&w=1200&q=80",
     "eggs-ibd": "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&w=1200&q=80",
     "white-rice-ibd": "https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?auto=format&w=1200&q=80",
-    "turkey-ibd": "https://images.unsplash.com/photo-1574781330855-d0db8cc6a79c?auto=format&w=1200&q=80",
+    "turkey-ibd": "https://images.unsplash.com/photo-1574672280600-4accfa5b6f98?auto=format&w=1200&q=80",
 }
 
 

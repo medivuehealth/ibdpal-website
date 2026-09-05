@@ -10,7 +10,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 BLOGS = ROOT / "blogs"
 DATA = ROOT / "data"
-CUTOFF = date(2026, 7, 9)  # ~1 month before 2026-08-09
+CUTOFF = date(2026, 8, 1)  # ~1 month before 2026-09-05
 
 
 def parse_iso(s: str) -> date | None:

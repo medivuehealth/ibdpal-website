@@ -831,9 +831,10 @@ TOPICS_PART3: dict = {
         "Probiotics do not replace mesalamine, biologics, or steroids when those are indicated.",
     ]),
     ("Food sources versus capsules", [
-        "Yogurt, kefir, and fermented vegetables provide cultures with variable counts.",
-        "Sugary yogurts may worsen diarrhea osmotically.",
-        "Introduce one source at a time during remission.",
+        "Yogurt, kefir, and fermented vegetables provide live cultures with protein or fiber, but CFU counts and strain IDs are often unclear or change by brand and batch.",
+        "Capsules and powders usually list strain designations and CFU on the label, which makes clinic discussion easier, yet shelf stability, refrigeration needs, and real-world survival still vary.",
+        "Capsules are not automatically stronger or safer than food sources. Immunosuppressed patients still need clinician clearance for live organisms, and sugary yogurts may worsen diarrhea osmotically.",
+        "Introduce one food or capsule product at a time during remission so you can judge tolerance and benefit.",
     ]),
     ("Monitoring response", [
         "Track symptoms for four weeks before judging benefit.",

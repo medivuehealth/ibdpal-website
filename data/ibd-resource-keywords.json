@@ -565,8 +565,19 @@
     "hydration"
   ],
   "fiber-prebiotics-enteral-feeds-microbiome": [
-    "prebiotic",
+    "fiber prebiotics enteral feeds microbiome",
+    "fiber-prebiotics-enteral-feeds-microbiome",
+    "fiber",
     "prebiotics",
+    "enteral",
+    "feeds",
+    "microbiome",
+    "Fiber and Prebiotics in Enteral Formulas: What Microbiome Research Suggests",
+    "entereal",
+    "EEN",
+    "formula",
+    "tube feeding",
+    "prebiotic",
     "scFOS",
     "fructooligosaccharides",
     "formula fiber",
@@ -576,44 +587,64 @@
     "dysbiosis",
     "microbiome formula",
     "prebiotic formula",
-    "enteral",
     "nutrition"
   ],
   "exclusive-vs-partial-enteral-nutrition-crohns": [
+    "exclusive vs partial enteral nutrition crohns",
+    "exclusive-vs-partial-enteral-nutrition-crohns",
+    "exclusive",
+    "partial",
+    "enteral",
+    "nutrition",
+    "crohns",
+    "EEN vs Partial Enteral Nutrition in Crohn's: Choosing a Workable Plan",
+    "entereal",
     "EEN",
+    "formula",
+    "tube feeding",
     "PEN",
     "exclusive enteral",
     "partial enteral",
     "partial enteral nutrition",
     "exclusive vs partial",
     "Crohn formula",
-    "Crohn's EEN",
-    "enteral",
-    "entereal",
-    "tube feeding",
-    "nutrition"
+    "Crohn's EEN"
   ],
   "gut-barrier-dysbiosis-inflammation-ibd": [
+    "gut barrier dysbiosis inflammation ibd",
+    "gut-barrier-dysbiosis-inflammation-ibd",
+    "gut",
+    "barrier",
     "dysbiosis",
+    "inflammation",
+    "Gut Barrier, Dysbiosis, and Inflammation in IBD: A Calm Explainer",
     "leaky gut",
     "gut barrier",
     "intestinal barrier",
     "microbiome",
     "gut microbiome",
-    "inflammation",
     "barrier function",
     "microbial imbalance",
     "nutrition"
   ],
   "hospital-feeding-ibd-enteral-parenteral": [
-    "hospital feeding",
+    "hospital feeding ibd enteral parenteral",
+    "hospital-feeding-ibd-enteral-parenteral",
+    "hospital",
+    "feeding",
+    "enteral",
     "parenteral",
+    "Hospital Feeding With IBD: Enteral, Parenteral, and After Surgery",
+    "entereal",
+    "EEN",
+    "formula",
+    "tube feeding",
+    "hospital feeding",
     "TPN",
     "PN",
     "IV nutrition",
     "NPO",
     "tube feeds",
-    "enteral",
     "post surgery nutrition",
     "after surgery diet",
     "hospital diet IBD",
@@ -1216,6 +1247,12 @@
     "college IBD"
   ],
   "elemental-vs-polymeric-formula-ibd": [
+    "elemental vs polymeric formula ibd",
+    "elemental-vs-polymeric-formula-ibd",
+    "elemental",
+    "polymeric",
+    "formula",
+    "Elemental vs Polymeric Formula for IBD: Questions to Ask",
     "elemental formula",
     "polymeric formula",
     "semi-elemental",
@@ -1229,27 +1266,52 @@
     "nutrition"
   ],
   "food-reintroduction-after-een-ibd": [
+    "food reintroduction after een ibd",
+    "food-reintroduction-after-een-ibd",
+    "food",
+    "reintroduction",
+    "after",
+    "een",
+    "Food Reintroduction After EEN: A Practical Clinic Checklist",
+    "enteral",
+    "entereal",
+    "EEN",
+    "formula",
+    "tube feeding",
     "food reintroduction",
     "after EEN",
     "reintroduce food Crohn's",
     "EEN diet transition",
     "formula to food",
-    "enteral",
-    "EEN",
     "nutrition"
   ],
   "taste-fatigue-enteral-formula-ibd": [
+    "taste fatigue enteral formula ibd",
+    "taste-fatigue-enteral-formula-ibd",
+    "taste",
+    "fatigue",
+    "enteral",
+    "formula",
+    "Taste Fatigue on Enteral Formula: Practical Coping Ideas",
+    "entereal",
+    "EEN",
+    "tube feeding",
     "taste fatigue",
     "formula taste",
     "EEN taste",
     "sip feed nausea",
     "formula flavor",
-    "enteral",
     "nutrition"
   ],
   "nasogastric-tube-feeds-ibd-practical": [
-    "NG tube",
+    "nasogastric tube feeds ibd practical",
+    "nasogastric-tube-feeds-ibd-practical",
     "nasogastric",
+    "tube",
+    "feeds",
+    "practical",
+    "Nasogastric Tube Feeds for IBD: A Practical Patient Guide",
+    "NG tube",
     "overnight feeds",
     "tube feeding IBD",
     "pump feeds",
@@ -1258,25 +1320,54 @@
     "nutrition"
   ],
   "adult-een-crohns-what-to-expect": [
+    "adult een crohns what to expect",
+    "adult-een-crohns-what-to-expect",
+    "adult",
+    "een",
+    "crohns",
+    "expect",
+    "Adult EEN for Crohn&#x27;s: What to Expect",
+    "enteral",
+    "entereal",
+    "EEN",
+    "formula",
+    "tube feeding",
     "adult EEN",
     "EEN adults",
     "exclusive enteral adult Crohn's",
     "adult formula induction",
-    "enteral",
-    "EEN",
     "Crohn's",
     "nutrition"
   ],
   "enteral-nutrition-after-ibd-surgery": [
+    "enteral nutrition after ibd surgery",
+    "enteral-nutrition-after-ibd-surgery",
+    "enteral",
+    "nutrition",
+    "after",
+    "surgery",
+    "Enteral Nutrition After IBD Surgery: Recovery Questions",
+    "entereal",
+    "EEN",
+    "formula",
+    "tube feeding",
     "after surgery formula",
     "post op enteral",
     "tube feeds after resection",
     "formula after ileostomy",
-    "post surgery nutrition IBD",
-    "enteral",
-    "nutrition"
+    "post surgery nutrition IBD"
   ],
   "microbiome-lab-testing-ibd": [
+    "microbiome lab testing ibd",
+    "microbiome-lab-testing-ibd",
+    "microbiome",
+    "lab",
+    "testing",
+    "Microbiome Lab Testing for IBD: What Stool Tests Can and",
+    "calprotectin",
+    "CRP",
+    "labs",
+    "bloodwork",
     "microbiome lab test",
     "stool microbiome test",
     "gut bacteria test",
@@ -1284,11 +1375,14 @@
     "microbiome testing Crohn's",
     "consumer microbiome kit",
     "dysbiosis test",
-    "stool sequencing",
-    "microbiome",
-    "labs"
+    "stool sequencing"
   ],
   "visbiome-probiotics-ibd": [
+    "visbiome probiotics ibd",
+    "visbiome-probiotics-ibd",
+    "visbiome",
+    "probiotics",
+    "Visbiome and Multi-Strain Probiotics for IBD: Clinic",
     "Visbiome",
     "Visbiome IBD",
     "Visbiome ulcerative colitis",
@@ -1297,28 +1391,39 @@
     "VSL#3",
     "VSL3",
     "multi-strain probiotic",
-    "probiotic medical food",
-    "probiotics"
+    "probiotic medical food"
   ],
   "probiotics-ibd-practical-guide": [
+    "probiotics ibd practical guide",
+    "probiotics-ibd-practical-guide",
+    "probiotics",
+    "practical",
+    "guide",
+    "Probiotics for IBD: A Practical Guide Before You Buy",
     "best probiotic for Crohn's",
     "probiotic for ulcerative colitis",
     "probiotics CFU",
     "probiotic strains IBD",
     "yogurt probiotic IBD",
     "probiotics with biologics",
-    "probiotics",
     "supplements"
   ],
   "microbiome-research-labs-ibd": [
+    "microbiome research labs ibd",
+    "microbiome-research-labs-ibd",
+    "microbiome",
+    "research",
+    "labs",
+    "Microbiome Research Labs and IBD: How Science Reaches",
+    "calprotectin",
+    "CRP",
+    "bloodwork",
     "microbiome research",
     "microbiome lab",
     "gut microbiome research IBD",
     "translational microbiome",
     "FMT research",
-    "next generation probiotics",
-    "microbiome",
-    "research"
+    "next generation probiotics"
   ],
   "what-is-ibd": [
     "what is IBD",
@@ -1349,5 +1454,541 @@
     "formulary denial IBD",
     "NHIS biologic Crohn's",
     "prior authorization outside US"
+  ],
+  "black-stool-ibd": [
+    "black stool ibd",
+    "black-stool-ibd",
+    "black",
+    "stool",
+    "Black Stool With IBD: Melena, Iron, Pepto, and Red Flags"
+  ],
+  "bristol-stool-chart-ibd": [
+    "bristol stool chart ibd",
+    "bristol-stool-chart-ibd",
+    "bristol",
+    "stool",
+    "chart",
+    "Bristol Stool Chart for IBD: How to Describe Stools to Your GI"
+  ],
+  "crp-normal-still-symptoms-ibd": [
+    "crp normal still symptoms ibd",
+    "crp-normal-still-symptoms-ibd",
+    "crp",
+    "normal",
+    "still",
+    "symptoms",
+    "Normal CRP but Still Sick With IBD: Why Labs Can Lag Symptoms"
+  ],
+  "floating-stool-ibd": [
+    "floating stool ibd",
+    "floating-stool-ibd",
+    "floating",
+    "stool",
+    "Floating Stool With IBD: Gas, Fat, and Malabsorption Clues"
+  ],
+  "green-stool-ibd": [
+    "green stool ibd",
+    "green-stool-ibd",
+    "green",
+    "stool",
+    "Green Stool With IBD: Transit Time, Diet, and When to Worry"
+  ],
+  "high-calprotectin-what-next": [
+    "high calprotectin what next",
+    "high-calprotectin-what-next",
+    "high",
+    "calprotectin",
+    "next",
+    "High Calprotectin: What It Means and What Happens Next",
+    "CRP",
+    "labs",
+    "bloodwork"
+  ],
+  "humira-fatigue-ibd": [
+    "humira fatigue ibd",
+    "humira-fatigue-ibd",
+    "humira",
+    "fatigue",
+    "Humira (Adalimumab) and Fatigue: What Patients Ask"
+  ],
+  "mucus-in-stool-ibd": [
+    "mucus in stool ibd",
+    "mucus-in-stool-ibd",
+    "mucus",
+    "stool",
+    "Mucus in Stool With IBD: Inflammation, IBS Overlap, and Tracking"
+  ],
+  "pale-clay-stool-ibd": [
+    "pale clay stool ibd",
+    "pale-clay-stool-ibd",
+    "pale",
+    "clay",
+    "stool",
+    "Pale or Clay-Colored Stool: Bile Flow Questions With IBD"
+  ],
+  "pencil-thin-stool-ibd": [
+    "pencil thin stool ibd",
+    "pencil-thin-stool-ibd",
+    "pencil",
+    "thin",
+    "stool",
+    "Pencil-Thin Stool With IBD: Strictures, Constipation, and Red Flags"
+  ],
+  "stelara-diet-ibd": [
+    "stelara diet ibd",
+    "stelara-diet-ibd",
+    "stelara",
+    "diet",
+    "Stelara (Ustekinumab) and Diet: Eating While on Therapy"
+  ],
+  "yellow-stool-ibd": [
+    "yellow stool ibd",
+    "yellow-stool-ibd",
+    "yellow",
+    "stool",
+    "Yellow Stool With IBD: Fat Malabsorption and Other Causes"
+  ],
+  "biologics-flying-travel-ibd": [
+    "biologics flying travel ibd",
+    "biologics-flying-travel-ibd",
+    "biologics",
+    "flying",
+    "travel",
+    "Flying With Biologics: Coolers, Letters, and Airport Tips for IBD",
+    "biologic",
+    "infusion"
+  ],
+  "bone-broth-gut-healing-ibd": [
+    "bone broth gut healing ibd",
+    "bone-broth-gut-healing-ibd",
+    "bone",
+    "broth",
+    "gut",
+    "healing",
+    "Bone Broth and IBD: Gut Healing Claims Versus Reality"
+  ],
+  "carnivore-diet-ibd-myths": [
+    "carnivore diet ibd myths",
+    "carnivore-diet-ibd-myths",
+    "carnivore",
+    "diet",
+    "myths",
+    "Carnivore Diet and IBD: Myths, Risks, and What Evidence Says"
+  ],
+  "chapati-roti-ibd": [
+    "chapati roti ibd",
+    "chapati-roti-ibd",
+    "chapati",
+    "roti",
+    "Chapati and Roti With IBD: Flatbread Tips for Flare and Remission"
+  ],
+  "collagen-supplements-ibd": [
+    "collagen supplements ibd",
+    "collagen-supplements-ibd",
+    "collagen",
+    "supplements",
+    "Collagen Supplements and IBD: What Marketing Omits"
+  ],
+  "congee-rice-porridge-ibd": [
+    "congee rice porridge ibd",
+    "congee-rice-porridge-ibd",
+    "congee",
+    "rice",
+    "porridge",
+    "Congee and Rice Porridge With IBD: Soft Carbs for Flare Days"
+  ],
+  "couscous-ibd": [
+    "couscous ibd",
+    "couscous-ibd",
+    "couscous",
+    "Couscous With IBD: Small Pasta Texture, Portions, and Prep"
+  ],
+  "dal-lentils-ibd": [
+    "dal lentils ibd",
+    "dal-lentils-ibd",
+    "dal",
+    "lentils",
+    "Dal and Lentils With IBD: Protein, FODMAPs, and Softer Prep"
+  ],
+  "dates-ramadan-ibd": [
+    "dates ramadan ibd",
+    "dates-ramadan-ibd",
+    "dates",
+    "ramadan",
+    "Dates and Ramadan Eating With IBD: Sugar, Fiber, and Fasting Notes"
+  ],
+  "intermittent-fasting-ibd": [
+    "intermittent fasting ibd",
+    "intermittent-fasting-ibd",
+    "intermittent",
+    "fasting",
+    "Intermittent Fasting and IBD: Hype, Hunger, and Flare Timing"
+  ],
+  "juice-cleanse-detox-ibd": [
+    "juice cleanse detox ibd",
+    "juice-cleanse-detox-ibd",
+    "juice",
+    "cleanse",
+    "detox",
+    "Juice Cleanses and Detox Diets With IBD: Why They Backfire"
+  ],
+  "kimchi-fermented-ibd": [
+    "kimchi fermented ibd",
+    "kimchi-fermented-ibd",
+    "kimchi",
+    "fermented",
+    "Kimchi and Fermented Vegetables With IBD: Spice, Fiber, and Caution"
+  ],
+  "leaky-gut-protocol-ibd": [
+    "leaky gut protocol ibd",
+    "leaky-gut-protocol-ibd",
+    "leaky",
+    "gut",
+    "protocol",
+    "Leaky Gut Protocols and IBD: Separating Science From Sales Pages"
+  ],
+  "methotrexate-alcohol-folate-ibd": [
+    "methotrexate alcohol folate ibd",
+    "methotrexate-alcohol-folate-ibd",
+    "methotrexate",
+    "alcohol",
+    "folate",
+    "Methotrexate, Alcohol, and Folate in IBD: Patient Safety Basics"
+  ],
+  "miso-soup-ibd": [
+    "miso soup ibd",
+    "miso-soup-ibd",
+    "miso",
+    "soup",
+    "Miso Soup With IBD: Probiotics, Sodium, and Gentle Meals"
+  ],
+  "paneer-ibd": [
+    "paneer ibd",
+    "paneer-ibd",
+    "paneer",
+    "Paneer With IBD: Soft Cheese Protein, Lactose, and Cooking Tips"
+  ],
+  "plantain-ibd": [
+    "plantain ibd",
+    "plantain-ibd",
+    "plantain",
+    "Plantain With IBD: Green Versus Ripe, Boiled Versus Fried"
+  ],
+  "prednisone-diet-hunger-ibd": [
+    "prednisone diet hunger ibd",
+    "prednisone-diet-hunger-ibd",
+    "prednisone",
+    "diet",
+    "hunger",
+    "Prednisone Hunger and Diet With IBD: Surviving Steroid Appetite"
+  ],
+  "remicade-infusion-day-tips-ibd": [
+    "remicade infusion day tips ibd",
+    "remicade-infusion-day-tips-ibd",
+    "remicade",
+    "infusion",
+    "day",
+    "tips",
+    "Remicade (Infliximab) Infusion Day: Patient Tips That Actually Help"
+  ],
+  "rinvoq-patient-questions-ibd": [
+    "rinvoq patient questions ibd",
+    "rinvoq-patient-questions-ibd",
+    "rinvoq",
+    "patient",
+    "questions",
+    "Rinvoq (Upadacitinib) and IBD: Patient Questions on JAK Therapy"
+  ],
+  "skyrizi-patient-questions-ibd": [
+    "skyrizi patient questions ibd",
+    "skyrizi-patient-questions-ibd",
+    "skyrizi",
+    "patient",
+    "questions",
+    "Skyrizi (Risankizumab) for IBD: Patient Questions Beyond the Ad"
+  ],
+  "tortillas-ibd": [
+    "tortillas ibd",
+    "tortillas-ibd",
+    "tortillas",
+    "Tortillas With IBD: Corn Versus Flour, Soft Wraps, and Flare Tips"
+  ],
+  "apple-ibd-cooked-vs-raw": [
+    "apple ibd cooked vs raw",
+    "apple-ibd-cooked-vs-raw",
+    "apple",
+    "cooked",
+    "raw",
+    "Apples and IBD: Cooked vs Raw, Fiber, and Flare Tips"
+  ],
+  "banana-ibd-crohns-colitis": [
+    "banana ibd crohns colitis",
+    "banana-ibd-crohns-colitis",
+    "banana",
+    "crohns",
+    "colitis",
+    "Bananas and IBD: Fiber, Potassium, and Flare-Friendly Tips"
+  ],
+  "blueberries-ibd": [
+    "blueberries ibd",
+    "blueberries-ibd",
+    "blueberries",
+    "Blueberries and IBD: Antioxidants, Seeds, and Gut Tolerance"
+  ],
+  "strawberries-ibd": [
+    "strawberries ibd",
+    "strawberries-ibd",
+    "strawberries",
+    "Strawberries and IBD: Vitamin C, Seeds, and Flare-Friendly Servings"
+  ],
+  "avocado-ibd": [
+    "avocado ibd",
+    "avocado-ibd",
+    "avocado",
+    "Avocado and IBD: Healthy Fats, Fiber, and Portion Tips"
+  ],
+  "grapes-ibd": [
+    "grapes ibd",
+    "grapes-ibd",
+    "grapes",
+    "Grapes and IBD: Skins, Portions, and Gentle Fruit Swaps"
+  ],
+  "melon-ibd": [
+    "melon ibd",
+    "melon-ibd",
+    "melon",
+    "Melon and IBD: Hydration, Potassium, and Gentle Fruit Options"
+  ],
+  "oranges-citrus-ibd": [
+    "oranges citrus ibd",
+    "oranges-citrus-ibd",
+    "oranges",
+    "citrus",
+    "Oranges and Citrus With IBD: Vitamin C, Acidity, and Juice Tips"
+  ],
+  "chicken-protein-ibd": [
+    "chicken protein ibd",
+    "chicken-protein-ibd",
+    "chicken",
+    "protein",
+    "Chicken and IBD: Lean Protein for Flares and Remission Plates"
+  ],
+  "eggs-ibd-nutrition": [
+    "eggs ibd nutrition",
+    "eggs-ibd-nutrition",
+    "eggs",
+    "nutrition",
+    "Eggs and IBD: Protein, Choline, and Easy Flare Meals"
+  ],
+  "turkey-protein-ibd": [
+    "turkey protein ibd",
+    "turkey-protein-ibd",
+    "turkey",
+    "protein",
+    "Turkey and IBD: Lean Poultry Protein Beyond Chicken"
+  ],
+  "white-rice-ibd-flare": [
+    "white rice ibd flare",
+    "white-rice-ibd-flare",
+    "white",
+    "rice",
+    "flare",
+    "White Rice and IBD: Flare Staple, Carbs, and Remission Upgrades",
+    "IBD flare",
+    "flare symptoms"
+  ],
+  "carrots-ibd": [
+    "carrots ibd",
+    "carrots-ibd",
+    "carrots",
+    "Carrots and IBD: Cooked vs Raw, Vitamin A, and Flare Tips"
+  ],
+  "potato-ibd-white": [
+    "potato ibd white",
+    "potato-ibd-white",
+    "potato",
+    "white",
+    "White Potatoes and IBD: Flare Carbs, Skins, and Prep Tips"
+  ],
+  "spinach-leafy-greens-ibd": [
+    "spinach leafy greens ibd",
+    "spinach-leafy-greens-ibd",
+    "spinach",
+    "leafy",
+    "greens",
+    "Spinach and Leafy Greens With IBD: Iron, Oxalates, and Cooking Tips"
+  ],
+  "sweet-potato-ibd": [
+    "sweet potato ibd",
+    "sweet-potato-ibd",
+    "sweet",
+    "potato",
+    "Sweet Potatoes and IBD: Fiber, Vitamin A, and Texture Tips"
+  ],
+  "broccoli-ibd": [
+    "broccoli ibd",
+    "broccoli-ibd",
+    "broccoli",
+    "Broccoli and IBD: Gas, Stems, and Softer Prep Ideas"
+  ],
+  "cucumber-ibd": [
+    "cucumber ibd",
+    "cucumber-ibd",
+    "cucumber",
+    "Cucumber and IBD: Hydration, Peels, and Seed Tips"
+  ],
+  "tomatoes-ibd": [
+    "tomatoes ibd",
+    "tomatoes-ibd",
+    "tomatoes",
+    "Tomatoes and IBD: Acidity, Sauces, and Seed Tips"
+  ],
+  "zucchini-ibd": [
+    "zucchini ibd",
+    "zucchini-ibd",
+    "zucchini",
+    "Zucchini and IBD: Soft Squash for Gentler Vegetable Intake"
+  ],
+  "calcium-ibd": [
+    "calcium ibd",
+    "calcium-ibd",
+    "calcium",
+    "Calcium and IBD: Bones, Dairy Alternatives, and Steroid Questions"
+  ],
+  "corn-ibd": [
+    "corn ibd",
+    "corn-ibd",
+    "corn",
+    "Corn and IBD: Kernels, Skins, and When to Be Careful"
+  ],
+  "onion-garlic-ibd-fodmap": [
+    "onion garlic ibd fodmap",
+    "onion-garlic-ibd-fodmap",
+    "onion",
+    "garlic",
+    "fodmap",
+    "Onion and Garlic With IBD: FODMAPs, Flavor Swaps, and Flare Tips"
+  ],
+  "zinc-ibd": [
+    "zinc ibd",
+    "zinc-ibd",
+    "zinc",
+    "Zinc and IBD: Immunity, Wound Healing, and Food Sources"
+  ],
+  "folate-ibd": [
+    "folate ibd",
+    "folate-ibd",
+    "folate",
+    "Folate and IBD: Methotrexate, Pregnancy Planning, and Food Sources"
+  ],
+  "magnesium-ibd": [
+    "magnesium ibd",
+    "magnesium-ibd",
+    "magnesium",
+    "Magnesium and IBD: Cramps, Diarrhea Losses, and Repletion Tips"
+  ],
+  "potassium-ibd": [
+    "potassium ibd",
+    "potassium-ibd",
+    "potassium",
+    "Potassium and IBD: Diarrhea Losses, Foods, and Safety Limits"
+  ],
+  "vitamin-c-ibd": [
+    "vitamin c ibd",
+    "vitamin-c-ibd",
+    "vitamin",
+    "Vitamin C and IBD: Immunity Myths, Food Sources, and Acidity Tips"
+  ],
+  "oatmeal-ibd": [
+    "oatmeal ibd",
+    "oatmeal-ibd",
+    "oatmeal",
+    "Oatmeal and IBD: Soluble Fiber, Flare Texture, and Prep Tips"
+  ],
+  "omega-3-ibd": [
+    "omega 3 ibd",
+    "omega-3-ibd",
+    "omega",
+    "Omega-3 and IBD: Fish, Supplements, and What Evidence Suggests"
+  ],
+  "peanut-butter-ibd": [
+    "peanut butter ibd",
+    "peanut-butter-ibd",
+    "peanut",
+    "butter",
+    "Peanut Butter and IBD: Calories, Smooth Texture, and Portion Tips"
+  ],
+  "vitamin-a-ibd": [
+    "vitamin a ibd",
+    "vitamin-a-ibd",
+    "vitamin",
+    "Vitamin A and IBD: Vision, Night Blindness Concerns, and Food Sources"
+  ],
+  "coffee-ibd": [
+    "coffee ibd",
+    "coffee-ibd",
+    "coffee",
+    "Coffee and IBD: Caffeine, Urgency, and When to Cut Back"
+  ],
+  "lean-beef-ibd": [
+    "lean beef ibd",
+    "lean-beef-ibd",
+    "lean",
+    "beef",
+    "Lean Beef and IBD: Iron-Rich Protein Without Tough Cuts"
+  ],
+  "salmon-fish-ibd": [
+    "salmon fish ibd",
+    "salmon-fish-ibd",
+    "salmon",
+    "fish",
+    "Salmon and Fatty Fish With IBD: Protein, Omega-3, and Cooking Tips"
+  ],
+  "tofu-soy-ibd": [
+    "tofu soy ibd",
+    "tofu-soy-ibd",
+    "tofu",
+    "soy",
+    "Tofu and Soy With IBD: Soft Protein, Calcium-Set Options, and Prep Tips"
+  ],
+  "greek-yogurt-ibd": [
+    "greek yogurt ibd",
+    "greek-yogurt-ibd",
+    "greek",
+    "yogurt",
+    "Greek Yogurt and IBD: Protein, Lactose, and Probiotic Notes"
+  ],
+  "tea-ibd": [
+    "tea ibd",
+    "tea-ibd",
+    "tea",
+    "Tea and IBD: Caffeine, Herbal Options, and Hydration Tips"
+  ],
+  "tuna-ibd": [
+    "tuna ibd",
+    "tuna-ibd",
+    "tuna",
+    "Tuna and IBD: Convenient Protein, Mercury Notes, and Prep Tips"
+  ],
+  "white-bread-ibd": [
+    "white bread ibd",
+    "white-bread-ibd",
+    "white",
+    "bread",
+    "White Bread and IBD: Low-Residue Carbs and Sandwich Tips"
+  ],
+  "chocolate-ibd": [
+    "chocolate ibd",
+    "chocolate-ibd",
+    "chocolate",
+    "Chocolate and IBD: Cocoa, Fat, Sugar Alcohols, and Portion Tips"
+  ],
+  "protein-shakes-ons-ibd": [
+    "protein shakes ons ibd",
+    "protein-shakes-ons-ibd",
+    "protein",
+    "shakes",
+    "ons",
+    "Protein Shakes and ONS With IBD: When Liquids Help"
   ]
 }

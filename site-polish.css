@@ -4301,12 +4301,12 @@ a.tab-button,
 
 .reader-qa-accordion__toggle {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     gap: 0.75rem;
     width: 100%;
     margin: 0;
-    padding: 0.65rem 1rem;
+    padding: 0.55rem 1rem;
     border: none;
     background: transparent;
     text-align: left;
@@ -4327,9 +4327,13 @@ a.tab-button,
 
 .reader-qa-accordion__question {
     flex: 1;
-    font-size: 0.95rem;
+    min-width: 0;
+    font-size: 0.92rem;
     font-weight: 500;
     color: var(--ibd-text, #281810);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .reader-qa-accordion__icon {
@@ -4343,7 +4347,7 @@ a.tab-button,
 }
 
 .reader-qa-accordion__panel {
-    padding: 0 1rem 0.65rem 1rem;
+    padding: 0 1rem 0.5rem 1rem;
 }
 
 .reader-qa-accordion__panel[hidden] {

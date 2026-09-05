@@ -24,7 +24,7 @@ FALLBACK_IMAGE = BLOGS / "assets" / "low-residue" / "low-residue_1.jpg"
 
 IMAGE_URLS = {
     "oatmeal-ibd": "https://images.unsplash.com/photo-1517673400267-0251440c45dc?auto=format&w=1200&q=80",
-    "peanut-butter-ibd": "https://images.unsplash.com/photo-1508747703725-719777637510?auto=format&w=1200&q=80",
+    "peanut-butter-ibd": "https://images.unsplash.com/photo-1719956797292-21d15f9a14a4?auto=format&w=1200&q=80",
     "coffee-ibd": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&w=1200&q=80",
     "salmon-ibd": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&w=1200&q=80",
     "tofu-ibd": "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&w=1200&q=80",

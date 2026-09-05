@@ -51,7 +51,7 @@ IMAGE_URLS = {
     "congee-ibd": "https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?auto=format&w=1200&q=80",
     "miso-ibd": "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&w=1200&q=80",
     "kimchi-ibd": "https://images.unsplash.com/photo-1583224964978-240ee87d0b6b?auto=format&w=1200&q=80",
-    "plantain-ibd": "https://images.unsplash.com/photo-1603833665858-e61d17a86224?auto=format&w=1200&q=80",
+    "plantain-ibd": "https://images.pexels.com/photos/3024866/pexels-photo-3024866.jpeg?auto=compress&cs=tinysrgb&w=1200",
     "tortilla-ibd": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&w=1200&q=80",
     "couscous-ibd": "https://images.unsplash.com/photo-1516684668137-632fa0f0a5a0?auto=format&w=1200&q=80",
     "dates-ibd": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&w=1200&q=80",

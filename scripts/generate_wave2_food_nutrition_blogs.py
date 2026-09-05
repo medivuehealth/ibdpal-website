@@ -25,10 +25,10 @@ FALLBACK_IMAGE = BLOGS / "assets" / "low-residue" / "low-residue_1.jpg"
 IMAGE_URLS = {
     "carrots-ibd": "https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?auto=format&w=1200&q=80",
     "potato-ibd": "https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&w=1200&q=80",
-    "sweet-potato-ibd": "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&w=1200&q=80",
+    "sweet-potato-ibd": "https://images.unsplash.com/photo-1570723735746-c9bd51bd7c40?auto=format&w=1200&q=80",
     "spinach-ibd": "https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&w=1200&q=80",
     "broccoli-ibd": "https://images.unsplash.com/photo-1628773822503-930a7eaecf80?auto=format&w=1200&q=80",
-    "zucchini-ibd": "https://images.unsplash.com/photo-1592419044706-39796d40f98c?auto=format&w=1200&q=80",
+    "zucchini-ibd": "https://images.pexels.com/photos/128420/pexels-photo-128420.jpeg?auto=compress&cs=tinysrgb&w=1200",
     "cucumber-ibd": "https://images.unsplash.com/photo-1449300079323-02e209d9d3a6?auto=format&w=1200&q=80",
     "tomato-ibd": "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&w=1200&q=80",
     "onion-garlic-ibd": "https://images.unsplash.com/photo-1518977956812-cd3dbadaaf31?auto=format&w=1200&q=80",
