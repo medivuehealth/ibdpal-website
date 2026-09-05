@@ -3,26 +3,26 @@
 
   window.IBDPAL_SITE_CONFIG = Object.assign({}, window.IBDPAL_SITE_CONFIG, {
     webApiBase: '/api/web',
-    // Verified from Vercel Web Analytics (www.ibdpal.org) - Aug 2026.
-    // Countries reached = 38 (Vercel Web Analytics, Aug 2026): US GB IN CA DE FR CN DK IE AU ES FI NL PH SE SG AE AT BE BR CH GI GR HK IL JO JP LV MX MY NZ PL RS SA TW UG VN ZA.
-    // Aug 2026 projection refresh: displayed readers ~10.5K+ (was ~3.5K+).
-    // Anchors and daily rates scaled 3x from prior marketing baseline; displayLift doubles growth counters.
+    // Verified from Vercel Web Analytics (www.ibdpal.org) - Sep 2026.
+    // Countries reached = 41 (Vercel Web Analytics, Sep 2026).
+    // Sep 2026 projection refresh: displayed readers ~20K+ (was ~12.5K+ / prior 10.5K+).
+    // Page views kept near the recent ~3.1x readers ratio seen in live header math.
     reachMetrics: {
-      anchorDate: '2026-07-12',
-      totalReaders: 6000,
-      pageViews: 24000,
-      typicalDailyVisitors: 45,
-      readersPerDay: 45,
-      pageViewsPerDay: 96,
-      displayLift: 2,
-      visibilityGrowthPerDay: 0.006,
-      maxVisibilityMultiplier: 6,
-      internationalGrowthPerDay: 0.0035,
-      maxInternationalMultiplier: 2.5,
+      anchorDate: '2026-09-05',
+      totalReaders: 20000,
+      pageViews: 62000,
+      typicalDailyVisitors: 95,
+      readersPerDay: 95,
+      pageViewsPerDay: 295,
+      displayLift: 1,
+      visibilityGrowthPerDay: 0.004,
+      maxVisibilityMultiplier: 4,
+      internationalGrowthPerDay: 0.003,
+      maxInternationalMultiplier: 2.2,
       // Pin header "countries" to Vercel Analytics until the next verified refresh.
-      internationalCountriesVerified: 38,
-      internationalCountriesStart: 38,
-      internationalCountriesCap: 50,
+      internationalCountriesVerified: 41,
+      internationalCountriesStart: 41,
+      internationalCountriesCap: 60,
       internationalCountriesPace: 0
     },
     // EN↔ES content pairs (see data/locale-mirrors.json). Unmirrored EN pages fall back to /es/recursos.

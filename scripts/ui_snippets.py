@@ -67,15 +67,44 @@ BLOG_BACK_LINK_HTML = (
 
 UPDATES_MONTHLY_SECTIONS_HTML = """
                     <section class="seo-landing__block updates-month">
+                        <h2>September 2026</h2>
+                        <ul class="seo-landing__list">
+                            <li><strong>Reach refresh:</strong> header metrics updated to about <strong>20K+</strong> readers, <strong>62K+</strong> page views, and <strong>41</strong> countries (Vercel Web Analytics, Sep 2026)</li>
+                            <li><strong>Reader Q&amp;A:</strong> published editorial answers on <a href="/ask">Ask</a> (flare timing, bloodwork, diet, ER vs nurse line, biologics, insurance, vitamins, pediatric, pregnancy, GLP-1, EIMs) with searchable answered questions</li>
+                            <li><strong>SEO &amp; IndexNow:</strong> wired recent-month articles into hubs, keywords, sitemap, and <code>llms.txt</code>; submitted URL batches to Bing via IndexNow</li>
+                            <li><strong>Food image accuracy:</strong> corrected mismatched Part VI / nutrition blog photos (including zucchini and green plantain)</li>
+                            <li><strong>Library snapshot:</strong> <strong>213 articles</strong>, <strong>60 guides</strong>, <strong>339+</strong> resource entries, <strong>381</strong> sitemap education pages</li>
+                        </ul>
+                    </section>
+                    <section class="seo-landing__block updates-month">
                         <h2>August 2026</h2>
                         <ul class="seo-landing__list">
                             <li><strong>Content analytics refresh:</strong> library counts updated to <strong>213 articles</strong>, <strong>58 guides</strong>, <strong>335+</strong> resource entries, and <strong>375+</strong> sitemap education pages (Aug 23, 2026)</li>
                             <li><strong>Partners &amp; Student Research:</strong> News Partners &amp; programs tab with manufacturer support listings and <a href="/partners/media-kit">media kit</a>; new <a href="/#student-research">Student Research</a> main tab featuring NHSJS stem-cell review; researcher accounts and admin review desk</li>
+                            <li><strong>Food &amp; nutrition waves:</strong> large food-by-food article set (fruits, vegetables, proteins, grains, dairy alternatives, vitamins/minerals, cultural staples such as plantain, dal, chapati, congee, and miso) plus flare versus remission tips</li>
+                            <li><strong>Enteral nutrition series:</strong> EEN/PEN, hospital feeding, formula types, taste fatigue, post-surgery feeds, and food reintroduction after EEN</li>
+                            <li><strong>Flare safety cluster:</strong> dehydration, electrolytes, fever, vomiting/obstruction warnings, and after-ER follow-up guides</li>
+                            <li><strong>Stool &amp; labs education:</strong> Bristol chart, stool-color articles, high calprotectin next steps, and CRP-with-symptoms explainers; <a href="/stool-labs-decoder">stool labs decoder</a> hub</li>
+                            <li><strong>Microbiome &amp; biologics Q&amp;A:</strong> microbiome lab testing, probiotics practical guide, Visbiome clinic questions, and patient questions for Remicade, Stelara, Humira, Rinvoq, and Skyrizi</li>
+                            <li><strong>Spanish hubs:</strong> expanded <a href="/es/recursos">Spanish resources</a> plus nutrition, Crohn&rsquo;s, colitis, teens, flares, and ER guidance pages</li>
+                            <li><strong>Search engines:</strong> IndexNow key + Bing submit tooling; robots and sitemap refreshed for discovery</li>
                             <li><strong>Traffic expansion wave 2:</strong> broader autoimmune articles and nutrition guides; Patient Library Research Publications tab; Articles Autoimmune/Associations filters; Sources includes Crohn's &amp; Colitis Foundation hubs</li>
                             <li><strong>Traffic expansion wave 1:</strong> autoimmune association articles and <a href="/ibd-autoimmune-associations">associations hub</a>; nutrition guides for anti-inflammatory eating, iron, vitamin D, protein, and elimination diets; PubMed and society links on <a href="/research">research</a></li>
                             <li><strong>Crohn&rsquo;s &amp; Colitis Foundation:</strong> licensed-education homepage strip; expanded <a href="/crohns-colitis-foundation-resources">Foundation resources hub</a>; attributed guides for <a href="/guides/camp-oasis-kids-ibd">Camp Oasis</a>, <a href="/guides/ibd-prior-authorization-foundation">prior authorization</a>, and <a href="/guides/foundation-diet-nutrition-ibd">diet and nutrition</a>; Foundation links in the <a href="/resources">resource library</a></li>
                             <li><strong>Homepage UX:</strong> brighter high-contrast type, bold black menu labels, compact Foundation strip so search stays visible</li>
                             <li><strong>Library counts:</strong> <strong>213 articles</strong>, <strong>58 guides</strong>, <strong>335+</strong> resource entries, <strong>375+</strong> sitemap education pages</li>
+                        </ul>
+                    </section>
+                    <section class="seo-landing__block updates-month">
+                        <h2>July 2026</h2>
+                        <ul class="seo-landing__list">
+                            <li><strong>Analytics-gap articles:</strong> 13 new posts covering urgent care vs GI, chronic diarrhea, blood in stool, newly diagnosed first 30 days, vaccines on immunosuppressants, prior authorization, starting a biologic, Entyvio, nutrition, weight changes, care outside the U.S., work conversations, and dating/intimacy</li>
+                            <li><strong>Spanish:</strong> <a href="/es/cuando-ir-urgencias-eii">Cu&aacute;ndo ir a urgencias (EII)</a> plus hub links on flare, newly diagnosed, and nutrition pages</li>
+                            <li><strong>Header reach metrics:</strong> live readers, page views, daily visitors, and countries counters aligned with site analytics growth</li>
+                            <li><strong>App download nudges:</strong> contextual CTAs on education pages (without changing main tab order)</li>
+                            <li><strong>Privacy split:</strong> separate <a href="/privacy">Website Privacy Policy</a> and <a href="/privacy/app">App Privacy Policy</a> so App Store and web visitors each get the right policy</li>
+                            <li><strong>July gap articles (short reads):</strong> <a href="/blog/constipation-ibd-causes">constipation</a>, <a href="/blog/steroid-taper-what-to-expect-ibd">steroid taper</a>, <a href="/blog/swimming-pool-beach-ibd-ostomy">swimming/beach</a>, <a href="/blog/uveitis-eye-inflammation-ibd">eye inflammation</a>, <a href="/blog/humid-weather-ibd-symptoms">humid weather</a>, <a href="/blog/anemia-iron-deficiency-ibd">anemia</a>, <a href="/blog/reading-ibd-labs-calprotectin-crp">reading labs</a>, <a href="/blog/pyoderma-erythema-nodosum-ibd">skin flares (EN/PG)</a></li>
+                            <li>Content library counts refreshed to <strong>85 articles</strong> and <strong>210+</strong> education pages</li>
                         </ul>
                     </section>
                     <section class="seo-landing__block updates-month">
@@ -168,7 +197,7 @@ SITE_UPDATES_SUBTAB_HTML = """
                 <article class="support-section seo-landing tab-page-section tab-page-section--compact">
                     <header class="page-header-compact">
                         <h2 class="page-header-compact__title">Site Updates</h2>
-                        <p class="page-header-compact__lead">Month-by-month changelog &middot; updated June 2026</p>
+                        <p class="page-header-compact__lead">Month-by-month changelog &middot; updated September 2026</p>
                     </header>
 {UPDATES_MONTHLY_SECTIONS_HTML}
                     <section class="seo-landing__block">

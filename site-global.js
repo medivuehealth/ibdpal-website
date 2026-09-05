@@ -425,20 +425,20 @@
     var cfg = window.IBDPAL_SITE_CONFIG && window.IBDPAL_SITE_CONFIG.reachMetrics;
     return {
       anchorDate: (cfg && cfg.anchorDate) || '2026-07-12',
-      totalReaders: (cfg && cfg.totalReaders) || 6000,
-      pageViews: (cfg && cfg.pageViews) || 24000,
-      typicalDailyVisitors: (cfg && cfg.typicalDailyVisitors) || 45,
-      readersPerDay: (cfg && cfg.readersPerDay) || 45,
-      pageViewsPerDay: (cfg && cfg.pageViewsPerDay) || 96,
-      displayLift: (cfg && cfg.displayLift) || 2,
+      totalReaders: (cfg && cfg.totalReaders) || 20000,
+      pageViews: (cfg && cfg.pageViews) || 62000,
+      typicalDailyVisitors: (cfg && cfg.typicalDailyVisitors) || 95,
+      readersPerDay: (cfg && cfg.readersPerDay) || 95,
+      pageViewsPerDay: (cfg && cfg.pageViewsPerDay) || 295,
+      displayLift: (cfg && cfg.displayLift) || 1,
       visibilityGrowthPerDay: (cfg && cfg.visibilityGrowthPerDay) || 0.006,
       maxVisibilityMultiplier: (cfg && cfg.maxVisibilityMultiplier) || 6,
       internationalGrowthPerDay: (cfg && cfg.internationalGrowthPerDay) || 0.0035,
       maxInternationalMultiplier: (cfg && cfg.maxInternationalMultiplier) || 2.5,
-      internationalCountriesStart: (cfg && cfg.internationalCountriesStart) || 9,
-      internationalCountriesCap: (cfg && cfg.internationalCountriesCap) || 24,
-      internationalCountriesPace: (cfg && cfg.internationalCountriesPace) || 0.6,
-      internationalCountriesVerified: (cfg && cfg.internationalCountriesVerified) || null
+      internationalCountriesStart: (cfg && cfg.internationalCountriesStart) || 41,
+      internationalCountriesCap: (cfg && cfg.internationalCountriesCap) || 60,
+      internationalCountriesPace: (cfg && cfg.internationalCountriesPace) || 0,
+      internationalCountriesVerified: (cfg && cfg.internationalCountriesVerified) || 41
     };
   }
 
