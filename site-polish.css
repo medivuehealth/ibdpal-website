@@ -177,9 +177,10 @@ body {
 .header-book-banner {
     display: inline-flex;
     align-items: center;
-    gap: 0.65rem;
-    max-width: min(420px, 46vw);
-    padding: 0.35rem 0.7rem 0.35rem 0.4rem;
+    gap: 0.75rem;
+    max-width: min(640px, 62vw);
+    min-width: min(420px, 48vw);
+    padding: 0.4rem 1.1rem 0.4rem 0.45rem;
     border-radius: 999px;
     text-decoration: none;
     color: inherit;
@@ -197,8 +198,8 @@ body {
 }
 
 .header-book-banner__cover {
-    width: 34px;
-    height: 50px;
+    width: 38px;
+    height: 56px;
     object-fit: cover;
     border-radius: 4px;
     box-shadow: 0 2px 6px rgba(15, 23, 42, 0.18);
@@ -225,7 +226,7 @@ body {
 
 .header-book-banner__title {
     font-family: var(--ibd-font-display);
-    font-size: 0.95rem;
+    font-size: 1.05rem;
     font-weight: 800;
     letter-spacing: -0.02em;
     color: #1f130f;
@@ -236,7 +237,7 @@ body {
 
 .header-book-banner__cta {
     font-family: var(--ibd-font-body);
-    font-size: 0.72rem;
+    font-size: 0.78rem;
     font-weight: 700;
     color: #c24a24;
 }
@@ -3844,8 +3845,10 @@ a.tab-button,
 
     .header-book-banner {
         max-width: 100%;
-        padding: 0.28rem 0.55rem 0.28rem 0.3rem;
-        gap: 0.45rem;
+        min-width: 0;
+        width: 100%;
+        padding: 0.3rem 0.7rem 0.3rem 0.35rem;
+        gap: 0.5rem;
     }
 
     .header-book-banner__cover {
