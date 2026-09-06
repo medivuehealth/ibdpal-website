@@ -6,6 +6,7 @@
 
   var WEB_API_BASE = (window.IBDPAL_SITE_CONFIG && window.IBDPAL_SITE_CONFIG.webApiBase) || '/api/web';
   var FALLBACK_SUGGESTIONS = [
+    { term: 'eating with ibd', label: 'Eating With IBD' },
     { term: 'enteral', label: 'Enteral' },
     { term: 'fatigue', label: 'Fatigue' },
     { term: 'flare', label: 'Flare' },
@@ -63,9 +64,13 @@
   function scoreItem(item, q) {
     if (!q) return 0;
     var title = String(item.title || '').toLowerCase();
+    var titleNorm = normalizeTerm(item.title || '');
     var hay = buildHaystack(item);
     var score = 0;
-    if (title.indexOf(q) !== -1) score += 12;
+    // Exact title match (e.g. "eating with ibd" → Eating With IBD book) beats partial contains.
+    if (titleNorm === q) score += 50;
+    else if (title.indexOf(q) === 0) score += 28;
+    else if (title.indexOf(q) !== -1) score += 12;
     if (hay.indexOf(q) !== -1) score += 6;
     // Exact keyword / tag hits (e.g. "enteral") rank above loose contains.
     var keywords = item.keywords || [];
@@ -133,6 +138,7 @@
   function typeLabel(item) {
     if (item.type === 'blog') return 'Article';
     if (item.type === 'external') return 'External';
+    if (item.type === 'book') return 'Book';
     return 'Guide';
   }
 

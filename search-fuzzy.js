@@ -19,7 +19,8 @@
     'lactose', 'fodmap', 'low residue', 'fiber', 'hydration', 'ostomy',
     'fistula', 'abscess', 'arthritis', 'joint pain', 'uveitis', 'crohn',
     'colitis', 'ulcerative colitis', 'self management', 'newly diagnosed',
-    'visit prep', 'infusion', 'vaccine', 'probiotics', 'protein', 'nutrition'
+    'visit prep', 'infusion', 'vaccine', 'probiotics', 'protein', 'nutrition',
+    'eating with ibd', 'ibd book', 'ibdpal book'
   ];
 
   var vocabCache = null;

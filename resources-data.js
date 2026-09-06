@@ -55,6 +55,7 @@ window.IBDPAL_RESOURCES = [
  { title: "UOAA Ostomy Support", category: "community", type: "external", url: "https://ostomy.org/", tags: ["ostomy", "stoma"] },
  { title: "Recursos en español", category: "community", type: "site", url: "/es/recursos", tags: ["spanish", "español"] },
  { title: "About IBDPal", category: "community", type: "site", url: "/about", tags: ["about", "mission", "nonprofit"] },
+ { title: "Eating With IBD", category: "nutrition", type: "book", url: "/eating-with-ibd", tags: ["Eating With IBD", "IBD book", "nutrition book", "Amazon", "Crohn's diet", "ulcerative colitis nutrition", "MediVue", "Aryan Shashi Kumar"], description: "Practical Crohn’s and ulcerative colitis nutrition guide by MediVue. Buy on Amazon — companion to free IBDPal education.", keywords: ["eating with ibd", "Eating With IBD book", "IBDPal book", "IBD nutrition book", "Crohn's diet book", "ulcerative colitis book"] },
  { title: "The Founder", category: "community", type: "site", url: "/founder", tags: ["founder", "mission", "nonprofit", "about-founders"] },
  { title: "About Founders (homepage)", category: "community", type: "site", url: "/#about-founders", tags: ["founder", "mission", "nonprofit", "about-founders"] },
  { title: "Content Library", category: "community", type: "site", url: "/library", tags: ["library", "education", "articles"] },

@@ -154,7 +154,7 @@ def main() -> None:
             {
                 **item,
                 "tags": merge_tags(item.get("tags", []), extra),
-                "keywords": extra,
+                "keywords": merge_tags(item.get("keywords", []), extra),
             }
         )
 

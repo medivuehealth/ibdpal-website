@@ -127,7 +127,13 @@
 
   function renderCard(item) {
     var cat = CATEGORY_LABELS[item.category] || item.category;
-    var badge = item.type === 'external' ? 'External' : item.type === 'blog' ? 'Article' : 'On ibdpal.org';
+    var badge = item.type === 'external'
+      ? 'External'
+      : item.type === 'blog'
+        ? 'Article'
+        : item.type === 'book'
+          ? 'Book'
+          : 'On ibdpal.org';
     var desc = item.description ? '<p class="resource-card__desc">' + escapeHtml(item.description.slice(0, 100)) + '</p>' : '';
     return (
       '<article class="resource-card" data-category="' + escapeHtml(item.category) + '">' +
