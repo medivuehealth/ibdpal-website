@@ -175,28 +175,53 @@ body {
 }
 
 .header-book-banner {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.75rem;
+    display: block;
     width: min(640px, 62vw);
     max-width: 100%;
     min-width: 0;
-    padding: 0.4rem 1.15rem;
+    padding: 0.35rem 0;
     border-radius: 999px;
     text-decoration: none;
     color: inherit;
+    overflow: hidden;
     background: linear-gradient(115deg, #fff7f2 0%, #ffe0d2 42%, #ffc9b5 100%);
     border: 1px solid rgba(255, 120, 80, 0.35);
     box-shadow: 0 4px 14px rgba(180, 70, 40, 0.12);
     animation: header-book-glow 3.2s ease-in-out infinite;
-    transition: transform 0.18s ease, box-shadow 0.18s ease;
+    transition: box-shadow 0.18s ease;
 }
 
 .header-book-banner:hover,
 .header-book-banner:focus-visible {
-    transform: translateY(-1px) scale(1.01);
     box-shadow: 0 8px 20px rgba(180, 70, 40, 0.18);
+}
+
+.header-book-banner:hover .header-book-banner__track,
+.header-book-banner:focus-visible .header-book-banner__track {
+    animation-play-state: paused;
+}
+
+.header-book-banner__viewport {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.header-book-banner__track {
+    display: flex;
+    width: max-content;
+    align-items: center;
+    animation: header-book-marquee 18s linear infinite;
+    will-change: transform;
+}
+
+.header-book-banner__item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    flex-shrink: 0;
+    padding: 0.05rem 1.75rem;
 }
 
 .header-book-banner__cover {
@@ -235,8 +260,6 @@ body {
     letter-spacing: -0.02em;
     color: #1f130f;
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .header-book-banner__cta {
@@ -244,6 +267,7 @@ body {
     font-size: 0.78rem;
     font-weight: 700;
     color: #c24a24;
+    white-space: nowrap;
 }
 
 @keyframes header-book-glow {
@@ -251,9 +275,25 @@ body {
     50% { box-shadow: 0 6px 18px rgba(180, 70, 40, 0.22); }
 }
 
+@keyframes header-book-marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
 @media (prefers-reduced-motion: reduce) {
     .header-book-banner {
         animation: none;
+    }
+
+    .header-book-banner__track {
+        animation: none;
+        transform: none;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .header-book-banner__item[aria-hidden="true"] {
+        display: none;
     }
 }
 
@@ -3851,9 +3891,12 @@ a.tab-button,
         width: 100%;
         max-width: 100%;
         min-width: 0;
-        padding: 0.3rem 0.7rem;
+        padding: 0.28rem 0;
+    }
+
+    .header-book-banner__item {
         gap: 0.5rem;
-        justify-content: center;
+        padding: 0.05rem 1.25rem;
     }
 
     .header-book-banner__cover {
@@ -3871,6 +3914,10 @@ a.tab-button,
 
     .header-book-banner__eyebrow {
         display: none;
+    }
+
+    .header-book-banner__track {
+        animation-duration: 14s;
     }
 
     .site-lang {

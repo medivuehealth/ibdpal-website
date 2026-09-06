@@ -14,15 +14,28 @@
     '</aside>';
 
   var BOOK_AMAZON_URL = 'https://www.amazon.com/dp/B0HHYZL27M';
-  var BOOK_BANNER_HTML =
-    '<a class="header-book-banner" href="' + BOOK_AMAZON_URL + '" target="_blank" rel="noopener noreferrer" ' +
-    'data-track-click="book_banner" data-track-label="Eating With IBD Amazon">' +
+  var BOOK_BANNER_ITEM_HTML =
+    '<span class="header-book-banner__item">' +
     '<img class="header-book-banner__cover" src="/assets/books/eating-with-ibd-cover-thumb.jpg" ' +
     'width="40" height="60" alt="" decoding="async">' +
     '<span class="header-book-banner__copy">' +
     '<span class="header-book-banner__eyebrow">New on Amazon</span>' +
     '<span class="header-book-banner__title">Eating With IBD</span>' +
     '<span class="header-book-banner__cta">Get the nutrition book</span>' +
+    '</span>' +
+    '</span>';
+  var BOOK_BANNER_HTML =
+    '<a class="header-book-banner" href="' + BOOK_AMAZON_URL + '" target="_blank" rel="noopener noreferrer" ' +
+    'data-track-click="book_banner" data-track-label="Eating With IBD Amazon" ' +
+    'aria-label="Eating With IBD nutrition book on Amazon">' +
+    '<span class="header-book-banner__viewport">' +
+    '<span class="header-book-banner__track">' +
+    BOOK_BANNER_ITEM_HTML +
+    BOOK_BANNER_ITEM_HTML.replace(
+      'class="header-book-banner__item"',
+      'class="header-book-banner__item" aria-hidden="true"'
+    ) +
+    '</span>' +
     '</span>' +
     '</a>';
 
