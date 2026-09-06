@@ -205,13 +205,15 @@ body {
     display: block;
     width: 100%;
     overflow: hidden;
+    container-type: inline-size;
+    container-name: bookbanner;
 }
 
 .header-book-banner__track {
     display: flex;
     width: max-content;
     align-items: center;
-    animation: header-book-marquee 18s linear infinite;
+    animation: header-book-marquee 16s linear infinite;
     will-change: transform;
 }
 
@@ -221,7 +223,8 @@ body {
     justify-content: center;
     gap: 0.75rem;
     flex-shrink: 0;
-    padding: 0.05rem 1.75rem;
+    /* Full banner-width gap so only one promo is visible at a time */
+    padding-inline-end: 100cqw;
 }
 
 .header-book-banner__cover {
@@ -275,9 +278,31 @@ body {
     50% { box-shadow: 0 6px 18px rgba(180, 70, 40, 0.22); }
 }
 
+/* Enter from the right, exit left; -50% loops onto the duplicate copy. */
 @keyframes header-book-marquee {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
+    from { transform: translateX(100cqw); }
+    to { transform: translateX(calc(100cqw - 50%)); }
+}
+
+/* Fallback when container query units are unavailable */
+@supports not (width: 1cqw) {
+    .header-book-banner__track {
+        width: 200%;
+        animation-name: header-book-marquee-fallback;
+    }
+
+    .header-book-banner__item {
+        flex: 0 0 50%;
+        width: 50%;
+        box-sizing: border-box;
+        justify-content: flex-end;
+        padding-inline-end: 1rem;
+    }
+
+    @keyframes header-book-marquee-fallback {
+        from { transform: translateX(0); }
+        to { transform: translateX(-50%); }
+    }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -290,6 +315,10 @@ body {
         transform: none;
         justify-content: center;
         width: 100%;
+    }
+
+    .header-book-banner__item {
+        padding-inline-end: 0;
     }
 
     .header-book-banner__item[aria-hidden="true"] {
@@ -3896,7 +3925,6 @@ a.tab-button,
 
     .header-book-banner__item {
         gap: 0.5rem;
-        padding: 0.05rem 1.25rem;
     }
 
     .header-book-banner__cover {
@@ -3917,7 +3945,7 @@ a.tab-button,
     }
 
     .header-book-banner__track {
-        animation-duration: 14s;
+        animation-duration: 12s;
     }
 
     .site-lang {
