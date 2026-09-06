@@ -150,7 +150,90 @@ body {
     white-space: nowrap;
 }
 
-/* Centered book promo in header (review placement) */
+.book-landing__hero {
+    display: grid;
+    grid-template-columns: minmax(140px, 220px) minmax(0, 1fr);
+    gap: 1.5rem 2rem;
+    align-items: start;
+    margin: 1.25rem 0 1.75rem;
+    padding: 1.25rem;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #fff7f2 0%, #ffe8dc 55%, #fff 100%);
+    border: 1px solid rgba(255, 120, 80, 0.28);
+}
+
+.book-landing__cover {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 28px rgba(80, 30, 10, 0.18);
+    background: #fff;
+}
+
+.book-landing__buy h2 {
+    margin: 0 0 0.5rem;
+    font-family: var(--ibd-font-display);
+    font-size: 1.35rem;
+    color: var(--ibd-text);
+}
+
+.book-landing__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1rem;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.book-landing__cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem 1.2rem;
+    border-radius: 999px;
+    background: #c24a24;
+    color: #fff !important;
+    font-weight: 700;
+    text-decoration: none !important;
+    box-shadow: 0 4px 14px rgba(194, 74, 36, 0.28);
+}
+
+.book-landing__cta:hover,
+.book-landing__cta:focus-visible {
+    background: #a33d1c;
+}
+
+.book-landing__secondary {
+    font-weight: 600;
+    color: var(--ibd-primary);
+}
+
+.book-landing__asin {
+    font-size: 0.85rem;
+    color: var(--ibd-muted);
+    word-break: break-all;
+}
+
+@media (max-width: 720px) {
+    .book-landing__hero {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .book-landing__cover {
+        max-width: 200px;
+    }
+
+    .book-landing__actions {
+        justify-content: center;
+    }
+
+    .book-landing__buy {
+        text-align: center;
+    }
+}
+
 .header__inner--with-book {
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);

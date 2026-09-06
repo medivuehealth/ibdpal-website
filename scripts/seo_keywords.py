@@ -27,6 +27,10 @@ PATH_KEYWORDS: dict[str, str] = {
     "/support": "IBD support groups, Crohn's chapter, colitis foundation, state IBD resources",
     "/faq": "IBD FAQ, Crohn's questions, ulcerative colitis diet, IBD flare, Crohn's vs colitis",
     "/newly-diagnosed": "newly diagnosed IBD, Crohn's diagnosis, ulcerative colitis first steps, GI questions",
+    "/eating-with-ibd": (
+        "Eating With IBD, IBD nutrition book, Crohn's diet book, ulcerative colitis nutrition, "
+        "IBDPal book Amazon, MediVue IBD book"
+    ),
     "/what-is-ibd": (
         "what is IBD, inflammatory bowel disease, Crohn's disease, ulcerative colitis, "
         "IBD vs IBS, IBD symptoms, IBD diagnosis"

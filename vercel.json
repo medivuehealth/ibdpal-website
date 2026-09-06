@@ -990,6 +990,10 @@
       "destination": "/executive-summary.html"
     },
     {
+      "source": "/eating-with-ibd",
+      "destination": "/eating-with-ibd.html"
+    },
+    {
       "source": "/founder",
       "destination": "/founder.html"
     },

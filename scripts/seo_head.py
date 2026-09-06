@@ -63,6 +63,7 @@ def organization_json() -> dict:
         },
         "sameAs": [
             "https://apps.apple.com/app/ibdpal",
+            "https://www.amazon.com/dp/B0HHYZL27M",
         ],
     }
 

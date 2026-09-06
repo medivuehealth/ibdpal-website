@@ -21,6 +21,7 @@ SITE_FOOTER_STATIC = f"""
                     <a href="/library" class="footer-link">Content Library</a>
                     <a href="/impact" class="footer-link">Impact</a>
                     <a href="/newly-diagnosed" class="footer-link">Newly Diagnosed</a>
+                    <a href="/eating-with-ibd" class="footer-link">Eating With IBD book</a>
                     <a href="/ibd-crohns-support" class="footer-link">IBD Crohn's Support</a>
                     <a href="/resources" class="footer-link">Resource Library</a>
                     <a href="/blog" class="footer-link">Articles</a>
@@ -49,6 +50,7 @@ SITE_FOOTER_HOME = f"""
                     <a href="/library" class="footer-link">Content Library</a>
                     <a href="/impact" class="footer-link">Impact</a>
                     <a href="/newly-diagnosed" class="footer-link">Newly Diagnosed</a>
+                    <a href="/eating-with-ibd" class="footer-link">Eating With IBD book</a>
                     <a href="/ibd-crohns-support" class="footer-link">IBD Crohn's Support</a>
                     <a href="/resources" class="footer-link">Guides &amp; tools</a>
                     <a href="/blog" class="footer-link">Articles</a>
