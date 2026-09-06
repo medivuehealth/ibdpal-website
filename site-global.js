@@ -6,10 +6,25 @@
 
   var CRISIS_HTML =
     '<aside class="crisis-strip" role="note" aria-label="Educational use reminder">' +
+    '<div class="crisis-strip__inner">' +
     '<p><span class="crisis-strip__icon" aria-hidden="true">ⓘ</span> ' +
     '<span class="crisis-strip__text">Educational resource only. ' +
     'For emergencies call <strong>911</strong>.</span></p>' +
+    '</div>' +
     '</aside>';
+
+  var BOOK_AMAZON_URL = 'https://www.amazon.com/dp/B0HHYZL27M';
+  var BOOK_BANNER_HTML =
+    '<a class="header-book-banner" href="' + BOOK_AMAZON_URL + '" target="_blank" rel="noopener noreferrer" ' +
+    'data-track-click="book_banner" data-track-label="Eating With IBD Amazon">' +
+    '<img class="header-book-banner__cover" src="/assets/books/eating-with-ibd-cover-thumb.jpg" ' +
+    'width="40" height="60" alt="" decoding="async">' +
+    '<span class="header-book-banner__copy">' +
+    '<span class="header-book-banner__eyebrow">New on Amazon</span>' +
+    '<span class="header-book-banner__title">Eating With IBD</span>' +
+    '<span class="header-book-banner__cta">Get the nutrition book</span>' +
+    '</span>' +
+    '</a>';
 
   var SKIP_HTML = '<a class="skip-link" href="#main-content">Skip to main content</a>';
   var WEB_API_BASE = (window.IBDPAL_SITE_CONFIG && window.IBDPAL_SITE_CONFIG.webApiBase) ||
@@ -88,6 +103,21 @@
       container.insertBefore(crisis.firstChild, container.firstChild);
     } else {
       document.body.insertBefore(crisis.firstChild, skip.nextSibling);
+    }
+  }
+
+  function injectHeaderBookBanner() {
+    var headerInner = document.querySelector('.header__inner');
+    if (!headerInner || headerInner.querySelector('.header-book-banner')) return;
+    headerInner.classList.add('header__inner--with-book');
+    var wrap = document.createElement('div');
+    wrap.innerHTML = BOOK_BANNER_HTML;
+    var banner = wrap.firstChild;
+    var reach = headerInner.querySelector('.header-reach');
+    if (reach) {
+      headerInner.insertBefore(banner, reach);
+    } else {
+      headerInner.appendChild(banner);
     }
   }
 
@@ -988,17 +1018,19 @@
     var enHref = enUrlForPath(path);
     var esHref = esUrlForPath(path);
 
-    var headerInner = document.querySelector('.header__inner');
-    if (headerInner && !headerInner.querySelector('.site-lang')) {
+    // Language lives on the crisis strip (right); keep header free for the book banner.
+    document.querySelectorAll('.header__inner > .site-lang').forEach(function (node) {
+      node.parentNode.removeChild(node);
+    });
+
+    var crisisInner = document.querySelector('.crisis-strip__inner');
+    if (crisisInner && !crisisInner.querySelector('.site-lang')) {
       var wrap = document.createElement('div');
-      wrap.innerHTML = langControlHtml(currentLang, enHref, esHref);
-      var control = wrap.firstChild;
-      var reach = headerInner.querySelector('.header-reach');
-      if (reach) {
-        headerInner.insertBefore(control, reach);
-      } else {
-        headerInner.appendChild(control);
-      }
+      wrap.innerHTML = langControlHtml(currentLang, enHref, esHref).replace(
+        'class="site-lang"',
+        'class="site-lang site-lang--crisis"'
+      );
+      crisisInner.appendChild(wrap.firstChild);
     }
 
     var footerContent = document.querySelector('.footer .footer-content');
@@ -1081,6 +1113,7 @@
   document.addEventListener('DOMContentLoaded', function () {
     injectCrisisStrip();
     injectSiteReachMetrics();
+    injectHeaderBookBanner();
     injectLanguageControls();
     maybeShowSpanishBanner();
     initReachCounters(document);

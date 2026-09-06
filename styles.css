@@ -2452,7 +2452,17 @@ a.tab-button {
     font-size: 0.8125rem;
     line-height: 1.45;
     color: #222222;
-    text-align: center;
+    text-align: left;
+}
+
+.crisis-strip__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem 1rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .crisis-strip__icon {
@@ -2472,13 +2482,29 @@ a.tab-button {
 
 .crisis-strip p {
     margin: 0;
-    max-width: 1100px;
-    margin-left: auto;
-    margin-right: auto;
+    flex: 1 1 auto;
+    min-width: 0;
 }
 
 .crisis-strip__text {
     font-weight: 400;
+}
+
+.crisis-strip .site-lang__link {
+    color: var(--ibd-muted, #6b7280);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.crisis-strip .site-lang__link:hover,
+.crisis-strip .site-lang__link:focus-visible {
+    color: var(--ibd-primary, #8B5CF6);
+    text-decoration: underline;
+}
+
+.crisis-strip .site-lang__link--active {
+    color: #222222;
+    text-decoration: none;
 }
 
 .tab-button:focus-visible,
