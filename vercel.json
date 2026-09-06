@@ -998,6 +998,10 @@
       "destination": "/founder.html"
     },
     {
+      "source": "/about-founders",
+      "destination": "/founder.html"
+    },
+    {
       "source": "/contact",
       "destination": "/contact.html"
     },

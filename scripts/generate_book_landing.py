@@ -63,7 +63,8 @@ def book_graph() -> list[dict]:
             ),
             "inLanguage": "en",
             "genre": "Health & Fitness / Diseases / Gastrointestinal",
-            "author": {"@id": f"{SITE}/#organization"},
+            "author": {"@id": f"{SITE}/#about-founders"},
+            "creator": {"@id": f"{SITE}/#about-founders"},
             "publisher": {"@id": f"{SITE}/#organization"},
             "brand": {"@id": f"{SITE}/#organization"},
             "sameAs": [AMAZON_URL],
@@ -73,6 +74,7 @@ def book_graph() -> list[dict]:
                     "bookFormat": "https://schema.org/EBook",
                     "url": AMAZON_URL,
                     "sameAs": [AMAZON_URL],
+                    "author": {"@id": f"{SITE}/#about-founders"},
                 }
             ],
             "offers": {

@@ -65,6 +65,50 @@ def organization_json() -> dict:
             "https://apps.apple.com/app/ibdpal",
             "https://www.amazon.com/dp/B0HHYZL27M",
         ],
+        "founder": {"@id": f"{SITE}/#about-founders"},
+    }
+
+
+def founder_person_json() -> dict:
+    """Person for MediVue / IBDPal founder — linked from org, book, and founder pages."""
+    return {
+        "@type": "Person",
+        "@id": f"{SITE}/#about-founders",
+        "name": "Aryan Shashi Kumar",
+        "jobTitle": "Founder",
+        "url": f"{SITE}/#about-founders",
+        "sameAs": [
+            f"{SITE}/founder",
+            f"{SITE}/about-founders",
+            f"{SITE}/eating-with-ibd",
+            "https://www.amazon.com/dp/B0HHYZL27M",
+        ],
+        "worksFor": {"@id": f"{SITE}/#organization"},
+        "affiliation": {"@id": f"{SITE}/#organization"},
+        "description": (
+            "Founder of MediVue and IBDPal, and author of Eating With IBD — free Crohn’s and "
+            "ulcerative colitis patient education and the IBDPal iOS app."
+        ),
+        "knowsAbout": [
+            "Inflammatory bowel disease",
+            "Crohn's disease",
+            "Ulcerative colitis",
+            "IBD nutrition education",
+            "Eating With IBD",
+        ],
+        "mainEntityOfPage": {
+            "@type": "ProfilePage",
+            "@id": f"{SITE}/founder#webpage",
+            "url": f"{SITE}/founder",
+            "name": "The Founder | IBDPal",
+            "isPartOf": {"@id": f"{SITE}/#website"},
+            "about": {"@id": f"{SITE}/#about-founders"},
+            "significantLink": [
+                f"{SITE}/#about-founders",
+                f"{SITE}/about-founders",
+                f"{SITE}/eating-with-ibd",
+            ],
+        },
     }
 
 
@@ -94,7 +138,7 @@ def website_json() -> dict:
 
 
 def with_site_graph(json_ld: dict | list) -> dict:
-    base = [organization_json(), website_json()]
+    base = [organization_json(), website_json(), founder_person_json()]
     if isinstance(json_ld, list):
         graph = json_ld
         context = "https://schema.org"
@@ -104,7 +148,14 @@ def with_site_graph(json_ld: dict | list) -> dict:
     else:
         graph = [json_ld]
         context = "https://schema.org"
-    return {"@context": context, "@graph": [*base, *graph]}
+    # Drop duplicate Person nodes that already use the founder @id
+    founder_id = f"{SITE}/#about-founders"
+    filtered = [
+        node
+        for node in graph
+        if not (isinstance(node, dict) and node.get("@id") == founder_id)
+    ]
+    return {"@context": context, "@graph": [*base, *filtered]}
 
 
 def render_seo_head(

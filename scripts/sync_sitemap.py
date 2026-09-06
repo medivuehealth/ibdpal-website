@@ -124,7 +124,7 @@ def priority_for(path: str) -> float:
         return 0.82
     if path in {"/about", "/impact", "/news", "/site-updates", "/resources", "/visit-prep", "/glossary"}:
         return 0.85
-    if path in {"/privacy", "/privacy/app", "/terms", "/executive-summary", "/contact", "/founder"}:
+    if path in {"/privacy", "/privacy/app", "/terms", "/executive-summary", "/contact", "/founder", "/about-founders"}:
         return 0.55
     if path.startswith("/es/"):
         return 0.78
@@ -184,6 +184,16 @@ def discover_entries() -> dict[str, tuple[str, float, str]]:
 
     # Homepage: prefer newest lastmod among key surfaces
     entries["/"] = (today, 1.0, "weekly")
+
+    # Crawlable alias for homepage #about-founders (hash URLs are not sitemap-indexable alone)
+    founder_html = ROOT / "founder.html"
+    if founder_html.is_file():
+        entries["/about-founders"] = (
+            file_lastmod(founder_html),
+            priority_for("/about-founders"),
+            changefreq_for("/about-founders"),
+        )
+
     return entries
 
 

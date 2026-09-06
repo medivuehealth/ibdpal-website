@@ -223,7 +223,10 @@ PATH_KEYWORDS: dict[str, str] = {
     ),
     "/glossary": "IBD glossary, Crohn's terms, colitis definitions, biologics IBD",
     "/impact": "IBDPal impact, IBD education nonprofit, MediVue mission, patient outcomes",
-    "/founder": "IBDPal founder, IBDPal mission, IBD education, Crohn's colitis education",
+    "/founder": "IBDPal founder, Aryan Shashi Kumar, MediVue founder, IBDPal mission, Crohn's colitis education",
+    "/about-founders": (
+        "IBDPal founder, Aryan Shashi Kumar, MediVue founder, about founders IBDPal, Crohn's colitis education"
+    ),
     "/contact": "contact IBDPal, MediVue IBD, patient education feedback",
     "/for-clinicians": "IBD clinicians, gastroenterology education, patient engagement tools",
     "/clinical-partnerships": "IBD clinical partnerships, GI education, nonprofit collaboration",

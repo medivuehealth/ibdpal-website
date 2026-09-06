@@ -6,6 +6,8 @@
 - https://www.ibdpal.org/
 - https://www.ibdpal.org/about
 - https://www.ibdpal.org/founder
+- https://www.ibdpal.org/#about-founders
+- https://www.ibdpal.org/about-founders
 - https://www.ibdpal.org/contact
 - https://www.ibdpal.org/impact
 - https://www.ibdpal.org/library
