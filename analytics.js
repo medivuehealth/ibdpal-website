@@ -142,14 +142,23 @@
             var isExternal = href.indexOf('http') === 0 &&
                 href.indexOf(window.location.hostname) === -1;
             var navTab = anchor.classList.contains('tab-button') ? tabIdFromNavTarget(anchor) : null;
-            trackEvent('click', {
+            var customEvent = anchor.getAttribute('data-track-click');
+            var clickPayload = {
                 link_url: href,
                 link_text: (anchor.textContent || '').trim().slice(0, 120),
                 link_category: linkCategory(anchor),
                 outbound: isExternal ? 'true' : 'false',
                 element_id: anchor.id || undefined,
                 data_tab: navTab || anchor.getAttribute('data-tab') || undefined
-            });
+            };
+            var customLabel = anchor.getAttribute('data-track-label');
+            if (customLabel) clickPayload.event_label = customLabel.slice(0, 120);
+            trackEvent('click', clickPayload);
+            if (customEvent) {
+                trackEvent(customEvent, Object.assign({}, clickPayload, {
+                    event_label: customLabel || customEvent
+                }));
+            }
             if (navTab) {
                 trackTabViewFromNav(navTab, 'static_nav_link', anchor);
             }
@@ -237,6 +246,9 @@
 
     window.ibdpalTrack = trackEvent;
     window.ibdpalTrackPageView = trackPageView;
+
+    if (window.__IBDPAL_ANALYTICS_INIT__) return;
+    window.__IBDPAL_ANALYTICS_INIT__ = true;
 
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', init);

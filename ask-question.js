@@ -144,6 +144,11 @@
           if (result.ok && result.body && result.body.success) {
             form.reset();
             setStatus(result.body.message || 'Thanks. We received your question.', 'success');
+            if (typeof window.ibdpalTrack === 'function') {
+              window.ibdpalTrack('reader_question_submit', {
+                source: (document.querySelector('meta[name="ask-source"]') || {}).content || 'ask_page'
+              });
+            }
             return;
           }
           var err =

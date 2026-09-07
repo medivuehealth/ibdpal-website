@@ -70,7 +70,7 @@ def organization_json() -> dict:
 
 
 def founder_person_json() -> dict:
-    """Person for MediVue / IBDPal founder — linked from org, book, and founder pages."""
+    """Person for MediVue / IBDPal founder, linked from org, book, and founder pages."""
     return {
         "@type": "Person",
         "@id": f"{SITE}/#about-founders",
@@ -86,7 +86,7 @@ def founder_person_json() -> dict:
         "worksFor": {"@id": f"{SITE}/#organization"},
         "affiliation": {"@id": f"{SITE}/#organization"},
         "description": (
-            "Founder of MediVue and IBDPal, and author of Eating With IBD — free Crohn’s and "
+            "Founder of MediVue and IBDPal, and author of Eating With IBD: free Crohn’s and "
             "ulcerative colitis patient education and the IBDPal iOS app."
         ),
         "knowsAbout": [

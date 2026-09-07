@@ -11,6 +11,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 from seo_head import SITE, render_seo_head  # noqa: E402
 from site_footer import SITE_FOOTER_STATIC  # noqa: E402
+from site_nav import PAGE_SCRIPTS  # noqa: E402
 
 AMAZON_URL = "https://www.amazon.com/dp/B0HHYZL27M"
 PATH = "/eating-with-ibd"
@@ -20,7 +21,7 @@ COVER_THUMB = f"{SITE}/assets/books/eating-with-ibd-cover-thumb.jpg"
 TITLE = "Eating With IBD Book | Crohn’s & Colitis Nutrition Guide"
 DESC = (
     "Eating With IBD by MediVue: practical Crohn’s and ulcerative colitis nutrition education. "
-    "Available on Amazon. Companion to free IBDPal patient guides—education only, not medical advice."
+    "Available on Amazon. Companion to free IBDPal patient guides. Education only, not medical advice."
 )
 
 
@@ -150,12 +151,12 @@ def page_html() -> str:
         </header>
 
         <main class="main-content">
-            <article class="support-section seo-landing tab-page-section book-landing">
+            <article class="support-section seo-landing tab-page-section book-landing" data-track-impression="eating_with_ibd" data-track-label="Eating With IBD book landing">
                 <header class="page-header-compact">
                     <p class="page-header-compact__eyebrow">MediVue · IBDPal</p>
                     <h1 class="page-header-compact__title">Eating With IBD</h1>
                     <p class="page-header-compact__lead">
-                        A practical nutrition book for Crohn&rsquo;s disease and ulcerative colitis—now on Amazon.
+                        A practical nutrition book for Crohn&rsquo;s disease and ulcerative colitis, now on Amazon.
                         Education only; not a substitute for personalized medical or dietitian advice.
                     </p>
                 </header>
@@ -224,8 +225,7 @@ def page_html() -> str:
 
 {SITE_FOOTER_STATIC}
     </div>
-    <script src="/site-config.js" defer></script>
-    <script src="/site-global.js" defer></script>
+{PAGE_SCRIPTS}
 </body>
 </html>
 """

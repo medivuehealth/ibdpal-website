@@ -258,12 +258,30 @@
   }
 
   function isTrackableContentPath(pathname) {
-    return pathname.indexOf('/blog/') === 0 ||
-      pathname.indexOf('/guides/') === 0 ||
-      pathname === '/research' ||
-      pathname.indexOf('/research/') === 0 ||
-      pathname === '/resources' ||
-      pathname === '/library';
+    if (!pathname || pathname === '/') return false;
+    if (/^\/(admin|api)(\/|$)/.test(pathname)) return false;
+    // Prefer canonical pages; AMP variants link back to full articles.
+    if (pathname.indexOf('/amp') !== -1 || /\/amp$/.test(pathname)) return false;
+    return true;
+  }
+
+  function ensureSiteAnalytics() {
+    if (window.ibdpalTrack || window.__IBDPAL_ANALYTICS_LOADING__) return;
+    window.__IBDPAL_ANALYTICS_LOADING__ = true;
+
+    function appendScript(src, attrs) {
+      if (document.querySelector('script[src="' + src + '"]')) return null;
+      var script = document.createElement('script');
+      script.src = src;
+      if (attrs && attrs.defer) script.defer = true;
+      document.head.appendChild(script);
+      return script;
+    }
+
+    if (!window.IBDPAL_ANALYTICS) {
+      appendScript('/analytics-config.js');
+    }
+    appendScript('/analytics.js', { defer: true });
   }
 
   function recordContentEvent(payload) {
@@ -1124,6 +1142,7 @@
   };
 
   document.addEventListener('DOMContentLoaded', function () {
+    ensureSiteAnalytics();
     injectCrisisStrip();
     injectSiteReachMetrics();
     injectHeaderBookBanner();
