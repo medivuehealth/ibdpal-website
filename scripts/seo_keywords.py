@@ -28,8 +28,8 @@ PATH_KEYWORDS: dict[str, str] = {
     "/faq": "IBD FAQ, Crohn's questions, ulcerative colitis diet, IBD flare, Crohn's vs colitis",
     "/newly-diagnosed": "newly diagnosed IBD, Crohn's diagnosis, ulcerative colitis first steps, GI questions",
     "/eating-with-ibd": (
-        "Eating With IBD, IBD nutrition book, Crohn's diet book, ulcerative colitis nutrition, "
-        "IBDPal book Amazon, MediVue IBD book"
+        "Eating With IBD, Aryan Shashi Kumar, Aryan Shashi Kumar Eating With IBD Amazon book, "
+        "IBD nutrition book, Crohn's diet book, ulcerative colitis nutrition, IBDPal book Amazon"
     ),
     "/what-is-ibd": (
         "what is IBD, inflammatory bowel disease, Crohn's disease, ulcerative colitis, "
@@ -223,9 +223,9 @@ PATH_KEYWORDS: dict[str, str] = {
     ),
     "/glossary": "IBD glossary, Crohn's terms, colitis definitions, biologics IBD",
     "/impact": "IBDPal impact, IBD education nonprofit, MediVue mission, patient outcomes",
-    "/founder": "IBDPal founder, Aryan Shashi Kumar, MediVue founder, IBDPal mission, Crohn's colitis education",
+    "/founder": "Aryan Shashi Kumar, Eating With IBD Amazon, MediVue founder, IBDPal founder, Crohn's colitis education",
     "/about-founders": (
-        "IBDPal founder, Aryan Shashi Kumar, MediVue founder, about founders IBDPal, Crohn's colitis education"
+        "Aryan Shashi Kumar, Eating With IBD, MediVue founder, about founders IBDPal, Crohn's colitis education"
     ),
     "/contact": "contact IBDPal, MediVue IBD, patient education feedback",
     "/for-clinicians": "IBD clinicians, gastroenterology education, patient engagement tools",

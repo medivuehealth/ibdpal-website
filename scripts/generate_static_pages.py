@@ -946,25 +946,31 @@ PAGES = {
         """,
     ),
     "founder.html": (
-        "The Founder | IBDPal",
-        "Why IBDPal exists: a vision for clear IBD education, calm tracking tools, and useful next steps for the Crohn's and colitis community.",
+        "Aryan Shashi Kumar | MediVue Founder | IBDPal",
+        "Aryan Shashi Kumar, founder of MediVue and IBDPal, and author of Eating With IBD on Amazon: clear Crohn’s and colitis education.",
         "/founder",
         """
             <article class="support-section seo-landing">
-                <h1>The Founder</h1>
+                <h1>Aryan Shashi Kumar</h1>
+                <p class="support-intro">Founder of MediVue &amp; IBDPal · Author of <cite>Eating With IBD</cite> on Amazon</p>
                 <figure class="founder-name-mark">
-                    <img src="/assets/founder-name.png" width="643" height="102" alt="" decoding="async" loading="lazy" draggable="false">
+                    <img src="/assets/founder-name.png" width="643" height="102" alt="Aryan Shashi Kumar" decoding="async" loading="lazy" draggable="false">
                 </figure>
                 <p class="support-intro mission-block">Every lasting program begins with a simple standard: make tomorrow a little clearer than today.</p>
                 <section class="seo-landing__block">
                     <h2>Why IBDPal exists</h2>
-                    <p>IBDPal grew from a belief that people navigating Crohn's disease and ulcerative colitis deserve education and tools that respect their time, their intelligence, and the complexity of life between clinic visits. Not flashy promises. Not jargon for its own sake. Clear guidance, calm tracking, and a place to return when the next question appears.</p>
-                    <p>The founder built <strong>IBDPal</strong> around that standard. The vision is straightforward: honest, readable education that stays free; an iOS app that helps turn scattered notes into patterns a care team can discuss; and a website that keeps expanding so useful answers are never hard to find.</p>
+                    <p>Aryan Shashi Kumar founded IBDPal around a belief that people navigating Crohn's disease and ulcerative colitis deserve education and tools that respect their time, their intelligence, and the complexity of life between clinic visits. Not flashy promises. Not jargon for its own sake. Clear guidance, calm tracking, and a place to return when the next question appears.</p>
+                    <p>He built <strong>IBDPal</strong> around that standard. The vision is straightforward: honest, readable education that stays free; an iOS app that helps turn scattered notes into patterns a care team can discuss; and a website that keeps expanding so useful answers are never hard to find.</p>
+                </section>
+                <section class="seo-landing__block">
+                    <h2>Eating With IBD on Amazon</h2>
+                    <p><strong>Eating With IBD</strong> by Aryan Shashi Kumar is the Amazon book companion to free IBDPal nutrition education. It is written for patients and caregivers who want clearer food language alongside clinic care.</p>
+                    <p><a href="/eating-with-ibd">Book page on IBDPal</a> · <a href="https://www.amazon.com/dp/B0HHYZL27M" target="_blank" rel="noopener noreferrer">Buy Eating With IBD on Amazon</a></p>
                 </section>
                 <section class="seo-landing__block">
                     <h2>What the work stands for</h2>
                     <p>Progress here is measured in usefulness. A guide someone can finish in one sitting. A state page that points to real support. A visit summary that makes the next appointment feel less rushed. A nutrition note that helps someone prepare questions, not replace a clinician.</p>
-                    <p>That standard shapes every choice: write with care, cite trusted sources, keep the experience calm, and improve what readers actually need. The founder's commitment is to keep showing up for the IBD community with clarity, dignity, and practical help.</p>
+                    <p>That standard shapes every choice: write with care, cite trusted sources, keep the experience calm, and improve what readers actually need. Aryan&rsquo;s commitment is to keep showing up for the IBD community with clarity, dignity, and practical help.</p>
                 </section>
                 <section class="seo-landing__block">
                     <h2>Building forward</h2>
@@ -972,6 +978,7 @@ PAGES = {
                     <ul class="seo-landing__list">
                         <li>Write and review education that is honest and readable</li>
                         <li>Maintain the IBDPal app and website</li>
+                        <li>Publish practical companions such as <a href="/eating-with-ibd">Eating With IBD</a> on Amazon</li>
                         <li>Curate trusted external resources (AGA, CCF, ImproveCareNow, NIH)</li>
                         <li>Share ICN Creative Commons materials with proper attribution</li>
                         <li>Listen to community feedback through support channels and outreach</li>
@@ -980,7 +987,7 @@ PAGES = {
                 <section class="seo-landing__block">
                     <h2>Try IBDPal</h2>
                     <p><a href="https://apps.apple.com/app/ibdpal" class="app-store-badge" rel="noopener noreferrer">Download on the App Store</a></p>
-                    <p><a href="/#about-founders">Founders on homepage</a> · <a href="/about">About IBDPal</a> · <a href="/impact">Our impact</a> · <a href="/contact">Contact us</a></p>
+                    <p><a href="/#about-founders">Founders on homepage</a> · <a href="/eating-with-ibd">Eating With IBD book</a> · <a href="/about">About IBDPal</a> · <a href="/contact">Contact us</a></p>
                 </section>
             </article>
         """,

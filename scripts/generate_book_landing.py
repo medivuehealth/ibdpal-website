@@ -2,7 +2,6 @@
 """Generate the Eating With IBD book landing page (Amazon offer + Book schema)."""
 from __future__ import annotations
 
-import json
 import sys
 from pathlib import Path
 
@@ -17,16 +16,31 @@ AMAZON_URL = "https://www.amazon.com/dp/B0HHYZL27M"
 PATH = "/eating-with-ibd"
 COVER = f"{SITE}/assets/books/eating-with-ibd-cover.jpg"
 COVER_THUMB = f"{SITE}/assets/books/eating-with-ibd-cover-thumb.jpg"
+AUTHOR_NAME = "Aryan Shashi Kumar"
 
-TITLE = "Eating With IBD Book | Crohn’s & Colitis Nutrition Guide"
+TITLE = "Eating With IBD by Aryan Shashi Kumar | IBDPal"
 DESC = (
-    "Eating With IBD by MediVue: practical Crohn’s and ulcerative colitis nutrition education. "
-    "Available on Amazon. Companion to free IBDPal patient guides. Education only, not medical advice."
+    "Eating With IBD by Aryan Shashi Kumar (MediVue / IBDPal): Crohn’s and ulcerative colitis "
+    "nutrition education on Amazon. Companion to free IBDPal guides. Education only, not medical advice."
 )
 
 
 def book_graph() -> list[dict]:
     book_id = f"{SITE}{PATH}#book"
+    author = {
+        "@type": "Person",
+        "@id": f"{SITE}/#about-founders",
+        "name": AUTHOR_NAME,
+        "url": f"{SITE}/#about-founders",
+        "sameAs": [
+            f"{SITE}/founder",
+            f"{SITE}/about-founders",
+            f"{SITE}/eating-with-ibd",
+            AMAZON_URL,
+        ],
+        "jobTitle": "Founder",
+        "worksFor": {"@id": f"{SITE}/#organization"},
+    }
     return [
         {
             "@type": "BreadcrumbList",
@@ -43,9 +57,11 @@ def book_graph() -> list[dict]:
             "description": DESC,
             "isPartOf": {"@id": f"{SITE}/#website"},
             "about": {"@id": book_id},
+            "author": {"@id": f"{SITE}/#about-founders"},
             "primaryImageOfPage": {"@type": "ImageObject", "url": COVER},
             "mainEntity": {"@id": book_id},
         },
+        author,
         {
             "@type": ["Book", "Product"],
             "@id": book_id,
@@ -54,16 +70,19 @@ def book_graph() -> list[dict]:
                 "Eating With IBD nutrition book",
                 "IBDPal Eating With IBD",
                 "Crohn's and colitis nutrition book",
+                f"{AUTHOR_NAME} Eating With IBD",
+                "Eating With IBD Amazon book",
             ],
             "url": f"{SITE}{PATH}",
             "image": [COVER, COVER_THUMB],
             "description": (
-                "A practical nutrition guide for people living with inflammatory bowel disease, "
-                "including Crohn’s disease and ulcerative colitis. Written for patients and caregivers "
-                "alongside free IBDPal education on ibdpal.org."
+                f"Eating With IBD by {AUTHOR_NAME}, founder of MediVue and IBDPal: a practical nutrition "
+                "guide for Crohn’s disease and ulcerative colitis. Available on Amazon; companion to free "
+                "IBDPal education on ibdpal.org."
             ),
             "inLanguage": "en",
             "genre": "Health & Fitness / Diseases / Gastrointestinal",
+            "isbn": "B0HHYZL27M",
             "author": {"@id": f"{SITE}/#about-founders"},
             "creator": {"@id": f"{SITE}/#about-founders"},
             "publisher": {"@id": f"{SITE}/#organization"},
@@ -73,9 +92,11 @@ def book_graph() -> list[dict]:
                 {
                     "@type": "Book",
                     "bookFormat": "https://schema.org/EBook",
+                    "name": "Eating With IBD",
                     "url": AMAZON_URL,
                     "sameAs": [AMAZON_URL],
                     "author": {"@id": f"{SITE}/#about-founders"},
+                    "bookEdition": "Amazon Kindle / print",
                 }
             ],
             "offers": {
@@ -97,6 +118,7 @@ def book_graph() -> list[dict]:
             "isRelatedTo": [
                 {"@type": "WebPage", "url": f"{SITE}/ibd-nutrition", "name": "IBD nutrition hub"},
                 {"@type": "SoftwareApplication", "name": "IBDPal", "url": f"{SITE}/"},
+                {"@type": "WebPage", "url": f"{SITE}/founder", "name": f"{AUTHOR_NAME}, MediVue founder"},
             ],
         },
     ]
@@ -110,20 +132,21 @@ def page_html() -> str:
         og_type="book",
         og_image=COVER,
         keywords=(
-            "Eating With IBD, IBD nutrition book, Crohn's diet book, ulcerative colitis nutrition guide, "
-            "IBDPal book, MediVue Amazon, inflammatory bowel disease cookbook education"
+            "Eating With IBD, Aryan Shashi Kumar, Aryan Shashi Kumar Eating With IBD, "
+            "Eating With IBD Amazon book, IBD nutrition book, Crohn's diet book, "
+            "ulcerative colitis nutrition guide, IBDPal book, MediVue Amazon"
         ),
         json_ld=book_graph(),
         hreflang_es=None,
     )
-    # Enrich Organization sameAs on this page via extra script merge is hard; page-level Book.sameAs is enough.
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
 {head}
-    <meta property="og:image:alt" content="Eating With IBD book cover">
+    <meta property="og:image:alt" content="Eating With IBD book cover by {AUTHOR_NAME}">
     <meta name="twitter:image" content="{COVER}">
+    <meta name="author" content="{AUTHOR_NAME}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="/styles.css">
@@ -151,12 +174,13 @@ def page_html() -> str:
         </header>
 
         <main class="main-content">
-            <article class="support-section seo-landing tab-page-section book-landing" data-track-impression="eating_with_ibd" data-track-label="Eating With IBD book landing">
+            <article class="support-section seo-landing tab-page-section book-landing" data-track-impression="eating_with_ibd" data-track-label="Eating With IBD book landing" itemscope itemtype="https://schema.org/Book">
                 <header class="page-header-compact">
-                    <p class="page-header-compact__eyebrow">MediVue · IBDPal</p>
-                    <h1 class="page-header-compact__title">Eating With IBD</h1>
+                    <p class="page-header-compact__eyebrow">MediVue · IBDPal · Amazon book</p>
+                    <h1 class="page-header-compact__title" itemprop="name">Eating With IBD</h1>
                     <p class="page-header-compact__lead">
-                        A practical nutrition book for Crohn&rsquo;s disease and ulcerative colitis, now on Amazon.
+                        By <strong itemprop="author">{AUTHOR_NAME}</strong>, founder of MediVue and IBDPal.
+                        A practical nutrition book for Crohn&rsquo;s disease and ulcerative colitis, available on Amazon.
                         Education only; not a substitute for personalized medical or dietitian advice.
                     </p>
                 </header>
@@ -167,13 +191,14 @@ def page_html() -> str:
                         src="/assets/books/eating-with-ibd-cover.jpg"
                         width="480"
                         height="720"
-                        alt="Cover of Eating With IBD by MediVue"
+                        alt="Cover of Eating With IBD by {AUTHOR_NAME} on Amazon"
+                        itemprop="image"
                         decoding="async"
                     >
                     <div class="book-landing__buy">
                         <h2 id="book-buy-heading">Get the book on Amazon</h2>
                         <p>
-                            Purchase <strong>Eating With IBD</strong> directly from Amazon.
+                            Purchase <strong>Eating With IBD</strong> by <strong>{AUTHOR_NAME}</strong> directly from Amazon.
                             Use it alongside free IBDPal articles, hubs, and the iOS tracking app.
                         </p>
                         <p class="book-landing__actions">
@@ -182,6 +207,7 @@ def page_html() -> str:
                                 href="{AMAZON_URL}"
                                 target="_blank"
                                 rel="noopener noreferrer"
+                                itemprop="url"
                                 data-track-click="book_landing_amazon"
                                 data-track-label="Eating With IBD Amazon CTA"
                             >Buy on Amazon</a>
@@ -189,6 +215,21 @@ def page_html() -> str:
                         </p>
                         <p class="book-landing__asin">Amazon: <a href="{AMAZON_URL}" target="_blank" rel="noopener noreferrer">{AMAZON_URL}</a></p>
                     </div>
+                </section>
+
+                <section class="seo-landing__block">
+                    <h2>About the author</h2>
+                    <p>
+                        <strong>{AUTHOR_NAME}</strong> founded <strong>MediVue</strong>, a North Carolina nonprofit,
+                        and built <strong>IBDPal</strong> to make Crohn&rsquo;s and ulcerative colitis education clearer
+                        between clinic visits. <em>Eating With IBD</em> is his Amazon nutrition companion to the free
+                        guides and articles on ibdpal.org.
+                    </p>
+                    <p>
+                        <a href="/founder">{AUTHOR_NAME} founder page</a> ·
+                        <a href="/#about-founders">Founders story on the homepage</a> ·
+                        <a href="{AMAZON_URL}" target="_blank" rel="noopener noreferrer">Eating With IBD on Amazon</a>
+                    </p>
                 </section>
 
                 <section class="seo-landing__block">
