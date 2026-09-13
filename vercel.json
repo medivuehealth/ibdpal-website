@@ -10,6 +10,30 @@
   ],
   "rewrites": [
     {
+      "source": "/blog/flare-foods-ibd",
+      "destination": "/blogs/flare-foods-ibd.html"
+    },
+    {
+      "source": "/blog/crohns-diet-overview-ibd",
+      "destination": "/blogs/crohns-diet-overview-ibd.html"
+    },
+    {
+      "source": "/blog/ibd-surgery-peer-support",
+      "destination": "/blogs/ibd-surgery-peer-support.html"
+    },
+    {
+      "source": "/blog/adalimumab-dose-frequency-ibd",
+      "destination": "/blogs/adalimumab-dose-frequency-ibd.html"
+    },
+    {
+      "source": "/blog/periods-menstrual-cycle-ibd",
+      "destination": "/blogs/periods-menstrual-cycle-ibd.html"
+    },
+    {
+      "source": "/blog/eating-with-ibd-book-guide",
+      "destination": "/blogs/eating-with-ibd-book-guide.html"
+    },
+    {
       "source": "/blog/microbiome-lab-testing-ibd",
       "destination": "/blogs/microbiome-lab-testing-ibd.html"
     },
