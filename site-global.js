@@ -496,10 +496,10 @@
       maxVisibilityMultiplier: (cfg && cfg.maxVisibilityMultiplier) || 6,
       internationalGrowthPerDay: (cfg && cfg.internationalGrowthPerDay) || 0.0035,
       maxInternationalMultiplier: (cfg && cfg.maxInternationalMultiplier) || 2.5,
-      internationalCountriesStart: (cfg && cfg.internationalCountriesStart) || 41,
+      internationalCountriesStart: (cfg && cfg.internationalCountriesStart) || 47,
       internationalCountriesCap: (cfg && cfg.internationalCountriesCap) || 60,
       internationalCountriesPace: (cfg && cfg.internationalCountriesPace) || 0,
-      internationalCountriesVerified: (cfg && cfg.internationalCountriesVerified) || 41
+      internationalCountriesVerified: (cfg && cfg.internationalCountriesVerified) || 47
     };
   }
 
