@@ -19,15 +19,15 @@
     '<img class="header-book-banner__cover" src="/assets/books/eating-with-ibd-cover-thumb.jpg" ' +
     'width="40" height="60" alt="" decoding="async">' +
     '<span class="header-book-banner__copy">' +
-    '<span class="header-book-banner__eyebrow">Limited time · Free on Kindle</span>' +
+    '<span class="header-book-banner__eyebrow">Starts Saturday · Free on Kindle</span>' +
     '<span class="header-book-banner__title">Eating With IBD</span>' +
-    '<span class="header-book-banner__cta">Free Kindle download for the next 3 days · ends Sep 28</span>' +
+    '<span class="header-book-banner__cta">Free Sat–Mon (Sep 26–28) · ends Monday Sep 28</span>' +
     '</span>' +
     '</span>';
   var BOOK_BANNER_HTML =
     '<a class="header-book-banner" href="' + BOOK_AMAZON_URL + '" target="_blank" rel="noopener noreferrer" ' +
-    'data-track-click="book_banner" data-track-label="Eating With IBD free Kindle through Sep 28" ' +
-    'aria-label="Eating With IBD: free Amazon Kindle download for a limited time, ends September 28">' +
+    'data-track-click="book_banner" data-track-label="Eating With IBD free Kindle Sat-Mon Sep 26-28" ' +
+    'aria-label="Eating With IBD: free Amazon Kindle download Saturday through Monday, September 26 to 28">' +
     '<span class="header-book-banner__viewport">' +
     '<span class="header-book-banner__track">' +
     BOOK_BANNER_ITEM_HTML +

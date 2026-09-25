@@ -69,7 +69,7 @@ UPDATES_MONTHLY_SECTIONS_HTML = """
                     <section class="seo-landing__block updates-month">
                         <h2>September 2026</h2>
                         <ul class="seo-landing__list">
-                            <li><strong>Eating With IBD Kindle promo:</strong> flash strip above the homepage hero plus header banner and <a href="/eating-with-ibd">book landing</a> for a limited-time free Amazon Kindle download (ends by Sep 28)</li>
+                            <li><strong>Eating With IBD Kindle promo:</strong> flash strip above the homepage hero plus header banner and <a href="/eating-with-ibd">book landing</a> for a free Amazon Kindle download Sat–Mon (Sep 26–28)</li>
                             <li><strong>Latest IBD news refresh:</strong> added FDA pediatric Stelara UC approval, pediatric adalimumab biosimilar-switch study, and pediatric anti-TNF infection-risk research to <a href="/#news">News &rarr; Latest news</a></li>
                             <li><strong>Reach refresh:</strong> header metrics updated to about <strong>20K+</strong> readers, <strong>62K+</strong> page views, and <strong>41</strong> countries (Vercel Web Analytics, Sep 2026)</li>
                             <li><strong>Reader Q&amp;A:</strong> published editorial answers on <a href="/ask">Ask</a> (flare timing, bloodwork, diet, ER vs nurse line, biologics, insurance, vitamins, pediatric, pregnancy, GLP-1, EIMs) with searchable answered questions</li>
