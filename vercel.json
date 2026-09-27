@@ -10,6 +10,30 @@
   ],
   "rewrites": [
     {
+      "source": "/blog/yoga-for-ibd-crohns-colitis",
+      "destination": "/blogs/yoga-for-ibd-crohns-colitis.html"
+    },
+    {
+      "source": "/blog/walking-for-ibd-crohns-colitis",
+      "destination": "/blogs/walking-for-ibd-crohns-colitis.html"
+    },
+    {
+      "source": "/blog/strength-training-gym-ibd",
+      "destination": "/blogs/strength-training-gym-ibd.html"
+    },
+    {
+      "source": "/blog/exercise-during-ibd-flare",
+      "destination": "/blogs/exercise-during-ibd-flare.html"
+    },
+    {
+      "source": "/blog/weight-loss-ibd-safe-guide",
+      "destination": "/blogs/weight-loss-ibd-safe-guide.html"
+    },
+    {
+      "source": "/blog/pelvic-floor-exercises-ibd",
+      "destination": "/blogs/pelvic-floor-exercises-ibd.html"
+    },
+    {
       "source": "/blog/flare-foods-ibd",
       "destination": "/blogs/flare-foods-ibd.html"
     },

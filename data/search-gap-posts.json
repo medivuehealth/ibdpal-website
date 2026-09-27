@@ -282,6 +282,161 @@
         "MediVue",
         "diet"
       ]
+    },
+    {
+      "slug": "yoga-for-ibd-crohns-colitis",
+      "match_terms": [
+        "yoga ibd",
+        "yoga for crohn's",
+        "yoga for ulcerative colitis",
+        "yoga crohn disease",
+        "restorative yoga ibd"
+      ],
+      "title": "Yoga for Crohn's and Colitis: Gentle Poses, Flare Rules, and Stress Relief",
+      "description": "Yoga for IBD: restorative vs power classes, bathroom planning, flare pacing, and when to skip inversions. Education only for Crohn's and ulcerative colitis.",
+      "category": "Wellness · Fitness · September 2026",
+      "date_display": "September 27, 2026",
+      "date_iso": "2026-09-27T18:00:00Z",
+      "asset_dir": "exercise-ibd",
+      "resource_category": "wellness",
+      "tags": [
+        "yoga",
+        "fitness",
+        "exercise",
+        "stress",
+        "Crohn's",
+        "colitis",
+        "wellness"
+      ]
+    },
+    {
+      "slug": "walking-for-ibd-crohns-colitis",
+      "match_terms": [
+        "walking ibd",
+        "walking crohn's",
+        "walking ulcerative colitis",
+        "can i walk with crohn's",
+        "daily walk colitis"
+      ],
+      "title": "Walking With Crohn's or Colitis: How Far, How Fast, and Bathroom Planning",
+      "description": "Walking for IBD: beginner plans, flare pacing, hydration, restroom mapping, and when walking helps fatigue. Education only.",
+      "category": "Wellness · Fitness · September 2026",
+      "date_display": "September 27, 2026",
+      "date_iso": "2026-09-27T18:00:00Z",
+      "asset_dir": "exercise-ibd",
+      "resource_category": "wellness",
+      "tags": [
+        "walking",
+        "fitness",
+        "exercise",
+        "steps",
+        "Crohn's",
+        "colitis",
+        "wellness"
+      ]
+    },
+    {
+      "slug": "strength-training-gym-ibd",
+      "match_terms": [
+        "strength training ibd",
+        "gym with crohn's",
+        "weightlifting ulcerative colitis",
+        "resistance training crohn's",
+        "can i lift weights with ibd"
+      ],
+      "title": "Strength Training and the Gym With IBD: Safe Progress Without Overdoing It",
+      "description": "Gym and strength training with Crohn's or colitis: beginner lifts, bone health, steroid recovery, bathroom strategy, and flare modifications. Education only.",
+      "category": "Wellness · Fitness · September 2026",
+      "date_display": "September 27, 2026",
+      "date_iso": "2026-09-27T18:00:00Z",
+      "asset_dir": "exercise-ibd",
+      "resource_category": "wellness",
+      "tags": [
+        "strength training",
+        "gym",
+        "fitness",
+        "muscle",
+        "bone health",
+        "Crohn's",
+        "colitis"
+      ]
+    },
+    {
+      "slug": "exercise-during-ibd-flare",
+      "match_terms": [
+        "exercise during flare",
+        "workout during crohn's flare",
+        "can i exercise with colitis flare",
+        "exercise ibd flare",
+        "should i exercise during flare"
+      ],
+      "title": "Exercise During an IBD Flare: What Is Safe, What to Pause, and How to Restart",
+      "description": "Exercise during a Crohn's or colitis flare: mild vs severe activity rules, walking and yoga options, red flags, and return-to-gym steps. Education only.",
+      "category": "Wellness · Fitness · September 2026",
+      "date_display": "September 27, 2026",
+      "date_iso": "2026-09-27T18:00:00Z",
+      "asset_dir": "exercise-ibd",
+      "resource_category": "wellness",
+      "tags": [
+        "flare",
+        "exercise",
+        "fitness",
+        "rest",
+        "Crohn's",
+        "colitis",
+        "wellness"
+      ]
+    },
+    {
+      "slug": "weight-loss-ibd-safe-guide",
+      "match_terms": [
+        "weight loss ibd",
+        "weight loss crohn's",
+        "lose weight ulcerative colitis",
+        "how to lose weight with crohn's",
+        "ibd diet weight loss"
+      ],
+      "title": "Weight Loss With Crohn's or Colitis: Safe Approaches That Protect Muscle",
+      "description": "Weight loss with IBD: when it is intentional vs disease-driven, calorie cuts that backfire, protein, GLP-1 questions, and clinic red flags. Education only.",
+      "category": "Wellness · Fitness · September 2026",
+      "date_display": "September 27, 2026",
+      "date_iso": "2026-09-27T18:00:00Z",
+      "asset_dir": "exercise-ibd",
+      "resource_category": "wellness",
+      "tags": [
+        "weight loss",
+        "nutrition",
+        "fitness",
+        "muscle",
+        "Crohn's",
+        "colitis",
+        "wellness"
+      ]
+    },
+    {
+      "slug": "pelvic-floor-exercises-ibd",
+      "match_terms": [
+        "pelvic floor ibd",
+        "pelvic floor crohn's",
+        "kegels ulcerative colitis",
+        "pelvic floor physical therapy ibd",
+        "urgency pelvic floor colitis"
+      ],
+      "title": "Pelvic Floor Exercises for IBD: Urgency, Leakage Myths, and When to See PT",
+      "description": "Pelvic floor physical therapy and exercises for IBD urgency, incomplete emptying, and post-surgery coordination. Education only, not a DIY cure.",
+      "category": "Wellness · Fitness · September 2026",
+      "date_display": "September 27, 2026",
+      "date_iso": "2026-09-27T18:00:00Z",
+      "asset_dir": "exercise-ibd",
+      "resource_category": "wellness",
+      "tags": [
+        "pelvic floor",
+        "urgency",
+        "physical therapy",
+        "fitness",
+        "Crohn's",
+        "colitis"
+      ]
     }
   ]
 }

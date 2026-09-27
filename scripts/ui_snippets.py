@@ -69,12 +69,13 @@ UPDATES_MONTHLY_SECTIONS_HTML = """
                     <section class="seo-landing__block updates-month">
                         <h2>September 2026</h2>
                         <ul class="seo-landing__list">
+                            <li><strong>Fitness and health articles (~10 min each):</strong> new commonly searched posts on <a href="/blog/yoga-for-ibd-crohns-colitis">yoga</a>, <a href="/blog/walking-for-ibd-crohns-colitis">walking</a>, <a href="/blog/strength-training-gym-ibd">strength training / gym</a>, <a href="/blog/exercise-during-ibd-flare">exercise during flares</a>, <a href="/blog/weight-loss-ibd-safe-guide">safe weight loss</a>, and <a href="/blog/pelvic-floor-exercises-ibd">pelvic floor exercises</a></li>
                             <li><strong>Eating With IBD Kindle promo:</strong> flash strip above the homepage hero plus header banner and <a href="/eating-with-ibd">book landing</a> for a free Amazon Kindle download Sat–Mon (Sep 26–28)</li>
                             <li><strong>Latest IBD news refresh:</strong> added FDA pediatric Stelara UC approval, pediatric adalimumab biosimilar-switch study, and pediatric anti-TNF infection-risk research to <a href="/#news">News &rarr; Latest news</a></li>
                             <li><strong>Reach refresh:</strong> header metrics updated to about <strong>20K+</strong> readers, <strong>62K+</strong> page views, and <strong>51</strong> countries (Vercel Web Analytics, Sep 27, 2026)</li>
                             <li><strong>Reader Q&amp;A:</strong> published editorial answers on <a href="/ask">Ask</a> (flare timing, bloodwork, diet, ER vs nurse line, biologics, insurance, vitamins, pediatric, pregnancy, GLP-1, EIMs) with searchable answered questions</li>
                             <li><strong>Food image accuracy:</strong> corrected mismatched Part VI / nutrition blog photos (including zucchini and green plantain)</li>
-                            <li><strong>Library snapshot:</strong> <strong>213 articles</strong>, <strong>60 guides</strong>, <strong>339+</strong> resource entries, <strong>381</strong> sitemap education pages</li>
+                            <li><strong>Library snapshot:</strong> <strong>225 articles</strong>, <strong>61 guides</strong>, <strong>353</strong> resource entries, <strong>395</strong> sitemap URLs</li>
                         </ul>
                     </section>
                     <section class="seo-landing__block updates-month">

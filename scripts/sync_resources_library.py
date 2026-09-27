@@ -76,12 +76,16 @@ def load_topic_meta() -> dict[str, dict]:
         ROOT / "data" / "wave3-food-nutrition-posts.json",
         ROOT / "data" / "wave4-food-nutrition-posts.json",
         ROOT / "data" / "eureka-top5-posts.json",
+        ROOT / "data" / "fitness-health-posts.json",
+        ROOT / "data" / "sept-2026-gap-posts.json",
     ):
         if not path.exists():
             continue
         data = json.loads(path.read_text(encoding="utf-8"))
-        for post in data.get("posts", []):
-            meta[post["slug"]] = post
+        posts = data if isinstance(data, list) else data.get("posts", [])
+        for post in posts:
+            if isinstance(post, dict) and post.get("slug"):
+                meta[post["slug"]] = post
     return meta
 
 
