@@ -245,10 +245,10 @@
         "exclusive-vs-partial-enteral-nutrition-crohns",
         "banana-ibd-crohns-colitis",
         "adult-een-crohns-what-to-expect",
-        "microbiome-lab-testing-ibd",
-        "visbiome-probiotics-ibd",
-        "probiotics-ibd-practical-guide",
-        "microbiome-research-labs-ibd"
+        "crohns-diet-overview-ibd",
+        "walking-for-ibd-crohns-colitis",
+        "yoga-for-ibd-crohns-colitis",
+        "mango-ibd-crohns-colitis"
       ]
     },
     {
@@ -303,6 +303,9 @@
       ],
       "blog_slugs": [
         "banana-ibd-crohns-colitis",
+        "walking-for-ibd-crohns-colitis",
+        "yoga-for-ibd-crohns-colitis",
+        "mango-ibd-crohns-colitis",
         "microbiome-lab-testing-ibd",
         "visbiome-probiotics-ibd",
         "probiotics-ibd-practical-guide",
@@ -326,10 +329,7 @@
         "humira-fatigue-ibd",
         "stelara-diet-ibd",
         "skyrizi-patient-questions-ibd",
-        "rinvoq-patient-questions-ibd",
-        "remicade-infusion-day-tips-ibd",
-        "prednisone-diet-hunger-ibd",
-        "methotrexate-alcohol-folate-ibd"
+        "rinvoq-patient-questions-ibd"
       ]
     },
     {
@@ -450,6 +450,8 @@
         "vomiting-obstruction-ibd-warning-signs",
         "mucus-in-stool-ibd",
         "white-rice-ibd-flare",
+        "flare-foods-ibd",
+        "exercise-during-ibd-flare",
         "hospital-feeding-ibd-enteral-parenteral",
         "enteral-nutrition-ibd",
         "enteral-nutrition-after-ibd-surgery",
@@ -467,9 +469,7 @@
         "low-residue-diet-flare",
         "sleep-rest-ibd-flares",
         "hydration-tips-ibd",
-        "stress-emotional-wellness-ibd",
-        "depression-anxiety-ibd",
-        "stress-coping-strategies-ibd"
+        "stress-emotional-wellness-ibd"
       ]
     }
   ],

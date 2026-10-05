@@ -51,11 +51,15 @@ def main() -> None:
     )
     text = text.replace(
         "Month-by-month changelog &middot; updated August 2026",
+        "Month-by-month changelog &middot; updated October 2026",
+    )
+    text = text.replace(
         "Month-by-month changelog &middot; updated September 2026",
+        "Month-by-month changelog &middot; updated October 2026",
     )
     text = text.replace(
         "Month-by-month changelog &middot; updated June 2026",
-        "Month-by-month changelog &middot; updated September 2026",
+        "Month-by-month changelog &middot; updated October 2026",
     )
     marker = 'id="site-updates"'
     i = text.find(marker)

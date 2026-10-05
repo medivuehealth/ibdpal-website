@@ -193,20 +193,21 @@ def news_tab_html(data: dict) -> str:
 
 
 def patch_index_news(data: dict) -> None:
+    """Update partner cards only. Never replace Latest news or Advocacy tabs."""
     text = INDEX.read_text(encoding="utf-8")
-    block = news_tab_html(data)
-    if "<!-- News Tab -->" in text and "<!-- About Tab -->" in text:
-        text = re.sub(
-            r"            <!-- News Tab -->.*?            <!-- About Tab -->",
-            block + "\n            <!-- About Tab -->",
-            text,
-            count=1,
-            flags=re.S,
-        )
-    else:
-        raise SystemExit("Could not locate News Tab markers in index.html")
+    cards = partner_cards(data.get("items", []))
+    if "<!-- partner-cards -->" not in text:
+        raise SystemExit("partner-cards markers missing in index.html")
+    text = re.sub(
+        r"<!-- partner-cards -->.*?<!-- /partner-cards -->",
+        "<!-- partner-cards -->\n" + cards + "\n<!-- /partner-cards -->",
+        text,
+        count=1,
+        flags=re.S,
+    )
+    # Keep partners intro date-friendly if present
     INDEX.write_text(text, encoding="utf-8")
-    print(f"patched index.html News tab ({len(data.get('items', []))} partner cards)")
+    print(f"patched index.html partner cards ({len(data.get('items', []))} cards)")
 
 
 def wrap_page(*, title: str, description: str, path: str, body: str, crumb_name: str) -> str:

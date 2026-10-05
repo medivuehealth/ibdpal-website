@@ -36,6 +36,8 @@
 
 
 ## Blog (education, not medical advice)
+- https://www.ibdpal.org/blog/abdominal-pain-stomach-pain-ibd
+- https://www.ibdpal.org/blog/adalimumab-dose-frequency-ibd
 - https://www.ibdpal.org/blog/adult-een-crohns-what-to-expect
 - https://www.ibdpal.org/blog/after-er-visit-ibd-follow-up
 - https://www.ibdpal.org/blog/alcohol-caffeine-ibd
@@ -73,6 +75,7 @@
 - https://www.ibdpal.org/blog/constipation-ibd-causes
 - https://www.ibdpal.org/blog/corn-ibd
 - https://www.ibdpal.org/blog/couscous-ibd
+- https://www.ibdpal.org/blog/crohns-diet-overview-ibd
 - https://www.ibdpal.org/blog/crp-normal-still-symptoms-ibd
 - https://www.ibdpal.org/blog/cucumber-ibd
 - https://www.ibdpal.org/blog/dairy-lactose-ibd
@@ -82,6 +85,7 @@
 - https://www.ibdpal.org/blog/dehydration-ibd-warning-signs
 - https://www.ibdpal.org/blog/depression-anxiety-ibd
 - https://www.ibdpal.org/blog/dining-out-ibd-restaurants
+- https://www.ibdpal.org/blog/eating-with-ibd-book-guide
 - https://www.ibdpal.org/blog/eggs-ibd-nutrition
 - https://www.ibdpal.org/blog/electrolytes-flare-ibd
 - https://www.ibdpal.org/blog/elemental-vs-polymeric-formula-ibd
@@ -89,12 +93,14 @@
 - https://www.ibdpal.org/blog/enteral-nutrition-ibd
 - https://www.ibdpal.org/blog/entyvio-patient-guide-ibd
 - https://www.ibdpal.org/blog/exclusive-vs-partial-enteral-nutrition-crohns
+- https://www.ibdpal.org/blog/exercise-during-ibd-flare
 - https://www.ibdpal.org/blog/exercise-physical-activity-ibd
 - https://www.ibdpal.org/blog/fatigue-autoimmune-ibd
 - https://www.ibdpal.org/blog/fever-ibd-flare-or-infection
 - https://www.ibdpal.org/blog/fiber-and-ibd-diet
 - https://www.ibdpal.org/blog/fiber-prebiotics-enteral-feeds-microbiome
 - https://www.ibdpal.org/blog/flare-first-48-hours
+- https://www.ibdpal.org/blog/flare-foods-ibd
 - https://www.ibdpal.org/blog/flare-symptoms-ibd
 - https://www.ibdpal.org/blog/floating-stool-ibd
 - https://www.ibdpal.org/blog/fodmap-diet-crohns-colitis
@@ -131,6 +137,7 @@
 - https://www.ibdpal.org/blog/ibd-night-sweats
 - https://www.ibdpal.org/blog/ibd-pregnancy-planning
 - https://www.ibdpal.org/blog/ibd-summer-heat-hydration
+- https://www.ibdpal.org/blog/ibd-surgery-peer-support
 - https://www.ibdpal.org/blog/ibd-unintentional-weight-changes
 - https://www.ibdpal.org/blog/icn-accommodations-toolkit-ibd
 - https://www.ibdpal.org/blog/icn-caregiver-coping-resource
@@ -157,6 +164,7 @@
 - https://www.ibdpal.org/blog/low-residue-diet-flare
 - https://www.ibdpal.org/blog/lupus-autoimmune-basics
 - https://www.ibdpal.org/blog/magnesium-ibd
+- https://www.ibdpal.org/blog/mango-ibd-crohns-colitis
 - https://www.ibdpal.org/blog/mediterranean-diet-autoimmune
 - https://www.ibdpal.org/blog/melon-ibd
 - https://www.ibdpal.org/blog/mesalamine-5-asa-ibd
@@ -182,8 +190,10 @@
 - https://www.ibdpal.org/blog/paneer-ibd
 - https://www.ibdpal.org/blog/partner-caregiver-ibd
 - https://www.ibdpal.org/blog/peanut-butter-ibd
+- https://www.ibdpal.org/blog/pelvic-floor-exercises-ibd
 - https://www.ibdpal.org/blog/pencil-thin-stool-ibd
 - https://www.ibdpal.org/blog/perianal-crohns-fistula-abscess
+- https://www.ibdpal.org/blog/periods-menstrual-cycle-ibd
 - https://www.ibdpal.org/blog/plantain-ibd
 - https://www.ibdpal.org/blog/potassium-ibd
 - https://www.ibdpal.org/blog/potato-ibd-white
@@ -213,6 +223,7 @@
 - https://www.ibdpal.org/blog/steroid-taper-what-to-expect-ibd
 - https://www.ibdpal.org/blog/steroids-prednisone-ibd
 - https://www.ibdpal.org/blog/strawberries-ibd
+- https://www.ibdpal.org/blog/strength-training-gym-ibd
 - https://www.ibdpal.org/blog/stress-autoimmune-symptoms
 - https://www.ibdpal.org/blog/stress-coping-strategies-ibd
 - https://www.ibdpal.org/blog/stress-emotional-wellness-ibd
@@ -239,6 +250,8 @@
 - https://www.ibdpal.org/blog/vitamin-a-ibd
 - https://www.ibdpal.org/blog/vitamin-c-ibd
 - https://www.ibdpal.org/blog/vomiting-obstruction-ibd-warning-signs
+- https://www.ibdpal.org/blog/walking-for-ibd-crohns-colitis
+- https://www.ibdpal.org/blog/weight-loss-ibd-safe-guide
 - https://www.ibdpal.org/blog/what-remission-means-ibd
 - https://www.ibdpal.org/blog/when-to-call-gi-vs-er-ibd
 - https://www.ibdpal.org/blog/when-to-call-ibd-help-center
@@ -247,6 +260,7 @@
 - https://www.ibdpal.org/blog/white-rice-ibd-flare
 - https://www.ibdpal.org/blog/workplace-school-ibd-rights
 - https://www.ibdpal.org/blog/yellow-stool-ibd
+- https://www.ibdpal.org/blog/yoga-for-ibd-crohns-colitis
 - https://www.ibdpal.org/blog/zinc-ibd
 - https://www.ibdpal.org/blog/zucchini-ibd
 

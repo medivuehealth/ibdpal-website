@@ -375,6 +375,31 @@
     "tags": ["about", "mission", "nonprofit"]
   },
   {
+    "title": "Latest IBD News & Research",
+    "category": "getting-started",
+    "type": "site",
+    "url": "/#news",
+    "tags": [
+      "ibd news",
+      "latest ibd news",
+      "research news",
+      "FDA",
+      "advocacy",
+      "biosimilars",
+      "Crohn's",
+      "ulcerative colitis"
+    ],
+    "description": "Curated 2026 IBD research, FDA, and advocacy highlights on the IBDPal News tab.",
+    "keywords": [
+      "ibd news",
+      "latest ibd news",
+      "latest news ibd",
+      "IBD research news",
+      "Crohn's news",
+      "ulcerative colitis news"
+    ]
+  },
+  {
     "title": "Eating With IBD",
     "category": "nutrition",
     "type": "book",

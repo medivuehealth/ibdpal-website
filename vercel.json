@@ -10,6 +10,14 @@
   ],
   "rewrites": [
     {
+      "source": "/blog/mango-ibd-crohns-colitis",
+      "destination": "/blogs/mango-ibd-crohns-colitis.html"
+    },
+    {
+      "source": "/blog/abdominal-pain-stomach-pain-ibd",
+      "destination": "/blogs/abdominal-pain-stomach-pain-ibd.html"
+    },
+    {
       "source": "/blog/yoga-for-ibd-crohns-colitis",
       "destination": "/blogs/yoga-for-ibd-crohns-colitis.html"
     },

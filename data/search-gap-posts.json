@@ -437,6 +437,61 @@
         "Crohn's",
         "colitis"
       ]
+    },
+    {
+      "slug": "mango-ibd-crohns-colitis",
+      "match_terms": [
+        "mango",
+        "mango ibd",
+        "mango crohn",
+        "mango crohn's",
+        "mango colitis",
+        "mango ulcerative colitis",
+        "can i eat mango with crohn's"
+      ],
+      "title": "Mango and IBD: Fiber, Sugar, Flare Tips, and When It Fits",
+      "description": "Mango with Crohn's or ulcerative colitis: ripe vs green, fiber and FODMAP notes, flare tips, and dietitian questions. Education only.",
+      "category": "Nutrition · October 2026",
+      "date_display": "October 4, 2026",
+      "date_iso": "2026-10-04T18:00:00Z",
+      "asset_dir": "mango-ibd",
+      "resource_category": "nutrition",
+      "tags": [
+        "mango",
+        "fruit",
+        "nutrition",
+        "FODMAP",
+        "Crohn's",
+        "colitis",
+        "flare"
+      ]
+    },
+    {
+      "slug": "abdominal-pain-stomach-pain-ibd",
+      "match_terms": [
+        "abdominal pain",
+        "stomach",
+        "stomach pain",
+        "belly pain",
+        "stomach ache ibd",
+        "abdominal pain crohn",
+        "stomach pain colitis"
+      ],
+      "title": "Abdominal Pain and Stomach Pain with IBD: What to Track and When to Call",
+      "description": "Abdominal or stomach pain with Crohn's or colitis: location clues, flare vs other causes, red flags, and clinic questions. Education only.",
+      "category": "Wellness · Symptoms · October 2026",
+      "date_display": "October 4, 2026",
+      "date_iso": "2026-10-04T18:00:00Z",
+      "asset_dir": "abdominal-pain-ibd",
+      "resource_category": "wellness",
+      "tags": [
+        "abdominal pain",
+        "stomach pain",
+        "symptoms",
+        "flare",
+        "Crohn's",
+        "colitis"
+      ]
     }
   ]
 }

@@ -69,6 +69,8 @@ UPDATES_MONTHLY_SECTIONS_HTML = """
                     <section class="seo-landing__block updates-month">
                         <h2>October 2026</h2>
                         <ul class="seo-landing__list">
+                            <li><strong>News tabs refresh:</strong> <a href="/#news">Latest</a> adds Yusimry HCF, Entyvio pediatric sBLA, and Immgolis/Simponi biosimilar cards; Advocacy updates Safe Step Act cosponsor status; Partners adds SIMPONI withMe and refreshes listing dates</li>
+                            <li><strong>Search-gap articles:</strong> new posts on <a href="/blog/mango-ibd-crohns-colitis">mango and IBD</a> and <a href="/blog/abdominal-pain-stomach-pain-ibd">abdominal / stomach pain</a>, plus aliases for mango, stomach pain, and latest IBD news</li>
                             <li><strong>Reach refresh:</strong> header and Analytics countries counter updated to <strong>59</strong> from the verified Vercel Web Analytics country breakdown (Oct 4, 2026)</li>
                         </ul>
                     </section>
@@ -78,6 +80,7 @@ UPDATES_MONTHLY_SECTIONS_HTML = """
                             <li><strong>Kindle free promo ended:</strong> removed the temporary Sat–Mon flash strip above “What do you need today?” and restored the standard header book banner and <a href="/eating-with-ibd">book landing</a> copy</li>
                             <li><strong>Fitness and health articles (~10 min each):</strong> new commonly searched posts on <a href="/blog/yoga-for-ibd-crohns-colitis">yoga</a>, <a href="/blog/walking-for-ibd-crohns-colitis">walking</a>, <a href="/blog/strength-training-gym-ibd">strength training / gym</a>, <a href="/blog/exercise-during-ibd-flare">exercise during flares</a>, <a href="/blog/weight-loss-ibd-safe-guide">safe weight loss</a>, and <a href="/blog/pelvic-floor-exercises-ibd">pelvic floor exercises</a></li>
                             <li><strong>Latest IBD news refresh:</strong> added FDA pediatric Stelara UC approval, pediatric adalimumab biosimilar-switch study, and pediatric anti-TNF infection-risk research to <a href="/#news">News &rarr; Latest news</a></li>
+                            <li><strong>30-day analytics gap posts (~10 min each):</strong> <a href="/blog/flare-foods-ibd">flare foods</a>, <a href="/blog/crohns-diet-overview-ibd">Crohn&rsquo;s diet overview</a>, <a href="/blog/ibd-surgery-peer-support">surgery peer support</a>, <a href="/blog/adalimumab-dose-frequency-ibd">adalimumab dosing</a>, <a href="/blog/periods-menstrual-cycle-ibd">periods and IBD</a>, <a href="/blog/eating-with-ibd-book-guide">Eating With IBD book guide</a>; search aliases + About Analytics refresh</li>
                             <li><strong>Reach refresh:</strong> header metrics updated to about <strong>20K+</strong> readers, <strong>62K+</strong> page views, and <strong>51</strong> countries (Vercel Web Analytics, Sep 27, 2026)</li>
                             <li><strong>Reader Q&amp;A:</strong> published editorial answers on <a href="/ask">Ask</a> (flare timing, bloodwork, diet, ER vs nurse line, biologics, insurance, vitamins, pediatric, pregnancy, GLP-1, EIMs) with searchable answered questions</li>
                             <li><strong>Food image accuracy:</strong> corrected mismatched Part VI / nutrition blog photos (including zucchini and green plantain)</li>
@@ -268,15 +271,28 @@ METRICS_SUBTAB_HTML = """
 IBD_NEWS_TAB_HTML = """
                 <article class="support-section seo-landing tab-page-section">
                     <h1>IBD Policy &amp; Advocacy News</h1>
-                    <p class="support-intro">Federal and state IBD policy highlights with links to the <a href="https://www.crohnscolitisfoundation.org/" rel="noopener noreferrer">Crohn&rsquo;s &amp; Colitis Foundation</a>. Education only.</p>
+                    <p class="support-intro">Federal and state IBD policy highlights with links to the <a href="https://www.crohnscolitisfoundation.org/" rel="noopener noreferrer">Crohn&rsquo;s &amp; Colitis Foundation</a>. Updated October 2026. Education only. For research headlines see <a href="/#news">News &rarr; Latest news</a>.</p>
 
                     <section class="seo-landing__block ibd-news-featured">
-                        <h2>Under review</h2>
+                        <h2>Active in 2026</h2>
                         <article class="ibd-news-card">
-                            <p class="ibd-news-card__tag">Federal regulation &middot; Prior authorization</p>
-                            <h3 class="ibd-news-card__title">Days, not weeks: faster prior authorization decisions</h3>
-                            <p>The federal <strong>CMS Interoperability and Prior Authorization Final Rule (CMS-0057-F)</strong> sets maximum turnaround times for many government-backed plans (Medicare Advantage, Medicaid managed care, CHIP, and Affordable Care Act marketplace plans). Insurers must approve or deny <strong>urgent</strong> requests within <strong>72 hours</strong> and <strong>standard</strong> requests within <strong>7 calendar days</strong>.</p>
-                            <p>This is a crucial first step toward shorter waits for IBD tests and treatments. Patient advocates are urging federal officials to fully implement and expand these protections.</p>
+                            <p class="ibd-news-card__tag">Congress &middot; Step therapy &middot; Pending &middot; Updated Oct. 2026</p>
+                            <h3 class="ibd-news-card__title">Safe Step Act: ~46 Senate cosponsors, still awaiting floor action</h3>
+                            <p>The <strong>Safe Step Act</strong> (H.R. 5509 / S. 2903) would require group health plans to offer a clear, timely exceptions process when step therapy is not in a patient&rsquo;s best interest. More than 40% of IBD patients report step therapy barriers that delay doctor-prescribed care.</p>
+                            <p>As of early October 2026, S. 2903 lists roughly <strong>46 Senate cosponsors</strong> (bipartisan) plus the sponsor, per public bill trackers, while remaining in the early legislative stage. Ask your members of Congress to cosponsor and move the bill.</p>
+                            <p class="ibd-news-card__actions">
+                                <a href="https://www.crohnscolitisfoundation.org/get-involved/be-advocate/advocacy-priorities/step-therapy/federal-safe-step-act" rel="noopener noreferrer">Safe Step Act overview</a>
+                                &middot;
+                                <a href="https://action.crohnscolitisfoundation.org/a/ssa-webpage" rel="noopener noreferrer">Ask Congress to pass it</a>
+                                &middot;
+                                <a href="https://www.govtrack.us/congress/bills/119/s2903" rel="noopener noreferrer">GovTrack: S. 2903</a>
+                            </p>
+                        </article>
+                        <article class="ibd-news-card">
+                            <p class="ibd-news-card__tag">Federal regulation &middot; Prior authorization &middot; In effect</p>
+                            <h3 class="ibd-news-card__title">CMS prior authorization timelines are now law for many plans</h3>
+                            <p>Since <strong>Jan. 1, 2026</strong>, the <strong>CMS Interoperability and Prior Authorization Final Rule (CMS-0057-F)</strong> requires Medicare Advantage, Medicaid managed care, CHIP, and Affordable Care Act marketplace plans to decide <strong>urgent</strong> prior auth requests within <strong>72 hours</strong> and <strong>standard</strong> requests within <strong>7 calendar days</strong>.</p>
+                            <p>The first public prior authorization performance metrics from impacted payers were due <strong>March 31, 2026</strong>. The next major milestone: FHIR-based prior auth APIs required by <strong>Jan. 1, 2027</strong>.</p>
                             <p class="ibd-news-card__actions">
                                 <a href="https://www.cms.gov/newsroom/fact-sheets/cms-interoperability-and-prior-authorization-final-rule-cms-0057-f" rel="noopener noreferrer">CMS fact sheet</a>
                                 &middot;
@@ -285,33 +301,24 @@ IBD_NEWS_TAB_HTML = """
                                 <a href="https://www.crohnscolitisfoundation.org/get-involved/be-an-advocate/action-center" rel="noopener noreferrer">Take action (CCF)</a>
                             </p>
                         </article>
-                        <article class="ibd-news-card">
-                            <p class="ibd-news-card__tag">Congress &middot; Step therapy</p>
-                            <h3 class="ibd-news-card__title">Safe Step Act: reforming fail-first protocols</h3>
-                            <p>The <strong>Safe Step Act</strong> (H.R. 2630 / S. 652) would create a clearer appeal process when insurers require patients to try and fail on preferred drugs before covering a provider-prescribed treatment. More than 40% of IBD patients report experiencing step therapy barriers.</p>
-                            <p>At a recent U.S. House committee hearing, lawmakers highlighted how step therapy can leave patients behind. The Crohn&rsquo;s &amp; Colitis Foundation continues grassroots advocacy on Capitol Hill for commonsense reform.</p>
-                            <p class="ibd-news-card__actions">
-                                <a href="https://www.crohnscolitisfoundation.org/get-involved/be-advocate/advocacy-priorities/step-therapy/federal-safe-step-act" rel="noopener noreferrer">Safe Step Act overview</a>
-                                &middot;
-                                <a href="https://action.crohnscolitisfoundation.org/a/ssa-webpage" rel="noopener noreferrer">Ask Congress to pass it</a>
-                            </p>
-                        </article>
                     </section>
 
                     <section class="seo-landing__block">
-                        <h2>Recently approved &amp; in effect</h2>
+                        <h2>2026 policy timeline</h2>
                         <ul class="seo-landing__list">
-                            <li><strong>Jan. 1, 2026:</strong> Faster prior authorization decision timelines under CMS-0057-F begin for impacted federal plans</li>
+                            <li><strong>Jan. 1, 2026:</strong> Faster prior authorization decision timelines under CMS-0057-F took effect for impacted federal plans</li>
                             <li><strong>March 31, 2026:</strong> First public prior authorization performance metrics due from impacted payers</li>
-                            <li><strong>Jan. 1, 2027:</strong> Prior authorization and interoperability FHIR APIs required in production (next implementation milestone)</li>
+                            <li><strong>Spring 2026:</strong> Foundation <strong>#IBDinDC</strong> Hill meetings on Safe Step Act, research funding, and pediatric access</li>
+                            <li><strong>Oct. 2026:</strong> Safe Step Act (S. 2903) still pending with roughly 46 Senate cosponsors</li>
+                            <li><strong>Jan. 1, 2027:</strong> Prior authorization and interoperability FHIR APIs required in production (next milestone)</li>
                         </ul>
                     </section>
 
                     <section class="seo-landing__block">
                         <h2>Advocacy highlights</h2>
                         <ul class="seo-landing__list">
-                            <li><strong>Capitol Hill briefing:</strong> The Crohn&rsquo;s &amp; Colitis Foundation hosted a bipartisan briefing on how additional federal IBD research investment could accelerate prevention and treatment progress</li>
-                            <li><strong>Step therapy in Congress:</strong> Rep. Lucy McBath cited an IBD volunteer&rsquo;s story at a House committee hearing, calling step therapy a sweeping mandate that too often leaves patients behind</li>
+                            <li><strong>#IBDinDC (2026):</strong> Crohn&rsquo;s &amp; Colitis Foundation volunteers met with Members of Congress on Safe Step Act, research funding, and pediatric access</li>
+                            <li><strong>Step therapy hearing:</strong> Rep. Lucy McBath and patient advocates highlighted how fail-first protocols can delay biologics</li>
                             <li><strong>Prior auth pushback:</strong> After thousands of patient letters and a rally, UnitedHealthcare delayed a planned expansion of prior authorization for many endoscopy and colonoscopy procedures</li>
                         </ul>
                         <p><em>Source: Crohn&rsquo;s &amp; Colitis Foundation federal and grassroots advocacy updates.</em></p>
@@ -329,7 +336,7 @@ IBD_NEWS_TAB_HTML = """
 
                     <section class="seo-landing__block">
                         <h2>More resources</h2>
-                        <p><a href="/#site-updates">IBDPal site updates</a> &middot; <a href="/#about">About MediVue</a> &middot; <a href="/research">Trusted clinical sources</a> &middot; <a href="/#community">Find support by state</a></p>
+                        <p><a href="/#news">Latest IBD news</a> &middot; <a href="/#site-updates">IBDPal site updates</a> &middot; <a href="/#about">About MediVue</a> &middot; <a href="/research">Trusted clinical sources</a> &middot; <a href="/#community">Find support by state</a></p>
                     </section>
                 </article>
 """
