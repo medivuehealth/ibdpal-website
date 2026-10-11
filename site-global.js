@@ -503,6 +503,51 @@
     };
   }
 
+  /** Canonical library counts shared by About Overview + Analytics. */
+  function librarySnapshotConfig() {
+    var cfg = window.IBDPAL_SITE_CONFIG && window.IBDPAL_SITE_CONFIG.librarySnapshot;
+    return {
+      asOf: (cfg && cfg.asOf) || '',
+      articles: Number(cfg && cfg.articles) || 0,
+      guides: Number(cfg && cfg.guides) || 0,
+      resources: Number(cfg && cfg.resources) || 0,
+      sitemap: Number(cfg && cfg.sitemap) || 0
+    };
+  }
+
+  function formatLibraryAsOf(iso) {
+    if (!iso || typeof iso !== 'string') return '';
+    var parts = iso.split('-');
+    if (parts.length !== 3) return iso;
+    var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+      'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    var month = months[Number(parts[1]) - 1] || parts[1];
+    var day = String(Number(parts[2]));
+    return month + ' ' + day + ', ' + parts[0];
+  }
+
+  /**
+   * Paint Overview "What you will find here" and Analytics "Library snapshot"
+   * from the same site-config librarySnapshot object so they cannot drift.
+   */
+  function paintLibrarySnapshot(root) {
+    var snap = librarySnapshotConfig();
+    if (!snap.articles && !snap.guides) return;
+    var scope = root || document;
+    scope.querySelectorAll('[data-library-metric]').forEach(function (node) {
+      var key = node.getAttribute('data-library-metric');
+      if (!key) return;
+      if (key === 'asOf') {
+        var label = formatLibraryAsOf(snap.asOf);
+        if (label) node.textContent = label;
+        return;
+      }
+      if (snap[key] != null && snap[key] !== 0) {
+        node.textContent = String(snap[key]);
+      }
+    });
+  }
+
   function startOfLocalDay(date) {
     return new Date(date.getFullYear(), date.getMonth(), date.getDate());
   }
@@ -1148,6 +1193,7 @@
     injectHeaderBookBanner();
     injectLanguageControls();
     maybeShowSpanishBanner();
+    paintLibrarySnapshot(document);
     initReachCounters(document);
     scheduleReachCounterRefresh();
     markMainId();

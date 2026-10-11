@@ -25,6 +25,15 @@
       internationalCountriesCap: 75,
       internationalCountriesPace: 0
     },
+    // Canonical library counts for About Overview + Analytics (keep identical).
+    // Refresh with: python scripts/refresh_content_counts.py
+    librarySnapshot: {
+      asOf: '2026-10-11',
+      articles: 227,
+      guides: 60,
+      resources: 356,
+      sitemap: 399
+    },
     // EN↔ES content pairs (see data/locale-mirrors.json). Unmirrored EN pages fall back to /es/recursos.
     localeMirrors: {
       defaultEs: '/es/recursos',
