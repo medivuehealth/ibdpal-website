@@ -29,10 +29,10 @@
     // Refresh with: python scripts/refresh_content_counts.py
     librarySnapshot: {
       asOf: '2026-10-11',
-      articles: 227,
+      articles: 235,
       guides: 60,
-      resources: 356,
-      sitemap: 399
+      resources: 364,
+      sitemap: 405
     },
     // EN↔ES content pairs (see data/locale-mirrors.json). Unmirrored EN pages fall back to /es/recursos.
     localeMirrors: {

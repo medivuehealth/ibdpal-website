@@ -61,6 +61,7 @@
 - https://www.ibdpal.org/blog/calcium-ibd
 - https://www.ibdpal.org/blog/carnivore-diet-ibd-myths
 - https://www.ibdpal.org/blog/carrots-ibd
+- https://www.ibdpal.org/blog/cded-crohns-exclusion-diet-ibd
 - https://www.ibdpal.org/blog/celiac-ibd-screening
 - https://www.ibdpal.org/blog/chapati-roti-ibd
 - https://www.ibdpal.org/blog/chicken-protein-ibd
@@ -85,6 +86,7 @@
 - https://www.ibdpal.org/blog/dehydration-ibd-warning-signs
 - https://www.ibdpal.org/blog/depression-anxiety-ibd
 - https://www.ibdpal.org/blog/dining-out-ibd-restaurants
+- https://www.ibdpal.org/blog/disability-fmla-work-ibd
 - https://www.ibdpal.org/blog/eating-with-ibd-book-guide
 - https://www.ibdpal.org/blog/eggs-ibd-nutrition
 - https://www.ibdpal.org/blog/electrolytes-flare-ibd
@@ -129,6 +131,7 @@
 - https://www.ibdpal.org/blog/ibd-autoimmune-overlap
 - https://www.ibdpal.org/blog/ibd-back-pain-sacroiliitis
 - https://www.ibdpal.org/blog/ibd-care-outside-united-states
+- https://www.ibdpal.org/blog/ibd-colon-cancer-risk-surveillance
 - https://www.ibdpal.org/blog/ibd-extraintestinal-manifestations
 - https://www.ibdpal.org/blog/ibd-fatigue-brain-fog
 - https://www.ibdpal.org/blog/ibd-flare-go-bag
@@ -210,13 +213,17 @@
 - https://www.ibdpal.org/blog/remicade-infusion-day-tips-ibd
 - https://www.ibdpal.org/blog/rheumatoid-arthritis-autoimmune-overview
 - https://www.ibdpal.org/blog/rinvoq-patient-questions-ibd
+- https://www.ibdpal.org/blog/running-jogging-ibd
 - https://www.ibdpal.org/blog/salmon-fish-ibd
 - https://www.ibdpal.org/blog/school-planning-ibd-before-august
 - https://www.ibdpal.org/blog/siblings-when-child-has-ibd
 - https://www.ibdpal.org/blog/sjogren-autoimmune-overview
 - https://www.ibdpal.org/blog/skyrizi-patient-questions-ibd
 - https://www.ibdpal.org/blog/sleep-rest-ibd-flares
+- https://www.ibdpal.org/blog/smoking-ibd-crohns-colitis
 - https://www.ibdpal.org/blog/social-life-dating-teens-ibd
+- https://www.ibdpal.org/blog/specific-carbohydrate-diet-scd-ibd
+- https://www.ibdpal.org/blog/spicy-foods-nuts-seeds-ibd
 - https://www.ibdpal.org/blog/spinach-leafy-greens-ibd
 - https://www.ibdpal.org/blog/starting-biologic-first-12-weeks
 - https://www.ibdpal.org/blog/stelara-diet-ibd
@@ -242,6 +249,7 @@
 - https://www.ibdpal.org/blog/tuna-ibd
 - https://www.ibdpal.org/blog/turkey-protein-ibd
 - https://www.ibdpal.org/blog/type1-diabetes-autoimmune-basics
+- https://www.ibdpal.org/blog/ulcerative-colitis-diet-overview-ibd
 - https://www.ibdpal.org/blog/understanding-biologics-ibd
 - https://www.ibdpal.org/blog/uveitis-eye-inflammation-ibd
 - https://www.ibdpal.org/blog/vaccine-autoimmune-immunosuppression

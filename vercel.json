@@ -10,6 +10,38 @@
   ],
   "rewrites": [
     {
+      "source": "/blog/ulcerative-colitis-diet-overview-ibd",
+      "destination": "/blogs/ulcerative-colitis-diet-overview-ibd.html"
+    },
+    {
+      "source": "/blog/cded-crohns-exclusion-diet-ibd",
+      "destination": "/blogs/cded-crohns-exclusion-diet-ibd.html"
+    },
+    {
+      "source": "/blog/specific-carbohydrate-diet-scd-ibd",
+      "destination": "/blogs/specific-carbohydrate-diet-scd-ibd.html"
+    },
+    {
+      "source": "/blog/ibd-colon-cancer-risk-surveillance",
+      "destination": "/blogs/ibd-colon-cancer-risk-surveillance.html"
+    },
+    {
+      "source": "/blog/smoking-ibd-crohns-colitis",
+      "destination": "/blogs/smoking-ibd-crohns-colitis.html"
+    },
+    {
+      "source": "/blog/disability-fmla-work-ibd",
+      "destination": "/blogs/disability-fmla-work-ibd.html"
+    },
+    {
+      "source": "/blog/running-jogging-ibd",
+      "destination": "/blogs/running-jogging-ibd.html"
+    },
+    {
+      "source": "/blog/spicy-foods-nuts-seeds-ibd",
+      "destination": "/blogs/spicy-foods-nuts-seeds-ibd.html"
+    },
+    {
       "source": "/blog/mango-ibd-crohns-colitis",
       "destination": "/blogs/mango-ibd-crohns-colitis.html"
     },
