@@ -1,15 +1,16 @@
 # -*- coding: utf-8 -*-
-"""IBDPal Reader Q&A content, October 14 batch, part 1."""
+"""IBDPal Reader Q&A content ,  October 14 batch, part 1."""
 
 ITEMS_PART1 = [
- {
- "slug": "feeding-child-crohns-conflicting-diet-advice",
- "title": "What am I actually supposed to feed my child with Crohn’s?",
- "question": (
- "My son was recently diagnosed with Crohn’s disease, and I’m overwhelmed "
- "by all the conflicting dietary advice. What am I actually supposed to feed him?"
- ),
- "answer": r'''
+    {
+        "slug": "feeding-child-crohns-conflicting-diet-advice",
+        "title": "My son was recently diagnosed with Crohn’s disease, and I’m overwhelmed by all the conflicting dietary advice. What am I actually supposed to feed him?",
+        "question": (
+            "My son was recently diagnosed with Crohn’s disease, and I’m overwhelmed "
+            "by all the conflicting dietary advice. What am I actually supposed to "
+            "feed him?"
+        ),
+        "answer": r'''
 Short answer: there is no single “Crohn’s diet” that every child should follow, and the flood of conflicting advice online is not your fault for finding confusing. What your son needs is a plan built with his gastroenterology team, often including a pediatric IBD dietitian, that protects growth, supports medicine when prescribed, and adapts when he is flaring versus when he is steadier. Your job this month is not to invent a perfect lifelong menu from social media. It is to get enough calories and protein in, avoid extremes that shrink his food world without clinical reason, and learn which changes are temporary tools versus permanent rules.
 
 Why this feels so confusing is worth naming out loud. Crohn’s can involve different parts of the gut, different ages, and different complication risks. One family is told to try exclusive enteral nutrition. Another hears “low residue during a flare.” A neighbor swears by cutting gluten forever. A podcast says fiber is essential; a parent group says fiber is forbidden. Research articles mention Mediterranean-style patterns, elimination protocols, and formula-based induction. All of those pieces can be true in specific contexts and wrong as universal advice. When you search “what to feed a child with Crohn’s,” you are mixing flare-phase symptom management, maintenance nutrition, growth catch-up, and adult influencer content into one anxious pile. Separating those lanes is the first practical step.
@@ -44,15 +45,15 @@ A final reframe that helps many households: you are feeding a child who has a me
 
 Related education: [Pediatric Crohn’s and colitis help](/guides/pediatric-crohns-colitis-help), [Crohn’s diet overview](/blog/crohns-diet-overview-ibd), [Crohn’s disease diet and nutrition](/guides/crohns-disease-diet-nutrition), [Child just diagnosed: first month and school](/ask/child-just-diagnosed-first-month-school).
 '''.strip(),
- },
- {
- "slug": "which-foods-safe-crohns-without-worsening",
- "title": "How can I figure out which foods are safe with Crohn’s?",
- "question": (
- "I have Crohn’s disease, and I never know which foods are safe for me. "
- "How can I figure out what I can eat without making my symptoms worse?"
- ),
- "answer": r'''
+    },
+    {
+        "slug": "which-foods-safe-crohns-without-worsening",
+        "title": "I have Crohn’s disease, and I never know which foods are safe for me. How can I figure out what I can eat without making my symptoms worse?",
+        "question": (
+            "I have Crohn’s disease, and I never know which foods are safe for me. "
+            "How can I figure out what I can eat without making my symptoms worse?"
+        ),
+        "answer": r'''
 Short answer: “safe foods” in Crohn’s are personal, phase-dependent, and best discovered with a structured process, not a universal whitelist from the internet. What sits well in a quiet week can sting during a flare, and what helps one person with ileal disease can bother someone with different anatomy or a stricture. The practical goal is not a forever perfect list. It is a living map: baseline foods you tolerate most days, temporary adjustments when symptoms rise, and a plan for re-testing foods so your world does not shrink forever out of fear.
 
 Why this is confusing is structural. Crohn’s symptoms overlap with food intolerance, bile acid issues after ileal disease or surgery, lactose maldigestion, IBS-like sensitivity, medication side effects, and ordinary bad restaurant luck. Online lists often collapse all of that into “never eat this.” Forums also celebrate extreme elimination as virtue. Meanwhile, under-eating can worsen fatigue, nutrient gaps, and healing capacity. So you are asked to be careful and nourished at the same time, which feels like a contradiction until you separate flare-phase tactics from maintenance eating. Add social media certainty on top, and it is easy to believe everyone else has a clean safe list while you are failing.
@@ -89,15 +90,16 @@ Finally, give yourself permission for imperfect weeks. Travel, holidays, and str
 
 Related education: [Crohn’s food triggers](/guides/crohns-food-triggers), [Foods to eat during a Crohn’s flare](/guides/foods-to-eat-crohns-flare), [What to eat during a flare](/ask/what-to-eat-during-a-flare), [Track IBD symptoms and food](/guides/track-ibd-symptoms-food).
 '''.strip(),
- },
- {
- "slug": "prepare-questions-gastroenterology-appointment",
- "title": "How do we prepare questions for a gastroenterology appointment?",
- "question": (
- "My daughter has an upcoming gastroenterology appointment, but we don’t know what "
- "questions to ask. How can we prepare so we don't forget anything important?"
- ),
- "answer": r'''
+    },
+    {
+        "slug": "prepare-questions-gastroenterology-appointment",
+        "title": "My daughter has an upcoming gastroenterology appointment, but we don’t know what questions to ask. How can we prepare so we don't forget anything important?",
+        "question": (
+            "My daughter has an upcoming gastroenterology appointment, but we don’t "
+            "know what questions to ask. How can we prepare so we don't forget "
+            "anything important?"
+        ),
+        "answer": r'''
 Short answer: prepare a one-page visit script, current symptoms, medicines, what has changed since the last contact, and a prioritized question list, so the appointment has a backbone even if the room gets emotional or rushed. You do not need clever questions. You need clear ones that protect safety, clarify the plan, and leave you knowing what to do at home this week. Write them down. Bring two copies if that helps. Many families remember more in the parking lot than in the exam room; paper beats hope.
 
 Why families freeze on “what should we ask?” is understandable. Gastroenterology visits pack disease activity, growth, labs, scopes, medicines, school life, and insurance into a short slot. If your daughter is newly diagnosed, you may not yet know the vocabulary. If she has been living with IBD for years, you may assume the clinician already knows the full story from the chart, charts are often incomplete in the ways that matter day to day. Conflicting online advice also makes parents afraid of asking the “wrong” question. There is no wrong question about her symptoms, growth, side effects, or what to do at 2 a.m. There are only questions you did not get to because the visit drifted.
@@ -134,15 +136,15 @@ A last kindness to yourself: you will forget something anyway. That does not mea
 
 Related education: [First gastroenterology appointment for IBD](/guides/first-gastroenterology-appointment-ibd), [Crohn’s doctor visit prep](/guides/crohns-doctor-visit-prep), [Visit prep](/visit-prep), [Newly diagnosed: first 30 days](/blog/newly-diagnosed-first-30-days).
 '''.strip(),
- },
- {
- "slug": "how-to-trust-ibd-information-online",
- "title": "How do I know which IBD information online I can trust?",
- "question": (
- "There’s so much information online about IBD, and a lot of it contradicts itself. "
- "How do I know what information I can actually trust?"
- ),
- "answer": r'''
+    },
+    {
+        "slug": "how-to-trust-ibd-information-online",
+        "title": "There’s so much information online about IBD, and a lot of it contradicts itself. How do I know what information I can actually trust?",
+        "question": (
+            "There’s so much information online about IBD, and a lot of it "
+            "contradicts itself. How do I know what information I can actually trust?"
+        ),
+        "answer": r'''
 Short answer: trust IBD information that is specific about who it applies to, transparent about limits, consistent with established medical organizations or your care team, and careful about selling you a cure. Contradiction online is often a clash of contexts, flare versus remission, Crohn’s versus ulcerative colitis, adult versus pediatric, anecdote versus evidence, not proof that “nobody knows anything.” Your filter should be practical: Does this help me ask better questions and make safer day-to-day decisions, or does it push me to stop prescribed care and spend money on fear?
 
 Why the information landscape feels broken is not mysterious. IBD is heterogeneous. A tip that helped someone after colectomy may not help someone with isolated ileal Crohn’s. Search engines and social feeds reward certainty and emotion. Creators may be patients, clinicians, marketers, or mixed roles without clear labels. Preliminary studies get headlines; later nuances do not. AI summaries can sound fluent while missing contraindications. Parent groups and forums can be deeply supportive and also amplify rare horror stories until they feel like averages. You are not bad at research. You are swimming in content that was not designed for careful chronic-disease decision making.
@@ -177,5 +179,5 @@ A sustainable information diet looks a lot like a sustainable food diet: enough 
 
 Related education: [Research](/research), [Glossary](/glossary), [Newly diagnosed: first 30 days](/blog/newly-diagnosed-first-30-days), [Crohn’s diet overview](/blog/crohns-diet-overview-ibd).
 '''.strip(),
- },
+    },
 ]

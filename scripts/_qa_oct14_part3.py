@@ -1,10 +1,17 @@
 # -*- coding: utf-8 -*-
+"""IBDPal Reader Q&A answers ,  Oct 14 batch part 3 (items 9-12)."""
+
 ITEMS_PART3 = [
- {
- "slug": "turn-food-symptom-log-into-doctor-summary",
- "title": "How can I turn my food and symptom log into something useful for my doctor?",
- "question": "I've been recording what I eat and how I feel, but I don't know what any of it means. How can I turn that information into something useful for my doctor?",
- "answer": r'''Short answer: your doctor does not need every meal photo or every note, you need a one-page pattern summary that shows what changed, what stayed the same, and what you want decided at the visit. Raw logs are raw material. A useful visit tool is a short, dated overview: top symptoms, timing, food patterns that repeat, red-flag items, and two or three clear questions. Education like this cannot replace medical advice, but it can help you organize what you already recorded so clinic time goes further.
+    {
+        "slug": "turn-food-symptom-log-into-doctor-summary",
+        "title": "I've been recording what I eat and how I feel, but I don't know what any of it means. How can I turn that information into something useful for my doctor?",
+        "question": (
+            "I've been recording what I eat and how I feel, but I don't know what any "
+            "of it means. How can I turn that information into something useful for "
+            "my doctor?"
+        ),
+        "answer": r'''
+Short answer: your doctor does not need every meal photo or every note, you need a one-page pattern summary that shows what changed, what stayed the same, and what you want decided at the visit. Raw logs are raw material. A useful visit tool is a short, dated overview: top symptoms, timing, food patterns that repeat, red-flag items, and two or three clear questions. Education like this cannot replace medical advice, but it can help you organize what you already recorded so clinic time goes further.
 
 Why this feels confusing is not a personal failure. Food-and-symptom diaries grow fast. After two weeks you may have dozens of meals, stool notes, energy scores, and “felt weird after lunch” comments. Clinics have ten to twenty minutes. If you hand over a notebook or a long app export without a summary, the details blur. Your clinician is looking for patterns that change decisions: new night waking, rising urgency, blood, weight change, missed medicines, or a possible infection, not whether Tuesday’s oatmeal had blueberries. The gap between “I tracked everything” and “I can explain the story in three minutes” is exactly where people feel stuck.
 
@@ -46,13 +53,19 @@ When food fear is driving the diary, say that in the summary. A line such as “
 
 Couples and parents should agree who owns the summary. Conflicting oral histories waste minutes. One person can hold the page while the patient narrates sensations the caregiver cannot feel. For adult patients who want privacy about bathroom details, the summary can stay high-level in shared rooms and more specific in a private portal message. Dignity and accuracy can coexist.
 
-Related education: [Track IBD symptoms and food](/guides/track-ibd-symptoms-food), [IBD nutrition tracking](/guides/ibd-nutrition-tracking-app), [Visit prep](/visit-prep), [Newly diagnosed, first 30 days](/blog/newly-diagnosed-first-30-days).'''.strip(),
- },
- {
- "slug": "child-ibd-diet-meeting-nutrition-needs",
- "title": "How can I tell if my child’s IBD diet is meeting nutrition needs?",
- "question": "My child has IBD, and I worry that she's not getting enough nutrients because so many foods upset her stomach. How can I tell whether her diet is meeting her nutritional needs?",
- "answer": r'''Short answer: you usually cannot tell from a clean plate alone, growth trends, energy for school and play, lab markers your pediatric team orders, and a realistic intake picture together show whether nutrition needs are being met. When many foods upset your child’s stomach, worry is reasonable. The calm approach is to watch function and growth, tighten a short food pattern log, and partner with the gastroenterology and dietitian team rather than guessing with ever-longer elimination lists. This is education for caregivers, not a personal nutrition prescription.
+Related education: [Track IBD symptoms and food](/guides/track-ibd-symptoms-food), [IBD nutrition tracking](/guides/ibd-nutrition-tracking-app), [Visit prep](/visit-prep), [Newly diagnosed, first 30 days](/blog/newly-diagnosed-first-30-days).
+'''.strip(),
+    },
+    {
+        "slug": "child-ibd-diet-meeting-nutrition-needs",
+        "title": "My child has IBD, and I worry that she's not getting enough nutrients because so many foods upset her stomach. How can I tell whether her diet is meeting her nutritional needs?",
+        "question": (
+            "My child has IBD, and I worry that she's not getting enough nutrients "
+            "because so many foods upset her stomach. How can I tell whether her diet "
+            "is meeting her nutritional needs?"
+        ),
+        "answer": r'''
+Short answer: you usually cannot tell from a clean plate alone, growth trends, energy for school and play, lab markers your pediatric team orders, and a realistic intake picture together show whether nutrition needs are being met. When many foods upset your child’s stomach, worry is reasonable. The calm approach is to watch function and growth, tighten a short food pattern log, and partner with the gastroenterology and dietitian team rather than guessing with ever-longer elimination lists. This is education for caregivers, not a personal nutrition prescription.
 
 Why this is confusing is built into pediatric IBD. Children and teens need calories and nutrients for both healing and growth. Active inflammation can raise needs while appetite falls. Steroids can increase hunger yet still leave micronutrient gaps. Fear of pain after eating can shrink the menu to a handful of “safe” foods that feel emotionally safer but nutritionally thin. Online lists of “IBD foods to avoid” often conflict, and what flares one child may be tolerated by another. Parents are left wondering whether picky eating is disease, preference, trauma after sick weeks, or all three.
 
@@ -94,13 +107,19 @@ Hydration is easy to miss when parents focus on solids. Active kids with loose s
 
 Dental pain, mouth sores, and taste changes from medicines can quietly cut intake. Mention them. So can nausea around specific pills. A formulation or timing change sometimes helps more than a new grocery list. Track skipped doses caused by stomach fear.
 
-Related education: [Pediatric Crohn’s and colitis help](/guides/pediatric-crohns-colitis-help), [IBD nutrition tracking](/guides/ibd-nutrition-tracking-app), [Iron deficiency nutrition](/guides/iron-deficiency-nutrition-ibd), [Vitamin D and bone nutrition](/guides/vitamin-d-bone-nutrition-ibd), [Foundation diet nutrition](/guides/foundation-diet-nutrition-ibd), [Iron, B12, and vitamin D Q&A](/ask/iron-b12-vitamin-d-do-i-need).'''.strip(),
- },
- {
- "slug": "feel-terrible-normal-tests-explain-to-doctor",
- "title": "How do I explain feeling terrible when my IBD tests look normal?",
- "question": "Sometimes I feel terrible even though my test results look normal. How can I explain what I'm experiencing when there's nothing obvious to show my doctor?",
- "answer": r'''Short answer: lead with a clear function story, a short symptom timeline, and specific asks, do not wait for a dramatic lab to “prove” you feel bad. Normal bloodwork or a reassuring calprotectin can coexist with real misery from IBS overlap, bile acid issues, nutrient gaps, medicine effects, sleep loss, anxiety physiology, incomplete healing in a skip area, or inflammation that a single test missed. Your job is not to win an argument with a printout; it is to describe pattern, impact, and what you need next. This is educational framing, not a diagnosis.
+Related education: [Pediatric Crohn’s and colitis help](/guides/pediatric-crohns-colitis-help), [IBD nutrition tracking](/guides/ibd-nutrition-tracking-app), [Iron deficiency nutrition](/guides/iron-deficiency-nutrition-ibd), [Vitamin D and bone nutrition](/guides/vitamin-d-bone-nutrition-ibd), [Foundation diet nutrition](/guides/foundation-diet-nutrition-ibd), [Iron, B12, and vitamin D Q&A](/ask/iron-b12-vitamin-d-do-i-need).
+'''.strip(),
+    },
+    {
+        "slug": "feel-terrible-normal-tests-explain-to-doctor",
+        "title": "Sometimes I feel terrible even though my test results look normal. How can I explain what I'm experiencing when there's nothing obvious to show my doctor?",
+        "question": (
+            "Sometimes I feel terrible even though my test results look normal. How "
+            "can I explain what I'm experiencing when there's nothing obvious to show "
+            "my doctor?"
+        ),
+        "answer": r'''
+Short answer: lead with a clear function story, a short symptom timeline, and specific asks, do not wait for a dramatic lab to “prove” you feel bad. Normal bloodwork or a reassuring calprotectin can coexist with real misery from IBS overlap, bile acid issues, nutrient gaps, medicine effects, sleep loss, anxiety physiology, incomplete healing in a skip area, or inflammation that a single test missed. Your job is not to win an argument with a printout; it is to describe pattern, impact, and what you need next. This is educational framing, not a diagnosis.
 
 Why this situation is so hard is emotional and medical at once. Many people are taught that labs are the truth meter. When CRP is normal or calprotectin looks quieter, well-meaning friends, and sometimes rushed visits, imply the problem is stress or imagination. Meanwhile you may have urgency, pain, brain fog, joint aches, or crushing fatigue. IBD care increasingly recognizes that symptoms and biomarkers do not always move in lockstep. Education on [normal CRP with ongoing symptoms](/blog/crp-normal-still-symptoms-ibd) and [normal bloodwork while still feeling sick](/ask/normal-bloodwork-still-sick) exists because this mismatch is common, not rare.
 
@@ -146,13 +165,19 @@ Between visits, set personal thresholds in writing: which changes wait forty-eig
 
 Language for the opening minute can be rehearsed. Try: “I know my recent markers look okay. My daily life does not. I need a plan for symptoms and for what would make us recheck disease activity.” That keeps respect for labs and for you in one breath.
 
-Related education: [CRP normal, still symptoms](/blog/crp-normal-still-symptoms-ibd), [Normal bloodwork, still sick](/ask/normal-bloodwork-still-sick), [Reading IBD labs](/blog/reading-ibd-labs-calprotectin-crp), [One calprotectin result](/ask/calprotectin-one-result-getting-worse), [Visit prep](/visit-prep).'''.strip(),
- },
- {
- "slug": "plain-language-reliable-ibd-explanations",
- "title": "Where can I find reliable IBD explanations in plain language?",
- "question": "I want to understand my disease better, but most medical websites use terminology I don't understand. Is there somewhere I can find reliable explanations in plain language?",
- "answer": r'''Short answer: yes, start with patient-facing pages from established IBD organizations, your own clinic’s education handouts, and plain-language tools like a glossary and curated research summaries, then translate anything confusing into questions for your care team. You do not need to become a medical student to understand Crohn’s disease or ulcerative colitis well enough to participate in decisions. You do need sources that separate facts from hype, and a habit of checking advice against your personal plan. This article is general education, not individualized medical advice.
+Related education: [CRP normal, still symptoms](/blog/crp-normal-still-symptoms-ibd), [Normal bloodwork, still sick](/ask/normal-bloodwork-still-sick), [Reading IBD labs](/blog/reading-ibd-labs-calprotectin-crp), [One calprotectin result](/ask/calprotectin-one-result-getting-worse), [Visit prep](/visit-prep).
+'''.strip(),
+    },
+    {
+        "slug": "plain-language-reliable-ibd-explanations",
+        "title": "I want to understand my disease better, but most medical websites use terminology I don't understand. Is there somewhere I can find reliable explanations in plain language?",
+        "question": (
+            "I want to understand my disease better, but most medical websites use "
+            "terminology I don't understand. Is there somewhere I can find reliable "
+            "explanations in plain language?"
+        ),
+        "answer": r'''
+Short answer: yes, start with patient-facing pages from established IBD organizations, your own clinic’s education handouts, and plain-language tools like a glossary and curated research summaries, then translate anything confusing into questions for your care team. You do not need to become a medical student to understand Crohn’s disease or ulcerative colitis well enough to participate in decisions. You do need sources that separate facts from hype, and a habit of checking advice against your personal plan. This article is general education, not individualized medical advice.
 
 Why medical websites feel impossible is partly vocabulary and partly design. Terms like mucosal healing, induction, biosimilar, calprotectin, and extraintestinal manifestations appear without a runway. Some pages are written for clinicians; others are marketing posts wearing a lab-coat costume. Search results mix hospital pages, influencer summaries, miracle-diet claims, and genuine guidelines. When you are newly diagnosed or flared, cognitive load is already high. Dense terminology then feels like a locked door rather than a learning curve.
 
@@ -204,6 +229,7 @@ Keep expectations kind: understanding IBD is cumulative. One clear page plus one
 
 If two sources conflict, write both views down and ask which applies to your history rather than picking the scarier one by default.
 
-Related education: [Glossary](/glossary), [Research](/research), [Newly diagnosed, first 30 days](/blog/newly-diagnosed-first-30-days), [Autoimmune nutrition basics](/guides/autoimmune-nutrition-basics), [Reading IBD labs](/blog/reading-ibd-labs-calprotectin-crp), [Foundation diet nutrition](/guides/foundation-diet-nutrition-ibd).'''.strip(),
- },
+Related education: [Glossary](/glossary), [Research](/research), [Newly diagnosed, first 30 days](/blog/newly-diagnosed-first-30-days), [Autoimmune nutrition basics](/guides/autoimmune-nutrition-basics), [Reading IBD labs](/blog/reading-ibd-labs-calprotectin-crp), [Foundation diet nutrition](/guides/foundation-diet-nutrition-ibd).
+'''.strip(),
+    },
 ]

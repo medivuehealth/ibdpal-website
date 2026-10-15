@@ -1,15 +1,16 @@
 # -*- coding: utf-8 -*-
-"""IBDPal Reader Q&A answers, Oct 14 batch part 2 (items 5 to 8)."""
+"""IBDPal Reader Q&A answers ,  Oct 14 batch part 2 (items 5-8)."""
 
 ITEMS_PART2 = [
- {
- "slug": "track-symptoms-meals-find-flare-triggers",
- "title": "How can I track symptoms and meals to find flare triggers?",
- "question": (
- "I keep experiencing flare-ups, but I can't figure out what's triggering them. "
- "Is there a way to track my symptoms and meals to identify patterns?"
- ),
- "answer": r'''
+    {
+        "slug": "track-symptoms-meals-find-flare-triggers",
+        "title": "I keep experiencing flare-ups, but I can't figure out what's triggering them. Is there a way to track my symptoms and meals to identify patterns?",
+        "question": (
+            "I keep experiencing flare-ups, but I can't figure out what's triggering "
+            "them. Is there a way to track my symptoms and meals to identify "
+            "patterns?"
+        ),
+        "answer": r'''
 Short answer: yes, you can track symptoms and meals in a simple, repeatable way that often reveals patterns your memory alone will miss. Tracking will not diagnose a flare by itself, and it will not replace labs, scopes, or a plan from your gastroenterologist. What it can do is turn vague “I feel worse lately” into a clear story: what changed, how long it lasted, and whether food, stress, missed doses, infections, or menstrual cycles lined up with the change. That story helps you and your care team decide whether you are looking at a true inflammatory flare, a temporary gut upset, or something else that needs a different next step.
 
 This page is general education for people living with Crohn’s disease or ulcerative colitis. It is not medical advice, a personalized diet prescription, or a substitute for urgent care when red flags appear.
@@ -104,15 +105,15 @@ If patterns remain unclear after a careful month, that is a valid reason for a n
 
 Related education: [Track IBD symptoms and food](/guides/track-ibd-symptoms-food), [IBD nutrition tracking](/guides/ibd-nutrition-tracking-app), [Flare foods](/blog/flare-foods-ibd), [Flare symptoms](/blog/flare-symptoms-ibd), [What to eat during a flare](/ask/what-to-eat-during-a-flare), [Visit prep](/visit-prep).
 '''.strip(),
- },
- {
- "slug": "why-symptoms-change-day-to-day-same-foods",
- "title": "Why do my IBD symptoms change day to day on the same foods?",
- "question": (
- "My symptoms seem to change from day to day, even when I eat the same foods. "
- "How can I understand why this keeps happening?"
- ),
- "answer": r'''
+    },
+    {
+        "slug": "why-symptoms-change-day-to-day-same-foods",
+        "title": "My symptoms seem to change from day to day, even when I eat the same foods. How can I understand why this keeps happening?",
+        "question": (
+            "My symptoms seem to change from day to day, even when I eat the same "
+            "foods. How can I understand why this keeps happening?"
+        ),
+        "answer": r'''
 Short answer: eating the same foods does not freeze IBD symptoms in place, because food is only one input. Sleep, stress hormones, menstrual cycles, medication timing, inflammation level, infections, hydration, gut sensitivity after prior flares, and even meal timing or portion size can change how the same plate feels from Monday to Thursday. Day-to-day swings are common and often confusing, not proof that you are imagining things, and not automatic proof that every bad day is a full inflammatory flare.
 
 This is educational information for people with Crohn’s disease or ulcerative colitis. It is not a diagnosis tool and not a replacement for your gastroenterology team.
@@ -200,15 +201,15 @@ When you message clinic about a bad stretch, lead with contrast to your baseline
 
 Related education: [Flare symptoms](/blog/flare-symptoms-ibd), [Flare or a bad few days](/ask/flare-or-bad-few-days), [CRP normal but still symptoms](/blog/crp-normal-still-symptoms-ibd), [Normal bloodwork, still sick](/ask/normal-bloodwork-still-sick), [Reading IBD labs](/blog/reading-ibd-labs-calprotectin-crp), [Track symptoms and food](/guides/track-ibd-symptoms-food).
 '''.strip(),
- },
- {
- "slug": "newly-diagnosed-ulcerative-colitis-first-steps",
- "title": "I was just diagnosed with ulcerative colitis. What should I do first?",
- "question": (
- "I was just diagnosed with ulcerative colitis, and I don't even know where to start. "
- "What should I be doing first?"
- ),
- "answer": r'''
+    },
+    {
+        "slug": "newly-diagnosed-ulcerative-colitis-first-steps",
+        "title": "I was just diagnosed with ulcerative colitis, and I don't even know where to start. What should I be doing first?",
+        "question": (
+            "I was just diagnosed with ulcerative colitis, and I don't even know "
+            "where to start. What should I be doing first?"
+        ),
+        "answer": r'''
 Short answer: you do not need to become an ulcerative colitis expert this week. First steps are simpler and more important: confirm who is on your care team and how to reach them, understand your medication plan and monitoring schedule, learn your personal red flags, start a basic symptom log, and protect food enough-ness while symptoms are loud. Education can expand over the first month. Panic-driven total life redesign in the first forty-eight hours usually adds overwhelm without adding safety.
 
 This page is general patient education. It is not a treatment plan. Your gastroenterologist’s instructions come first when anything here differs.
@@ -304,15 +305,16 @@ Keep a one-sentence hope that is medical, not magical: “I am starting a plan a
 
 Related education: [Newly diagnosed Crohn’s and colitis](/guides/newly-diagnosed-crohns-colitis), [Newly diagnosed first-week foundation](/guides/newly-diagnosed-foundation-first-week), [First 30 days](/blog/newly-diagnosed-first-30-days), [Ulcerative colitis diet overview](/blog/ulcerative-colitis-diet-overview-ibd), [UC flare management](/guides/ulcerative-colitis-flare-management), [Visit prep](/visit-prep).
 '''.strip(),
- },
- {
- "slug": "track-symptoms-between-doctor-appointments",
- "title": "How can I track symptoms between doctor appointments so I remember?",
- "question": (
- "My doctor asks how I've been feeling between appointments, but I can never remember "
- "exactly when my symptoms happened. How can I keep track of everything?"
- ),
- "answer": r'''
+    },
+    {
+        "slug": "track-symptoms-between-doctor-appointments",
+        "title": "My doctor asks how I've been feeling between appointments, but I can never remember exactly when my symptoms happened. How can I keep track of everything?",
+        "question": (
+            "My doctor asks how I've been feeling between appointments, but I can "
+            "never remember exactly when my symptoms happened. How can I keep track "
+            "of everything?"
+        ),
+        "answer": r'''
 Short answer: use a lightweight system you can sustain for months, not a perfect diary you abandon in a week. Capture a few high-signal details close to when symptoms happen, review them for sixty seconds each Sunday, and walk into visits with a one-page timeline instead of a foggy “I think October was rough.” You do not need to track everything. You need to remember the pattern well enough that your gastroenterologist can make safer decisions with you.
 
 This is educational guidance for people with Crohn’s disease or ulcerative colitis. It is not medical advice and not a substitute for urgent evaluation when red flags appear.
@@ -432,5 +434,5 @@ If two clinicians ask for different formats, one wants a diary, one wants averag
 
 Related education: [Visit prep](/visit-prep), [Track IBD symptoms and food](/guides/track-ibd-symptoms-food), [IBD nutrition tracking](/guides/ibd-nutrition-tracking-app), [Flare symptoms](/blog/flare-symptoms-ibd), [Flare or a bad few days](/ask/flare-or-bad-few-days), [Reading IBD labs](/blog/reading-ibd-labs-calprotectin-crp).
 '''.strip(),
- },
+    },
 ]
