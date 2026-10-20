@@ -239,13 +239,26 @@
   }
 
   function downloadBlob(content, filename, mime) {
-    var blob = content instanceof Blob ? content : new Blob([content], { type: mime || 'application/octet-stream' });
+    var blob;
+    if (content instanceof Blob) {
+      blob = content;
+    } else if (mime === 'application/pdf' && typeof content === 'string') {
+      var bytes = new Uint8Array(content.length);
+      for (var i = 0; i < content.length; i++) bytes[i] = content.charCodeAt(i) & 0xff;
+      blob = new Blob([bytes], { type: 'application/pdf' });
+    } else {
+      blob = new Blob([content], { type: mime || 'application/octet-stream' });
+    }
     var url = URL.createObjectURL(blob);
     var a = document.createElement('a');
     a.href = url;
     a.download = filename;
+    document.body.appendChild(a);
     a.click();
-    URL.revokeObjectURL(url);
+    a.remove();
+    setTimeout(function () {
+      URL.revokeObjectURL(url);
+    }, 2000);
   }
 
   /* --- Minimal landscape PDF (Helvetica) for blank + filled sheets --- */
@@ -431,18 +444,13 @@
     downloadBlob(pdf, 'ibdpal-pediatric-food-pain-log-' + todayLocal() + '.pdf', 'application/pdf');
   }
 
-  function openPrintSheet(mode, rows) {
-    var win = window.open('', '_blank', 'noopener,noreferrer,width=1100,height=800');
-    if (!win) {
-      window.alert('Please allow pop-ups to print or save as PDF.');
-      return;
-    }
+  function buildPrintHtml(mode, rows) {
     var body;
     if (mode === 'blank') {
       body =
         '<h1>IBDPal pediatric food &amp; pain sheet</h1>' +
         '<p class="meta">Child: __________ Age: ____ Caregiver: __________ Week of: __________</p>' +
-        '<p class="hint">Belly pain 0–10. Medicine column optional. Education only · ibdpal.org</p>' +
+        '<p class="hint">Belly pain 0-10. Medicine column optional. Education only · ibdpal.org</p>' +
         blankTableHtml(14) +
         blankTableHtml(14);
     } else {
@@ -453,30 +461,71 @@
         ' · Education only</p>' +
         filledTableHtml(rows);
     }
-    win.document.write(
-      '<!DOCTYPE html><html><head><title>IBDPal food &amp; pain sheet</title>' +
-        '<style>' +
-        '@page{size:landscape;margin:12mm}' +
-        'body{font-family:system-ui,sans-serif;font-size:11px;color:#222}' +
-        'h1{font-size:16px;margin:0 0 6px}' +
-        '.meta,.hint{margin:0 0 8px;color:#444}' +
-        'table{width:100%;border-collapse:collapse;margin:0 0 18px}' +
-        'th,td{border:1px solid #333;padding:6px 4px;vertical-align:top}' +
-        'th{background:#f4f4f4;font-size:10px}' +
-        'td{height:28px}' +
-        '@media print{.noprint{display:none}}' +
-        '</style></head><body>' +
-        '<p class="noprint"><button onclick="window.print()">Print / Save as PDF</button></p>' +
-        body +
-        '</body></html>'
+    return (
+      '<!DOCTYPE html><html><head><meta charset="utf-8"><title>IBDPal food &amp; pain sheet</title>' +
+      '<style>' +
+      '@page{size:landscape;margin:12mm}' +
+      'body{font-family:system-ui,sans-serif;font-size:11px;color:#222;padding:12px}' +
+      'h1{font-size:16px;margin:0 0 6px}' +
+      '.meta,.hint{margin:0 0 8px;color:#444}' +
+      'table{width:100%;border-collapse:collapse;margin:0 0 18px}' +
+      'th,td{border:1px solid #333;padding:6px 4px;vertical-align:top}' +
+      'th{background:#f4f4f4;font-size:10px}' +
+      'td{height:28px}' +
+      '@media print{.noprint{display:none}}' +
+      '</style></head><body>' +
+      '<p class="noprint"><button type="button" onclick="window.print()">Print / Save as PDF</button> ' +
+      '<span>If the dialog did not open, use this button. Choose “Save as PDF” as the printer.</span></p>' +
+      body +
+      '</body></html>'
     );
-    win.document.close();
-    setTimeout(function () {
-      try {
-        win.focus();
-        win.print();
-      } catch (e) {}
-    }, 250);
+  }
+
+  function printViaIframe(html) {
+    var iframe = document.createElement('iframe');
+    iframe.setAttribute('title', 'Print food and pain sheet');
+    // Keep a real layout size off-screen; 0x0 iframes often print blank.
+    iframe.style.cssText =
+      'position:fixed;left:-10000px;top:0;width:1100px;height:850px;border:0;opacity:0;pointer-events:none';
+    document.body.appendChild(iframe);
+    var doc = iframe.contentDocument || (iframe.contentWindow && iframe.contentWindow.document);
+    if (!doc) {
+      document.body.removeChild(iframe);
+      window.alert('Could not open the print sheet. Try Download blank PDF instead.');
+      return;
+    }
+    doc.open();
+    doc.write(html);
+    doc.close();
+    var cleaned = false;
+    function cleanup() {
+      if (cleaned) return;
+      cleaned = true;
+      setTimeout(function () {
+        if (iframe.parentNode) iframe.parentNode.removeChild(iframe);
+      }, 1500);
+    }
+    var win = iframe.contentWindow;
+    if (win) {
+      win.addEventListener('afterprint', cleanup);
+      setTimeout(function () {
+        try {
+          win.focus();
+          win.print();
+        } catch (e) {
+          cleanup();
+          window.alert('Could not open the print dialog. Try Download blank PDF instead.');
+        }
+      }, 400);
+    }
+    setTimeout(cleanup, 120000);
+  }
+
+  function openPrintSheet(mode, rows) {
+    var html = buildPrintHtml(mode, rows);
+    // Prefer same-page iframe print. window.open + document.write with noopener
+    // produced blank popups in Chromium; blob tabs are also blocked in some browsers.
+    printViaIframe(html);
   }
 
   function blankTableHtml(n) {
