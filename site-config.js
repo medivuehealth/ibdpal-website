@@ -3,8 +3,8 @@
 
   window.IBDPAL_SITE_CONFIG = Object.assign({}, window.IBDPAL_SITE_CONFIG, {
     webApiBase: '/api/web',
-    // Verified from Vercel Web Analytics (www.ibdpal.org) - Oct 25, 2026.
-    // Countries reached = 73 (Vercel Web Analytics country/page breakdown).
+    // Verified from Vercel Web Analytics (www.ibdpal.org) - Oct 29, 2026.
+    // Countries reached = 79 (Vercel Web Analytics country/page breakdown).
     // Sep 2026 projection refresh: displayed readers ~20K+ (was ~12.5K+ / prior 10.5K+).
     // Page views kept near the recent ~3.1x readers ratio seen in live header math.
     reachMetrics: {
@@ -20,8 +20,8 @@
       internationalGrowthPerDay: 0.003,
       maxInternationalMultiplier: 2.2,
       // Pin header "countries" to Vercel Analytics until the next verified refresh.
-      internationalCountriesVerified: 73,
-      internationalCountriesStart: 73,
+      internationalCountriesVerified: 79,
+      internationalCountriesStart: 79,
       internationalCountriesCap: 80,
       internationalCountriesPace: 0
     },
