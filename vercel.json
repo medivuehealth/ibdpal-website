@@ -10,6 +10,10 @@
   ],
   "rewrites": [
     {
+      "source": "/blog/skyrizi-subcutaneous-induction-crohns",
+      "destination": "/blogs/skyrizi-subcutaneous-induction-crohns.html"
+    },
+    {
       "source": "/blog/ulcerative-colitis-diet-overview-ibd",
       "destination": "/blogs/ulcerative-colitis-diet-overview-ibd.html"
     },

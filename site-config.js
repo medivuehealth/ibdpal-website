@@ -28,11 +28,11 @@
     // Canonical library counts for About Overview + Analytics (keep identical).
     // Refresh with: python scripts/refresh_content_counts.py
     librarySnapshot: {
-      asOf: '2026-10-11',
-      articles: 235,
+      asOf: '2026-11-01',
+      articles: 236,
       guides: 60,
-      resources: 364,
-      sitemap: 405
+      resources: 365,
+      sitemap: 406
     },
     // EN↔ES content pairs (see data/locale-mirrors.json). Unmirrored EN pages fall back to /es/recursos.
     localeMirrors: {

@@ -70,6 +70,8 @@ UPDATES_MONTHLY_SECTIONS_HTML = """
                         <h2>November 2026</h2>
                         <ul class="seo-landing__list">
                             <li><strong>News &amp; advocacy refresh:</strong> <a href="/#news">Latest</a> adds FDA subcutaneous Skyrizi induction for Crohn&rsquo;s and Omvoh one-year composite outcomes; <a href="/#news-advocacy">Advocacy</a> adds UnitedHealthcare Oct. 1 colonoscopy / endoscopy advance-notification rollback and refreshes Safe Step Act status to Nov. 2026</li>
+                            <li><strong>Treatment explainer:</strong> new ~10-minute article on <a href="/blog/skyrizi-subcutaneous-induction-crohns">Skyrizi subcutaneous induction for Crohn&rsquo;s</a> (AFFIRM results, home on-body injector, TB label note, insurance and clinic checklist)</li>
+                            <li><strong>Library snapshot:</strong> <strong>236</strong> articles, <strong>60</strong> guides, <strong>365</strong> resources, <strong>406</strong> sitemap URLs (Nov 1, 2026)</li>
                         </ul>
                     </section>
                     <section class="seo-landing__block updates-month">

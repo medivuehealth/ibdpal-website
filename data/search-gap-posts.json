@@ -692,6 +692,36 @@
         "Crohn's",
         "colitis"
       ]
+    },
+    {
+      "slug": "skyrizi-subcutaneous-induction-crohns",
+      "match_terms": [
+        "skyrizi subcutaneous induction",
+        "skyrizi sc induction",
+        "skyrizi home induction",
+        "skyrizi on body injector",
+        "risankizumab subcutaneous induction",
+        "skyrizi start at home",
+        "skyrizi affirm trial",
+        "skyrizi crohn's induction"
+      ],
+      "title": "Skyrizi Subcutaneous Induction for Crohn's: What the FDA Change Means",
+      "description": "FDA approved subcutaneous Skyrizi induction for adults with moderate to severe Crohn's disease (Oct 2026). Home on-body injector, AFFIRM results, TB label update, and clinic questions. Education only.",
+      "category": "Treatment · November 2026",
+      "date_display": "November 1, 2026",
+      "date_iso": "2026-11-01T23:30:00Z",
+      "asset_dir": "skyrizi-ibd",
+      "resource_category": "treatment",
+      "tags": [
+        "Skyrizi",
+        "risankizumab",
+        "IL-23",
+        "Crohn's",
+        "biologic",
+        "subcutaneous",
+        "induction",
+        "FDA"
+      ]
     }
   ]
 }
