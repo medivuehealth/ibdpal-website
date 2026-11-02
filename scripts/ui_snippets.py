@@ -67,6 +67,12 @@ BLOG_BACK_LINK_HTML = (
 
 UPDATES_MONTHLY_SECTIONS_HTML = """
                     <section class="seo-landing__block updates-month">
+                        <h2>November 2026</h2>
+                        <ul class="seo-landing__list">
+                            <li><strong>News &amp; advocacy refresh:</strong> <a href="/#news">Latest</a> adds FDA subcutaneous Skyrizi induction for Crohn&rsquo;s and Omvoh one-year composite outcomes; <a href="/#news-advocacy">Advocacy</a> adds UnitedHealthcare Oct. 1 colonoscopy / endoscopy advance-notification rollback and refreshes Safe Step Act status to Nov. 2026</li>
+                        </ul>
+                    </section>
+                    <section class="seo-landing__block updates-month">
                         <h2>October 2026</h2>
                         <ul class="seo-landing__list">
                             <li><strong>Reach refresh:</strong> header and Analytics countries counter updated to <strong>80</strong> from the verified Vercel Web Analytics country breakdown (Nov 1, 2026)</li>
@@ -279,21 +285,31 @@ METRICS_SUBTAB_HTML = """
 IBD_NEWS_TAB_HTML = """
                 <article class="support-section seo-landing tab-page-section">
                     <h1>IBD Policy &amp; Advocacy News</h1>
-                    <p class="support-intro">Federal and state IBD policy highlights with links to the <a href="https://www.crohnscolitisfoundation.org/" rel="noopener noreferrer">Crohn&rsquo;s &amp; Colitis Foundation</a>. Updated October 2026. Education only. For research headlines see <a href="/#news">News &rarr; Latest news</a>.</p>
+                    <p class="support-intro">Federal and state IBD policy highlights with links to the <a href="https://www.crohnscolitisfoundation.org/" rel="noopener noreferrer">Crohn&rsquo;s &amp; Colitis Foundation</a>. Updated November 2026. Education only. For research headlines see <a href="/#news">News &rarr; Latest news</a>.</p>
 
                     <section class="seo-landing__block ibd-news-featured">
                         <h2>Active in 2026</h2>
                         <article class="ibd-news-card">
-                            <p class="ibd-news-card__tag">Congress &middot; Step therapy &middot; Pending &middot; Updated Oct. 2026</p>
+                            <p class="ibd-news-card__tag">Congress &middot; Step therapy &middot; Pending &middot; Updated Nov. 2026</p>
                             <h3 class="ibd-news-card__title">Safe Step Act: ~46 Senate cosponsors, still awaiting floor action</h3>
                             <p>The <strong>Safe Step Act</strong> (H.R. 5509 / S. 2903) would require group health plans to offer a clear, timely exceptions process when step therapy is not in a patient&rsquo;s best interest. More than 40% of IBD patients report step therapy barriers that delay doctor-prescribed care.</p>
-                            <p>As of early October 2026, S. 2903 lists roughly <strong>46 Senate cosponsors</strong> (bipartisan) plus the sponsor, per public bill trackers, while remaining in the early legislative stage. Ask your members of Congress to cosponsor and move the bill.</p>
+                            <p>As of early November 2026, S. 2903 still lists roughly <strong>46 Senate cosponsors</strong> (bipartisan) plus the sponsor on public trackers, after a March 2026 HELP Committee hearing. The bill has not yet cleared committee for floor votes. Ask your members of Congress to cosponsor and move the bill.</p>
                             <p class="ibd-news-card__actions">
                                 <a href="https://www.crohnscolitisfoundation.org/get-involved/be-advocate/advocacy-priorities/step-therapy/federal-safe-step-act" rel="noopener noreferrer">Safe Step Act overview</a>
                                 &middot;
                                 <a href="https://action.crohnscolitisfoundation.org/a/ssa-webpage" rel="noopener noreferrer">Ask Congress to pass it</a>
                                 &middot;
                                 <a href="https://www.govtrack.us/congress/bills/119/s2903" rel="noopener noreferrer">GovTrack: S. 2903</a>
+                            </p>
+                        </article>
+                        <article class="ibd-news-card">
+                            <p class="ibd-news-card__tag">Insurer policy &middot; Colonoscopy access &middot; In effect Oct. 1, 2026</p>
+                            <h3 class="ibd-news-card__title">UnitedHealthcare ends advance notification for many GI endoscopies</h3>
+                            <p>Effective <strong>Oct. 1, 2026</strong>, UnitedHealthcare commercial and Oxford NY/CT plans stopped requiring advance notification for selected GI endoscopy services (including diagnostic and surveillance colonoscopies) and ended related GI site-of-service reviews. Confirm each member&rsquo;s plan before scheduling.</p>
+                            <p class="ibd-news-card__actions">
+                                <a href="https://www.uhcprovider.com/en/resource-library/news/2026/gi-endoscopy-advance-notification.html" rel="noopener noreferrer">UHC provider notice</a>
+                                &middot;
+                                <a href="https://www.crohnscolitisfoundation.org/your-guide-to-navigating-prior-authorization" rel="noopener noreferrer">CCF prior authorization guide</a>
                             </p>
                         </article>
                         <article class="ibd-news-card">
@@ -315,9 +331,11 @@ IBD_NEWS_TAB_HTML = """
                         <h2>2026 policy timeline</h2>
                         <ul class="seo-landing__list">
                             <li><strong>Jan. 1, 2026:</strong> Faster prior authorization decision timelines under CMS-0057-F took effect for impacted federal plans</li>
+                            <li><strong>March 19, 2026:</strong> Senate HELP Committee hearing included the Safe Step Act (S. 2903)</li>
                             <li><strong>March 31, 2026:</strong> First public prior authorization performance metrics due from impacted payers</li>
                             <li><strong>Spring 2026:</strong> Foundation <strong>#IBDinDC</strong> Hill meetings on Safe Step Act, research funding, and pediatric access</li>
-                            <li><strong>Oct. 2026:</strong> Safe Step Act (S. 2903) still pending with roughly 46 Senate cosponsors</li>
+                            <li><strong>Oct. 1, 2026:</strong> UnitedHealthcare ends advance notification / GI site-of-service reviews for many colonoscopies and related endoscopies</li>
+                            <li><strong>Nov. 2026:</strong> Safe Step Act (S. 2903) still pending with roughly 46 Senate cosponsors</li>
                             <li><strong>Jan. 1, 2027:</strong> Prior authorization and interoperability FHIR APIs required in production (next milestone)</li>
                         </ul>
                     </section>
@@ -327,9 +345,10 @@ IBD_NEWS_TAB_HTML = """
                         <ul class="seo-landing__list">
                             <li><strong>#IBDinDC (2026):</strong> Crohn&rsquo;s &amp; Colitis Foundation volunteers met with Members of Congress on Safe Step Act, research funding, and pediatric access</li>
                             <li><strong>Step therapy hearing:</strong> Rep. Lucy McBath and patient advocates highlighted how fail-first protocols can delay biologics</li>
-                            <li><strong>Prior auth pushback:</strong> After thousands of patient letters and a rally, UnitedHealthcare delayed a planned expansion of prior authorization for many endoscopy and colonoscopy procedures</li>
+                            <li><strong>Young-adult access survey:</strong> about 35% of young adults with IBD reported step-therapy mandates in a year</li>
+                            <li><strong>Prior auth progress:</strong> UnitedHealthcare&rsquo;s Oct. 1, 2026 endoscopy notification rollback follows years of colonoscopy-access advocacy</li>
                         </ul>
-                        <p><em>Source: Crohn&rsquo;s &amp; Colitis Foundation federal and grassroots advocacy updates.</em></p>
+                        <p><em>Source: Crohn&rsquo;s &amp; Colitis Foundation federal and grassroots advocacy updates; UnitedHealthcare provider notices.</em></p>
                     </section>
 
                     <section class="seo-landing__block">
