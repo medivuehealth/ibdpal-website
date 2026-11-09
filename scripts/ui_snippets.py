@@ -69,6 +69,7 @@ UPDATES_MONTHLY_SECTIONS_HTML = """
                     <section class="seo-landing__block updates-month">
                         <h2>November 2026</h2>
                         <ul class="seo-landing__list">
+                            <li><strong>Reach refresh:</strong> header and Analytics countries counter updated to <strong>84</strong> from the verified Vercel Web Analytics country breakdown (Nov 8, 2026)</li>
                             <li><strong>Reach refresh:</strong> header and Analytics countries counter updated to <strong>83</strong> from the verified Vercel Web Analytics country breakdown (Nov 4, 2026)</li>
                             <li><strong>News &amp; advocacy refresh:</strong> <a href="/#news">Latest</a> adds FDA subcutaneous Skyrizi induction for Crohn&rsquo;s and Omvoh one-year composite outcomes; <a href="/#news-advocacy">Advocacy</a> adds UnitedHealthcare Oct. 1 colonoscopy / endoscopy advance-notification rollback and refreshes Safe Step Act status to Nov. 2026</li>
                             <li><strong>Treatment explainer:</strong> new ~10-minute article on <a href="/blog/skyrizi-subcutaneous-induction-crohns">Skyrizi subcutaneous induction for Crohn&rsquo;s</a> (AFFIRM results, home on-body injector, TB label note, insurance and clinic checklist)</li>
