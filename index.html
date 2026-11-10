@@ -3250,6 +3250,84 @@
                 </section>
             </div>
 
+            <!-- Student Research Tab -->
+            <div class="tab-content" id="student-research">
+                <article class="support-section seo-landing tab-page-section">
+                    <h1>Student Research</h1>
+                    <p class="support-intro">A place for student and early-career researchers to share IBD-related work aligned with IBDPal topics. Education only - not medical advice. Featured and approved papers link to original venues.</p>
+
+                    <section class="seo-landing__block">
+                        <h2>Featured publications</h2>
+                        <div id="student-research-featured">
+                            <article class="ibd-news-card" id="nhsjs-stem-cell-crohns-2025">
+                                <p class="ibd-news-card__tag">Featured &middot; NHSJS &middot; 2025</p>
+                                <h3 class="ibd-news-card__title"><a href="https://nhsjs.com/2025/stem-cell-therapeutics-for-crohns-disease/" rel="noopener noreferrer">Stem Cell Therapeutics for Crohn&rsquo;s Disease</a></h3>
+                                <p class="research-source-meta"><strong>Aryan Shashi Kumar</strong> · National High School Journal of Science · February 26, 2025</p>
+                                <p>Current IBD treatments including biologics can reduce inflammation but often cannot achieve durable remission. This review summarizes regenerative and immune-modulating potential of stem cell approaches for Crohn&rsquo;s disease, including tissue repair themes, clinical-trial signals, limitations, and future directions.</p>
+                                <p class="research-source-meta"><em>External journal publication. IBDPal links for education only and does not provide medical advice.</em></p>
+                                <p class="ibd-news-card__actions">
+                                    <a href="https://nhsjs.com/2025/stem-cell-therapeutics-for-crohns-disease/" rel="noopener noreferrer">Read on NHSJS →</a>
+                                    &middot;
+                                    <a href="/#research-publications" data-library-subtab-link="research-publications">Research Publications</a>
+                                </p>
+                            </article>
+                        </div>
+                        <div id="student-research-approved-feed" aria-live="polite"></div>
+                    </section>
+
+                    <section class="seo-landing__block">
+                        <h2>Propose your paper</h2>
+                        <p>Tell us about student research related to Crohn&rsquo;s, ulcerative colitis, nutrition, biologics, autoimmune associations, or related IBDPal topics. We review proposals manually before publishing.</p>
+                        <form class="student-research-form" id="student-research-interest-form" novalidate>
+                            <label>Full name
+                                <input type="text" name="fullName" required maxlength="120" autocomplete="name">
+                            </label>
+                            <label>Email
+                                <input type="email" name="email" required maxlength="160" autocomplete="email">
+                            </label>
+                            <label>School or program
+                                <input type="text" name="school" maxlength="160" autocomplete="organization">
+                            </label>
+                            <label>Topic cluster
+                                <select name="topic">
+                                    <option value="IBD / Crohn&apos;s / UC">IBD / Crohn&apos;s / UC</option>
+                                    <option value="Nutrition">Nutrition</option>
+                                    <option value="Biologics / treatment">Biologics / treatment</option>
+                                    <option value="Autoimmune associations">Autoimmune associations</option>
+                                    <option value="Extraintestinal manifestations">Extraintestinal manifestations</option>
+                                    <option value="Other site-aligned topic">Other site-aligned topic</option>
+                                </select>
+                            </label>
+                            <label>Paper title
+                                <input type="text" name="title" required maxlength="240">
+                            </label>
+                            <label>URL or DOI
+                                <input type="url" name="externalUrl" maxlength="400" placeholder="https://...">
+                            </label>
+                            <label>Abstract or summary
+                                <textarea name="abstract" maxlength="4000" placeholder="Short abstract or plain-language summary"></textarea>
+                            </label>
+                            <div class="student-research-form__actions">
+                                <button type="submit" class="cta-button">Submit proposal</button>
+                                <a href="/admin/student-research">Researcher sign-in / admin</a>
+                            </div>
+                            <p class="student-research-status" id="student-research-interest-status" role="status"></p>
+                        </form>
+                    </section>
+
+                    <section class="seo-landing__block">
+                        <h2>Topic alignment</h2>
+                        <ul class="seo-landing__list">
+                            <li><a href="/ibd-autoimmune-associations">IBD autoimmune associations hub</a></li>
+                            <li><a href="/#research-publications" data-library-subtab-link="research-publications">Research Publications</a></li>
+                            <li><a href="/guides">Patient guides</a></li>
+                            <li><a href="/blog">Articles</a></li>
+                            <li><a href="/partners">Partners &amp; programs</a> (manufacturer materials belong there, not in Student Research)</li>
+                        </ul>
+                    </section>
+                </article>
+            </div>
+
             <!-- About Tab -->
             <div class="tab-content" id="about">
                 <section class="about-tab-shell">
@@ -3266,7 +3344,7 @@
                 <article class="support-section seo-landing tab-page-section tab-page-section--compact">
                     <header class="page-header-compact">
                         <h2 class="page-header-compact__title">Free nonprofit IBD education from MediVue</h1></h2>
-                        <p class="page-header-compact__lead"><span data-library-metric="sitemap">406</span> sitemap pages &amp; iOS app &middot; not medical advice</p>
+                        <p class="page-header-compact__lead"><span data-library-metric="sitemap">407</span> sitemap pages &amp; iOS app &middot; not medical advice</p>
                     </header>
                     <section class="seo-landing__block">
                         <h2>Who we are</h2>
@@ -3276,11 +3354,11 @@
                     <section class="seo-landing__block">
                         <h2>What you will find here</h2>
                         <ul class="seo-landing__list">
-                            <li><a href="/#articles"><span data-library-metric="articles">236</span> in-depth articles</a> on nutrition, treatment, wellness, autoimmune topics, associations, and daily life</li>
+                            <li><a href="/#articles"><span data-library-metric="articles">237</span> in-depth articles</a> on nutrition, treatment, wellness, autoimmune topics, associations, and daily life</li>
                             <li><a href="/guides"><span data-library-metric="guides">60</span> step-by-step patient guides</a></li>
-                            <li><a href="/resources"><span data-library-metric="resources">365</span> searchable resource library entries</a></li>
+                            <li><a href="/resources"><span data-library-metric="resources">366</span> searchable resource library entries</a></li>
                             <li><a href="/#community">50+ state support pages</a> (all 50 states + DC)</li>
-                            <li><a href="/library"><span data-library-metric="sitemap">406</span> sitemap education and resource URLs</a></li>
+                            <li><a href="/library"><span data-library-metric="sitemap">407</span> sitemap education and resource URLs</a></li>
                             <li>Free <a href="/#app">IBDPal iOS app</a></li>
                         </ul>
                     </section>
@@ -3343,6 +3421,7 @@
                     <section class="seo-landing__block updates-month">
                         <h2>November 2026</h2>
                         <ul class="seo-landing__list">
+                            <li><strong>Search-gap article:</strong> new ~10-minute guide on <a href="/blog/seasonings-herbs-spices-ibd">seasonings, herbs, and spices with IBD</a>; aliases for seasoning/spice/herbal plus stronger Crohn diet search aliases for the existing overview</li>
                             <li><strong>Reach refresh:</strong> header and Analytics countries counter updated to <strong>84</strong> from the verified Vercel Web Analytics country breakdown (Nov 8, 2026)</li>
                             <li><strong>Reach refresh:</strong> header and Analytics countries counter updated to <strong>83</strong> from the verified Vercel Web Analytics country breakdown (Nov 4, 2026)</li>
                             <li><strong>News &amp; advocacy refresh:</strong> <a href="/#news">Latest</a> adds FDA subcutaneous Skyrizi induction for Crohn&rsquo;s and Omvoh one-year composite outcomes; <a href="/#news-advocacy">Advocacy</a> adds UnitedHealthcare Oct. 1 colonoscopy / endoscopy advance-notification rollback and refreshes Safe Step Act status to Nov. 2026</li>
@@ -3565,9 +3644,9 @@
                         </div>
                     </section>
                     <section class="seo-landing__block">
-                        <h2>Library snapshot (<span data-library-metric="asOf">Nov 1, 2026</span>)</h2>
+                        <h2>Library snapshot (<span data-library-metric="asOf">Nov 9, 2026</span>)</h2>
                         <ul class="seo-landing__list">
-                            <li><strong data-library-metric="articles">236</strong> articles · <strong data-library-metric="guides">60</strong> patient guides · <strong data-library-metric="resources">365</strong> resource library entries · <strong data-library-metric="sitemap">406</strong> sitemap URLs</li>
+                            <li><strong data-library-metric="articles">237</strong> articles · <strong data-library-metric="guides">60</strong> patient guides · <strong data-library-metric="resources">366</strong> resource library entries · <strong data-library-metric="sitemap">407</strong> sitemap URLs</li>
                             <li>Header reach matches the site banner (same live Vercel Analytics counters): <strong data-reach-metric="totalReaders" data-reach-count="0">0</strong> readers · <strong data-reach-metric="pageViews" data-reach-count="0">0</strong> views · <strong data-reach-metric="countries" data-reach-count="0">0</strong> countries</li>
                             <li>Website education pages do not collect personal health information; see <a href="/privacy">Website Privacy</a> and <a href="/privacy/app">App Privacy</a></li>
                         </ul>

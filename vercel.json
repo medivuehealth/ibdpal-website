@@ -10,6 +10,10 @@
   ],
   "rewrites": [
     {
+      "source": "/blog/seasonings-herbs-spices-ibd",
+      "destination": "/blogs/seasonings-herbs-spices-ibd.html"
+    },
+    {
       "source": "/blog/skyrizi-subcutaneous-induction-crohns",
       "destination": "/blogs/skyrizi-subcutaneous-induction-crohns.html"
     },
