@@ -85,11 +85,29 @@ def partner_cards(items: list[dict], *, compact: bool = False) -> str:
 def partners_panel_html(data: dict) -> str:
     items = data.get("items", [])
     intro = html.escape(data.get("intro", ""))
+    underwriters = """                        <section class="seo-landing__block ibd-news-featured" aria-labelledby="education-underwriters-heading">
+                            <article class="ibd-news-card" id="education-underwriters-2026">
+                                <p class="ibd-news-card__tag">MediVue &middot; Education underwriting &middot; Nov. 14, 2026</p>
+                                <h3 class="ibd-news-card__title" id="education-underwriters-heading">Education underwriters welcome &mdash; 91 countries</h3>
+                                <p>IBDPal now reaches readers in <strong>91 countries</strong> (~20K+ readers, 237 articles, 407 education pages). MediVue invites specialty pharmacy, nutrition, clinic, and patient-support teams to <strong>underwrite free education</strong> or propose a labeled Partners listing&mdash;not product ads and not endorsements.</p>
+                                <p>We do <strong>not</strong> sell visitor or health data. Sponsors support education; patients keep privacy. Email <a href="mailto:info@ibdpal.org?subject=Education%20underwriting">info@ibdpal.org</a> with your program name and public URL.</p>
+                                <p class="ibd-news-card__actions">
+                                    <a href="/partners/media-kit">Partner media kit</a>
+                                    &middot;
+                                    <a href="/impact">Impact</a>
+                                    &middot;
+                                    <a href="/clinical-partnerships">Clinical partnerships</a>
+                                    &middot;
+                                    <a href="mailto:info@ibdpal.org?subject=Education%20underwriting">Email MediVue</a>
+                                </p>
+                            </article>
+                        </section>"""
     return f"""                <div class="news-subcontent" id="news-partners">
                     <article class="support-section seo-landing tab-page-section">
-                        <h1>Partners &amp; programs</h1>
+                        <h2>Partners &amp; programs</h2>
                         <p class="support-intro">{intro}</p>
                         <p class="support-intro">Propose a listing: <a href="/partners/media-kit">Partner media kit</a> · <a href="mailto:info@ibdpal.org">info@ibdpal.org</a></p>
+{underwriters}
                         <section class="seo-landing__block partner-promo-grid" id="partner-promo-grid">
 <!-- partner-cards -->
 {partner_cards(items)}
@@ -250,6 +268,23 @@ def write_partners_page(data: dict) -> None:
                 <h1>Partners &amp; programs</h1>
                 <p class="support-intro">{html.escape(data.get("intro", ""))}</p>
                 <p class="support-intro"><a href="/partners/media-kit">Media kit for promoters</a> · <a href="mailto:info@ibdpal.org">Propose a listing</a> · <a href="/#news-partners">View in News tab</a></p>
+                <section class="seo-landing__block ibd-news-featured" aria-labelledby="education-underwriters-heading">
+                    <article class="ibd-news-card" id="education-underwriters-2026">
+                        <p class="ibd-news-card__tag">MediVue &middot; Education underwriting &middot; Nov. 14, 2026</p>
+                        <h3 class="ibd-news-card__title" id="education-underwriters-heading">Education underwriters welcome &mdash; 91 countries</h3>
+                        <p>IBDPal now reaches readers in <strong>91 countries</strong> (~20K+ readers, 237 articles, 407 education pages). MediVue invites specialty pharmacy, nutrition, clinic, and patient-support teams to <strong>underwrite free education</strong> or propose a labeled Partners listing&mdash;not product ads and not endorsements.</p>
+                        <p>We do <strong>not</strong> sell visitor or health data. Sponsors support education; patients keep privacy. Email <a href="mailto:info@ibdpal.org?subject=Education%20underwriting">info@ibdpal.org</a> with your program name and public URL.</p>
+                        <p class="ibd-news-card__actions">
+                            <a href="/partners/media-kit">Partner media kit</a>
+                            &middot;
+                            <a href="/impact">Impact</a>
+                            &middot;
+                            <a href="/clinical-partnerships">Clinical partnerships</a>
+                            &middot;
+                            <a href="mailto:info@ibdpal.org?subject=Education%20underwriting">Email MediVue</a>
+                        </p>
+                    </article>
+                </section>
                 <section class="seo-landing__block partner-promo-grid">
 {partner_cards(items)}
                 </section>
