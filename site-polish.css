@@ -4482,7 +4482,9 @@ a.tab-button,
 
 .ask-question__field textarea,
 .ask-question__field input[type="text"],
-.ask-question__field input[type="email"] {
+.ask-question__field input[type="email"],
+.ask-question__field input[type="url"],
+.ask-question__field select {
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;

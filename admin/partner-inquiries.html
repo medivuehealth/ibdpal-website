@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#FFE5DC">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Partner Inquiries Admin | IBDPal</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/site-layout-icn.css">
+    <link rel="stylesheet" href="/site-polish.css">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.ibdpal.org/sitemap.xml">
+</head>
+<body>
+    <div class="admin-research-shell">
+        <h1>Partner inquiries desk</h1>
+        <p>Review education-underwriting and Partners listing requests saved from the public form. Public page: <a href="/partners/media-kit#partner-inquiry-form">/partners/media-kit</a>. This page is noindex.</p>
+
+        <section class="seo-landing__block">
+            <h2>Admin access</h2>
+            <form class="student-research-form" id="pi-admin-form">
+                <label>Admin token <input type="password" name="adminToken" required autocomplete="off"></label>
+                <button type="submit">Load inquiries</button>
+            </form>
+            <p class="student-research-status" id="pi-admin-status" role="status"></p>
+        </section>
+
+        <section class="seo-landing__block" id="pi-list-section" hidden>
+            <h2>Queue</h2>
+            <p>
+                <button type="button" id="pi-filter-new" class="ask-question__submit">New only</button>
+                <button type="button" id="pi-filter-all" class="ask-question__submit">All</button>
+            </p>
+            <div id="pi-admin-list"></div>
+        </section>
+
+        <p><a href="/partners/media-kit">Media kit</a> · <a href="/admin/reader-questions">Reader questions desk</a> · <a href="/">Home</a></p>
+    </div>
+    <script src="/site-config.js" defer></script>
+    <script src="/partner-inquiries-admin.js" defer></script>
+</body>
+</html>

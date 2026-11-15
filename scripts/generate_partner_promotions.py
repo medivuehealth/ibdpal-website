@@ -90,15 +90,15 @@ def partners_panel_html(data: dict) -> str:
                                 <p class="ibd-news-card__tag">MediVue &middot; Education underwriting &middot; Nov. 14, 2026</p>
                                 <h3 class="ibd-news-card__title" id="education-underwriters-heading">Education underwriters welcome &mdash; 91 countries</h3>
                                 <p>IBDPal now reaches readers in <strong>91 countries</strong> (~20K+ readers, 237 articles, 407 education pages). MediVue invites specialty pharmacy, nutrition, clinic, and patient-support teams to <strong>underwrite free education</strong> or propose a labeled Partners listing&mdash;not product ads and not endorsements.</p>
-                                <p>We do <strong>not</strong> sell visitor or health data. Sponsors support education; patients keep privacy. Email <a href="mailto:info@ibdpal.org?subject=Education%20underwriting">info@ibdpal.org</a> with your program name and public URL.</p>
+                                <p>We do <strong>not</strong> sell visitor or health data. Sponsors support education; patients keep privacy. Submit the short <a href="/partners/media-kit#partner-inquiry">partner inquiry form</a> (saved for MediVue review&mdash;no email required).</p>
                                 <p class="ibd-news-card__actions">
+                                    <a href="/partners/media-kit#partner-inquiry">Submit inquiry</a>
+                                    &middot;
                                     <a href="/partners/media-kit">Partner media kit</a>
                                     &middot;
                                     <a href="/impact">Impact</a>
                                     &middot;
                                     <a href="/clinical-partnerships">Clinical partnerships</a>
-                                    &middot;
-                                    <a href="mailto:info@ibdpal.org?subject=Education%20underwriting">Email MediVue</a>
                                 </p>
                             </article>
                         </section>"""
@@ -106,7 +106,7 @@ def partners_panel_html(data: dict) -> str:
                     <article class="support-section seo-landing tab-page-section">
                         <h2>Partners &amp; programs</h2>
                         <p class="support-intro">{intro}</p>
-                        <p class="support-intro">Propose a listing: <a href="/partners/media-kit">Partner media kit</a> · <a href="mailto:info@ibdpal.org">info@ibdpal.org</a></p>
+                        <p class="support-intro">Propose a listing: <a href="/partners/media-kit#partner-inquiry">Inquiry form</a> · <a href="/partners/media-kit">Partner media kit</a></p>
 {underwriters}
                         <section class="seo-landing__block partner-promo-grid" id="partner-promo-grid">
 <!-- partner-cards -->
@@ -267,21 +267,21 @@ def write_partners_page(data: dict) -> None:
             <article class="support-section seo-landing">
                 <h1>Partners &amp; programs</h1>
                 <p class="support-intro">{html.escape(data.get("intro", ""))}</p>
-                <p class="support-intro"><a href="/partners/media-kit">Media kit for promoters</a> · <a href="mailto:info@ibdpal.org">Propose a listing</a> · <a href="/#news-partners">View in News tab</a></p>
+                <p class="support-intro"><a href="/partners/media-kit">Media kit for promoters</a> · <a href="/partners/media-kit#partner-inquiry">Propose a listing</a> · <a href="/#news-partners">View in News tab</a></p>
                 <section class="seo-landing__block ibd-news-featured" aria-labelledby="education-underwriters-heading">
                     <article class="ibd-news-card" id="education-underwriters-2026">
                         <p class="ibd-news-card__tag">MediVue &middot; Education underwriting &middot; Nov. 14, 2026</p>
                         <h3 class="ibd-news-card__title" id="education-underwriters-heading">Education underwriters welcome &mdash; 91 countries</h3>
                         <p>IBDPal now reaches readers in <strong>91 countries</strong> (~20K+ readers, 237 articles, 407 education pages). MediVue invites specialty pharmacy, nutrition, clinic, and patient-support teams to <strong>underwrite free education</strong> or propose a labeled Partners listing&mdash;not product ads and not endorsements.</p>
-                        <p>We do <strong>not</strong> sell visitor or health data. Sponsors support education; patients keep privacy. Email <a href="mailto:info@ibdpal.org?subject=Education%20underwriting">info@ibdpal.org</a> with your program name and public URL.</p>
+                        <p>We do <strong>not</strong> sell visitor or health data. Sponsors support education; patients keep privacy. Submit the short <a href="/partners/media-kit#partner-inquiry">partner inquiry form</a> (saved for MediVue review&mdash;no email required).</p>
                         <p class="ibd-news-card__actions">
+                            <a href="/partners/media-kit#partner-inquiry">Submit inquiry</a>
+                            &middot;
                             <a href="/partners/media-kit">Partner media kit</a>
                             &middot;
                             <a href="/impact">Impact</a>
                             &middot;
                             <a href="/clinical-partnerships">Clinical partnerships</a>
-                            &middot;
-                            <a href="mailto:info@ibdpal.org?subject=Education%20underwriting">Email MediVue</a>
                         </p>
                     </article>
                 </section>
@@ -342,14 +342,8 @@ def write_media_kit() -> None:
 
                 <section class="seo-landing__block">
                     <h2>How to propose a listing</h2>
-                    <p>Email <a href="mailto:info@ibdpal.org?subject=Partner%20listing%20proposal">info@ibdpal.org</a> with:</p>
-                    <ul class="seo-landing__list">
-                        <li>Program name and official public URL</li>
-                        <li>One-paragraph patient-facing summary (education tone)</li>
-                        <li>Organization legal name and contact for updates</li>
-                        <li>Confirmation that materials may be summarized and linked with a non-endorsement label</li>
-                    </ul>
-                    <p>Phase 1 listings are free. We review proposals manually.</p>
+                    <p>Use the <a href="/partners/media-kit#partner-inquiry">partner inquiry form</a> on this page (saved to the MediVue partner desk). Do not rely on email.</p>
+                    <p>Phase 1 listings are free. Education underwriting is reviewed case by case.</p>
                 </section>
 
                 <section class="seo-landing__block">

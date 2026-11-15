@@ -23,6 +23,10 @@ const MIGRATIONS = [
   {
     file: path.join(ROOT, 'scripts', 'db', 'migration_add_reader_questions_answers.sql'),
     tableName: 'ibdpal_reader_questions'
+  },
+  {
+    file: path.join(ROOT, 'scripts', 'db', 'migration_add_ibdpal_partner_inquiries.sql'),
+    tableName: 'ibdpal_partner_inquiries'
   }
 ];
 

@@ -582,6 +582,22 @@
       "destination": "/admin/reader-questions.html"
     },
     {
+      "source": "/api/web/partner-inquiries",
+      "destination": "/api/web/partner-inquiries"
+    },
+    {
+      "source": "/api/web/partner-inquiries/admin",
+      "destination": "/api/web/partner-inquiries?action=admin-list"
+    },
+    {
+      "source": "/api/web/partner-inquiries/admin/update",
+      "destination": "/api/web/partner-inquiries?action=admin-update"
+    },
+    {
+      "source": "/admin/partner-inquiries",
+      "destination": "/admin/partner-inquiries.html"
+    },
+    {
       "source": "/ask/:slug",
       "destination": "/ask-answer.html"
     },
