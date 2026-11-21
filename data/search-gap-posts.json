@@ -759,6 +759,218 @@
         "colitis",
         "flare"
       ]
+    },
+    {
+      "slug": "therapeutic-drug-monitoring-ibd",
+      "match_terms": [
+        "therapeutic drug monitoring",
+        "tdm ibd",
+        "biologic drug levels",
+        "antidrug antibodies",
+        "drug level biologic",
+        "infliximab level",
+        "adalimumab level",
+        "antibody to biologic"
+      ],
+      "title": "Therapeutic Drug Monitoring in IBD: Drug Levels and Antibodies Explained",
+      "description": "Therapeutic drug monitoring (TDM) for IBD biologics: trough levels, antidrug antibodies, proactive vs reactive testing, and clinic questions. Education only.",
+      "category": "Treatment · November 2026",
+      "date_display": "November 21, 2026",
+      "date_iso": "2026-11-21T22:00:00Z",
+      "asset_dir": "therapeutic-drug-monitoring-ibd",
+      "resource_category": "treatment",
+      "tags": [
+        "TDM",
+        "therapeutic drug monitoring",
+        "biologics",
+        "antibodies",
+        "drug levels",
+        "Crohn's",
+        "colitis",
+        "treatment"
+      ]
+    },
+    {
+      "slug": "when-ibd-biologic-stops-working",
+      "match_terms": [
+        "biologic stops working",
+        "loss of response biologic",
+        "secondary loss of response",
+        "primary nonresponse",
+        "biologic failing",
+        "biologic not working anymore",
+        "switch biologic crohn"
+      ],
+      "title": "What Happens When an IBD Biologic Stops Working?",
+      "description": "Primary nonresponse and secondary loss of response to IBD biologics: what those terms mean, TDM questions, and next-step conversations. Education only.",
+      "category": "Treatment · November 2026",
+      "date_display": "November 21, 2026",
+      "date_iso": "2026-11-21T22:00:00Z",
+      "asset_dir": "when-ibd-biologic-stops-working",
+      "resource_category": "treatment",
+      "tags": [
+        "biologics",
+        "loss of response",
+        "nonresponse",
+        "treatment",
+        "Crohn's",
+        "colitis"
+      ]
+    },
+    {
+      "slug": "ibd-medication-monitoring-checklist",
+      "match_terms": [
+        "medication monitoring ibd",
+        "biologic lab monitoring",
+        "ibd lab checklist",
+        "immunosuppressant monitoring",
+        "tb test before biologic",
+        "hepatitis screen biologic"
+      ],
+      "title": "IBD Medication Monitoring Checklist: Labs, Screens, and Follow-Up Questions",
+      "description": "Practical IBD medication monitoring checklist: baseline screens, labs on immunomodulators and biologics, vaccines, and visit questions. Education only.",
+      "category": "Treatment · November 2026",
+      "date_display": "November 21, 2026",
+      "date_iso": "2026-11-21T22:00:00Z",
+      "asset_dir": "ibd-medication-monitoring-checklist",
+      "resource_category": "treatment",
+      "tags": [
+        "monitoring",
+        "labs",
+        "biologics",
+        "vaccines",
+        "checklist",
+        "treatment"
+      ]
+    },
+    {
+      "slug": "ibd-insurance-denial-appeal-toolkit",
+      "match_terms": [
+        "insurance denial appeal ibd",
+        "biologic denial appeal",
+        "appeal letter crohn",
+        "prior authorization denied",
+        "peer to peer biologic",
+        "insurance appeal toolkit"
+      ],
+      "title": "IBD Insurance Denial Appeal Toolkit: A Practical Patient Worksheet",
+      "description": "IBD insurance denial appeal toolkit: worksheet for prior auth denials, peer-to-peer, Foundation letter resources, and clinic talking points. Education only.",
+      "category": "Insurance · November 2026",
+      "date_display": "November 21, 2026",
+      "date_iso": "2026-11-21T22:00:00Z",
+      "asset_dir": "ibd-insurance-denial-appeal-toolkit",
+      "resource_category": "getting-started",
+      "tags": [
+        "insurance",
+        "appeal",
+        "prior authorization",
+        "biologics",
+        "denial"
+      ]
+    },
+    {
+      "slug": "ibd-treatment-comparison-guide",
+      "match_terms": [
+        "ibd treatment comparison",
+        "biologic vs jak inhibitor",
+        "crohn treatment options",
+        "ulcerative colitis medicine classes",
+        "compare ibd drugs",
+        "treatment classes ibd"
+      ],
+      "title": "IBD Treatment Comparison Guide: Classes, Not Brand Pitches",
+      "description": "Patient-level comparison of IBD treatment classes: aminosalicylates, steroids, immunomodulators, biologics, and small molecules. Education only.",
+      "category": "Treatment · November 2026",
+      "date_display": "November 21, 2026",
+      "date_iso": "2026-11-21T22:00:00Z",
+      "asset_dir": "ibd-treatment-comparison-guide",
+      "resource_category": "treatment",
+      "tags": [
+        "treatment",
+        "biologics",
+        "JAK",
+        "steroids",
+        "comparison",
+        "Crohn's",
+        "colitis"
+      ]
+    },
+    {
+      "slug": "after-ibd-surgery-first-30-days",
+      "match_terms": [
+        "after ibd surgery",
+        "first 30 days after crohn surgery",
+        "recovery after colectomy",
+        "home after bowel surgery",
+        "ostomy first month",
+        "post op ibd recovery"
+      ],
+      "title": "After IBD Surgery: Your First 30 Days at Home",
+      "description": "First 30 days at home after IBD surgery: wound and ostomy themes, diet advances, red flags, and clinic follow-up questions. Education only.",
+      "category": "Surgery · November 2026",
+      "date_display": "November 21, 2026",
+      "date_iso": "2026-11-21T22:00:00Z",
+      "asset_dir": "after-ibd-surgery-first-30-days",
+      "resource_category": "wellness",
+      "tags": [
+        "surgery",
+        "recovery",
+        "ostomy",
+        "J-pouch",
+        "post-op",
+        "Crohn's",
+        "colitis"
+      ]
+    },
+    {
+      "slug": "understanding-ibd-pathology-report",
+      "match_terms": [
+        "ibd pathology report",
+        "read pathology report colitis",
+        "biopsy results crohn",
+        "dysplasia ibd pathology",
+        "chronic colitis pathology",
+        "understanding biopsy report ibd"
+      ],
+      "title": "Understanding Your IBD Pathology Report: Beyond the Colonoscopy Note",
+      "description": "How to read IBD pathology language: inflammation, chronicity, dysplasia, and questions to ask after biopsies. Education only, not DIY diagnosis.",
+      "category": "Diagnostics · November 2026",
+      "date_display": "November 21, 2026",
+      "date_iso": "2026-11-21T22:00:00Z",
+      "asset_dir": "understanding-ibd-pathology-report",
+      "resource_category": "wellness",
+      "tags": [
+        "pathology",
+        "biopsy",
+        "colonoscopy",
+        "dysplasia",
+        "diagnostics"
+      ]
+    },
+    {
+      "slug": "ibd-clinical-trials-patient-decision-guide",
+      "match_terms": [
+        "ibd clinical trial guide",
+        "crohn clinical trial questions",
+        "should i join ibd study",
+        "informed consent ibd trial",
+        "clinical trial eligibility ulcerative colitis",
+        "patient guide clinical trials ibd"
+      ],
+      "title": "IBD Clinical Trials: A Patient Decision Guide",
+      "description": "IBD clinical trials patient guide: phases, eligibility, informed consent, risks and benefits questions, and how to search responsibly. Education only.",
+      "category": "Research · November 2026",
+      "date_display": "November 21, 2026",
+      "date_iso": "2026-11-21T22:00:00Z",
+      "asset_dir": "ibd-clinical-trials-patient-decision-guide",
+      "resource_category": "clinical",
+      "tags": [
+        "clinical trials",
+        "research",
+        "informed consent",
+        "Crohn's",
+        "colitis"
+      ]
     }
   ]
 }

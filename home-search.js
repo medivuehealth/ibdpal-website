@@ -37,7 +37,20 @@
       '/blog/cded-crohns-exclusion-diet-ibd',
       '/blog/specific-carbohydrate-diet-scd-ibd',
       '/eating-with-ibd'
-    ]
+    ],
+    tdm: ['/blog/therapeutic-drug-monitoring-ibd'],
+    'therapeutic drug monitoring': ['/blog/therapeutic-drug-monitoring-ibd'],
+    'drug levels': ['/blog/therapeutic-drug-monitoring-ibd'],
+    'antidrug antibodies': ['/blog/therapeutic-drug-monitoring-ibd'],
+    'biologic stops working': ['/blog/when-ibd-biologic-stops-working'],
+    'loss of response': ['/blog/when-ibd-biologic-stops-working'],
+    'medication monitoring': ['/blog/ibd-medication-monitoring-checklist'],
+    'insurance denial': ['/blog/ibd-insurance-denial-appeal-toolkit'],
+    'appeal toolkit': ['/blog/ibd-insurance-denial-appeal-toolkit'],
+    'treatment comparison': ['/blog/ibd-treatment-comparison-guide'],
+    'after surgery': ['/blog/after-ibd-surgery-first-30-days'],
+    'pathology report': ['/blog/understanding-ibd-pathology-report'],
+    'clinical trials': ['/blog/ibd-clinical-trials-patient-decision-guide']
   };
 
   function escapeHtml(s) {

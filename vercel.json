@@ -10,6 +10,38 @@
   ],
   "rewrites": [
     {
+      "source": "/blog/therapeutic-drug-monitoring-ibd",
+      "destination": "/blogs/therapeutic-drug-monitoring-ibd.html"
+    },
+    {
+      "source": "/blog/when-ibd-biologic-stops-working",
+      "destination": "/blogs/when-ibd-biologic-stops-working.html"
+    },
+    {
+      "source": "/blog/ibd-medication-monitoring-checklist",
+      "destination": "/blogs/ibd-medication-monitoring-checklist.html"
+    },
+    {
+      "source": "/blog/ibd-insurance-denial-appeal-toolkit",
+      "destination": "/blogs/ibd-insurance-denial-appeal-toolkit.html"
+    },
+    {
+      "source": "/blog/ibd-treatment-comparison-guide",
+      "destination": "/blogs/ibd-treatment-comparison-guide.html"
+    },
+    {
+      "source": "/blog/after-ibd-surgery-first-30-days",
+      "destination": "/blogs/after-ibd-surgery-first-30-days.html"
+    },
+    {
+      "source": "/blog/understanding-ibd-pathology-report",
+      "destination": "/blogs/understanding-ibd-pathology-report.html"
+    },
+    {
+      "source": "/blog/ibd-clinical-trials-patient-decision-guide",
+      "destination": "/blogs/ibd-clinical-trials-patient-decision-guide.html"
+    },
+    {
       "source": "/blog/seasonings-herbs-spices-ibd",
       "destination": "/blogs/seasonings-herbs-spices-ibd.html"
     },
