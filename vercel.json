@@ -10,6 +10,10 @@
   ],
   "rewrites": [
     {
+      "source": "/treatment-decisions",
+      "destination": "/treatment-decisions.html"
+    },
+    {
       "source": "/blog/therapeutic-drug-monitoring-ibd",
       "destination": "/blogs/therapeutic-drug-monitoring-ibd.html"
     },

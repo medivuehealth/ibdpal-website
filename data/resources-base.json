@@ -170,6 +170,23 @@
     "tags": ["flare", "urgent", "symptoms"]
   },
   {
+    "title": "IBD Treatment Decisions & Monitoring Hub",
+    "category": "treatment",
+    "type": "site",
+    "url": "/treatment-decisions",
+    "tags": [
+      "treatment",
+      "TDM",
+      "therapeutic drug monitoring",
+      "biologics",
+      "monitoring",
+      "loss of response",
+      "insurance",
+      "visit prep"
+    ],
+    "description": "Independent hub linking TDM, biologic loss of response, medication monitoring, biologics, labs, insurance, and visit prep."
+  },
+  {
     "title": "Teens & School Hub",
     "category": "family",
     "type": "site",

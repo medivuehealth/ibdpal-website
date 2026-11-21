@@ -377,6 +377,20 @@ def render_hub(hub: dict, posts: dict[str, dict]) -> str:
     path = f"/{hub['slug']}"
     guide_links = [(g["url"], g["label"]) for g in hub.get("guides", [])]
     blog_items = [posts[s] for s in hub.get("blog_slugs", []) if s in posts]
+    featured = ""
+    featured_links = hub.get("featured_links") or hub.get("start_here") or []
+    if featured_links:
+        items = []
+        for item in featured_links:
+            label = html.escape(item["label"])
+            url = html.escape(item["url"])
+            blurb = item.get("blurb") or item.get("description") or ""
+            blurb_html = f"<br><span>{html.escape(blurb)}</span>" if blurb else ""
+            items.append(f'<li><a href="{url}"><strong>{label}</strong></a>{blurb_html}</li>')
+        featured = (
+            '<section class="seo-landing__block"><h2>Start here</h2>'
+            f'<ul class="seo-landing__list">{"".join(items)}</ul></section>'
+        )
     sections = ""
     for sec in hub.get("sections", []):
         paras = "".join(f"<p>{html.escape(p)}</p>" for p in sec.get("paragraphs", []))
@@ -387,6 +401,7 @@ def render_hub(hub: dict, posts: dict[str, dict]) -> str:
                 <h1>{html.escape(hub['h1'])}</h1>
                 <p class="support-intro support-intro--hub">{html.escape(hub['intro'])}</p>
                 {hub_header_footnote_en()}
+{featured}
 {sections}
                 <section class="seo-landing__block"><h2>Patient guides</h2>{link_list(guide_links)}</section>
                 <section class="seo-landing__block"><h2>Related articles</h2><div class="blog-index-grid">{blog_cards(blog_items)}</div></section>

@@ -50,7 +50,10 @@
     'treatment comparison': ['/blog/ibd-treatment-comparison-guide'],
     'after surgery': ['/blog/after-ibd-surgery-first-30-days'],
     'pathology report': ['/blog/understanding-ibd-pathology-report'],
-    'clinical trials': ['/blog/ibd-clinical-trials-patient-decision-guide']
+    'clinical trials': ['/blog/ibd-clinical-trials-patient-decision-guide'],
+    'treatment decisions': ['/treatment-decisions'],
+    'treatment monitoring': ['/treatment-decisions'],
+    'monitoring hub': ['/treatment-decisions']
   };
 
   function escapeHtml(s) {

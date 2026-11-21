@@ -27,6 +27,7 @@ window.IBDPAL_RESOURCES = [
  { title: "IBD Support by State", category: "community", type: "site", url: "/support", tags: ["local", "map", "support group"] },
  { title: "IBD FAQ", category: "getting-started", type: "site", url: "/faq", tags: ["questions", "dairy", "diet", "flare"] },
  { title: "IBD Flare Help Hub", category: "wellness", type: "site", url: "/flare-help", tags: ["flare", "urgent", "symptoms"] },
+ { title: "IBD Treatment Decisions & Monitoring Hub", category: "treatment", type: "site", url: "/treatment-decisions", tags: ["treatment", "TDM", "therapeutic drug monitoring", "biologics", "monitoring", "loss of response", "insurance", "visit prep"], description: "Independent hub linking TDM, biologic loss of response, medication monitoring, biologics, labs, insurance, and visit prep." },
  { title: "Teens & School Hub", category: "family", type: "site", url: "/teens-and-school", tags: ["teen", "504", "school"] },
  { title: "Ulcerative Colitis Hub", category: "getting-started", type: "site", url: "/ulcerative-colitis", tags: ["colitis", "ulcerative colitis", "UC"] },
  { title: "Crohn's Disease Hub", category: "getting-started", type: "site", url: "/crohns-disease", tags: ["crohn", "crohn's disease"] },

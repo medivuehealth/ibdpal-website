@@ -471,6 +471,125 @@
         "hydration-tips-ibd",
         "stress-emotional-wellness-ibd"
       ]
+    },
+    {
+      "slug": "treatment-decisions",
+      "h1": "Treatment decisions and monitoring",
+      "title": "IBD Treatment Decisions & Monitoring Hub | Biologics, Labs, Insurance | IBDPal",
+      "description": "Independent IBD patient hub linking therapeutic drug monitoring, biologic loss of response, medication checklists, biologics, remission, labs, insurance, and visit prep. Education only.",
+      "intro": "Use this hub when you are choosing, monitoring, or rethinking IBD therapy. Start with drug levels and loss of response, then open the medication monitoring checklist. Related biologics, remission, lab, insurance, and visit-prep pages sit underneath so clinic conversations stay organized. Editorial decisions for IBDPal education remain independent.",
+      "keywords": [
+        "therapeutic drug monitoring",
+        "TDM IBD",
+        "biologic stops working",
+        "loss of response",
+        "medication monitoring checklist",
+        "IBD treatment decisions",
+        "biologic monitoring",
+        "IBD prior authorization",
+        "IBD visit prep",
+        "calprotectin labs",
+        "IBD remission"
+      ],
+      "featured_links": [
+        {
+          "url": "/blog/therapeutic-drug-monitoring-ibd",
+          "label": "Therapeutic drug monitoring: drug levels and antibodies",
+          "blurb": "Trough levels, antidrug antibodies, and clinic questions in plain language."
+        },
+        {
+          "url": "/blog/when-ibd-biologic-stops-working",
+          "label": "What happens when a biologic stops working?",
+          "blurb": "Primary nonresponse, secondary loss of response, and next-step conversations."
+        },
+        {
+          "url": "/blog/ibd-medication-monitoring-checklist",
+          "label": "IBD medication monitoring checklist",
+          "blurb": "Screens, labs, vaccines, and follow-up questions to keep on one list."
+        }
+      ],
+      "sections": [
+        {
+          "heading": "How to use this hub",
+          "paragraphs": [
+            "Read the Start here trio first if you are on a biologic or small molecule and need monitoring language for clinic.",
+            "Then open the guides and articles that match your situation: starting therapy, confirming remission, interpreting labs, navigating insurance, or preparing questions for a visit.",
+            "IBDPal publishes this hub as free patient education. It does not recommend a specific brand or replace your gastroenterologist."
+          ]
+        },
+        {
+          "heading": "When to seek urgent care",
+          "paragraphs": [
+            "Severe abdominal pain, heavy bleeding, high fever, dehydration, chest pain, or signs of a serious infusion reaction need prompt medical evaluation. Use your clinic on-call pathway or emergency care."
+          ]
+        }
+      ],
+      "guides": [
+        {
+          "url": "/guides/biologics-crohns-colitis",
+          "label": "Biologics for Crohn's and colitis overview"
+        },
+        {
+          "url": "/guides/biologics-questions-for-your-doctor",
+          "label": "Biologic questions for your doctor"
+        },
+        {
+          "url": "/guides/foundation-ibd-medication-guide",
+          "label": "Foundation medication guide"
+        },
+        {
+          "url": "/guides/ibd-prior-authorization-foundation",
+          "label": "Prior authorization guide"
+        },
+        {
+          "url": "/guides/foundation-ibd-appeal-letters",
+          "label": "Appeal letters bridge"
+        },
+        {
+          "url": "/guides/step-therapy-safe-step-act-ibd",
+          "label": "Step therapy and Safe Step Act"
+        },
+        {
+          "url": "/guides/crohns-doctor-visit-prep",
+          "label": "Doctor visit prep guide"
+        },
+        {
+          "url": "/visit-prep",
+          "label": "Printable visit prep checklist"
+        },
+        {
+          "url": "/stool-labs-decoder",
+          "label": "Stool and labs decoder hub"
+        },
+        {
+          "url": "/guides/foundation-ibd-clinical-trials",
+          "label": "Clinical trials Foundation bridge"
+        }
+      ],
+      "blog_slugs": [
+        "therapeutic-drug-monitoring-ibd",
+        "when-ibd-biologic-stops-working",
+        "ibd-medication-monitoring-checklist",
+        "ibd-treatment-comparison-guide",
+        "ibd-insurance-denial-appeal-toolkit",
+        "understanding-biologics-ibd",
+        "starting-biologic-first-12-weeks",
+        "what-remission-means-ibd",
+        "reading-ibd-labs-calprotectin-crp",
+        "high-calprotectin-what-next",
+        "insurance-biologics-ibd",
+        "prior-authorization-biologics-timeline",
+        "vaccines-biologics-immunosuppressants-ibd",
+        "adalimumab-dose-frequency-ibd",
+        "rinvoq-patient-questions-ibd",
+        "skyrizi-patient-questions-ibd",
+        "skyrizi-subcutaneous-induction-crohns",
+        "entyvio-patient-guide-ibd",
+        "ibd-clinical-trials-patient-decision-guide",
+        "steroid-taper-what-to-expect-ibd",
+        "steroids-prednisone-ibd",
+        "crp-normal-still-symptoms-ibd"
+      ]
     }
   ],
   "faq": {
