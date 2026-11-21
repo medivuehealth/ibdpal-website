@@ -31,8 +31,8 @@
       asOf: '2026-11-21',
       articles: 245,
       guides: 60,
-      resources: 375,
-      sitemap: 417
+      resources: 377,
+      sitemap: 418
     },
     // EN↔ES content pairs (see data/locale-mirrors.json). Unmirrored EN pages fall back to /es/recursos.
     localeMirrors: {

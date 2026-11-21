@@ -24,6 +24,8 @@
 - https://www.ibdpal.org/trusted-ibd-resources
 - https://www.ibdpal.org/ibd-red-flags-urgent-care
 - https://www.ibdpal.org/visit-prep
+- https://www.ibdpal.org/ibd-awareness-calendar
+- https://www.ibdpal.org/treatment-decisions
 - https://www.ibdpal.org/resources
 - https://www.ibdpal.org/#community
 - https://www.ibdpal.org/pediatric-caregivers
@@ -40,6 +42,7 @@
 - https://www.ibdpal.org/blog/adalimumab-dose-frequency-ibd
 - https://www.ibdpal.org/blog/adult-een-crohns-what-to-expect
 - https://www.ibdpal.org/blog/after-er-visit-ibd-follow-up
+- https://www.ibdpal.org/blog/after-ibd-surgery-first-30-days
 - https://www.ibdpal.org/blog/alcohol-caffeine-ibd
 - https://www.ibdpal.org/blog/anemia-iron-deficiency-ibd
 - https://www.ibdpal.org/blog/ankylosing-spondylitis-ibd
@@ -131,16 +134,20 @@
 - https://www.ibdpal.org/blog/ibd-autoimmune-overlap
 - https://www.ibdpal.org/blog/ibd-back-pain-sacroiliitis
 - https://www.ibdpal.org/blog/ibd-care-outside-united-states
+- https://www.ibdpal.org/blog/ibd-clinical-trials-patient-decision-guide
 - https://www.ibdpal.org/blog/ibd-colon-cancer-risk-surveillance
 - https://www.ibdpal.org/blog/ibd-extraintestinal-manifestations
 - https://www.ibdpal.org/blog/ibd-fatigue-brain-fog
 - https://www.ibdpal.org/blog/ibd-flare-go-bag
+- https://www.ibdpal.org/blog/ibd-insurance-denial-appeal-toolkit
 - https://www.ibdpal.org/blog/ibd-joint-pain-arthritis
 - https://www.ibdpal.org/blog/ibd-leg-knee-pain
+- https://www.ibdpal.org/blog/ibd-medication-monitoring-checklist
 - https://www.ibdpal.org/blog/ibd-night-sweats
 - https://www.ibdpal.org/blog/ibd-pregnancy-planning
 - https://www.ibdpal.org/blog/ibd-summer-heat-hydration
 - https://www.ibdpal.org/blog/ibd-surgery-peer-support
+- https://www.ibdpal.org/blog/ibd-treatment-comparison-guide
 - https://www.ibdpal.org/blog/ibd-unintentional-weight-changes
 - https://www.ibdpal.org/blog/icn-accommodations-toolkit-ibd
 - https://www.ibdpal.org/blog/icn-caregiver-coping-resource
@@ -242,6 +249,7 @@
 - https://www.ibdpal.org/blog/taste-fatigue-enteral-formula-ibd
 - https://www.ibdpal.org/blog/tea-ibd
 - https://www.ibdpal.org/blog/teen-nutrition-ibd-growth
+- https://www.ibdpal.org/blog/therapeutic-drug-monitoring-ibd
 - https://www.ibdpal.org/blog/thrombosis-clot-risk-ibd
 - https://www.ibdpal.org/blog/tofu-soy-ibd
 - https://www.ibdpal.org/blog/tomatoes-ibd
@@ -253,6 +261,7 @@
 - https://www.ibdpal.org/blog/type1-diabetes-autoimmune-basics
 - https://www.ibdpal.org/blog/ulcerative-colitis-diet-overview-ibd
 - https://www.ibdpal.org/blog/understanding-biologics-ibd
+- https://www.ibdpal.org/blog/understanding-ibd-pathology-report
 - https://www.ibdpal.org/blog/uveitis-eye-inflammation-ibd
 - https://www.ibdpal.org/blog/vaccine-autoimmune-immunosuppression
 - https://www.ibdpal.org/blog/vaccines-biologics-immunosuppressants-ibd
@@ -263,6 +272,7 @@
 - https://www.ibdpal.org/blog/walking-for-ibd-crohns-colitis
 - https://www.ibdpal.org/blog/weight-loss-ibd-safe-guide
 - https://www.ibdpal.org/blog/what-remission-means-ibd
+- https://www.ibdpal.org/blog/when-ibd-biologic-stops-working
 - https://www.ibdpal.org/blog/when-to-call-gi-vs-er-ibd
 - https://www.ibdpal.org/blog/when-to-call-ibd-help-center
 - https://www.ibdpal.org/blog/when-to-go-er-ibd
@@ -440,5 +450,6 @@
 - https://www.ibdpal.org/support/wyoming
 - https://www.ibdpal.org/teens-and-school
 - https://www.ibdpal.org/tools/bristol-flare-checker
+- https://www.ibdpal.org/treatment-decisions
 - https://www.ibdpal.org/ulcerative-colitis
 - https://www.ibdpal.org/what-is-ibd

@@ -130,7 +130,10 @@
     'clinical trials': ['/blog/ibd-clinical-trials-patient-decision-guide'],
     'treatment decisions': ['/treatment-decisions'],
     'treatment monitoring': ['/treatment-decisions'],
-    'monitoring hub': ['/treatment-decisions']
+    'monitoring hub': ['/treatment-decisions'],
+    'ibd awareness calendar': ['/ibd-awareness-calendar'],
+    'world ibd day': ['/ibd-awareness-calendar'],
+    'awareness week': ['/ibd-awareness-calendar']
   };
 
   function matchesQuery(hay, q, itemUrl) {

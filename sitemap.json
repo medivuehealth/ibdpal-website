@@ -3,7 +3,7 @@
   "canonical_xml": "https://www.ibdpal.org/sitemap.xml",
   "plain_text": "https://www.ibdpal.org/sitemap.txt",
   "html_map": "https://www.ibdpal.org/sitemap",
-  "url_count": 417,
+  "url_count": 418,
   "urls": [
     {
       "loc": "https://www.ibdpal.org/",
@@ -142,6 +142,13 @@
       "loc": "https://www.ibdpal.org/ibd-autoimmune-associations",
       "path": "/ibd-autoimmune-associations",
       "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.75
+    },
+    {
+      "loc": "https://www.ibdpal.org/ibd-awareness-calendar",
+      "path": "/ibd-awareness-calendar",
+      "lastmod": "2026-11-21",
       "changefreq": "monthly",
       "priority": 0.75
     },

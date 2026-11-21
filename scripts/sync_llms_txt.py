@@ -65,6 +65,8 @@ def site_block() -> str:
         f"{SITE}/trusted-ibd-resources",
         f"{SITE}/ibd-red-flags-urgent-care",
         f"{SITE}/visit-prep",
+        f"{SITE}/ibd-awareness-calendar",
+        f"{SITE}/treatment-decisions",
         f"{SITE}/resources",
         f"{SITE}/#community",
         f"{SITE}/pediatric-caregivers",

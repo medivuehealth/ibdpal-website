@@ -10,6 +10,10 @@
   ],
   "rewrites": [
     {
+      "source": "/ibd-awareness-calendar",
+      "destination": "/ibd-awareness-calendar.html"
+    },
+    {
       "source": "/treatment-decisions",
       "destination": "/treatment-decisions.html"
     },

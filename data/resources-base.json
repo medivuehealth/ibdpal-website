@@ -1,45 +1,91 @@
 [
   {
+    "title": "IBD Awareness Calendar",
+    "category": "getting-started",
+    "type": "site",
+    "url": "/ibd-awareness-calendar",
+    "tags": [
+      "awareness",
+      "World IBD Day",
+      "Crohn's Colitis Awareness Week",
+      "calendar",
+      "campaign",
+      "nutrition month",
+      "health literacy"
+    ],
+    "description": "Annual IBDPal awareness calendar with World IBD Day, Crohn's & Colitis Awareness Week, and month-by-month education themes."
+  },
+  {
     "title": "NIH Office of Dietary Supplements: Dietary Reference Intakes (DRI)",
     "category": "nutrition",
     "type": "external",
     "url": "https://ods.od.nih.gov/HealthInformation/Dietary_Reference_Intakes.aspx",
-    "tags": ["DRI", "RDA", "vitamins", "minerals", "micronutrients"]
+    "tags": [
+      "DRI",
+      "RDA",
+      "vitamins",
+      "minerals",
+      "micronutrients"
+    ]
   },
   {
     "title": "Dietary Reference Intakes (DRI): Summary Report",
     "category": "nutrition",
     "type": "external",
     "url": "https://www.nationalacademies.org/our-work/summary-report-of-the-dietary-reference-intakes",
-    "tags": ["DRI", "RDAs", "nutrition standards"]
+    "tags": [
+      "DRI",
+      "RDAs",
+      "nutrition standards"
+    ]
   },
   {
     "title": "Micronutrient Deficiency in Crohn's Disease",
     "category": "nutrition",
     "type": "external",
     "url": "https://www.webmd.com/ibd-crohns-disease/crohns-disease/micronutrient-deficiency-crohns",
-    "tags": ["vitamins", "iron", "B12", "malabsorption"]
+    "tags": [
+      "vitamins",
+      "iron",
+      "B12",
+      "malabsorption"
+    ]
   },
   {
     "title": "Crohn's & Colitis Congress 2024: IBD Diet & Nutrition Research Updates",
     "category": "nutrition",
     "type": "external",
     "url": "https://www.nutritionaltherapyforibd.org/news/crohns-colitis-congress-2024-updates-on-ibd-diet-nutrition-research",
-    "tags": ["conference", "diet research", "nutrition science"]
+    "tags": [
+      "conference",
+      "diet research",
+      "nutrition science"
+    ]
   },
   {
     "title": "AGA Clinical Practice Update: Diet and Nutritional Therapies in IBD (2024)",
     "category": "nutrition",
     "type": "external",
     "url": "https://gastro.org/clinical-guidance/diet-and-nutritional-therapies-in-patients-with-ibd/",
-    "tags": ["clinical guidance", "nutrition therapy", "Crohn's", "colitis"]
+    "tags": [
+      "clinical guidance",
+      "nutrition therapy",
+      "Crohn's",
+      "colitis"
+    ]
   },
   {
     "title": "What Is IBD? Inflammatory Bowel Disease Explained",
     "category": "getting-started",
     "type": "site",
     "url": "/what-is-ibd",
-    "tags": ["IBD", "inflammatory bowel disease", "Crohn's", "ulcerative colitis", "diagnosis"],
+    "tags": [
+      "IBD",
+      "inflammatory bowel disease",
+      "Crohn's",
+      "ulcerative colitis",
+      "diagnosis"
+    ],
     "description": "Patient education overview of inflammatory bowel disease, Crohn's vs colitis, and when to see your GI team."
   },
   {
@@ -47,7 +93,12 @@
     "category": "getting-started",
     "type": "site",
     "url": "/crohns-and-colitis",
-    "tags": ["Crohn's disease", "ulcerative colitis", "IBD comparison", "colitis vs Crohn's"],
+    "tags": [
+      "Crohn's disease",
+      "ulcerative colitis",
+      "IBD comparison",
+      "colitis vs Crohn's"
+    ],
     "description": "Side-by-side patient guide comparing Crohn's disease and ulcerative colitis symptoms, location, and care topics."
   },
   {
@@ -55,126 +106,227 @@
     "category": "getting-started",
     "type": "external",
     "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/crohns-disease",
-    "tags": ["NIH", "NIDDK", "Crohn's", "symptoms", "diagnosis", "treatment"]
+    "tags": [
+      "NIH",
+      "NIDDK",
+      "Crohn's",
+      "symptoms",
+      "diagnosis",
+      "treatment"
+    ]
   },
   {
     "title": "NIDDK: Ulcerative Colitis",
     "category": "getting-started",
     "type": "external",
     "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/ulcerative-colitis",
-    "tags": ["NIH", "NIDDK", "ulcerative colitis", "UC", "symptoms", "treatment"]
+    "tags": [
+      "NIH",
+      "NIDDK",
+      "ulcerative colitis",
+      "UC",
+      "symptoms",
+      "treatment"
+    ]
   },
   {
     "title": "MedlinePlus: Crohn's Disease",
     "category": "getting-started",
     "type": "external",
     "url": "https://medlineplus.gov/crohnsdisease.html",
-    "tags": ["MedlinePlus", "NLM", "Crohn's", "patient handouts", "clinical trials"]
+    "tags": [
+      "MedlinePlus",
+      "NLM",
+      "Crohn's",
+      "patient handouts",
+      "clinical trials"
+    ]
   },
   {
     "title": "MedlinePlus: Ulcerative Colitis",
     "category": "getting-started",
     "type": "external",
     "url": "https://medlineplus.gov/ulcerativecolitis.html",
-    "tags": ["MedlinePlus", "NLM", "ulcerative colitis", "UC", "patient handouts"]
+    "tags": [
+      "MedlinePlus",
+      "NLM",
+      "ulcerative colitis",
+      "UC",
+      "patient handouts"
+    ]
   },
   {
     "title": "CDC: IBD Basics",
     "category": "getting-started",
     "type": "external",
     "url": "https://www.cdc.gov/inflammatory-bowel-disease/about/index.html",
-    "tags": ["CDC", "IBD basics", "symptoms", "complications", "public health"]
+    "tags": [
+      "CDC",
+      "IBD basics",
+      "symptoms",
+      "complications",
+      "public health"
+    ]
   },
   {
     "title": "CDC: IBD Facts and Stats",
     "category": "clinical",
     "type": "external",
     "url": "https://www.cdc.gov/inflammatory-bowel-disease/php/facts-stats/index.html",
-    "tags": ["CDC", "statistics", "prevalence", "costs", "public health"]
+    "tags": [
+      "CDC",
+      "statistics",
+      "prevalence",
+      "costs",
+      "public health"
+    ]
   },
   {
     "title": "NIDDK: Clinical Trials for Crohn's Disease",
     "category": "clinical",
     "type": "external",
     "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/crohns-disease/clinical-trials",
-    "tags": ["NIH", "NIDDK", "clinical trials", "Crohn's", "research"]
+    "tags": [
+      "NIH",
+      "NIDDK",
+      "clinical trials",
+      "Crohn's",
+      "research"
+    ]
   },
   {
     "title": "NIDDK: Clinical Trials for Ulcerative Colitis",
     "category": "clinical",
     "type": "external",
     "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/ulcerative-colitis/clinical-trials",
-    "tags": ["NIH", "NIDDK", "clinical trials", "UC", "research"]
+    "tags": [
+      "NIH",
+      "NIDDK",
+      "clinical trials",
+      "UC",
+      "research"
+    ]
   },
   {
     "title": "ClinicalTrials.gov: Inflammatory Bowel Diseases",
     "category": "clinical",
     "type": "external",
     "url": "https://clinicaltrials.gov/search?cond=%22Inflammatory%20Bowel%20Diseases%22",
-    "tags": ["ClinicalTrials.gov", "NLM", "clinical trials", "research registry"]
+    "tags": [
+      "ClinicalTrials.gov",
+      "NLM",
+      "clinical trials",
+      "research registry"
+    ]
   },
   {
     "title": "NCCIH: Probiotics | What You Need To Know",
     "category": "wellness",
     "type": "external",
     "url": "https://www.nccih.nih.gov/health/probiotics-what-you-need-to-know",
-    "tags": ["NIH", "NCCIH", "probiotics", "supplements", "safety"]
+    "tags": [
+      "NIH",
+      "NCCIH",
+      "probiotics",
+      "supplements",
+      "safety"
+    ]
   },
   {
     "title": "FDA: Biosimilar and Interchangeable Biologics",
     "category": "treatment",
     "type": "external",
     "url": "https://www.fda.gov/consumers/consumer-updates/biosimilar-and-interchangeable-biologics-more-treatment-choices",
-    "tags": ["FDA", "biosimilars", "biologics", "treatment access"]
+    "tags": [
+      "FDA",
+      "biosimilars",
+      "biologics",
+      "treatment access"
+    ]
   },
   {
     "title": "IBD Research Sources",
     "category": "nutrition",
     "type": "site",
     "url": "/research",
-    "tags": ["research", "diet", "clinical", "sources"]
+    "tags": [
+      "research",
+      "diet",
+      "clinical",
+      "sources"
+    ]
   },
   {
     "title": "IBD Glossary",
     "category": "getting-started",
     "type": "site",
     "url": "/glossary",
-    "tags": ["terms", "definitions", "biologics", "flare", "remission"]
+    "tags": [
+      "terms",
+      "definitions",
+      "biologics",
+      "flare",
+      "remission"
+    ]
   },
   {
     "title": "IBD Blog (all articles)",
     "category": "getting-started",
     "type": "site",
     "url": "/blog",
-    "tags": ["articles", "nutrition", "flare", "diet", "medication"]
+    "tags": [
+      "articles",
+      "nutrition",
+      "flare",
+      "diet",
+      "medication"
+    ]
   },
   {
     "title": "IBD Support by State",
     "category": "community",
     "type": "site",
     "url": "/support",
-    "tags": ["local", "map", "support group"]
+    "tags": [
+      "local",
+      "map",
+      "support group"
+    ]
   },
   {
     "title": "IBD FAQ",
     "category": "getting-started",
     "type": "site",
     "url": "/faq",
-    "tags": ["questions", "dairy", "diet", "flare"]
+    "tags": [
+      "questions",
+      "dairy",
+      "diet",
+      "flare"
+    ]
   },
   {
     "title": "IBD Flare Help Hub",
     "category": "wellness",
     "type": "site",
     "url": "/flare-help",
-    "tags": ["flare", "urgent", "symptoms"]
+    "tags": [
+      "flare",
+      "urgent",
+      "symptoms"
+    ]
   },
   {
     "title": "IBDPal Sitemap (HTML URL directory)",
     "category": "getting-started",
     "type": "site",
     "url": "/sitemap",
-    "tags": ["sitemap", "crawl", "index", "urls"],
+    "tags": [
+      "sitemap",
+      "crawl",
+      "index",
+      "urls"
+    ],
     "description": "HTML URL directory with links to sitemap.xml, sitemap.txt, and sitemap.json for crawl tools."
   },
   {
@@ -199,98 +351,158 @@
     "category": "family",
     "type": "site",
     "url": "/teens-and-school",
-    "tags": ["teen", "504", "school"]
+    "tags": [
+      "teen",
+      "504",
+      "school"
+    ]
   },
   {
     "title": "Ulcerative Colitis Hub",
     "category": "getting-started",
     "type": "site",
     "url": "/ulcerative-colitis",
-    "tags": ["colitis", "ulcerative colitis", "UC"]
+    "tags": [
+      "colitis",
+      "ulcerative colitis",
+      "UC"
+    ]
   },
   {
     "title": "Crohn's Disease Hub",
     "category": "getting-started",
     "type": "site",
     "url": "/crohns-disease",
-    "tags": ["crohn", "crohn's disease"]
+    "tags": [
+      "crohn",
+      "crohn's disease"
+    ]
   },
   {
     "title": "IBD Nutrition Hub",
     "category": "nutrition",
     "type": "site",
     "url": "/ibd-nutrition",
-    "tags": ["food", "diet", "nutrition", "dairy", "gluten", "fiber"]
+    "tags": [
+      "food",
+      "diet",
+      "nutrition",
+      "dairy",
+      "gluten",
+      "fiber"
+    ]
   },
   {
     "title": "IBD Patient Guides (by topic)",
     "category": "getting-started",
     "type": "site",
     "url": "/guides",
-    "tags": ["search", "crohn", "colitis", "diet", "flare", "medication"]
+    "tags": [
+      "search",
+      "crohn",
+      "colitis",
+      "diet",
+      "flare",
+      "medication"
+    ]
   },
   {
     "title": "IBD Crohn's Support Guide",
     "category": "community",
     "type": "site",
     "url": "/ibd-crohns-support",
-    "tags": ["support", "national"]
+    "tags": [
+      "support",
+      "national"
+    ]
   },
   {
     "title": "Newly Diagnosed with IBD",
     "category": "getting-started",
     "type": "site",
     "url": "/newly-diagnosed",
-    "tags": ["crohn", "colitis", "beginner", "diagnosis"]
+    "tags": [
+      "crohn",
+      "colitis",
+      "beginner",
+      "diagnosis"
+    ]
   },
   {
     "title": "Doctor Visit Prep Checklist",
     "category": "getting-started",
     "type": "site",
     "url": "/visit-prep",
-    "tags": ["clinic", "printable", "doctor"]
+    "tags": [
+      "clinic",
+      "printable",
+      "doctor"
+    ]
   },
   {
     "title": "Community Map by State",
     "category": "community",
     "type": "site",
     "url": "/support",
-    "tags": ["local", "map", "community"]
+    "tags": [
+      "local",
+      "map",
+      "community"
+    ]
   },
   {
     "title": "Pediatric & Caregiver Hub",
     "category": "family",
     "type": "site",
     "url": "/pediatric-caregivers",
-    "tags": ["kids", "parents", "pediatric"]
+    "tags": [
+      "kids",
+      "parents",
+      "pediatric"
+    ]
   },
   {
     "title": "Patient Stories",
     "category": "community",
     "type": "site",
     "url": "/patient-stories",
-    "tags": ["peer", "stories"]
+    "tags": [
+      "peer",
+      "stories"
+    ]
   },
   {
     "title": "For Clinicians | Visit Summaries",
     "category": "clinical",
     "type": "site",
     "url": "/for-clinicians",
-    "tags": ["export", "doctor", "clinic"]
+    "tags": [
+      "export",
+      "doctor",
+      "clinic"
+    ]
   },
   {
     "title": "Clinical Partnerships",
     "category": "clinical",
     "type": "site",
     "url": "/clinical-partnerships",
-    "tags": ["hospital", "clinical"]
+    "tags": [
+      "hospital",
+      "clinical"
+    ]
   },
   {
     "title": "CCF IBD Help Center",
     "category": "community",
     "type": "external",
     "url": "https://www.crohnscolitisfoundation.org/patientsandcaregivers/ibdhelpcenter",
-    "tags": ["helpline", "national", "Foundation", "CCF"],
+    "tags": [
+      "helpline",
+      "national",
+      "Foundation",
+      "CCF"
+    ],
     "description": "Crohn's & Colitis Foundation IBD Help Center for education and program referrals."
   },
   {
@@ -298,70 +510,125 @@
     "category": "community",
     "type": "external",
     "url": "https://www.crohnscolitisfoundation.org/find-a-support-group",
-    "tags": ["peer", "support group", "Foundation", "CCF"]
+    "tags": [
+      "peer",
+      "support group",
+      "Foundation",
+      "CCF"
+    ]
   },
   {
     "title": "CCF Find a Chapter",
     "category": "community",
     "type": "external",
     "url": "https://www.crohnscolitisfoundation.org/chapters",
-    "tags": ["chapter", "local", "Foundation", "CCF"]
+    "tags": [
+      "chapter",
+      "local",
+      "Foundation",
+      "CCF"
+    ]
   },
   {
     "title": "CCF Camp Oasis",
     "category": "family",
     "type": "external",
     "url": "https://www.crohnscolitisfoundation.org/get-involved/camp-oasis",
-    "tags": ["Camp Oasis", "kids", "teens", "Foundation", "CCF"]
+    "tags": [
+      "Camp Oasis",
+      "kids",
+      "teens",
+      "Foundation",
+      "CCF"
+    ]
   },
   {
     "title": "CCF Kids, Parents & Teens Resources",
     "category": "family",
     "type": "external",
     "url": "https://www.crohnscolitisfoundation.org/patientandcaregivers/youth-parent-resources",
-    "tags": ["pediatric", "parents", "teens", "Foundation", "CCF"]
+    "tags": [
+      "pediatric",
+      "parents",
+      "teens",
+      "Foundation",
+      "CCF"
+    ]
   },
   {
     "title": "CCF Prior Authorization Guide",
     "category": "treatment",
     "type": "external",
     "url": "https://www.crohnscolitisfoundation.org/your-guide-to-navigating-prior-authorization",
-    "tags": ["insurance", "prior authorization", "Foundation", "CCF"]
+    "tags": [
+      "insurance",
+      "prior authorization",
+      "Foundation",
+      "CCF"
+    ]
   },
   {
     "title": "CCF Action Center",
     "category": "community",
     "type": "external",
     "url": "https://www.crohnscolitisfoundation.org/get-involved/be-an-advocate/action-center",
-    "tags": ["advocacy", "policy", "Foundation", "CCF"]
+    "tags": [
+      "advocacy",
+      "policy",
+      "Foundation",
+      "CCF"
+    ]
   },
   {
     "title": "CCF Patients & Caregivers Hub",
     "category": "getting-started",
     "type": "external",
     "url": "https://www.crohnscolitisfoundation.org/patientsandcaregivers",
-    "tags": ["education", "Foundation", "CCF", "diet", "lifestyle"]
+    "tags": [
+      "education",
+      "Foundation",
+      "CCF",
+      "diet",
+      "lifestyle"
+    ]
   },
   {
     "title": "CCF What is Crohn's Disease",
     "category": "getting-started",
     "type": "external",
     "url": "https://www.crohnscolitisfoundation.org/what-is-crohns-disease",
-    "tags": ["Crohn's", "basics", "Foundation", "CCF"]
+    "tags": [
+      "Crohn's",
+      "basics",
+      "Foundation",
+      "CCF"
+    ]
   },
   {
     "title": "CCF What is Ulcerative Colitis",
     "category": "getting-started",
     "type": "external",
     "url": "https://www.crohnscolitisfoundation.org/what-is-ulcerative-colitis",
-    "tags": ["ulcerative colitis", "UC", "basics", "Foundation", "CCF"]
+    "tags": [
+      "ulcerative colitis",
+      "UC",
+      "basics",
+      "Foundation",
+      "CCF"
+    ]
   },
   {
     "title": "Crohn's & Colitis Foundation Resources on IBDPal",
     "category": "getting-started",
     "type": "site",
     "url": "/crohns-colitis-foundation-resources",
-    "tags": ["Foundation", "CCF", "licensed education", "Help Center", "Camp Oasis"],
+    "tags": [
+      "Foundation",
+      "CCF",
+      "licensed education",
+      "Help Center",
+      "Camp Oasis"
+    ],
     "description": "IBDPal hub for selected Foundation education under license: Help Center, Camp Oasis, diet, prior auth, chapters, and advocacy links."
   },
   {
@@ -369,35 +636,51 @@
     "category": "family",
     "type": "external",
     "url": "https://www.improvecarenow.org/patients-parents",
-    "tags": ["pediatric", "family"]
+    "tags": [
+      "pediatric",
+      "family"
+    ]
   },
   {
     "title": "GIKids",
     "category": "family",
     "type": "external",
     "url": "https://gikids.org/",
-    "tags": ["pediatric", "kids"]
+    "tags": [
+      "pediatric",
+      "kids"
+    ]
   },
   {
     "title": "UOAA Ostomy Support",
     "category": "community",
     "type": "external",
     "url": "https://ostomy.org/",
-    "tags": ["ostomy", "stoma"]
+    "tags": [
+      "ostomy",
+      "stoma"
+    ]
   },
   {
     "title": "Recursos en español",
     "category": "community",
     "type": "site",
     "url": "/es/recursos",
-    "tags": ["spanish", "español"]
+    "tags": [
+      "spanish",
+      "español"
+    ]
   },
   {
     "title": "About IBDPal",
     "category": "community",
     "type": "site",
     "url": "/about",
-    "tags": ["about", "mission", "nonprofit"]
+    "tags": [
+      "about",
+      "mission",
+      "nonprofit"
+    ]
   },
   {
     "title": "Latest IBD News & Research",
@@ -459,153 +742,255 @@
     "category": "community",
     "type": "site",
     "url": "/founder",
-    "tags": ["founder", "mission", "nonprofit", "about-founders"]
+    "tags": [
+      "founder",
+      "mission",
+      "nonprofit",
+      "about-founders"
+    ]
   },
   {
     "title": "About Founders (homepage)",
     "category": "community",
     "type": "site",
     "url": "/#about-founders",
-    "tags": ["founder", "mission", "nonprofit", "about-founders"]
+    "tags": [
+      "founder",
+      "mission",
+      "nonprofit",
+      "about-founders"
+    ]
   },
   {
     "title": "Content Library",
     "category": "community",
     "type": "site",
     "url": "/library",
-    "tags": ["library", "education", "articles"]
+    "tags": [
+      "library",
+      "education",
+      "articles"
+    ]
   },
   {
     "title": "ICN Accommodations Toolkit (highlight)",
     "category": "community",
     "type": "site",
     "url": "/blog/icn-accommodations-toolkit-ibd",
-    "tags": ["ICN", "ImproveCareNow", "accommodations", "504", "school"]
+    "tags": [
+      "ICN",
+      "ImproveCareNow",
+      "accommodations",
+      "504",
+      "school"
+    ]
   },
   {
     "title": "ICN College & IBD Toolkit (highlight)",
     "category": "community",
     "type": "site",
     "url": "/blog/icn-college-ibd-toolkit",
-    "tags": ["ICN", "college", "young adult"]
+    "tags": [
+      "ICN",
+      "college",
+      "young adult"
+    ]
   },
   {
     "title": "ICN Caregiver Coping Resource (highlight)",
     "category": "family",
     "type": "site",
     "url": "/blog/icn-caregiver-coping-resource",
-    "tags": ["ICN", "caregiver", "parent", "pediatric"]
+    "tags": [
+      "ICN",
+      "caregiver",
+      "parent",
+      "pediatric"
+    ]
   },
   {
     "title": "ICN Mental Health Provider Guide (highlight)",
     "category": "wellness",
     "type": "site",
     "url": "/blog/icn-mental-health-provider-guide",
-    "tags": ["ICN", "mental health", "therapy", "teen"]
+    "tags": [
+      "ICN",
+      "mental health",
+      "therapy",
+      "teen"
+    ]
   },
   {
     "title": "ICN Transfer Toolkit (highlight)",
     "category": "community",
     "type": "site",
     "url": "/blog/icn-transfer-toolkit-adult-care",
-    "tags": ["ICN", "transition", "adult care"]
+    "tags": [
+      "ICN",
+      "transition",
+      "adult care"
+    ]
   },
   {
     "title": "ICN Ostomy Toolkit (highlight)",
     "category": "community",
     "type": "site",
     "url": "/blog/icn-ostomy-toolkit-pediatric",
-    "tags": ["ICN", "ostomy", "surgery"]
+    "tags": [
+      "ICN",
+      "ostomy",
+      "surgery"
+    ]
   },
   {
     "title": "ICN Holidays & Special Occasions (highlight)",
     "category": "community",
     "type": "site",
     "url": "/blog/icn-ibd-holidays-special-occasions",
-    "tags": ["ICN", "holidays", "family"]
+    "tags": [
+      "ICN",
+      "holidays",
+      "family"
+    ]
   },
   {
     "title": "ImproveCareNow Tools for Managing IBD",
     "category": "community",
     "type": "external",
     "url": "https://www.improvecarenow.org/tools_for_managing_ibd",
-    "tags": ["ICN", "ImproveCareNow", "toolkit", "creative commons"]
+    "tags": [
+      "ICN",
+      "ImproveCareNow",
+      "toolkit",
+      "creative commons"
+    ]
   },
   {
     "title": "IBD Autoimmune Associations Hub",
     "category": "clinical",
     "type": "site",
     "url": "/ibd-autoimmune-associations",
-    "tags": ["autoimmune", "extraintestinal", "EIM", "PSC", "psoriasis"]
+    "tags": [
+      "autoimmune",
+      "extraintestinal",
+      "EIM",
+      "PSC",
+      "psoriasis"
+    ]
   },
   {
     "title": "PubMed: Extraintestinal Manifestations of IBD",
     "category": "clinical",
     "type": "external",
     "url": "https://pubmed.ncbi.nlm.nih.gov/?term=extraintestinal+manifestations+inflammatory+bowel+disease",
-    "tags": ["PubMed", "research", "EIM", "autoimmune"]
+    "tags": [
+      "PubMed",
+      "research",
+      "EIM",
+      "autoimmune"
+    ]
   },
   {
     "title": "PubMed: PSC and IBD",
     "category": "clinical",
     "type": "external",
     "url": "https://pubmed.ncbi.nlm.nih.gov/?term=primary+sclerosing+cholangitis+inflammatory+bowel+disease",
-    "tags": ["PubMed", "PSC", "liver", "research"]
+    "tags": [
+      "PubMed",
+      "PSC",
+      "liver",
+      "research"
+    ]
   },
   {
     "title": "NIDDK: Primary Sclerosing Cholangitis",
     "category": "clinical",
     "type": "external",
     "url": "https://www.niddk.nih.gov/health-information/liver-disease/primary-sclerosing-cholangitis",
-    "tags": ["NIH", "NIDDK", "PSC", "liver"]
+    "tags": [
+      "NIH",
+      "NIDDK",
+      "PSC",
+      "liver"
+    ]
   },
   {
     "title": "PubMed: Diet Therapy Trials in IBD",
     "category": "nutrition",
     "type": "external",
     "url": "https://pubmed.ncbi.nlm.nih.gov/?term=diet+therapy+inflammatory+bowel+disease+randomized",
-    "tags": ["PubMed", "diet", "nutrition research", "trials"]
+    "tags": [
+      "PubMed",
+      "diet",
+      "nutrition research",
+      "trials"
+    ]
   },
   {
     "title": "ACG Clinical Guidelines Hub",
     "category": "clinical",
     "type": "external",
     "url": "https://gi.org/guidelines/",
-    "tags": ["ACG", "guidelines", "clinical"]
+    "tags": [
+      "ACG",
+      "guidelines",
+      "clinical"
+    ]
   },
   {
     "title": "AGA Journals",
     "category": "clinical",
     "type": "external",
     "url": "https://gastro.org/journals/",
-    "tags": ["AGA", "journals", "research"]
+    "tags": [
+      "AGA",
+      "journals",
+      "research"
+    ]
   },
   {
     "title": "MedlinePlus: Celiac Disease",
     "category": "nutrition",
     "type": "external",
     "url": "https://medlineplus.gov/celiacdisease.html",
-    "tags": ["celiac", "gluten", "MedlinePlus", "NIH"]
+    "tags": [
+      "celiac",
+      "gluten",
+      "MedlinePlus",
+      "NIH"
+    ]
   },
   {
     "title": "MedlinePlus: Ankylosing Spondylitis",
     "category": "clinical",
     "type": "external",
     "url": "https://medlineplus.gov/ankylosingspondylitis.html",
-    "tags": ["ankylosing spondylitis", "joints", "MedlinePlus"]
+    "tags": [
+      "ankylosing spondylitis",
+      "joints",
+      "MedlinePlus"
+    ]
   },
   {
     "title": "Nature Portfolio: IBD Research Search",
     "category": "clinical",
     "type": "external",
     "url": "https://www.nature.com/search?q=inflammatory%20bowel%20disease",
-    "tags": ["Nature", "research", "journals"]
+    "tags": [
+      "Nature",
+      "research",
+      "journals"
+    ]
   },
   {
     "title": "The Lancet Gastroenterology & Hepatology",
     "category": "clinical",
     "type": "external",
     "url": "https://www.thelancet.com/journals/langas/home",
-    "tags": ["Lancet", "research", "journals"]
+    "tags": [
+      "Lancet",
+      "research",
+      "journals"
+    ]
   }
 ]
