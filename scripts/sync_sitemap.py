@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Rebuild sitemap.xml from indexable site files (www.ibdpal.org URLs)."""
+"""Rebuild sitemap.xml plus crawl-friendly sitemap.txt / sitemap.json / HTML map."""
 from __future__ import annotations
 
 from datetime import date, datetime
@@ -9,6 +9,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SITEMAP = ROOT / "sitemap.xml"
+SITEMAP_TXT = ROOT / "sitemap.txt"
+SITEMAP_JSON = ROOT / "sitemap.json"
+SITEMAP_HTML = ROOT / "sitemap.html"
 SITE = "https://www.ibdpal.org"
 ES_DATA = ROOT / "data" / "es-pages.json"
 
@@ -30,6 +33,7 @@ HUB_SLUGS = {
     "ulcerative-colitis",
     "teens-and-school",
     "flare-help",
+    "treatment-decisions",
 }
 
 
@@ -197,13 +201,17 @@ def discover_entries() -> dict[str, tuple[str, float, str]]:
     return entries
 
 
+def sorted_paths(entries: dict[str, tuple[str, float, str]]) -> list[str]:
+    return sorted(entries.keys(), key=lambda p: (p.count("/"), p))
+
+
 def render_sitemap(entries: dict[str, tuple[str, float, str]]) -> str:
     alternates = load_hreflang_pairs()
     lines = [
         '<?xml version="1.0" encoding="UTF-8"?>',
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">',
     ]
-    for path in sorted(entries.keys(), key=lambda p: (p.count("/"), p)):
+    for path in sorted_paths(entries):
         lastmod, priority, changefreq = entries[path]
         lines.append("  <url>")
         lines.append(f"    <loc>{SITE}{path}</loc>")
@@ -220,11 +228,128 @@ def render_sitemap(entries: dict[str, tuple[str, float, str]]) -> str:
     return "\n".join(lines)
 
 
+def render_sitemap_txt(entries: dict[str, tuple[str, float, str]]) -> str:
+    """Plain URL list for crawlers / readers that mishandle XML."""
+    return "\n".join(f"{SITE}{path}" for path in sorted_paths(entries)) + "\n"
+
+
+def render_sitemap_json(entries: dict[str, tuple[str, float, str]]) -> str:
+    """JSON mirror for AI tools and programmatic audits that strip XML tags."""
+    rows = []
+    for path in sorted_paths(entries):
+        lastmod, priority, changefreq = entries[path]
+        rows.append(
+            {
+                "loc": f"{SITE}{path}",
+                "path": path,
+                "lastmod": lastmod,
+                "changefreq": changefreq,
+                "priority": round(priority, 2),
+            }
+        )
+    payload = {
+        "generated_at": date.today().isoformat(),
+        "canonical_xml": f"{SITE}/sitemap.xml",
+        "plain_text": f"{SITE}/sitemap.txt",
+        "html_map": f"{SITE}/sitemap",
+        "url_count": len(rows),
+        "urls": rows,
+    }
+    return json.dumps(payload, indent=2, ensure_ascii=False) + "\n"
+
+
+def bucket_for(path: str) -> str:
+    if path == "/":
+        return "Home"
+    if path.startswith("/blog/"):
+        return "Blog"
+    if path.startswith("/guides/"):
+        return "Guides"
+    if path.startswith("/support/"):
+        return "Support by state"
+    if path.startswith("/es/"):
+        return "Español"
+    if path.startswith("/tools/"):
+        return "Tools"
+    return "Site pages"
+
+
+def render_sitemap_html(entries: dict[str, tuple[str, float, str]]) -> str:
+    """HTML URL directory for browser and markdown-style web readers."""
+    groups: dict[str, list[str]] = {}
+    for path in sorted_paths(entries):
+        groups.setdefault(bucket_for(path), []).append(path)
+
+    sections = []
+    for name in ("Home", "Site pages", "Blog", "Guides", "Tools", "Support by state", "Español"):
+        paths = groups.get(name) or []
+        if not paths:
+            continue
+        items = "\n".join(
+            f'        <li><a href="{html.escape(SITE + path)}">{html.escape(path or "/")}</a></li>'
+            for path in paths
+        )
+        sections.append(
+            f'      <section class="seo-landing__block">\n'
+            f"        <h2>{html.escape(name)} ({len(paths)})</h2>\n"
+            f'        <ul class="seo-landing__list">\n{items}\n        </ul>\n'
+            f"      </section>"
+        )
+
+    body_sections = "\n".join(sections)
+    today = date.today().isoformat()
+    count = len(entries)
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#FFE5DC">
+    <script src="/canonical-host.js"></script>
+    <title>IBDPal Sitemap | Crawlable URL Directory</title>
+    <meta name="description" content="Human- and machine-readable IBDPal URL directory. Also available as sitemap.xml, sitemap.txt, and sitemap.json.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{SITE}/sitemap">
+    <link rel="alternate" type="application/xml" href="{SITE}/sitemap.xml" title="XML sitemap">
+    <link rel="alternate" type="text/plain" href="{SITE}/sitemap.txt" title="Plain-text sitemap">
+    <link rel="alternate" type="application/json" href="{SITE}/sitemap.json" title="JSON sitemap">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/site-layout-icn.css">
+    <link rel="stylesheet" href="/site-polish.css">
+    <link rel="icon" type="image/png" href="/IBDPal_Logo.png">
+</head>
+<body>
+    <div class="container">
+        <main class="main-content" id="main-content">
+            <article class="support-section seo-landing">
+                <h1>IBDPal sitemap</h1>
+                <p class="support-intro">{count} indexable URLs · synced {html.escape(today)}. Prefer machine formats when crawling: <a href="/sitemap.xml">sitemap.xml</a>, <a href="/sitemap.txt">sitemap.txt</a>, <a href="/sitemap.json">sitemap.json</a>, or <a href="/llms.txt">llms.txt</a>.</p>
+{body_sections}
+            </article>
+        </main>
+    </div>
+    <script src="/site-config.js" defer></script>
+    <script src="/site-global.js" defer></script>
+</body>
+</html>
+"""
+
+
 def main() -> None:
     entries = discover_entries()
+    # Keep HTML map itself out of recursive discovery noise; add explicitly.
+    entries["/sitemap"] = (date.today().isoformat(), 0.7, "monthly")
+
     SITEMAP.write_text(render_sitemap(entries), encoding="utf-8")
-    print(f"wrote {SITEMAP.name} ({len(entries)} URLs, last synced {date.today().isoformat()})")
+    SITEMAP_TXT.write_text(render_sitemap_txt(entries), encoding="utf-8")
+    SITEMAP_JSON.write_text(render_sitemap_json(entries), encoding="utf-8")
+    SITEMAP_HTML.write_text(render_sitemap_html(entries), encoding="utf-8")
+    print(
+        f"wrote {SITEMAP.name}, {SITEMAP_TXT.name}, {SITEMAP_JSON.name}, {SITEMAP_HTML.name} "
+        f"({len(entries)} URLs, last synced {date.today().isoformat()})"
+    )
 
 
 if __name__ == "__main__":
     main()
+

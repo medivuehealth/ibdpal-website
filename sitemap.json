@@ -1,0 +1,2928 @@
+{
+  "generated_at": "2026-11-21",
+  "canonical_xml": "https://www.ibdpal.org/sitemap.xml",
+  "plain_text": "https://www.ibdpal.org/sitemap.txt",
+  "html_map": "https://www.ibdpal.org/sitemap",
+  "url_count": 417,
+  "urls": [
+    {
+      "loc": "https://www.ibdpal.org/",
+      "path": "/",
+      "lastmod": "2026-11-21",
+      "changefreq": "weekly",
+      "priority": 1.0
+    },
+    {
+      "loc": "https://www.ibdpal.org/about",
+      "path": "/about",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/about-founders",
+      "path": "/about-founders",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.55
+    },
+    {
+      "loc": "https://www.ibdpal.org/ask",
+      "path": "/ask",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.75
+    },
+    {
+      "loc": "https://www.ibdpal.org/ask-answer",
+      "path": "/ask-answer",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.75
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog",
+      "path": "/blog",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.92
+    },
+    {
+      "loc": "https://www.ibdpal.org/clinical-partnerships",
+      "path": "/clinical-partnerships",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.75
+    },
+    {
+      "loc": "https://www.ibdpal.org/contact",
+      "path": "/contact",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.55
+    },
+    {
+      "loc": "https://www.ibdpal.org/crohns-and-colitis",
+      "path": "/crohns-and-colitis",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.88
+    },
+    {
+      "loc": "https://www.ibdpal.org/crohns-colitis-foundation-resources",
+      "path": "/crohns-colitis-foundation-resources",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.92
+    },
+    {
+      "loc": "https://www.ibdpal.org/crohns-disease",
+      "path": "/crohns-disease",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.88
+    },
+    {
+      "loc": "https://www.ibdpal.org/eating-with-ibd",
+      "path": "/eating-with-ibd",
+      "lastmod": "2026-09-28",
+      "changefreq": "monthly",
+      "priority": 0.75
+    },
+    {
+      "loc": "https://www.ibdpal.org/executive-summary",
+      "path": "/executive-summary",
+      "lastmod": "2026-08-06",
+      "changefreq": "yearly",
+      "priority": 0.55
+    },
+    {
+      "loc": "https://www.ibdpal.org/faq",
+      "path": "/faq",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.88
+    },
+    {
+      "loc": "https://www.ibdpal.org/flare-help",
+      "path": "/flare-help",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.88
+    },
+    {
+      "loc": "https://www.ibdpal.org/for-clinicians",
+      "path": "/for-clinicians",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.75
+    },
+    {
+      "loc": "https://www.ibdpal.org/founder",
+      "path": "/founder",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.55
+    },
+    {
+      "loc": "https://www.ibdpal.org/glossary",
+      "path": "/glossary",
+      "lastmod": "2026-08-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides",
+      "path": "/guides",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.92
+    },
+    {
+      "loc": "https://www.ibdpal.org/ibd-autoimmune-associations",
+      "path": "/ibd-autoimmune-associations",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.75
+    },
+    {
+      "loc": "https://www.ibdpal.org/ibd-crohns-support",
+      "path": "/ibd-crohns-support",
+      "lastmod": "2026-08-21",
+      "changefreq": "monthly",
+      "priority": 0.92
+    },
+    {
+      "loc": "https://www.ibdpal.org/ibd-nutrition",
+      "path": "/ibd-nutrition",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.88
+    },
+    {
+      "loc": "https://www.ibdpal.org/ibd-red-flags-urgent-care",
+      "path": "/ibd-red-flags-urgent-care",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.92
+    },
+    {
+      "loc": "https://www.ibdpal.org/impact",
+      "path": "/impact",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/insights",
+      "path": "/insights",
+      "lastmod": "2026-08-21",
+      "changefreq": "monthly",
+      "priority": 0.75
+    },
+    {
+      "loc": "https://www.ibdpal.org/library",
+      "path": "/library",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.94
+    },
+    {
+      "loc": "https://www.ibdpal.org/newly-diagnosed",
+      "path": "/newly-diagnosed",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.92
+    },
+    {
+      "loc": "https://www.ibdpal.org/news",
+      "path": "/news",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/partners",
+      "path": "/partners",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.75
+    },
+    {
+      "loc": "https://www.ibdpal.org/patient-stories",
+      "path": "/patient-stories",
+      "lastmod": "2026-08-21",
+      "changefreq": "monthly",
+      "priority": 0.8
+    },
+    {
+      "loc": "https://www.ibdpal.org/pediatric-caregivers",
+      "path": "/pediatric-caregivers",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.75
+    },
+    {
+      "loc": "https://www.ibdpal.org/privacy",
+      "path": "/privacy",
+      "lastmod": "2026-11-14",
+      "changefreq": "yearly",
+      "priority": 0.55
+    },
+    {
+      "loc": "https://www.ibdpal.org/research",
+      "path": "/research",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.94
+    },
+    {
+      "loc": "https://www.ibdpal.org/resources",
+      "path": "/resources",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.94
+    },
+    {
+      "loc": "https://www.ibdpal.org/site-updates",
+      "path": "/site-updates",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/sitemap",
+      "path": "/sitemap",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.7
+    },
+    {
+      "loc": "https://www.ibdpal.org/start-here",
+      "path": "/start-here",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.94
+    },
+    {
+      "loc": "https://www.ibdpal.org/stool-labs-decoder",
+      "path": "/stool-labs-decoder",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.88
+    },
+    {
+      "loc": "https://www.ibdpal.org/support",
+      "path": "/support",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.92
+    },
+    {
+      "loc": "https://www.ibdpal.org/teens-and-school",
+      "path": "/teens-and-school",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.88
+    },
+    {
+      "loc": "https://www.ibdpal.org/terms",
+      "path": "/terms",
+      "lastmod": "2026-08-21",
+      "changefreq": "yearly",
+      "priority": 0.55
+    },
+    {
+      "loc": "https://www.ibdpal.org/treatment-decisions",
+      "path": "/treatment-decisions",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.88
+    },
+    {
+      "loc": "https://www.ibdpal.org/trusted-ibd-resources",
+      "path": "/trusted-ibd-resources",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.92
+    },
+    {
+      "loc": "https://www.ibdpal.org/ulcerative-colitis",
+      "path": "/ulcerative-colitis",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.88
+    },
+    {
+      "loc": "https://www.ibdpal.org/visit-prep",
+      "path": "/visit-prep",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/what-is-ibd",
+      "path": "/what-is-ibd",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.88
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/abdominal-pain-stomach-pain-ibd",
+      "path": "/blog/abdominal-pain-stomach-pain-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/adalimumab-dose-frequency-ibd",
+      "path": "/blog/adalimumab-dose-frequency-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/adult-een-crohns-what-to-expect",
+      "path": "/blog/adult-een-crohns-what-to-expect",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/after-er-visit-ibd-follow-up",
+      "path": "/blog/after-er-visit-ibd-follow-up",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/after-ibd-surgery-first-30-days",
+      "path": "/blog/after-ibd-surgery-first-30-days",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/alcohol-caffeine-ibd",
+      "path": "/blog/alcohol-caffeine-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/anemia-iron-deficiency-ibd",
+      "path": "/blog/anemia-iron-deficiency-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/ankylosing-spondylitis-ibd",
+      "path": "/blog/ankylosing-spondylitis-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/anti-inflammatory-diet-ibd",
+      "path": "/blog/anti-inflammatory-diet-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/apple-ibd-cooked-vs-raw",
+      "path": "/blog/apple-ibd-cooked-vs-raw",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/autoimmune-diet-myths",
+      "path": "/blog/autoimmune-diet-myths",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/autoimmune-hepatitis-ibd",
+      "path": "/blog/autoimmune-hepatitis-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/avocado-ibd",
+      "path": "/blog/avocado-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/banana-ibd-crohns-colitis",
+      "path": "/blog/banana-ibd-crohns-colitis",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/bathroom-urgency-anxiety-ibd",
+      "path": "/blog/bathroom-urgency-anxiety-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/best-foods-crohns-flare",
+      "path": "/blog/best-foods-crohns-flare",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/biologics-flying-travel-ibd",
+      "path": "/blog/biologics-flying-travel-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/black-stool-ibd",
+      "path": "/blog/black-stool-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/blood-in-stool-ibd-when-to-worry",
+      "path": "/blog/blood-in-stool-ibd-when-to-worry",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/blueberries-ibd",
+      "path": "/blog/blueberries-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/bone-broth-gut-healing-ibd",
+      "path": "/blog/bone-broth-gut-healing-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/bristol-stool-chart-ibd",
+      "path": "/blog/bristol-stool-chart-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/broccoli-ibd",
+      "path": "/blog/broccoli-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/calcium-ibd",
+      "path": "/blog/calcium-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/carnivore-diet-ibd-myths",
+      "path": "/blog/carnivore-diet-ibd-myths",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/carrots-ibd",
+      "path": "/blog/carrots-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/cded-crohns-exclusion-diet-ibd",
+      "path": "/blog/cded-crohns-exclusion-diet-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/celiac-ibd-screening",
+      "path": "/blog/celiac-ibd-screening",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/chapati-roti-ibd",
+      "path": "/blog/chapati-roti-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/chicken-protein-ibd",
+      "path": "/blog/chicken-protein-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/chocolate-ibd",
+      "path": "/blog/chocolate-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/chronic-diarrhea-ibd-causes",
+      "path": "/blog/chronic-diarrhea-ibd-causes",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/coffee-ibd",
+      "path": "/blog/coffee-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/collagen-supplements-ibd",
+      "path": "/blog/collagen-supplements-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/college-with-ibd",
+      "path": "/blog/college-with-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/colonoscopy-prep-ibd",
+      "path": "/blog/colonoscopy-prep-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/complete-ibd-nutrition-guide",
+      "path": "/blog/complete-ibd-nutrition-guide",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/congee-rice-porridge-ibd",
+      "path": "/blog/congee-rice-porridge-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/constipation-ibd-causes",
+      "path": "/blog/constipation-ibd-causes",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/corn-ibd",
+      "path": "/blog/corn-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/couscous-ibd",
+      "path": "/blog/couscous-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/crohns-diet-overview-ibd",
+      "path": "/blog/crohns-diet-overview-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/crp-normal-still-symptoms-ibd",
+      "path": "/blog/crp-normal-still-symptoms-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/cucumber-ibd",
+      "path": "/blog/cucumber-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/dairy-lactose-ibd",
+      "path": "/blog/dairy-lactose-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/dal-lentils-ibd",
+      "path": "/blog/dal-lentils-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/dates-ramadan-ibd",
+      "path": "/blog/dates-ramadan-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/dating-intimacy-ibd-adults",
+      "path": "/blog/dating-intimacy-ibd-adults",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/dehydration-ibd-warning-signs",
+      "path": "/blog/dehydration-ibd-warning-signs",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/depression-anxiety-ibd",
+      "path": "/blog/depression-anxiety-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/dining-out-ibd-restaurants",
+      "path": "/blog/dining-out-ibd-restaurants",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/disability-fmla-work-ibd",
+      "path": "/blog/disability-fmla-work-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/eating-with-ibd-book-guide",
+      "path": "/blog/eating-with-ibd-book-guide",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/eggs-ibd-nutrition",
+      "path": "/blog/eggs-ibd-nutrition",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/electrolytes-flare-ibd",
+      "path": "/blog/electrolytes-flare-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/elemental-vs-polymeric-formula-ibd",
+      "path": "/blog/elemental-vs-polymeric-formula-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/enteral-nutrition-after-ibd-surgery",
+      "path": "/blog/enteral-nutrition-after-ibd-surgery",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/enteral-nutrition-ibd",
+      "path": "/blog/enteral-nutrition-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/entyvio-patient-guide-ibd",
+      "path": "/blog/entyvio-patient-guide-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/exclusive-vs-partial-enteral-nutrition-crohns",
+      "path": "/blog/exclusive-vs-partial-enteral-nutrition-crohns",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/exercise-during-ibd-flare",
+      "path": "/blog/exercise-during-ibd-flare",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/exercise-physical-activity-ibd",
+      "path": "/blog/exercise-physical-activity-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/fatigue-autoimmune-ibd",
+      "path": "/blog/fatigue-autoimmune-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/fever-ibd-flare-or-infection",
+      "path": "/blog/fever-ibd-flare-or-infection",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/fiber-and-ibd-diet",
+      "path": "/blog/fiber-and-ibd-diet",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/fiber-prebiotics-enteral-feeds-microbiome",
+      "path": "/blog/fiber-prebiotics-enteral-feeds-microbiome",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/flare-first-48-hours",
+      "path": "/blog/flare-first-48-hours",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/flare-foods-ibd",
+      "path": "/blog/flare-foods-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/flare-symptoms-ibd",
+      "path": "/blog/flare-symptoms-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/floating-stool-ibd",
+      "path": "/blog/floating-stool-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/fodmap-diet-crohns-colitis",
+      "path": "/blog/fodmap-diet-crohns-colitis",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/folate-ibd",
+      "path": "/blog/folate-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/food-reintroduction-after-een-ibd",
+      "path": "/blog/food-reintroduction-after-een-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/foods-that-may-trigger-uc-symptoms",
+      "path": "/blog/foods-that-may-trigger-uc-symptoms",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/free-government-ibd-research-sources",
+      "path": "/blog/free-government-ibd-research-sources",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/gas-bloating-ibd",
+      "path": "/blog/gas-bloating-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/gluten-wheat-ibd",
+      "path": "/blog/gluten-wheat-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/grapes-ibd",
+      "path": "/blog/grapes-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/greek-yogurt-ibd",
+      "path": "/blog/greek-yogurt-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/green-stool-ibd",
+      "path": "/blog/green-stool-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/gut-barrier-dysbiosis-inflammation-ibd",
+      "path": "/blog/gut-barrier-dysbiosis-inflammation-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/gut-microbiome-autoimmune",
+      "path": "/blog/gut-microbiome-autoimmune",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/hashimotos-thyroid-autoimmune",
+      "path": "/blog/hashimotos-thyroid-autoimmune",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/high-calprotectin-what-next",
+      "path": "/blog/high-calprotectin-what-next",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/high-school-ibd-survival-guide",
+      "path": "/blog/high-school-ibd-survival-guide",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/hospital-feeding-ibd-enteral-parenteral",
+      "path": "/blog/hospital-feeding-ibd-enteral-parenteral",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/how-ibdpal-nutrition-targets-work",
+      "path": "/blog/how-ibdpal-nutrition-targets-work",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/how-nutrition-impacts-gut-health-ibd",
+      "path": "/blog/how-nutrition-impacts-gut-health-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/how-to-read-colonoscopy-report-ibd",
+      "path": "/blog/how-to-read-colonoscopy-report-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/humid-weather-ibd-symptoms",
+      "path": "/blog/humid-weather-ibd-symptoms",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/humira-fatigue-ibd",
+      "path": "/blog/humira-fatigue-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/hydration-tips-ibd",
+      "path": "/blog/hydration-tips-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/ibd-at-work-talking-to-manager",
+      "path": "/blog/ibd-at-work-talking-to-manager",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/ibd-autoimmune-overlap",
+      "path": "/blog/ibd-autoimmune-overlap",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/ibd-back-pain-sacroiliitis",
+      "path": "/blog/ibd-back-pain-sacroiliitis",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/ibd-care-outside-united-states",
+      "path": "/blog/ibd-care-outside-united-states",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/ibd-clinical-trials-patient-decision-guide",
+      "path": "/blog/ibd-clinical-trials-patient-decision-guide",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/ibd-colon-cancer-risk-surveillance",
+      "path": "/blog/ibd-colon-cancer-risk-surveillance",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/ibd-extraintestinal-manifestations",
+      "path": "/blog/ibd-extraintestinal-manifestations",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/ibd-fatigue-brain-fog",
+      "path": "/blog/ibd-fatigue-brain-fog",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/ibd-flare-go-bag",
+      "path": "/blog/ibd-flare-go-bag",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/ibd-insurance-denial-appeal-toolkit",
+      "path": "/blog/ibd-insurance-denial-appeal-toolkit",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/ibd-joint-pain-arthritis",
+      "path": "/blog/ibd-joint-pain-arthritis",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/ibd-leg-knee-pain",
+      "path": "/blog/ibd-leg-knee-pain",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/ibd-medication-monitoring-checklist",
+      "path": "/blog/ibd-medication-monitoring-checklist",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/ibd-night-sweats",
+      "path": "/blog/ibd-night-sweats",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/ibd-pregnancy-planning",
+      "path": "/blog/ibd-pregnancy-planning",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/ibd-summer-heat-hydration",
+      "path": "/blog/ibd-summer-heat-hydration",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/ibd-surgery-peer-support",
+      "path": "/blog/ibd-surgery-peer-support",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/ibd-treatment-comparison-guide",
+      "path": "/blog/ibd-treatment-comparison-guide",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/ibd-unintentional-weight-changes",
+      "path": "/blog/ibd-unintentional-weight-changes",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/icn-accommodations-toolkit-ibd",
+      "path": "/blog/icn-accommodations-toolkit-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/icn-caregiver-coping-resource",
+      "path": "/blog/icn-caregiver-coping-resource",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/icn-college-ibd-toolkit",
+      "path": "/blog/icn-college-ibd-toolkit",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/icn-health-literacy-toolkit-ibd",
+      "path": "/blog/icn-health-literacy-toolkit-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/icn-ibd-holidays-special-occasions",
+      "path": "/blog/icn-ibd-holidays-special-occasions",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/icn-lifestyle-ibd-toolkit",
+      "path": "/blog/icn-lifestyle-ibd-toolkit",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/icn-mental-health-provider-guide",
+      "path": "/blog/icn-mental-health-provider-guide",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/icn-ostomy-toolkit-pediatric",
+      "path": "/blog/icn-ostomy-toolkit-pediatric",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/icn-self-management-handbook-ibd",
+      "path": "/blog/icn-self-management-handbook-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/icn-transfer-toolkit-adult-care",
+      "path": "/blog/icn-transfer-toolkit-adult-care",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/immunosuppressants-ibd-basics",
+      "path": "/blog/immunosuppressants-ibd-basics",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/infusion-day-what-to-expect",
+      "path": "/blog/infusion-day-what-to-expect",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/insurance-biologics-ibd",
+      "path": "/blog/insurance-biologics-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/intermittent-fasting-ibd",
+      "path": "/blog/intermittent-fasting-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/introducing-ibdpal",
+      "path": "/blog/introducing-ibdpal",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/iron-b12-vitamin-d-ibd",
+      "path": "/blog/iron-b12-vitamin-d-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/j-pouch-basics-ibd",
+      "path": "/blog/j-pouch-basics-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/juice-cleanse-detox-ibd",
+      "path": "/blog/juice-cleanse-detox-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/kimchi-fermented-ibd",
+      "path": "/blog/kimchi-fermented-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/leaky-gut-protocol-ibd",
+      "path": "/blog/leaky-gut-protocol-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/lean-beef-ibd",
+      "path": "/blog/lean-beef-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/living-with-ibd-kids",
+      "path": "/blog/living-with-ibd-kids",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/low-residue-diet-flare",
+      "path": "/blog/low-residue-diet-flare",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/lupus-autoimmune-basics",
+      "path": "/blog/lupus-autoimmune-basics",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/magnesium-ibd",
+      "path": "/blog/magnesium-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/mango-ibd-crohns-colitis",
+      "path": "/blog/mango-ibd-crohns-colitis",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/mediterranean-diet-autoimmune",
+      "path": "/blog/mediterranean-diet-autoimmune",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/melon-ibd",
+      "path": "/blog/melon-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/mesalamine-5-asa-ibd",
+      "path": "/blog/mesalamine-5-asa-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/methotrexate-alcohol-folate-ibd",
+      "path": "/blog/methotrexate-alcohol-folate-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/microbiome-lab-testing-ibd",
+      "path": "/blog/microbiome-lab-testing-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/microbiome-research-labs-ibd",
+      "path": "/blog/microbiome-research-labs-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/micronutrients-ibd-deficiencies",
+      "path": "/blog/micronutrients-ibd-deficiencies",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/miso-soup-ibd",
+      "path": "/blog/miso-soup-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/mucus-in-stool-ibd",
+      "path": "/blog/mucus-in-stool-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/mucus-urgency-tenesmus-ibd",
+      "path": "/blog/mucus-urgency-tenesmus-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/multiple-sclerosis-autoimmune-basics",
+      "path": "/blog/multiple-sclerosis-autoimmune-basics",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/nasogastric-tube-feeds-ibd-practical",
+      "path": "/blog/nasogastric-tube-feeds-ibd-practical",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/newly-diagnosed-first-30-days",
+      "path": "/blog/newly-diagnosed-first-30-days",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/nsaids-ibd-risk",
+      "path": "/blog/nsaids-ibd-risk",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/oatmeal-ibd",
+      "path": "/blog/oatmeal-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/omega-3-ibd",
+      "path": "/blog/omega-3-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/onion-garlic-ibd-fodmap",
+      "path": "/blog/onion-garlic-ibd-fodmap",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/oral-canker-sores-ibd",
+      "path": "/blog/oral-canker-sores-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/oranges-citrus-ibd",
+      "path": "/blog/oranges-citrus-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/osteoporosis-bone-health-ibd",
+      "path": "/blog/osteoporosis-bone-health-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/ostomy-basics-ibd",
+      "path": "/blog/ostomy-basics-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/pale-clay-stool-ibd",
+      "path": "/blog/pale-clay-stool-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/paneer-ibd",
+      "path": "/blog/paneer-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/partner-caregiver-ibd",
+      "path": "/blog/partner-caregiver-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/peanut-butter-ibd",
+      "path": "/blog/peanut-butter-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/pelvic-floor-exercises-ibd",
+      "path": "/blog/pelvic-floor-exercises-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/pencil-thin-stool-ibd",
+      "path": "/blog/pencil-thin-stool-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/perianal-crohns-fistula-abscess",
+      "path": "/blog/perianal-crohns-fistula-abscess",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/periods-menstrual-cycle-ibd",
+      "path": "/blog/periods-menstrual-cycle-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/plantain-ibd",
+      "path": "/blog/plantain-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/potassium-ibd",
+      "path": "/blog/potassium-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/potato-ibd-white",
+      "path": "/blog/potato-ibd-white",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/prednisone-diet-hunger-ibd",
+      "path": "/blog/prednisone-diet-hunger-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/prior-authorization-biologics-timeline",
+      "path": "/blog/prior-authorization-biologics-timeline",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/probiotics-ibd-gut-health",
+      "path": "/blog/probiotics-ibd-gut-health",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/probiotics-ibd-practical-guide",
+      "path": "/blog/probiotics-ibd-practical-guide",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/protein-meal-plan-ibd-remission",
+      "path": "/blog/protein-meal-plan-ibd-remission",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/protein-shakes-ons-ibd",
+      "path": "/blog/protein-shakes-ons-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/psc-ibd-liver",
+      "path": "/blog/psc-ibd-liver",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/psoriasis-ibd-connection",
+      "path": "/blog/psoriasis-ibd-connection",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/pyoderma-erythema-nodosum-ibd",
+      "path": "/blog/pyoderma-erythema-nodosum-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/reading-ibd-labs-calprotectin-crp",
+      "path": "/blog/reading-ibd-labs-calprotectin-crp",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/remicade-infusion-day-tips-ibd",
+      "path": "/blog/remicade-infusion-day-tips-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/rheumatoid-arthritis-autoimmune-overview",
+      "path": "/blog/rheumatoid-arthritis-autoimmune-overview",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/rinvoq-patient-questions-ibd",
+      "path": "/blog/rinvoq-patient-questions-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/running-jogging-ibd",
+      "path": "/blog/running-jogging-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/salmon-fish-ibd",
+      "path": "/blog/salmon-fish-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/school-planning-ibd-before-august",
+      "path": "/blog/school-planning-ibd-before-august",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/seasonings-herbs-spices-ibd",
+      "path": "/blog/seasonings-herbs-spices-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/siblings-when-child-has-ibd",
+      "path": "/blog/siblings-when-child-has-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/sjogren-autoimmune-overview",
+      "path": "/blog/sjogren-autoimmune-overview",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/skyrizi-patient-questions-ibd",
+      "path": "/blog/skyrizi-patient-questions-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/skyrizi-subcutaneous-induction-crohns",
+      "path": "/blog/skyrizi-subcutaneous-induction-crohns",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/sleep-rest-ibd-flares",
+      "path": "/blog/sleep-rest-ibd-flares",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/smoking-ibd-crohns-colitis",
+      "path": "/blog/smoking-ibd-crohns-colitis",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/social-life-dating-teens-ibd",
+      "path": "/blog/social-life-dating-teens-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/specific-carbohydrate-diet-scd-ibd",
+      "path": "/blog/specific-carbohydrate-diet-scd-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/spicy-foods-nuts-seeds-ibd",
+      "path": "/blog/spicy-foods-nuts-seeds-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/spinach-leafy-greens-ibd",
+      "path": "/blog/spinach-leafy-greens-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/starting-biologic-first-12-weeks",
+      "path": "/blog/starting-biologic-first-12-weeks",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/stelara-diet-ibd",
+      "path": "/blog/stelara-diet-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/steroid-taper-what-to-expect-ibd",
+      "path": "/blog/steroid-taper-what-to-expect-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/steroids-prednisone-ibd",
+      "path": "/blog/steroids-prednisone-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/strawberries-ibd",
+      "path": "/blog/strawberries-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/strength-training-gym-ibd",
+      "path": "/blog/strength-training-gym-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/stress-autoimmune-symptoms",
+      "path": "/blog/stress-autoimmune-symptoms",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/stress-coping-strategies-ibd",
+      "path": "/blog/stress-coping-strategies-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/stress-emotional-wellness-ibd",
+      "path": "/blog/stress-emotional-wellness-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/summer-travel-ibd-restrooms-meds-food-heat",
+      "path": "/blog/summer-travel-ibd-restrooms-meds-food-heat",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/sweet-potato-ibd",
+      "path": "/blog/sweet-potato-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/swimming-pool-beach-ibd-ostomy",
+      "path": "/blog/swimming-pool-beach-ibd-ostomy",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/taste-fatigue-enteral-formula-ibd",
+      "path": "/blog/taste-fatigue-enteral-formula-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/tea-ibd",
+      "path": "/blog/tea-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/teen-nutrition-ibd-growth",
+      "path": "/blog/teen-nutrition-ibd-growth",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/therapeutic-drug-monitoring-ibd",
+      "path": "/blog/therapeutic-drug-monitoring-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/thrombosis-clot-risk-ibd",
+      "path": "/blog/thrombosis-clot-risk-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/tofu-soy-ibd",
+      "path": "/blog/tofu-soy-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/tomatoes-ibd",
+      "path": "/blog/tomatoes-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/tortillas-ibd",
+      "path": "/blog/tortillas-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/tracking-food-symptoms-ibdpal",
+      "path": "/blog/tracking-food-symptoms-ibdpal",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/travel-with-ibd",
+      "path": "/blog/travel-with-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/tuna-ibd",
+      "path": "/blog/tuna-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/turkey-protein-ibd",
+      "path": "/blog/turkey-protein-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/type1-diabetes-autoimmune-basics",
+      "path": "/blog/type1-diabetes-autoimmune-basics",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/ulcerative-colitis-diet-overview-ibd",
+      "path": "/blog/ulcerative-colitis-diet-overview-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/understanding-biologics-ibd",
+      "path": "/blog/understanding-biologics-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/understanding-ibd-pathology-report",
+      "path": "/blog/understanding-ibd-pathology-report",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/uveitis-eye-inflammation-ibd",
+      "path": "/blog/uveitis-eye-inflammation-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/vaccine-autoimmune-immunosuppression",
+      "path": "/blog/vaccine-autoimmune-immunosuppression",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/vaccines-biologics-immunosuppressants-ibd",
+      "path": "/blog/vaccines-biologics-immunosuppressants-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/visbiome-probiotics-ibd",
+      "path": "/blog/visbiome-probiotics-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/vitamin-a-ibd",
+      "path": "/blog/vitamin-a-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/vitamin-c-ibd",
+      "path": "/blog/vitamin-c-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/vomiting-obstruction-ibd-warning-signs",
+      "path": "/blog/vomiting-obstruction-ibd-warning-signs",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/walking-for-ibd-crohns-colitis",
+      "path": "/blog/walking-for-ibd-crohns-colitis",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/weight-loss-ibd-safe-guide",
+      "path": "/blog/weight-loss-ibd-safe-guide",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/what-remission-means-ibd",
+      "path": "/blog/what-remission-means-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/when-ibd-biologic-stops-working",
+      "path": "/blog/when-ibd-biologic-stops-working",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/when-to-call-gi-vs-er-ibd",
+      "path": "/blog/when-to-call-gi-vs-er-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/when-to-call-ibd-help-center",
+      "path": "/blog/when-to-call-ibd-help-center",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/when-to-go-er-ibd",
+      "path": "/blog/when-to-go-er-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/white-bread-ibd",
+      "path": "/blog/white-bread-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/white-rice-ibd-flare",
+      "path": "/blog/white-rice-ibd-flare",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/workplace-school-ibd-rights",
+      "path": "/blog/workplace-school-ibd-rights",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/yellow-stool-ibd",
+      "path": "/blog/yellow-stool-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/yoga-for-ibd-crohns-colitis",
+      "path": "/blog/yoga-for-ibd-crohns-colitis",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/zinc-ibd",
+      "path": "/blog/zinc-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/zucchini-ibd",
+      "path": "/blog/zucchini-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/es/adolescentes-escuela",
+      "path": "/es/adolescentes-escuela",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.78
+    },
+    {
+      "loc": "https://www.ibdpal.org/es/brotes-eii",
+      "path": "/es/brotes-eii",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.78
+    },
+    {
+      "loc": "https://www.ibdpal.org/es/colitis-ulcerosa",
+      "path": "/es/colitis-ulcerosa",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.78
+    },
+    {
+      "loc": "https://www.ibdpal.org/es/cuando-ir-urgencias-eii",
+      "path": "/es/cuando-ir-urgencias-eii",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.78
+    },
+    {
+      "loc": "https://www.ibdpal.org/es/enfermedad-crohn",
+      "path": "/es/enfermedad-crohn",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.78
+    },
+    {
+      "loc": "https://www.ibdpal.org/es/nutricion-eii",
+      "path": "/es/nutricion-eii",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.78
+    },
+    {
+      "loc": "https://www.ibdpal.org/es/preguntas-frecuentes",
+      "path": "/es/preguntas-frecuentes",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.78
+    },
+    {
+      "loc": "https://www.ibdpal.org/es/recien-diagnosticado",
+      "path": "/es/recien-diagnosticado",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.78
+    },
+    {
+      "loc": "https://www.ibdpal.org/es/recursos",
+      "path": "/es/recursos",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.78
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/anti-inflammatory-diet-ibd",
+      "path": "/guides/anti-inflammatory-diet-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/autoimmune-nutrition-basics",
+      "path": "/guides/autoimmune-nutrition-basics",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/biologics-crohns-colitis",
+      "path": "/guides/biologics-crohns-colitis",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/biologics-questions-for-your-doctor",
+      "path": "/guides/biologics-questions-for-your-doctor",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/camp-oasis-kids-ibd",
+      "path": "/guides/camp-oasis-kids-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/crohns-colitis-support-groups",
+      "path": "/guides/crohns-colitis-support-groups",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/crohns-disease-diet-nutrition",
+      "path": "/guides/crohns-disease-diet-nutrition",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/crohns-doctor-visit-prep",
+      "path": "/guides/crohns-doctor-visit-prep",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/crohns-flare-what-to-do",
+      "path": "/guides/crohns-flare-what-to-do",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/crohns-food-triggers",
+      "path": "/guides/crohns-food-triggers",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/dining-out-with-ibd",
+      "path": "/guides/dining-out-with-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/elimination-diet-when-to-stop-ibd",
+      "path": "/guides/elimination-diet-when-to-stop-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/find-ccf-chapter-support-group",
+      "path": "/guides/find-ccf-chapter-support-group",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/first-gastroenterology-appointment-ibd",
+      "path": "/guides/first-gastroenterology-appointment-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/foods-to-eat-crohns-flare",
+      "path": "/guides/foods-to-eat-crohns-flare",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/foundation-complementary-medicine-ibd",
+      "path": "/guides/foundation-complementary-medicine-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/foundation-diet-nutrition-ibd",
+      "path": "/guides/foundation-diet-nutrition-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/foundation-emotional-wellness-ibd",
+      "path": "/guides/foundation-emotional-wellness-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/foundation-ibd-appeal-letters",
+      "path": "/guides/foundation-ibd-appeal-letters",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/foundation-ibd-clinical-trials",
+      "path": "/guides/foundation-ibd-clinical-trials",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/foundation-ibd-colonoscopy-cancer-surveillance",
+      "path": "/guides/foundation-ibd-colonoscopy-cancer-surveillance",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/foundation-ibd-extraintestinal-manifestations",
+      "path": "/guides/foundation-ibd-extraintestinal-manifestations",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/foundation-ibd-intimacy-sexual-health",
+      "path": "/guides/foundation-ibd-intimacy-sexual-health",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/foundation-ibd-medication-guide",
+      "path": "/guides/foundation-ibd-medication-guide",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/foundation-ibd-pain-fatigue",
+      "path": "/guides/foundation-ibd-pain-fatigue",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/foundation-ibd-surgery-ostomy",
+      "path": "/guides/foundation-ibd-surgery-ostomy",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/foundation-ibd-travel-restroom-access",
+      "path": "/guides/foundation-ibd-travel-restroom-access",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/foundation-ibd-vaccines-infection",
+      "path": "/guides/foundation-ibd-vaccines-infection",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/foundation-workplace-school-rights-ibd",
+      "path": "/guides/foundation-workplace-school-rights-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/gluten-free-autoimmune-when",
+      "path": "/guides/gluten-free-autoimmune-when",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/ibd-biologic-access-outside-us",
+      "path": "/guides/ibd-biologic-access-outside-us",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/ibd-crohns-colitis-helpline",
+      "path": "/guides/ibd-crohns-colitis-helpline",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/ibd-flare-emergency-supplies",
+      "path": "/guides/ibd-flare-emergency-supplies",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/ibd-hydration-fluids",
+      "path": "/guides/ibd-hydration-fluids",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/ibd-nutrition-tracking-app",
+      "path": "/guides/ibd-nutrition-tracking-app",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/ibd-prior-authorization-foundation",
+      "path": "/guides/ibd-prior-authorization-foundation",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/ibd-support-near-me",
+      "path": "/guides/ibd-support-near-me",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/ibd-travel-planning",
+      "path": "/guides/ibd-travel-planning",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/ibd-workplace-school-rights",
+      "path": "/guides/ibd-workplace-school-rights",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/iron-deficiency-nutrition-ibd",
+      "path": "/guides/iron-deficiency-nutrition-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/living-with-ostomy-ibd",
+      "path": "/guides/living-with-ostomy-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/low-residue-diet-ibd",
+      "path": "/guides/low-residue-diet-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/newly-diagnosed-crohns-colitis",
+      "path": "/guides/newly-diagnosed-crohns-colitis",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/newly-diagnosed-foundation-first-week",
+      "path": "/guides/newly-diagnosed-foundation-first-week",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/partner-caregiver-ibd",
+      "path": "/guides/partner-caregiver-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/pediatric-crohns-colitis-help",
+      "path": "/guides/pediatric-crohns-colitis-help",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/pregnancy-ibd-foundation-resources",
+      "path": "/guides/pregnancy-ibd-foundation-resources",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/protein-healing-ibd-flare",
+      "path": "/guides/protein-healing-ibd-flare",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/sleep-ibd-flares",
+      "path": "/guides/sleep-ibd-flares",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/step-therapy-safe-step-act-ibd",
+      "path": "/guides/step-therapy-safe-step-act-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/stress-anxiety-ibd",
+      "path": "/guides/stress-anxiety-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/track-ibd-symptoms-food",
+      "path": "/guides/track-ibd-symptoms-food",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/ulcerative-colitis-diet-foods",
+      "path": "/guides/ulcerative-colitis-diet-foods",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/ulcerative-colitis-flare-management",
+      "path": "/guides/ulcerative-colitis-flare-management",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/vitamin-d-bone-nutrition-ibd",
+      "path": "/guides/vitamin-d-bone-nutrition-ibd",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/what-is-crohns-disease-foundation",
+      "path": "/guides/what-is-crohns-disease-foundation",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/what-is-ibd-foundation",
+      "path": "/guides/what-is-ibd-foundation",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/what-is-ulcerative-colitis-foundation",
+      "path": "/guides/what-is-ulcerative-colitis-foundation",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/what-should-i-eat-crohns-colitis",
+      "path": "/guides/what-should-i-eat-crohns-colitis",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/guides/youth-school-foundation-resources",
+      "path": "/guides/youth-school-foundation-resources",
+      "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.84
+    },
+    {
+      "loc": "https://www.ibdpal.org/patient-stories/james-uc-flare-log",
+      "path": "/patient-stories/james-uc-flare-log",
+      "lastmod": "2026-08-21",
+      "changefreq": "monthly",
+      "priority": 0.8
+    },
+    {
+      "loc": "https://www.ibdpal.org/patient-stories/maya-crohns-tracking",
+      "path": "/patient-stories/maya-crohns-tracking",
+      "lastmod": "2026-08-21",
+      "changefreq": "monthly",
+      "priority": 0.8
+    },
+    {
+      "loc": "https://www.ibdpal.org/patient-stories/priya-parent-teen-ibd",
+      "path": "/patient-stories/priya-parent-teen-ibd",
+      "lastmod": "2026-08-21",
+      "changefreq": "monthly",
+      "priority": 0.8
+    },
+    {
+      "loc": "https://www.ibdpal.org/privacy/app",
+      "path": "/privacy/app",
+      "lastmod": "2026-08-21",
+      "changefreq": "yearly",
+      "priority": 0.55
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/alabama",
+      "path": "/support/alabama",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/alaska",
+      "path": "/support/alaska",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/arizona",
+      "path": "/support/arizona",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/arkansas",
+      "path": "/support/arkansas",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/california",
+      "path": "/support/california",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/colorado",
+      "path": "/support/colorado",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/connecticut",
+      "path": "/support/connecticut",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/delaware",
+      "path": "/support/delaware",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/district-of-columbia",
+      "path": "/support/district-of-columbia",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/florida",
+      "path": "/support/florida",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/georgia",
+      "path": "/support/georgia",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/hawaii",
+      "path": "/support/hawaii",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/idaho",
+      "path": "/support/idaho",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/illinois",
+      "path": "/support/illinois",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/indiana",
+      "path": "/support/indiana",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/iowa",
+      "path": "/support/iowa",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/kansas",
+      "path": "/support/kansas",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/kentucky",
+      "path": "/support/kentucky",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/louisiana",
+      "path": "/support/louisiana",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/maine",
+      "path": "/support/maine",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/maryland",
+      "path": "/support/maryland",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/massachusetts",
+      "path": "/support/massachusetts",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/michigan",
+      "path": "/support/michigan",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/minnesota",
+      "path": "/support/minnesota",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/mississippi",
+      "path": "/support/mississippi",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/missouri",
+      "path": "/support/missouri",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/montana",
+      "path": "/support/montana",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/nebraska",
+      "path": "/support/nebraska",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/nevada",
+      "path": "/support/nevada",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/new-hampshire",
+      "path": "/support/new-hampshire",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/new-jersey",
+      "path": "/support/new-jersey",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/new-mexico",
+      "path": "/support/new-mexico",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/new-york",
+      "path": "/support/new-york",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/north-carolina",
+      "path": "/support/north-carolina",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/north-dakota",
+      "path": "/support/north-dakota",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/ohio",
+      "path": "/support/ohio",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/oklahoma",
+      "path": "/support/oklahoma",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/oregon",
+      "path": "/support/oregon",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/pennsylvania",
+      "path": "/support/pennsylvania",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/rhode-island",
+      "path": "/support/rhode-island",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/south-carolina",
+      "path": "/support/south-carolina",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/south-dakota",
+      "path": "/support/south-dakota",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/tennessee",
+      "path": "/support/tennessee",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/texas",
+      "path": "/support/texas",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/utah",
+      "path": "/support/utah",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/vermont",
+      "path": "/support/vermont",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/virginia",
+      "path": "/support/virginia",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/washington",
+      "path": "/support/washington",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/west-virginia",
+      "path": "/support/west-virginia",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/wisconsin",
+      "path": "/support/wisconsin",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/support/wyoming",
+      "path": "/support/wyoming",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.82
+    },
+    {
+      "loc": "https://www.ibdpal.org/tools/bristol-flare-checker",
+      "path": "/tools/bristol-flare-checker",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.9
+    },
+    {
+      "loc": "https://www.ibdpal.org/tools/food-pain-tracker",
+      "path": "/tools/food-pain-tracker",
+      "lastmod": "2026-11-14",
+      "changefreq": "monthly",
+      "priority": 0.9
+    }
+  ]
+}

@@ -130,5 +130,10 @@ Allow: /
 
 # Machine-readable content index for assistants and retrieval systems:
 # https://www.ibdpal.org/llms.txt
+# Crawl-friendly sitemap mirrors (XML is canonical; TXT/JSON help tools that strip XML):
+# https://www.ibdpal.org/sitemap.txt
+# https://www.ibdpal.org/sitemap.json
+# https://www.ibdpal.org/sitemap
 Host: https://www.ibdpal.org
 Sitemap: https://www.ibdpal.org/sitemap.xml
+Sitemap: https://www.ibdpal.org/sitemap.txt

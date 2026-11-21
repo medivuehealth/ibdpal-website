@@ -170,6 +170,14 @@
     "tags": ["flare", "urgent", "symptoms"]
   },
   {
+    "title": "IBDPal Sitemap (HTML URL directory)",
+    "category": "getting-started",
+    "type": "site",
+    "url": "/sitemap",
+    "tags": ["sitemap", "crawl", "index", "urls"],
+    "description": "HTML URL directory with links to sitemap.xml, sitemap.txt, and sitemap.json for crawl tools."
+  },
+  {
     "title": "IBD Treatment Decisions & Monitoring Hub",
     "category": "treatment",
     "type": "site",

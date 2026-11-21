@@ -306,7 +306,11 @@
 - Support: support@ibdpal.org
 
 ## Machine-readable index
-- Sitemap: https://www.ibdpal.org/sitemap.xml
+- Sitemap (XML, canonical): https://www.ibdpal.org/sitemap.xml
+- Sitemap (plain text, one URL per line): https://www.ibdpal.org/sitemap.txt
+- Sitemap (JSON): https://www.ibdpal.org/sitemap.json
+- Sitemap (HTML directory): https://www.ibdpal.org/sitemap
+- This file: https://www.ibdpal.org/llms.txt
 
 ## Patient guides (search topics)
 - https://www.ibdpal.org/guides
