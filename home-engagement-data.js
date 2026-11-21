@@ -347,6 +347,23 @@ window.IBDPAL_HOME_ENGAGEMENT = {
   },
   "gap_answers": [
     {
+      "slug": "enteral-nutrition-ibd",
+      "url": "/blog/enteral-nutrition-ibd",
+      "title": "Enteral Nutrition for IBD: EEN, Formula Feeds, and Clinic Questions",
+      "search_label": "Enteral",
+      "match_terms": [
+        "enteral",
+        "enteral nutrition",
+        "een",
+        "exclusive enteral nutrition",
+        "tube feeding",
+        "formula feeds",
+        "partial enteral"
+      ],
+      "badge": "Answers searches for Enteral",
+      "date_iso": "2026-11-21T20:00:00Z"
+    },
+    {
       "slug": "seasonings-herbs-spices-ibd",
       "url": "/blog/seasonings-herbs-spices-ibd",
       "title": "Seasonings, Herbs, and Spices with IBD: Flavor Without the Flare Guesswork",

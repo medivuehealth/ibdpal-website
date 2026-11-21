@@ -89,7 +89,7 @@
         term: String(term || '').trim().slice(0, 120),
         normalizedTerm: normalizedTerm,
         source: 'patient_library',
-        resultCount: resultCount || 0
+        resultCount: Math.max(0, Number(resultCount) || 0)
       })
     }).catch(function () {
       // Search analytics should never interrupt the resource library.
@@ -100,9 +100,32 @@
     return item.label || item.term || item.normalized_term || '';
   }
 
-  function matchesQuery(hay, q) {
+  var PINNED_TOPIC_URLS = {
+    enteral: [
+      '/blog/enteral-nutrition-ibd',
+      '/blog/exclusive-vs-partial-enteral-nutrition-crohns',
+      '/blog/enteral-nutrition-after-ibd-surgery',
+      '/blog/hospital-feeding-ibd-enteral-parenteral'
+    ],
+    seasoning: ['/blog/seasonings-herbs-spices-ibd'],
+    seasonings: ['/blog/seasonings-herbs-spices-ibd'],
+    spice: ['/blog/seasonings-herbs-spices-ibd'],
+    spices: ['/blog/seasonings-herbs-spices-ibd'],
+    herbal: ['/blog/seasonings-herbs-spices-ibd'],
+    herbs: ['/blog/seasonings-herbs-spices-ibd'],
+    'crohn diet': [
+      '/blog/cded-crohns-exclusion-diet-ibd',
+      '/blog/specific-carbohydrate-diet-scd-ibd'
+    ]
+  };
+
+  function matchesQuery(hay, q, itemUrl) {
     if (!q) return true;
-    var variants = [q];
+    var nq = normalizeTerm(q);
+    if (PINNED_TOPIC_URLS[nq] && PINNED_TOPIC_URLS[nq].indexOf(itemUrl) !== -1) {
+      return true;
+    }
+    var variants = [nq];
     if (window.IBDPAL_SEARCH_FUZZY && window.IBDPAL_SEARCH_FUZZY.expandQuery) {
       variants = window.IBDPAL_SEARCH_FUZZY.expandQuery(q);
     }
@@ -170,7 +193,7 @@
       list.querySelectorAll('.resource-card').forEach(function (card, i) {
         var item = window.IBDPAL_RESOURCES[i];
         var matchCat = !cat || item.category === cat;
-        var matchQ = matchesQuery(buildHaystack(item), q);
+        var matchQ = matchesQuery(buildHaystack(item), q, item.url);
         var show = matchCat && matchQ;
         card.style.display = show ? '' : 'none';
         if (show) visible += 1;

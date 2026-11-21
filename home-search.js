@@ -14,6 +14,31 @@
     { term: 'low residue', label: 'Low residue' }
   ];
   var MAX_RESULTS = 8;
+  // Hard pins so intermittent index/cache misses never log false zero-result gaps
+  // for topics we already cover. Keys are normalized terms.
+  var PINNED_TOPIC_URLS = {
+    enteral: [
+      '/blog/enteral-nutrition-ibd',
+      '/blog/exclusive-vs-partial-enteral-nutrition-crohns',
+      '/blog/enteral-nutrition-after-ibd-surgery',
+      '/blog/hospital-feeding-ibd-enteral-parenteral',
+      '/blog/taste-fatigue-enteral-formula-ibd',
+      '/blog/fiber-prebiotics-enteral-feeds-microbiome',
+      '/blog/adult-een-crohns-what-to-expect',
+      '/blog/nasogastric-tube-feeds-ibd-practical'
+    ],
+    seasoning: ['/blog/seasonings-herbs-spices-ibd'],
+    seasonings: ['/blog/seasonings-herbs-spices-ibd'],
+    spice: ['/blog/seasonings-herbs-spices-ibd'],
+    spices: ['/blog/seasonings-herbs-spices-ibd'],
+    herbal: ['/blog/seasonings-herbs-spices-ibd'],
+    herbs: ['/blog/seasonings-herbs-spices-ibd'],
+    'crohn diet': [
+      '/blog/cded-crohns-exclusion-diet-ibd',
+      '/blog/specific-carbohydrate-diet-scd-ibd',
+      '/eating-with-ibd'
+    ]
+  };
 
   function escapeHtml(s) {
     return String(s || '').replace(/[&<>"']/g, function (char) {
@@ -125,7 +150,7 @@
         term: String(term || '').trim().slice(0, 120),
         normalizedTerm: normalizedTerm,
         source: 'homepage',
-        resultCount: resultCount || 0,
+        resultCount: Math.max(0, Number(resultCount) || 0),
         clickedArticleUrl: clickedUrl || null
       })
     }).catch(function () {});
@@ -142,10 +167,57 @@
     return 'Guide';
   }
 
+  function resourcesByUrl() {
+    var map = {};
+    (window.IBDPAL_RESOURCES || []).forEach(function (item) {
+      if (item && item.url) map[item.url] = item;
+    });
+    return map;
+  }
+
+  function pinnedUrlsForQuery(q) {
+    var urls = [];
+    var seen = {};
+    function add(list) {
+      (list || []).forEach(function (url) {
+        if (!url || seen[url]) return;
+        seen[url] = true;
+        urls.push(url);
+      });
+    }
+    add(PINNED_TOPIC_URLS[q]);
+    // Also honor gap_answers match_terms from engagement data.
+    var gaps = (window.IBDPAL_HOME_ENGAGEMENT && window.IBDPAL_HOME_ENGAGEMENT.gap_answers) || [];
+    gaps.forEach(function (gap) {
+      var terms = gap.match_terms || [];
+      for (var i = 0; i < terms.length; i++) {
+        if (normalizeTerm(terms[i]) === q) {
+          add([gap.url]);
+          break;
+        }
+      }
+    });
+    return urls;
+  }
+
+  function mergePinned(ranked, q) {
+    var byUrl = resourcesByUrl();
+    var have = {};
+    ranked.forEach(function (item) { have[item.url] = true; });
+    pinnedUrlsForQuery(q).forEach(function (url) {
+      if (have[url]) return;
+      var item = byUrl[url];
+      if (!item) return;
+      ranked.push(item);
+      have[url] = true;
+    });
+    return ranked.slice(0, MAX_RESULTS);
+  }
+
   function rankQuery(q) {
     var variants = queryVariants(q);
     var best = {};
-    window.IBDPAL_RESOURCES.forEach(function (item) {
+    (window.IBDPAL_RESOURCES || []).forEach(function (item) {
       var score = 0;
       variants.forEach(function (variant, index) {
         var part = scoreItem(item, variant);
@@ -155,11 +227,17 @@
       });
       if (score > 0) best[item.url] = { item: item, score: score };
     });
-    return Object.keys(best)
+    var ranked = Object.keys(best)
       .map(function (url) { return best[url]; })
       .sort(function (a, b) { return b.score - a.score; })
       .slice(0, MAX_RESULTS)
       .map(function (row) { return row.item; });
+    // Guarantee known covered topics never surface as false zero-result gaps.
+    variants.forEach(function (variant) {
+      ranked = mergePinned(ranked, variant);
+    });
+    ranked = mergePinned(ranked, q);
+    return ranked.slice(0, MAX_RESULTS);
   }
 
   function initHomeSearch(root) {
