@@ -156,6 +156,7 @@ TAB_NAV_HOME_HTML = """
 
 PAGE_SCRIPTS = """
     <script src="/site-config.js" defer></script>
+    <script src="/awareness-month-promo.js" defer></script>
     <script src="/site-global.js" defer></script>
     <script src="/analytics-config.js"></script>
     <script src="/analytics.js" defer></script>

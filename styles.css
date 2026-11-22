@@ -2490,6 +2490,63 @@ a.tab-button {
     font-weight: 400;
 }
 
+.crisis-strip__cal {
+    margin: 0;
+    flex: 1 1 auto;
+    min-width: 0;
+    text-align: center;
+}
+
+.crisis-strip a.crisis-strip__cal-link {
+    color: #1d4ed8;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 0.4rem;
+    max-width: 100%;
+    line-height: 1.35;
+}
+
+.crisis-strip a.crisis-strip__cal-link:hover,
+.crisis-strip a.crisis-strip__cal-link:focus-visible {
+    color: #1e40af;
+    text-decoration: underline;
+}
+
+.crisis-strip__cal-kicker {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #2563eb;
+    flex-shrink: 0;
+}
+
+.crisis-strip__cal-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-width: 0;
+}
+
+@media (max-width: 720px) {
+    .crisis-strip__inner {
+        flex-wrap: wrap;
+    }
+
+    .crisis-strip__cal {
+        order: 3;
+        flex: 1 1 100%;
+        text-align: left;
+    }
+
+    .crisis-strip a.crisis-strip__cal-link {
+        justify-content: flex-start;
+    }
+}
+
 .crisis-strip .site-lang__link {
     color: var(--ibd-muted, #6b7280);
     text-decoration: none;

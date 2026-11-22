@@ -12,6 +12,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "ibd-awareness-calendar.json"
 OUT = ROOT / "ibd-awareness-calendar.html"
+PROMO_JS = ROOT / "awareness-month-promo.js"
 VERCEL = ROOT / "vercel.json"
 SITEMAP = ROOT / "sitemap.xml"
 ALIASES = ROOT / "data" / "search-aliases.json"
@@ -221,6 +222,30 @@ def update_aliases() -> None:
     print("updated search-aliases.json")
 
 
+def write_promo_js(data: dict) -> None:
+    """Compact month labels for the home-page crisis-strip promo."""
+    months = [
+        {
+            "month": m["month"],
+            "name": m["name"],
+            "event": m["event"],
+            "major": bool(m.get("major")),
+        }
+        for m in data.get("months") or []
+    ]
+    payload = {
+        "year": data.get("year", date.today().year),
+        "path": PATH,
+        "months": months,
+    }
+    PROMO_JS.write_text(
+        "/* Generated from data/ibd-awareness-calendar.json — do not edit by hand. */\n"
+        f"window.IBDPAL_AWARENESS_PROMO = {json.dumps(payload, ensure_ascii=False)};\n",
+        encoding="utf-8",
+    )
+    print("wrote", PROMO_JS.name)
+
+
 def update_resources_base() -> None:
     items = json.loads(RESOURCES_BASE.read_text(encoding="utf-8"))
     entry = {
@@ -250,6 +275,7 @@ def main() -> None:
     data = json.loads(DATA.read_text(encoding="utf-8"))
     OUT.write_text(render_page(data), encoding="utf-8")
     print("wrote", OUT.name)
+    write_promo_js(data)
     patch_vercel()
     patch_sitemap()
     update_aliases()

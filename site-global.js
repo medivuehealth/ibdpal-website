@@ -119,6 +119,57 @@
     }
   }
 
+  function isHomePath() {
+    var path = (window.location.pathname || '/').replace(/\/index\.html?$/i, '/');
+    path = path.replace(/\/$/, '') || '/';
+    return path === '/' || path === '';
+  }
+
+  function currentAwarenessMonth() {
+    var promo = window.IBDPAL_AWARENESS_PROMO || {};
+    var months = promo.months || [];
+    var now = new Date();
+    var monthNum = now.getMonth() + 1;
+    var i;
+    for (i = 0; i < months.length; i += 1) {
+      if (Number(months[i].month) === monthNum) return months[i];
+    }
+    return null;
+  }
+
+  function injectAwarenessCalendarPromo() {
+    if (!isHomePath()) return;
+    var crisisInner = document.querySelector('.crisis-strip__inner');
+    if (!crisisInner || crisisInner.querySelector('.crisis-strip__cal')) return;
+
+    var entry = currentAwarenessMonth();
+    if (!entry || !entry.name) return;
+
+    var monthNum = Number(entry.month) || new Date().getMonth() + 1;
+    var href =
+      '/ibd-awareness-calendar#m-' + String(monthNum).padStart(2, '0');
+    var label = entry.name + ' · ' + (entry.event || 'IBD awareness');
+    var wrap = document.createElement('p');
+    wrap.className = 'crisis-strip__cal';
+    wrap.innerHTML =
+      '<a class="crisis-strip__cal-link" href="' +
+      href +
+      '" data-track-click="awareness_calendar_promo" data-track-label="' +
+      escapeHtml(entry.name) +
+      '">' +
+      '<span class="crisis-strip__cal-kicker">This month</span> ' +
+      '<span class="crisis-strip__cal-text">' +
+      escapeHtml(label) +
+      '</span></a>';
+
+    var lang = crisisInner.querySelector('.site-lang');
+    if (lang) {
+      crisisInner.insertBefore(wrap, lang);
+    } else {
+      crisisInner.appendChild(wrap);
+    }
+  }
+
   function injectHeaderBookBanner() {
     var headerInner = document.querySelector('.header__inner');
     if (!headerInner || headerInner.querySelector('.header-book-banner')) return;
@@ -1192,6 +1243,7 @@
     injectSiteReachMetrics();
     injectHeaderBookBanner();
     injectLanguageControls();
+    injectAwarenessCalendarPromo();
     maybeShowSpanishBanner();
     paintLibrarySnapshot(document);
     initReachCounters(document);
