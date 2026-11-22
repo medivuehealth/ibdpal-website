@@ -2511,7 +2511,8 @@ a.tab-button {
 .crisis-strip a.crisis-strip__cal-link {
     color: #1d4ed8;
     font-weight: 700;
-    text-decoration: none;
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
     display: inline-flex;
     align-items: baseline;
     justify-content: center;
