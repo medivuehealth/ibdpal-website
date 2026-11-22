@@ -13,6 +13,7 @@ BLOGS = ROOT / "blogs"
 OUT = ROOT / "home-engagement-data.js"
 SEARCH_GAP = ROOT / "data" / "search-gap-posts.json"
 ALIASES = ROOT / "data" / "search-aliases.json"
+AWARENESS_CALENDAR = ROOT / "data" / "ibd-awareness-calendar.json"
 
 sys.path.insert(0, str(ROOT / "scripts"))
 from amp_utils import discover_blogs  # noqa: E402
@@ -245,12 +246,56 @@ def gap_answers(now: datetime) -> list[dict]:
     return out[:6]
 
 
+def awareness_feature_pack(now: datetime) -> dict | None:
+    """Pin the interactive calendar as a New feature with this month's theme."""
+    if not AWARENESS_CALENDAR.exists():
+        return None
+    data = json.loads(AWARENESS_CALENDAR.read_text(encoding="utf-8"))
+    month = now.month
+    entry = next((m for m in data.get("months") or [] if m.get("month") == month), None)
+    if not entry:
+        return None
+    href = f"/ibd-awareness-calendar#m-{month:02d}"
+    links = [
+        {
+            "url": href,
+            "title": f"Open {entry['name']} awareness calendar",
+        }
+    ]
+    for item in entry.get("links") or []:
+        links.append({"url": item["url"], "title": item["label"]})
+        if len(links) >= 5:
+            break
+    for m in data.get("months") or []:
+        if not m.get("major") or m.get("month") == month:
+            continue
+        links.append(
+            {
+                "url": f"/ibd-awareness-calendar#m-{m['month']:02d}",
+                "title": f"{m['name']}: {m['event']}",
+            }
+        )
+        if len(links) >= 7:
+            break
+    return {
+        "id": "awareness-calendar",
+        "months": [month],
+        "eyebrow": "New feature",
+        "title": f"{entry['name']}: {entry['event']}",
+        "note": "Browse the IBD awareness calendar by month. Coral days mark key campaign dates.",
+        "links": links,
+    }
+
+
 def active_seasonal(now: datetime) -> list[dict]:
     month = now.month
     active = [pack for pack in SEASONAL_PACKS if month in pack["months"]]
     if not active:
         # Always offer one helpful pack.
         active = [pack for pack in SEASONAL_PACKS if pack["id"] == "flare-focus"]
+    feature = awareness_feature_pack(now)
+    if feature:
+        active = [feature] + [p for p in active if p.get("id") != "awareness-calendar"]
     return active
 
 

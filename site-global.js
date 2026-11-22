@@ -157,7 +157,7 @@
       '" data-track-click="awareness_calendar_promo" data-track-label="' +
       escapeHtml(entry.name) +
       '">' +
-      '<span class="crisis-strip__cal-kicker">This month</span> ' +
+      '<span class="crisis-strip__cal-kicker">New · This month</span> ' +
       '<span class="crisis-strip__cal-text">' +
       escapeHtml(label) +
       '</span></a>';

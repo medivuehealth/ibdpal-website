@@ -91,7 +91,10 @@
       section.hidden = true;
       return;
     }
-    var pack = packs[0];
+    var pack =
+      packs.find(function (row) {
+        return row && row.id === 'awareness-calendar';
+      }) || packs[0];
     var eyebrow = section.querySelector('[data-seasonal-eyebrow]');
     var title = section.querySelector('[data-seasonal-title]');
     var note = section.querySelector('[data-seasonal-note]');
