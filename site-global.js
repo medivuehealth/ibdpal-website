@@ -250,6 +250,27 @@
     }
   }
 
+  function ensureIbdCalendarNav() {
+    var existing = document.querySelector('.tab-navigation [data-tab="ibd-calendar"]');
+    var libraryTab = document.querySelector('.tab-navigation [data-tab="library"]');
+    if (!existing) {
+      if (!libraryTab || !libraryTab.parentNode) return;
+      existing = document.createElement('a');
+      existing.href = '/ibd-awareness-calendar';
+      existing.className = 'tab-button';
+      existing.setAttribute('data-tab', 'ibd-calendar');
+      existing.textContent = 'IBD Calendar';
+      libraryTab.parentNode.insertBefore(existing, libraryTab.nextSibling);
+    }
+
+    if (/^\/ibd-awareness-calendar(\/|$|\.html)/.test(window.location.pathname)) {
+      document.querySelectorAll('.tab-navigation .tab-button.active').forEach(function (btn) {
+        btn.classList.remove('active');
+      });
+      existing.classList.add('active');
+    }
+  }
+
   function seasonalNewsletterHint() {
     var form = document.getElementById('emailForm');
     if (!form) return;
@@ -1252,6 +1273,7 @@
     ensureToolsLabNav();
     ensureRecipeIdeasNav();
     ensureNutritionTargetsNav();
+    ensureIbdCalendarNav();
     ensureReaderQaNav();
     seasonalNewsletterHint();
     injectAppNudge();

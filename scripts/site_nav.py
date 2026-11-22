@@ -117,6 +117,7 @@ _CANONICAL = "https://www.ibdpal.org"
 _TAB_LINKS = f"""
                 <a href="{_CANONICAL}/" class="tab-button" data-tab="home">Home</a>
                 <a href="{_CANONICAL}/#guides" class="tab-button" data-tab="library">Patient Library</a>
+                <a href="{_CANONICAL}/ibd-awareness-calendar" class="tab-button" data-tab="ibd-calendar">IBD Calendar</a>
                 <a href="{_CANONICAL}/#tools-lab" class="tab-button" data-tab="tools-lab">Tools Lab</a>
                 <a href="{_CANONICAL}/#recipe-ideas" class="tab-button" data-tab="recipe-ideas">Recipe Ideas</a>
                 <a href="{_CANONICAL}/#nutrition-targets" class="tab-button" data-tab="nutrition-targets">Nutrients</a>
@@ -142,6 +143,7 @@ TAB_NAV_HOME_HTML = """
             <div class="tab-container">
                 <button type="button" class="tab-button active" data-tab="home">Home</button>
                 <button type="button" class="tab-button" data-tab="library">Patient Library</button>
+                <a href="/ibd-awareness-calendar" class="tab-button" data-tab="ibd-calendar">IBD Calendar</a>
                 <button type="button" class="tab-button" data-tab="tools-lab">Tools Lab</button>
                 <button type="button" class="tab-button" data-tab="recipe-ideas">Recipe Ideas</button>
                 <button type="button" class="tab-button" data-tab="nutrition-targets">Nutrients</button>
