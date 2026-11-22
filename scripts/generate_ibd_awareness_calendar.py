@@ -68,6 +68,35 @@ def month_section(m: dict) -> str:
                 </section>"""
 
 
+def interactive_calendar_html(year: int) -> str:
+    weekdays = "".join(
+        f'<div class="iac__weekday" aria-hidden="true">{d}</div>'
+        for d in ("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat")
+    )
+    return f"""
+                <section class="iac" id="iac-root" aria-label="Interactive IBD awareness calendar for {year}">
+                    <p class="iac__sr-only" data-iac-live aria-live="polite"></p>
+                    <div class="iac__layout">
+                        <div class="iac__calendar">
+                            <div class="iac__toolbar">
+                                <button type="button" class="iac__nav" data-iac-prev aria-label="Previous month">‹</button>
+                                <h2 class="iac__month-label" data-iac-month-label>{year}</h2>
+                                <button type="button" class="iac__nav" data-iac-next aria-label="Next month">›</button>
+                            </div>
+                            <div class="iac__weekdays">{weekdays}</div>
+                            <div class="iac__grid" data-iac-grid role="grid" aria-label="Days of the month"></div>
+                            <div class="iac__legend" aria-hidden="true">
+                                <span class="iac__legend-item"><span class="iac__swatch iac__swatch--theme"></span> Month theme</span>
+                                <span class="iac__legend-item"><span class="iac__swatch iac__swatch--peak"></span> Key event day</span>
+                            </div>
+                        </div>
+                        <aside class="iac__panel" data-iac-panel aria-live="polite">
+                            <p class="iac__panel-body">Loading month details…</p>
+                        </aside>
+                    </div>
+                </section>"""
+
+
 def render_page(data: dict) -> str:
     year = data.get("year", date.today().year)
     months_html = "".join(month_section(m) for m in data["months"])
@@ -76,6 +105,7 @@ def render_page(data: dict) -> str:
         f'<li><a href="#month-{m["month"]:02d}"><strong>{html.escape(m["name"])}</strong></a> · {html.escape(m["event"])}</li>'
         for m in major
     )
+    cal_json = json.dumps(data, ensure_ascii=False)
     body = f"""
             <article class="support-section seo-landing" data-track-impression="hub_ibd_awareness_calendar">
                 <p class="blog-back"><a href="/start-here" class="blog-back-link">← Start here</a> · <a href="/library">Content library</a></p>
@@ -84,18 +114,20 @@ def render_page(data: dict) -> str:
                 <p class="support-intro">{html.escape(data["intro"])}</p>
                 <p class="hub-header-footnote"><small>Calendar year {year} · Updated {html.escape(data.get("updated", ""))} · Education only</small></p>
 
+{interactive_calendar_html(year)}
+
                 <section class="seo-landing__block">
                     <h2>Four major annual campaigns</h2>
                     <p>{html.escape(data.get("priority_note", ""))}</p>
                     <ul class="seo-landing__list">{major_lis}</ul>
-                    <p>Use these months for new articles, graphics, Foundation cross-links, and community outreach. Smaller months still get a short feature or resource highlight.</p>
+                    <p>Use the arrows above to move month by month. Coral days are key event dates. Soft peach days mark a month-long theme.</p>
                 </section>
 
                 <section class="seo-landing__block">
                     <h2>Two dates to prioritize above everything else</h2>
                     <ul class="seo-landing__list">
-                        <li><strong>World IBD Day · May 19</strong> · Global IBD-specific week of education and outreach. Jump to <a href="#month-05">May</a>.</li>
-                        <li><strong>Crohn's &amp; Colitis Awareness Week · December 1-7</strong> · Official U.S. observance (not a formal month-long December designation). 2026 Foundation theme: What It Takes. Jump to <a href="#month-12">December</a>.</li>
+                        <li><strong>World IBD Day · May 19</strong> · Global IBD-specific week of education and outreach. Open <a href="#month-05">May</a> in the calendar.</li>
+                        <li><strong>Crohn's &amp; Colitis Awareness Week · December 1-7</strong> · Official U.S. observance (not a formal month-long December designation). 2026 Foundation theme: What It Takes. Open <a href="#month-12">December</a>.</li>
                     </ul>
                 </section>
 
@@ -109,6 +141,11 @@ def render_page(data: dict) -> str:
                     </ul>
                     <p><a href="/#app" class="seo-landing__cta">Explore IBDPal app tools →</a></p>
                 </section>
+
+                <section class="seo-landing__block">
+                    <h2>Full month list</h2>
+                    <p>Accessible text version of every month. The interactive calendar above is the primary navigation.</p>
+                </section>
 {months_html}
                 <section class="seo-landing__block">
                     <h2>Related planning pages</h2>
@@ -120,7 +157,9 @@ def render_page(data: dict) -> str:
                     </ul>
                 </section>
                 {hub_disclaimer_en()}
-            </article>"""
+            </article>
+            <script>window.IBDPAL_AWARENESS_CALENDAR = {cal_json};</script>
+            <script src="/ibd-awareness-calendar.js" defer></script>"""
 
     ld = {
         "@context": "https://schema.org",
@@ -149,6 +188,7 @@ def render_page(data: dict) -> str:
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="/site-layout-icn.css">
     <link rel="stylesheet" href="/site-polish.css">
+    <link rel="stylesheet" href="/ibd-awareness-calendar.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="icon" type="image/png" href="/IBDPal_Logo.png">

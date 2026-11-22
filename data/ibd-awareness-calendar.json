@@ -6,7 +6,12 @@
   "description": "Annual IBDPal content calendar: World IBD Day (May 19), Crohn's & Colitis Awareness Week (Dec 1-7), Nutrition Month, Health Literacy Month, and month-by-month patient education themes.",
   "intro": "A permanent planning calendar for timely IBD education. Four months are major campaigns. The other months are smaller educational features. Dates and Foundation campaign names can change; verify current Foundation materials each year. Education only, not medical advice.",
   "priority_note": "Prioritize March (nutrition), May (World IBD Day), October (health literacy), and December (Crohn's & Colitis Awareness Week).",
-  "major_campaign_months": [3, 5, 10, 12],
+  "major_campaign_months": [
+    3,
+    5,
+    10,
+    12
+  ],
   "months": [
     {
       "month": 1,
@@ -15,11 +20,28 @@
       "relevance": "Anemia education and blood health for people with Crohn's or colitis.",
       "major": false,
       "links": [
-        { "url": "/blog/anemia-iron-deficiency-ibd", "label": "Anemia and iron deficiency with IBD" },
-        { "url": "/blog/reading-ibd-labs-calprotectin-crp", "label": "Reading IBD labs" },
-        { "url": "/guides/iron-deficiency-nutrition-ibd", "label": "Iron deficiency nutrition guide" },
-        { "url": "/#app", "label": "Track fatigue and labs notes in IBDPal" }
-      ]
+        {
+          "url": "/blog/anemia-iron-deficiency-ibd",
+          "label": "Anemia and iron deficiency with IBD"
+        },
+        {
+          "url": "/blog/reading-ibd-labs-calprotectin-crp",
+          "label": "Reading IBD labs"
+        },
+        {
+          "url": "/guides/iron-deficiency-nutrition-ibd",
+          "label": "Iron deficiency nutrition guide"
+        },
+        {
+          "url": "/#app",
+          "label": "Track fatigue and labs notes in IBDPal"
+        }
+      ],
+      "day_marks": {
+        "theme": true,
+        "peak_days": [],
+        "peak_label": ""
+      }
     },
     {
       "month": 2,
@@ -28,11 +50,28 @@
       "relevance": "Cardiovascular health, clot awareness, and chronic inflammation conversations with your care team.",
       "major": false,
       "links": [
-        { "url": "/blog/thrombosis-clot-risk-ibd", "label": "Clot risk and IBD education" },
-        { "url": "/blog/osteoporosis-bone-health-ibd", "label": "Bone health with IBD" },
-        { "url": "/treatment-decisions", "label": "Treatment decisions and monitoring hub" },
-        { "url": "/visit-prep", "label": "Visit prep checklist" }
-      ]
+        {
+          "url": "/blog/thrombosis-clot-risk-ibd",
+          "label": "Clot risk and IBD education"
+        },
+        {
+          "url": "/blog/osteoporosis-bone-health-ibd",
+          "label": "Bone health with IBD"
+        },
+        {
+          "url": "/treatment-decisions",
+          "label": "Treatment decisions and monitoring hub"
+        },
+        {
+          "url": "/visit-prep",
+          "label": "Visit prep checklist"
+        }
+      ],
+      "day_marks": {
+        "theme": true,
+        "peak_days": [],
+        "peak_label": ""
+      }
     },
     {
       "month": 3,
@@ -42,12 +81,32 @@
       "major": true,
       "campaign_label": "Major campaign",
       "links": [
-        { "url": "/ibd-nutrition", "label": "IBD nutrition hub" },
-        { "url": "/blog/complete-ibd-nutrition-guide", "label": "Complete IBD nutrition guide" },
-        { "url": "/eating-with-ibd", "label": "Eating With IBD book" },
-        { "url": "/guides/what-should-i-eat-crohns-colitis", "label": "What should I eat guide" },
-        { "url": "/#nutrition-targets", "label": "Nutrition targets in the app" }
-      ]
+        {
+          "url": "/ibd-nutrition",
+          "label": "IBD nutrition hub"
+        },
+        {
+          "url": "/blog/complete-ibd-nutrition-guide",
+          "label": "Complete IBD nutrition guide"
+        },
+        {
+          "url": "/eating-with-ibd",
+          "label": "Eating With IBD book"
+        },
+        {
+          "url": "/guides/what-should-i-eat-crohns-colitis",
+          "label": "What should I eat guide"
+        },
+        {
+          "url": "/#nutrition-targets",
+          "label": "Nutrition targets in the app"
+        }
+      ],
+      "day_marks": {
+        "theme": true,
+        "peak_days": [],
+        "peak_label": ""
+      }
     },
     {
       "month": 4,
@@ -56,11 +115,28 @@
       "relevance": "Stress, mental health, and IBD symptom management without blaming patients for flares.",
       "major": false,
       "links": [
-        { "url": "/guides/stress-anxiety-ibd", "label": "Stress and anxiety guide" },
-        { "url": "/blog/stress-coping-strategies-ibd", "label": "Stress coping strategies" },
-        { "url": "/blog/stress-emotional-wellness-ibd", "label": "Emotional wellness with IBD" },
-        { "url": "/guides/foundation-emotional-wellness-ibd", "label": "Foundation emotional wellness bridge" }
-      ]
+        {
+          "url": "/guides/stress-anxiety-ibd",
+          "label": "Stress and anxiety guide"
+        },
+        {
+          "url": "/blog/stress-coping-strategies-ibd",
+          "label": "Stress coping strategies"
+        },
+        {
+          "url": "/blog/stress-emotional-wellness-ibd",
+          "label": "Emotional wellness with IBD"
+        },
+        {
+          "url": "/guides/foundation-emotional-wellness-ibd",
+          "label": "Foundation emotional wellness bridge"
+        }
+      ],
+      "day_marks": {
+        "theme": true,
+        "peak_days": [],
+        "peak_label": ""
+      }
     },
     {
       "month": 5,
@@ -70,7 +146,10 @@
       "major": true,
       "campaign_label": "Priority 1 global campaign",
       "highlight_dates": [
-        { "label": "World IBD Day", "date": "May 19 every year" }
+        {
+          "label": "World IBD Day",
+          "date": "May 19 every year"
+        }
       ],
       "external": [
         {
@@ -83,15 +162,46 @@
         }
       ],
       "links": [
-        { "url": "/what-is-ibd", "label": "What is IBD?" },
-        { "url": "/crohns-and-colitis", "label": "Crohn's and colitis compared" },
-        { "url": "/treatment-decisions", "label": "Treatment decisions and monitoring" },
-        { "url": "/flare-help", "label": "Flare help hub" },
-        { "url": "/ibd-nutrition", "label": "Nutrition hub" },
-        { "url": "/crohns-colitis-foundation-resources", "label": "Foundation resources on IBDPal" },
-        { "url": "/#community", "label": "Community map and support" },
-        { "url": "/#app", "label": "Share IBDPal app education" }
-      ]
+        {
+          "url": "/what-is-ibd",
+          "label": "What is IBD?"
+        },
+        {
+          "url": "/crohns-and-colitis",
+          "label": "Crohn's and colitis compared"
+        },
+        {
+          "url": "/treatment-decisions",
+          "label": "Treatment decisions and monitoring"
+        },
+        {
+          "url": "/flare-help",
+          "label": "Flare help hub"
+        },
+        {
+          "url": "/ibd-nutrition",
+          "label": "Nutrition hub"
+        },
+        {
+          "url": "/crohns-colitis-foundation-resources",
+          "label": "Foundation resources on IBDPal"
+        },
+        {
+          "url": "/#community",
+          "label": "Community map and support"
+        },
+        {
+          "url": "/#app",
+          "label": "Share IBDPal app education"
+        }
+      ],
+      "day_marks": {
+        "theme": true,
+        "peak_days": [
+          19
+        ],
+        "peak_label": "World IBD Day"
+      }
     },
     {
       "month": 6,
@@ -100,11 +210,28 @@
       "relevance": "Men's health, preventive screening, and IBD care conversations that often get delayed.",
       "major": false,
       "links": [
-        { "url": "/blog/ibd-colon-cancer-risk-surveillance", "label": "Colon cancer surveillance education" },
-        { "url": "/guides/foundation-ibd-colonoscopy-cancer-surveillance", "label": "Colonoscopy surveillance bridge" },
-        { "url": "/blog/anemia-iron-deficiency-ibd", "label": "Anemia awareness" },
-        { "url": "/visit-prep", "label": "Prepare questions for clinic" }
-      ]
+        {
+          "url": "/blog/ibd-colon-cancer-risk-surveillance",
+          "label": "Colon cancer surveillance education"
+        },
+        {
+          "url": "/guides/foundation-ibd-colonoscopy-cancer-surveillance",
+          "label": "Colonoscopy surveillance bridge"
+        },
+        {
+          "url": "/blog/anemia-iron-deficiency-ibd",
+          "label": "Anemia awareness"
+        },
+        {
+          "url": "/visit-prep",
+          "label": "Prepare questions for clinic"
+        }
+      ],
+      "day_marks": {
+        "theme": true,
+        "peak_days": [],
+        "peak_label": ""
+      }
     },
     {
       "month": 7,
@@ -113,11 +240,28 @@
       "relevance": "Invisible disabilities, school and workplace accommodations, and IBD rights education.",
       "major": false,
       "links": [
-        { "url": "/blog/disability-fmla-work-ibd", "label": "Disability and FMLA with IBD" },
-        { "url": "/blog/workplace-school-ibd-rights", "label": "Workplace and school rights" },
-        { "url": "/guides/ibd-workplace-school-rights", "label": "Workplace and school guide" },
-        { "url": "/teens-and-school", "label": "Teens and school hub" }
-      ]
+        {
+          "url": "/blog/disability-fmla-work-ibd",
+          "label": "Disability and FMLA with IBD"
+        },
+        {
+          "url": "/blog/workplace-school-ibd-rights",
+          "label": "Workplace and school rights"
+        },
+        {
+          "url": "/guides/ibd-workplace-school-rights",
+          "label": "Workplace and school guide"
+        },
+        {
+          "url": "/teens-and-school",
+          "label": "Teens and school hub"
+        }
+      ],
+      "day_marks": {
+        "theme": true,
+        "peak_days": [],
+        "peak_label": ""
+      }
     },
     {
       "month": 8,
@@ -126,11 +270,28 @@
       "relevance": "Vaccinations and timing questions when people use immunosuppressive IBD therapies.",
       "major": false,
       "links": [
-        { "url": "/blog/vaccines-biologics-immunosuppressants-ibd", "label": "Vaccines with biologics" },
-        { "url": "/blog/vaccine-autoimmune-immunosuppression", "label": "Vaccines and immunosuppression" },
-        { "url": "/guides/foundation-ibd-vaccines-infection", "label": "Foundation vaccines bridge" },
-        { "url": "/blog/ibd-medication-monitoring-checklist", "label": "Medication monitoring checklist" }
-      ]
+        {
+          "url": "/blog/vaccines-biologics-immunosuppressants-ibd",
+          "label": "Vaccines with biologics"
+        },
+        {
+          "url": "/blog/vaccine-autoimmune-immunosuppression",
+          "label": "Vaccines and immunosuppression"
+        },
+        {
+          "url": "/guides/foundation-ibd-vaccines-infection",
+          "label": "Foundation vaccines bridge"
+        },
+        {
+          "url": "/blog/ibd-medication-monitoring-checklist",
+          "label": "Medication monitoring checklist"
+        }
+      ],
+      "day_marks": {
+        "theme": true,
+        "peak_days": [],
+        "peak_label": ""
+      }
     },
     {
       "month": 9,
@@ -139,11 +300,28 @@
       "relevance": "Chronic abdominal pain, joint pain, and tracking patterns for IBD clinic visits.",
       "major": false,
       "links": [
-        { "url": "/blog/abdominal-pain-stomach-pain-ibd", "label": "Abdominal / stomach pain with IBD" },
-        { "url": "/guides/foundation-ibd-pain-fatigue", "label": "Pain and fatigue Foundation bridge" },
-        { "url": "/tools/food-pain-tracker", "label": "Food and pain tracker tool" },
-        { "url": "/blog/ibd-joint-pain-arthritis", "label": "Joint pain and arthritis" }
-      ]
+        {
+          "url": "/blog/abdominal-pain-stomach-pain-ibd",
+          "label": "Abdominal / stomach pain with IBD"
+        },
+        {
+          "url": "/guides/foundation-ibd-pain-fatigue",
+          "label": "Pain and fatigue Foundation bridge"
+        },
+        {
+          "url": "/tools/food-pain-tracker",
+          "label": "Food and pain tracker tool"
+        },
+        {
+          "url": "/blog/ibd-joint-pain-arthritis",
+          "label": "Joint pain and arthritis"
+        }
+      ],
+      "day_marks": {
+        "theme": true,
+        "peak_days": [],
+        "peak_label": ""
+      }
     },
     {
       "month": 10,
@@ -153,12 +331,32 @@
       "major": true,
       "campaign_label": "Major campaign",
       "links": [
-        { "url": "/blog/icn-health-literacy-toolkit-ibd", "label": "Health literacy toolkit" },
-        { "url": "/treatment-decisions", "label": "Treatment decisions and monitoring hub" },
-        { "url": "/blog/understanding-ibd-pathology-report", "label": "Understanding pathology reports" },
-        { "url": "/glossary", "label": "IBD glossary" },
-        { "url": "/visit-prep", "label": "Visit prep checklist" }
-      ]
+        {
+          "url": "/blog/icn-health-literacy-toolkit-ibd",
+          "label": "Health literacy toolkit"
+        },
+        {
+          "url": "/treatment-decisions",
+          "label": "Treatment decisions and monitoring hub"
+        },
+        {
+          "url": "/blog/understanding-ibd-pathology-report",
+          "label": "Understanding pathology reports"
+        },
+        {
+          "url": "/glossary",
+          "label": "IBD glossary"
+        },
+        {
+          "url": "/visit-prep",
+          "label": "Visit prep checklist"
+        }
+      ],
+      "day_marks": {
+        "theme": true,
+        "peak_days": [],
+        "peak_label": ""
+      }
     },
     {
       "month": 11,
@@ -167,11 +365,28 @@
       "relevance": "Supporting families, partners, and caregivers without taking over medical decisions.",
       "major": false,
       "links": [
-        { "url": "/guides/partner-caregiver-ibd", "label": "Partners and caregivers guide" },
-        { "url": "/blog/partner-caregiver-ibd", "label": "Partners and caregivers article" },
-        { "url": "/pediatric-caregivers", "label": "Pediatric caregiver hub" },
-        { "url": "/blog/icn-caregiver-coping-resource", "label": "Caregiver coping resource" }
-      ]
+        {
+          "url": "/guides/partner-caregiver-ibd",
+          "label": "Partners and caregivers guide"
+        },
+        {
+          "url": "/blog/partner-caregiver-ibd",
+          "label": "Partners and caregivers article"
+        },
+        {
+          "url": "/pediatric-caregivers",
+          "label": "Pediatric caregiver hub"
+        },
+        {
+          "url": "/blog/icn-caregiver-coping-resource",
+          "label": "Caregiver coping resource"
+        }
+      ],
+      "day_marks": {
+        "theme": true,
+        "peak_days": [],
+        "peak_label": ""
+      }
     },
     {
       "month": 12,
@@ -181,7 +396,10 @@
       "major": true,
       "campaign_label": "Priority 1 U.S. campaign",
       "highlight_dates": [
-        { "label": "Crohn's & Colitis Awareness Week", "date": "December 1-7 every year" }
+        {
+          "label": "Crohn's & Colitis Awareness Week",
+          "date": "December 1-7 every year"
+        }
       ],
       "campaign_note": "The 2026 Crohn's & Colitis Foundation campaign is called What It Takes. Confirm current campaign pages on the Foundation site each year.",
       "external": [
@@ -191,14 +409,48 @@
         }
       ],
       "links": [
-        { "url": "/crohns-disease", "label": "Crohn's disease hub" },
-        { "url": "/ulcerative-colitis", "label": "Ulcerative colitis hub" },
-        { "url": "/crohns-colitis-foundation-resources", "label": "Foundation resources on IBDPal" },
-        { "url": "/newly-diagnosed", "label": "Newly diagnosed hub" },
-        { "url": "/ibd-crohns-support", "label": "Support guide" },
-        { "url": "/#news-advocacy", "label": "Advocacy news on IBDPal" },
-        { "url": "/#app", "label": "Invite someone to try IBDPal education tools" }
-      ]
+        {
+          "url": "/crohns-disease",
+          "label": "Crohn's disease hub"
+        },
+        {
+          "url": "/ulcerative-colitis",
+          "label": "Ulcerative colitis hub"
+        },
+        {
+          "url": "/crohns-colitis-foundation-resources",
+          "label": "Foundation resources on IBDPal"
+        },
+        {
+          "url": "/newly-diagnosed",
+          "label": "Newly diagnosed hub"
+        },
+        {
+          "url": "/ibd-crohns-support",
+          "label": "Support guide"
+        },
+        {
+          "url": "/#news-advocacy",
+          "label": "Advocacy news on IBDPal"
+        },
+        {
+          "url": "/#app",
+          "label": "Invite someone to try IBDPal education tools"
+        }
+      ],
+      "day_marks": {
+        "theme": false,
+        "peak_days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "peak_label": "Crohn's & Colitis Awareness Week"
+      }
     }
   ]
 }
