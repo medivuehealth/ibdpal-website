@@ -2456,21 +2456,41 @@ a.tab-button {
 }
 
 .crisis-strip__inner {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 0.75rem 1rem;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
 }
 
 .crisis-strip__inner > p:first-of-type {
-    justify-self: start;
+    flex: 1 1 auto;
+    min-width: 0;
 }
 
 .crisis-strip__inner > .site-lang {
+    flex: 0 0 auto;
+    margin-left: auto;
+}
+
+/* Home only: three-column layout with centered month promo. */
+.crisis-strip__inner:has(.crisis-strip__cal) {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+}
+
+.crisis-strip__inner:has(.crisis-strip__cal) > p:first-of-type {
+    grid-column: 1;
+    justify-self: start;
+}
+
+.crisis-strip__inner:has(.crisis-strip__cal) > .site-lang {
+    grid-column: 3;
     justify-self: end;
+    margin-left: 0;
 }
 
 .crisis-strip__icon {
@@ -2490,8 +2510,6 @@ a.tab-button {
 
 .crisis-strip p {
     margin: 0;
-    flex: 1 1 auto;
-    min-width: 0;
 }
 
 .crisis-strip__text {
@@ -2546,17 +2564,31 @@ a.tab-button {
 @media (max-width: 720px) {
     .crisis-strip__inner {
         grid-template-columns: minmax(0, 1fr) auto;
+    }
+
+    .crisis-strip__inner > p:first-of-type {
+        grid-column: 1;
+    }
+
+    .crisis-strip__inner > .site-lang {
+        grid-column: 2;
+    }
+
+    .crisis-strip__inner:has(.crisis-strip__cal) {
+        grid-template-columns: minmax(0, 1fr) auto;
         grid-template-areas:
             "edu lang"
             "cal cal";
     }
 
-    .crisis-strip__inner > p:first-of-type {
+    .crisis-strip__inner:has(.crisis-strip__cal) > p:first-of-type {
         grid-area: edu;
+        grid-column: auto;
     }
 
-    .crisis-strip__inner > .site-lang {
+    .crisis-strip__inner:has(.crisis-strip__cal) > .site-lang {
         grid-area: lang;
+        grid-column: auto;
     }
 
     .crisis-strip__cal {
