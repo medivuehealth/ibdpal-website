@@ -1,4 +1,26 @@
-/* Interactive IBD awareness calendar — scoped to .iac */
+/* Interactive IBD awareness calendar — scoped to .iac / .iac-page */
+
+.iac-page .blog-medical-review,
+.iac-page .blog-edu-disclaimer {
+  display: none;
+}
+
+.iac-page__lede {
+  margin: 0.35rem 0 0.5rem;
+  color: #6b5e58;
+  max-width: 40rem;
+  line-height: 1.5;
+}
+
+.iac-page__footer-links {
+  margin: 1.25rem 0 0.5rem;
+  font-size: 0.92rem;
+  color: #6b5e58;
+}
+
+.iac-page__footer-links a {
+  color: #a3483a;
+}
 
 .iac {
   --iac-ink: #2a221f;
@@ -7,17 +29,61 @@
   --iac-wash: #fff7f3;
   --iac-coral: #c45c4a;
   --iac-coral-deep: #a3483a;
-  --iac-peak: #9b3d32;
   --iac-theme: #f3d5c8;
   --iac-panel: #ffffff;
   --iac-radius: 18px;
-  margin: 1.5rem 0 2.25rem;
+  margin: 0.85rem 0 1.25rem;
+  scroll-margin-top: 1rem;
+}
+
+.iac__jumps {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+  margin-bottom: 0.85rem;
+}
+
+.iac__jumps-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--iac-muted);
+  margin-right: 0.15rem;
+}
+
+.iac__jump {
+  appearance: none;
+  border: 1px solid var(--iac-line);
+  background: #fff;
+  color: var(--iac-coral-deep);
+  border-radius: 999px;
+  padding: 0.35rem 0.75rem;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease;
+}
+
+.iac__jump:hover,
+.iac__jump:focus-visible {
+  background: var(--iac-wash);
+  border-color: #e2b8aa;
+  outline: none;
+}
+
+.iac__jump.is-active {
+  background: var(--iac-coral);
+  border-color: var(--iac-coral);
+  color: #fff;
 }
 
 .iac__layout {
   display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.95fr);
-  gap: 1.25rem;
+  grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+  gap: 1.1rem;
   align-items: start;
 }
 
@@ -26,7 +92,14 @@
   background: var(--iac-panel);
   border: 1px solid var(--iac-line);
   border-radius: var(--iac-radius);
-  padding: 1.1rem 1.15rem 1.25rem;
+  padding: 1.05rem 1.1rem 1.2rem;
+}
+
+.iac__panel {
+  position: sticky;
+  top: 1rem;
+  max-height: calc(100vh - 2rem);
+  overflow: auto;
 }
 
 .iac__toolbar {
@@ -102,11 +175,11 @@
 .iac__day {
   appearance: none;
   border: 0;
-  background: transparent;
+  background: #faf6f3;
   min-height: 2.65rem;
   border-radius: 12px;
   position: relative;
-  cursor: default;
+  cursor: pointer;
   color: var(--iac-ink);
   font-family: inherit;
   font-size: 0.95rem;
@@ -117,17 +190,16 @@
 .iac__day--empty {
   visibility: hidden;
   pointer-events: none;
+  background: transparent;
 }
 
 .iac__day--theme {
   background: var(--iac-theme);
-  cursor: pointer;
 }
 
 .iac__day--peak {
   background: var(--iac-coral);
   color: #fff;
-  cursor: pointer;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.18);
 }
 
@@ -152,8 +224,7 @@
   box-shadow: inset 0 0 0 2px var(--iac-coral);
 }
 
-.iac__day--theme:hover,
-.iac__day--peak:hover {
+.iac__day:hover:not(.iac__day--empty) {
   transform: translateY(-1px);
 }
 
@@ -188,10 +259,6 @@
   background: var(--iac-coral);
 }
 
-.iac__panel {
-  min-height: 100%;
-}
-
 .iac__panel-kicker {
   margin: 0 0 0.35rem;
   font-size: 0.75rem;
@@ -203,7 +270,7 @@
 
 .iac__panel-title {
   font-family: "Plus Jakarta Sans", system-ui, sans-serif;
-  font-size: 1.35rem;
+  font-size: 1.28rem;
   font-weight: 700;
   letter-spacing: -0.02em;
   color: var(--iac-ink);
@@ -251,6 +318,18 @@
   font-size: 0.9rem;
 }
 
+.iac__seo-list {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .iac__sr-only {
   position: absolute;
   width: 1px;
@@ -266,6 +345,11 @@
 @media (max-width: 860px) {
   .iac__layout {
     grid-template-columns: 1fr;
+  }
+
+  .iac__panel {
+    position: static;
+    max-height: none;
   }
 
   .iac__day {

@@ -22,7 +22,7 @@ PATH = "/ibd-awareness-calendar"
 import sys
 
 sys.path.insert(0, str(ROOT / "scripts"))
-from eeat_blocks import content_note_en, edu_disclaimer_en, hub_disclaimer_en  # noqa: E402
+from eeat_blocks import hub_disclaimer_en  # noqa: E402
 from seo_head import breadcrumb_json, render_seo_head, web_page_json  # noqa: E402
 from site_nav import PAGE_SCRIPTS, TAB_NAV_HTML, site_header_html  # noqa: E402
 
@@ -37,45 +37,39 @@ def link_list(items: list[dict], *, external: bool = False) -> str:
     return f'<ul class="seo-landing__list">{"".join(lis)}</ul>'
 
 
-def month_section(m: dict) -> str:
-    badge = ""
-    if m.get("major"):
-        label = html.escape(m.get("campaign_label") or "Major campaign")
-        badge = f'<p class="hub-header-footnote"><small><strong>{label}</strong></small></p>'
-    highlights = ""
-    if m.get("highlight_dates"):
-        rows = "".join(
-            f"<li><strong>{html.escape(h['label'])}:</strong> {html.escape(h['date'])}</li>"
-            for h in m["highlight_dates"]
+def seo_month_list(months: list[dict]) -> str:
+    """Compact crawlable list; not shown as a long page of sections."""
+    items = []
+    for m in months:
+        major = " (major campaign)" if m.get("major") else ""
+        items.append(
+            f"<li><strong>{html.escape(m['name'])}</strong>: "
+            f"{html.escape(m['event'])}{major}. {html.escape(m['relevance'])}</li>"
         )
-        highlights = f"<ul class=\"seo-landing__list\">{rows}</ul>"
-    note = ""
-    if m.get("campaign_note"):
-        note = f"<p>{html.escape(m['campaign_note'])}</p>"
-    external = ""
-    if m.get("external"):
-        external = f"<p><strong>Official / Foundation links:</strong></p>{link_list(m['external'], external=True)}"
-    return f"""
-                <section class="seo-landing__block" id="month-{m['month']:02d}">
-                    <h2>{html.escape(m['name'])}: {html.escape(m['event'])}</h2>
-                    {badge}
-                    <p>{html.escape(m['relevance'])}</p>
-                    {highlights}
-                    {note}
-                    {external}
-                    <p><strong>IBDPal resources to feature:</strong></p>
-                    {link_list(m.get('links') or [])}
-                </section>"""
+    return (
+        '<section class="iac__seo-list" aria-label="Full year overview">'
+        f"<h2 class=\"iac__sr-only\">All {len(months)} months</h2>"
+        f'<ul>{"".join(items)}</ul></section>'
+    )
 
 
-def interactive_calendar_html(year: int) -> str:
+def interactive_calendar_html(year: int, major: list[dict]) -> str:
     weekdays = "".join(
         f'<div class="iac__weekday" aria-hidden="true">{d}</div>'
         for d in ("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat")
     )
+    jumps = "".join(
+        f'<button type="button" class="iac__jump" data-iac-jump="{m["month"]}">'
+        f'{html.escape(m["name"])}</button>'
+        for m in major
+    )
     return f"""
                 <section class="iac" id="iac-root" aria-label="Interactive IBD awareness calendar for {year}">
                     <p class="iac__sr-only" data-iac-live aria-live="polite"></p>
+                    <div class="iac__jumps" role="group" aria-label="Jump to major campaign months">
+                        <span class="iac__jumps-label">Jump to</span>
+                        {jumps}
+                    </div>
                     <div class="iac__layout">
                         <div class="iac__calendar">
                             <div class="iac__toolbar">
@@ -99,63 +93,27 @@ def interactive_calendar_html(year: int) -> str:
 
 def render_page(data: dict) -> str:
     year = data.get("year", date.today().year)
-    months_html = "".join(month_section(m) for m in data["months"])
     major = [m for m in data["months"] if m.get("major")]
-    major_lis = "".join(
-        f'<li><a href="#month-{m["month"]:02d}"><strong>{html.escape(m["name"])}</strong></a> · {html.escape(m["event"])}</li>'
-        for m in major
-    )
     cal_json = json.dumps(data, ensure_ascii=False)
+    short_intro = (
+        f"Use the arrows to browse {year}. Highlighted days mark campaigns; "
+        "details and resources stay in the panel beside the calendar."
+    )
     body = f"""
-            <article class="support-section seo-landing" data-track-impression="hub_ibd_awareness_calendar">
+            <article class="support-section seo-landing iac-page" data-track-impression="hub_ibd_awareness_calendar">
                 <p class="blog-back"><a href="/start-here" class="blog-back-link">← Start here</a> · <a href="/library">Content library</a></p>
                 <h1>{html.escape(data["h1"])}</h1>
-{content_note_en()}{edu_disclaimer_en()}
-                <p class="support-intro">{html.escape(data["intro"])}</p>
-                <p class="hub-header-footnote"><small>Calendar year {year} · Updated {html.escape(data.get("updated", ""))} · Education only</small></p>
+                <p class="iac-page__lede">{html.escape(short_intro)}</p>
+                <p class="hub-header-footnote"><small>Calendar year {year} · Updated {html.escape(data.get("updated", ""))} · Education only · Not medical advice</small></p>
 
-{interactive_calendar_html(year)}
+{interactive_calendar_html(year, major)}
 
-                <section class="seo-landing__block">
-                    <h2>Four major annual campaigns</h2>
-                    <p>{html.escape(data.get("priority_note", ""))}</p>
-                    <ul class="seo-landing__list">{major_lis}</ul>
-                    <p>Use the arrows above to move month by month. Coral days are key event dates. Soft peach days mark a month-long theme.</p>
-                </section>
-
-                <section class="seo-landing__block">
-                    <h2>Two dates to prioritize above everything else</h2>
-                    <ul class="seo-landing__list">
-                        <li><strong>World IBD Day · May 19</strong> · Global IBD-specific week of education and outreach. Open <a href="#month-05">May</a> in the calendar.</li>
-                        <li><strong>Crohn's &amp; Colitis Awareness Week · December 1-7</strong> · Official U.S. observance (not a formal month-long December designation). 2026 Foundation theme: What It Takes. Open <a href="#month-12">December</a>.</li>
-                    </ul>
-                </section>
-
-                <section class="seo-landing__block">
-                    <h2>How to use this calendar</h2>
-                    <ul class="seo-landing__list">
-                        <li>Publish or refresh one timely article or graphic per month</li>
-                        <li>Link existing hubs instead of reinventing topics</li>
-                        <li>Point readers to the IBDPal app for logging and visit prep</li>
-                        <li>Update this page annually when Foundation campaign names change</li>
-                    </ul>
-                    <p><a href="/#app" class="seo-landing__cta">Explore IBDPal app tools →</a></p>
-                </section>
-
-                <section class="seo-landing__block">
-                    <h2>Full month list</h2>
-                    <p>Accessible text version of every month. The interactive calendar above is the primary navigation.</p>
-                </section>
-{months_html}
-                <section class="seo-landing__block">
-                    <h2>Related planning pages</h2>
-                    <ul class="seo-landing__list">
-                        <li><a href="/treatment-decisions">Treatment decisions and monitoring hub</a></li>
-                        <li><a href="/crohns-colitis-foundation-resources">Foundation resources</a></li>
-                        <li><a href="/site-updates">Site updates changelog</a></li>
-                        <li><a href="/#news-advocacy">Advocacy news</a></li>
-                    </ul>
-                </section>
+                <p class="iac-page__footer-links">
+                    <a href="/treatment-decisions">Treatment hub</a>
+                    · <a href="/crohns-colitis-foundation-resources">Foundation resources</a>
+                    · <a href="/#app">IBDPal app</a>
+                </p>
+                {seo_month_list(data["months"])}
                 {hub_disclaimer_en()}
             </article>
             <script>window.IBDPAL_AWARENESS_CALENDAR = {cal_json};</script>

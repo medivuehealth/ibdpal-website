@@ -21,12 +21,14 @@
   var prevBtn = root.querySelector("[data-iac-prev]");
   var nextBtn = root.querySelector("[data-iac-next]");
   var liveEl = root.querySelector("[data-iac-live]");
+  var jumpBtns = root.querySelectorAll("[data-iac-jump]");
 
   var now = new Date();
   var viewMonth =
     now.getFullYear() === year ? now.getMonth() + 1 : months[0].month;
   if (!byMonth[viewMonth]) viewMonth = 5;
   var selectedDay = null;
+  var syncingHash = false;
 
   function daysInMonth(y, m) {
     return new Date(y, m, 0).getDate();
@@ -97,6 +99,43 @@
     return 1;
   }
 
+  function keepCalendarInView() {
+    if (!root.getBoundingClientRect) return;
+    var rect = root.getBoundingClientRect();
+    if (rect.top < 0 || rect.top > window.innerHeight * 0.35) {
+      root.scrollIntoView({ block: "start", behavior: "smooth" });
+    }
+  }
+
+  function updateJumpActive() {
+    jumpBtns.forEach(function (btn) {
+      var m = Number(btn.getAttribute("data-iac-jump"));
+      btn.classList.toggle("is-active", m === viewMonth);
+      btn.setAttribute("aria-pressed", m === viewMonth ? "true" : "false");
+    });
+  }
+
+  function writeHash(monthNum) {
+    var next = "#m-" + String(monthNum).padStart(2, "0");
+    if ((location.hash || "") === next) return;
+    syncingHash = true;
+    try {
+      history.replaceState(null, "", next);
+    } catch (e) {}
+    syncingHash = false;
+  }
+
+  function monthFromHash() {
+    var raw = (location.hash || "").replace(/^#/, "");
+    var match = raw.match(/^(?:m-|month-)?(\d{1,2})$/i);
+    if (!match) return null;
+    var hashMonth = parseInt(match[1], 10);
+    if (hashMonth >= 1 && hashMonth <= 12 && byMonth[hashMonth]) {
+      return hashMonth;
+    }
+    return null;
+  }
+
   function renderGrid() {
     var m = byMonth[viewMonth];
     var total = daysInMonth(year, viewMonth);
@@ -104,19 +143,18 @@
     var html = [];
     var i;
     for (i = 0; i < start; i += 1) {
-      html.push('<button type="button" class="iac__day iac__day--empty" tabindex="-1" aria-hidden="true"></button>');
+      html.push(
+        '<button type="button" class="iac__day iac__day--empty" tabindex="-1" aria-hidden="true"></button>'
+      );
     }
     for (i = 1; i <= total; i += 1) {
       var classes = ["iac__day"];
       var label = String(i);
-      var interactive = false;
       if (isPeak(viewMonth, i)) {
         classes.push("iac__day--peak");
-        interactive = true;
         label += ", event day";
       } else if (isTheme(viewMonth, i)) {
         classes.push("iac__day--theme");
-        interactive = true;
         label += ", awareness theme day";
       }
       if (
@@ -132,9 +170,7 @@
           classes.join(" ") +
           '" data-day="' +
           i +
-          '"' +
-          (interactive ? "" : " disabled") +
-          ' aria-label="' +
+          '" aria-label="' +
           escapeHtml(label) +
           '"' +
           (selectedDay === i ? ' aria-pressed="true"' : ' aria-pressed="false"') +
@@ -147,6 +183,7 @@
     labelEl.textContent = m.name + " " + year;
     prevBtn.disabled = viewMonth <= 1;
     nextBtn.disabled = viewMonth >= 12;
+    updateJumpActive();
     if (liveEl) {
       liveEl.textContent = "Showing " + m.name + " " + year;
     }
@@ -228,7 +265,7 @@
       note;
   }
 
-  function setMonth(monthNum, keepDay) {
+  function setMonth(monthNum, keepDay, scroll) {
     viewMonth = monthNum;
     selectedDay = keepDay ? selectedDay : defaultSelectedDay(viewMonth);
     if (selectedDay > daysInMonth(year, viewMonth)) {
@@ -236,21 +273,27 @@
     }
     renderGrid();
     renderPanel();
-    try {
-      history.replaceState(null, "", "#month-" + String(viewMonth).padStart(2, "0"));
-    } catch (e) {}
+    writeHash(viewMonth);
+    if (scroll) keepCalendarInView();
   }
 
   prevBtn.addEventListener("click", function () {
-    if (viewMonth > 1) setMonth(viewMonth - 1, false);
+    if (viewMonth > 1) setMonth(viewMonth - 1, false, true);
   });
   nextBtn.addEventListener("click", function () {
-    if (viewMonth < 12) setMonth(viewMonth + 1, false);
+    if (viewMonth < 12) setMonth(viewMonth + 1, false, true);
+  });
+
+  jumpBtns.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var m = Number(btn.getAttribute("data-iac-jump"));
+      if (byMonth[m]) setMonth(m, false, true);
+    });
   });
 
   gridEl.addEventListener("click", function (evt) {
     var btn = evt.target.closest("[data-day]");
-    if (!btn || btn.disabled) return;
+    if (!btn || btn.classList.contains("iac__day--empty")) return;
     selectedDay = Number(btn.getAttribute("data-day"));
     renderGrid();
     renderPanel();
@@ -259,29 +302,26 @@
   root.addEventListener("keydown", function (evt) {
     if (evt.key === "ArrowLeft" && !prevBtn.disabled) {
       evt.preventDefault();
-      setMonth(viewMonth - 1, false);
+      setMonth(viewMonth - 1, false, true);
     } else if (evt.key === "ArrowRight" && !nextBtn.disabled) {
       evt.preventDefault();
-      setMonth(viewMonth + 1, false);
+      setMonth(viewMonth + 1, false, true);
     }
   });
 
-  function monthFromHash() {
-    var hash = (location.hash || "").replace("#month-", "");
-    var hashMonth = parseInt(hash, 10);
-    if (hashMonth >= 1 && hashMonth <= 12 && byMonth[hashMonth]) {
-      return hashMonth;
-    }
-    return null;
-  }
-
   window.addEventListener("hashchange", function () {
+    if (syncingHash) return;
     var m = monthFromHash();
-    if (m) setMonth(m, false);
+    if (m && m !== viewMonth) setMonth(m, false, true);
   });
 
   var fromHash = monthFromHash();
   if (fromHash) viewMonth = fromHash;
   selectedDay = defaultSelectedDay(viewMonth);
-  setMonth(viewMonth, true);
+  setMonth(viewMonth, true, false);
+
+  // Old bookmarks used #month-11 and scrolled past the calendar; pin view to grid.
+  if (fromHash || (location.hash || "").indexOf("month-") === 1) {
+    keepCalendarInView();
+  }
 })();
