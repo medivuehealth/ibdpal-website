@@ -119,15 +119,24 @@
     }
   }
 
-  function isHomePath() {
-    var path = (window.location.pathname || '/').replace(/\/index\.html?$/i, '/');
-    path = path.replace(/\/$/, '') || '/';
-    return path === '/' || path === '';
-  }
+  var AWARENESS_MONTH_FALLBACK = [
+    { month: 1, name: 'January', event: 'National Blood Donor Month (US)' },
+    { month: 2, name: 'February', event: 'American Heart Month' },
+    { month: 3, name: 'March', event: 'National Nutrition Month' },
+    { month: 4, name: 'April', event: 'Stress Awareness Month' },
+    { month: 5, name: 'May', event: 'World IBD Day (May 19)' },
+    { month: 6, name: 'June', event: "Men's Health Month" },
+    { month: 7, name: 'July', event: 'Disability Pride Month' },
+    { month: 8, name: 'August', event: 'National Immunization Awareness Month' },
+    { month: 9, name: 'September', event: 'Pain Awareness Month' },
+    { month: 10, name: 'October', event: 'Health Literacy Month' },
+    { month: 11, name: 'November', event: 'National Family Caregivers Month' },
+    { month: 12, name: 'December', event: "Crohn's & Colitis Awareness Week (Dec 1-7, US)" }
+  ];
 
   function currentAwarenessMonth() {
     var promo = window.IBDPAL_AWARENESS_PROMO || {};
-    var months = promo.months || [];
+    var months = promo.months && promo.months.length ? promo.months : AWARENESS_MONTH_FALLBACK;
     var now = new Date();
     var monthNum = now.getMonth() + 1;
     var i;
@@ -138,7 +147,6 @@
   }
 
   function injectAwarenessCalendarPromo() {
-    if (!isHomePath()) return;
     var crisisInner = document.querySelector('.crisis-strip__inner');
     if (!crisisInner || crisisInner.querySelector('.crisis-strip__cal')) return;
 
