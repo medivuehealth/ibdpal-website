@@ -274,8 +274,16 @@
   font-weight: 700;
   letter-spacing: -0.02em;
   color: var(--iac-ink);
-  margin: 0 0 0.55rem;
+  margin: 0 0 0.35rem;
   line-height: 1.25;
+}
+
+.iac__panel-event {
+  margin: 0 0 0.65rem;
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: var(--iac-coral-deep);
+  line-height: 1.35;
 }
 
 .iac__panel-meta {

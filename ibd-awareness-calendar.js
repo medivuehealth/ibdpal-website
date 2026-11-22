@@ -199,7 +199,11 @@
     var kicker = m.major
       ? m.campaign_label || "Major campaign"
       : "Monthly awareness feature";
-    var title = peakHit || m.event;
+    var title = escapeHtml(m.name) + " " + year;
+    var eventLine =
+      '<p class="iac__panel-event">' +
+      escapeHtml(peakHit || m.event) +
+      "</p>";
     var dayLine = "";
     if (selectedDay && isPeak(viewMonth, selectedDay)) {
       dayLine =
@@ -250,8 +254,9 @@
       escapeHtml(kicker) +
       "</p>" +
       '<h3 class="iac__panel-title">' +
-      escapeHtml(title) +
+      title +
       "</h3>" +
+      eventLine +
       dayLine +
       '<p class="iac__panel-body">' +
       escapeHtml(m.relevance) +
