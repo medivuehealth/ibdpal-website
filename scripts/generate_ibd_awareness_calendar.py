@@ -41,7 +41,7 @@ def month_section(m: dict) -> str:
     badge = ""
     if m.get("major"):
         label = html.escape(m.get("campaign_label") or "Major campaign")
-        badge = f' <span class="blog-card-chip">{label}</span>'
+        badge = f'<p class="hub-header-footnote"><small><strong>{label}</strong></small></p>'
     highlights = ""
     if m.get("highlight_dates"):
         rows = "".join(
@@ -57,7 +57,8 @@ def month_section(m: dict) -> str:
         external = f"<p><strong>Official / Foundation links:</strong></p>{link_list(m['external'], external=True)}"
     return f"""
                 <section class="seo-landing__block" id="month-{m['month']:02d}">
-                    <h2>{html.escape(m['name'])}: {html.escape(m['event'])}{badge}</h2>
+                    <h2>{html.escape(m['name'])}: {html.escape(m['event'])}</h2>
+                    {badge}
                     <p>{html.escape(m['relevance'])}</p>
                     {highlights}
                     {note}
