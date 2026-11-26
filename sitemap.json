@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-21",
+  "generated_at": "2026-11-26",
   "canonical_xml": "https://www.ibdpal.org/sitemap.xml",
   "plain_text": "https://www.ibdpal.org/sitemap.txt",
   "html_map": "https://www.ibdpal.org/sitemap",
-  "url_count": 418,
+  "url_count": 430,
   "urls": [
     {
       "loc": "https://www.ibdpal.org/",
       "path": "/",
-      "lastmod": "2026-11-21",
+      "lastmod": "2026-11-26",
       "changefreq": "weekly",
       "priority": 1.0
     },
@@ -29,7 +29,7 @@
     {
       "loc": "https://www.ibdpal.org/ask",
       "path": "/ask",
-      "lastmod": "2026-11-14",
+      "lastmod": "2026-11-21",
       "changefreq": "monthly",
       "priority": 0.75
     },
@@ -111,6 +111,13 @@
       "priority": 0.88
     },
     {
+      "loc": "https://www.ibdpal.org/foods-ibd",
+      "path": "/foods-ibd",
+      "lastmod": "2026-11-26",
+      "changefreq": "monthly",
+      "priority": 0.88
+    },
+    {
       "loc": "https://www.ibdpal.org/for-clinicians",
       "path": "/for-clinicians",
       "lastmod": "2026-11-14",
@@ -176,7 +183,7 @@
     {
       "loc": "https://www.ibdpal.org/impact",
       "path": "/impact",
-      "lastmod": "2026-11-21",
+      "lastmod": "2026-11-26",
       "changefreq": "monthly",
       "priority": 0.85
     },
@@ -190,7 +197,7 @@
     {
       "loc": "https://www.ibdpal.org/library",
       "path": "/library",
-      "lastmod": "2026-11-21",
+      "lastmod": "2026-11-26",
       "changefreq": "monthly",
       "priority": 0.94
     },
@@ -211,7 +218,7 @@
     {
       "loc": "https://www.ibdpal.org/partners",
       "path": "/partners",
-      "lastmod": "2026-11-21",
+      "lastmod": "2026-11-26",
       "changefreq": "monthly",
       "priority": 0.75
     },
@@ -253,14 +260,14 @@
     {
       "loc": "https://www.ibdpal.org/site-updates",
       "path": "/site-updates",
-      "lastmod": "2026-11-21",
+      "lastmod": "2026-11-26",
       "changefreq": "monthly",
       "priority": 0.85
     },
     {
       "loc": "https://www.ibdpal.org/sitemap",
       "path": "/sitemap",
-      "lastmod": "2026-11-21",
+      "lastmod": "2026-11-26",
       "changefreq": "monthly",
       "priority": 0.7
     },
@@ -349,6 +356,13 @@
       "priority": 0.85
     },
     {
+      "loc": "https://www.ibdpal.org/blog/adalimumab-vs-ustekinumab-ibd",
+      "path": "/blog/adalimumab-vs-ustekinumab-ibd",
+      "lastmod": "2026-11-26",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
       "loc": "https://www.ibdpal.org/blog/adult-een-crohns-what-to-expect",
       "path": "/blog/adult-een-crohns-what-to-expect",
       "lastmod": "2026-11-21",
@@ -400,7 +414,14 @@
     {
       "loc": "https://www.ibdpal.org/blog/apple-ibd-cooked-vs-raw",
       "path": "/blog/apple-ibd-cooked-vs-raw",
-      "lastmod": "2026-11-21",
+      "lastmod": "2026-11-26",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/autism-ibd-connection",
+      "path": "/blog/autism-ibd-connection",
+      "lastmod": "2026-11-26",
       "changefreq": "monthly",
       "priority": 0.85
     },
@@ -421,14 +442,14 @@
     {
       "loc": "https://www.ibdpal.org/blog/avocado-ibd",
       "path": "/blog/avocado-ibd",
-      "lastmod": "2026-11-21",
+      "lastmod": "2026-11-26",
       "changefreq": "monthly",
       "priority": 0.85
     },
     {
       "loc": "https://www.ibdpal.org/blog/banana-ibd-crohns-colitis",
       "path": "/blog/banana-ibd-crohns-colitis",
-      "lastmod": "2026-11-21",
+      "lastmod": "2026-11-26",
       "changefreq": "monthly",
       "priority": 0.85
     },
@@ -470,7 +491,7 @@
     {
       "loc": "https://www.ibdpal.org/blog/blueberries-ibd",
       "path": "/blog/blueberries-ibd",
-      "lastmod": "2026-11-21",
+      "lastmod": "2026-11-26",
       "changefreq": "monthly",
       "priority": 0.85
     },
@@ -491,7 +512,7 @@
     {
       "loc": "https://www.ibdpal.org/blog/broccoli-ibd",
       "path": "/blog/broccoli-ibd",
-      "lastmod": "2026-11-21",
+      "lastmod": "2026-11-26",
       "changefreq": "monthly",
       "priority": 0.85
     },
@@ -513,6 +534,13 @@
       "loc": "https://www.ibdpal.org/blog/carrots-ibd",
       "path": "/blog/carrots-ibd",
       "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/cbd-cannabis-ibd",
+      "path": "/blog/cbd-cannabis-ibd",
+      "lastmod": "2026-11-26",
       "changefreq": "monthly",
       "priority": 0.85
     },
@@ -541,6 +569,13 @@
       "loc": "https://www.ibdpal.org/blog/chicken-protein-ibd",
       "path": "/blog/chicken-protein-ibd",
       "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/chickpeas-hummus-ibd",
+      "path": "/blog/chickpeas-hummus-ibd",
+      "lastmod": "2026-11-26",
       "changefreq": "monthly",
       "priority": 0.85
     },
@@ -930,6 +965,13 @@
       "priority": 0.85
     },
     {
+      "loc": "https://www.ibdpal.org/blog/honey-sweeteners-ibd",
+      "path": "/blog/honey-sweeteners-ibd",
+      "lastmod": "2026-11-26",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
       "loc": "https://www.ibdpal.org/blog/hospital-feeding-ibd-enteral-parenteral",
       "path": "/blog/hospital-feeding-ibd-enteral-parenteral",
       "lastmod": "2026-11-21",
@@ -1266,6 +1308,13 @@
       "priority": 0.85
     },
     {
+      "loc": "https://www.ibdpal.org/blog/loperamide-antispasmodics-ibd",
+      "path": "/blog/loperamide-antispasmodics-ibd",
+      "lastmod": "2026-11-26",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
       "loc": "https://www.ibdpal.org/blog/low-residue-diet-flare",
       "path": "/blog/low-residue-diet-flare",
       "lastmod": "2026-11-21",
@@ -1497,9 +1546,30 @@
       "priority": 0.85
     },
     {
+      "loc": "https://www.ibdpal.org/blog/pineapple-ibd",
+      "path": "/blog/pineapple-ibd",
+      "lastmod": "2026-11-26",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/plant-milks-ibd",
+      "path": "/blog/plant-milks-ibd",
+      "lastmod": "2026-11-26",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
       "loc": "https://www.ibdpal.org/blog/plantain-ibd",
       "path": "/blog/plantain-ibd",
       "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/popcorn-ibd",
+      "path": "/blog/popcorn-ibd",
+      "lastmod": "2026-11-26",
       "changefreq": "monthly",
       "priority": 0.85
     },
@@ -1577,6 +1647,13 @@
       "loc": "https://www.ibdpal.org/blog/pyoderma-erythema-nodosum-ibd",
       "path": "/blog/pyoderma-erythema-nodosum-ibd",
       "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/quinoa-ibd",
+      "path": "/blog/quinoa-ibd",
+      "lastmod": "2026-11-26",
       "changefreq": "monthly",
       "priority": 0.85
     },
@@ -1871,6 +1948,13 @@
       "loc": "https://www.ibdpal.org/blog/turkey-protein-ibd",
       "path": "/blog/turkey-protein-ibd",
       "lastmod": "2026-11-21",
+      "changefreq": "monthly",
+      "priority": 0.85
+    },
+    {
+      "loc": "https://www.ibdpal.org/blog/turmeric-curcumin-ibd",
+      "path": "/blog/turmeric-curcumin-ibd",
+      "lastmod": "2026-11-26",
       "changefreq": "monthly",
       "priority": 0.85
     },

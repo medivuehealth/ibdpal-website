@@ -104,6 +104,7 @@ SEASONAL_PACKS = [
         "note": "Diet hubs, deficiencies, and IBDPal nutrition targets.",
         "links": [
             {"url": "/ibd-nutrition", "title": "IBD nutrition hub"},
+            {"url": "/foods-ibd", "title": "Can I eat X? food hub"},
             {"url": "/blog/complete-ibd-nutrition-guide", "title": "Complete nutrition guide"},
             {"url": "/eating-with-ibd", "title": "Eating With IBD"},
             {"url": "/ibd-awareness-calendar#month-03", "title": "Awareness calendar: March"},

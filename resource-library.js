@@ -113,6 +113,18 @@
     spices: ['/blog/seasonings-herbs-spices-ibd'],
     herbal: ['/blog/seasonings-herbs-spices-ibd'],
     herbs: ['/blog/seasonings-herbs-spices-ibd'],
+    pineapple: ['/blog/pineapple-ibd'],
+    quinoa: ['/blog/quinoa-ibd'],
+    honey: ['/blog/honey-sweeteners-ibd'],
+    stevia: ['/blog/honey-sweeteners-ibd'],
+    turmeric: ['/blog/turmeric-curcumin-ibd'],
+    curcumin: ['/blog/turmeric-curcumin-ibd'],
+    loperamide: ['/blog/loperamide-antispasmodics-ibd'],
+    imodium: ['/blog/loperamide-antispasmodics-ibd'],
+    cbd: ['/blog/cbd-cannabis-ibd'],
+    autism: ['/blog/autism-ibd-connection'],
+    'can i eat': ['/foods-ibd'],
+
     'crohn diet': [
       '/blog/cded-crohns-exclusion-diet-ibd',
       '/blog/specific-carbohydrate-diet-scd-ibd'

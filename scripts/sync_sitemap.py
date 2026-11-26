@@ -34,6 +34,7 @@ HUB_SLUGS = {
     "teens-and-school",
     "flare-help",
     "treatment-decisions",
+    "foods-ibd",
 }
 
 

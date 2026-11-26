@@ -971,6 +971,302 @@
         "Crohn's",
         "colitis"
       ]
+    },
+    {
+      "slug": "pineapple-ibd",
+      "match_terms": [
+        "pineapple",
+        "pineapple ibd",
+        "pineapple crohn",
+        "pineapple colitis",
+        "bromelain ibd"
+      ],
+      "title": "Pineapple and IBD: Acid, Bromelain, and Flare Texture Tips",
+      "description": "Pineapple with Crohn's or colitis: acidity, bromelain, canned vs fresh, flare tips, and dietitian questions. Education only.",
+      "category": "Nutrition · November 2026",
+      "date_display": "November 26, 2026",
+      "date_iso": "2026-11-26T18:30:00Z",
+      "asset_dir": "pineapple-ibd",
+      "resource_category": "nutrition",
+      "tags": [
+        "pineapple",
+        "fruit",
+        "bromelain",
+        "acid",
+        "Crohn's",
+        "colitis",
+        "nutrition"
+      ]
+    },
+    {
+      "slug": "quinoa-ibd",
+      "match_terms": [
+        "quinoa",
+        "quinoa ibd",
+        "quinoa crohn",
+        "quinoa colitis"
+      ],
+      "title": "Quinoa and IBD: Protein, Fiber, and Flare-Friendly Cooking",
+      "description": "Quinoa with Crohn's or colitis: protein, fiber, rinsing, flare texture tips, and dietitian questions. Education only.",
+      "category": "Nutrition · November 2026",
+      "date_display": "November 26, 2026",
+      "date_iso": "2026-11-26T18:30:00Z",
+      "asset_dir": "quinoa-ibd",
+      "resource_category": "nutrition",
+      "tags": [
+        "quinoa",
+        "grain",
+        "protein",
+        "fiber",
+        "Crohn's",
+        "colitis",
+        "nutrition"
+      ]
+    },
+    {
+      "slug": "honey-sweeteners-ibd",
+      "match_terms": [
+        "honey",
+        "honey ibd",
+        "stevia",
+        "stevia ibd",
+        "sweeteners ibd",
+        "sugar alcohols ibd",
+        "monk fruit ibd"
+      ],
+      "title": "Honey, Stevia, and Sweeteners with IBD: What Patients Ask",
+      "description": "Honey, stevia, and other sweeteners with Crohn's or colitis: FODMAP notes, sugar alcohols, portion tips, and clinic questions. Education only.",
+      "category": "Nutrition · November 2026",
+      "date_display": "November 26, 2026",
+      "date_iso": "2026-11-26T18:30:00Z",
+      "asset_dir": "honey-sweeteners-ibd",
+      "resource_category": "nutrition",
+      "tags": [
+        "honey",
+        "stevia",
+        "sweeteners",
+        "sugar alcohols",
+        "FODMAP",
+        "Crohn's",
+        "colitis"
+      ]
+    },
+    {
+      "slug": "plant-milks-ibd",
+      "match_terms": [
+        "oat milk",
+        "almond milk",
+        "plant milk",
+        "plant milks",
+        "oat milk ibd",
+        "almond milk ibd",
+        "dairy alternative ibd"
+      ],
+      "title": "Oat Milk, Almond Milk, and Plant Milks with IBD",
+      "description": "Oat milk, almond milk, and other plant milks with Crohn's or colitis: fiber, FODMAP, additives, and dietitian questions. Education only.",
+      "category": "Nutrition · November 2026",
+      "date_display": "November 26, 2026",
+      "date_iso": "2026-11-26T18:30:00Z",
+      "asset_dir": "plant-milks-ibd",
+      "resource_category": "nutrition",
+      "tags": [
+        "oat milk",
+        "almond milk",
+        "plant milk",
+        "dairy alternative",
+        "Crohn's",
+        "colitis"
+      ]
+    },
+    {
+      "slug": "popcorn-ibd",
+      "match_terms": [
+        "popcorn",
+        "popcorn ibd",
+        "popcorn crohn",
+        "popcorn colitis"
+      ],
+      "title": "Popcorn and IBD: Hulls, Fiber, and Movie-Snack Reality",
+      "description": "Popcorn with Crohn's or colitis: hulls, insoluble fiber, oil and salt loads, flare caution, and dietitian questions. Education only.",
+      "category": "Nutrition · November 2026",
+      "date_display": "November 26, 2026",
+      "date_iso": "2026-11-26T18:30:00Z",
+      "asset_dir": "popcorn-ibd",
+      "resource_category": "nutrition",
+      "tags": [
+        "popcorn",
+        "snack",
+        "fiber",
+        "hulls",
+        "Crohn's",
+        "colitis"
+      ]
+    },
+    {
+      "slug": "chickpeas-hummus-ibd",
+      "match_terms": [
+        "chickpeas",
+        "hummus",
+        "hummus ibd",
+        "chickpeas ibd",
+        "garbanzo ibd"
+      ],
+      "title": "Chickpeas and Hummus with IBD: Fiber, FODMAPs, and Prep Tips",
+      "description": "Chickpeas and hummus with Crohn's or colitis: fiber, FODMAP notes, smooth hummus tips, and dietitian questions. Education only.",
+      "category": "Nutrition · November 2026",
+      "date_display": "November 26, 2026",
+      "date_iso": "2026-11-26T18:30:00Z",
+      "asset_dir": "chickpeas-hummus-ibd",
+      "resource_category": "nutrition",
+      "tags": [
+        "chickpeas",
+        "hummus",
+        "legumes",
+        "fiber",
+        "FODMAP",
+        "Crohn's",
+        "colitis"
+      ]
+    },
+    {
+      "slug": "turmeric-curcumin-ibd",
+      "match_terms": [
+        "turmeric",
+        "curcumin",
+        "turmeric ibd",
+        "curcumin ibd",
+        "turmeric crohn",
+        "curcumin colitis",
+        "turmeric supplement"
+      ],
+      "title": "Turmeric and Curcumin for IBD: Evidence, Doses, and Safety Questions",
+      "description": "Turmeric and curcumin with Crohn's or colitis: food vs supplements, evidence limits, interactions, and clinic questions. Education only.",
+      "category": "Nutrition · November 2026",
+      "date_display": "November 26, 2026",
+      "date_iso": "2026-11-26T18:30:00Z",
+      "asset_dir": "turmeric-curcumin-ibd",
+      "resource_category": "nutrition",
+      "tags": [
+        "turmeric",
+        "curcumin",
+        "supplements",
+        "nutrition",
+        "Crohn's",
+        "colitis"
+      ]
+    },
+    {
+      "slug": "loperamide-antispasmodics-ibd",
+      "match_terms": [
+        "loperamide",
+        "imodium",
+        "imodium ibd",
+        "loperamide ibd",
+        "antispasmodic",
+        "bentyl",
+        "dicyclomine",
+        "dicyclomine ibd",
+        "can i take imodium with crohn"
+      ],
+      "title": "Loperamide (Imodium) and Antispasmodics with IBD: Safety Questions",
+      "description": "Loperamide (Imodium), dicyclomine, and antispasmodics with Crohn's or colitis: when people ask, risks, and clinic questions. Education only, not dosing advice.",
+      "category": "Treatment · November 2026",
+      "date_display": "November 26, 2026",
+      "date_iso": "2026-11-26T18:30:00Z",
+      "asset_dir": "loperamide-antispasmodics-ibd",
+      "resource_category": "treatment",
+      "tags": [
+        "loperamide",
+        "Imodium",
+        "antispasmodics",
+        "dicyclomine",
+        "symptoms",
+        "Crohn's",
+        "colitis"
+      ]
+    },
+    {
+      "slug": "cbd-cannabis-ibd",
+      "match_terms": [
+        "cbd",
+        "cbd ibd",
+        "cannabis ibd",
+        "marijuana crohn",
+        "cbd ulcerative colitis",
+        "medical marijuana ibd",
+        "cannabidiol crohn"
+      ],
+      "title": "CBD and Cannabis with IBD: Evidence, Risks, and Clinic Questions",
+      "description": "CBD and cannabis with Crohn's or colitis: symptom claims, evidence limits, safety, drug interactions, and questions for your IBD team. Education only.",
+      "category": "Wellness · November 2026",
+      "date_display": "November 26, 2026",
+      "date_iso": "2026-11-26T18:30:00Z",
+      "asset_dir": "cbd-cannabis-ibd",
+      "resource_category": "wellness",
+      "tags": [
+        "CBD",
+        "cannabis",
+        "marijuana",
+        "wellness",
+        "symptoms",
+        "Crohn's",
+        "colitis"
+      ]
+    },
+    {
+      "slug": "autism-ibd-connection",
+      "match_terms": [
+        "autism",
+        "autism ibd",
+        "autism crohn",
+        "autism colitis",
+        "asd ibd",
+        "autism gut",
+        "autistic ibd"
+      ],
+      "title": "Autism and IBD: Overlap Questions Patients and Families Ask",
+      "description": "Autism and IBD overlap: GI symptoms, sensory feeding, care coordination, and clinic questions for families and adults. Education only, not diagnostic advice.",
+      "category": "Family · November 2026",
+      "date_display": "November 26, 2026",
+      "date_iso": "2026-11-26T18:30:00Z",
+      "asset_dir": "autism-ibd-connection",
+      "resource_category": "family",
+      "tags": [
+        "autism",
+        "ASD",
+        "family",
+        "pediatrics",
+        "Crohn's",
+        "colitis",
+        "neurodiversity"
+      ]
+    },
+    {
+      "slug": "adalimumab-vs-ustekinumab-ibd",
+      "match_terms": [
+        "humira vs stelara",
+        "adalimumab vs ustekinumab",
+        "stelara vs humira",
+        "humira or stelara",
+        "adalimumab vs stelara",
+        "ustekinumab vs adalimumab"
+      ],
+      "title": "Adalimumab vs Ustekinumab for IBD: Patient Comparison Questions",
+      "description": "Adalimumab (Humira and biosimilars) vs ustekinumab (Stelara): how patients compare mechanisms, dosing, monitoring, and clinic questions. Education only.",
+      "category": "Treatment · November 2026",
+      "date_display": "November 26, 2026",
+      "date_iso": "2026-11-26T18:30:00Z",
+      "asset_dir": "adalimumab-vs-ustekinumab-ibd",
+      "resource_category": "treatment",
+      "tags": [
+        "adalimumab",
+        "ustekinumab",
+        "Humira",
+        "Stelara",
+        "biologics",
+        "comparison",
+        "treatment"
+      ]
     }
   ]
 }

@@ -13,6 +13,7 @@ https://www.ibdpal.org/eating-with-ibd
 https://www.ibdpal.org/executive-summary
 https://www.ibdpal.org/faq
 https://www.ibdpal.org/flare-help
+https://www.ibdpal.org/foods-ibd
 https://www.ibdpal.org/for-clinicians
 https://www.ibdpal.org/founder
 https://www.ibdpal.org/glossary
@@ -47,6 +48,7 @@ https://www.ibdpal.org/visit-prep
 https://www.ibdpal.org/what-is-ibd
 https://www.ibdpal.org/blog/abdominal-pain-stomach-pain-ibd
 https://www.ibdpal.org/blog/adalimumab-dose-frequency-ibd
+https://www.ibdpal.org/blog/adalimumab-vs-ustekinumab-ibd
 https://www.ibdpal.org/blog/adult-een-crohns-what-to-expect
 https://www.ibdpal.org/blog/after-er-visit-ibd-follow-up
 https://www.ibdpal.org/blog/after-ibd-surgery-first-30-days
@@ -55,6 +57,7 @@ https://www.ibdpal.org/blog/anemia-iron-deficiency-ibd
 https://www.ibdpal.org/blog/ankylosing-spondylitis-ibd
 https://www.ibdpal.org/blog/anti-inflammatory-diet-ibd
 https://www.ibdpal.org/blog/apple-ibd-cooked-vs-raw
+https://www.ibdpal.org/blog/autism-ibd-connection
 https://www.ibdpal.org/blog/autoimmune-diet-myths
 https://www.ibdpal.org/blog/autoimmune-hepatitis-ibd
 https://www.ibdpal.org/blog/avocado-ibd
@@ -71,10 +74,12 @@ https://www.ibdpal.org/blog/broccoli-ibd
 https://www.ibdpal.org/blog/calcium-ibd
 https://www.ibdpal.org/blog/carnivore-diet-ibd-myths
 https://www.ibdpal.org/blog/carrots-ibd
+https://www.ibdpal.org/blog/cbd-cannabis-ibd
 https://www.ibdpal.org/blog/cded-crohns-exclusion-diet-ibd
 https://www.ibdpal.org/blog/celiac-ibd-screening
 https://www.ibdpal.org/blog/chapati-roti-ibd
 https://www.ibdpal.org/blog/chicken-protein-ibd
+https://www.ibdpal.org/blog/chickpeas-hummus-ibd
 https://www.ibdpal.org/blog/chocolate-ibd
 https://www.ibdpal.org/blog/chronic-diarrhea-ibd-causes
 https://www.ibdpal.org/blog/coffee-ibd
@@ -130,6 +135,7 @@ https://www.ibdpal.org/blog/gut-microbiome-autoimmune
 https://www.ibdpal.org/blog/hashimotos-thyroid-autoimmune
 https://www.ibdpal.org/blog/high-calprotectin-what-next
 https://www.ibdpal.org/blog/high-school-ibd-survival-guide
+https://www.ibdpal.org/blog/honey-sweeteners-ibd
 https://www.ibdpal.org/blog/hospital-feeding-ibd-enteral-parenteral
 https://www.ibdpal.org/blog/how-ibdpal-nutrition-targets-work
 https://www.ibdpal.org/blog/how-nutrition-impacts-gut-health-ibd
@@ -178,6 +184,7 @@ https://www.ibdpal.org/blog/kimchi-fermented-ibd
 https://www.ibdpal.org/blog/leaky-gut-protocol-ibd
 https://www.ibdpal.org/blog/lean-beef-ibd
 https://www.ibdpal.org/blog/living-with-ibd-kids
+https://www.ibdpal.org/blog/loperamide-antispasmodics-ibd
 https://www.ibdpal.org/blog/low-residue-diet-flare
 https://www.ibdpal.org/blog/lupus-autoimmune-basics
 https://www.ibdpal.org/blog/magnesium-ibd
@@ -211,7 +218,10 @@ https://www.ibdpal.org/blog/pelvic-floor-exercises-ibd
 https://www.ibdpal.org/blog/pencil-thin-stool-ibd
 https://www.ibdpal.org/blog/perianal-crohns-fistula-abscess
 https://www.ibdpal.org/blog/periods-menstrual-cycle-ibd
+https://www.ibdpal.org/blog/pineapple-ibd
+https://www.ibdpal.org/blog/plant-milks-ibd
 https://www.ibdpal.org/blog/plantain-ibd
+https://www.ibdpal.org/blog/popcorn-ibd
 https://www.ibdpal.org/blog/potassium-ibd
 https://www.ibdpal.org/blog/potato-ibd-white
 https://www.ibdpal.org/blog/prednisone-diet-hunger-ibd
@@ -223,6 +233,7 @@ https://www.ibdpal.org/blog/protein-shakes-ons-ibd
 https://www.ibdpal.org/blog/psc-ibd-liver
 https://www.ibdpal.org/blog/psoriasis-ibd-connection
 https://www.ibdpal.org/blog/pyoderma-erythema-nodosum-ibd
+https://www.ibdpal.org/blog/quinoa-ibd
 https://www.ibdpal.org/blog/reading-ibd-labs-calprotectin-crp
 https://www.ibdpal.org/blog/remicade-infusion-day-tips-ibd
 https://www.ibdpal.org/blog/rheumatoid-arthritis-autoimmune-overview
@@ -265,6 +276,7 @@ https://www.ibdpal.org/blog/tracking-food-symptoms-ibdpal
 https://www.ibdpal.org/blog/travel-with-ibd
 https://www.ibdpal.org/blog/tuna-ibd
 https://www.ibdpal.org/blog/turkey-protein-ibd
+https://www.ibdpal.org/blog/turmeric-curcumin-ibd
 https://www.ibdpal.org/blog/type1-diabetes-autoimmune-basics
 https://www.ibdpal.org/blog/ulcerative-colitis-diet-overview-ibd
 https://www.ibdpal.org/blog/understanding-biologics-ibd

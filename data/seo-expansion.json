@@ -41,6 +41,10 @@
       ],
       "guides": [
         {
+          "url": "/foods-ibd",
+          "label": "Can I eat X? food A-Z hub"
+        },
+        {
           "url": "/guides/what-should-i-eat-crohns-colitis",
           "label": "What should I eat with Crohn's or colitis?"
         },
@@ -589,6 +593,151 @@
         "steroid-taper-what-to-expect-ibd",
         "steroids-prednisone-ibd",
         "crp-normal-still-symptoms-ibd"
+      ]
+    },
+    {
+      "slug": "foods-ibd",
+      "h1": "Can I eat this with IBD?",
+      "title": "Can I Eat X with IBD? Food A-Z for Crohn's & Colitis | IBDPal",
+      "description": "Food-by-food IBD guides for Crohn's and ulcerative colitis: fruits, grains, dairy alternatives, snacks, sweeteners, and spices. Education only.",
+      "intro": "Single-food questions drive much of IBDPal traffic. Use this hub to jump to practical Can I eat X? articles. Tolerance is individual. These pages prepare clinic questions; they do not prescribe a personal diet.",
+      "keywords": [
+        "can I eat with Crohn's",
+        "IBD food list",
+        "Crohn's safe foods",
+        "ulcerative colitis foods",
+        "pineapple IBD",
+        "quinoa IBD",
+        "honey IBD",
+        "oat milk IBD",
+        "popcorn Crohn's",
+        "hummus colitis",
+        "turmeric IBD"
+      ],
+      "featured_links": [
+        {
+          "url": "/guides/what-should-i-eat-crohns-colitis",
+          "label": "What should I eat with Crohn's or colitis?",
+          "blurb": "Start with a clinician-aligned overview before food-by-food experiments."
+        },
+        {
+          "url": "/blog/flare-foods-ibd",
+          "label": "Flare foods overview",
+          "blurb": "Gentler patterns many teams discuss during active symptoms."
+        },
+        {
+          "url": "/blog/tracking-food-symptoms-ibdpal",
+          "label": "Track food and symptoms",
+          "blurb": "Log portion, form, and timing so patterns show up in clinic."
+        }
+      ],
+      "sections": [
+        {
+          "heading": "How to use this hub",
+          "paragraphs": [
+            "Open the food article that matches your question. Read flare versus remission tips, then log your own trial if your clinician agrees.",
+            "If you have strictures, recent surgery, or a prescribed elimination plan, follow your IBD team over any generic food page.",
+            "New long-tail guides include pineapple, quinoa, honey and sweeteners, plant milks, popcorn, chickpeas and hummus, plus a dedicated turmeric and curcumin page."
+          ]
+        },
+        {
+          "heading": "When food questions become urgent",
+          "paragraphs": [
+            "Severe pain, repeated vomiting, inability to keep fluids down, heavy bleeding, high fever, or rapid weight loss need prompt medical care, not another food trial."
+          ]
+        }
+      ],
+      "guides": [
+        {
+          "url": "/ibd-nutrition",
+          "label": "IBD nutrition hub"
+        },
+        {
+          "url": "/guides/what-should-i-eat-crohns-colitis",
+          "label": "What should I eat?"
+        },
+        {
+          "url": "/guides/crohns-disease-diet-nutrition",
+          "label": "Crohn's diet & nutrition"
+        },
+        {
+          "url": "/guides/ulcerative-colitis-diet-foods",
+          "label": "UC diet & foods"
+        },
+        {
+          "url": "/guides/low-residue-diet-ibd",
+          "label": "Low-residue diet overview"
+        },
+        {
+          "url": "/guides/foods-to-eat-crohns-flare",
+          "label": "Foods during a Crohn's flare"
+        },
+        {
+          "url": "/eating-with-ibd",
+          "label": "Eating With IBD book landing"
+        },
+        {
+          "url": "/tools/food-pain-tracker",
+          "label": "Food and pain tracker tool"
+        }
+      ],
+      "blog_slugs": [
+        "pineapple-ibd",
+        "quinoa-ibd",
+        "honey-sweeteners-ibd",
+        "plant-milks-ibd",
+        "popcorn-ibd",
+        "chickpeas-hummus-ibd",
+        "turmeric-curcumin-ibd",
+        "apple-ibd-cooked-vs-raw",
+        "avocado-ibd",
+        "banana-ibd-crohns-colitis",
+        "blueberries-ibd",
+        "broccoli-ibd",
+        "carrots-ibd",
+        "chapati-roti-ibd",
+        "chicken-protein-ibd",
+        "chocolate-ibd",
+        "coffee-ibd",
+        "congee-rice-porridge-ibd",
+        "corn-ibd",
+        "couscous-ibd",
+        "cucumber-ibd",
+        "dairy-lactose-ibd",
+        "dal-lentils-ibd",
+        "dates-ramadan-ibd",
+        "eggs-ibd-nutrition",
+        "greek-yogurt-ibd",
+        "grapes-ibd",
+        "kimchi-fermented-ibd",
+        "lean-beef-ibd",
+        "mango-ibd-crohns-colitis",
+        "melon-ibd",
+        "miso-soup-ibd",
+        "oatmeal-ibd",
+        "onion-garlic-ibd-fodmap",
+        "oranges-citrus-ibd",
+        "paneer-ibd",
+        "peanut-butter-ibd",
+        "plantain-ibd",
+        "potato-ibd-white",
+        "salmon-fish-ibd",
+        "spinach-leafy-greens-ibd",
+        "strawberries-ibd",
+        "sweet-potato-ibd",
+        "tea-ibd",
+        "tofu-soy-ibd",
+        "tomatoes-ibd",
+        "tortillas-ibd",
+        "tuna-ibd",
+        "turkey-protein-ibd",
+        "white-bread-ibd",
+        "white-rice-ibd-flare",
+        "zucchini-ibd",
+        "alcohol-caffeine-ibd",
+        "bone-broth-gut-healing-ibd",
+        "seasonings-herbs-spices-ibd",
+        "spicy-foods-nuts-seeds-ibd"
       ]
     }
   ],

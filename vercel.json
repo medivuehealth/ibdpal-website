@@ -10,6 +10,54 @@
   ],
   "rewrites": [
     {
+      "source": "/foods-ibd",
+      "destination": "/foods-ibd.html"
+    },
+    {
+      "source": "/blog/pineapple-ibd",
+      "destination": "/blogs/pineapple-ibd.html"
+    },
+    {
+      "source": "/blog/quinoa-ibd",
+      "destination": "/blogs/quinoa-ibd.html"
+    },
+    {
+      "source": "/blog/honey-sweeteners-ibd",
+      "destination": "/blogs/honey-sweeteners-ibd.html"
+    },
+    {
+      "source": "/blog/plant-milks-ibd",
+      "destination": "/blogs/plant-milks-ibd.html"
+    },
+    {
+      "source": "/blog/popcorn-ibd",
+      "destination": "/blogs/popcorn-ibd.html"
+    },
+    {
+      "source": "/blog/chickpeas-hummus-ibd",
+      "destination": "/blogs/chickpeas-hummus-ibd.html"
+    },
+    {
+      "source": "/blog/turmeric-curcumin-ibd",
+      "destination": "/blogs/turmeric-curcumin-ibd.html"
+    },
+    {
+      "source": "/blog/loperamide-antispasmodics-ibd",
+      "destination": "/blogs/loperamide-antispasmodics-ibd.html"
+    },
+    {
+      "source": "/blog/cbd-cannabis-ibd",
+      "destination": "/blogs/cbd-cannabis-ibd.html"
+    },
+    {
+      "source": "/blog/autism-ibd-connection",
+      "destination": "/blogs/autism-ibd-connection.html"
+    },
+    {
+      "source": "/blog/adalimumab-vs-ustekinumab-ibd",
+      "destination": "/blogs/adalimumab-vs-ustekinumab-ibd.html"
+    },
+    {
       "source": "/ibd-awareness-calendar",
       "destination": "/ibd-awareness-calendar.html"
     },

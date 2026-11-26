@@ -5,7 +5,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ibdpal.org/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.ibdpal.org/es/recursos" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ibdpal.org/" />
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.00</priority>
   </url>
@@ -23,7 +23,7 @@
   </url>
   <url>
     <loc>https://www.ibdpal.org/ask</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -103,6 +103,12 @@
     <priority>0.88</priority>
   </url>
   <url>
+    <loc>https://www.ibdpal.org/foods-ibd</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
     <loc>https://www.ibdpal.org/for-clinicians</loc>
     <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
@@ -161,7 +167,7 @@
   </url>
   <url>
     <loc>https://www.ibdpal.org/impact</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -173,7 +179,7 @@
   </url>
   <url>
     <loc>https://www.ibdpal.org/library</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.94</priority>
   </url>
@@ -194,7 +200,7 @@
   </url>
   <url>
     <loc>https://www.ibdpal.org/partners</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -230,13 +236,13 @@
   </url>
   <url>
     <loc>https://www.ibdpal.org/site-updates</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/sitemap</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
@@ -319,6 +325,12 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://www.ibdpal.org/blog/adalimumab-vs-ustekinumab-ibd</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://www.ibdpal.org/blog/adult-een-crohns-what-to-expect</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
@@ -362,7 +374,13 @@
   </url>
   <url>
     <loc>https://www.ibdpal.org/blog/apple-ibd-cooked-vs-raw</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.ibdpal.org/blog/autism-ibd-connection</loc>
+    <lastmod>2026-11-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -380,13 +398,13 @@
   </url>
   <url>
     <loc>https://www.ibdpal.org/blog/avocado-ibd</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.ibdpal.org/blog/banana-ibd-crohns-colitis</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -422,7 +440,7 @@
   </url>
   <url>
     <loc>https://www.ibdpal.org/blog/blueberries-ibd</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -440,7 +458,7 @@
   </url>
   <url>
     <loc>https://www.ibdpal.org/blog/broccoli-ibd</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -459,6 +477,12 @@
   <url>
     <loc>https://www.ibdpal.org/blog/carrots-ibd</loc>
     <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.ibdpal.org/blog/cbd-cannabis-ibd</loc>
+    <lastmod>2026-11-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -483,6 +507,12 @@
   <url>
     <loc>https://www.ibdpal.org/blog/chicken-protein-ibd</loc>
     <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.ibdpal.org/blog/chickpeas-hummus-ibd</loc>
+    <lastmod>2026-11-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -817,6 +847,12 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://www.ibdpal.org/blog/honey-sweeteners-ibd</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://www.ibdpal.org/blog/hospital-feeding-ibd-enteral-parenteral</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
@@ -1105,6 +1141,12 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://www.ibdpal.org/blog/loperamide-antispasmodics-ibd</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://www.ibdpal.org/blog/low-residue-diet-flare</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
@@ -1303,8 +1345,26 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://www.ibdpal.org/blog/pineapple-ibd</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.ibdpal.org/blog/plant-milks-ibd</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://www.ibdpal.org/blog/plantain-ibd</loc>
     <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.ibdpal.org/blog/popcorn-ibd</loc>
+    <lastmod>2026-11-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -1371,6 +1431,12 @@
   <url>
     <loc>https://www.ibdpal.org/blog/pyoderma-erythema-nodosum-ibd</loc>
     <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.ibdpal.org/blog/quinoa-ibd</loc>
+    <lastmod>2026-11-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -1623,6 +1689,12 @@
   <url>
     <loc>https://www.ibdpal.org/blog/turkey-protein-ibd</loc>
     <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.ibdpal.org/blog/turmeric-curcumin-ibd</loc>
+    <lastmod>2026-11-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
