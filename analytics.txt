@@ -1,0 +1,30 @@
+# IBDPal public analytics export
+# Aggregated reach only. No cookies, IPs, emails, or raw patient text.
+# Generated: 2026-11-26T18:51:52Z
+# Source site: https://www.ibdpal.org
+
+## Reach (site-config verified snapshot)
+anchor_date: 2026-09-05
+total_readers_display_baseline: 20000
+page_views_display_baseline: 62000
+typical_daily_visitors: 95
+countries_reached_verified: 106
+countries_source: Vercel Web Analytics country breakdown (aggregated)
+
+## Library snapshot
+as_of: 2026-11-26
+articles: 256
+guides: 60
+resources: 377
+sitemap_urls: 430
+
+## On-site search volume (last 30 days, aggregated)
+searches: 63
+unique_normalized_terms: 15
+zero_result_searches: 5
+
+## Notes
+- Counts are privacy-oriented aggregates for content planning.
+- Geographic detail is limited to country totals when verified.
+- For URL lists use /sitemap.txt. For AI overview use /llms.txt.
+- Companion files: /content-insights.txt /content-inventory.txt

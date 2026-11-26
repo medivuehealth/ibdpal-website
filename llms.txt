@@ -333,6 +333,9 @@
 - Sitemap (JSON): https://www.ibdpal.org/sitemap.json
 - Sitemap (HTML directory): https://www.ibdpal.org/sitemap
 - This file: https://www.ibdpal.org/llms.txt
+- Analytics (aggregated reach): https://www.ibdpal.org/analytics.txt
+- Content insights (search/views aggregates): https://www.ibdpal.org/content-insights.txt
+- Content inventory (titles/dates): https://www.ibdpal.org/content-inventory.txt
 
 ## Patient guides (search topics)
 - https://www.ibdpal.org/guides

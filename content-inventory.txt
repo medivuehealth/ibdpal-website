@@ -1,0 +1,324 @@
+# IBDPal content inventory
+# Titles, categories, publication and update dates for education pages.
+# Generated: 2026-11-26T18:51:52Z
+# Articles: 256
+# Guides: 61
+
+# type	path	category	published	modified	title
+article	/blog/abdominal-pain-stomach-pain-ibd	Wellness	2026-10-04T18:00:00Z	2026-10-04T18:00:00Z	Abdominal Pain and Stomach Pain with IBD: What to Track and When to Call
+article	/blog/adalimumab-dose-frequency-ibd	Medications	2026-09-13T16:30:00Z	2026-09-13T16:30:00Z	Adalimumab (Humira) Dose and Frequency in IBD: Questions to Ask Your Clinic
+article	/blog/adalimumab-vs-ustekinumab-ibd	Treatment	2026-11-26T18:30:00Z	2026-11-26T18:30:00Z	Adalimumab vs Ustekinumab for IBD: Patient Comparison Questions
+article	/blog/adult-een-crohns-what-to-expect	Nutrition	2026-08-22T15:30:00Z	2026-08-28T12:00:00Z	Adult EEN for Crohn's: What to Expect
+article	/blog/after-er-visit-ibd-follow-up	Flares	2026-08-09T12:00:00Z	2026-08-09T12:00:00Z	After an ER Visit for IBD: Follow-Up, Medications, and What to Tell Your GI
+article	/blog/after-ibd-surgery-first-30-days	Surgery	2026-11-21T22:00:00Z	2026-11-21T22:00:00Z	After IBD Surgery: Your First 30 Days at Home
+article	/blog/alcohol-caffeine-ibd	Wellness	2026-06-15T12:00:00Z	2026-08-28T12:00:00Z	Alcohol and Caffeine With IBD: Common Patient Questions
+article	/blog/anemia-iron-deficiency-ibd	Wellness	2026-07-13T18:50:00Z	2026-08-28T12:00:00Z	Anemia and Iron Deficiency in IBD
+article	/blog/ankylosing-spondylitis-ibd	Associations	2026-08-07T14:20:00Z	2026-08-28T12:00:00Z	Ankylosing Spondylitis and IBD: Axial Joint Pain Explained
+article	/blog/anti-inflammatory-diet-ibd	Diet	2026-06-18T12:00:00Z	2026-08-28T12:00:00Z	Anti-Inflammatory Diet and IBD: What Research Suggests (and What It Doesn't)
+article	/blog/apple-ibd-cooked-vs-raw	Nutrition	2026-08-21T14:00:00Z	2026-08-21T14:00:00Z	Apples and IBD: Cooked vs Raw, Fiber, and Flare Tips
+article	/blog/autism-ibd-connection	Family	2026-11-26T18:30:00Z	2026-11-26T18:30:00Z	Autism and IBD: Overlap Questions Patients and Families Ask
+article	/blog/autoimmune-diet-myths	Nutrition	2026-08-07T21:00:00Z	2026-08-28T12:00:00Z	Autoimmune Diet Myths: What Marketing Gets Wrong
+article	/blog/autoimmune-hepatitis-ibd	Associations	2026-08-07T15:00:00Z	2026-08-28T12:00:00Z	Autoimmune Hepatitis Themes in People with IBD
+article	/blog/avocado-ibd	Nutrition	2026-08-22T14:00:00Z	2026-08-22T14:00:00Z	Avocado and IBD: Healthy Fats, Fiber, and Portion Tips
+article	/blog/banana-ibd-crohns-colitis	Nutrition	2026-08-21T12:00:00Z	2026-08-21T12:00:00Z	Bananas and IBD: Fiber, Potassium, and Flare-Friendly Tips
+article	/blog/bathroom-urgency-anxiety-ibd	Wellness	2026-07-21T13:10:00Z	2026-08-28T12:00:00Z	Bathroom Urgency Anxiety with IBD: Practical Coping Steps
+article	/blog/best-foods-crohns-flare	Nutrition &amp; IBD	2026-05-17T12:00:00Z	2026-05-17T12:00:00Z	Best Foods to Eat During a Crohn's Disease Flare
+article	/blog/biologics-flying-travel-ibd	Treatment	2026-08-15T05:00:00Z	2026-08-28T12:00:00Z	Flying With Biologics: Coolers, Letters, and Airport Tips for IBD
+article	/blog/black-stool-ibd	Wellness	2026-08-14T14:00:00Z	2026-08-28T12:00:00Z	Black Stool With IBD: Melena, Iron, Pepto, and Red Flags
+article	/blog/blood-in-stool-ibd-when-to-worry	Flares	2026-07-15T12:00:00Z	2026-08-28T12:00:00Z	Blood in Stool with IBD: How to Track It and When It Is Urgent
+article	/blog/blueberries-ibd	Nutrition	2026-08-21T16:00:00Z	2026-08-21T16:00:00Z	Blueberries and IBD: Antioxidants, Seeds, and Gut Tolerance
+article	/blog/bone-broth-gut-healing-ibd	Nutrition	2026-08-15T07:00:00Z	2026-08-28T12:00:00Z	Bone Broth and IBD: Gut Healing Claims Versus Reality
+article	/blog/bristol-stool-chart-ibd	Wellness	2026-08-14T17:00:00Z	2026-08-28T12:00:00Z	Bristol Stool Chart for IBD: How to Describe Stools to Your GI
+article	/blog/broccoli-ibd	Nutrition	2026-08-25T12:00:00Z	2026-08-25T12:00:00Z	Broccoli and IBD: Gas, Stems, and Softer Prep Ideas
+article	/blog/calcium-ibd	Nutrition	2026-08-26T16:00:00Z	2026-08-26T16:00:00Z	Calcium and IBD: Bones, Dairy Alternatives, and Steroid Questions
+article	/blog/carnivore-diet-ibd-myths	Nutrition	2026-08-15T06:00:00Z	2026-08-28T12:00:00Z	Carnivore Diet and IBD: Myths, Risks, and What Evidence Says
+article	/blog/carrots-ibd	Nutrition	2026-08-24T12:00:00Z	2026-08-24T12:00:00Z	Carrots and IBD: Cooked vs Raw, Vitamin A, and Flare Tips
+article	/blog/cbd-cannabis-ibd	Wellness	2026-11-26T18:30:00Z	2026-11-26T18:30:00Z	CBD and Cannabis with IBD: Evidence, Risks, and Clinic Questions
+article	/blog/cded-crohns-exclusion-diet-ibd	Nutrition	2026-10-11T19:00:00Z	2026-10-11T19:00:00Z	CDED for Crohn's: Exclusion Phases, PEN, and Why Supervision Matters
+article	/blog/celiac-ibd-screening	Autoimmune	2026-08-07T14:40:00Z	2026-08-28T12:00:00Z	Celiac Screening with IBD: Before You Go Gluten-Free
+article	/blog/chapati-roti-ibd	Nutrition	2026-08-15T12:00:00Z	2026-08-28T12:00:00Z	Chapati and Roti With IBD: Flatbread Tips for Flare and Remission
+article	/blog/chicken-protein-ibd	Nutrition	2026-08-23T12:00:00Z	2026-08-23T12:00:00Z	Chicken and IBD: Lean Protein for Flares and Remission Plates
+article	/blog/chickpeas-hummus-ibd	Nutrition	2026-11-26T18:30:00Z	2026-11-26T18:30:00Z	Chickpeas and Hummus with IBD: Fiber, FODMAPs, and Prep Tips
+article	/blog/chocolate-ibd	Nutrition	2026-08-31T12:00:00Z	2026-08-31T12:00:00Z	Chocolate and IBD: Cocoa, Fat, Sugar Alcohols, and Portion Tips
+article	/blog/chronic-diarrhea-ibd-causes	Flares	2026-07-14T12:00:00Z	2026-08-28T12:00:00Z	Chronic Diarrhea in IBD: Flare, Infection, or Medication Effects
+article	/blog/coffee-ibd	Nutrition	2026-08-29T12:00:00Z	2026-08-29T12:00:00Z	Coffee and IBD: Caffeine, Urgency, and When to Cut Back
+article	/blog/collagen-supplements-ibd	Nutrition	2026-08-15T10:00:00Z	2026-08-28T12:00:00Z	Collagen Supplements and IBD: What Marketing Omits
+article	/blog/college-with-ibd	Teen life	2026-06-21T12:00:00Z	2026-06-21T12:00:00Z	College With Crohn's or Colitis: Dorms, Dining Halls, and Disability Services
+article	/blog/colonoscopy-prep-ibd	Getting Started	2026-07-21T12:30:00Z	2026-08-28T12:00:00Z	Colonoscopy Prep with IBD: A Practical Patient Checklist
+article	/blog/complete-ibd-nutrition-guide	Nutrition	2026-07-21T12:00:00Z	2026-08-28T12:00:00Z	Complete IBD Nutrition Guide: Flare Eating, Remission, and Key Patterns
+article	/blog/congee-rice-porridge-ibd	Nutrition	2026-08-15T14:00:00Z	2026-08-28T12:00:00Z	Congee and Rice Porridge With IBD: Soft Carbs for Flare Days
+article	/blog/constipation-ibd-causes	Flares	2026-07-13T18:00:00Z	2026-08-28T12:00:00Z	Constipation in IBD: Strictures, Meds, and When to Call
+article	/blog/corn-ibd	Nutrition	2026-08-26T14:00:00Z	2026-08-26T14:00:00Z	Corn and IBD: Kernels, Skins, and When to Be Careful
+article	/blog/couscous-ibd	Nutrition	2026-08-15T19:00:00Z	2026-08-28T12:00:00Z	Couscous With IBD: Small Pasta Texture, Portions, and Prep
+article	/blog/crohns-diet-overview-ibd	Nutrition	2026-09-13T16:10:00Z	2026-09-13T16:10:00Z	Crohn's Diet Overview: Flare, Remission, and What "Diet" Really Means
+article	/blog/crp-normal-still-symptoms-ibd	Wellness	2026-08-14T20:00:00Z	2026-08-28T12:00:00Z	Normal CRP but Still Sick With IBD: Why Labs Can Lag Symptoms
+article	/blog/cucumber-ibd	Nutrition	2026-08-25T16:00:00Z	2026-08-25T16:00:00Z	Cucumber and IBD: Hydration, Peels, and Seed Tips
+article	/blog/dairy-lactose-ibd	Nutrition	2026-06-10T12:00:00Z	2026-08-28T12:00:00Z	Dairy and Lactose With Crohn's or Colitis: What Patients Ask
+article	/blog/dal-lentils-ibd	Nutrition	2026-08-15T13:00:00Z	2026-08-28T12:00:00Z	Dal and Lentils With IBD: Protein, FODMAPs, and Softer Prep
+article	/blog/dates-ramadan-ibd	Nutrition	2026-08-15T20:00:00Z	2026-08-28T12:00:00Z	Dates and Ramadan Eating With IBD: Sugar, Fiber, and Fasting Notes
+article	/blog/dating-intimacy-ibd-adults	Living with IBD	2026-07-25T12:00:00Z	2026-08-28T12:00:00Z	Dating and Intimacy with IBD as an Adult: Honest, Practical Guidance
+article	/blog/dehydration-ibd-warning-signs	Flares	2026-08-09T12:00:00Z	2026-08-09T12:00:00Z	Dehydration With IBD: Warning Signs, Fluids, and When It Is Urgent
+article	/blog/depression-anxiety-ibd	Wellness	2026-06-17T12:00:00Z	2026-08-28T12:00:00Z	Depression and Anxiety With IBD: Why It Happens and How to Get Support
+article	/blog/dining-out-ibd-restaurants	Nutrition	2026-06-21T12:00:00Z	2026-08-28T12:00:00Z	Dining Out With IBD: Restaurant Strategies That Reduce Stress
+article	/blog/disability-fmla-work-ibd	Wellness	2026-10-11T19:00:00Z	2026-10-11T19:00:00Z	Work, FMLA, and Disability Documentation with IBD: US Education Overview
+article	/blog/eating-with-ibd-book-guide	Nutrition	2026-09-13T16:50:00Z	2026-09-13T16:50:00Z	Eating With IBD Book Guide: What It Covers and How to Use It With IBDPal
+article	/blog/eggs-ibd-nutrition	Nutrition	2026-08-23T14:00:00Z	2026-08-23T14:00:00Z	Eggs and IBD: Protein, Choline, and Easy Flare Meals
+article	/blog/electrolytes-flare-ibd	Nutrition	2026-08-09T12:00:00Z	2026-08-09T12:00:00Z	Electrolytes During an IBD Flare: Sodium, Potassium, Magnesium, and Fluids
+article	/blog/elemental-vs-polymeric-formula-ibd	Nutrition	2026-08-21T19:00:00Z	2026-08-28T12:00:00Z	Elemental vs Polymeric Formula for IBD: Questions to Ask
+article	/blog/enteral-nutrition-after-ibd-surgery	Nutrition	2026-08-22T16:00:00Z	2026-08-28T12:00:00Z	Enteral Nutrition After IBD Surgery: Recovery Questions
+article	/blog/enteral-nutrition-ibd	Nutrition	2026-08-09T18:00:00Z	2026-08-09T18:00:00Z	Enteral Nutrition for IBD: EEN, Formula Feeds, and Clinic Questions
+article	/blog/entyvio-patient-guide-ibd	Medications	2026-07-20T12:00:00Z	2026-08-28T12:00:00Z	Entyvio (Vedolizumab) Patient Guide for IBD: Common Questions
+article	/blog/exclusive-vs-partial-enteral-nutrition-crohns	Nutrition	2026-08-09T18:00:00Z	2026-08-09T18:00:00Z	EEN vs Partial Enteral Nutrition in Crohn's: Choosing a Workable Plan
+article	/blog/exercise-during-ibd-flare	Wellness	2026-09-27T18:00:00Z	2026-09-27T18:00:00Z	Exercise During an IBD Flare: What Is Safe, What to Pause, and How to Restart
+article	/blog/exercise-physical-activity-ibd	Health	2026-06-19T12:00:00Z	2026-08-28T12:00:00Z	Exercise With Crohn's or Colitis: Staying Active Without Overdoing It
+article	/blog/fatigue-autoimmune-ibd	Autoimmune	2026-08-07T15:40:00Z	2026-08-28T12:00:00Z	Fatigue Across Autoimmune and IBD Life
+article	/blog/fever-ibd-flare-or-infection	Flares	2026-08-09T12:00:00Z	2026-08-09T12:00:00Z	Fever With IBD: Flare, Infection, or Medication Effect?
+article	/blog/fiber-and-ibd-diet	Nutrition	2026-06-14T12:00:00Z	2026-08-28T12:00:00Z	Fiber and IBD: When to Add It and When to Pull Back
+article	/blog/fiber-prebiotics-enteral-feeds-microbiome	Nutrition	2026-08-09T18:00:00Z	2026-08-09T18:00:00Z	Fiber and Prebiotics in Enteral Formulas: What Microbiome Research Suggests
+article	/blog/flare-first-48-hours	Wellness	2026-06-13T12:00:00Z	2026-08-28T12:00:00Z	The First 48 Hours of an IBD Flare: A Calm Checklist
+article	/blog/flare-foods-ibd	Nutrition	2026-09-13T16:00:00Z	2026-09-13T16:00:00Z	Flare Foods for IBD: What to Eat, What to Pause, and How to Rebuild
+article	/blog/flare-symptoms-ibd	Flares	2026-08-04T12:00:00Z	2026-08-04T12:00:00Z	IBD Flare Symptoms: What Patients Notice, What to Track, and When to Call
+article	/blog/floating-stool-ibd	Wellness	2026-08-14T15:00:00Z	2026-08-28T12:00:00Z	Floating Stool With IBD: Gas, Fat, and Malabsorption Clues
+article	/blog/fodmap-diet-crohns-colitis	Nutrition	2026-06-15T12:00:00Z	2026-08-28T12:00:00Z	FODMAP Diet for Crohn's and Colitis: What Patients Search For
+article	/blog/folate-ibd	Nutrition	2026-08-27T18:00:00Z	2026-08-27T18:00:00Z	Folate and IBD: Methotrexate, Pregnancy Planning, and Food Sources
+article	/blog/food-reintroduction-after-een-ibd	Nutrition	2026-08-21T19:30:00Z	2026-08-28T12:00:00Z	Food Reintroduction After EEN: A Practical Clinic Checklist
+article	/blog/foods-that-may-trigger-uc-symptoms	Nutrition &amp; IBD	2026-05-18T12:00:00Z	2026-05-18T12:00:00Z	Foods That May Trigger Ulcerative Colitis Symptoms
+article	/blog/free-government-ibd-research-sources	Research	2026-06-25T12:00:00Z	2026-08-28T12:00:00Z	Free Government IBD Research Sources Patients Can Use
+article	/blog/gas-bloating-ibd	Flares	2026-07-21T12:00:00Z	2026-08-28T12:00:00Z	Gas and Bloating with IBD: What to Track and Ask
+article	/blog/gluten-wheat-ibd	Nutrition	2026-06-11T12:00:00Z	2026-08-28T12:00:00Z	Gluten, Wheat, and IBD: Celiac Screening vs Diet Trends
+article	/blog/grapes-ibd	Nutrition	2026-08-22T18:00:00Z	2026-08-22T18:00:00Z	Grapes and IBD: Skins, Portions, and Gentle Fruit Swaps
+article	/blog/greek-yogurt-ibd	Nutrition	2026-08-30T12:00:00Z	2026-08-30T12:00:00Z	Greek Yogurt and IBD: Protein, Lactose, and Probiotic Notes
+article	/blog/green-stool-ibd	Wellness	2026-08-14T13:00:00Z	2026-08-28T12:00:00Z	Green Stool With IBD: Transit Time, Diet, and When to Worry
+article	/blog/gut-barrier-dysbiosis-inflammation-ibd	Nutrition	2026-08-09T18:00:00Z	2026-08-09T18:00:00Z	Gut Barrier, Dysbiosis, and Inflammation in IBD: A Calm Explainer
+article	/blog/gut-microbiome-autoimmune	Autoimmune	2026-08-07T21:20:00Z	2026-08-28T12:00:00Z	Gut Microbiome and Autoimmune Conditions: What We Know
+article	/blog/hashimotos-thyroid-autoimmune	Autoimmune	2026-08-07T20:20:00Z	2026-08-28T12:00:00Z	Hashimoto's Thyroiditis: Autoimmune Thyroid Basics
+article	/blog/high-calprotectin-what-next	Wellness	2026-08-14T19:00:00Z	2026-08-28T12:00:00Z	High Calprotectin: What It Means and What Happens Next
+article	/blog/high-school-ibd-survival-guide	Teen life	2026-06-16T12:00:00Z	2026-08-28T12:00:00Z	Crohn's and Colitis in High School: Bathrooms, 504 Plans, and Missing Class
+article	/blog/honey-sweeteners-ibd	Nutrition	2026-11-26T18:30:00Z	2026-11-26T18:30:00Z	Honey, Stevia, and Sweeteners with IBD: What Patients Ask
+article	/blog/hospital-feeding-ibd-enteral-parenteral	Nutrition	2026-08-09T18:00:00Z	2026-08-09T18:00:00Z	Hospital Feeding With IBD: Enteral, Parenteral, and After Surgery
+article	/blog/how-ibdpal-nutrition-targets-work	Nutrition	2026-06-03T14:00:00Z	2026-06-03T14:00:00Z	How IBDPal Sets Nutrition Targets (And When Your Care Team Should Adjust Them)
+article	/blog/how-nutrition-impacts-gut-health-ibd	Nutrition &amp; Research	2026-05-19T12:00:00Z	2026-05-19T12:00:00Z	How Nutrition Impacts Gut Health in IBD
+article	/blog/how-to-read-colonoscopy-report-ibd	Getting Started	2026-07-21T12:40:00Z	2026-08-28T12:00:00Z	How to Read a Colonoscopy Report with IBD
+article	/blog/humid-weather-ibd-symptoms	Wellness	2026-07-13T18:40:00Z	2026-08-28T12:00:00Z	Humid Weather and IBD Symptoms: Heat, Fluids, and Flare Mimics
+article	/blog/humira-fatigue-ibd	Treatment	2026-08-14T22:00:00Z	2026-08-28T12:00:00Z	Humira (Adalimumab) and Fatigue: What Patients Ask
+article	/blog/hydration-tips-ibd	Wellness &amp; IBD	2026-05-20T12:00:00Z	2026-05-20T12:00:00Z	Hydration Tips for Crohn's Disease and Ulcerative Colitis
+article	/blog/ibd-at-work-talking-to-manager	Living with IBD	2026-07-24T12:00:00Z	2026-08-28T12:00:00Z	Talking to Your Manager About IBD at Work: A Practical Script
+article	/blog/ibd-autoimmune-overlap	Autoimmune	2026-08-07T14:00:00Z	2026-08-28T12:00:00Z	IBD and Autoimmune Overlap: What Patients Should Know
+article	/blog/ibd-back-pain-sacroiliitis	Wellness	2026-08-09T12:00:00Z	2026-08-09T12:00:00Z	IBD Back Pain and Sacroiliitis: Axial Symptoms Patients Search For
+article	/blog/ibd-care-outside-united-states	Living with IBD	2026-07-23T12:00:00Z	2026-08-28T12:00:00Z	IBD Care Outside the United States: Records, Travel, and Continuity
+article	/blog/ibd-clinical-trials-patient-decision-guide	Research	2026-11-21T22:00:00Z	2026-11-21T22:00:00Z	IBD Clinical Trials: A Patient Decision Guide
+article	/blog/ibd-colon-cancer-risk-surveillance	Wellness	2026-10-11T19:00:00Z	2026-10-11T19:00:00Z	IBD and Colorectal Cancer Risk: Surveillance Education Without Fear
+article	/blog/ibd-extraintestinal-manifestations	Associations	2026-08-07T14:50:00Z	2026-08-28T12:00:00Z	Extraintestinal Manifestations of IBD: A Patient Map
+article	/blog/ibd-fatigue-brain-fog	Wellness	2026-06-21T12:00:00Z	2026-08-28T12:00:00Z	IBD Fatigue and Brain Fog: Why You Feel Exhausted and What Helps
+article	/blog/ibd-flare-go-bag	Family	2026-06-18T12:00:00Z	2026-08-28T12:00:00Z	Building an IBD Flare Go-Bag for School, Work, and Travel
+article	/blog/ibd-insurance-denial-appeal-toolkit	Insurance	2026-11-21T22:00:00Z	2026-11-21T22:00:00Z	IBD Insurance Denial Appeal Toolkit: A Practical Patient Worksheet
+article	/blog/ibd-joint-pain-arthritis	Wellness	2026-06-22T12:00:00Z	2026-08-28T12:00:00Z	IBD Joint Pain and Arthritis: Extraintestinal Symptoms Patients Ask About
+article	/blog/ibd-leg-knee-pain	Wellness	2026-06-30T12:00:00Z	2026-06-30T12:00:00Z	IBD Leg Pain and Knee Pain: What Patients Search For and When to Ask for Help
+article	/blog/ibd-medication-monitoring-checklist	Treatment	2026-11-21T22:00:00Z	2026-11-21T22:00:00Z	IBD Medication Monitoring Checklist: Labs, Screens, and Follow-Up Questions
+article	/blog/ibd-night-sweats	Wellness	2026-06-23T12:00:00Z	2026-08-28T12:00:00Z	Night Sweats With Crohn's or Colitis: Flare Sign, Infection, or Something Else?
+article	/blog/ibd-pregnancy-planning	Clinical	2026-06-20T12:00:00Z	2026-06-20T12:00:00Z	IBD and Pregnancy: Planning With Your Gastroenterologist
+article	/blog/ibd-summer-heat-hydration	Wellness	2026-06-17T12:00:00Z	2026-08-28T12:00:00Z	IBD and Summer Heat: Hydration Tips for Hot Weather
+article	/blog/ibd-surgery-peer-support	Support	2026-09-13T16:20:00Z	2026-09-13T16:20:00Z	IBD Surgery and Peer Support: Finding People Who Understand the Road Ahead
+article	/blog/ibd-treatment-comparison-guide	Treatment	2026-11-21T22:00:00Z	2026-11-21T22:00:00Z	IBD Treatment Comparison Guide: Classes, Not Brand Pitches
+article	/blog/ibd-unintentional-weight-changes	Nutrition	2026-07-22T12:00:00Z	2026-08-28T12:00:00Z	Unintentional Weight Loss or Gain with IBD: What to Watch
+article	/blog/icn-accommodations-toolkit-ibd	ICN Resources	2026-06-10T12:00:00Z	2026-08-28T12:00:00Z	IBD School and Workplace Accommodations: ImproveCareNow Accommodations Toolkit
+article	/blog/icn-caregiver-coping-resource	ICN Resources	2026-06-12T12:00:00Z	2026-08-28T12:00:00Z	Caregiver Coping With Pediatric IBD: ImproveCareNow Family Resource
+article	/blog/icn-college-ibd-toolkit	ICN Resources	2026-06-11T12:00:00Z	2026-08-28T12:00:00Z	College With IBD: ImproveCareNow College & IBD Handbook
+article	/blog/icn-health-literacy-toolkit-ibd	ICN Resources	2026-06-24T12:00:00Z	2026-08-28T12:00:00Z	IBD Health Literacy Toolkit: ImproveCareNow Patient Guide
+article	/blog/icn-ibd-holidays-special-occasions	ICN Resources	2026-06-16T12:00:00Z	2026-08-28T12:00:00Z	IBD During Holidays and Special Occasions: ICN Community Resources
+article	/blog/icn-lifestyle-ibd-toolkit	ICN Resources	2026-06-25T12:00:00Z	2026-08-28T12:00:00Z	Lifestyle and IBD: ImproveCareNow Interactive Web Toolkit
+article	/blog/icn-mental-health-provider-guide	ICN Resources	2026-06-13T12:00:00Z	2026-08-28T12:00:00Z	Finding a Mental Health Provider for Youth With IBD: ICN Guide
+article	/blog/icn-ostomy-toolkit-pediatric	ICN Resources	2026-06-15T12:00:00Z	2026-08-28T12:00:00Z	Life With an Ostomy: ImproveCareNow Ostomy Toolkit for Youth
+article	/blog/icn-self-management-handbook-ibd	ICN Resources	2026-06-23T12:00:00Z	2026-08-28T12:00:00Z	Living Well With IBD: ImproveCareNow Self-Management Handbook
+article	/blog/icn-transfer-toolkit-adult-care	ICN Resources	2026-06-14T12:00:00Z	2026-08-28T12:00:00Z	Transitioning to Adult IBD Care: ImproveCareNow Transfer Toolkit
+article	/blog/immunosuppressants-ibd-basics	Treatment	2026-06-12T12:00:00Z	2026-08-28T12:00:00Z	Immunosuppressants for IBD: Patient-Level Basics
+article	/blog/infusion-day-what-to-expect	Clinical	2026-06-22T12:00:00Z	2026-08-28T12:00:00Z	Infusion Day With IBD: What Many Patients Pack and Expect
+article	/blog/insurance-biologics-ibd	Treatment	2026-06-11T12:00:00Z	2026-08-28T12:00:00Z	Insurance and Biologics for IBD: What Patients Often Ask
+article	/blog/intermittent-fasting-ibd	Nutrition	2026-08-15T09:00:00Z	2026-08-28T12:00:00Z	Intermittent Fasting and IBD: Hype, Hunger, and Flare Timing
+article	/blog/introducing-ibdpal	Product	2025-01-04T12:00:00Z	2025-01-04T12:00:00Z	A Simple Tool for Living with IBD: Introducing IBDPal
+article	/blog/iron-b12-vitamin-d-ibd	Health	2026-06-20T12:00:00Z	2026-08-28T12:00:00Z	Iron, B12, and Vitamin D With IBD: Deficiencies Patients Ask About
+article	/blog/j-pouch-basics-ibd	Clinical	2026-06-22T12:00:00Z	2026-06-22T12:00:00Z	J-Pouch Surgery for Ulcerative Colitis: Patient-Level Basics
+article	/blog/juice-cleanse-detox-ibd	Nutrition	2026-08-15T08:00:00Z	2026-08-28T12:00:00Z	Juice Cleanses and Detox Diets With IBD: Why They Backfire
+article	/blog/kimchi-fermented-ibd	Nutrition	2026-08-15T16:00:00Z	2026-08-28T12:00:00Z	Kimchi and Fermented Vegetables With IBD: Spice, Fiber, and Caution
+article	/blog/leaky-gut-protocol-ibd	Nutrition	2026-08-15T11:00:00Z	2026-08-28T12:00:00Z	Leaky Gut Protocols and IBD: Separating Science From Sales Pages
+article	/blog/lean-beef-ibd	Nutrition	2026-08-29T18:00:00Z	2026-08-29T18:00:00Z	Lean Beef and IBD: Iron-Rich Protein Without Tough Cuts
+article	/blog/living-with-ibd-kids	Family	2026-06-04T12:00:00Z	2026-08-28T12:00:00Z	Living With IBD as a Family: Support for Kids and Parents
+article	/blog/loperamide-antispasmodics-ibd	Treatment	2026-11-26T18:30:00Z	2026-11-26T18:30:00Z	Loperamide (Imodium) and Antispasmodics with IBD: Safety Questions
+article	/blog/low-residue-diet-flare	Nutrition	2026-06-01T12:00:00Z	2026-06-01T12:00:00Z	Low-Residue Diet During an IBD Flare: A Practical Lifestyle Guide
+article	/blog/lupus-autoimmune-basics	Autoimmune	2026-08-07T20:00:00Z	2026-08-28T12:00:00Z	Lupus Basics: An Autoimmune Overview for Curious Readers
+article	/blog/magnesium-ibd	Nutrition	2026-08-27T12:00:00Z	2026-08-27T12:00:00Z	Magnesium and IBD: Cramps, Diarrhea Losses, and Repletion Tips
+article	/blog/mango-ibd-crohns-colitis	Nutrition	2026-10-04T18:00:00Z	2026-10-04T18:00:00Z	Mango and IBD: Fiber, Sugar, Flare Tips, and When It Fits
+article	/blog/mediterranean-diet-autoimmune	Nutrition	2026-08-07T21:10:00Z	2026-08-28T12:00:00Z	Mediterranean-Style Eating for Autoimmune Health Goals
+article	/blog/melon-ibd	Nutrition	2026-08-22T12:00:00Z	2026-08-22T12:00:00Z	Melon and IBD: Hydration, Potassium, and Gentle Fruit Options
+article	/blog/mesalamine-5-asa-ibd	Treatment	2026-06-16T12:00:00Z	2026-08-28T12:00:00Z	Mesalamine (5-ASA) for Ulcerative Colitis and Crohn's: Basics
+article	/blog/methotrexate-alcohol-folate-ibd	Treatment	2026-08-15T04:00:00Z	2026-08-28T12:00:00Z	Methotrexate, Alcohol, and Folate in IBD: Patient Safety Basics
+article	/blog/microbiome-lab-testing-ibd	Nutrition	2026-08-23T22:00:00Z	2026-08-23T22:00:00Z	Microbiome Lab Testing for IBD: What Stool Tests Can and Cannot Tell You
+article	/blog/microbiome-research-labs-ibd	Nutrition	2026-08-23T23:30:00Z	2026-08-28T12:00:00Z	Microbiome Research Labs and IBD: How Science Reaches Patient Care
+article	/blog/micronutrients-ibd-deficiencies	Nutrition	2026-06-19T12:00:00Z	2026-08-28T12:00:00Z	Micronutrient Deficiencies in IBD: Zinc, Folate, Magnesium, and Beyond
+article	/blog/miso-soup-ibd	Nutrition	2026-08-15T15:00:00Z	2026-08-28T12:00:00Z	Miso Soup With IBD: Probiotics, Sodium, and Gentle Meals
+article	/blog/mucus-in-stool-ibd	Wellness	2026-08-14T18:00:00Z	2026-08-28T12:00:00Z	Mucus in Stool With IBD: Inflammation, IBS Overlap, and Tracking
+article	/blog/mucus-urgency-tenesmus-ibd	Flares	2026-07-21T12:10:00Z	2026-08-28T12:00:00Z	Mucus, Urgency, and Tenesmus in IBD
+article	/blog/multiple-sclerosis-autoimmune-basics	Autoimmune	2026-08-07T20:50:00Z	2026-08-28T12:00:00Z	Multiple Sclerosis Basics: Autoimmune Nervous System Overview
+article	/blog/nasogastric-tube-feeds-ibd-practical	Nutrition	2026-08-22T15:00:00Z	2026-08-28T12:00:00Z	Nasogastric Tube Feeds for IBD: A Practical Patient Guide
+article	/blog/newly-diagnosed-first-30-days	Getting Started	2026-07-16T12:00:00Z	2026-08-28T12:00:00Z	Newly Diagnosed with IBD: A Practical First 30 Days
+article	/blog/nsaids-ibd-risk	Medications	2026-07-21T12:50:00Z	2026-08-28T12:00:00Z	NSAIDs and IBD: Why Ibuprofen Can Be a Problem
+article	/blog/oatmeal-ibd	Nutrition	2026-08-28T16:00:00Z	2026-08-28T16:00:00Z	Oatmeal and IBD: Soluble Fiber, Flare Texture, and Prep Tips
+article	/blog/omega-3-ibd	Nutrition	2026-08-28T14:00:00Z	2026-08-28T14:00:00Z	Omega-3 and IBD: Fish, Supplements, and What Evidence Suggests
+article	/blog/onion-garlic-ibd-fodmap	Nutrition	2026-08-26T12:00:00Z	2026-08-26T12:00:00Z	Onion and Garlic With IBD: FODMAPs, Flavor Swaps, and Flare Tips
+article	/blog/oral-canker-sores-ibd	Associations	2026-08-07T15:30:00Z	2026-08-28T12:00:00Z	Mouth Sores and Canker Sores in IBD
+article	/blog/oranges-citrus-ibd	Nutrition	2026-08-22T16:00:00Z	2026-08-22T16:00:00Z	Oranges and Citrus With IBD: Vitamin C, Acidity, and Juice Tips
+article	/blog/osteoporosis-bone-health-ibd	Associations	2026-08-07T15:10:00Z	2026-08-28T12:00:00Z	Osteoporosis and Bone Health in IBD
+article	/blog/ostomy-basics-ibd	Wellness	2026-06-12T12:00:00Z	2026-08-28T12:00:00Z	Living With an Ostomy: Gentle Basics for IBD Patients
+article	/blog/pale-clay-stool-ibd	Wellness	2026-08-14T21:00:00Z	2026-08-28T12:00:00Z	Pale or Clay-Colored Stool: Bile Flow Questions With IBD
+article	/blog/paneer-ibd	Nutrition	2026-08-15T21:00:00Z	2026-08-28T12:00:00Z	Paneer With IBD: Soft Cheese Protein, Lactose, and Cooking Tips
+article	/blog/partner-caregiver-ibd	Family	2026-06-14T12:00:00Z	2026-08-28T12:00:00Z	Partners and Caregivers: Supporting Someone With IBD
+article	/blog/peanut-butter-ibd	Nutrition	2026-08-28T18:00:00Z	2026-08-28T18:00:00Z	Peanut Butter and IBD: Calories, Smooth Texture, and Portion Tips
+article	/blog/pelvic-floor-exercises-ibd	Wellness	2026-09-27T18:00:00Z	2026-09-27T18:00:00Z	Pelvic Floor Exercises for IBD: Urgency, Leakage Myths, and When to See PT
+article	/blog/pencil-thin-stool-ibd	Wellness	2026-08-14T16:00:00Z	2026-08-28T12:00:00Z	Pencil-Thin Stool With IBD: Strictures, Constipation, and Red Flags
+article	/blog/perianal-crohns-fistula-abscess	Getting Started	2026-07-21T13:00:00Z	2026-08-28T12:00:00Z	Perianal Crohn's: Fistulas and Abscesses Explained Simply
+article	/blog/periods-menstrual-cycle-ibd	Wellness	2026-09-13T16:40:00Z	2026-09-13T16:40:00Z	Periods and IBD: How the Menstrual Cycle Can Interact with Gut Symptoms
+article	/blog/pineapple-ibd	Nutrition	2026-11-26T18:30:00Z	2026-11-26T18:30:00Z	Pineapple and IBD: Acid, Bromelain, and Flare Texture Tips
+article	/blog/plant-milks-ibd	Nutrition	2026-11-26T18:30:00Z	2026-11-26T18:30:00Z	Oat Milk, Almond Milk, and Plant Milks with IBD
+article	/blog/plantain-ibd	Nutrition	2026-08-15T17:00:00Z	2026-08-28T12:00:00Z	Plantain With IBD: Green Versus Ripe, Boiled Versus Fried
+article	/blog/popcorn-ibd	Nutrition	2026-11-26T18:30:00Z	2026-11-26T18:30:00Z	Popcorn and IBD: Hulls, Fiber, and Movie-Snack Reality
+article	/blog/potassium-ibd	Nutrition	2026-08-27T14:00:00Z	2026-08-27T14:00:00Z	Potassium and IBD: Diarrhea Losses, Foods, and Safety Limits
+article	/blog/potato-ibd-white	Nutrition	2026-08-24T14:00:00Z	2026-08-24T14:00:00Z	White Potatoes and IBD: Flare Carbs, Skins, and Prep Tips
+article	/blog/prednisone-diet-hunger-ibd	Treatment	2026-08-15T03:00:00Z	2026-08-28T12:00:00Z	Prednisone Hunger and Diet With IBD: Surviving Steroid Appetite
+article	/blog/prior-authorization-biologics-timeline	Medications	2026-07-18T12:00:00Z	2026-08-28T12:00:00Z	Prior Authorization for IBD Biologics: A Patient Timeline
+article	/blog/probiotics-ibd-gut-health	Nutrition	2026-06-18T12:00:00Z	2026-08-28T12:00:00Z	Probiotics for Crohn's and Colitis: What Research Shows and What to Ask Your GI
+article	/blog/probiotics-ibd-practical-guide	Nutrition	2026-08-23T23:00:00Z	2026-08-28T12:00:00Z	Probiotics for IBD: A Practical Guide Before You Buy
+article	/blog/protein-meal-plan-ibd-remission	Diet	2026-06-22T12:00:00Z	2026-08-28T12:00:00Z	High-Protein Meal Ideas for IBD Remission: Building Plates Your Gut Tolerates
+article	/blog/protein-shakes-ons-ibd	Nutrition	2026-08-31T14:00:00Z	2026-08-31T14:00:00Z	Protein Shakes and ONS With IBD: When Liquids Help
+article	/blog/psc-ibd-liver	Associations	2026-08-07T14:10:00Z	2026-08-28T12:00:00Z	PSC and IBD: Primary Sclerosing Cholangitis Explained
+article	/blog/psoriasis-ibd-connection	Associations	2026-08-07T14:30:00Z	2026-08-28T12:00:00Z	Psoriasis and IBD: Shared Inflammation, Shared Questions
+article	/blog/pyoderma-erythema-nodosum-ibd	Wellness	2026-07-13T19:10:00Z	2026-08-28T12:00:00Z	IBD Skin Flares: Pyoderma Gangrenosum and Erythema Nodosum
+article	/blog/quinoa-ibd	Nutrition	2026-11-26T18:30:00Z	2026-11-26T18:30:00Z	Quinoa and IBD: Protein, Fiber, and Flare-Friendly Cooking
+article	/blog/reading-ibd-labs-calprotectin-crp	Getting Started	2026-07-13T19:00:00Z	2026-08-28T12:00:00Z	Reading IBD Labs: Calprotectin, CRP, and What Numbers Mean
+article	/blog/remicade-infusion-day-tips-ibd	Treatment	2026-08-15T02:00:00Z	2026-08-28T12:00:00Z	Remicade (Infliximab) Infusion Day: Patient Tips That Actually Help
+article	/blog/rheumatoid-arthritis-autoimmune-overview	Autoimmune	2026-08-07T20:10:00Z	2026-08-28T12:00:00Z	Rheumatoid Arthritis: Autoimmune Joint Inflammation Overview
+article	/blog/rinvoq-patient-questions-ibd	Treatment	2026-08-15T01:00:00Z	2026-08-28T12:00:00Z	Rinvoq (Upadacitinib) and IBD: Patient Questions on JAK Therapy
+article	/blog/running-jogging-ibd	Fitness	2026-10-11T19:00:00Z	2026-10-11T19:00:00Z	Running and Jogging with Crohn's or Colitis: Routes, Flares, and Hydration
+article	/blog/salmon-fish-ibd	Nutrition	2026-08-29T14:00:00Z	2026-08-29T14:00:00Z	Salmon and Fatty Fish With IBD: Protein, Omega-3, and Cooking Tips
+article	/blog/school-planning-ibd-before-august	Family	2026-06-24T12:00:00Z	2026-08-28T12:00:00Z	School Planning for IBD: What Families Can Do Before August
+article	/blog/seasonings-herbs-spices-ibd	Nutrition	2026-11-10T04:00:00Z	2026-11-10T04:00:00Z	Seasonings, Herbs, and Spices with IBD: Flavor Without the Flare Guesswork
+article	/blog/siblings-when-child-has-ibd	Family	2026-06-19T12:00:00Z	2026-08-28T12:00:00Z	When a Sibling Has IBD: Support for Brothers and Sisters
+article	/blog/sjogren-autoimmune-overview	Autoimmune	2026-08-07T20:40:00Z	2026-08-28T12:00:00Z	Sjogren's Syndrome: Dry Eyes, Dry Mouth, Autoimmune Overview
+article	/blog/skyrizi-patient-questions-ibd	Treatment	2026-08-15T00:00:00Z	2026-08-28T12:00:00Z	Skyrizi (Risankizumab) for IBD: Patient Questions Beyond the Ad
+article	/blog/skyrizi-subcutaneous-induction-crohns	Treatment	2026-11-01T23:30:00Z	2026-11-01T23:30:00Z	Skyrizi Subcutaneous Induction for Crohn's: What the FDA Change Means
+article	/blog/sleep-rest-ibd-flares	Wellness	2026-06-06T12:00:00Z	2026-08-28T12:00:00Z	Sleep and Rest During IBD Flares: Why Slowing Down Helps
+article	/blog/smoking-ibd-crohns-colitis	Wellness	2026-10-11T19:00:00Z	2026-10-11T19:00:00Z	Smoking, Vaping, and IBD: Crohn's vs Colitis Nuance and Quitting Support
+article	/blog/social-life-dating-teens-ibd	Teen life	2026-06-21T12:00:00Z	2026-08-28T12:00:00Z	Social Life, Dating, and IBD as a Teen: Privacy, Friends, and Confidence
+article	/blog/specific-carbohydrate-diet-scd-ibd	Nutrition	2026-10-11T19:00:00Z	2026-10-11T19:00:00Z	Specific Carbohydrate Diet (SCD) and IBD: Rules, Risks, and Comparisons
+article	/blog/spicy-foods-nuts-seeds-ibd	Nutrition	2026-10-11T19:00:00Z	2026-10-11T19:00:00Z	Spicy Foods, Nuts, and Seeds with IBD: Trials, Strictures, and Flare Caution
+article	/blog/spinach-leafy-greens-ibd	Nutrition	2026-08-24T18:00:00Z	2026-08-24T18:00:00Z	Spinach and Leafy Greens With IBD: Iron, Oxalates, and Cooking Tips
+article	/blog/starting-biologic-first-12-weeks	Medications	2026-07-19T12:00:00Z	2026-08-28T12:00:00Z	Starting a Biologic for IBD: What the First 12 Weeks Often Look Like
+article	/blog/stelara-diet-ibd	Treatment	2026-08-14T23:00:00Z	2026-08-28T12:00:00Z	Stelara (Ustekinumab) and Diet: Eating While on Therapy
+article	/blog/steroid-taper-what-to-expect-ibd	Medications	2026-07-13T18:10:00Z	2026-08-28T12:00:00Z	Steroid Taper in IBD: What to Expect Week by Week
+article	/blog/steroids-prednisone-ibd	Treatment	2026-06-13T12:00:00Z	2026-08-28T12:00:00Z	Steroids (Prednisone) and IBD Flares: Short-Term Basics
+article	/blog/strawberries-ibd	Nutrition	2026-08-21T18:00:00Z	2026-08-21T18:00:00Z	Strawberries and IBD: Vitamin C, Seeds, and Flare-Friendly Servings
+article	/blog/strength-training-gym-ibd	Wellness	2026-09-27T18:00:00Z	2026-09-27T18:00:00Z	Strength Training and the Gym With IBD: Safe Progress Without Overdoing It
+article	/blog/stress-autoimmune-symptoms	Wellness	2026-08-07T21:30:00Z	2026-08-28T12:00:00Z	Stress and Autoimmune Symptoms: Correlation Is Not Cause
+article	/blog/stress-coping-strategies-ibd	Wellness	2026-06-20T12:00:00Z	2026-08-28T12:00:00Z	Stress Coping Strategies for IBD: Mindfulness, CBT, and Everyday Tools
+article	/blog/stress-emotional-wellness-ibd	Wellness	2026-06-05T12:00:00Z	2026-08-28T12:00:00Z	Stress, Mood, and IBD: Everyday Ways to Protect Your Energy
+article	/blog/summer-travel-ibd-restrooms-meds-food-heat	Lifestyle	2026-06-23T12:00:00Z	2026-08-28T12:00:00Z	Summer Travel With IBD: Restrooms, Meds, Food, and Heat
+article	/blog/sweet-potato-ibd	Nutrition	2026-08-24T16:00:00Z	2026-08-24T16:00:00Z	Sweet Potatoes and IBD: Fiber, Vitamin A, and Texture Tips
+article	/blog/swimming-pool-beach-ibd-ostomy	Wellness	2026-07-13T18:20:00Z	2026-08-28T12:00:00Z	Swimming and Beach Days with IBD or an Ostomy
+article	/blog/taste-fatigue-enteral-formula-ibd	Nutrition	2026-08-21T20:00:00Z	2026-08-28T12:00:00Z	Taste Fatigue on Enteral Formula: Practical Coping Ideas
+article	/blog/tea-ibd	Nutrition	2026-08-30T16:00:00Z	2026-08-30T16:00:00Z	Tea and IBD: Caffeine, Herbal Options, and Hydration Tips
+article	/blog/teen-nutrition-ibd-growth	Nutrition	2026-06-17T12:00:00Z	2026-08-28T12:00:00Z	Nutrition for Teens With IBD: Growth, Protein, and School Lunches
+article	/blog/therapeutic-drug-monitoring-ibd	Treatment	2026-11-21T22:00:00Z	2026-11-21T22:00:00Z	Therapeutic Drug Monitoring in IBD: Drug Levels and Antibodies Explained
+article	/blog/thrombosis-clot-risk-ibd	Associations	2026-08-07T15:20:00Z	2026-08-28T12:00:00Z	Clot Risk and Thrombosis Awareness in IBD
+article	/blog/tofu-soy-ibd	Nutrition	2026-08-29T16:00:00Z	2026-08-29T16:00:00Z	Tofu and Soy With IBD: Soft Protein, Calcium-Set Options, and Prep Tips
+article	/blog/tomatoes-ibd	Nutrition	2026-08-25T18:00:00Z	2026-08-25T18:00:00Z	Tomatoes and IBD: Acidity, Sauces, and Seed Tips
+article	/blog/tortillas-ibd	Nutrition	2026-08-15T18:00:00Z	2026-08-28T12:00:00Z	Tortillas With IBD: Corn Versus Flour, Soft Wraps, and Flare Tips
+article	/blog/tracking-food-symptoms-ibdpal	Product &amp; IBD	2026-05-17T12:00:00Z	2026-05-17T12:00:00Z	Tracking Food & Symptoms With IBDPal
+article	/blog/travel-with-ibd	Lifestyle	2026-06-02T12:00:00Z	2026-08-28T12:00:00Z	Travel With IBD: Planning Trips Without Letting Fear Run the Show
+article	/blog/tuna-ibd	Nutrition	2026-08-30T14:00:00Z	2026-08-30T14:00:00Z	Tuna and IBD: Convenient Protein, Mercury Notes, and Prep Tips
+article	/blog/turkey-protein-ibd	Nutrition	2026-08-23T18:00:00Z	2026-08-23T18:00:00Z	Turkey and IBD: Lean Poultry Protein Beyond Chicken
+article	/blog/turmeric-curcumin-ibd	Nutrition	2026-11-26T18:30:00Z	2026-11-26T18:30:00Z	Turmeric and Curcumin for IBD: Evidence, Doses, and Safety Questions
+article	/blog/type1-diabetes-autoimmune-basics	Autoimmune	2026-08-07T20:30:00Z	2026-08-28T12:00:00Z	Type 1 Diabetes: Autoimmune Basics Patients Ask About
+article	/blog/ulcerative-colitis-diet-overview-ibd	Nutrition	2026-10-11T19:00:00Z	2026-10-11T19:00:00Z	Ulcerative Colitis Diet Overview: Flare, Remission, and Clinic Questions
+article	/blog/understanding-biologics-ibd	Treatment basics	2026-06-03T12:00:00Z	2026-06-03T12:00:00Z	Understanding Biologics for IBD: A High-Level Guide
+article	/blog/understanding-ibd-pathology-report	Diagnostics	2026-11-21T22:00:00Z	2026-11-21T22:00:00Z	Understanding Your IBD Pathology Report: Beyond the Colonoscopy Note
+article	/blog/uveitis-eye-inflammation-ibd	Wellness	2026-07-13T18:30:00Z	2026-08-28T12:00:00Z	Eye Inflammation and Uveitis in IBD
+article	/blog/vaccine-autoimmune-immunosuppression	Autoimmune	2026-08-07T15:50:00Z	2026-08-28T12:00:00Z	Vaccines with Autoimmune Disease and Immunosuppression
+article	/blog/vaccines-biologics-immunosuppressants-ibd	Medications	2026-07-17T12:00:00Z	2026-08-28T12:00:00Z	Vaccines with Biologics and Immunosuppressants in IBD
+article	/blog/visbiome-probiotics-ibd	Nutrition	2026-08-23T22:30:00Z	2026-08-23T22:30:00Z	Visbiome and Multi-Strain Probiotics for IBD: Clinic Questions
+article	/blog/vitamin-a-ibd	Nutrition	2026-08-28T12:00:00Z	2026-08-28T12:00:00Z	Vitamin A and IBD: Vision, Night Blindness Concerns, and Food Sources
+article	/blog/vitamin-c-ibd	Nutrition	2026-08-27T16:00:00Z	2026-08-27T16:00:00Z	Vitamin C and IBD: Immunity Myths, Food Sources, and Acidity Tips
+article	/blog/vomiting-obstruction-ibd-warning-signs	Flares	2026-08-09T12:00:00Z	2026-08-09T12:00:00Z	Vomiting and Possible Bowel Obstruction in IBD: Warning Signs to Know
+article	/blog/walking-for-ibd-crohns-colitis	Wellness	2026-09-27T18:00:00Z	2026-09-27T18:00:00Z	Walking With Crohn's or Colitis: How Far, How Fast, and Bathroom Planning
+article	/blog/weight-loss-ibd-safe-guide	Wellness	2026-09-27T18:00:00Z	2026-09-27T18:00:00Z	Weight Loss With Crohn's or Colitis: Safe Approaches That Protect Muscle
+article	/blog/what-remission-means-ibd	Getting Started	2026-07-21T12:20:00Z	2026-08-28T12:00:00Z	What Remission Means in IBD (Symptoms vs Healing)
+article	/blog/when-ibd-biologic-stops-working	Treatment	2026-11-21T22:00:00Z	2026-11-21T22:00:00Z	What Happens When an IBD Biologic Stops Working?
+article	/blog/when-to-call-gi-vs-er-ibd	Flares	2026-07-13T12:00:00Z	2026-07-13T12:00:00Z	When to Call Your GI Nurse Line vs Urgent Care vs the ER for IBD
+article	/blog/when-to-call-ibd-help-center	Support	2026-06-20T12:00:00Z	2026-08-28T12:00:00Z	When to Call the IBD Help Center vs Your Clinic
+article	/blog/when-to-go-er-ibd	Flares	2026-06-23T12:00:00Z	2026-06-23T12:00:00Z	When to Go to the ER With Crohn's or Colitis
+article	/blog/white-bread-ibd	Nutrition	2026-08-30T18:00:00Z	2026-08-30T18:00:00Z	White Bread and IBD: Low-Residue Carbs and Sandwich Tips
+article	/blog/white-rice-ibd-flare	Nutrition	2026-08-23T16:00:00Z	2026-08-23T16:00:00Z	White Rice and IBD: Flare Staple, Carbs, and Remission Upgrades
+article	/blog/workplace-school-ibd-rights	Wellness	2026-06-10T12:00:00Z	2026-08-28T12:00:00Z	Workplace and School Rights When You Have IBD
+article	/blog/yellow-stool-ibd	Wellness	2026-08-14T12:00:00Z	2026-08-28T12:00:00Z	Yellow Stool With IBD: Fat Malabsorption and Other Causes
+article	/blog/yoga-for-ibd-crohns-colitis	Wellness	2026-09-27T18:00:00Z	2026-09-27T18:00:00Z	Yoga for Crohn's and Colitis: Gentle Poses, Flare Rules, and Stress Relief
+article	/blog/zinc-ibd	Nutrition	2026-08-26T18:00:00Z	2026-08-26T18:00:00Z	Zinc and IBD: Immunity, Wound Healing, and Food Sources
+article	/blog/zucchini-ibd	Nutrition	2026-08-25T14:00:00Z	2026-08-25T14:00:00Z	Zucchini and IBD: Soft Squash for Gentler Vegetable Intake
+guide	/guides/anti-inflammatory-diet-ibd	Patient guide			Anti-inflammatory diet for IBD: a realistic guide
+guide	/guides/autoimmune-nutrition-basics	Patient guide			Autoimmune nutrition basics
+guide	/guides/biologics-crohns-colitis	Patient guide			Biologics for Crohn&#x27;s and colitis | overview
+guide	/guides/biologics-questions-for-your-doctor	Patient guide			Biologic questions for your doctor
+guide	/guides/camp-oasis-kids-ibd	Patient guide			Camp Oasis and youth IBD support
+guide	/guides/crohns-colitis-support-groups	Patient guide			Crohn&#x27;s and colitis support groups
+guide	/guides/crohns-disease-diet-nutrition	Patient guide			Crohn&#x27;s disease diet and nutrition
+guide	/guides/crohns-doctor-visit-prep	Patient guide			Prepare for your Crohn&#x27;s or IBD doctor visit
+guide	/guides/crohns-flare-what-to-do	Patient guide			Crohn&#x27;s flare: what to do
+guide	/guides/crohns-food-triggers	Patient guide			Crohn&#x27;s food triggers
+guide	/guides/dining-out-with-ibd	Patient guide			Dining out with IBD
+guide	/guides/elimination-diet-when-to-stop-ibd	Patient guide			Elimination diets in IBD: when to stop
+guide	/guides/find-ccf-chapter-support-group	Patient guide			Find a Foundation chapter or IBD support group
+guide	/guides/first-gastroenterology-appointment-ibd	Patient guide			First gastroenterology appointment with IBD
+guide	/guides/foods-to-eat-crohns-flare	Patient guide			Foods to eat during a Crohn&#x27;s flare
+guide	/guides/foundation-complementary-medicine-ibd	Patient guide			Complementary medicine and IBD: Foundation bridge
+guide	/guides/foundation-diet-nutrition-ibd	Patient guide			Foundation diet and nutrition resources
+guide	/guides/foundation-emotional-wellness-ibd	Patient guide			Foundation resources for IBD emotional wellness
+guide	/guides/foundation-ibd-appeal-letters	Patient guide			IBD insurance appeal letters with Foundation resources
+guide	/guides/foundation-ibd-clinical-trials	Patient guide			IBD clinical trials and Foundation research education
+guide	/guides/foundation-ibd-colonoscopy-cancer-surveillance	Patient guide			IBD colonoscopy and cancer surveillance: Foundation bridge
+guide	/guides/foundation-ibd-extraintestinal-manifestations	Patient guide			Extraintestinal manifestations: Foundation education bridge
+guide	/guides/foundation-ibd-intimacy-sexual-health	Patient guide			IBD intimacy and sexual health: Foundation bridge
+guide	/guides/foundation-ibd-medication-guide	Patient guide			IBD medications: Foundation Medication Guide bridge
+guide	/guides/foundation-ibd-pain-fatigue	Patient guide			IBD pain and fatigue: Foundation education bridge
+guide	/guides/foundation-ibd-surgery-ostomy	Patient guide			IBD surgery and ostomy: Foundation education bridge
+guide	/guides/foundation-ibd-travel-restroom-access	Patient guide			IBD travel and restroom access: Foundation bridge
+guide	/guides/foundation-ibd-vaccines-infection	Patient guide			IBD vaccines and infection risk: Foundation bridge
+guide	/guides/foundation-workplace-school-rights-ibd	Patient guide			IBD workplace and school rights: Foundation deep dive
+guide	/guides/gluten-free-autoimmune-when	Patient guide			Gluten-free eating for autoimmune conditions: when it applies
+guide	/guides/ibd-biologic-access-outside-us	Patient guide			Biologic access outside the United States
+guide	/guides/ibd-crohns-colitis-helpline	Patient guide			IBD helpline and help center numbers
+guide	/guides/ibd-flare-emergency-supplies	Patient guide			IBD flare emergency supplies and go-bag
+guide	/guides/ibd-hydration-fluids	Patient guide			Hydration and fluids for IBD
+guide	/guides/ibd-nutrition-tracking-app	Patient guide			IBD nutrition tracking with IBDPal
+guide	/guides/ibd-prior-authorization-foundation	Patient guide			Prior authorization with Foundation resources
+guide	/guides/ibd-support-near-me	Patient guide			IBD support near me
+guide	/guides/ibd-travel-planning	Patient guide			Travel planning with IBD
+guide	/guides/ibd-workplace-school-rights	Patient guide			Workplace and school rights with IBD
+guide	/guides/index	Patient guide			IBD patient guides
+guide	/guides/iron-deficiency-nutrition-ibd	Patient guide			Iron deficiency nutrition in IBD
+guide	/guides/living-with-ostomy-ibd	Patient guide			Living with an ostomy and IBD
+guide	/guides/low-residue-diet-ibd	Patient guide			Low-residue diet for IBD
+guide	/guides/newly-diagnosed-crohns-colitis	Patient guide			Newly diagnosed with Crohn&#x27;s or colitis
+guide	/guides/newly-diagnosed-foundation-first-week	Patient guide			Newly diagnosed IBD: first-week Foundation pathway
+guide	/guides/partner-caregiver-ibd	Patient guide			Partners and caregivers: supporting someone with IBD
+guide	/guides/pediatric-crohns-colitis-help	Patient guide			Pediatric Crohn&#x27;s and colitis help
+guide	/guides/pregnancy-ibd-foundation-resources	Patient guide			Pregnancy and IBD with Foundation resources
+guide	/guides/protein-healing-ibd-flare	Patient guide			Protein for healing during an IBD flare
+guide	/guides/sleep-ibd-flares	Patient guide			Sleep and rest during IBD flares
+guide	/guides/step-therapy-safe-step-act-ibd	Patient guide			IBD step therapy and Safe Step Act resources
+guide	/guides/stress-anxiety-ibd	Patient guide			Stress, anxiety, and IBD
+guide	/guides/track-ibd-symptoms-food	Patient guide			Track IBD symptoms and food
+guide	/guides/ulcerative-colitis-diet-foods	Patient guide			Ulcerative colitis diet and foods
+guide	/guides/ulcerative-colitis-flare-management	Patient guide			Ulcerative colitis flare management
+guide	/guides/vitamin-d-bone-nutrition-ibd	Patient guide			Vitamin D and bone nutrition in IBD
+guide	/guides/what-is-crohns-disease-foundation	Patient guide			What is Crohn&#x27;s disease? Foundation basics
+guide	/guides/what-is-ibd-foundation	Patient guide			What is IBD? Foundation patient basics
+guide	/guides/what-is-ulcerative-colitis-foundation	Patient guide			What is ulcerative colitis? Foundation basics
+guide	/guides/what-should-i-eat-crohns-colitis	Patient guide			What should I eat with Crohn&#x27;s or colitis?
+guide	/guides/youth-school-foundation-resources	Patient guide			Youth and school IBD resources from the Foundation

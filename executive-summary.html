@@ -5,28 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="theme-color" content="#FFE5DC">
-    <title>IBDPal Executive Summary - Funding Request</title>
-    <meta name="description" content="Executive summary of IBDPal and nonprofit developer MediVue: IBD digital health initiative, mission, and impact.">
+    <title>IBDPal Executive Summary | MediVue Nonprofit Overview</title>
+    <meta name="description" content="Public executive overview of IBDPal and MediVue, a North Carolina 501(c)(3) nonprofit: free IBD patient education, the IBDPal app, and mission-aligned partnerships.">
     <meta name="author" content="MediVue">
-    <meta name="keywords" content="MediVue executive summary, IBDPal nonprofit, IBD program overview">
+    <meta name="keywords" content="MediVue executive summary, IBDPal nonprofit, IBD patient education, Crohn's colitis resources">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <link rel="canonical" href="https://www.ibdpal.org/executive-summary">
+    <link rel="alternate" type="text/plain" href="https://www.ibdpal.org/llms.txt" title="llms.txt">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://www.ibdpal.org/executive-summary">
-    <meta property="og:title" content="IBDPal Executive Summary - Funding Request">
-    <meta property="og:description" content="Executive summary of IBDPal and nonprofit developer MediVue: IBD digital health initiative, mission, and impact.">
+    <meta property="og:title" content="IBDPal Executive Summary | MediVue Nonprofit Overview">
+    <meta property="og:description" content="Public executive overview of IBDPal and MediVue, a North Carolina 501(c)(3) nonprofit: free IBD patient education, the IBDPal app, and mission-aligned partnerships.">
     <meta property="og:site_name" content="IBDPal">
     <meta property="og:locale" content="en_US">
     <meta property="og:image" content="https://www.ibdpal.org/blogs/assets/ibdpal-tracking/ibdpal_app_tracker_1.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="IBDPal Executive Summary - Funding Request">
-    <meta name="twitter:description" content="Executive summary of IBDPal and nonprofit developer MediVue: IBD digital health initiative, mission, and impact.">
+    <meta name="twitter:title" content="IBDPal Executive Summary | MediVue Nonprofit Overview">
+    <meta name="twitter:description" content="Public executive overview of IBDPal and MediVue, a North Carolina 501(c)(3) nonprofit: free IBD patient education, the IBDPal app, and mission-aligned partnerships.">
     <style>
         @page {
             size: A4;
             margin: 0.75in;
         }
-        
+
         body {
             font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             line-height: 1.6;
@@ -35,31 +36,44 @@
             padding: 0;
             background: white;
         }
-        
+
         .header {
             text-align: center;
             margin-bottom: 2rem;
             padding-bottom: 1rem;
             border-bottom: 3px solid #9933cc;
         }
-        
+
         .logo {
             font-size: 2.5rem;
             font-weight: 700;
             color: #9933cc;
             margin-bottom: 0.5rem;
         }
-        
+
         .subtitle {
             font-size: 1.2rem;
             color: #222222;
             font-weight: 500;
         }
-        
+
         .section {
             margin-bottom: 1.5rem;
+            max-width: 820px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 1.25rem;
         }
-        
+
+        .header,
+        .footer {
+            max-width: 820px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 1.25rem;
+            padding-right: 1.25rem;
+        }
+
         .section-title {
             font-size: 1.4rem;
             font-weight: 600;
@@ -68,13 +82,13 @@
             border-left: 4px solid #9933cc;
             padding-left: 1rem;
         }
-        
+
         .section-content {
             font-size: 0.95rem;
             line-height: 1.7;
             margin-bottom: 1rem;
         }
-        
+
         .highlight-box {
             background: #f8f9ff;
             border: 2px solid #9933cc;
@@ -82,20 +96,20 @@
             padding: 1rem;
             margin: 1rem 0;
         }
-        
+
         .highlight-title {
             font-weight: 600;
             color: #9933cc;
             margin-bottom: 0.5rem;
         }
-        
+
         .metrics-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 1rem;
             margin: 1rem 0;
         }
-        
+
         .metric {
             background: #fafafa;
             padding: 1rem;
@@ -103,265 +117,230 @@
             text-align: center;
             border: 1px solid #e0e0e0;
         }
-        
+
         .metric-value {
             font-size: 1.5rem;
             font-weight: 700;
             color: #9933cc;
         }
-        
+
         .metric-label {
             font-size: 0.85rem;
             color: #222222;
             margin-top: 0.25rem;
         }
-        
+
         .tech-stack {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             gap: 1rem;
             margin: 1rem 0;
         }
-        
+
         .tech-category {
             background: #f8f9ff;
             padding: 1rem;
             border-radius: 6px;
             text-align: center;
         }
-        
+
         .tech-title {
             font-weight: 600;
             color: #9933cc;
             margin-bottom: 0.5rem;
         }
-        
+
         .tech-list {
             font-size: 0.85rem;
             color: #222222;
         }
-        
+
         .footer {
             margin-top: 2rem;
             padding-top: 1rem;
+            padding-bottom: 2rem;
             border-top: 2px solid #e0e0e0;
             text-align: center;
             font-size: 0.85rem;
             color: #222222;
         }
-        
+
         .contact-info {
             background: #f8f9ff;
             padding: 1rem;
             border-radius: 6px;
             margin: 1rem 0;
         }
-        
+
         ul {
             margin: 0.5rem 0;
             padding-left: 1.5rem;
         }
-        
+
         li {
             margin-bottom: 0.25rem;
         }
-        
-        .strong {
-            font-weight: 600;
+
+        a {
             color: #9933cc;
         }
+
+        @media (max-width: 700px) {
+            .metrics-grid,
+            .tech-stack {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"IBDPal Executive Summary - Funding Request","url":"https://www.ibdpal.org/about","description":"Executive summary of IBDPal and nonprofit developer MediVue: IBD digital health initiative, mission, and impact.","isPartOf":{"@type":"WebSite","name":"IBDPal","url":"https://www.ibdpal.org/"}}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"IBDPal Executive Summary | MediVue Nonprofit Overview","url":"https://www.ibdpal.org/executive-summary","description":"Public executive overview of IBDPal and MediVue, a North Carolina 501(c)(3) nonprofit: free IBD patient education, the IBDPal app, and mission-aligned partnerships.","isPartOf":{"@type":"WebSite","name":"IBDPal","url":"https://www.ibdpal.org/"},"about":{"@type":"NGO","name":"MediVue","url":"https://www.ibdpal.org/"}}</script>
     <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.ibdpal.org/sitemap.xml">
 </head>
 <body>
     <div class="header">
         <div class="logo">IBDPal</div>
-        <div class="subtitle">Executive Summary - Funding Request</div>
+        <div class="subtitle">Executive Summary</div>
         <div style="font-size: 0.9rem; color: #222222; margin-top: 0.5rem;">
-            Comprehensive IBD & Crohn Disease Management Platform
+            Public nonprofit overview for patients, clinicians, partners, and funders
         </div>
     </div>
 
     <div class="section">
-        <div class="section-title">Executive Summary</div>
+        <div class="section-title">Who we are</div>
         <div class="section-content">
-            <strong>IBDPal</strong> is a comprehensive iOS application and web platform designed to revolutionize the management of Inflammatory Bowel Disease (IBD) and Crohn disease through advanced nutrition tracking, AI-powered flare risk assessment, and personalized patient care. Developed by <strong>MediVue</strong>, a 501(c)(3) nonprofit organization registered in North Carolina, IBDPal addresses the critical gap in specialized healthcare technology for the 3.1 million Americans living with IBD.
+            <strong>IBDPal</strong> is a free patient-education website and companion iOS app for people living with Crohn&rsquo;s disease and ulcerative colitis. It is developed by <strong>MediVue</strong>, a 501(c)(3) nonprofit organization registered in North Carolina. Our purpose is to make practical IBD education easier to find, track, and bring to clinic visits&mdash;not to sell a premium subscription product or monetize patient data.
         </div>
-        
+
         <div class="highlight-box">
-            <div class="highlight-title">Market Opportunity</div>
+            <div class="highlight-title">Mission snapshot</div>
             <div class="metrics-grid">
                 <div class="metric">
-                    <div class="metric-value">3.1M</div>
-                    <div class="metric-label">Americans with IBD</div>
+                    <div class="metric-value">501(c)(3)</div>
+                    <div class="metric-label">Nonprofit (North Carolina)</div>
                 </div>
                 <div class="metric">
-                    <div class="metric-value">$31B</div>
-                    <div class="metric-label">Annual Healthcare Costs</div>
+                    <div class="metric-value">Free</div>
+                    <div class="metric-label">Education + app access model</div>
                 </div>
                 <div class="metric">
-                    <div class="metric-value">70%</div>
-                    <div class="metric-label">Experience Flares</div>
+                    <div class="metric-value">106</div>
+                    <div class="metric-label">Countries reached (Vercel analytics)</div>
                 </div>
                 <div class="metric">
-                    <div class="metric-value">$2.5B</div>
-                    <div class="metric-label">Digital Health Market</div>
+                    <div class="metric-value">430+</div>
+                    <div class="metric-label">Public education URLs in sitemap</div>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="section">
-        <div class="section-title">Problem Statement</div>
+        <div class="section-title">The problem we serve</div>
         <div class="section-content">
-            Current IBD management lacks personalized, data-driven approaches. Patients struggle with:
+            Millions of people with IBD need clear, trustworthy explanations between visits. Common barriers include:
             <ul>
-                <li><strong>Nutritional Deficiencies:</strong> 60-80% of IBD patients experience malnutrition</li>
-                <li><strong>Flare Prediction:</strong> No reliable early warning system for disease exacerbations</li>
-                <li><strong>Fragmented Care:</strong> Disconnected tracking of symptoms, diet, and medications</li>
-                <li><strong>Limited Research Integration:</strong> Lack of evidence-based nutrition guidelines</li>
-                <li><strong>Isolation:</strong> Limited peer support and community connection</li>
+                <li><strong>Fragmented information:</strong> diet, flares, labs, biologics, school, and work advice live in different places</li>
+                <li><strong>Hard clinic visits:</strong> patients struggle to remember patterns in food, stools, fatigue, and medicines</li>
+                <li><strong>Uneven health literacy:</strong> medical reports and monitoring language can be hard to decode</li>
+                <li><strong>Caregiver load:</strong> parents, partners, and teens need practical, age-aware education</li>
             </ul>
+            IBDPal does not diagnose, treat, or replace a gastroenterologist. Every page is education only.
         </div>
     </div>
 
     <div class="section">
-        <div class="section-title">Solution & Technology</div>
+        <div class="section-title">What we build</div>
         <div class="section-content">
-            IBDPal provides a comprehensive ecosystem combining iOS mobile app, web platform, and AI-powered backend:
+            A patient-facing ecosystem focused on free education and optional personal tracking:
         </div>
-        
+
         <div class="tech-stack">
             <div class="tech-category">
-                <div class="tech-title">iOS Application</div>
-                <div class="tech-list">SwiftUI, Core Data, Charts, Combine</div>
+                <div class="tech-title">Public website</div>
+                <div class="tech-list">Guides, blogs, hubs, tools, Ask Q&amp;A, Spanish mirrors</div>
             </div>
             <div class="tech-category">
-                <div class="tech-title">Backend Infrastructure</div>
-                <div class="tech-list">Node.js, Express, PostgreSQL, JWT Security</div>
+                <div class="tech-title">IBDPal iOS app</div>
+                <div class="tech-list">Food, symptoms, meds, and visit-ready logs</div>
             </div>
             <div class="tech-category">
-                <div class="tech-title">AI & Analytics</div>
-                <div class="tech-list">Machine Learning, Trend Analysis, Flare Prediction</div>
+                <div class="tech-title">Privacy posture</div>
+                <div class="tech-list">Aggregated analytics; no sale of patient content</div>
             </div>
         </div>
-        
+
         <div class="section-content">
-            <strong>Core Features:</strong>
+            <strong>Core offerings:</strong>
             <ul>
-                <li><strong>Daily Logging:</strong> Comprehensive tracking of meals, symptoms, medications, and bowel health</li>
-                <li><strong>AI-Powered Flare Risk Assessment:</strong> 3-month trend analysis with early warning system</li>
-                <li><strong>Research-Based Nutrition Analysis:</strong> FODMAP, IBD, and Crohn-specific benchmarks</li>
-                <li><strong>Micronutrient Management:</strong> Deficiency identification and personalized recommendations</li>
-                <li><strong>Community Platform:</strong> IBD Stories for peer support and success sharing</li>
-                <li><strong>Smart Search & Discovery:</strong> AI-powered insights and trend visualization</li>
+                <li><strong>Patient library:</strong> food-by-food guides, flare help, treatment explainers, labs, lifestyle, and family resources</li>
+                <li><strong>Decision hubs:</strong> nutrition, foods A&ndash;Z, treatment monitoring, stool/labs decoder, awareness calendar</li>
+                <li><strong>App logging:</strong> optional personal tracking to support conversations with the care team</li>
+                <li><strong>Community pointers:</strong> state support directories and Foundation bridges</li>
             </ul>
         </div>
     </div>
 
     <div class="section">
-        <div class="section-title">Market Validation & Traction</div>
+        <div class="section-title">How the nonprofit is sustained</div>
+        <div class="section-content">
+            MediVue sustains IBDPal as a public-benefit program. We do <strong>not</strong> operate a paid premium tier that locks core education behind a paywall, and we do <strong>not</strong> sell identifiable patient-entered search text or health logs.
+            <ul>
+                <li><strong>Charitable support:</strong> donations and mission-aligned grants</li>
+                <li><strong>Clinical and advocacy partnerships:</strong> education collaborations that keep editorial independence</li>
+                <li><strong>In-kind capacity:</strong> volunteer and founder engineering for free public tools</li>
+                <li><strong>Transparent public metrics:</strong> aggregated reach and content inventory for audits (<a href="/analytics.txt">analytics.txt</a>, <a href="/content-insights.txt">content-insights.txt</a>, <a href="/content-inventory.txt">content-inventory.txt</a>)</li>
+            </ul>
+            Partner pages and manufacturer support listings are labeled as education/navigation aids, not paid clinical recommendations.
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">What we ask of supporters</div>
         <div class="section-content">
             <div class="highlight-box">
-                <div class="highlight-title">Clinical Evidence & Research Foundation</div>
+                <div class="highlight-title">Mission-aligned support (not a Series A pitch)</div>
+                <p>Older drafts of this page described venture-style funding, premium subscriptions, and data partnerships. Those plans do not match IBDPal&rsquo;s current nonprofit operating model. Today we seek:</p>
                 <ul>
-                    <li>Built on peer-reviewed IBD and Crohn disease research</li>
-                    <li>FODMAP diet integration for symptom management</li>
-                    <li>Evidence-based nutrition benchmarks and guidelines</li>
-                    <li>Correlation algorithms linking diet, symptoms, and flare risk</li>
-                </ul>
-            </div>
-            
-            <div class="section-content">
-                <strong>Target Market Segments:</strong>
-                <ul>
-                    <li><strong>Primary:</strong> IBD patients (Crohn disease, Ulcerative Colitis) - 3.1M Americans</li>
-                    <li><strong>Secondary:</strong> Healthcare providers, nutritionists, gastroenterologists</li>
-                    <li><strong>Tertiary:</strong> Caregivers, family members, support groups</li>
+                    <li>Grants and gifts that keep education free</li>
+                    <li>Clinical partners who want patient-friendly explainers without brand control of content</li>
+                    <li>Help expanding language access, accessibility, and evidence refresh cycles</li>
+                    <li>Feedback from patients and caregivers through <a href="/ask">Ask</a> and <a href="/contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </div>
 
     <div class="section">
-        <div class="section-title">Business Model & Revenue Streams</div>
+        <div class="section-title">Why this approach matters</div>
         <div class="section-content">
-            <div class="metrics-grid">
-                <div class="metric">
-                    <div class="metric-value">Freemium</div>
-                    <div class="metric-label">Basic Tracking</div>
-                </div>
-                <div class="metric">
-                    <div class="metric-value">Premium</div>
-                    <div class="metric-label">AI Analytics</div>
-                </div>
-                <div class="metric">
-                    <div class="metric-value">B2B</div>
-                    <div class="metric-label">Healthcare Providers</div>
-                </div>
-                <div class="metric">
-                    <div class="metric-value">Research</div>
-                    <div class="metric-label">Data Partnerships</div>
-                </div>
-            </div>
-            
             <ul>
-                <li><strong>Subscription Model:</strong> Premium features for advanced analytics and AI insights</li>
-                <li><strong>Healthcare Partnerships:</strong> B2B licensing to hospitals and clinics</li>
-                <li><strong>Research Collaborations:</strong> Anonymized data partnerships with medical institutions</li>
-                <li><strong>Pharmaceutical Partnerships:</strong> Clinical trial support and patient engagement</li>
+                <li><strong>Patient-first:</strong> education stays free and readable</li>
+                <li><strong>Evidence-aware:</strong> pages cite trusted sources and encourage clinic decisions</li>
+                <li><strong>Independent editorial:</strong> treatment explainers are not a paid ranking of brands</li>
+                <li><strong>Audit-friendly:</strong> public sitemaps and plain-text exports help crawlers and researchers verify coverage</li>
             </ul>
         </div>
     </div>
 
     <div class="section">
-        <div class="section-title">Funding Requirements & Use of Funds</div>
+        <div class="section-title">Organization &amp; contact</div>
         <div class="section-content">
-            <div class="highlight-box">
-                <div class="highlight-title">Seeking: $500,000 - $750,000 Series A Funding</div>
-                <ul>
-                    <li><strong>40% - Product Development:</strong> iOS app completion, web platform, AI algorithms</li>
-                    <li><strong>25% - Clinical Validation:</strong> Pilot studies, FDA pathway, medical partnerships</li>
-                    <li><strong>20% - Marketing & User Acquisition:</strong> App Store optimization, healthcare marketing</li>
-                    <li><strong>10% - Operations:</strong> Infrastructure, security, compliance</li>
-                    <li><strong>5% - Legal & IP:</strong> Patent filings, regulatory compliance</li>
-                </ul>
-            </div>
+            <strong>MediVue</strong> is a 501(c)(3) nonprofit dedicated to improving day-to-day IBD education and visit preparedness through technology that patients can actually use.
         </div>
-    </div>
 
-    <div class="section">
-        <div class="section-title">Competitive Advantage</div>
-        <div class="section-content">
-            <ul>
-                <li><strong>Specialized Focus:</strong> Only comprehensive IBD-specific platform with AI flare prediction</li>
-                <li><strong>Research Integration:</strong> Built on peer-reviewed medical research and clinical guidelines</li>
-                <li><strong>Nonprofit Mission:</strong> Patient-first approach without profit-driven limitations</li>
-                <li><strong>Technical Excellence:</strong> Modern iOS architecture with scalable backend infrastructure</li>
-                <li><strong>Community Building:</strong> Integrated peer support and success story sharing</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="section">
-        <div class="section-title">Team & Organization</div>
-        <div class="section-content">
-            <strong>MediVue</strong> is a 501(c)(3) nonprofit organization dedicated to improving healthcare outcomes for IBD patients through innovative technology solutions. Our mission-driven approach ensures patient welfare remains the primary focus while building sustainable, scalable solutions for the healthcare community.
-        </div>
-        
         <div class="contact-info">
-            <div class="highlight-title">Contact Information</div>
+            <div class="highlight-title">Contact</div>
             <div><strong>Organization:</strong> MediVue (501(c)(3) Nonprofit)</div>
-            <div><strong>Website:</strong> ibdpal.org</div>
-            <div><strong>Email:</strong> info@ibdpal.org | contactus@ibdpal.org</div>
+            <div><strong>Website:</strong> <a href="https://www.ibdpal.org/">ibdpal.org</a></div>
+            <div><strong>Email:</strong> info@ibdpal.org</div>
             <div><strong>Registered:</strong> State of North Carolina</div>
+            <div><strong>Related:</strong> <a href="/about">About</a> · <a href="/impact">Impact</a> · <a href="/clinical-partnerships">Clinical partnerships</a> · <a href="/for-clinicians">For clinicians</a></div>
         </div>
     </div>
 
     <div class="footer">
-        <div><strong>IBDPal</strong> and <strong>IBDPal.org</strong> are trademarks of MediVue. All rights reserved.</div>
-        <div>This executive summary is confidential and proprietary to MediVue.</div>
+        <div><strong>IBDPal</strong> and <strong>IBDPal.org</strong> are trademarks of MediVue.</div>
+        <div>This page is a public nonprofit overview. It is not confidential, not medical advice, and not a securities offering.</div>
+        <div style="margin-top:0.75rem;"><a href="/">Home</a> · <a href="/sitemap.txt">sitemap.txt</a> · <a href="/llms.txt">llms.txt</a> · <a href="/analytics.txt">analytics.txt</a></div>
     </div>
     <script src="/analytics-config.js"></script>
     <script src="/analytics.js" defer></script>

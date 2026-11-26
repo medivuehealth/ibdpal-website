@@ -20,6 +20,11 @@ Allow: /resources-data.js
 Allow: /site-config.js
 # IndexNow ownership key (Bing / IndexNow partners)
 Allow: /a50b1f808a1d4c41b89fc4b35d46418a.txt
+Allow: /analytics.txt
+Allow: /content-insights.txt
+Allow: /content-inventory.txt
+Allow: /llms.txt
+Allow: /sitemap.txt
 
 # Search crawlers
 User-agent: Googlebot
@@ -128,6 +133,12 @@ Allow: /
 User-agent: ImagesiftBot
 Allow: /
 
+# Public plain-text audit exports (aggregated, no PII):
+# https://www.ibdpal.org/analytics.txt
+# https://www.ibdpal.org/content-insights.txt
+# https://www.ibdpal.org/content-inventory.txt
+# https://www.ibdpal.org/llms.txt
+# https://www.ibdpal.org/sitemap.txt
 # Machine-readable content index for assistants and retrieval systems:
 # https://www.ibdpal.org/llms.txt
 # Crawl-friendly sitemap mirrors (XML is canonical; TXT/JSON help tools that strip XML):

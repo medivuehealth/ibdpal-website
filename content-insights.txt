@@ -1,0 +1,65 @@
+# IBDPal content insights export
+# Aggregated normalized search terms and article views only.
+# Excludes identifiable free-text and sensitive patient-entered details.
+# Generated: 2026-11-26T18:51:52Z
+# Window: last 30 days (searches/views); gaps up to 90 days
+
+## Top normalized search terms
+# term | search_count | avg_results
+crohn diet	12	3.33
+abdominal pain	12	4
+enteral	10	3.2
+fatigue	6	4
+diarrhea	6	4
+biologics	4	4
+school	3	4
+sweet potatoes	2	8
+herbal	2	8
+flare	1	4
+yoga ibd	1	4
+spice	1	8
+seasoning	1	0
+exercise during flare	1	7
+crohn	1	4
+
+## Hard zero-result / thin-result terms (aggregated)
+# term | count
+enteral	2
+crohn diet	2
+seasoning	1
+autism	1
+eating with ibd book	1
+having surgery would like support group	1
+flare foods	1
+
+## Top article views (content events)
+# path | views
+/blog/vomiting-obstruction-ibd-warning-signs	130
+/blog/steroid-taper-what-to-expect-ibd	116
+/blog/ibd-fatigue-brain-fog	116
+/blog/chocolate-ibd	110
+/blog/tomatoes-ibd	87
+/blog/dehydration-ibd-warning-signs	82
+/blog/tortillas-ibd	79
+/blog/tuna-ibd	73
+/blog/dal-lentils-ibd	72
+/blog/pencil-thin-stool-ibd	70
+/blog/exercise-during-ibd-flare	69
+/blog/high-calprotectin-what-next	69
+/blog/seasonings-herbs-spices-ibd	69
+/blog/when-to-call-gi-vs-er-ibd	69
+/blog/dairy-lactose-ibd	66
+/blog/running-jogging-ibd	65
+/blog/bone-broth-gut-healing-ibd	64
+/blog/yellow-stool-ibd	64
+/blog/humira-fatigue-ibd	62
+/blog/tea-ibd	61
+/blog/banana-ibd-crohns-colitis	60
+/blog/congee-rice-porridge-ibd	57
+/blog/onion-garlic-ibd-fodmap	54
+/blog/skyrizi-subcutaneous-induction-crohns	54
+/blog/weight-loss-ibd-safe-guide	54
+
+## Privacy
+- Terms are normalized keywords, not raw query dumps.
+- Do not reconstruct individual users from this file.
